@@ -1,0 +1,98 @@
+.. include:: /substitutions.rsti
+
+Modifying Embedded
+==================
+
+.. raw:: mediawiki
+
+   {{HOWTO}}
+
+An embedded image can be mounted and modified before writing it to a CF,
+for instance to include a different configuration pre-packaged in the
+image.
+
+Modifying NanoBSD Embedded
+--------------------------
+
+These instructions apply to NanoBSD-based embedded images, like those
+found on current versions of pfSense.
+
+There are two ways to modify an embedded image: Before writing to CF and
+after. When imaging several CF cards with an identical base
+configuration, modifying the image before writing may be better. Both of
+these methods require a FreeBSD system or a spare non-production pfSense
+box. A VM might work depending on the setup and the availability of USB
+passthrough in the hypervisor.
+
+Modifying an Embedded Image (.img) file directly
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+First, decompress the .img.gz file. This will leave a large .img file
+that is the full size of the target CF size, be sure there is enough
+space to store it!
+
+``# gunzip pfSense-2.1.5-RELEASE-2g-amd64-nanobsd.img.gz``
+
+Make a mountpoint for the image:
+
+``# mkdir /mnt/pfsense``
+
+Load the image onto an md(4) device. The mdconfig command will return
+the id of the next available md device, like so:
+
+| ``# mdconfig -f pfSense-2.1.5-RELEASE-2g-amd64-nanobsd.img``
+| ``md0``
+
+N.B.: When using -f, options “-a -t vnode” are assumed and are not
+needed.
+
+(Optional) Confirm that the md device is present as expected:
+
+| ``# mdconfig -lv``
+| ``md0     vnode     1.9G  /home/jim/pfSense-2.1.5-RELEASE-2g-amd64-nanobsd.img``
+
+Mount the configuration slice, using the md device name returned above
+plus the configuration slice, s3:
+
+``# mount /dev/md0s3 /mnt/pfsense``
+
+Access to the partition that holds the configuration is now possible:
+
+| ``# ls -l /mnt/pfsense/conf/``
+| ``total 13``
+| ``drwxr-xr-x  2 root  wheel    512 Sep 27 23:39 backup/``
+| ``-rw-r--r--  1 root  wheel  12755 Sep 27 23:08 config.xml``
+| ``-rw-r--r--  1 root  wheel      0 Sep 27 23:08 ez-ipupdate.cache``
+| ``-rw-r--r--  1 root  wheel      0 Sep 27 23:08 trigger_initial_wizard``
+
+Copy over an existing configuration file. When doing so, be sure to
+remove the file that starts the configuration wizard.
+
+| ``# cp /home/mystuff/oldconfig.xml /mnt/pfsense/conf/config.xml``
+| ``# rm /mnt/pfsense/conf/trigger_initial_wizard``
+
+Now unmount the configuration slice
+
+``# umount /mnt/pfsense``
+
+(optional) Make any other desired changes at this point also, by
+mounting the slice containing the operating system.
+
+| ``# mount /dev/md0s1a /mnt/pfsense``
+| 
+| ``# umount /mnt/pfsense``
+
+And remove the md device. Since we had md0 above, the unit number is 0.
+
+``# mdconfig -d -u 0``
+
+Modifying a CF After Writing the Image
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This works almost identically to the steps above, but omit the mdconfig
+steps and replace md0 with whatever the device is for the CF card,
+typically da0 with a usb reader (if there are no other SCSI disks).
+
+Check dmesg or /var/log/messages to see what device is reported when
+inserting the CF card into the reader.
+

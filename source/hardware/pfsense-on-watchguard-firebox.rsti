@@ -1,0 +1,1119 @@
+.. include:: /substitutions.rsti
+
+PfSense on Watchguard Firebox
+=============================
+
+Overview
+--------
+
+This page will document the installation and operation of pfSense on the
+various hardware platforms produced by Watchguard. Right now this is
+just a holding page while I gather the relevant information from the
+various forum threads it is spread across. Also I have to learn how to
+operate a wiki!
+
+Stephenw10
+
+Below is a work in progress.....
+
+Watchguard Technologies have produced a number of appliances many of
+which were based on customized commodity X86 hardware. A lot of these
+are now End of Life or End of Sale and hence are available relatively
+cheaply second hand. See: `Watchguard EoL
+policy <http://www.watchguard.com/products/resources/end-of-life-policy.asp>`__
+
+Most of these can make excellent pfSense boxes with various degrees of
+difficulty and hardware support. Many can be easily upgraded using cheap
+second hand CPUs and RAM.
+
+Problems with this document
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please post in
+`this <http://forum.pfsense.org/index.php/topic,59821.0.html>`__ thread
+to discuss what I got wrong.
+
+Looking for Watchguard Support?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Try the excellent Watchguard forum: http://www.watchguard.com/forum/
+
+Supported Fireboxes
+-------------------
+
+-  Early models, Firebox II and III, are supported but not recommended.
+-  X-Core: X500, X700, X1000 and X2500
+-  X-Peak: X5000, X6000 and X8000
+-  X-Core-e: X550e, X750e and X1250e
+-  X-Peak-e: X5500e, X6500e and X8500e. X8500e-F is untested at this
+   point.
+-  XTM-5 series: XTM 505, XTM 510, XTM 520 and XTM 530
+-  XTM-8 series: The XTM 810 has been tested and can work but due to the
+   particular hardware arrangement the install is difficult. See forum
+   `thread <https://forum.pfsense.org/index.php/topic,61970.0.html>`__.
+
+The more recent XTM 5 boxes and other higher end hardware are too
+expensive at this point to be available to test. Though they would
+probably be supported.
+
+Unsupported Fireboxes
+---------------------
+
+Generally the smaller, SOHO style, fireboxes are not supported because
+they are not X86 hardware. This includes:
+
+-  Firebox SOHO
+-  Firebox X Edge: X5, X15, X50 (including wireless versions). VXWorks
+   on MIPS
+-  Firebox X Edge E: X10e, X20e, X55e (including wireless versions).
+   Linux on ARM
+-  XTM-2 series: XTM 21, XTM 22, XTM 23, XTM 25, XTM 26 (including
+   wireless versions). Linux on ARM
+
+General Advice
+--------------
+
+Serial Console
+''''''''''''''
+
+All of these platforms are intended to run an embedded OS and be rack
+mounted. As such they rely on serial console for CLI access. Before you
+start installing pfSense on any of them make sure you have a working
+serial console. That means a null modem cable and a serial terminal
+client such as
+`PuTTY <http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html>`__.
+Many people have had trouble connecting due to an incorrect cable or a
+bad USB-serial adapter.
+
+Not All Null Modem Cables are Created Equal!
+''''''''''''''''''''''''''''''''''''''''''''
+
+There are several wiring schemes that are commonly found in null modem
+cables and it's usually not obvious which one is being used. Connecting
+to pfSense or the Watchguard OS can be accomplished with most of them
+because the serial port code can fall back to software flow control
+requiring only 3 connections. Some other operations, specifically
+connecting to the FreeDOS image and BIOS on the X-e boxes, require a
+cable that supports hardware flow control. See the 'full handshaking'
+cable detailed at Wikipedia.
+`1 <http://en.wikipedia.org/wiki/Null_modem>`__ The Watchguard supplied
+cables do support hardware flow control.
+
+SSH
+'''
+
+When attempting more complex tasks it is often easier to connect to the
+box via SSH or to tranfer files using SCP. You can use (from Windows)
+PuTTY and WinSCP to accomplish those respectively. Many other clients
+are available.
+
+Firebox II and III
+------------------
+
+Although the Firebox II and III can run pfSense the hardware is
+sufficiently old that it only just meets the minimum requirements. The
+original OS runs from flash that is built onto the motherboard and
+cannot be replaced. It is only 8MB which is far too small for any
+version of pfSense. m0n0wall is a better target OS for these. There is
+good description of installing it, now only available via the Wayback
+Machine, here:
+http://web.archive.org/web/20111219022542/http://www.ls-net.com/m0n0wall-watchguard
+
+Forum thread for the LED driver
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+http://forum.pfsense.org/index.php/topic,36546.0.html
+
+X-Core
+------
+
+Original Forum Thread
+~~~~~~~~~~~~~~~~~~~~~
+
+The most complete source of information can be found here:
+http://forum.pfsense.org/index.php/topic,7458.0.html
+
+Hardware Description
+~~~~~~~~~~~~~~~~~~~~
+
+The X500, X700, X1000 and X2500 are identical hardware consisting of:
+
+-  1U rack mount chassis.
+-  1.2GHz Celeron CPU (SL6C8)
+-  256MB RAM in a single DIMM. There are no empty slots
+-  Compact Flash card slot
+-  6X Realtek RTL8139C+ 10/100 NICs, re(4) driver.
+-  Front serial console port.
+-  Encryption accelerator. Usually a Safenet SafeXcel 1141 .
+-  Front mounted LCD and cursor controls.
+
+The motherboard in the X-Core, labeled WG-X66A (V1.0), has a mini-PCI
+slot that is used for the encryption accelerator. The SafeXcel 1141 is
+supported by the safe(4) driver but for some reason does not seem to
+work correctly. The slot can be used to add wifi. Some boxes have a
+Lanner AV-SFB160 encryption card that is not supported at all. There is
+a PCI slot that can be used when the case is open or using an
+appropriate riser but there is no fixing for installing a card.
+
+The cooling is via three small, fast and therefore loud case fans and a
+radial CPU fan, also quite loud. None of these are thermally controlled.
+
+The power supply is not standard ATX.
+
+There is provision for adding a hard drive via the front accessible bay.
+However there is only a plastic blank supplied. A caddy must be found to
+use it as intended.
+
+Installing pfSense
+~~~~~~~~~~~~~~~~~~
+
+Serial Port Quirk
+^^^^^^^^^^^^^^^^^
+
+There is a bug/quirk that first appeared in 2.0Beta5 that results in the
+serial console becoming unusable after the initial interface
+configuration. For that reason it is important to make sure you have
+configured at least one interface on which you will have access to the
+webgui.
+
+A simple workaround is to change the serial port speed to anything other
+than 9600. In 2.1 or newer there is an option to do that in System:
+Advanced: Admin Access.
+
+For 2.0.X add the following lines to **/boot/loader.conf.local** create
+the file if necessary:
+
+::
+
+    console="comconsole"
+    comconsole_speed="115200"
+
+You can do that from the webgui by executing the following two lines in
+Diagnostics: Command Prompt: Command:
+
+::
+
+    echo 'console="comconsole"' >> /boot/loader.conf.local
+
+::
+
+    echo 'comconsole_speed="115200"' >> /boot/loader.conf.local
+
+Reboot the box for those to take effect. The console should now work
+correctly at 115200bps.
+
+Booting from CF
+^^^^^^^^^^^^^^^
+
+The X-Core will boot one of the 32bit NanoBSD images written to a CF
+card and put in the slot. It will boot using the front serial port as
+console. No configuration is necessary to boot the new card, no bios or
+jumper changes. There are no known size restrictions on the card.
+
+See: `Installing\_pfSense#Embedded <Installing_pfSense#Embedded>`__
+
+Booting from HD
+^^^^^^^^^^^^^^^
+
+Known Issues
+~~~~~~~~~~~~
+
+The Realtek NICs in this box are known to suffer a lock-up condition
+under certain circumstances. Despite repeated efforts it has not been
+possible to either cure the problem or ascertain exactly what triggers
+it. When the problem is triggered the system log will show **watchdog
+timeout** and refer to the interface causing it. Fortunately this
+doesn't affect all users and even then only under some circumstances.
+
+It would seem to be related to packet fragmentation and hardware off
+loading. Some users have reportedly solved the problem by disabling all
+hardware offloading and/or using a better switch that can reassemble
+packets correctly.
+
+Further Enhancements
+~~~~~~~~~~~~~~~~~~~~
+
+**LCD:** The LCD and cursor buttons are supported by the SDECLCD driver.
+See: `SDECLCD
+driver <PfSense_on_Watchguard_Firebox#Installing_lcdproc_and_the_SDECLCD_driver>`__
+
+**WGXepc:** The Arm/Disarm LED can be controlled by the WGXepc program.
+Additionally the LED state can be set in the BIOS. This allows the LED
+to be initially red then switch to the BIOS setting, flashing red say,
+during boot and then switch to green once booted. See:
+`WGXepc <PfSense_on_Watchguard_Firebox#Controlling_hardware_with_WGXepc>`__
+
+**RAM:** The board supports up to 512MB of RAM. Since there is only one
+slot it has to be a single 512MB DIMM and the board seems to accept only
+few known DIMMs. Kingston KVR133X64C3/512 and KVR100X64C2/512 being
+examples that have worked for some users but not others.
+
+**CPUs:** The board supports a wide range of socket 370 processors. The
+fastest being the Pentium 3 at 1.4GHz, SL5XL or SL6BY for example.
+
+X-Peak
+------
+
+Original Forum Thread
+~~~~~~~~~~~~~~~~~~~~~
+
+The most complete source of information can be found here:
+http://forum.pfsense.org/index.php/topic,25011.0.html
+
+Hardware Description
+~~~~~~~~~~~~~~~~~~~~
+
+The X5000, X6000 and X8000 are identical hardware consisting of:
+
+-  1U rack mount chassis.
+-  Pentium 4 2.8GHz CPU (SL6PF)
+-  512MB RAM in two 256MB DIMMS.
+-  128MB compact flash card
+-  3X Intel 82547GI Gigabit NICs, em(4) driver.
+-  7X Intel 82551ER 10/100 NICs, fxp(4) driver.
+-  USB 2.0
+-  2X DB9 Com ports, front and rear.
+-  Safenet SafeXcel 1841 Encryption accelerator. (not currently
+   supported)
+-  Front mounted LCD and cursor controls.
+
+The motherboard is an Advantech AIMB-X3 (Rev.A1 in my case) using an
+Intel FWE6300ESB 875p chipset. The PSU is a Seasonic SSF-160U1. It has
+an unfilled mini-pci slot and a space for a hard disk caddy with a spare
+IDE connector.
+
+The motherboard has three diagnostic LEDs labelled D3, D4 and D5. Their
+function is not known at this time but all three should be green for a
+correct boot.
+
+It loud! It has three 40mm fans running flat out all the time. No
+thermal control.
+
+The box draws around 85-90W at boot and around 55W at idle.
+
+Installing pfSense
+~~~~~~~~~~~~~~~~~~
+
+Booting from CF
+^^^^^^^^^^^^^^^
+
+Installing pfSense on this box is simply a matter of writing one of the
+32bit NanoBSD images to a CF card and putting it in the slot. It will
+boot using the front serial port as console.
+
+See: `Installing\_pfSense#Embedded <Installing_pfSense#Embedded>`__
+
+Booting from HD
+^^^^^^^^^^^^^^^
+
+The box will boot from a HD in the caddy or attached via a suitable
+cable. It is a far more complex install so it's advised that you try
+booting from CF first. Reasons you might want to boot from a hard drive
+include; using Squid for web proxying/caching, running Snort with large
+rule-sets, running havp with large virus definitions or using the
+Freeswitch package (which isn't available at all in embedded).
+
+You must first install pfSense to the HD by installing it in a laptop or
+other suitable machine. Then boot from the CD and install as normal.
+See:
+`Installing\_pfSense#Performing\_a\_Full\_Install\_.28ISO.2C\_Memstick.29 <Installing_pfSense#Performing_a_Full_Install_.28ISO.2C_Memstick.29>`__
+
+Boot the laptop into pfSense and select 'use serial console' in the
+webgui. You must do this as the X-peak box has no video hardware.
+
+Now transfer the HD back into the X-peak and boot. It will probably fail
+to boot completely and stop at the **mountroot>** prompt. This is
+because the HD was connected via a differently assigned interface in the
+install box. Type **?** at the prompt to list the devices and enter the
+appropriate boot parameters. E.g: **usf:/dev/ad2s1a** which would be for
+a hard drive connected as secondary master.
+
+The box should then continue to boot correctly. You will need to
+re-assign the interfaces however. Once the box has booted edit the fstab
+in order make the mountroot change permanent. You can edit the file,
+/etc/fstab, directly from the webgui in Diagnostics: Edit File: You need
+to change both entries to point at the correct HD.
+
+Further Enhancements
+~~~~~~~~~~~~~~~~~~~~
+
+It is easy to add wifi to the x-peak as it has an empty mini-PCI slot.
+You will have to fit an antenna though which may mean modifying the case
+depending on your chosen antenna.
+
+The LCD and keys are supported by the SDECLCD driver developed for the
+X-Core box. See: `SDECLCD
+driver <PfSense_on_Watchguard_Firebox#Installing_lcdproc_and_the_SDECLCD_driver>`__
+
+The Arm/Disarm LED can be controlled by the WGXepc program. See:
+`WGXepc <PfSense_on_Watchguard_Firebox#Controlling_hardware_with_WGXepc>`__
+
+| The motherboard will support a range of socket 478 CPUs, you can fit a
+  slower model to reduce power consumption for example. It will actually
+  support a Pentium4-M CPU but will alwys run at the lower speedstep
+  level as the BIOS doesn't correctly spport it. This further reduces
+  power consumption. The cooling found in the box is designed for a hot
+  rack so if you are using this somewhere cool, or you fitted a low
+  power CPU, you can also fit quieter fans. Console redirect for the
+  BIOS does not work on this box so accessing the BIOS for any reason is
+  difficult. This makes replacing the CPU more difficult as you can't
+  easily see if it's detected straight away. The BIOS this was tested
+  under is reported as:
+
+::
+
+    BIOS DATE  : 10/21/2004
+    CHIPSET ID : Canterwood
+    BIOS ID    : 6A79BAKDC-00
+    BIOS TYPE  : Phoenix Technologies, Ltd.
+    OEM INFO   : (046) EVALUATION ROM - NOT FOR SALE
+
+Although some X-peak boxes seem to have included the hard drive caddy
+most didn't. However it is possible to get one from a laptop that fits.
+One laptop that had a suitable caddy is an ECS-320. In the UK it was
+sold rebadged as an Advent 7081 and also Patriot 2005. Possible models
+that used the same caddy are Advent 7086, 7094, and ECS 321. You need
+the metal tray that holds the HD and also the adapter that fits the
+socket on the motherboard.
+
+You can connect a hard drive without the caddy just using the adapter
+but you need to devise some other way of holding it. Dell use the
+adapter (or sufficiently similar) in a number of models, Dell part
+number: 6227U. It's much easier to source than the complete ECS caddy.
+
+The board has two unpopulated SATA ports. These work with the addition
+of only the connector. This requires some delicate soldering.
+
+X-Core-e
+--------
+
+Original Forum Thread
+~~~~~~~~~~~~~~~~~~~~~
+
+The most complete source of information can be found here:
+http://forum.pfsense.org/index.php/topic,20095.0.html
+
+Hardware Description
+~~~~~~~~~~~~~~~~~~~~
+
+The X-Core-e boxes share most hardware. The X750e and X1250e are
+identical whilst the X550e does not have the daughter board that
+provides 4 additional NICs.
+
+The platform consists of:
+
+-  1U rackmount chassis
+-  1.3GHz Celeron-M CPU (SL6N7)
+-  512MB RAM in a single DIMM with another slot for
+   `upgrades <PfSense_on_Watchguard_Firebox#Further_Enhancements_3>`__.
+-  4X Marvell 88e8001 Gigabit NICs, sk(4) driver.
+-  4X Marvell 88e8053 Gigabit NICs, msk(4) driver.
+-  Cavium Nitrox lite CN505 Encryption accelerator, unsupported at this
+   time.
+-  CF slot.
+-  DB9 front mounted serial port
+-  Front mounted LCD and cursor controls.
+
+The motherboard in these boxes appears to have been made by a least two
+manufacturers but other than part numbers are identical. Some have most
+of the internal headers populated others do not but none that are
+referenced in this guide.
+
+The X-Core-e has slots, accessed from the rear of the box, for a HD
+caddy and for an expansions card. The expansion card is PCIe and
+connects via a riser card to a PCIe X4 slot on the board. The form
+factor of the card appears to be proprietary.
+
+The box is cooled by three fans, two of which draw air across the CPU.
+There is no thermal control of the fan speed.
+
+There are a row of diagnostic LEDs next to the SuperIO chip (a Winbond
+W83627HG). It's unknown what they indicate but they should all be solid
+green when the box boots.
+
+There is a reset button hidden behind the front panel between the cursor
+buttons and the serial port.
+
+Installing pfSense
+~~~~~~~~~~~~~~~~~~
+
+Electrical Hazard!
+^^^^^^^^^^^^^^^^^^
+
+In order to install pfSense on an X-Core-e you will need to open the
+box. Inside the box the PSU is open frame with exposed high voltage
+connections. This is potentially dangerous. Don't do it if you any
+doubts. Unplug it before you open the case.
+
+Booting from CF
+^^^^^^^^^^^^^^^
+
+Due to a BIOS bug/quirk these boxes will not boot any CF card larger
+than 512MB with the default settings. Some cards labeled as 512MB won't
+boot either. Since pfSense now has a minimum flash size of 512MB for the
+NanoBSD images we need adjust some BIOS settings to be able to boot a
+1,2 or 4GB card. This presents a problem as there is no easy way access
+the BIOS. There are several options:
+
+-  The box has a VGA output internally so you can connect a monitor to
+   it. However the header may not be populated and it has 2mm pitch so
+   finding cable to fit it is difficult (I don't think anyone has!).
+   There is also a keyboard header.
+-  You can insert a PCIe graphics card to the slot and use that in
+   conjunction with the keyboard header. You may have to modify the slot
+   to fit an 8X graphics card but it should work.
+-  You can enable **console redirect** in order to access the BIOS via
+   the serial port. This is what most people do but it does involve
+   flashing the BIOS so there is an inherent risk, though nobody has
+   bricked their box yet.
+
+Flashing the BIOS
+'''''''''''''''''
+
+Since the option to enable console redirect is in the BIOS the only way
+to set it is to flash the BIOS with a modified version that has it
+enabled by default. This brings with it some other advantages since the
+modified BIOS also has a number of menus enabled that are usually
+hidden.
+
+-  Download
+   `this <https://sites.google.com/site/pfsensefirebox/home/FreeDOSBios2.img.gz>`__
+   image of a bootable CF card. It's a 16MB image loaded with FreeDOS,
+   the awardflash program and the new bios image along with some other
+   utilities. The MD5 checksum for the file is
+   5ebb3f11925a8a78f7829e3ca0823f5d. Try using a different browser if IE
+   fails.
+
+-  Write the image to a small CF card, 256MB or less. Larger cards will
+   not boot. You can use Physdiskwrite directly or ungzip the image and
+   use Win Disk Imager.
+
+-  Connect up a serial console cable (null modem cable) set to 9600 8N1.
+   Turn on the firebox. When it has booted into FreeDOS it will beep
+   three times. If you can't see a dos prompt after the beeps you are
+   connected wrong. If your serial console works fine with the
+   Watchguard OS but not FreeDOS you may have a null modem cable that
+   doesn't support hardware flow control.
+
+-  Change to the bios directory and run the biosid program.
+
+::
+
+    cd bios
+    biosid
+
+    You should get output something like this.
+
+::
+
+    BIOS DATE  : 12/21/2005
+    CHIPSET ID : Alviso
+    BIOS ID    : 6A79GAKAC-00
+    BIOS TYPE  : Phoenix Technologies, Ltd.
+    OEM INFO   : **** BIOS Ver.ETAC0017 (2005/12/21> ****
+
+    If your output is different then stop now as you have a different
+    bios to all the boxes I have tested.
+
+-  Now you can flash your bios but first you may want to backup your
+   existing bios, although a backup is already on the card. To backup
+   your bios:
+
+::
+
+    awdflash /pn /sy backup1.bin /e
+
+-  Then flash the modified image. x750eb7.bin will modify the boot up
+   message on the LCD to 'pfSense B7'. If you don't want that use
+   x750eb6.bin instead.
+
+::
+
+    awdflash x750eb7.bin /py /sn /cc /e
+
+    Once the program finishes it will return to the flashing dos prompt,
+    you can now reset your firebox. Do NOT reset the box in the middle
+    of flashing! If in any doubt just leave it for at least 10mins.
+
+-  To access the BIOS you need your terminal program set to 115200 8N1.
+   On some systems I have used you need to set flow control to none.
+   When you turn on the box first time it may not work as it halts after
+   finding the cmos is reset and loads the default values (it worked
+   first boot for me though). You will see the usual bios information
+   come up and it starts testing the ram. Because you can't send a
+   delete character over serial you have to press TAB instead to enter
+   the setup.
+
+Now you have BIOS access you can power off the box and replace the CF
+card with one that contains the pfSense image. See:
+`Installing\_pfSense#Embedded <Installing_pfSense#Embedded>`__
+
+Power back up the box and enter the BIOS setup. Enter the IDE setup and
+autodetect the new CF card. The BIOS should see the card and will
+display the correct values. Now change the IDE settings to 'manual',
+'CHS' and set heads to 2. The resulting values shown for the CF card
+size will be wrong (below 512MB) but that's OK. Save the settings and
+exit the BIOS and the card should boot.
+
+Whilst you are in the BIOS setup you may want to alter the fan speed at
+boot. 'BB' is the lowest you can go without crashing the BIOS code. You
+can also reclaim 7MB of by reducing the shared video RAM allocation. It
+all helps.
+
+When pfSense boots it's console output will be at 9600 so you will
+probably have to restart your terminal client at that speed.
+
+Booting from HD
+^^^^^^^^^^^^^^^
+
+Booting the X-Core-e from a HD may not be at all straight forward so you
+should only try it if you have a good reason! Depending on your HD
+geometry it may just work or you may need to follow the instructions
+below. At least one user
+`reports <http://forum.pfsense.org/index.php/topic,20095.msg320418.html#msg320418>`__
+no problems at all when using a 120GB HD.
+
+These instructions allowed the X-Core-e to reliably and repeatedly, boot
+from a 40GB HD connected via the rear drive bay caddy connector. See HD
+Caddy in `Further
+Enhancements <PfSense_on_Watchguard_Firebox#Further_Enhancements_3>`__.
+
+Put the drive in a laptop and boot the laptop from the pfSense i386
+install CD. Select straight to install at the prompt (I), choose the
+default settings for everything and the SMP kernel (the standard
+kernel). Boot the laptop into pfSense and setup one interface,
+sufficient that you can reach the webgui. In the webgui enable serial
+port console in System: Advanced: Admin Access: Shut down the laptop and
+transfer the drive to the firebox. In order for the drive to boot at all
+it must be set as slave using the drive jumpers. Cable select doesn't
+work. There must be a CF card in the slot. I used a random <512MB card.
+I haven't tried a larger card. In the bios set everything on both drives
+to auto and make sure harddisk boot priority is set to the detected
+slave HD. Boot the box. You will see that the green 'Storage' LED stays
+lit far longer than usual. Now here's the weird part: you must select
+verbose boot (option 6) at the menu. The default boot won't correctly
+detect the HD as ad1. When it fails at the mountroot> enter
+**ufs:/dev/ad1s1a** The box should boot correctly from here. When it has
+booted you must edit /etc/fstab and change the references to ad0 to ad1.
+You can do that either via the edit file page in the webgui or from the
+command line using: ee /etc/fstab (or vi if you're a masochist). In
+order to make it boot verbose every time you need to add
+boot\_verbose=“1” to /boot/loader.conf.local. You can do it easily from
+the command line:
+
+::
+
+    echo 'boot_verbose="1"' >> /boot/loader.conf.local
+
+Yes, this is weird behaviour. It's the only method that works reliably
+though.
+
+Known Issues
+~~~~~~~~~~~~
+
+Many people have experienced problems using the msk(4) interfaces in the
+X750e and X1250e, the four furthest from the LCD. One of the msk
+interfaces becomes unresponsive and the system log shows:
+
+::
+
+    kernel: msk1: watchdog timeout
+    kernel: msk1: link state changed to DOWN
+
+This usually only happens under high load but the exact circumstances
+that cause it are unknown. You may not experience any trouble, however
+there is a workaround/fix.
+
+Insert the following line into the file **/boot/loader.conf.local**. You
+will have to create that file if you've not already done so.
+
+::
+
+    hw.msk.msi_disable=1
+
+You can create the file and insert the code with the following commands:
+
+::
+
+    /etc/rc.conf_mount_rw
+    echo 'hw.msk.msi_disable=1' >> /boot/loader.conf.local
+    /etc/rc.conf_mount_ro
+
+The additional lines are needed to re-mount the filesystem as read-write
+in NanoBSD.
+
+Further Enhancements
+~~~~~~~~~~~~~~~~~~~~
+
+**LCD:** The LCD is supported by the SDECLCD driver developed for the
+X-Core box. The most recent verion of the old driver and the re-written
+driver now support the correct key layout for the buttons. See: `SDECLCD
+driver <PfSense_on_Watchguard_Firebox#Installing_lcdproc_and_the_SDECLCD_driver>`__
+
+**WGXepc:** The Arm/Disarm LED and the cooling fan speed can be
+controlled by the WGXepc program. See:
+`WGXepc <PfSense_on_Watchguard_Firebox#Controlling_hardware_with_WGXepc>`__
+
+**RAM:** The board supports up to 2GB of RAM. It uses standard DDR2
+DIMMs and does not seem to be fussy about what you put in it. I have
+seen both DDR2-400 and DDR2-533 DIMMs fitted as standard. DDR2-800 also
+works fine, as you would expect.
+
+**CPUs:** The board in the X-Core-e can run a large number of CPUs. Any
+Celeron-M or Pentium-M will probably work including both Banias and
+Dothan core variants. The standard Celeron-M CPU is Banias Core and
+400MHz FSB, if you replace it with a Dothan Core processor you must set
+the DIP switches correctly on the motherboard. There are two sets of DIP
+switches and the correct setting for both are marked on the board.
+
+Upgrading the CPU to a Pentium-M provides a useful increase in
+processing power especially the Dothan Core models with 2MB cache (4X
+the Celeron-M). In addition the Pentium-M supports Enhanced Intel
+Speedstep and will actually use less power than the standard CPU when it
+is enabled via powerd. Unfortunately the BIOS does not pass
+voltage/frequency information to the OS correctly so the only CPUs that
+can use speedstep under pfSense are those for which the values are
+already known by the driver. In practice this means only the 400MHz
+Pentium-M variants. E.g. Pentium-M 735.
+
+For a complete list see the est(4) driver source code.
+
+These are CPU's I have personally tested:
+
+    SL6N7 1.3GHz Banias Celeron-M (original cpu)
+    SL7GL 1.5GHz Dothan Pentium-M
+    SL7EP 1.7GHz Dothan Pentium-M
+
+**Enabling Speedstep:** To get it up and running you need to do a few
+things:
+
+-  Set the timecounter to use the i8254 device with
+
+::
+
+    sysctl kern.timecounter.hardware=i8254
+
+To make this setting permanent add it to the system tunables table in
+the webgui:System: Advanced: System Tunables:
+
+-  Enable powerd in the webgui in System: Advanced: Miscellaneous:
+
+-  To force it to use EST rather than throttling or p4tcc add the
+   following lines to loader.conf.local
+
+::
+
+    hint.p4tcc.0.disabled=1
+    hint.acpi_throttle.0.disabled=1
+
+ACPI throttling and p4tcc do not provide any measurable power saving.
+
+**PSU:** A number of users have replaced the power supply with a DC-DC
+type such as the PicoPSU. This is possible because the box is relatively
+low power consumption and uses a standard ATX PSU. Doing this in
+combination with a speedstep enabled Pentium-M and turning off the LCD
+backlight can reduce the idle power consumption to <25W.
+
+**NIC LEDs:** The LEDs on the two sets of Marvell NICs do not behave as
+you might expect them to. In the default condition after install they
+will show only activity on the NIC rather than showing the LINK state as
+most other devices would. This is because the Marvell 88e8053 and
+88e8001 both have programmable LED outputs and the default state is
+incorrect for the LED configuration in the Firebox. For a *much* more
+complete explanation see the forum thread from
+`this <http://forum.pfsense.org/index.php/topic,20095.msg272392.html#msg272392>`__
+post onwards.
+
+To get a more expected LED behaviour we need to reprogram the LED
+control registers on the NIC. Currently the best (only?) way to do this
+is to replace the in kernel drivers. The modified versions have a few
+lines of extra code that set the registers correctly. Load them as
+follows:
+
+-  These kernel modules have been compiled against FreeBSD 8.3, they
+   will only load successfully in pfSense 2.1.\*
+-  The modified kernel modules, if\_sk.ko and if\_msk.ko along with the
+   source and the older modules compiles against FreeBSD 8.1 are here.
+   `2 <https://sites.google.com/site/pfsensefirebox/>`__. You can fetch
+   them directly to the box though which is less open to error.
+-  Remount the filesystem as read-write (if you're running a Nano
+   image).
+
+::
+
+     /etc/rc.conf_mount_rw
+
+-  Fetch the kernel modules to **/boot/modules**
+
+::
+
+    fetch -o /boot/modules/if_sk.ko https://sites.google.com/site/pfsensefirebox/home/if_sk.freebsd-8.3.ko
+    fetch -o /boot/modules/if_msk.ko https://sites.google.com/site/pfsensefirebox/home/if_msk.freebsd-8.3.ko
+
+-  Check the download intergrity using md5
+
+::
+
+     [2.1-RELEASE][root@testbox.localdomain]/boot/modules(13): md5 if*.ko
+    MD5 (if_msk.ko) = e21a0749ef1e4e6e60ca807b6bf8828d
+    MD5 (if_sk.ko) = 7bf49f162316269df1f81f3b24005cd0
+
+-  Add the following lines to **/boot/loader.conf.local**
+
+::
+
+    if_sk_load="yes"
+    if_msk_load="yes"
+
+-  Reboot
+
+To check that the modules have loaded correctly (it should be obvious
+from the LEDs!) you can view their syslog output:
+
+::
+
+    [2.1-RELEASE][root@testbox.localdomain]/boot/modules(15): dmesg|grep LED
+    mskc0: <Marvell Yukon 88E8053 Gigabit Ethernet (LED mod 1.3)> port 0x8000-0x80ff mem 0xd0020000-0xd0023fff irq 16 at device 0.0 on pci1
+    mskc1: <Marvell Yukon 88E8053 Gigabit Ethernet (LED mod 1.3)> port 0x9000-0x90ff mem 0xd0120000-0xd0123fff irq 17 at device 0.0 on pci2
+    mskc2: <Marvell Yukon 88E8053 Gigabit Ethernet (LED mod 1.3)> port 0xa000-0xa0ff mem 0xd0220000-0xd0223fff irq 18 at device 0.0 on pci3
+    mskc3: <Marvell Yukon 88E8053 Gigabit Ethernet (LED mod 1.3)> port 0xb000-0xb0ff mem 0xd0320000-0xd0323fff irq 19 at device 0.0 on pci4
+    skc0: <Marvell Gigabit Ethernet (LED mod 0.9)> port 0xc000-0xc0ff mem 0xd042c000-0xd042ffff irq 16 at device 0.0 on pci5
+    skc1: <Marvell Gigabit Ethernet (LED mod 0.9)> port 0xc400-0xc4ff mem 0xd0420000-0xd0423fff irq 17 at device 1.0 on pci5
+    skc2: <Marvell Gigabit Ethernet (LED mod 0.9)> port 0xc800-0xc8ff mem 0xd0424000-0xd0427fff irq 18 at device 2.0 on pci5
+    skc3: <Marvell Gigabit Ethernet (LED mod 0.9)> port 0xcc00-0xccff mem 0xd0428000-0xd042bfff irq 19 at device 3.0 on pci5
+
+**HD caddy:** The caddy slot in the X-e is the same as in the X-Peak and
+hence the same applies. It's possible an official caddy was fitted in
+the SSL models, I've never seen one, but suitable laptop caddies fit.
+One laptop that had a suitable caddy is an ECS-320. In the UK it was
+sold rebadged as an Advent 7081 and also Patriot 2005. Possible models
+that used the same caddy are Advent 7086, 7094, and ECS 321. You need
+the metal tray that holds the HD and also the adapter that fits the
+socket on the motherboard.
+
+You can connect a hard drive without the caddy just using the adapter
+but you need to devise some other way of holding it. Dell use the
+adapter (or sufficiently similar) in a number of models, Dell part
+number: 6227U. It's much easier to source than the complete ECS caddy.
+
+**More extreme stuff:** At least one user reports that the unpopulated
+mini-PCI slot is fully functional. However you obviously need to add the
+mini-PCI card carrier and that requires surface mount soldering
+techniques. Additionally it is probably necessary to use a 'tall'
+carrier in order to miss the BIOS ROM chip. There are a number of
+unpopulated USB headers on the board. CN\_USB1 is fully functional if an
+appropriate header or socket is fitted. This is useful for a keyboard or
+booting from USB, which is reported possible.
+
+X-Peak-e
+--------
+
+Hardware Description
+~~~~~~~~~~~~~~~~~~~~
+
+The X-peak-e platform is almost identical to the
+`X-Core-e <PfSense_on_Watchguard_Firebox#Hardware_Description_3>`__.
+
+The X5500e, X6500e and X8500e are all identical. The X8500e-F and
+X8500e-F have 4 Gigabit Fibre interfaces in place of the additional
+Copper Gigabit NICs
+
+It has the following differences to the X-Core-e:
+
+-  2GHz Pentium-M CPU (SL7SM)
+-  1GB of RAM in two 512MB DIMMs
+-  A VPN/encryption accelerator in the expansion bay. This is
+   unsupported.
+
+Installing pfSense
+~~~~~~~~~~~~~~~~~~
+
+Installing pfSense is identical to the procedure for the `X-Core-e
+boxes <PfSense_on_Watchguard_Firebox#Installing_pfSense_3>`__. The only
+difference is that the encryption expansion card should be removed as
+it's not supported and seemed to introduce a huge interupt load on my
+test box.
+
+XTM 5
+-----
+
+Original Forum Thread
+~~~~~~~~~~~~~~~~~~~~~
+
+The most complete source of information can be found here:
+http://forum.pfsense.org/index.php/topic,43574.0.html
+
+Hardware Description
+~~~~~~~~~~~~~~~~~~~~
+
+The earlier XTM 5 series (505, 510, 520 and 530) fireboxes are identical
+hardware consisting of:
+
+-  Celeron 440 2GHz CPU.
+-  1GB of DDR2 ram in a single DIMM. There are two slots on the
+   motherboard supporting up to 4GB (at least, the G41 chipset claims to
+   support 8GB or DDR2).
+-  ICH7 82801GB southbridge.
+-  1X Intel 10/100 NIC (built into the chipset)
+-  6X Intel 82574L Gigabit NICs.
+-  2X front panel USB sockets
+-  RJ-45 style serial console connection
+-  PCI VPN accelerator card, a Cavium Nitrox CN1605, which is not
+   supported by FreeBSD at this time.
+-  Front mounted LCD and cursor controls.
+-  On board CF card slot.
+
+It has two CPU fans and one system fan (plus one in the PSU) but
+thankfully unlike previous models they are software controllable and are
+set to thermal control (possibly via the Winbond W83627THG super I/O
+though the board also has a W83792G chip which could also do the job) in
+the BIOS by default. Resulting in a relatively quiet appliance.
+
+Like previous models it has an LCD with front panel buttons. This is a
+Vitek Display VC202W-GGE-JC01. It is still connected via a parallel
+interface but is different to the earlier units. It also has the
+familiar Watchguard arm/disarm LED.
+
+There are two SATA headers on the motherboard and the PSU has an unused
+SATA power connector. There is also space to mount a drive but
+additional hardware would be needed.
+
+The unit draws ~30W at idle.
+
+Like the X-e box it has some diagnostic LEDs on the board (near the
+PSU). There are 5 leds labeled led3-7. LED3 indicates power to the
+board, even when the unit is 'off'. After successfully POSTing all 5 are
+lit. Unlike previous models it has a soft power switch, it's never
+totally de-powered. There is a microswitch on the motherboard which
+appears to be connected in parallel with the rear power switch.
+
+Unlike other models the BIOS on the 5 series is easily accessible.
+Console redirect is enabled by default at 115200 8N1, press TAB to enter
+the bios setup (in colour!)
+
+Installing pfSense
+~~~~~~~~~~~~~~~~~~
+
+Installing pfSense on this box is simply a matter of writing one of the
+NanoBSD images to a CF card and putting it in the slot. It will boot
+using the front serial port as console. Since this is the first firebox
+capable of supporting a 64bit CPU it can also run 64bit Nano images *if*
+one is fitted.
+
+See: `Installing\_pfSense#Embedded <Installing_pfSense#Embedded>`__
+
+Further Enhancements
+~~~~~~~~~~~~~~~~~~~~
+
+Installing lcdproc and the SDECLCD driver
+-----------------------------------------
+
+Work in Progress
+~~~~~~~~~~~~~~~~
+
+I have avoided putting anything in the section for sometime now because
+the current state of various options for running the LCD is not ideal.
+However it is possible to have it run reliably and it's better to have
+it show something that just run with the backlight on showing 'Booting
+OS...' continuously.
+
+To skip the background I am currently running this install method on all
+my boxes and it works well. I've not had any reports of it failing. This
+is currently what I'm recommending. See this forum post:
+http://forum.pfsense.org/index.php/topic,7920.msg344513.html#msg344513
+
+Current State
+~~~~~~~~~~~~~
+
+The original driver that enabled the LCD on the firebox X-Core was
+written by user ridnhard19 way back in 2008 (huge thanks to him!) and
+was distributed via a tar ball. This worked well for years and has been
+updated several times to include support for the backlight and the
+cursor buttons but it required some command line work and, more
+importantly, would not survive a firmware update. For reference the most
+recent version of that file, lcdd5.tar, is
+`here <http://forum.pfsense.org/index.php/topic,7920.msg207659.html#msg207659>`__.
+
+More recently lcdproc pfSense package was forked to update it and
+include support for more hardware. At that time the driver for the
+firebox LCD, sdeclcd, was included. Later the driver was re-written to
+comply with the lcdproc specs by user fmertz (huge thanks to him!). The
+driver has now been included upstream in the lcdproc source. :) This
+seemed like the answer to all the problems with the original method but
+there is a problem. At boot time the package is restarted several times
+in rapid succession and is not able to keep up. Depending on the firebox
+you're using and what other packages you have installed you may end up
+with two servers and no client running or just the client or other
+combinations. Also it will probably crash out (the client or server)
+after a few days. This is not really a problem, it doesn't effect the
+running of the box, but pretty far from ideal. You can read through the
+lcdprocdev thread in the packages subforum to see the many many thinks
+that have been tried to solve this. In the mean time the hybrid start
+method linked to above is a good compromise.
+
+Controlling hardware with WGXepc
+--------------------------------
+
+Installing
+^^^^^^^^^^
+
+WGXepc started out as a few lines of code to look for the connections
+used to drive the arm/disarm LED, much of which was borrowed from
+lcdproc. After much probing the locations of the correct registers were
+found on the X-e boxes and shortly after on the X-peak and X-core, hence
+the name. Since there was some demand I attempted to tidy up the code
+and made it more user friendly. I had first thought the LED would be
+driven via the SuperIO chip so included code to drive that. During that
+test I found that the fan speed could be controlled on the X-e boxes. I
+am no programmer and this code is testament to that!
+
+WGXepc has been tested on 2.0.x and 2.1, 32bit only. I have not been
+able to test the current version, 0.8, on an X-Core box as I no longer
+have a functioning one. :( There is no change to that code though.
+Earlier versions are available in the related thread. (Edit: Now tested
+as working)
+
+Source code is
+`here <https://sites.google.com/site/pfsensefirebox/home/WGXepc.c>`__.
+
+The different platforms allow different levels of control so not all
+functions work on all boxes. The program details its abilities if it's
+called with no argument, e.g.
+
+::
+
+    [2.1-RELEASE][root@testbox.localdomain]/conf(18): ./WGXepc
+    Found Firebox X-E
+    WGXepc Version 0.9 28/6/2013 stephenw10
+    WGXepc can accept two arguments:
+     -f (fan) will return the current and minimum fan speed or if followed
+        by a number in hex, 00-FF, will set it.
+     -l (led) will set the arm/disarm led state to the second argument:
+        red, green, red_flash, green_flash, red_flash_fast, green_flash_fast, off
+     -b (backlight) will set the lcd backlight to the second argument:
+        on or off. Do not use with LCD driver.
+     -t (temperature) shows the current CPU temperature reported by the
+        SuperIO chip. X-e box only.
+    Not all functions are supported by all models
+
+The program can be used directly from the command line and called at
+boot time to switch the arm/disarm led to green, for example.
+
+You can fetch it directly from the firebox:
+
+-  Re-mount the filesystem RW if you're running Nano.
+
+::
+
+     /etc/rc.conf_mount_rw 
+
+-  Fetch the program to /conf.
+
+::
+
+    fetch -o /conf https://sites.google.com/site/pfsensefirebox/home/WGXepc
+
+-  Set the file permissions to allow it to run.
+
+::
+
+    chmod 0755 /conf/WGXepc
+
+-  Test the program.
+
+::
+
+     /conf/WGXepc -l green
+
+Remember to set the filesystem back to RO if you don't plan on rebooting
+any time soon.
+
+To make changes at boot time install the shellcmd package from the
+webgui and add commands as you wish.
+
+Testing
+^^^^^^^
+
+If you have modified the cooling in the box such as reducing the fan
+speed or swapped out the CPU for a more powerful one it's a good idea to
+test the maximum temperature is still within a sensible value.
+
+You can do this by monitoring the cpu temperature while forcing the CPU
+to 100%. On the XTM5 box you can use the coretemp module to directly
+read the CPU core. This is built into 2.1 already and information is on
+the forum to read it in 2.0.X. All the other boxes require the use of an
+older program to read the thermal sensor connected to the SuperIO chip,
+mbmon. Remount the filesystem RW (if you're running Nano) then install
+it:
+
+::
+
+    pkg_add -r ftp://ftp-archive.freebsd.org/pub/FreeBSD-Archive/ports/i386/packages-8.3-release/Latest/mbmon.tbz
+
+To burn up all free CPU cycles you can use CPUburn, similarly installed:
+
+::
+
+    pkg_add -r ftp://ftp-archive.freebsd.org/pub/FreeBSD-Archive/ports/i386/packages-8.3-release/Latest/cpuburn.tbz
+
+Then issue a rehash so pfSense knows where the new binaries are:
+
+::
+
+    rehash
+
+Now you can run a cpuburn instance (there are a few types to choose
+from) in the background:
+
+::
+
+    burnP6 &
+
+Monitor the system temperature:
+
+::
+
+    mbmon -I
+
+         Temp.= 39.0, 27.5, 40.0; Rot.= 5672, 5443, 5232
+         Vcore = 1.15, 2.21; Volt. = 3.38, 5.03, 12.10, -12.04, -0.67
+
+You will notice that some of the temperatures shown are clearly wrong.
+mbmon reads all the temperature registers from the the chip even if
+there is no sensor. Use Ctl-C to quit mbmon and **killall burnP6** to
+quit cpuburn (if you used the P6 variant). More detail is
+`here <http://forum.pfsense.org/index.php/topic,25011.msg132050.html#msg132050>`__.
+
+Further Reading
+---------------
+
+The original forum thread for the initial LCD driver
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+http://forum.pfsense.org/index.php/topic,7920.0.html
+
+The forum thread for the re-written LCD driver, now included in lcdproc-dev
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+http://forum.pfsense.org/index.php/topic,44034.msg239685.html#msg239685
+
+The original forum thread detailing the control of the arm/disarm LED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+http://forum.pfsense.org/index.php/topic,32013.0.html
+
+Acknowledgements
+----------------
+
+Many people have put many hours into making these boxes work. Some
+people have made huge contributions, specifically:
+
+ridnhard19 who wrote the original SDECLCD driver for lcdproc.
+
+jjgoessens who added support for the cursor controls and LCD backlight.
+
+fmertz who re-wrote the driver to meet the lcdproc project requirements
+(it's now included upstream).
+
+iFloris who helped finding the arm/disarm LED on the X-Core.
+

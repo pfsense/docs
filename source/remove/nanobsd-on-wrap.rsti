@@ -1,0 +1,7 @@
+NanoBSD on WRAP
+===============
+
+The PC Engines WRAP has been EOL for quite some time and is no longer a
+feasible platform for current versions of pfSense. Consider upgrading to
+a newer board that is still supported and in production, such as a PC
+Engines APU.

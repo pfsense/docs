@@ -1,0 +1,22 @@
+.. include:: /substitutions.rsti
+
+Full Backup
+===========
+
+The Full Backup method has been removed from pfSense 2.3. Please use the
+regular `Configuration Backup <Configuration_Backup_and_Restore>`__
+instead. The *config.xml* backup contains all user settings and is
+capable of restoring a router to a completely functional state in nearly
+every case.
+
+The Full Backup function was retired because it was a source of several
+problems. It did not clean up files that were not in the backup, it
+merely overlayed the backup on top of the running system. Files that
+were left over from before the restore could still cause unintended
+behavior, and it could leave package files in an inconsistent state,
+among other problems.
+
+If there are custom files on the firewall that are not backed up by the
+config.xml method, consider using `System Patches <System_Patches>`__ or
+the Backup package to handle those files instead.
+

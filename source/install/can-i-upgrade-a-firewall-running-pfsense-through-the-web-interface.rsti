@@ -1,0 +1,7 @@
+.. include:: /substitutions.rsti
+
+Can I upgrade a firewall running pfSense through the web interface
+==================================================================
+
+Yes, please view the `Upgrade Guide <Upgrade_Guide>`__ for information.
+

@@ -1,0 +1,157 @@
+.. include:: /substitutions.rsti
+
+Creating a DNS Black Hole for Captive Portal Clients
+====================================================
+
+If all portal clients must be directed to a single page, but the clients
+can fail to redirect due to flaky DNS resolution or missing DNS entries,
+a DNS “Black Hole” can be setup that will resolve all queries to a
+single IP address.
+
+Setup BIND
+==========
+
+On FreeBSD
+----------
+
+On a full FreeBSD system, BIND is included in the base system on version
+9.x and earlier. On FreeBSD 10.x and later, bind can be installed from
+ports.
+
+On pfSense
+----------
+
+To setup the BIND service on a pfSense box, the DNS forwarder must first
+be disabled or moved to another port. Then add the BIND package. This
+can be installed from the CLI or by using the GUI package
+
+| ``pkg_add -r ``\ ```ftp://ftp-archive.freebsd.org/pub/FreeBSD-Archive/ports/i386/packages-8.3-release/Latest/bind99.tbz`` <ftp://ftp-archive.freebsd.org/pub/FreeBSD-Archive/ports/i386/packages-8.3-release/Latest/bind99.tbz>`__
+| ``rehash``
+| ``mkdir -p /etc/namedb/``
+
+This configuration is not currently possible in the BIND pfSense package
+GUI without using a manual configuration. The zone file could be created
+manually and referenced in advanced options of the package.
+
+Create the configuration file
+=============================
+
+Edit /etc/namedb/named.conf (use vi, ee, or scp the file over). If an
+existing BIND config is present, it can be altered to work with this
+zone. A basic config is given here that will let it run, but it can be
+tweaked in various ways.
+
+| ``options {``
+| ``   directory   ``\ “``/etc/namedb``”\ ``;``
+| ``   pid-file    ``\ “``/var/run/named/pid``”\ ``;``
+| ``   allow-query { any; };``
+| ``   allow-recursion { any; };``
+| ``};``
+
+| ``zone ``\ “``.``”\ `` {``
+| ``   type master;``
+| ``   file ``\ “``/etc/namedb/db.catchall``”\ ``;``
+| ``};``
+
+Create the zone file
+====================
+
+Edit /etc/namedb/db.catchall - use the IP address of the web server in
+place of 192.168.1.5 in the blow example.
+
+| ``$TTL    604800``
+| ``@       IN      SOA     . root.localhost. (``
+| ``                              1         ; Serial``
+| ``                         604800         ; Refresh``
+| ``                          86400         ; Retry``
+| ``                        2419200         ; Expire``
+| ``                         604800 )       ; Negative Cache TTL``
+| ``   IN  NS  .``
+| ``.  IN  A   192.168.1.5``
+| ``*. IN  A   192.168.1.5``
+
+Start BIND
+==========
+
+Start the bind service by hand for now (a startup script will be covered
+later):
+
+``# named -u bind``
+
+Initial Testing
+===============
+
+Test a host that exists:
+
+| ``# host www.google.com 127.0.0.1``
+| ``Using domain server:``
+| ``Name: 127.0.0.1``
+| ``Address: 127.0.0.1#53``
+| ``Aliases: ``
+| ``www.google.com has address 192.168.1.5``
+
+Test a host that does not exist:
+
+| ``# host www.rjksjklghhslkrgjhslhrgk.com 127.0.0.1``
+| ``Using domain server:``
+| ``Name: 127.0.0.1``
+| ``Address: 127.0.0.1#53``
+| ``Aliases: ``
+| ``www.rjksjklghhslkrgjhslhrgk.com has address 192.168.1.5``
+
+Adjust the web server
+=====================
+
+If the \*. record is pointed at the web server directly, ensure that the
+web server is configured to answer for all hostnames, and not just one
+virtual host.
+
+It is probably also advisable to setup a forward for non-existing files
+to /, that way if someone requests a full URL, they won't be greeted
+with a 404 error, but get the index page instead. That should only
+matter if they request a page after the initial portal redirect.
+
+Configure a BIND startup script
+===============================
+
+A simple startup script like this can be placed in
+/usr/local/etc/rc.d/named.sh :
+
+| ``#!/bin/sh``
+| ``rc_start() {``
+| ``   # start``
+| ``   if [ "" = ``\ “```ps``\ `` ``\ ``auxwww``\ `` ``\ ``|``\ `` ``\ ``grep``\ `` ``\ ``'[n]amed``\ `` ``\ ``'``\ `` ``\ ``|``\ `` ``\ ``awk``\ `` ``\ ``'{print``\ `` ``\ ``$2}'```”\ `` ]; then``
+| ``       /usr/local/sbin/named -u bind``
+| ``   fi``
+| ``}``
+| ``rc_stop() {``
+| ``   killall -9 named 2>/dev/null``
+| ``   wait``
+| ``}``
+| ``case $1 in``
+| ``   start)``
+| ``       rc_start``
+| ``       ;;``
+| ``   stop)``
+| ``       rc_stop``
+| ``       ;;``
+| ``   restart)``
+| ``       rc_stop``
+| ``       rc_start``
+| ``       ;;``
+| ``esac``
+
+Configure DHCP
+==============
+
+Next, configure the DHCP service for the Captive Portal subnet to hand
+out the newly created DNS server to the clients.
+
+Final Testing
+=============
+
+The only step left is to try it on the clients. Fire up a browser, try a
+non-existant domain (www.kjrbnglakjrghlakrhgalkujerhghjralkrhgl.com for
+example) and the browser should be redirected to the target web server
+no matter what domain was requested.
+

@@ -1,0 +1,12 @@
+ProxyServerModSecurity package
+==============================
+
+From the package description in the integrated package manager:
+
+“ModSecurity is a web application firewall that can work either embedded
+or as a reverse proxy. It provides protection from a range of attacks
+against web applications and allows for HTTP traffic monitoring, logging
+and real-time analysis. In addition this package allows URL forwarding
+which can be convenient for hosting multiple websites behind pfSense
+using 1 IP address.”
+

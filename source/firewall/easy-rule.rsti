@@ -1,0 +1,16 @@
+.. include:: /substitutions.rsti
+
+Easy Rule
+=========
+
+The Easy Rule system makes it easy to add firewall rules when viewing
+the output of the firewall logs (**Status > System Logs**, **Firewall**
+Tab).
+
+The **Easy Rule** page in the GUI will only display a confirmation or
+error output when rules could not be added.
+
+See `Firewall Logs <Firewall_Logs>`__ and `Adding Rules With
+easyrule <Adding_Rules_With_easyrule>`__ for more details on using Easy
+Rule.
+

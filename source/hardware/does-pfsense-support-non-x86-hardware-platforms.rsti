@@ -1,0 +1,21 @@
+.. include:: /substitutions.rsti
+
+Does pfSense support non-x86 hardware platforms
+===============================================
+
+Yes, pfSense also supports `ARM
+architecture <https://en.wikipedia.org/wiki/ARM_architecture>`__.
+Specifically, pfSense currently supports 32-bit ARM platforms on the
+following products:
+
+-  `SG-1000 <https://www.netgate.com/solutions/pfsense/sg-1000.html>`__
+   - First ARM based pfSense appliance, running single core ARM
+   Cortex-A8 in the TI AM3552 SoC.
+-  `SG-3100 <https://www.netgate.com/solutions/pfsense/sg-3100.html>`__
+   - Running dual core ARM v7 Cortex-A9 in the Marvell Armada 385 SoC.
+
+Near future support for ARM64 is planned, starting with the `Marvell
+Armada
+3720 <https://www.marvell.com/embedded-processors/armada-3700/>`__ in
+the GlobalScale `espresso.bin <http://espressobin.net/>`__ appliance.
+

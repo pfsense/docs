@@ -1,0 +1,49 @@
+Managing Lists of Items on pfSense
+==================================
+
+The pfSense WebGUI has a common set of icons which are used for managing
+lists and collections of objects throughout the firewall. Not every icon
+is used in every page, but their meanings are consistent based on the
+context in which they are seen.
+
+-  |+| (+) icon - Add an item
+
+    At the top of a list of ordered items, the + will add an item to the
+    beginning of the list; at the bottom, the + will add to the end. On
+    unordered lists the top and bottom + will simply add a new item.
+
+-  |e| (e) icon - Edit an entry
+-  |x| (x) icon - Delete an entry
+-  |up| (up) - Move an item up in an ordered list
+-  |down| (down) - Move an item down in an ordered list
+
+    When dealing with certificates, the down arrow may also indicate
+    “download”.
+
+-  `17px\|alt=“left pointing triangle”\|left pointing
+   triangle <Image:icon_left.png>`__ (left pointing triangle) - used for
+   moving items.
+
+    When working with an ordered list, selected item(s) will be moved to
+    the row above this arrow when clicked.
+    When working with side-by-side lists, this button will move an item
+    from the right list to the left list.
+
+-  `17px\|alt=“right pointing triangle”\|right pointing
+   triangle <Image:icon_right.png>`__ (right pointing triangle) - used
+   for moving items.
+
+    When working with side-by-side lists, this button will move an item
+    from the left list to the right list.
+
+
+.. |+| image:: icon_plus.png
+   :width: 17px
+.. |e| image:: icon_e.png
+   :width: 17px
+.. |x| image:: icon_x.png
+   :width: 17px
+.. |up| image:: icon_up.png
+   :width: 17px
+.. |down| image:: icon_down.png
+   :width: 17px

@@ -1,0 +1,18 @@
+Is there IPv6 support available
+===============================
+
+IPv6 support is available in current stable releases. See the release
+notes for more details. `Versions of pfSense and
+FreeBSD <Versions_of_pfSense_and_FreeBSD>`__
+
+For the latest info, see the `IPv6 board on the
+forum <http://forum.pfsense.org/index.php/board,52.0.html>`__. IPv6 is
+used in production by a number of locations, including all of our
+datacenters. This very site as well as all our other sites are reachable
+via IPv6 going through pfSense, and have been since mid 2011.
+
+By default all IPv6 is dropped since overly permissive rulesets can
+otherwise allow IPv6 traffic and that is likely undesirable in most
+cases. This behavior can be disabled under **System > Advanced** on the
+**Networking** tab.
+

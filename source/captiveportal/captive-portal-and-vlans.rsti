@@ -1,0 +1,8 @@
+.. include:: /substitutions.rsti
+
+Captive Portal and VLANs
+========================
+
+There are no limitations on the use of VLANs with Captive Portal on any
+currently supported release.
+

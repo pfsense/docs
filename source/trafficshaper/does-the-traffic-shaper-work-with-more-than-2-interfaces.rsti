@@ -1,0 +1,8 @@
+.. include:: /substitutions.rsti
+
+Does the traffic shaper work with more than 2 interfaces
+========================================================
+
+In current versions of pfSense, the traffic shaper is capable of
+accommodating multiple WANs, multiple LANs, a combination of the two,
+and any other multi-interface deployment.

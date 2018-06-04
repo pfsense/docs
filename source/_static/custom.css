@@ -1,0 +1,45 @@
+/* feedback form */
+.rst-content .feedback {
+  background-color: #e3e3e3;
+  margin-top: 15px;
+}
+
+.rst-content .feedback .admonition-title {
+  background-color: #4e4a4a;
+}
+
+.rst-content .feedback > div > form > fieldset {
+  max-width: 100%;
+}
+
+.rst-content .feedback li.hs-form-radio:first-child {
+  width: 50px;
+  float: left;
+}
+
+.rst-content .feedback input[type=email].hs-input {
+  width:90%;
+}
+
+.rst-content .feedback .hs-button {
+  background-color: #424242;
+  padding: 10px 30px;
+  border: 0;
+  color: #fff;
+  margin-top: 5px;
+}
+
+/* code styles */
+pre.literal-block {
+    font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+    padding: 12px 12px !important;
+    font-size: 12px;
+}
+
+/* override table width restrictions */
+@media screen and (max-width: 768px) {
+  img {
+    width: auto;
+    height: auto;
+  }
+}

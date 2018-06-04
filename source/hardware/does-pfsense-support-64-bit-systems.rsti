@@ -1,0 +1,17 @@
+.. include:: /substitutions.rsti
+
+Does pfSense support 64 bit systems
+===================================
+
+Yes. All supported releases of pfSense are 64-bit capable when using
+pfSense images labeled with
+“`amd64 <http://en.wikipedia.org/wiki/X86-64>`__” for both Intel and AMD
+CPUs using the AMD64 architecture, also known as x86-64.
+
+32-bit images and support (i386) are deprecated with the pfSense
+2.4-RELEASE and from it 64-bit systems are be supported exclusively.
+
+32-bit images can run on 64-bit hardware, but this is not recommended
+and should not be done. If the hardware is 64-bit capable, run 64-bit
+images.
+

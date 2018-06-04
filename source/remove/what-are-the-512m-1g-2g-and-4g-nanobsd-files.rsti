@@ -1,0 +1,16 @@
+These numbers represent the size of the storage media to be used for the
+installation, commonly a Compact Flash (CF) card.
+
+These are disk images, and can be `written out directly to the media
+with a utility <Writing_Disk_Images>`__; There is no installation
+routine.
+
+The images are identical in functionality and features, only the storage
+medium size is different.
+
+A smaller image may be used on a larger card, for example a 2GB NanoBSD
+image on a 4GB card, in cases where the CF size is slightly smaller than
+the appropriate image and it will not fit. Also some cards have wear
+leveling will will remap unused portions of the card as they die off,
+allowing a smaller image to work for a longer time.
+

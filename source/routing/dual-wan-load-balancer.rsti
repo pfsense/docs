@@ -1,0 +1,8 @@
+.. include:: /substitutions.rsti
+
+Dual WAN Load Balancer
+======================
+
+This type of Load Balancing is outgoing over multiple WAN links. If one
+link fails the other will take over. See :doc:`Multi-WAN </routing/multi-wan>`
+

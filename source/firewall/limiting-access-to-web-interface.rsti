@@ -1,0 +1,113 @@
+.. include:: /substitutions.rsti
+
+Limiting Access to the WebGUI
+=============================
+
+Normally to limit access to the web interface, firewall rules are
+configured accordingly to only permit access from certain IP addresses
+or subnets. To block access from the LAN, first ensure there are
+appropriate rules in place to allowing access, then disable the
+anti-lockout rule under **System > Advanced**, **Firewall/NAT** tab. The
+`pfSense book <http://pfsense.org/book>`__ covers that scenario in
+detail. **For a normal firewall, the instructions on this page should
+not be followed.** Simply restrict access using firewall rules.
+
+This page documents limiting access when it cannot be done using
+firewall rules. In some scenarios, pfSense is deployed solely as a
+router, with filtering disabled, where very high throughput is required
+and filtering is undesirable (such as the core or edge of some small to
+mid sized ISPs). With filtering disabled, firewall rules cannot be used
+to restrict access.
+
+There are two possible solutions for restricting access to the web
+interface.
+
+Limiting source IP in Lighttpd
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Hack the source code to include IP restrictions in the Lighttpd web
+server configuration, the server that powers the web interface. Add a
+section such as this:
+
+| ``$HTTP[``\ “``remoteip``”\ ``] !~ ``\ “``192.168.1.5|192.168.1.50``”\ `` {``
+| ``       url.access-deny = ( "" )``
+| ``}``
+
+Which will deny access to all source IPs other than 192.168.1.5 and
+192.168.1.50. To get fancier than that, `see here for more
+information <http://www.cyberciti.biz/tips/lighttpd-restrict-or-deny-access-by-ip-address.html>`__.
+
+To change the configuration pfSense generates for lighttpd, edit the
+file */etc/inc/system.inc* via a SSH session, or under **Diagnostics >
+Edit file** in the web interface. Scroll down to the lines reading:
+
+| ``#### CGI module``
+| ``cgi.assign                 = ( ``\ “``.cgi``”\ `` => "" )``
+
+Which are lines 784 and 785 in 1.2.3 release. Under those lines, and
+above the “EOD;” line following it on line 787, add the following three
+lines:
+
+| ``$HTTP[``\ “``remoteip``”\ ``] !~ ``\ “``192.168.1.5|192.168.1.50``”\ `` {``
+| ``       url.access-deny = ( "" )``
+| ``}``
+
+So that section of the file looks like this:
+
+| ``#### CGI module``
+| ``cgi.assign                 = ( ``\ “``.cgi``”\ `` => "" )``
+| ``$HTTP[``\ “``remoteip``”\ ``] !~ ``\ “``192.168.1.5|192.168.1.50``”\ `` {``
+| ``       url.access-deny = ( "" )``
+| ``}``
+| ``EOD;``
+
+Then save the changes and choose option *11* at the console (or reboot)
+to apply the configuration change.
+
+Note: If locked out by these changes, log in via SSH before applying the
+changes. Then *services.inc* can be edited via the command line to fix
+or revert the modifications.
+
+Limiting web access to SSH port forwarding
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is the most secure solution since it requires key authentication,
+and prevents anyone from binding to the Lighttpd port at all. Modify the
+lighttpd configuration to bind only to *127.0.0.1* (localhost) so it is
+not accessible over the network, and use a SSH tunnel to access the web
+interface.
+
+First, enable SSH under **System > Advanced**, and only allow key based
+authentication. It's probably best to run on a port other than 22, just
+to avoid the log noise that SSH brute force attempts will generate. With
+password authentication disabled there are no worries about SSH brute
+force attacks succeeding regardless, but a different port will prevent
+the otherwise inevitable log noise.
+
+To bind lighttpd to only 127.0.0.1, edit */etc/inc/system.inc* and find
+the line showing the following::
+
+  server.port                = 80
+
+Right beneath that line, add the following line::
+
+  server.bind = “127.0.0.1”
+
+Then save the changes, and restart the web interface via option *11* at
+the console.
+
+Note: If locked out by these changes, log in via SSH before applying the
+changes. Then *services.inc* can be edited via the command line to fix
+or revert the modifications.
+
+Then to access the web interface, connect via SSH tunnel. For example if
+using HTTPS for the web interface, the following PuTTY configuration
+will forward local port 4443 to 127.0.0.1:443 on the firewall.
+
+.. image:: /_static/firewall/Putty-tunnel.png
+
+Click Add after filling in the source and destination information, then
+Open and log into the SSH session.
+
+After connecting with that configuration, it is possible to browse to
+https://localhost:4443 on the computer where the SSH client is running.

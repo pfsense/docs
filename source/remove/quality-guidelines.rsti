@@ -1,0 +1,56 @@
+Documentation Quality guidelines
+================================
+
+Overview
+--------
+
+This document aims to give an idea of what types of information should
+be in articles to keep them as useful as possible for other users of the
+Wiki.
+
+For information about style and formatting, see `Wiki Style
+Guide <Wiki_Style_Guide>`__.
+
+What to include in articles
+---------------------------
+
+-  Concise, detailed information - the more accurate the information,
+   the more useful it is.
+-  Good spelling and
+   `grammar <https://www.youtube.com/watch?v=8Gv0H-vPoDc>`__
+-  `Good formatting <Wiki_Style_Guide>`__
+-  Proper categories to classify the article, for example
+   [[Category:FAQ]]. See Special:Categories for a list.
+-  Appropriate `Templates <Template>`__ for the content (e.g. {{HOWTO}},
+   {{DEVELOPMENT}}, or {{Contributed}}). See `Template <Template>`__ for
+   a list.
+
+What not to include in articles
+-------------------------------
+
+-  Poor grammar
+-  Inconsistent or poor backing data
+-  Disparaging comments
+-  Ambiguity - try to make articles clear so there isn't any confusion
+-  Avoid creating a category for a single article if possible. If more
+   will be added, then it is OK.
+-  Redundant information already covered in other articles. Especially
+   in How-To articles.
+-  Do not start a how-to with installing pfSense or performing other
+   basic tasks. Make assumptions and link to other articles for topics
+   already covered elsewhere. There is no need to reinvent the wheel and
+   have multiple confusing copies of the same information. Keep How-To
+   articles as concise as possible!
+
+Where to see why an article was flagged
+---------------------------------------
+
+Articles flagged for cleanup should have corresponding comments on the
+talk page discussing what's wrong with them.
+
+Flagged articles
+----------------
+
+To see a list of all articles flagged for cleanup, `click
+here <Special:Whatlinkshere/Template:Cleanup>`__.
+

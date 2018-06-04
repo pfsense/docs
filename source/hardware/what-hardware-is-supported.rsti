@@ -1,0 +1,14 @@
+.. include:: /substitutions.rsti
+
+What hardware is supported
+==========================
+
+At a minimum, everything supported by the FreeBSD version used by the
+installed pfSense version is supported.
+
+See the table at `Versions of pfSense and
+FreeBSD <Versions_of_pfSense_and_FreeBSD>`__ to find the FreeBSD version
+which corresponds to a given release, and links to hardware support for
+each version may be found in that table on the **FreeBSD Release**
+column.
+

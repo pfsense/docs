@@ -1,0 +1,9 @@
+CPU Load
+========
+
+This displays a live SVG graph of the CPU usage on the pfSense firewall.
+
+NOTE: To view the graph, a browser must support SVG images. Current
+versions of `nearly all browsers support
+SVG <http://caniuse.com/#feat=svg>`__.
+

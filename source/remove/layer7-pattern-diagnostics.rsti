@@ -1,0 +1,7 @@
+This page allows new Layer 7 pattern files to be uploaded for use with
+the Layer 7 protocol classifier located under **Firewall > Traffic
+Shaper**.
+
+Click **Browse**, locate the file, and then click **Upload**.
+
+Shaping <Category:Traffic_Shaping>`__

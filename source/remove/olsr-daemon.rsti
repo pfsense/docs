@@ -1,0 +1,11 @@
+OLSR Daemon
+===========
+
+The Optimized Link State Routing daemon is a way to implement dynamic
+mesh routing, however it is not in very wide use.
+
+Its main use is for building wireless mesh networks.
+
+This daemon has been removed from the pfSense base system and now exists
+as a package.
+

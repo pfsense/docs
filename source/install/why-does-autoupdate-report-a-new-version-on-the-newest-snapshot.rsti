@@ -1,0 +1,10 @@
+.. include:: /substitutions.rsti
+
+Why does autoupdate report a new version on the newest snapshot?
+================================================================
+
+When installing from a snapshot, and then immediately checking for
+updates, the timestamps will be slightly different because the update
+files are built just after the ISO image. Once updated to a new firmware
+using the auto update function, then it will properly compare the two.
+

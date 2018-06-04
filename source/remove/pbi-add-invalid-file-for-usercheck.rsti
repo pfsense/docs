@@ -1,0 +1,36 @@
+Pbi add: Invalid file for usercheck
+===================================
+
+If he following error is received when (re)installing a package such as
+the OpenVPN Client Export package:
+
+| ``pbi_add: Invalid file for usercheck!``
+| ``of zip-3.0-amd64.pbi p7zip-9.20.1-amd64 failed!``
+| ``Installation aborted. Removing package...``
+
+It may be corrected by using the console/ssh shell to run:
+
+For i386:
+
+| ``fetch ``\ ```https://files.pfsense.org/packages/8/All/p7zip-9.20.1-i386.pbi`` <https://files.pfsense.org/packages/8/All/p7zip-9.20.1-i386.pbi>`__
+| ``rm -rf /var/db/pbi/installed/p7zip-9.20.1-i386/``
+| ``pbi_add -f --no-checksig p7zip-9.20.1-i386.pbi``
+| ``fetch ``\ ```https://files.pfsense.org/packages/8/All/zip-3.0-i386.pbi`` <https://files.pfsense.org/packages/8/All/zip-3.0-i386.pbi>`__
+| ``rm -rf /var/db/pbi/installed/zip-3.0-i386/``
+| ``pbi_add -f --no-checksig zip-3.0-i386.pbi``
+
+For amd64:
+
+| ``fetch ``\ ```https://files.pfsense.org/packages/amd64/8/All/p7zip-9.20.1-amd64.pbi`` <https://files.pfsense.org/packages/amd64/8/All/p7zip-9.20.1-amd64.pbi>`__
+| ``rm -rf /var/db/pbi/installed/p7zip-9.20.1-amd64/``
+| ``pbi_add -f --no-checksig p7zip-9.20.1-amd64.pbi``
+| ``fetch ``\ ```https://files.pfsense.org/packages/amd64/8/All/zip-3.0-amd64.pbi`` <https://files.pfsense.org/packages/amd64/8/All/zip-3.0-amd64.pbi>`__
+| ``rm -rf /var/db/pbi/installed/zip-3.0-amd64/``
+| ``pbi_add -f --no-checksig zip-3.0-amd64.pbi``
+
+Afterward, go to **System > Packages** and (re)install the package that
+failed.
+
+If that does not clear up the error, repeat that process for other PBI
+package(s) that were listed in the error.
+

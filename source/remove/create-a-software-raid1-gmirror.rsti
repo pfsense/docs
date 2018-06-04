@@ -1,0 +1,92 @@
+Create a Software RAID1 (gmirror)
+=================================
+
+.. raw:: mediawiki
+
+   {{HOWTO}}
+
+Creating a software RAID1 Array with pfSense
+--------------------------------------------
+
+On current releases, when the installer detects multiple disks in the
+system the first screen available provides the option **Setup GEOM
+Mirror**. Choose that option, pick the primary disk, the disk to use for
+the mirror copy, and then proceed with the installation as normal.
+
+The Quick/Easy install choice will target the GEOM mirror automatically.
+If using a custom install, be sure to choose the mirror as the target
+disk.
+
+Monitoring Array Status
+-----------------------
+
+There is a gmirror widget which can be used to view the status of an
+array.
+
+Notifications
+-------------
+
+Starting with pfSense 2.2, e-mail alerts will be sent if the status of
+an array changes.
+
+Managing drives / Replacing Drives
+----------------------------------
+
+Starting with pfSense 2.2, mirrors and their component drives may be
+managed in the GUI at **Diagnostics > GEOM Mirror**.
+
+If a drive fails, replace the drive, choose to have the mirror forget
+the old disk, and then add the new disk to the mirror.
+
+Older manual instructions
+-------------------------
+
+Even though the creation of an array is covered in the installer, some
+of the following manual commands are still useful to have here -
+especially the bits about what to do when replacing a drive.
+
+Creating a RAID1 Array with pfSense
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: mediawiki
+
+   {{Warn|Center|100|WARNING! THIS SECTION IS NOT A COMPLETE GUIDE.
+
+   This may break your car, eat your cat, submerge your basement in water, etc.  Don't blame us for damage, it's '''unsupported'''!}}
+
+This must be done **prior** to the installation. Creating a mirror from
+an existing drive which already contains data will corrupt areas of the
+drive and make an improper mirror configuration. Later versions of
+pfSense will fail to boot from such corrupt mirrors.
+
+These instructions assume that the first disk is ad0 and ad1 is the
+second IDE drive. SCSI drives will be da0 and da1. YMMV.
+
+-  Run the following commands to create the mirror :
+
+| ``sysctl kern.geom.debugflags=16         # Enable footshooting``
+| ``gmirror label -v -b round-robin pfSenseMirror /dev/ad0 # Tell gmirror to create raid0 array using /dev/ad0 as the first disk``
+| ``gmirror configure -a pfSenseMirror     # Tell geom to automatically rebuild array``
+| ``gmirror insert pfSenseMirror /dev/ad1      # Add the second disk to the mirror ``
+| ``gmirror status                 # Wait until the mirror builds``
+| ``exit                       # Exit when it's 100%``
+
+If it all went right, it should show a good mirror:
+
+| ``# gmirror status``
+| ``      Name    Status  Components``
+| ``mirror/pfSenseMirror  COMPLETE  ad0``
+| ``                                ad1``
+
+After creating the mirror, it may be selected as an installation target.
+
+Should a drive be lost, replace it physically and then run the following
+if it doesn't automatically try to rebuild:
+
+| ``gmirror forget pfSenseMirror /dev/ad1``
+| ``gmirror insert pfSenseMirror /dev/ad1``
+
+Check out `this
+article <http://www.google.com/url?sa=t&ct=res&cd=1&url=http%3A%2F%2Fwww.onlamp.com%2Fpub%2Fa%2Fbsd%2F2005%2F11%2F10%2FFreeBSD_Basics.html&ei=eZStRNHjB8KYaJzrwaAI&sig2=6zrC2Qt34476zBGvhB-uxA>`__
+which goes into a little more detail.
+

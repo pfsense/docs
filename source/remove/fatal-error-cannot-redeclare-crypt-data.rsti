@@ -1,0 +1,25 @@
+Fatal error: Cannot redeclare crypt data
+========================================
+
+If the following error is received after updating pfSense to
+2.1.2-RELEASE:
+
+| ``Fatal error: Cannot redeclare crypt_data() (previously declared in /etc/inc/crypt.inc:35)``
+| ``in /etc/inc/crypt_acb.php on line 43``
+
+It may be fixed by using the console/ssh shell, or **Diagnostics >
+Command** to run:
+
+``rm /etc/inc/crypt_acb.php /usr/local/pkg/autoconfig*``
+
+Make sure there are **no spaces** between the *g* and *\**. After
+running that command, reboot the firewall.
+
+If packages were installed installed, they may require a reinstall by
+going to **Diagnostics > Backup/restore** and clicking **Reinstall all
+packages**.
+
+Afterward, go to **System > Packages**. If no packages show installed,
+then first reinstall the **AutoConfigBackup** package and then any other
+packages that were missing.
+

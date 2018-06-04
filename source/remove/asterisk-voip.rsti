@@ -1,0 +1,158 @@
+Asterisk VoIP
+=============
+
+.. raw:: mediawiki
+
+   {{HOWTO}}
+
+The following are the details of my usage of pfSense and Asterisk for my
+phone service. It currently works flawlessly thanks to a SIP proxy
+called `siproxd <siproxd_package>`__ which is available as a package for
+pfSense. I spent a lot of time getting things to work properly so I hope
+this information is useful to the masses.
+
+AlmightyOatmeal
+
+Configure your Asterisk
+-----------------------
+
+Configure Ports
+~~~~~~~~~~~~~~~
+
+Configure your SIP and RTP ports. My SIP port is the default 5060 and
+RTP is between 10000 and 20000 for me. You can narrow this down
+considerably for I actually would need less than 10 ports open for RTP.
+
+Configure the WAN IP Address
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Also be sure to specify “externip” or “externhost” in sip.conf. I
+personally have externhost configured to a dyndns.org account that
+resolves to my WAN IP address.
+
+Configure NAT
+~~~~~~~~~~~~~
+
+Make sure you have “nat=yes” and “canreinvite=no” in sip.conf
+
+Configure your local network
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Make sure you have your localnet in sip.conf configured corresponding to
+your local network. You can use the RFC1918 method or CIDR method. I
+chose the later of the two for my network. Change accordingly.
+
+``localnet=192.168.1.0/24``
+
+Configure your SIP context
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In your SIP provider's context in sip.conf, make sure you have
+“outboundproxy=192.168.1.1”, replacing 192.168.1.1 with whatever your
+pfSense running siproxd IP address is. Here is my example context for
+use with BroadVoice:
+
+| ``[sip.broadvoice.com]``
+| ``type=peer``
+| ``user=phone``
+| ``host=sip.broadvoice.com``
+| ``outboundproxy=192.168.1.1``
+| ``fromdomain=sip.broadvoice.com``
+| ``fromuser=``\ 
+| ``secret=``\ 
+| ``username=``\ 
+| ``insecure=very``
+| ``context=ivr``
+| ``authname=``\ 
+| ``dtmfmode=inband``
+| ``dtmf=inband``
+| ``canreinvite=no``
+
+Please note that if you don't use Asterisk and use a softphone for your
+VoIP provider, you will use your pfSense IP address for the proxy
+instead of your VoIP provider.
+
+Configure pfSense firewall/NAT rules
+------------------------------------
+
+RTP
+~~~
+
+For this you will need the ports you setup in step 1.a above. I will be
+using my port configuration. Add a NAT rule for RTP. This is essential
+or you will have no audio or one way audio in your calls. Also change
+the NAT IP to whatever your Asterisk server is and change the
+description to something that makes sense for you.
+
+| ``Interface: WAN``
+| ``Protocol: UDP``
+| ``External port range: From: 10000``
+| ``External port range: To: 20000``
+| ``NAT IP: 192.168.1.50``
+| ``Local Port: 10000``
+| ``Description: Asterisk PBX - RTP``
+| ``Enable Auto-add a firewall rule to permit traffic through this NAT rule``
+
+SIP
+~~~
+
+For this you will need the ports you setup in step 1.a above. I will be
+using my port configuration. Add a NAT rule for SIP. This is essential
+or you won't be able to receive calls and you may have trouble
+registering with your SIP provider. Also change the NAT IP to whatever
+your Asterisk server is and change the description to something that
+makes sense for you. Code:
+
+| ``Interface: WAN``
+| ``Protocol: UDP``
+| ``External port range: From: 5060``
+| ``External port range: To: 5060``
+| ``NAT IP: 192.168.1.50``
+| ``Local Port: 5060``
+| ``Description: Asterisk PBX - SIP``
+| ``Enable Auto-add a firewall rule to permit traffic through this NAT rule``
+
+The SIP Proxy siproxd
+---------------------
+
+Install siproxd
+~~~~~~~~~~~~~~~
+
+Go to the pfSense web UI and going to System -> Packages. Hit the “+”
+button to the right of siproxd and let pfSense install the SIP proxy.
+
+Configure siproxd
+~~~~~~~~~~~~~~~~~
+
+Go back to the main pfSense web UI page then go to Services -> siproxd.
+It may be under Services -> SIP Proxy as well. Here is how I have my
+siproxd configured, be sure to change your “Outbound Proxy Hostname” to
+the hostname or IP (IP in my case) to your SIP provider. Options I don't
+specify here I leave blank or default.
+
+| ``Inbound Interface: LAN``
+| ``Outbound Interface: WAN``
+| ``Enable RTP Proxy: Enable``
+| ``RTP Port Range (lower): 7070``
+| ``RTP Port Range (upper): 7080``
+| ``Outbound Proxy Hostname: 206.15.136.221``
+
+Summary
+-------
+
+Basically when you make a call your Asterisk box will talk to the SIP
+proxy, the SIP proxy will then talk to your VoIP provider. When you
+receive a call your VoIP provider will talk directly with your Asterisk
+box (this is important for setting “externip” or “externhost” in
+sip.conf).
+
+And that's it! That is how my Asterisk/siproxd is configured and has
+been working beautifully for me for a long time now. No registrations
+problems, no call issues, no audio problems. Perfect. I hope this helps
+someone.
+
+I also have traffic shaping enabled to allow 4 simultaneous 64kbps calls
+to happen and guarantee bandwidth. Please refer to
+http://doc.pfsense.org/index.php/Traffic_Shaping_Guide for traffic
+shaping help.
+

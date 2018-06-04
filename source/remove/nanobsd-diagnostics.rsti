@@ -1,0 +1,44 @@
+NanoBSD Diagnostics
+===================
+
+The NanoBSD Diagnostics page (**Diagnostics > NanoBSD**) offers a few
+options specific to NanoBSD-based embedded systems.
+
+Bootup Information Section
+--------------------------
+
+Here, the current image size and **Bootup Slice** are displayed. The
+**Switch Slice** button can be pressed to cause the next boot to occur
+on the other OS slice.
+
+Media Read/Write Status Section
+-------------------------------
+
+Here, there is a button to switch the NanoBSD filesystem from read-only
+to read/write, and back. And a checkbox to keep the card in Read/Write
+mode all the time. This is not recommended, but can be useful in some
+cases.
+
+Duplicate bootup slice to alternate
+-----------------------------------
+
+Using the **Duplicate slice** button in this section allows cloning the
+current NanoBSD slice to the alternate slice. If the other slice is
+known to be corrupt, such as from a failed upgrade or a manual misstep,
+this can ensure that it is replaced with a known-working copy.
+
+View Upgrade Log
+----------------
+
+The NanoBSD upgrade log may be viewed by clicking **View Upgrade Log**.
+This log contains all of the details from the last attempted upgrade
+procedure. If an upgrade problem is encountered, provide this upgrade
+log when reporting an issue to a support resource.
+
+Periodic Data Backup
+--------------------
+
+On pfSense 2.0, there are also options to setup a periodic backup of RRD
+and DHCP lease files. On 2.1 this has been moved to **System >
+Advanced** on the **Miscellaneous** tab.
+
