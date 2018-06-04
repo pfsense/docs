@@ -8,13 +8,13 @@ Snort instance from a physical network interface. A snort instance can
 also manually started and stopped. If *Barnyard2* is configured on an
 interface, it can also be started or stopped.
 
-.. image:: /_static/ids-ips/SnortInterfacesRunning.png
+.. image:: /_static/ids-ips/snortinterfacesrunning.png
 
 The green icon indicates a running Snort process for the interface. To
 stop a running process, click the |service running| icon and wait for it
 to change to |service stopped| as shown below.
 
-.. image:: /_static/ids-ips/SnortInterfacesStart.png
+.. image:: /_static/ids-ips/snortinterfacesstart.png
 
 To add a new Snort configuration for an interface, click **Add**.
 

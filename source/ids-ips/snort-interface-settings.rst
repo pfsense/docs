@@ -15,7 +15,7 @@ Snort instance protects.
 **Description:** used to provide an optional friendly name for the
 interface.
 
-.. image:: /_static/ids-ips/SnortInterfacesEdit-generalSettings.png
+.. image:: /_static/ids-ips/snortinterfacesedit-generalsettings.png
 
 Alert Settings
 --------------
@@ -34,7 +34,7 @@ entries for the IP address it blocks. This should generally be enabled
 the packet that generated an alert will be blocked. The choices are
 SOURCE, DESTINATION or BOTH. BOTH is the recommended default.
 
-.. image:: /_static/ids-ips/SnortInterfacesEdit-alertSettings.png
+.. image:: /_static/ids-ips/snortinterfacesedit-alertsettings.png
 
 Detection Performance Settings
 ------------------------------
@@ -42,7 +42,7 @@ Detection Performance Settings
 **Search Method:** used to select the pattern matcher algorithm used by
 Snort in the signature detection engine.
 
-.. image:: /_static/ids-ips/SnortInterfacesEdit-detectionPerformanceSettings.png
+.. image:: /_static/ids-ips/snortinterfacesedit-detectionperformancesettings.png
 
 Choose the networks Snort should inspect and whitelist
 ------------------------------------------------------
@@ -74,9 +74,9 @@ the appropriate list in the drop-down selector. Snort must be restarted
 on the interface when making changes to the Pass List. View the contents
 of the selected list by clicking the **View List** button.
 
-.. image:: /_static/ids-ips/SnortInterfacesEdit-homeNetSettings.png
+.. image:: /_static/ids-ips/snortinterfacesedit-homenetsettings.png
 
 Choose a suppression or filtering file if desired
 -------------------------------------------------
 
-.. image:: /_static/ids-ips/SnortInterfacesEdit-suppressListSettings.png
+.. image:: /_static/ids-ips/snortinterfacesedit-suppresslistsettings.png

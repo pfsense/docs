@@ -8,7 +8,7 @@ Configuring High Availability
 book <http://pfsense.org/book>`__ should be consulted before configuring
 a high availability cluster utilizing CARP.
 
-.. image:: /_static/highavailability/CARP_Setup.png
+.. image:: /_static/highavailability/carp_setup.png
 
 Overview of a pfSense High Availability Setup
 ---------------------------------------------

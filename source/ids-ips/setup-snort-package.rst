@@ -40,7 +40,7 @@ Launching Snort configuration GUI
 To launch the Snort configuration application, navigate to **Services >
 Snort** from the menu in pfSense.
 
-.. image:: /_static/ids-ips/LaunchSnortGUI.png
+.. image:: /_static/ids-ips/launchsnortgui.png
 
 Setting up Snort package for the first time
 -------------------------------------------
@@ -60,7 +60,7 @@ included within the paid subscription for the Emerging Threats Pro
 rules. If the Emerging Threats Pro rules are enabled, the Emerging
 Threats Open rules are automatically disabled.
 
-.. image:: /_static/ids-ips/EnableSnortRulesDownloads.png
+.. image:: /_static/ids-ips/enablesnortrulesdownloads.png
 
 Once the desired rule sets are enabled, next set the interval for Snort
 to check for updates to the enabled rule packages. Use the **Update
@@ -72,7 +72,7 @@ time. So with a *12*-hour update interval selected, Snort will check the
 Snort VRT or Emerging Threats web sites at 3 minutes past midnight and 3
 minutes past noon each day for any posted rule package updates.
 
-.. image:: /_static/ids-ips/SnortRulesUpdateSettings.png
+.. image:: /_static/ids-ips/snortrulesupdatesettings.png
 
 Update the rules
 ----------------
@@ -95,7 +95,7 @@ packages have been successfully downloaded. The calculated MD5 hash and
 the file download date and time are shown. Also note the last update
 time and result are shown in the center of the page.
 
-.. image:: /_static/ids-ips/SnortUpdateRulesStatus2.png
+.. image:: /_static/ids-ips/snortupdaterulesstatus2.png
 
 Add Snort to an interface
 -------------------------
@@ -103,7 +103,7 @@ Add Snort to an interface
 Click the **Snort Interfaces** tab and then the |fa-plus| icon to add a new
 Snort interface.
 
-.. image:: /_static/ids-ips/SnortAddInterface.png
+.. image:: /_static/ids-ips/snortaddinterface.png
 
 A new Interface Settings tab will open with the next available interface
 automatically selected. The interface selection may be changed using the
@@ -112,7 +112,7 @@ provided for the interface. Other interface parameters may also be set
 on this page. Be sure to click the **SAVE** button down at the bottom of
 the page when finished.
 
-.. image:: /_static/ids-ips/SnortInterfaceSettings.png
+.. image:: /_static/ids-ips/snortinterfacesettings.png
 
 After saving, the browser will be returned to the **Snort Interfaces**
 tab. Note the warning icons in the image below showing no rules have
@@ -120,7 +120,7 @@ been selected for the new Snort interface. Those rules will be
 configured next. Click the |fa-pencil| icon (shown highlighted with a red box in
 the image below) to edit the new Snort interface again.
 
-.. image:: /_static/ids-ips/SnortInterfacesEdit.png
+.. image:: /_static/ids-ips/snortinterfacesedit.png
 
 Select which types of rules will protect the network
 ----------------------------------------------------
@@ -146,13 +146,13 @@ recommended as a starting point. Once experience with Snort has been
 gained in this network environment, blocking mode may be enabled and
 then move up to more restrictive IPS policies.
 
-.. image:: /_static/ids-ips/SnortChooseIPSPolicy.png
+.. image:: /_static/ids-ips/snortchooseipspolicy.png
 
 If the Snort VRT rules were not enabled, or if any of the other rule
 packages are to be used, then make the rule category selections by
 checking the checkboxes beside the rule categories to use.
 
-.. image:: /_static/ids-ips/SnortManualCategorySelection.png
+.. image:: /_static/ids-ips/snortmanualcategoryselection.png
 
 Be sure to click **SAVE** when finished to save the selection and build
 the rules file for Snort to use.
@@ -164,14 +164,14 @@ Click the **Snort Interfaces** tab to display the configured Snort
 interfaces. Click the |service stopped| icon (shown highlighted with a
 red box in the image below) to start Snort on an interface.
 
-.. image:: /_static/ids-ips/SnortInterfacesStart.png
+.. image:: /_static/ids-ips/snortinterfacesstart.png
 
 It will take several seconds for Snort to start. Once it has started,
 the icon will change to |service running| as shown below. To stop a
 running Snort instance on an interface, click the |service running|
 icon.
 
-.. image:: /_static/ids-ips/SnortInterfacesRunning.png
+.. image:: /_static/ids-ips/snortinterfacesrunning.png
 
 Select which types of signatures will protect the network
 ---------------------------------------------------------
@@ -189,14 +189,14 @@ disabled to enabled. The icon will change color to indicate the action
 taken. At the bottom of the page is a legend showing the four icon
 colors used to indicate the current state of a rule.
 
-.. image:: /_static/ids-ips/SnortRulesEnableDisable.png
+.. image:: /_static/ids-ips/snortrulesenabledisable.png
 
-.. image:: /_static/ids-ips/SnortRulesEnableDisable2.png
+.. image:: /_static/ids-ips/snortrulesenabledisable2.png
 
 Define servers to protect and improve performance
 -------------------------------------------------
 
-.. image:: /_static/ids-ips/SnortVariables.png
+.. image:: /_static/ids-ips/snortvariables.png
 
 Managing blocked hosts
 ----------------------
@@ -208,7 +208,7 @@ one of several pre-defined intervals. The blocking options for an
 interface are configured on the Snort **Interface Settings** tab for the
 interface.
 
-.. image:: /_static/ids-ips/SnortBlockedHosts.png
+.. image:: /_static/ids-ips/snortblockedhosts.png
 
 Managing Pass lists
 -------------------
@@ -223,7 +223,7 @@ click the |fa-pencil|. To delete a Pass List, click |fa-trash|. Note that a Pass
 may not be deleted if it is currently assigned to one or more Snort
 interfaces.
 
-.. image:: /_static/ids-ips/SnortPassLists.png
+.. image:: /_static/ids-ips/snortpasslists.png
 
 A default Pass List is automatically generated by Snort for every
 interface, and this default list is used when no other list is
@@ -245,7 +245,7 @@ critical addresses including the firewall interfaces themselves. This
 could result in being locked out of the firewall over the network! Only
 uncheck boxes in this section when absolutely necessary.
 
-.. image:: /_static/ids-ips/SnortPassListEdit.png
+.. image:: /_static/ids-ips/snortpasslistedit.png
 
 Click the **ALIASES** button to open a window showing previously defined
 aliases for selection. Remember to click **SAVE** to save changes.
@@ -256,7 +256,7 @@ aliases for selection. Remember to click **SAVE** to save changes.
    below. After assigning and saving the new Pass List, restart Snort on
    the affected interface to pick up the change.
 
-.. image:: /_static/ids-ips/SnortAssignPassList.png
+.. image:: /_static/ids-ips/snortassignpasslist.png
 
 Alert Thresholding and Suppression
 ----------------------------------
@@ -278,7 +278,7 @@ rule rather than to suppress it. Disabling the rule will remove it from
 Snort's list of match rules and therefore makes for less work Snort has
 to do.
 
-.. image:: /_static/ids-ips/SnortSuppressLists.png
+.. image:: /_static/ids-ips/snortsuppresslists.png
 
 On the Suppress List Edit page, a new suppress list entry may be
 manually added or edited. It is usually easier and faster to add
@@ -286,7 +286,7 @@ suppress list entries by clicking |fa-plus| shown with the alert entries on
 the **Alerts** tab. Remember to click the **SAVE** button to save
 changes when manually editing Suppress List entries.
 
-.. image:: /_static/ids-ips/SnortSuppressListEdit.png
+.. image:: /_static/ids-ips/snortsuppresslistedit.png
 
 Getting to know the alerts
 --------------------------
@@ -300,11 +300,11 @@ of the logged alerts to a local machine. The **CLEAR** button is used to
 erase the current alerts log. Destination IP's have been redacted from
 the screenshot.
 
-.. image:: /_static/ids-ips/SnortAlerts.png
+.. image:: /_static/ids-ips/snortalerts.png
 
 **Alert Details**
 
-.. image:: /_static/ids-ips/SnortAlertDetails.png
+.. image:: /_static/ids-ips/snortalertdetails.png
 
 The **Date** column shows the date and time the alert was generated. The
 remaining columns show data from the rule that generated the alert.
@@ -338,31 +338,31 @@ Enabling OpenAppID and its rules is done from Snort **Global Settings**.
 Select both checkboxes to enable detectors and rules download. Save the
 page.
 
-.. image:: /_static/ids-ips/Enablingopenappid.png
+.. image:: /_static/ids-ips/enablingopenappid.png
 
 After enabling the detectors and rules go to Snort Updates tab and click
 on **Update Rules**. Wait for all the rules to update. Once done, the
 page will show OpenAppID detectors and rules have been updated.
 
-.. image:: /_static/ids-ips/Updatedrules.png
+.. image:: /_static/ids-ips/updatedrules.png
 
 The following steps assume you have already added Snort interface to
 your LAN interface. Edit the LAN interface and navigate to LAN
 categories tab. When there, make sure the **Snort OPENAPPID Rules** from
 the right column are all selected and click **Save**.
 
-.. image:: /_static/ids-ips/Openappidrules.png
+.. image:: /_static/ids-ips/openappidrules.png
 
 Lastly, while still editing Snort interface, navigate to **LAN
 Preprocessor** tab.
 
-.. image:: /_static/ids-ips/Lanpreprocessor.png
+.. image:: /_static/ids-ips/lanpreprocessor.png
 
 Scroll down to **Application ID Detection** section and select both
 **Enable** and **AppID Stats Logging** checkboxes. Save the page the
 OpenApp ID will be activated on the Snort interface.
 
-.. image:: /_static/ids-ips/Lanpreprocessor2.png
+.. image:: /_static/ids-ips/lanpreprocessor2.png
 
 Viewing detected applications can be done from **Alerts** tab. The
 following screenshots are examples of identified services and

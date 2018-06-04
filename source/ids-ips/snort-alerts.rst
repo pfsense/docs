@@ -11,11 +11,11 @@ Use the **DOWNLOAD** button to download a gzip tar file containing all
 of the logged alerts to a local machine. The **CLEAR** button is used to
 erase the current alerts log.
 
-.. image:: /_static/ids-ips/SnortAlerts.png
+.. image:: /_static/ids-ips/snortalerts.png
 
 **Alert Details**
 
-.. image:: /_static/ids-ips/SnortAlertDetails.png
+.. image:: /_static/ids-ips/snortalertdetails.png
 
 The **Date** column shows the date and time the alert was generated. The
 remaining columns show data from the rule that generated the alert.

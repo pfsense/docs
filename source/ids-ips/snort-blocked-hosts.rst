@@ -16,4 +16,4 @@ lookup on the blocked host IP address when clicked. The
 |log_d| icon opens a small pop-up dialog with the reverse DNS
 information. The |log| icon will redirect to the :doc:`Diagnostics > DNS Lookup </dns/dns-lookup>` page.
 
-.. image:: /_static/ids-ips/SnortBlockedHosts.png
+.. image:: /_static/ids-ips/snortblockedhosts.png

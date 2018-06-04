@@ -51,7 +51,7 @@ flags** check *Any Flags*, and use a **State Type** of *Sloppy State*.
 The options for **TCP flags** and **State Type** can be found in the
 **Advanced Features** of the rules, under the normal options.
 
-.. image:: /_static/firewall/Asym_rule_advanced.png
+.. image:: /_static/firewall/asym_rule_advanced.png
 
 Alternate Causes
 ----------------

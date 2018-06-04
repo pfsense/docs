@@ -150,7 +150,7 @@ Back in the **Specify Conditions** window, click **Next** and select
 Put the new policy before policies preventing the connection. Mind the
 **Processing Order** field. Thanks to Dan for alerting me on this.
 
-.. image:: /_static/vpn/openvpn/Radiusvpn_999.jpg
+.. image:: /_static/vpn/openvpn/radiusvpn_999.jpg
 
 In the **Configure Authentication Methods** window, check **Unencrypted
 authentication (PAP, SPAP)**.
@@ -477,17 +477,17 @@ sure they are all checked (they are by default).
 The OpenVPN Configuration Setup will continue to install the
 certificates.
 
-.. image:: /_static/vpn/openvpn/radiusvpn-113-EN.png
+.. image:: /_static/vpn/openvpn/radiusvpn-113-en.png
 
 Stick to the defaults. When prompted for a password, enter the password
 used when exporting the Windows Installer from the **Client Export**
 tab.
 
-.. image:: /_static/vpn/openvpn/radiusvpn-114-EN.png
+.. image:: /_static/vpn/openvpn/radiusvpn-114-en.png
 
 Have the wizard automatically select the archive.
 
-.. image:: /_static/vpn/openvpn/radiusvpn-115-EN.png
+.. image:: /_static/vpn/openvpn/radiusvpn-115-en.png
 
 Change the cryptoapicert SUBJ
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -526,7 +526,7 @@ The user must now enter their username and password. This is only the
 username part, without the domain. The password is the user's Active
 Directory password.
 
-.. image:: /_static/vpn/openvpn/radiusvpn-118-EN.png
+.. image:: /_static/vpn/openvpn/radiusvpn-118-en.png
 
 If all is well, OpenVPN will connect to the pfSense router and minimize
 to the system tray.

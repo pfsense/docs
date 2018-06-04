@@ -15,7 +15,7 @@ Example
 
 The following is an example of the NUT status screen:
 
-.. image:: /_static/packages/Nut-status-example.png
+.. image:: /_static/packages/nut-status-example.png
 
 Troubleshooting
 ---------------

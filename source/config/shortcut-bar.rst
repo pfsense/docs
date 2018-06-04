@@ -10,7 +10,7 @@ performing configuration or troubleshooting.
 The shortcut bar appears at the top right of a page, and the icons vary
 depending on what options are available in the current area.
 
-.. image:: /_static/config/Shortcut_Bar_Example.png
+.. image:: /_static/config/shortcut_bar_example.png
 
 - |service running| or |service stopped| - Status of the current
   service (running or stopped).

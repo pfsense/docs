@@ -19,6 +19,6 @@ disabled to enabled. The icon will change color to indicate the action
 taken. At the bottom of the page is a legend showing the four icon
 colors used to indicate the current state of a rule.
 
-.. image:: /_static/ids-ips/SnortRulesEnableDisable.png
+.. image:: /_static/ids-ips/snortrulesenabledisable.png
 
-.. image:: /_static/ids-ips/SnortRulesEnableDisable2.png
+.. image:: /_static/ids-ips/snortrulesenabledisable2.png

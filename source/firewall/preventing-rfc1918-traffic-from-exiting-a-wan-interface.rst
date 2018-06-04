@@ -62,7 +62,7 @@ not desirable:
 
 This is an example of an RFC1918 address assigned to the pfSense WAN:
 
-.. image:: /_static/firewall/pfSense_WAN_RFC1918.png
+.. image:: /_static/firewall/pfsense_wan_rfc1918.png
 
 .. warning:: If either of these scenarios apply to the pfSense
    installation, do NOT add additional RFC1918 traffic blocking to the WAN

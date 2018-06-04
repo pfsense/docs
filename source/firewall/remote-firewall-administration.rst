@@ -73,7 +73,7 @@ Example Firewall Rule Setup
 *  **Destination port range**: *HTTPS* (Or the custom port)
 *  **Description**: *Allow remote management from anywhere (Dangerous!)*
 
-.. image:: /_static/firewall/RemoteAdminExample.png
+.. image:: /_static/firewall/remoteadminexample.png
 
 Strict Management
 -----------------

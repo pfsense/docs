@@ -64,7 +64,7 @@ Fill in the fields to **Create a new Certificate Authority**
 
 Click **Add New CA**
 
-.. image:: /_static/vpn/openvpn/OpenVPN_RA-CA.png
+.. image:: /_static/vpn/openvpn/openvpn_ra-ca.png
 
 Server Certificate
 ~~~~~~~~~~~~~~~~~~
@@ -75,7 +75,7 @@ changed.
 
 Click **Create new Certificate**
 
-.. image:: /_static/vpn/openvpn/OpenVPN_RA-Cert.png
+.. image:: /_static/vpn/openvpn/openvpn_ra-cert.png
 
 OpenVPN Server Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -125,11 +125,11 @@ Look at firewall rules (**WAN** and **OpenVPN** tabs)
 -  **WAN** tab rule should pass from any to the *OpenVPN* port on the
    *WAN address*
 
-.. image:: /_static/vpn/openvpn/OpenVPN_RA-WanRule.png
+.. image:: /_static/vpn/openvpn/openvpn_ra-wanrule.png
 
 -  **OpenVPN** tab rule should allow anything from any/to any
 
-.. image:: /_static/vpn/openvpn/OpenVPN_RA-OVPNRule.png
+.. image:: /_static/vpn/openvpn/openvpn_ra-ovpnrule.png
 
 Adjustments
 -----------
@@ -196,7 +196,7 @@ manager.
 -  Check **Click to create a user certificate**.
 -  Fill in the **Descriptive Name** as the *username*
 
-.. image:: /_static/vpn/openvpn/OpenVPN_RA-UserCert.png
+.. image:: /_static/vpn/openvpn/openvpn_ra-usercert.png
 
 -  Choose the appropriate **Certificate Authority**
 -  Click **Save**
@@ -217,7 +217,7 @@ To Install the OpenVPN Client Export Package
 -  Navigate to **System > Packages**, **Available Packages** tab
 -  Find **OpenVPN Client Export Package** in the list
 
-.. image:: /_static/vpn/openvpn/OpenVPN_RA-ExpInstall.png
+.. image:: /_static/vpn/openvpn/openvpn_ra-expinstall.png
 
 -  Click |fa-plus|
 -  Click **Confirm**
@@ -235,7 +235,7 @@ Exporting a Configuration
 -  Find the user in the list at the bottom of the page and select the
    appropriate configuration type to export.
 
-.. image:: /_static/vpn/openvpn/OpenVPN_RA-ExpOptions.png
+.. image:: /_static/vpn/openvpn/openvpn_ra-expoptions.png
 
 The Windows Installer choices are the most common. The “Inline”
 configuration choices are best when using a current client that isn't
@@ -263,4 +263,3 @@ OpenVPN Client Bridging
 
 Bridging clients directly into the LAN is not recommended, but is
 possible. See :doc:`OpenVPN Bridging </vpn/openvpn/openvpn-bridging>`
-

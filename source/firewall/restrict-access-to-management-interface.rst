@@ -20,7 +20,7 @@ To restrict management access first ensure the LAN rules allow access to
 the port used for the WebGUI. This depicts the default LAN rule, which
 allows access to the web interface.
 
-.. image:: /_static/firewall/Default-LAN-rule.png
+.. image:: /_static/firewall/default-lan-rule.png
 
 If a restrictive ruleset is in place on the LAN, make sure it permits
 access to the web interface before continuing.
@@ -35,11 +35,11 @@ ports. The following are examplees:
 
 **1.** Example alias for networks allowed to access management interface
 
-.. image:: /_static/firewall/Management-access-alias.png
+.. image:: /_static/firewall/management-access-alias.png
 
 **2.** Example alias for ports allowed to access management interface
 
-.. image:: /_static/firewall/Management-ports-alias.png
+.. image:: /_static/firewall/management-ports-alias.png
 
 Now add a firewall rule allowing the sources defined in the management
 alias to the destination of the firewall, with the port used or alias
@@ -49,7 +49,7 @@ rule), changing action to *block* or *reject* (reject is preferred on
 internal networks), source to *any*, and destination the same. When
 finished the ruleset should look like the following.
 
-.. image:: /_static/firewall/Restricted-management-lan-rules.png
+.. image:: /_static/firewall/restricted-management-lan-rules.png
 
 Click **Apply Changes** and the management interface is now restricted
 to only the defined hosts.

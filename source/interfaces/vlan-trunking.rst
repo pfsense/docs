@@ -38,7 +38,7 @@ and how tagging is configured.
 -  Connect to the managed switch using a console cable and terminal
    client.
 
-.. image:: /_static/interfaces/Vlan_terminal.gif
+.. image:: /_static/interfaces/vlan_terminal.gif
 
 -  Create the relevant amount of vlans required and commit the changes
    made to the managed switch.
@@ -52,7 +52,7 @@ and how tagging is configured.
 
 -  View the vlans created
 
-.. image:: /_static/interfaces/Vlan_show.gif
+.. image:: /_static/interfaces/vlan_show.gif
 
 Creating a vlan trunk
 ---------------------
@@ -70,4 +70,4 @@ Creating a vlan trunk
 
 - View the VLAN trunk created.
 
-.. image:: /_static/interfaces/Vlan_trunk.gif
+.. image:: /_static/interfaces/vlan_trunk.gif

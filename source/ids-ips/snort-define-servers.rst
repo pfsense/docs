@@ -22,4 +22,4 @@ typing the name of the Alias into a textbox and a drop-down selection of
 matching entries will appear for selection. Aliases are created under
 **Firewall > Aliases** from the menu.
 
-.. image:: /_static/ids-ips/SnortVariables.png
+.. image:: /_static/ids-ips/snortvariables.png

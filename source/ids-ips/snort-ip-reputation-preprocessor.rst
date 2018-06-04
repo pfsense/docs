@@ -47,7 +47,7 @@ further inspection. Caution should be exercised when using the Trust
 mode of operation to insure the IP addresses on the whitelist are in
 fact trustworthy.
 
-.. image:: /_static/ids-ips/SnortIPReputationPreproc.png
+.. image:: /_static/ids-ips/snortipreputationpreproc.png
 
 The |fa-plus| and |fa-trash| icons at the bottom of the page
 are used to assign or remove blacklist and whitelist files to or from
@@ -56,4 +56,4 @@ the interface.
 Click the |fa-plus| icon to open a file selection dialog.
 Choose an IP list file from the list by clicking on the name.
 
-.. image:: /_static/ids-ips/SnortIPReputationPreprocAssignList.png
+.. image:: /_static/ids-ips/snortipreputationpreprocassignlist.png

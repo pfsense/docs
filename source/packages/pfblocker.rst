@@ -124,15 +124,15 @@ pfSense.
 Screen shots
 ------------
 
-.. image:: /_static/packages/Country.JPG
+.. image:: /_static/packages/country.jpg
 
-.. image:: /_static/packages/General.JPG
+.. image:: /_static/packages/general.jpg
 
-.. image:: /_static/packages/PFB_lists.jpg
+.. image:: /_static/packages/pfb_lists.jpg
 
-.. image:: /_static/packages/PFB_spammers.JPG
+.. image:: /_static/packages/pfb_spammers.jpg
 
-.. image:: /_static/packages/PFB_sync.JPG
+.. image:: /_static/packages/pfb_sync.jpg
 
 Resources
 ---------

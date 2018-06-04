@@ -19,7 +19,7 @@ Description
   run non-interactively and must exit on their own. See **Warnings**
   below.
 
-.. image:: /_static/development/Execute_command_via_exec_php.jpg
+.. image:: /_static/development/execute_command_via_exec_php.jpg
 
 - Click **Execute**
 - The output from the command will be displayed, such as:

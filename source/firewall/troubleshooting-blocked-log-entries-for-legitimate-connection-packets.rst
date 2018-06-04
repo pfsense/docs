@@ -8,7 +8,7 @@ Sometimes log entries will be present that, while labeled with the
 most common example is seeing a connection blocked involving a web
 server.
 
-.. image:: /_static/firewall/BlockedWithTCPFlags.png
+.. image:: /_static/firewall/blockedwithtcpflags.png
 
 As also stated in this `m0n0wall
 FAQ <http://doc.m0n0.ch/handbook/faq-legit-traffic-dropped.html>`__,

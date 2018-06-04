@@ -10,7 +10,7 @@ It is possible to use IPsec to send Internet traffic from Site A such
 that it would appear to be coming from Site B. This may be needed if a
 vendor requires connections originate from a specific address at Site B.
 
-.. image:: /_static/vpn/ipsec/Ipsec-s2s-vork-00.png
+.. image:: /_static/vpn/ipsec/ipsec-s2s-vork-00.png
 
 In this article we have two sites:
 
@@ -27,7 +27,7 @@ In the **VPN** menu select **IPsec**. It opens on the **Tunnels tab**.
 Click the **+** button to create a new Phase 1 setup. (Make sure
 **Enable IPsec** is checked and saved.)
 
-.. image:: /_static/vpn/ipsec/Ipsec-s2s-vork-01.png
+.. image:: /_static/vpn/ipsec/ipsec-s2s-vork-01.png
 
 Enter these values:
 
@@ -65,12 +65,12 @@ Enter these values:
 | Dead Peer Detection     | Enable: 10 seconds, 5 retries   | Leave this on unless the other side does not properly support DPD.                                                                                           |
 +-------------------------+---------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. image:: /_static/vpn/ipsec/Ipsec-s2s-vork-02.png
+.. image:: /_static/vpn/ipsec/ipsec-s2s-vork-02.png
 
 Note that the Phase 1 entry is now shown on the IPsec page. Click
 **Save** and in the next screen click **Apply Changes**.
 
-.. image:: /_static/vpn/ipsec/Ipsec-s2s-vork-03.png
+.. image:: /_static/vpn/ipsec/ipsec-s2s-vork-03.png
 
 In Site B
 
@@ -86,11 +86,11 @@ In Site A
 Click |fa-plus| under the Phase 1 entry. It will show an overview of all
 available Phase 2 entries. Since we haven’t made any yet none are shown.
 
-.. image:: /_static/vpn/ipsec/Ipsec-s2s-vork-05.png
+.. image:: /_static/vpn/ipsec/ipsec-s2s-vork-05.png
 
 Click |fa-plus| to create a new Phase 2.
 
-.. image:: /_static/vpn/ipsec/Ipsec-s2s-vork-06.png
+.. image:: /_static/vpn/ipsec/ipsec-s2s-vork-06.png
 
 Enter these values:
 
@@ -116,7 +116,7 @@ Enter these values:
 | Automatically ping host   | Enter a hostname or IP address to keep the tunnel alive.   | In my experience this is not necessary.                       |
 +---------------------------+------------------------------------------------------------+---------------------------------------------------------------+
 
-.. image:: /_static/vpn/ipsec/Ipsec-s2s-vork-07.png
+.. image:: /_static/vpn/ipsec/ipsec-s2s-vork-07.png
 
 Click **Save** and on the next page click **Apply Changes**.
 
@@ -126,7 +126,7 @@ In Site B
 0.0.0.0/0 **Remote Network**, **Address**: Site A’s LAN subnet Use the
 same Phase 2 proposal and Advanced options as in Site A.
 
-.. image:: /_static/vpn/ipsec/Ipsec-s2s-vork-13.png
+.. image:: /_static/vpn/ipsec/ipsec-s2s-vork-13.png
 
 Click **Save** and then **Apply Changes**.
 
@@ -140,13 +140,13 @@ added to the routers at both sites.
 From the **Firewall** menu, choose **Rules**. Go to the **IPsec tab**
 and click |fa-plus|.
 
-.. image:: /_static/vpn/ipsec/Ipsec-s2s-vork-09.png
+.. image:: /_static/vpn/ipsec/ipsec-s2s-vork-09.png
 
 Set the **Protocol** to **any** and in the Description field type ‘Allow
 everything through IPsec tunnel’. Click **Save** and on the next page
 click **Apply changes**. Do this on both routers.
 
-.. image:: /_static/vpn/ipsec/Ipsec-s2s-vork-10.png
+.. image:: /_static/vpn/ipsec/ipsec-s2s-vork-10.png
 
 At this point the tunnel should be up and it should be possible to ping
 from one side to the other and back. Computers in Site A haven’t got an
@@ -168,20 +168,20 @@ generation**. Select **Manual Outbound NAT rule generation** and click
 
 Click |fa-plus| to open the **New Mapping page**.
 
-.. image:: /_static/vpn/ipsec/Ipsec-s2s-vork-11.png
+.. image:: /_static/vpn/ipsec/ipsec-s2s-vork-11.png
 
 As the **Source Type**, select **Network**. In the **Source**,
 **Address** field type Site A’s subnet: *192.168.10.0/24*.
 
 In the **Description** field, type ‘NAT for IPsec tunnel Site A’.
 
-.. image:: /_static/vpn/ipsec/Ipsec-s2s-vork-14.png
+.. image:: /_static/vpn/ipsec/ipsec-s2s-vork-14.png
 
 Click **Save** and on the next page, click **Apply changes**.
 
 Note that the new entry is shown in the outbound NAT overview.
 
-.. image:: /_static/vpn/ipsec/Ipsec-s2s-vork-15.png
+.. image:: /_static/vpn/ipsec/ipsec-s2s-vork-15.png
 
 This is not required on the router at site A.
 
@@ -192,4 +192,3 @@ the beginning of this article).
 
 *By Vorkbaard, 2013-07-27* - gmail{a}vorkbaard[.]nl, with additional
 edits.
-

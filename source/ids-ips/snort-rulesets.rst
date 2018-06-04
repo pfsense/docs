@@ -25,14 +25,13 @@ a starting point. Once experience with Snort has been gained in the
 network environment, blocking mode can be enabled and then move up to
 more restrictive IPS policies.
 
-.. image:: /_static/ids-ips/SnortChooseIPSPolicy.png
+.. image:: /_static/ids-ips/snortchooseipspolicy.png
 
 If the Snort VRT rules are not enabled, or to use any of the other rule
 packages, then make the rule category selections by checking the
 checkboxes beside the rule categories to use.
 
-.. image:: /_static/ids-ips/SnortManualCategorySelection.png
+.. image:: /_static/ids-ips/snortmanualcategoryselection.png
 
 Be sure to click **SAVE** when finished to save the selection and build
 the rules file for Snort to use.
-

@@ -39,7 +39,7 @@ work in certain rare circumstances where Pure NAT mode does not. This
 will only work with single port forwards or ranges of less than 500
 ports. It does not work with UDP or other protocols.
 
-.. image:: /_static/nat/NATReflection.png
+.. image:: /_static/nat/natreflection.png
 
 Method 2: Split DNS
 -------------------
@@ -70,6 +70,6 @@ Example:
 
 Screenshots that show the above in practice:
 
-.. image:: /_static/nat/SplitDNS-forwarder-add.png
+.. image:: /_static/nat/splitdns-forwarder-add.png
 
-.. image:: /_static/nat/SplitDNS-forwarder-example.png
+.. image:: /_static/nat/splitdns-forwarder-example.png

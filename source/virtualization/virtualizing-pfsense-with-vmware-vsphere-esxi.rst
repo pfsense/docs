@@ -125,16 +125,16 @@ After pfSense boots you will be greeted by the setup wizard. Select
 On the following screen choose “Quick/Easy Install” after which
 installation starts.
 
-.. image:: /_static/virtualization/Screen_Shot_2017-07-25_at_17.49.32.png
+.. image:: /_static/virtualization/screen_shot_2017-07-25_at_17.49.32.png
 
 When prompted, select “Standard Kernel”.
 
-.. image:: /_static/virtualization/Screen_Shot_2017-07-25_at_17.50.11.png
+.. image:: /_static/virtualization/screen_shot_2017-07-25_at_17.50.11.png
 
 After that installation completes and pfSense boots up for the first
 time.
 
-.. image:: /_static/virtualization/Screen_Shot_2017-07-25_at_17.57.04.png
+.. image:: /_static/virtualization/screen_shot_2017-07-25_at_17.57.04.png
 
 Installing Open-VM-Tools
 ------------------------
@@ -143,7 +143,7 @@ Once pfSense installation is complete, upon first boot install the
 Open-VM-Tools. Reboot is not necessary afterwards, however make sure the
 Open-VM-Tools service is running under Status > Services.
 
-.. image:: /_static/virtualization/Screen_Shot_2017-07-25_at_18.09.41.png
+.. image:: /_static/virtualization/screen_shot_2017-07-25_at_18.09.41.png
 
 Congratulations, you have successfully completed pfSense installation
 on ESXi!
@@ -578,12 +578,12 @@ Interface Assignment
 
 Next up, the pfSense boot menu returns.
 
-.. image:: /_static/virtualization/Esxi_pfs_4-2a.png
+.. image:: /_static/virtualization/esxi_pfs_4-2a.png
 
 As pfSense is already installed on the virtual disk, allow the timer
 to expire.
 
-.. image:: /_static/virtualization/Esxi_pfs_4_9a.png
+.. image:: /_static/virtualization/esxi_pfs_4_9a.png
 
 Once pfSense has booted the message: **Network interface mismatch –
 Running interface assignment option** is shown. This means that
