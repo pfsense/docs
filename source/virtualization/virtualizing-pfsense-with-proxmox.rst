@@ -3,9 +3,6 @@
 Virtualizing pfSense with Proxmox
 =================================
 
-Introduction
-~~~~~~~~~~~~
-
 This following article is about building and running a pfSense virtual
 machine under Proxmox 4.4. The guide applies to any newer Proxmox
 version. Article covers Proxmox networking setup and pfSense virtual
