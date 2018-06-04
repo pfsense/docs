@@ -2,29 +2,29 @@
 .. |current_release| replace:: 2.4.3
 
 .. Inline icons for reference.
-.. |block|                      image:: /_static/icons/Icon_block.png
-.. |block+add|                  image:: /_static/icons/Icon_block_add.png
-.. |down|                       image:: /_static/icons/Icon_down.png
-.. |fa-level-up|                image:: /_static/icons/Fa-level-up.png
-.. |fa-pencil|                  image:: /_static/icons/Fa-pencil.png
-.. |fa-plus|                    image:: /_static/icons/Fa-plus.png
-.. |fa-trash|                   image:: /_static/icons/Fa-trash.png
-.. |fa-times|                   image:: /_static/icons/Fa-times.png
-.. |help|                       image:: /_static/icons/Icon_help.png
-.. |import_alias|               image:: /_static/icons/Icon_import_alias.gif
-.. |log|                        image:: /_static/icons/Icon_log.png
-.. |log_d|                      image:: /_static/icons/Icon_log_d.gif
-.. |logs|                       image:: /_static/icons/Icon_logs.png
-.. |pass|                       image:: /_static/icons/Icon_pass.png
-.. |pass+add|                   image:: /_static/icons/Icon_pass_add.png
-.. |pkg|                        image:: /_static/icons/Icon_reinstall_pkg.png
-.. |reject|                     image:: /_static/icons/Icon_reject.png
-.. |restart|                    image:: /_static/icons/Icon_service_restart.png
-.. |service running|            image:: /_static/icons/Icon_service_running.png
-.. |service stopped|            image:: /_static/icons/Icon_service_stopped.png
-.. |start|                      image:: /_static/icons/Icon_service_start.png
-.. |status|                     image:: /_static/icons/Icon_service_status.png
-.. |stop|                       image:: /_static/icons/Icon_service_stop.png
-.. |up|                         image:: /_static/icons/Icon_up.png
-.. |w|                          image:: /_static/icons/Icon_wol_all.png
+.. |block|                      image:: /_static/icons/icon_block.png
+.. |block+add|                  image:: /_static/icons/icon_block_add.png
+.. |down|                       image:: /_static/icons/icon_down.png
+.. |fa-level-up|                image:: /_static/icons/fa-level-up.png
+.. |fa-pencil|                  image:: /_static/icons/fa-pencil.png
+.. |fa-plus|                    image:: /_static/icons/fa-plus.png
+.. |fa-trash|                   image:: /_static/icons/fa-trash.png
+.. |fa-times|                   image:: /_static/icons/fa-times.png
+.. |help|                       image:: /_static/icons/icon_help.png
+.. |import_alias|               image:: /_static/icons/icon_import_alias.gif
+.. |log|                        image:: /_static/icons/icon_log.png
+.. |log_d|                      image:: /_static/icons/icon_log_d.gif
+.. |logs|                       image:: /_static/icons/icon_logs.png
+.. |pass|                       image:: /_static/icons/icon_pass.png
+.. |pass+add|                   image:: /_static/icons/icon_pass_add.png
+.. |pkg|                        image:: /_static/icons/icon_reinstall_pkg.png
+.. |reject|                     image:: /_static/icons/icon_reject.png
+.. |restart|                    image:: /_static/icons/icon_service_restart.png
+.. |service running|            image:: /_static/icons/icon_service_running.png
+.. |service stopped|            image:: /_static/icons/icon_service_stopped.png
+.. |start|                      image:: /_static/icons/icon_service_start.png
+.. |status|                     image:: /_static/icons/icon_service_status.png
+.. |stop|                       image:: /_static/icons/icon_service_stop.png
+.. |up|                         image:: /_static/icons/icon_up.png
+.. |w|                          image:: /_static/icons/icon_wol_all.png
 
