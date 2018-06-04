@@ -1,8 +1,8 @@
 .. include:: /substitutions.rsti
 
-***************
-Virtualiziation
-***************
+**************
+Virtualization
+**************
 
 .. toctree::
    :maxdepth: 1
