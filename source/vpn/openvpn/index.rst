@@ -4,6 +4,17 @@
 OpenVPN
 *******
 
+`OpenVPN`_ is an Open Source VPN server and
+client that is supported on a variety of platforms, including pfSense.
+It can be used for Site-to-Site or Remote Access VPN configurations.
+
+OpenVPN can work with shared keys or with a PKI setup for SSL/TLS.
+Remote Access VPNs may be authenticated locally, or using an external
+authentication source such as RADIUS or LDAP.
+
+There are many possible ways to configure OpenVPN in pfSense, for more
+information see the resources below:
+
 .. toctree::
    :maxdepth: 1
 
@@ -22,7 +33,6 @@ OpenVPN
    openvpn-settings
    openvpn-status
    openvpn-traffic-filtering
-   openvpn
    routing-internet-traffic-through-a-site-to-site-openvpn-connection-in-pfsense-2-1
    sharing-a-port-between-openvpn-and-a-web-server
    troubleshooting-openvpn-internal-routing-iroute
@@ -31,3 +41,5 @@ OpenVPN
    troubleshooting-windows-openvpn-client-connectivity
    troubleshooting-windows-smb-share-access-from-openvpn-clients
    using-the-openvpn-client-export-package
+
+.. _OpenVPN: https://www.openvpn.net
