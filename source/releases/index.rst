@@ -34,9 +34,11 @@ Releases
    2-3-4-p1-new-features-and-changes
    2-3-5-new-features-and-changes
    2-3-5-p1-new-features-and-changes
+   2-3-5-p2-new-features-and-changes
    2-4-new-features-and-changes
    2-4-1-new-features-and-changes
    2-4-2-new-features-and-changes
    2-4-2-p1-new-features-and-changes
    2-4-3-new-features-and-changes
+   2-4-3-p1-new-features-and-changes
    versions-of-pfsense-and-freebsd
