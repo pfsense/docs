@@ -3,9 +3,6 @@
 Routing internet traffic through a site-to-site OpenVPN-connection in PfSense 2.1
 =================================================================================
 
-Introduction
-------------
-
 This article shows how to create a site-to-site connection using OpenVPN
 and how to route the Internet connection of site A through site B with
 pfSense.
