@@ -38,7 +38,7 @@ Blocking Facebook
 ~~~~~~~~~~~~~~~~~
 
 To find the most current list of Facebook subnets, query a server to
-find subnets for their AS and make an alias from there.
+find subnets for their AS and make an alias from there::
 
   whois -h whois.radb.net -- '-i origin AS32934' | awk '/^route:/ {print $2;}' | sort | uniq
 
