@@ -125,14 +125,15 @@ updating the documentation, not for technical assistance.
 Modems reported to work as Ethernet devices
 -------------------------------------------
 
--  Verizon (Pantech) 295 - Works, but fails if detached and reattached,
-   must reboot.
--  ZTE MF60 3g
--  ZTE MF823 - Defaults to 192.168.0.1, will need to be sure local
-   system does not have an overlapping network.
--  ZTE MF915 LTE modem (T-Mobile)
--  ZTE MF975S
--  Huawei E8372h
+- Verizon (Pantech) 295 - Works, but fails if detached and reattached,
+  must reboot.
+- ZTE MF60 3g
+- ZTE MF90
+- ZTE MF823 - Defaults to 192.168.0.1, will need to be sure local
+  system does not have an overlapping network.
+- ZTE MF915 LTE modem (T-Mobile)
+- ZTE MF975S
+- Huawei E8372h
 
 Modem variations reported to NOT work
 -------------------------------------

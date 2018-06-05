@@ -100,8 +100,7 @@ disk (CF/SD) that will contain the Operating System.
    be burned to a disc as an ISO image. See :doc:`Writing ISO Images
    </install/writing-iso-images>` for assistance.
 -  Writing Memstick or NanoBSD images: This task is covered with great
-   detail in the :doc:`Writing Disk Images </hardware/writing-disk-images>`
-   article here on the wiki.
+   detail in :doc:`/hardware/writing-disk-images`.
 
 Connect to Serial Console
 -------------------------

@@ -42,7 +42,7 @@ Choose the desired Authentication Settings. Most commonly this is set to
 -  With *Local User Access*, users defined under **System > User
    Manager**
 -  RADIUS and LDAP are possible, with appropriately defined settings,
-   covered :doc:`elsewhere on the wiki </vpn/openvpn/authenticating-openvpn-users-with-radius-via-active-directory>`.
+   as covered here: :doc:`/vpn/openvpn/authenticating-openvpn-users-with-radius-via-active-directory`.
 
 Click **Next**
 

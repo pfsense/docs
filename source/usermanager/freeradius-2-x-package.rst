@@ -137,9 +137,7 @@ FreeRADIUS General Configuration
 Related Articles
 ^^^^^^^^^^^^^^^^
 
-Many topics have been moved from this article to related entries on the
-wiki to cut down on the total length. Refer to the following articles
-for more information on the listed topics:
+Refer to the following articles for more information on the listed topics:
 
 -  :doc:`Testing FreeRADIUS </usermanager/testing-freeradius>`
 -  :doc:`Plain MAC Authentication with FreeRADIUS </usermanager/plain-mac-authentication-with-freeradius>`

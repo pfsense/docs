@@ -648,12 +648,11 @@ physical WAN port of the ESXi host, the WAN interface should have
 received a public IP address from the ISP via DHCP. ADSL and other
 modems may need to be set up to pass the public IP through to pfSense.
 Other types of WAN connections and configurations are beyond the scope
-of this article and are covered elsewhere on the wiki.
+of this article.
 
 The LAN interface has its installation default IP address of
 192.168.1.1. If another network address and/or subnet is desired, it may
-be changed from the console or GUI. Search the wiki for further
-information.
+be changed from the console or GUI.
 
 Adding a DMZ
 ------------
