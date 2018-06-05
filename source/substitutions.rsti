@@ -1,6 +1,9 @@
 .. |current_year| replace:: 2018
 .. |current_release| replace:: 2.4.3
 
+.. |netagate_support| replace:: `Netgate Global Support`_
+.. _Netgate Global Support: https://www.netgate.com/support/
+
 .. Inline icons for reference.
 .. |block|                      image:: /_static/icons/icon_block.png
 .. |block+add|                  image:: /_static/icons/icon_block_add.png

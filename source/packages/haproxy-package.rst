@@ -252,9 +252,8 @@ Brian Scholer made the changes for package version 1.00, with help from
 forums user marcelloc to compile the binaries and publish the final
 version of the package.
 
-ESF package support status
---------------------------
+Package Support Status
+----------------------
 
-This package is currently supported by pfSense/ESF support
-`3 <https://portal.pfsense.org/>`__
+This package is currently supported by |netagate_support|.
 
