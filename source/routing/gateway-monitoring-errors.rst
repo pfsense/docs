@@ -11,6 +11,8 @@ common.
 sendto error: 55
 ----------------
 
+.. code::
+
   55 ENOBUFS
   No buffer space available.
   An operation on a socket or pipe was not performed because the system lacked sufficient buffer space or because a queue was full.
@@ -20,6 +22,8 @@ causes and solutions, see :doc:`No buffer space available </routing/no-buffer-sp
 
 sendto error: 64
 ----------------
+
+.. code::
 
   64 EHOSTDOWN
   Host is down.
@@ -34,9 +38,11 @@ L1/L2 link to the target is down.
 sendto error: 65
 ----------------
 
-65 EHOSTUNREACH
-No route to host.
-A socket operation was attempted to an unreachable host.
+.. code::
+
+  65 EHOSTUNREACH
+  No route to host.
+  A socket operation was attempted to an unreachable host.
 
 Either there is no possible route to the target locally, or status
 information was received from an upstream router that indicated the same
