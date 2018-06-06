@@ -10,9 +10,7 @@ server.
 
 .. image:: /_static/firewall/blockedwithtcpflags.png
 
-As also stated in this `m0n0wall
-FAQ <http://doc.m0n0.ch/handbook/faq-legit-traffic-dropped.html>`__,
-this is likely due to a TCP FIN packet arriving after the connection's
+This is likely due to a TCP FIN packet arriving after the connection's
 state has been removed. This happens because on occasion a packet will
 be lost, and the retransmits will be blocked because the firewall has
 already closed the connection.
