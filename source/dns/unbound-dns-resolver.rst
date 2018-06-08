@@ -158,7 +158,7 @@ system.
 
 -  unbound-control lookup “name”
 
-**Note:** unbound in pfsense does not use the default conf file
-location, so will need tell it where it is.
+.. note:: Unbound does not use the default conf file location, so you will need
+   to use the ``-c`` flag to tell it where it is::
 
--  unbound-control -c /var/unbound/unbound.conf command
+     unbound-control -c /var/unbound/unbound.conf <unbound-command-to-run>
