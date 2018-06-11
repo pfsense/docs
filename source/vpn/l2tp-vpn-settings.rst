@@ -25,11 +25,11 @@ the configuration page.
 It can use internal authentication or pass off authentication to a
 :doc:`RADIUS server </usermanager/user-authentication-servers>`.
 
-L2TP/IPSec
+L2TP/IPsec
 ----------
 
-L2TP/IPSec is a way to secure L2TP traffic by sending it through an
-encrypted IPSec tunnel.
+L2TP/IPsec is a way to secure L2TP traffic by sending it through an
+encrypted IPsec tunnel.
 
 2.1.x and earlier
 ~~~~~~~~~~~~~~~~~

@@ -17,9 +17,9 @@ other modes such as SSL/TLS, or remote access, look in the
 Info
 ----
 
-Both IPSec and OpenVPN may be enabled/in use at the same time, however,
-not for the same subnets. Any IPSec tunnel that references the same pair
-of subnets configured for use in OpenVPN must be disabled. IPSec and
+Both IPsec and OpenVPN may be enabled/in use at the same time, however,
+not for the same subnets. Any IPsec tunnel that references the same pair
+of subnets configured for use in OpenVPN must be disabled. IPsec and
 OpenVPN do not conflict otherwise.
 
 The way OpenVPN works is that one end of the tunnel needs to be the

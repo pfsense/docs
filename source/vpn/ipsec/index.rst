@@ -1,7 +1,7 @@
 .. include:: /substitutions.rsti
 
 *****
-IpSec
+IPsec
 *****
 
 .. toctree::

@@ -348,8 +348,8 @@ should also be enabled on Phase 1.
 This may introduce routing difficulties on the internal network. More
 details can be found on this in the pfSense book.
 
-IPSec/L2TP
+IPsec/L2TP
 ----------
 
-pfSense versions 2.2 and up support IPSec+L2TP as well. See
+pfSense versions 2.2 and up support IPsec+L2TP as well. See
 :doc:`L2TP/IPsec </vpn/ipsec/l2tp-ipsec>` for implementation details.

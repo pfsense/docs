@@ -264,7 +264,7 @@ VPN
 ---
 
 -  Fix find\_service\_by\_openvpn\_vpnid() on OpenVPN Status
--  Allow special characters to be used on IPSec mobile login banner.
+-  Allow special characters to be used on IPsec mobile login banner.
    `#3247 <http://redmine.pfsense.org/issues/3247>`__
 -  Fix cisco-avpair processing for IPsec and OpenVPN, and route
    processing from avpair replies.
