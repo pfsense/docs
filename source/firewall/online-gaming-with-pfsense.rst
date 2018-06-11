@@ -17,7 +17,7 @@ Specific Game/Console Information
 
 Recommendations for specific games can be found below. If any special
 handling is required but not listed here, please `email
-us <mailto:wikiadmin@pfsense.org>`__. Include a link to manufacturer's
+us <mailto:docs@netgate.com>`__. Include a link to manufacturer's
 documentation when possible.
 
 NB: What works to make a single console/device work from behind a

@@ -31,5 +31,5 @@ IPsec is in active use somewhere.
 
 ... and we know there are many more. If a device is not listed and is
 known to work with pfSense for IPsec, please
-`email <mailto:wikiadmin@pfsense.org>`_ with info and reference the
+`email <mailto:docs@netgate.com>`_ with info and reference the
 URL of this article.

@@ -114,7 +114,7 @@ pfSense 2.0
 -  And many others
 
 If you have a modem that **DOES WORK** but is not on the list - Please
-`Let us know <mailto:wikiadmin@pfsense.org>`__ - but only use that
+`Let us know <mailto:docs@netgate.com>`__ - but only use that
 address for reports of **success**.
 
 If you have a modem that **DOES NOT WORK** - post about it on the
