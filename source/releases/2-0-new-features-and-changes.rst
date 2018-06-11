@@ -63,7 +63,7 @@ General Web GUI
 -  Some community-contributed themes added
 -  Contextual help available on every page in the web interface, linking
    to a webpage containing help and documentation specific to that page.
--  Help menu for quick access to online resources (forum, wiki, paid
+-  Help menu for quick access to online resources (forum, docs, paid
    support, etc.)
 
 Aliases

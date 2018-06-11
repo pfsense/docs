@@ -263,8 +263,8 @@ Web GUI
    assuming the name.
    `#4713 <https://redmine.pfsense.org/issues/4713>`__
 -  Updated and corrected the wireless status flags and capabilities
-   list. There are many more possible flags, now documented on the wiki
-   at :doc:`Wireless Status </wireless/wireless-status>`.
+   list. There are many more possible flags, now documented at
+   :doc:`Wireless Status </wireless/wireless-status>`.
 -  Added a fall back to look up local user privileges and groups if the
    groups could not be found from LDAP and there is a local user.
 -  Fixed Crash Reporter submissions when symlinks were present as part

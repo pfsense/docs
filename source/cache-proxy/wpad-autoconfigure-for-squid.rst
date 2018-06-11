@@ -46,8 +46,8 @@ Prerequisites
 -------------
 
 This How-To assumes squid is already operating in a non-transparent
-configuration. For help with that, look elsewhere on the Wiki and
-Forums.
+configuration. For help with that, look elsewhere in this documentation and on
+the Forums.
 
 Create wpad.dat
 ---------------

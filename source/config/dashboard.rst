@@ -50,5 +50,5 @@ pressing the wrench icon in their title bar. To save these settings use
 the **Save** button **inside** the widget, not the button at the top of
 the page.
 
-New widgets may be written as described in the wiki entry on
-`/development/creating-widgets`.
+New widgets may be written as described at
+:doc:`../development/creating-widgets`.

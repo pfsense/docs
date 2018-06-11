@@ -25,7 +25,7 @@ First, what you will need:
 
 -  A knowledge of how to install pfSense – This guide assumes you have
    installed pfSense before. If you have not, look at the `detailed
-   instructions on the pfSense wiki <InstallationGuide>`__.
+   instructions <InstallationGuide>`__.
 -  1 Symantec 5420 Security Gateway – these can be found secondhand
    since they are discontinued
 -  1 IDE HDD (Hard Drive)

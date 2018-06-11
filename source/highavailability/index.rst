@@ -73,7 +73,7 @@ Bringing it All Together
 pfSense makes it easy to set these areas up to create a High
 Availability cluster. The full details are available in the book linked
 above. A brief run-through of a basic CARP configuration may be found
-here on the wiki: :doc:`Configuring pfSense Hardware Redundancy (CARP)
+at: :doc:`Configuring pfSense Hardware Redundancy (CARP)
 </highavailability/configuring-high-availability>`
 
 For other aspects of High Availability and CARP, see the links below to

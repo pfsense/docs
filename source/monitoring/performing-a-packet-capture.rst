@@ -46,8 +46,7 @@ iftop
 -----
 
 A second method of sniffing traffic via a shell is with iftop. The
-method of installing iftop is highlighted on this wiki page
-`Add\_Packages <Add_Packages>`__.
+method of installing iftop is highlighted at `Add\_Packages <Add_Packages>`__.
 
 iftop allows designating the interface from which to grab traffic.
 
