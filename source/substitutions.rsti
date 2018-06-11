@@ -4,6 +4,8 @@
 .. |netagate_support| replace:: `Netgate Global Support`_
 .. _Netgate Global Support: https://www.netgate.com/support/
 
+.. _Documentation Source: https://github.com/pfsense/docs
+
 .. Inline icons for reference.
 .. |block|                      image:: /_static/icons/icon_block.png
 .. |block+add|                  image:: /_static/icons/icon_block_add.png
@@ -31,4 +33,3 @@
 .. |stop|                       image:: /_static/icons/icon_service_stop.png
 .. |up|                         image:: /_static/icons/icon_up.png
 .. |w|                          image:: /_static/icons/icon_wol_all.png
-

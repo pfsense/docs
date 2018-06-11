@@ -1,219 +1,126 @@
+.. include:: /substitutions.rsti
+
 Style Guide
 ===========
 
 .. contents:: :depth: 2
 
-External resources:
+To make this documentation easier for users, we prefer to have the style of
+articles be consistent and clear. The following guidelines are strongly
+suggested. Text found to not be following these Language Style/Grammar
+guidelines may be edited and corrected at any time.
 
-* `A primer on reStructuredText`_
-* `reST/Sphinx cheat sheet`_
+See :doc:`quality-guidelines` for information about how entries in the
+documentation should be written and what they should contain.
 
-Text
-----
+Capitalization
+--------------
 
-* one asterisk: ``*text*`` for emphasis (italics),
-* two asterisks: ``**text**`` for strong emphasis (boldface), and
-* backquotes: ````text```` for code samples.
+Capitalize terms correctly! Especially **pfSense**! No other capitalization of
+"pfSense" may be used except in a URL which is acceptable as lowercase (e.g.
+https://www.pfsense.org ). If a sentence begins with "pfSense" the first
+letter must remain lowercase.
 
-Headings
---------
+If any other usage of "pfSense" or a misspelling of same is found ("PFsense",
+"PFSense", "pfSence", etc), fix it immediately.
 
-* ``#`` with overline, for parts
-* ``*`` with overline, for chapters
-* ``=``, for sections
-* ``-``, for subsections
-* ``^``, for subsubsections
-* ``"``, for paragraphs
+Other special notes for capitalization:
 
-Lists
------
+* WebGUI, webConfigurator, IPsec, OpenVPN, Internet, Ethernet, VPN, DNS, PPPoE,
+  IPv4, IPv6, NPt, strongSwan, squidGuard, pfsync, pftop, JavaScript.
 
-List markup is natural: just place an asterisk at
-the start of a paragraph and indent properly.  The same goes for numbered lists;
-they can also be autonumbered using a ``#`` sign::
-
-   * This is a bulleted list.
-   * It has two items, the second
-     item uses two lines.
-
-   #. This is a numbered list.
-   #. It has two items too.
-
-
-Nested lists are possible, but be aware that they must be separated from the
-parent list items by blank lines::
-
-   * this is
-   * a list
-
-     * with a nested list
-     * and some subitems
-
-   * and here the parent list continues
-
-Definition lists are created as follows::
-
-   term (up to a line of text)
-      Definition of the term, which must be indented
-
-      and can even consist of multiple paragraphs
-
-   next term
-      Description.
-
-Note that the term cannot have more than one line of text.
-
-Hyperlinks
-----------
-
-Separate the link and the target definition, like this::
-
-  This is a paragraph that contains `a link`_.
-
-.. code::
-
-  .. _a link: http://example.com/
-
-and place the target definition at the bottom of the page in alphabetical order.
-
-.. note:: If the link text will contain a colon, escape it in both the link text
-   and the definition, for example::
-
-     See `Link\: Stuff`_.
-
-   .. code::
-
-       .. _Link\: Stuff: http://example.com/stuff
-
-Cross References
-----------------
-
-To make a cross reference to another document, first you must create a label
-just before the section title::
-
-   .. _label-some-section:
-
-   Some Section
-   ------------
-
-And then in the other document, reference it using **:ref:** and the given label::
-
-   See :ref:`label-some-section` for more information
-
-Figures
--------
-
-Figures need a unique label and a caption for proper in-text references, and are
-preferred over images.
-
-.. code::
-
-    .. _figure-my-stuff:
-    .. figure:: /_static/stuff.png
-       :figclass: align-center
-
-       This is the caption
-
-Which can be referred to using the following::
-
-   An example is shown in Figure :ref:`figure-my-stuff`.
-
-*Note the alignment! The caption must be aligned properly with the other
-attributes!*
-
-Images
-------
-
-.. code::
-
-    .. image:: /_static/<filename>.png
-       :align: center
-       :alt: <alternative_text_that_describes_the_image>
-
-Inline Images
+What to Avoid
 -------------
 
-For an inline image (no breaks above or below, aka inline with the text) a
-substitution must be used. Many common icon substitutions are available in a
-common file usable as follows::
+:Avoid addressing the user directly** ("you", "your", etc.):
+  Rewrite sentences to avoid this usage when found. Exceptions may be made for
+  quoted/cited text or other unavoidable circumstances.
+:Avoid references to the writer ("I", "we"):
+  Except when making specific recommendations, which is OK to avoid using
+  passive voice. "We recommend" is better than "It is recommended".
+:Avoid the use of words such as "should", "could", "might":
+  Words that do not commit to a specific action/result are undesirable. For
+  example "This should happen" or "That might appear". Some instances are
+  expected/required when making recommendations, but reword where feasible.
+:Avoid the use of Weasel words:
+  See `Weasel Words <http://en.wikipedia.org/wiki/Weasel_word>`__ for reference.
+:Avoid redundant phrases:
+  This especially includes acronym references that duplicate words: "WAN
+  Network", "LAN Network", "DUID Identifier", "6RD Rapid Deployment". Remove the
+  redundant word(s) and/or use alternate phrasing ("WAN Subnet" or "Network on
+  the WAN interface" rather than "WAN Network")
+:Avoid unnecessary abbreviations and shortening of words:
+  This creates ambiguity, for example:
 
-  .. include:: substitutions.rst
-  <lots of other text>
-  To add a blah, click |image_icon_plus|.
+  * Avoid using "IP" or "IPs" to refer to IP addresses. Use the full form "IP
+    address" instead to remove ambiguity.
+  * Avoid using "config" when "config.xml" or "configuration" is more clear.
+  * Avoid using "ovpn" to mean "OpenVPN" except in cases when the OS-level
+    interfaces are being referenced (``ovpncX`` is OK, "Use OVPN instead" is
+    not.)
 
-To do this in a one-off fashion, use a substitution within the same file::
+:Avoid awkward possessive references:
+  For example: "firewall's", "pfSense's".
+:Avoid gender-specific pronouns:
+  Example: "his", "hers"
+:Avoid leaving out necessary hyphens:
+  Example: "howto" should be "how-to"
+:Avoid "Britishisms" or other non-en_US style spellings:
+  Use "Flavor", not "Flavour". Use "Specialize", not "Specialise"
+:Avoid confusing bandwidth specifications:
 
-   Click |image_icon_edit| to edit the entry
-   <rest of page>
-   .. |image_icon_edit| image:: _static/icon_e.png
+  * Avoid confusing bits and bytes. Use Big **B** for bytes, little **b** for
+    bits.
+  * Avoid ambiguity when specifying bandwidth measurements. Bandwidth should
+    always have *time* component, such as *per second*. "5 Mbit/s" is much
+    clearer than "5 Mbps", "5 Mb", or "5MB".
 
-Tables
-------
+Crafting Instructions
+---------------------
 
-For *grid tables*, you have to "paint" the cell grid yourself.  They look like
-this::
+When forming lists of instructions, start each item with an action word when
+possible: Click x, Select x, Enter x, Navigate to x.
 
-   +------------------------+------------+----------+----------+
-   | Header row, column 1   | Header 2   | Header 3 | Header 4 |
-   | (header rows optional) |            |          |          |
-   +========================+============+==========+==========+
-   | body row 1, column 1   | column 2   | column 3 | column 4 |
-   +------------------------+------------+----------+----------+
-   | body row 2             | ...        | ...      |          |
-   +------------------------+------------+----------+----------+
+When instructing a user to reach a specific page or place in the GUI, we prefer
+to reference this action as "Navigate to".
 
-*Simple tables* are easier to write, but
-limited: they must contain more than one row, and the first column cells cannot
-contain multiple lines.  They look like this::
+Example Text
+------------
 
-   =====  =====  =======
-   A      B      A and B
-   =====  =====  =======
-   False  False  False
-   True   False  False
-   False  True   False
-   True   True   True
-   =====  =====  =======
+When offering examples, keep the following in mind:
 
-Table of Contents
------------------
+* Domain names should use ``example.com`` or another reserved name from
+  `RFC 2606`_.
+* IP address examples should be taken from subnets reserved for documentation in
+  `RFC 6890`_: 192.0.2.0/24, 198.51.100.0/24, 203.0.113.0/24 or the traditional
+  `RFC 1918`_ networks 192.168.0.0/16, 172.16.0.0/12, or 10.0.0.0/8 if the
+  documentation subnets are not sufficient.
 
-For a group of files::
+  * In some cases where additional unique examples are needed, use the
+    benchmarking subnet 198.18.0.0/15.
 
-  .. toctree::
-     :maxdepth: 2
+Referring to items involving pfSense software
+---------------------------------------------
 
-     filename1
-     filename2
+Refer to a firewall running pfSense as a "firewall" or "node". Avoid other
+similar terms ("router", "system", "box", etc.) for clarity and consistency.
 
-Local to a file::
+High Availability / CARP References
+-----------------------------------
 
-   .. contents:: :depth: 2
+* Refer to the cluster as a "High Availability Cluster" or "HA Cluster" and
+  **not** as a "CARP Cluster".
+* Use the term "node" as in "cluster node" for referencing an individual unit.
+* Use the term "primary" for the primary node, never "master" as this can be
+  confused with the CARP VIP status.
+* Use the term "secondary" for the secondary node, never "backup" or "slave" as
+  this can be confused with the CARP VIP status.
+* Use the terms "Sync interface" or "Interconnect interface" when referring to
+  the dedicated interface between HA Cluster nodes. **Never refer to that
+  interface as a "CARP interface"**.
 
-Notes
------
-
-  .. note:: This is a note, it will be surrounded by a note box when it is built.
-
-Substitutions
--------------
-
-reST supports "substitutions", which
-are pieces of text and/or markup referred to in the text by ``|name|``.  They
-are defined like footnotes with explicit markup blocks, like this::
-
-   .. |name| replace:: replacement *text*
-
-or this::
-
-   .. |caution| image:: warning.png
-                :alt: Warning!
-
-If you want to use some substitutions for all documents,
-put them into a separate file and include it into all
-documents you want to use them in, using the **include** directive.  (Be
-sure to give the include file a file name extension differing from that of other
-source files, to avoid Sphinx finding it as a standalone document.)
-
-.. _A primer on reStructuredText: http://sphinx-doc.org/rest.html
-.. _reST/Sphinx cheat sheet: http://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
+.. _common substitutions file: https://github.com/pfsense/docs/blob/master/source/substitutions.rsti
+.. _source of this documentation: https://github.com/pfsense/docs/tree/master/source
+.. _RFC 2606: https://tools.ietf.org/html/rfc2606
+.. _RFC 6890: https://tools.ietf.org/html/rfc6890
+.. _RFC 1918: https://tools.ietf.org/html/rfc1918
