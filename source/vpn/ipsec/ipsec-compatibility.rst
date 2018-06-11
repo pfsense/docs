@@ -29,7 +29,7 @@ IPsec is in active use somewhere.
 * Watchguard
 * Zyxel firewalls
 
-... and we know there are many more. If a device is not listed and is
-known to work with pfSense for IPsec, please
-`email <mailto:docs@netgate.com>`_ with info and reference the
-URL of this article.
+... and we know there are many more.
+
+If a device is not listed and is known to work with pfSense for IPsec, please
+|doc_updates|.

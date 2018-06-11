@@ -4,6 +4,7 @@
 .. |netagate_support| replace:: `Netgate Global Support`_
 .. _Netgate Global Support: https://www.netgate.com/support/
 
+.. |doc_updates| replace:: :doc:`submit a documentation update </references/updating-docs>`
 .. _Documentation Source: https://github.com/pfsense/docs
 
 .. Inline icons for reference.

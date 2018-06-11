@@ -15,10 +15,9 @@ are not listed here.
 Specific Game/Console Information
 ---------------------------------
 
-Recommendations for specific games can be found below. If any special
-handling is required but not listed here, please `email
-us <mailto:docs@netgate.com>`__. Include a link to manufacturer's
-documentation when possible.
+Recommendations for specific games can be found below. If any special handling
+is required but not listed here, please |doc_updates|. Include a link to
+manufacturer's documentation when possible.
 
 NB: What works to make a single console/device work from behind a
 firewall may not work for multiple consoles/devices behind the same
