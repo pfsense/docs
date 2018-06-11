@@ -152,7 +152,7 @@ By default iOS will tunnel all traffic over the VPN, including traffic
 going to the Internet. If Internet sites are inaccessible once
 connected, a DNS server may need to be pushed to the client for it to
 use, such as the LAN IP address of the firewall if the DNS forwarder is
-enabled, or a public DNS server such as 8.8.8.8/8.8.4.4.
+enabled, or a public DNS server such as 1.1.1.1/1.0.0.1
 
 The reason for the above is that the 3G provider is likely giving mobile
 devices DNS servers that are only accessible from their network. Once
