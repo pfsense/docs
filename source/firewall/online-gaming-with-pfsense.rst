@@ -8,9 +8,8 @@ This page provides information on using pfSense with online games.
 First, many games will require the use of :doc:`Static Port </nat/static-port>`
 or :doc:`UPnP/NAT-PMP </services/configuring-upnp-and-nat-pmp>`.
 
-The `forum <https://forum.pfsense.org>`__ often has a wide array of
-threads for specific games and consoles. Search there for games if they
-are not listed here.
+The `forum`_ often has a wide array of threads for specific games and consoles.
+Search there for games if they are not listed here.
 
 Specific Game/Console Information
 ---------------------------------
@@ -45,3 +44,4 @@ To use multiple machines behind pfSense to play, configure each Gunz
 Online machine with a different port. Visit **NAT > Outbound** and setup
 a custom port entry for each machine using the appropriate custom port.
 
+.. _forum: https://forum.netgate.com

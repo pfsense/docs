@@ -31,8 +31,9 @@ Configuration example for a Cisco Switch::
    spanning-tree vlan 20 cost 500
    no cdp enable
 
-See also `this forum
-thread <http://forum.pfsense.org/index.php/topic,4984.0.html>`__.
+See also `this forum thread`.
 
 The bridge settings on pfSense may also need to have their spanning tree
 options changed in a similar manner.
+
+.. _this forum thread: https://forum.netgate.com/topic/4691/getting-pfsense-to-failover-with-a-bridge-using-the-cd-rom-platform

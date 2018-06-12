@@ -3,20 +3,14 @@
 Using MySQL with the FreeRADIUS Package
 =======================================
 
-Thanks very much
-`zlyzwy <http://forum.pfsense.org/index.php?action=profile;u=48712>`__
-for explanations. I will try to write a tutorial here in future - or
-somebody else does :)
-
--  `Here <http://forum.pfsense.org/index.php/topic,43675.msg235475.html#msg235475>`__
-   is the link to the forum posts.
+Thanks very much zlyzwy for the `explanation on the forums`_.
 
 Advantages and disadvantages of SQL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are pros and cons using a MySQL database with FreeRADIUS. In
-general - if there are not too many users ( `read Jeff Carneal - Apex
-Internet <http://freeradius.org/testimonials.html>`__ ) than there is
+general - if there are not too many users read (`Jeff Carneal - Apex
+Internet`_) than there is
 mostly no need for a SQL database. The problem is when FreeRADIUS gets
 an Access-Request packet FreeRADIUS must check the users file. This is
 from top to bottom. If the file is very big with many entries than the
@@ -28,9 +22,7 @@ take a look at this :doc:`how-to </usermanager/freeradius-2-x-package>`.
 Using a MySQL database has the advantage that better counters/modules
 may be created because it is possible to do SELECTs on the database and
 other options to work with. But then it is necessary to edit the
-FreeRADIUS config files -
-`sqlcounter <http://wiki.freeradius.org/Rlm_sqlcounter>`__ - could help
-with this.
+FreeRADIUS config files - `sqlcounter`_ - could help with this.
 
 The disadvantage is that a server with MySQL server running is required.
 The MySQL database and tables must be added or imported. Then after that
@@ -47,3 +39,6 @@ In another situation MySQL can be used for doing accounting only. So all
 accounting information will be on MySQL and authorization/authentication
 on FreeRADIUS GUI or connect FreeRADIUS to LDAP/Active Directory.
 
+.. _explanation on the forums: https://forum.netgate.com/topic/39727/new-package-freeradius-2-x/145
+.. _Jeff Carneal - Apex Internet: http://freeradius.org/testimonials.html
+.. _sqlcounter: http://wiki.freeradius.org/Rlm_sqlcounter

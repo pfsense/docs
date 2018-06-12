@@ -8,5 +8,5 @@ device, it may be due to an issue with Safari on the iPad which may be
 be solved by disabling Autofill for names and passwords.
 
 See also:
-http://forum.pfsense.org/index.php/topic,25399.0/topicseen.html
+https://forum.netgate.com/topic/23829/ipad-and-captive-portal-simply-hangs-on-login
 
