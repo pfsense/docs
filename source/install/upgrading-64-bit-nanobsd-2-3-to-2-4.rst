@@ -68,7 +68,7 @@ Sometimes the page will refresh whilst performing the slice duplication
 and not indicate whether it has completed. The command that is run is
 similar to this, which can be run from the command prompt::
 
-  # /bin/dd if=/dev/da0s2 of=/dev/da0s1 bs=64k
+  # /bin/dd if=/dev/da0s2 of=/dev/da0s1 bs=64k
 
 Change Package Names
 ^^^^^^^^^^^^^^^^^^^^
@@ -79,15 +79,15 @@ Tell *pkg* to use the regular base package and not NanoBSD
 - Use option 8 to start a shell
 - Run the following commands::
 
-    # pkg set -y -o security/pfSense-base-nanobsd:security/pfSense-base pfSense-base-nanobsd
-    # pkg set -y -n pfSense-base-nanobsd:pfSense-base pfSense-base-nanobsd
+    # pkg set -y -o security/pfSense-base-nanobsd:security/pfSense-base pfSense-base-nanobsd
+    # pkg set -y -n pfSense-base-nanobsd:pfSense-base pfSense-base-nanobsd
 
 Change the Platform
 ^^^^^^^^^^^^^^^^^^^
 
 Change the platform type from a shell prompt::
 
-  # echo pfSense > /etc/platform
+  # echo pfSense > /etc/platform
 
 Filesystem Changes
 ^^^^^^^^^^^^^^^^^^
@@ -99,38 +99,38 @@ All of the steps in this section must be performed using a shell prompt.
 
 Change */etc/fstab* to mount partitions read-write::
 
-  # sed -i .bkp -e 's/ro,sync/rw/' /etc/fstab
+  # sed -i .bkp -e 's/ro,sync/rw/' /etc/fstab
 
 Delete the secondary partition::
 
-  # gpart delete -i 2 XXX
+  # gpart delete -i 2 XXX
 
 Prepare filesystem to grow on the next boot::
 
-  # touch /root/force_growfs
+  # touch /root/force_growfs
 
 Move the configuration slice (*/cf*) content to the root slice::
 
-  # mkdir -p /mnt/cf
-  # sed -i '' -e 's,[[:blank:]]/cf, /mnt/cf,' /etc/fstab
-  # umount -f /cf
-  # mount /mnt/cf
-  # cp -Rp /mnt/cf/* /cf
-  # sync; sync
-  # umount -f /mnt/cf
+  # mkdir -p /mnt/cf
+  # sed -i '' -e 's,[[:blank:]]/cf, /mnt/cf,' /etc/fstab
+  # umount -f /cf
+  # mount /mnt/cf
+  # cp -Rp /mnt/cf/* /cf
+  # sync; sync
+  # umount -f /mnt/cf
 
 Remove */cf* slice::
 
-  # gpart delete -i 3 XXX
+  # gpart delete -i 3 XXX
 
 Cleanup */etc/fstab*::
 
-  # sed -i '' -e '/\/mnt\/cf/d' /etc/fstab
+  # sed -i '' -e '/\/mnt\/cf/d' /etc/fstab
 
 Ensure that the first slice is active and bootable::
 
-  # gpart set -a active -i 1 /dev/XXX
-  # boot0cfg -s 1 /dev/XXX
+  # gpart set -a active -i 1 /dev/XXX
+  # boot0cfg -s 1 /dev/XXX
 
 Run the Update
 ^^^^^^^^^^^^^^
@@ -140,7 +140,7 @@ Do not update using the GUI.
 From the console, update using option 13 from the menu or from a shell
 prompt::
 
-  # pfSense-upgrade
+  # pfSense-upgrade
 
 Be patient on first boot. The disk resize can take quite a long time.
 After the disk resize, the upgrade process will continue and this also

@@ -34,9 +34,9 @@ try clearing and resetting the cache.
 
 .. code::
 
-  mv /var/squid/cache /var/squid/cache.old
-  squid -z
-  rm -rf /var/squid/cache.old
+  mv /var/squid/cache /var/squid/cache.old
+  squid -z
+  rm -rf /var/squid/cache.old
 
 The old cache should be moved, then reset, and then the old cache should
 be removed, as above, because removing the cache directory can be time
@@ -54,16 +54,16 @@ Packages** tab in the proper order: Lightsquid, SquidGuard, then Squid
 
 2. Remove the contents of the squid directory and cache::
 
-     rm -rf /var/squid
+     rm -rf /var/squid
 
 3. Remove the Squid and related package include files::
 
-     rm /usr/local/pkg/*squid*
-     rm -rf /usr/local/etc/squid/
+     rm /usr/local/pkg/*squid*
+     rm -rf /usr/local/etc/squid/
 
 4. Ensure any leftover PBI symlinks are removed::
 
-     find / -type l -lname '/usr/pbi/*' -delete
+     find / -type l -lname '/usr/pbi/*' -delete
 
 5. [Optional] Remove the settings from inside config.xml using one of
 the following methods:

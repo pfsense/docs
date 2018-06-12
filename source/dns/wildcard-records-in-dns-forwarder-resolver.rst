@@ -20,8 +20,8 @@ and so on).
 
 If a specific Host Overrides is set for example::
 
-  specific.example.com 192.168.1.100
-  knownhost.example.com 192.168.1.101
+  specific.example.com 192.168.1.100
+  knownhost.example.com 192.168.1.101
 
 Then those would be returned when doing a query for those hosts, only
 when no specific host has been specified in the host overrides would the
@@ -29,7 +29,7 @@ advanced wildcard entry be used.
 
 To resolve the domain to an IP address::
 
-  example.com 192.168.1.45
+  example.com 192.168.1.45
 
 Leave the host field blank in the host overrides. So if the query is now
 for *example.com*, 192.168.1.45 would be returned. If

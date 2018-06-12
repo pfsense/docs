@@ -10,10 +10,10 @@ you may wish to be able to access all the systems on those networks.
 
 This is the desired outcome, Site 0 is “us”::
 
-  Site 0 - 10.1.1/24
-  Site 1 - 192.168.0/24 -> 10.10.1/24
-  Site 2 - 192.168.0/24 -> 10.10.2/24
-  Site 3 - 192.168.0/24 -> 10.10.3/24
+  Site 0 - 10.1.1/24
+  Site 1 - 192.168.0/24 -> 10.10.1/24
+  Site 2 - 192.168.0/24 -> 10.10.2/24
+  Site 3 - 192.168.0/24 -> 10.10.3/24
 
 So we can now access 192.168.0.33 on say site 2 as 10.10.2.33.
 

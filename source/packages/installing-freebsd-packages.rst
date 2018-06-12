@@ -48,7 +48,7 @@ If you would like to install **sendmail** for example you would run::
 
 To find out that it relies on a dependency::
 
-  pkg: Missing dependency 'cyrus-sasl-saslauthd'
+  pkg: Missing dependency 'cyrus-sasl-saslauthd'
 
 So to successfully install the package first install whatever it depends
 on depending on the package desired there can be a long list of
@@ -142,11 +142,11 @@ enter *Y* to confirm the installation::
 The package is now installed. For it to be available in the shell, a
 *rehash* is necessary::
 
-  # rehash
+  # rehash
 
 Now the program may be executed::
 
-  # iftop -nNpPi (interface)
+  # iftop -nNpPi (interface)
 
 pfSense 2.1.x
 -------------
@@ -181,7 +181,7 @@ shell prompt.
 To install the package from a remote repository, run the following
 command::
 
-  # pkg_add -r iftop
+  # pkg_add -r iftop
 
 It will likely fail. If so, fix up and enter the URL to the package in
 full::
@@ -195,11 +195,11 @@ Which results in the following full command::
 The package is now installed. For it to be available in the shell, a
 *rehash* is necessary::
 
-  # rehash
+  # rehash
 
 Now the program may be executed::
 
-  # iftop -nNpPi (interface)
+  # iftop -nNpPi (interface)
 
 The alternate site may also be set in a variable to be used by
 *pkg\_add* if several packages will be installed::

@@ -84,14 +84,14 @@ or you will have no audio or one way audio in your calls. Also change
 the NAT IP to whatever your Asterisk server is and change the
 description to something that makes sense for you.
 
-| ``Interface: WAN``
-| ``Protocol: UDP``
-| ``External port range: From: 10000``
-| ``External port range: To: 20000``
-| ``NAT IP: 192.168.1.50``
-| ``Local Port: 10000``
-| ``Description: Asterisk PBX - RTP``
-| ``Enable Auto-add a firewall rule to permit traffic through this NAT rule``
+| ``Interface: WAN``
+| ``Protocol: UDP``
+| ``External port range: From: 10000``
+| ``External port range: To: 20000``
+| ``NAT IP: 192.168.1.50``
+| ``Local Port: 10000``
+| ``Description: Asterisk PBX - RTP``
+| ``Enable Auto-add a firewall rule to permit traffic through this NAT rule``
 
 SIP
 ~~~
@@ -103,14 +103,14 @@ registering with your SIP provider. Also change the NAT IP to whatever
 your Asterisk server is and change the description to something that
 makes sense for you. Code:
 
-| ``Interface: WAN``
-| ``Protocol: UDP``
-| ``External port range: From: 5060``
-| ``External port range: To: 5060``
-| ``NAT IP: 192.168.1.50``
-| ``Local Port: 5060``
-| ``Description: Asterisk PBX - SIP``
-| ``Enable Auto-add a firewall rule to permit traffic through this NAT rule``
+| ``Interface: WAN``
+| ``Protocol: UDP``
+| ``External port range: From: 5060``
+| ``External port range: To: 5060``
+| ``NAT IP: 192.168.1.50``
+| ``Local Port: 5060``
+| ``Description: Asterisk PBX - SIP``
+| ``Enable Auto-add a firewall rule to permit traffic through this NAT rule``
 
 The SIP Proxy siproxd
 ---------------------
@@ -130,12 +130,12 @@ siproxd configured, be sure to change your “Outbound Proxy Hostname” to
 the hostname or IP (IP in my case) to your SIP provider. Options I don't
 specify here I leave blank or default.
 
-| ``Inbound Interface: LAN``
-| ``Outbound Interface: WAN``
-| ``Enable RTP Proxy: Enable``
-| ``RTP Port Range (lower): 7070``
-| ``RTP Port Range (upper): 7080``
-| ``Outbound Proxy Hostname: 206.15.136.221``
+| ``Inbound Interface: LAN``
+| ``Outbound Interface: WAN``
+| ``Enable RTP Proxy: Enable``
+| ``RTP Port Range (lower): 7070``
+| ``RTP Port Range (upper): 7080``
+| ``Outbound Proxy Hostname: 206.15.136.221``
 
 Summary
 -------

@@ -6,12 +6,12 @@ password management, notably */etc/master.passwd* and */etc/group*. The
 corruption can result in a loss of access to the unit, and console error
 messages such as one or more of the following:
 
-| ``[ERROR] [pool lighty] cannot get uid for user 'root'``
-| ``[ERROR] FPM initialization failed``
-| ``fcgicli: Could not connect to server(/var/run/php-fpm.socket).``
-| ``Warning: chown(): Unable to find uid for root in /etc/inc/config.lib.inc on line 867``
-| ``Warning: chgrp(): Unable to find gid for proxy in /etc/inc/config.lib.inc on line 868``
-| ``Warning: chown(): Unable to find uid for nobody in /etc/inc/rrd.inc on line 289``
+| ``[ERROR] [pool lighty] cannot get uid for user 'root'``
+| ``[ERROR] FPM initialization failed``
+| ``fcgicli: Could not connect to server(/var/run/php-fpm.socket).``
+| ``Warning: chown(): Unable to find uid for root in /etc/inc/config.lib.inc on line 867``
+| ``Warning: chgrp(): Unable to find gid for proxy in /etc/inc/config.lib.inc on line 868``
+| ``Warning: chown(): Unable to find uid for nobody in /etc/inc/rrd.inc on line 289``
 
 The web interface on the firewall will also be inaccessible when this
 problem is present; Attempting to access the GUI results in a “503 -
@@ -46,12 +46,12 @@ pfSense 2.2 through 2.2.2 users
 For those who have not yet upgraded to pfSense 2.2.3-RELEASE, the
 following commands may be run to activate the *sync* option on */*:
 
-| ``# Make a backup of fstab``
-| ``cp /etc/fstab /etc/fstab.orig``
-| ``# Activate sync for /``
-| ``/usr/bin/sed -i '' 's/^\(\/.*[[:space:]]*\/[[:space:]]*ufs[[:space:]]*\)rw\([[:space:]]*[[:digit:]][[:space:]]*[[:digit:]]\)$/\1rw,sync\2/' /etc/fstab``
-| ``# Remount / with sync now``
-| ``mount -o sync /``
+| ``# Make a backup of fstab``
+| ``cp /etc/fstab /etc/fstab.orig``
+| ``# Activate sync for /``
+| ``/usr/bin/sed -i '' 's/^\(\/.*[[:space:]]*\/[[:space:]]*ufs[[:space:]]*\)rw\([[:space:]]*[[:digit:]][[:space:]]*[[:digit:]]\)$/\1rw,sync\2/' /etc/fstab``
+| ``# Remount / with sync now``
+| ``mount -o sync /``
 
 Alternate Fix
 ~~~~~~~~~~~~~
@@ -62,14 +62,14 @@ For those who would rather edit */etc/fstab* directly:
    such as *vi* at the console.
 -  Locate the line with the root (*/*) slice:
 
-``/dev/ada0s1a       /       ufs rw      1   1``
+``/dev/ada0s1a       /       ufs rw      1   1``
 
 -  Add sync to the options column after *rw*:
 
-``/dev/ada0s1a       /       ufs rw,sync     1   1``
+``/dev/ada0s1a       /       ufs rw,sync     1   1``
 
 -  Save the file
 -  Run the following command to remount the filesystem with sync, since
    the above change will only take effect at boot time:
 
-``mount -o sync /``
+``mount -o sync /``

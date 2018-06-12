@@ -51,17 +51,17 @@ For configuring the healthcheck the following options should be accepted
 by most webserver, but are more difficult to filter out from normal
 webserver logs::
 
-  option httpchk GET / HTTP/1.1\r\nHost:\ www.yourdomain.com\r\nAccept:\ */*
+  option httpchk GET / HTTP/1.1\r\nHost:\ www.yourdomain.com\r\nAccept:\ */*
 
 If the backend requires authentication another option could be to change
 the url to a different page that does not need authentication, perhaps
 specifically added to the webserver for this purpose::
 
-  option httpchk GET /healthcheck.php
+  option httpchk GET /healthcheck.php
 
 Or accept that authentication error as the 'valid' result::
 
-  http-check expect status 401
+  http-check expect status 401
 
 Syslogs
 ~~~~~~~
@@ -76,12 +76,12 @@ for the appropriate format. As such the 'Detailed logging' option in the
 frontend edit page should be checked. For mode HTTP servers the
 following will be configured in the config file::
 
-  option httplog
+  option httplog
 
 For mode TCP servers the following will be configured in the config
 file::
 
-  option tcplog
+  option tcplog
 
 If needed its also possible to capture additional traffic headers which
 will be added into the syslog messages.

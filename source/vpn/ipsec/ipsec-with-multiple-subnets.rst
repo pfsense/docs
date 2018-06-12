@@ -12,13 +12,13 @@ For example, for 172.16.0.0/24 and 172.16.1.0/24 at Site A, and
 
 On the Site A Firewall::
 
-  172.16.0.0/24 to 10.0.0.0/24
-  172.16.1.0/24 to 10.0.0.0/24
+  172.16.0.0/24 to 10.0.0.0/24
+  172.16.1.0/24 to 10.0.0.0/24
 
 On the Site B Firewall::
 
-  10.0.0.0/24 to 172.16.0.0/24
-  10.0.0.0/24 to 172.16.1.0/24
+  10.0.0.0/24 to 172.16.0.0/24
+  10.0.0.0/24 to 172.16.1.0/24
 
 This works for any additional networks on either side (VPN subnets,
 networks on the other end of VPNs connected to the remote router, etc).

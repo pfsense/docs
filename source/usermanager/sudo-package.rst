@@ -48,13 +48,13 @@ Examples:
 
 -  Run ping only to *192.168.1.2*:
 
-``/sbin/ping 192.168.1.2``
+``/sbin/ping 192.168.1.2``
 
 -  Run command “*blah*” without any parameters:
 
-``/usr/local/bin/blah ""``
+``/usr/local/bin/blah ""``
 
 -  Run *ping* and *traceroute* and their IPv6 variants with any
    parameters:
 
-``/sbin/ping, /sbin/ping6, /usr/sbin/traceroute, /usr/sbin/traceroute6``
+``/sbin/ping, /sbin/ping6, /usr/sbin/traceroute, /usr/sbin/traceroute6``

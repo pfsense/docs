@@ -21,7 +21,7 @@ shown in demsg, likely AES-128-CBC.
 AES-NI support via the kernel module requires running an amd64 pfSense
 image. It will not work on i386 and will fail with a message similar to::
 
-  Dec  4 14:45:05 pfSense kernel: link_elf: symbol AES_GCM_encrypt undefined
+  Dec  4 14:45:05 pfSense kernel: link_elf: symbol AES_GCM_encrypt undefined
 
 Reload pfSense on that hardware using an amd64 pfSense image and it will
 work.
@@ -50,20 +50,20 @@ hardware and active modules though OpenSSL, run:
 
 On 2.1.x::
 
-  /usr/local/bin/openssl engine -t -c
+  /usr/local/bin/openssl engine -t -c
 
 On 2.2 and later::
 
-  /usr/bin/openssl engine -t -c
+  /usr/bin/openssl engine -t -c
 
 Example output on an ALIX with glxsb loaded::
 
-  : /usr/bin/openssl engine -t -c
-  (cryptodev) BSD cryptodev engine
-   [RSA, DSA, DH, AES-128-CBC]
-       [ available ]
-  (dynamic) Dynamic engine loading support
-       [ unavailable ]
+  : /usr/bin/openssl engine -t -c
+  (cryptodev) BSD cryptodev engine
+   [RSA, DSA, DH, AES-128-CBC]
+       [ available ]
+  (dynamic) Dynamic engine loading support
+       [ unavailable ]
 
 .. note:: That is only for support via OpenSSL. Other areas such as IPsec may
    support additional methods not listed.
@@ -74,23 +74,23 @@ Comparison
 The difference can be very dramatic, as illustrated in the following
 example on an ALIX.2D3::
 
-  alix:~#  openssl speed -evp aes-128-cbc
-  To get the most accurate results, try to run this
-  program when this computer is idle.
-  Doing aes-128-cbc for 3s on 16 size blocks: 977706 aes-128-cbc's in 2.96s
-  Doing aes-128-cbc for 3s on 64 size blocks: 265799 aes-128-cbc's in 2.89s
-  Doing aes-128-cbc for 3s on 256 size blocks: 70799 aes-128-cbc's in 2.98s
-  Doing aes-128-cbc for 3s on 1024 size blocks: 17854 aes-128-cbc's in 2.98s
-  Doing aes-128-cbc for 3s on 8192 size blocks: 2242 aes-128-cbc's in 2.99s
-  OpenSSL 0.9.8e 23 Feb 2007
-  built on: Fri May 15 13:50:54 EDT 2009
-  options:bn(64,32) md2(int) rc4(idx,int) des(ptr,risc1,16,long) aes(partial) blowfish(idx)
-  compiler: cc
-  available timing options: USE_TOD HZ=128 [sysconf value]
-  timing function used: getrusage
-  The 'numbers' are in 1000s of bytes per second processed.
-  type             16 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes
-  aes-128-cbc       5291.37k     5885.35k     6076.70k     6130.61k     6141.80k
+  alix:~#  openssl speed -evp aes-128-cbc
+  To get the most accurate results, try to run this
+  program when this computer is idle.
+  Doing aes-128-cbc for 3s on 16 size blocks: 977706 aes-128-cbc's in 2.96s
+  Doing aes-128-cbc for 3s on 64 size blocks: 265799 aes-128-cbc's in 2.89s
+  Doing aes-128-cbc for 3s on 256 size blocks: 70799 aes-128-cbc's in 2.98s
+  Doing aes-128-cbc for 3s on 1024 size blocks: 17854 aes-128-cbc's in 2.98s
+  Doing aes-128-cbc for 3s on 8192 size blocks: 2242 aes-128-cbc's in 2.99s
+  OpenSSL 0.9.8e 23 Feb 2007
+  built on: Fri May 15 13:50:54 EDT 2009
+  options:bn(64,32) md2(int) rc4(idx,int) des(ptr,risc1,16,long) aes(partial) blowfish(idx)
+  compiler: cc
+  available timing options: USE_TOD HZ=128 [sysconf value]
+  timing function used: getrusage
+  The 'numbers' are in 1000s of bytes per second processed.
+  type             16 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes
+  aes-128-cbc       5291.37k     5885.35k     6076.70k     6130.61k     6141.80k
 
 The numbers appear fairly consistent regardless of size, increasing a
 little with larger chunks.

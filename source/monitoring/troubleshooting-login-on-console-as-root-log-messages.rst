@@ -5,11 +5,11 @@ Troubleshooting "login on console as root" Log Messages
 
 Occasionally, the following messages may appear in the system log:
 
-``login: login on console as root``
+``login: login on console as root``
 
 or
 
-``login: login on ttyv0 as root``
+``login: login on ttyv0 as root``
 
 This is normal. It means that the console menu stopped and restarted, or
 someone pressed enter (didn't choose a menu option) at the console menu.

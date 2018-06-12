@@ -80,4 +80,4 @@ interfaces.
 In these cases, one option is to install the :doc:`shellcmd package </development/executing-commands-at-boot-time>`
 or add a command manually to run a command such as::
 
-  /sbin/ifconfig em0 promisc
+  /sbin/ifconfig em0 promisc

@@ -37,7 +37,7 @@ Install
 
 Run the following from an SSH session:
 
-``fetch -o - ``\ ```http://files.pfsense.org/misc/easyrsa-setup.txt`` <http://files.pfsense.org/misc/easyrsa-setup.txt>`__\ `` | /bin/sh``
+``fetch -o - ``\ ```http://files.pfsense.org/misc/easyrsa-setup.txt`` <http://files.pfsense.org/misc/easyrsa-setup.txt>`__\ `` | /bin/sh``
 
 This will download the files, extract them, and remove the downloaded
 file. After doing this, prompt will show to run the next step manually.
@@ -45,7 +45,7 @@ Copy and paste the last line displayed to generate certificates (NOTE:
 If process was performed previously, repeating this will wipe out all
 existing certificates!)
 
-``cd /root/easyrsa4pfsense && ./PFSENSE_RUN_ME_FIRST``
+``cd /root/easyrsa4pfsense && ./PFSENSE_RUN_ME_FIRST``
 
 This will first prompt for the location and organization information to
 be used when generating the certificate authority and initial
@@ -64,9 +64,9 @@ Creating a client key
 To create a new client key, SSH into the firewall, choose option *8* and
 run:
 
-| ``cd /root/easyrsa4pfsense``
-| ``source vars``
-| ``./build-key clientXXXX``
+| ``cd /root/easyrsa4pfsense``
+| ``source vars``
+| ``./build-key clientXXXX``
 
 Where *clientXXXX* is the name of the client.
 
@@ -77,9 +77,9 @@ Creating a password protected client key
 
 To create a new client key with password protection:
 
-| ``cd /root/easyrsa4pfsense``
-| ``source vars``
-| ``./build-key-pass clientXXXX``
+| ``cd /root/easyrsa4pfsense``
+| ``source vars``
+| ``./build-key-pass clientXXXX``
 
 Where *clientXXXX* is the name of the client.
 
@@ -90,9 +90,9 @@ Revoke a client key
 
 To revoke the key for client1:
 
-| ``cd /root/easyrsa4pfsense/``
-| ``source vars``
-| ``./revoke-full client1``
+| ``cd /root/easyrsa4pfsense/``
+| ``source vars``
+| ``./revoke-full client1``
 
 Which will update the *crl.pem* file, the contents of which need to go
 into the pfSense OpenVPN GUI in the **CRL** field.

@@ -191,5 +191,5 @@ Switch/Layer 2 Issues
    switch firmware mishandling multicast even with igmp snooping
    disabled until it is toggled, such as::
 
-     ip igmp snooping
-     no ip igmp snooping
+     ip igmp snooping
+     no ip igmp snooping

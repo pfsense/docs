@@ -287,7 +287,7 @@ IPsec Status Page Issues
 
 If the IPsec status page prints errors such as::
 
-  Warning: Illegal string offset 'type' in /etc/inc/xmlreader.inc on line 116
+  Warning: Illegal string offset 'type' in /etc/inc/xmlreader.inc on line 116
 
 That is a sign that the incomplete xmlreader XML parser is active, which
 is triggered by the presence of the file */cf/conf/use\_xmlreader*. This
@@ -305,8 +305,8 @@ Mismatched Local/Remote Subnets
 
 .. code::
 
-  Feb 20 10:33:41  racoon: ERROR: failed to pre-process packet.
-  Feb 20 10:33:41  racoon: ERROR: failed to get sainfo.
+  Feb 20 10:33:41  racoon: ERROR: failed to pre-process packet.
+  Feb 20 10:33:41  racoon: ERROR: failed to get sainfo.
 
 This can result from mismatched subnet masks in the IPsec tunnel
 definitions. Check to be sure that the local and remote subnet masks
@@ -317,7 +317,7 @@ Failed pfkey align
 
 .. code::
 
-  racoon: ERROR: libipsec failed pfkey align (Invalid sadb message)
+  racoon: ERROR: libipsec failed pfkey align (Invalid sadb message)
 
 Check to make sure that the Phase 2 timeouts match up on both ends of
 the tunnel. Some people still see this periodically with no ill effect.
@@ -329,7 +329,7 @@ pfkey Delete
 
 .. code::
 
-  ERROR: pfkey DELETE received
+  ERROR: pfkey DELETE received
 
 This message may be seen repeatedly as Phase 2 is renegotiated between
 two endpoints (for multiple subnets). The tunnels still work, but
@@ -341,7 +341,7 @@ REGISTER message
 
 .. code::
 
-  racoon: INFO: unsupported PF_KEY message REGISTER
+  racoon: INFO: unsupported PF_KEY message REGISTER
 
 This is a normal log message. It is not indicative of any problem.
 
@@ -350,15 +350,15 @@ Stuck/Broken Phase 1
 
 Client::
 
-  racoon: ERROR: none message must be encrypted
+  racoon: ERROR: none message must be encrypted
 
 Server::
 
-  racoon: ERROR: can't start the quick mode, there is no ISAKMP-SA
+  racoon: ERROR: can't start the quick mode, there is no ISAKMP-SA
 
 Or also::
 
-  racoon: INFO: request for establishing IPsec-SA was queued due to no phase1 found.
+  racoon: INFO: request for establishing IPsec-SA was queued due to no phase1 found.
 
 Try to stop and restart racoon on the client/opposite side. This can
 turn up if one side still thinks Phase 1 is good/active, and the other
@@ -371,9 +371,9 @@ If a cryptographic accelerator chip such as glxsb is enabled and an
 unsupported cipher key length is configured, the following errors may be
 displayed::
 
-  Mar 27 16:31:44   racoon: ERROR: pfkey ADD failed: Invalid argument
-  Mar 27 16:31:44   racoon: ERROR: pfkey UPDATE failed: Invalid argument
-  Mar 27 16:31:44   racoon: WARNING: attribute has been modified.
+  Mar 27 16:31:44   racoon: ERROR: pfkey ADD failed: Invalid argument
+  Mar 27 16:31:44   racoon: ERROR: pfkey UPDATE failed: Invalid argument
+  Mar 27 16:31:44   racoon: WARNING: attribute has been modified.
 
 The reason for this is that the crypto(9) framework in FreeBSD specifies
 support by family, such as AES, not not just by key length. The glxsb
@@ -400,9 +400,9 @@ Send Errors
 
 .. code::
 
-  Sep 18 11:48:10 racoon: ERROR: sendto (Operation not permitted)
-  Sep 18 11:48:10 racoon: ERROR: sendfromto failed
-  Sep 18 11:48:10 racoon: ERROR: phase1 negotiation failed due to send error.
+  Sep 18 11:48:10 racoon: ERROR: sendto (Operation not permitted)
+  Sep 18 11:48:10 racoon: ERROR: sendfromto failed
+  Sep 18 11:48:10 racoon: ERROR: phase1 negotiation failed due to send error.
 
 Errors such as those above are due to something preventing racoon from
 sending packets out. Typically this is related to states, but could also

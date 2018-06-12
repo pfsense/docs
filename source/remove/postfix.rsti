@@ -46,22 +46,22 @@ TLS Config
 If a TLS Config is needed, put the following into the “custom main.cf
 options” Field:
 
-| ``# Add TLS``
+| ``# Add TLS``
 | ``#``
-| ``# SMTPD``
+| ``# SMTPD``
 | ``#``
-| ``smtpd_tls_cert_file = /cf/conf/cert.crt``
-| ``smtpd_tls_key_file = /cf/conf/cert.key``
-| ``smtpd_tls_CAfile = /etc/ssl/cert.pem``
-| ``smtpd_tls_security_level = may``
-| ``# SMTP Client``
-| ``smtp_tls_security_level = may``
-| ``smtp_tls_CAfile = /etc/ssl/cert.pem``
-| ``# SSL-Certificate - Generate logfile entries``
+| ``smtpd_tls_cert_file = /cf/conf/cert.crt``
+| ``smtpd_tls_key_file = /cf/conf/cert.key``
+| ``smtpd_tls_CAfile = /etc/ssl/cert.pem``
+| ``smtpd_tls_security_level = may``
+| ``# SMTP Client``
+| ``smtp_tls_security_level = may``
+| ``smtp_tls_CAfile = /etc/ssl/cert.pem``
+| ``# SSL-Certificate - Generate logfile entries``
 | ``#``
-| ``smtpd_tls_received_header = yes``
-| ``smtp_tls_loglevel = 1``
-| ``smtpd_tls_loglevel = 1``
+| ``smtpd_tls_received_header = yes``
+| ``smtp_tls_loglevel = 1``
+| ``smtpd_tls_loglevel = 1``
 
 --------------
 

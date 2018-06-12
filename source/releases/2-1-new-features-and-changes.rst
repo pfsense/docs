@@ -575,7 +575,7 @@ SH/PHP Shell Scripts
 
 - Added shell script to remove shaper settings::
 
-    pfSsh.php playback removeshaper
+    pfSsh.php playback removeshaper
 
 - Add shell script to control services from the command line::
 

@@ -85,9 +85,9 @@ telling the difference between network cards prior to installation. One
 way is by MAC address, which should be shown next to the interface names
 on the assignment screen::
 
-  em0    00:0c:29:00:df:84   (up) Intel(R) PRO/1000 Legacy Network Connection 1.0.6
-  em1    00:0c:29:00:df:8e   (up) Intel(R) PRO/1000 Legacy Network Connection 1.0.6
-  em2    00:0c:29:00:df:98 (down) Intel(R) PRO/1000 Legacy Network Connection 1.0.6
+  em0    00:0c:29:00:df:84   (up) Intel(R) PRO/1000 Legacy Network Connection 1.0.6
+  em1    00:0c:29:00:df:8e   (up) Intel(R) PRO/1000 Legacy Network Connection 1.0.6
+  em2    00:0c:29:00:df:98 (down) Intel(R) PRO/1000 Legacy Network Connection 1.0.6
 
 The MAC address is sometimes printed on a sticker somewhere physically
 on the network card. MAC addresses also are assigned by manufacturer,

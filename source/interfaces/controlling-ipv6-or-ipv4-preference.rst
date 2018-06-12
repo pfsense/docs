@@ -23,4 +23,4 @@ To prefer IPv4::
 
 To prefer IPv6 again::
 
-  ip6addrctl flush
+  ip6addrctl flush

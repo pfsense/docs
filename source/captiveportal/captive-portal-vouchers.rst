@@ -43,8 +43,8 @@ Generate Larger Keys
 To generate a valid RSA key pair using 64 Bits, run the following from
 the shell on console or ssh::
 
-  $ openssl genrsa 64 > key64.private
-  $ openssl rsa -pubout < key64.private >key64.public
+  $ openssl genrsa 64 > key64.private
+  $ openssl rsa -pubout < key64.private >key64.public
 
 Then use the contents of the resulting files to paste into those fields.
 

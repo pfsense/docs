@@ -25,10 +25,10 @@ configuration shown later.
 
 .. code::
 
-  crypto isakmp policy 10
-   encr 3des
-   authentication pre-share
-   group 2
+  crypto isakmp policy 10
+   encr 3des
+   authentication pre-share
+   group 2
 
 Next, configure the pre-shared key. The key in this example is ABCDEFG,
 but be sure to use something random and secure for any production
@@ -37,7 +37,7 @@ used.
 
 .. code::
 
-  crypto isakmp key ABCDEFG address 10.0.66.22 no-xauth
+  crypto isakmp key ABCDEFG address 10.0.66.22 no-xauth
 
 Next configure the transform set for phase 2. This uses *ESP*, *3DES*
 and *SHA*. The transform set is named *3DES-SHA*, which is how it will
@@ -45,7 +45,7 @@ be referred to later.
 
 .. code::
 
-  crypto ipsec transform-set 3DES-SHA esp-3des esp-sha-hmac
+  crypto ipsec transform-set 3DES-SHA esp-3des esp-sha-hmac
 
 Now configure an access list that will match the local and remote
 subnets on the pfSense end. This is configured as *access-list 100*,
@@ -54,22 +54,22 @@ so a /24 network (255.255.255.0 mask) is represented as *0.0.0.255*.
 
 .. code::
 
-  access-list 100 permit ip 192.168.11.0 0.0.0.255 172.26.5.0 0.0.0.255
-  access-list 100 permit ip 172.26.5.0 0.0.0.255 192.168.11.0 0.0.0.255
+  access-list 100 permit ip 192.168.11.0 0.0.0.255 172.26.5.0 0.0.0.255
+  access-list 100 permit ip 172.26.5.0 0.0.0.255 192.168.11.0 0.0.0.255
 
 Now configure the crypto map for this VPN::
 
-  crypto map PFSVPN 15 ipsec-isakmp
-   set peer 10.0.66.22
-   set transform-set 3DES-SHA
-   set pfs group2
-   match address 100
+  crypto map PFSVPN 15 ipsec-isakmp
+   set peer 10.0.66.22
+   set transform-set 3DES-SHA
+   set pfs group2
+   match address 100
 
 Lastly, under the interface configuration for the interface where the
 VPN will terminate (the one with the public IP), assign the crypto map::
 
-  interface FastEthernet0/0
-  crypto map PFSVPN
+  interface FastEthernet0/0
+  crypto map PFSVPN
 
 The configuration is then finished on the Cisco side.
 
@@ -146,11 +146,11 @@ this, depending on how the router has NAT configured. If the following
 example does not help, there are several examples that turn up in a
 Google search for “cisco ios nonat ipsec”::
 
-  ip nat inside source route-map NONAT interface FastEthernet0/0 overload
-  access-list 110 deny   ip 172.26.5.0 0.0.0.255 192.168.11.0 0.0.0.255
-  access-list 110 permit ip 172.26.5.0 0.0.0.255 any
-  route map NONAT permit 10
-   match ip address 110
+  ip nat inside source route-map NONAT interface FastEthernet0/0 overload
+  access-list 110 deny   ip 172.26.5.0 0.0.0.255 192.168.11.0 0.0.0.255
+  access-list 110 permit ip 172.26.5.0 0.0.0.255 any
+  route map NONAT permit 10
+   match ip address 110
 
 This will direct the router to prevent NAT if the traffic is going from
 the subnet behind the Cisco router to the subnet behind the pfSense

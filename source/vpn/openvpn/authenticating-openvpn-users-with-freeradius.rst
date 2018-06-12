@@ -119,18 +119,18 @@ via SSH unless otherwise specified.
    -  Navigate to **VPN > OpenVPN** and select the server
    -  Modify the “Advanced” text box to include the following:
 
-``verb 7``
+``verb 7``
 
     This will log everything from OpenVPN to the OpenVPN tab under
     **Status > System Logs**. It can be watched with the following
     command (while trying to connect/etc).
 
-``clog -f /var/log/openvpn.log``
+``clog -f /var/log/openvpn.log``
 
 -  FreeRADIUS may also be watched for attempted
    connections/authorizations (Failed or successful).
 
-``clog -f /var/log/system.log``
+``clog -f /var/log/system.log``
 
 -  With this information in hand, Google and the pfSense forum can be a
    very good resource.

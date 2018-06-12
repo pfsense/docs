@@ -46,7 +46,7 @@ Configure Clients
 Clients may be configured to use the second WAN by adding a second
 *remote* statement to their configuration, such as::
 
-  remote x.x.x.x 1194 udp
+  remote x.x.x.x 1194 udp
 
 Where *x.x.x.x* is the second WAN IP address or host name.
 

@@ -20,4 +20,4 @@ help on the forum or the support mailing list.
 
 .. code::
 
-  cat /var/etc/relayd.conf
+  cat /var/etc/relayd.conf

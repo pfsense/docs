@@ -6,11 +6,11 @@ Troubleshooting "No buffer space available" Errors
 On occasion traffic on a NIC may have trouble getting out with an error
 similar to::
 
-  ping: sendto: No buffer space available
+  ping: sendto: No buffer space available
 
 Or::
 
-  dpinger WANGW x.x.x.x: sendto error: 55
+  dpinger WANGW x.x.x.x: sendto error: 55
 
 The most common causes of this are:
 
@@ -23,7 +23,7 @@ The most common causes of this are:
 
   - Sometimes resetting the NIC can bring it back again::
 
-      # ifconfig em3 down; ifconfig em3 up
+      # ifconfig em3 down; ifconfig em3 up
 
 - Faulty cable
 - Traffic shaping (ALTQ or Limiters) dropping the packet

@@ -6,7 +6,7 @@ Troubleshooting ARP Move Log Messages
 Log entries may appear in the system log showing something similar to
 the following:
 
-``pfsense kernel: arp: 192.168.1.50 moved from c4:0c:5c:69:6c:05 to 62:1e:3e:43:04:0c on em1``
+``pfsense kernel: arp: 192.168.1.50 moved from c4:0c:5c:69:6c:05 to 62:1e:3e:43:04:0c on em1``
 
 This indicates that the firewall saw the specified IP address move
 between the first MAC address and the second. This can happen for

@@ -21,11 +21,11 @@ careful!
 
 .. code::
 
-  # sysctl kern.geom.debugflags=16
+  # sysctl kern.geom.debugflags=16
 
 Now, run::
 
-  # fdisk -B ada0
+  # fdisk -B ada0
 
 The output will look something like this::
 
@@ -77,14 +77,14 @@ be ignored. The F1 Prompt is now gone.
 
 Now either reboot, or run::
 
- # sysctl kern.geom.debugflags=0
+ # sysctl kern.geom.debugflags=0
 
 Which will disable the “foot shooting mode” and also stop printing geom
 debug messages to the console.
 
 If this error is received::
 
-  fdisk: failed to write sector zero
+  fdisk: failed to write sector zero
 
 Then something didn't take with the debugflags sysctl line. Try it
 again, ensuring everything was typed exactly as shown above.

@@ -26,12 +26,12 @@ From the GUI:
 
 From the shell (Full install)::
 
-  touch /root/force_fsck
+  touch /root/force_fsck
 
 From the shell (NanoBSD)::
 
   /etc/rc.conf_mount_rw
-  touch /root/force_fsck
+  touch /root/force_fsck
   /etc/rc.conf_mount_ro
 
 After creating the file, :doc:`reboot </hardware/reboot-system>`. The firewall will

@@ -23,13 +23,13 @@ FreeBSD
 
 On FreeBSD, edit /etc/rc.conf and add this line::
 
-  syslogd_flags=" -a 192.168.1.1 "
+  syslogd_flags=" -a 192.168.1.1 "
 
 Where 192.168.1.1 is the IP address of the pfSense firewall.
 
 More complex allow rules for syslog are also possible, like so::
 
-  syslogd_flags=" -a 10.0.10.0/24:*"
+  syslogd_flags=" -a 10.0.10.0/24:*"
 
 Using that parameter, syslog will accept from any IP address in the
 10.0.10.0 subnet (mask 255.255.255.0) and the messages may come from any
@@ -41,7 +41,7 @@ Now, edit **/etc/syslog.conf** and add a block at the bottom::
   +*
   
   +pfSense
-  *.*                /var/log/pfsense.log
+  *.*                /var/log/pfsense.log
 
 Where pfSense is the hostname of the pfSense firewall. An entry may also
 need to be added in **/etc/hosts** for that system, depending on the DNS
@@ -52,12 +52,12 @@ used for specific items.
 The log file may also need to be created manually with proper
 permissions::
 
-  touch /var/log/pfsense.log
-  chmod 640 /var/log/pfsense.log
+  touch /var/log/pfsense.log
+  chmod 640 /var/log/pfsense.log
 
 Now restart syslog::
 
-  /etc/rc.d/syslogd restart
+  /etc/rc.d/syslogd restart
 
 Linux
 ^^^^^

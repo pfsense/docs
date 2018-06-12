@@ -28,12 +28,12 @@ fixed with physical access to the console:
 - Press **Enter** when prompted to start */bin/sh*
 - Remount the drive as rewritable::
 
-    /sbin/mount -o rw /
+    /sbin/mount -o rw /
 
   If multiple partitions/slices were made during install, mount
   everything::
 
-    /sbin/mount -a -t ufs
+    /sbin/mount -a -t ufs
 
 - Run the built-in password reset command::
 
@@ -100,7 +100,7 @@ manually remove the entry as follows:
 The lockout table may also be cleared by the console or ssh in the
 shell::
 
-  pfctl -T flush -t webConfiguratorlockout
+  pfctl -T flush -t webConfiguratorlockout
 
 Remotely Circumvent Firewall Lockout by Temporarily Changing the Firewall Rules
 -------------------------------------------------------------------------------
@@ -108,16 +108,16 @@ Remotely Circumvent Firewall Lockout by Temporarily Changing the Firewall Rules
 The firewall rules may (very temporarily) be disabled using the
 following shell command::
 
-  pfctl -d
+  pfctl -d
 
 Once access is regained, turn the firewall back on using::
 
-  pfctl -e
+  pfctl -e
 
 Alternately, the loaded ruleset is left in /tmp/rules.debug. That could
 be edited to fix the connectivity issue and reload those rules like so::
 
-  pfctl -f /tmp/rules.debug
+  pfctl -f /tmp/rules.debug
 
 After that, do whatever work is necessary in the WebGUI to make the fix
 permanent. *(From billm in `this forum
@@ -126,7 +126,7 @@ post <http://forum.pfsense.org/index.php/topic,14299.msg75932.html#msg75932>`__)
 To get in without disabling pf, the following shell command can be run
 to add an “allow all” rule on the WAN::
 
-  pfSsh.php playback enableallowallwan
+  pfSsh.php playback enableallowallwan
 
 This is **VERY DANGEROUS** to keep around, so once access to the GUI has
 been regained with proper rules, be sure to delete this “allow all”
@@ -138,7 +138,7 @@ Add firewall rule at the command line with easyrule
 The command line version of easyrule may also be used to add a firewall
 rule to get back in::
 
-  # easyrule pass wan tcp x.x.x.x y.y.y.y 443
+  # easyrule pass wan tcp x.x.x.x y.y.y.y 443
 
 That will pass in from the remote IP x.x.x.x to the WAN IP, y.y.y.y on
 port 443. Adjust as needed.
@@ -175,15 +175,15 @@ to be fixed as follows:
 - Start a shell, typically option 8
 - Terminate the squid process like so::
 
-    /usr/local/etc/rc.d/squid.sh stop
+    /usr/local/etc/rc.d/squid.sh stop
 
 - If that doesn't work, try it this way::
 
-    squid -k shutdown
+    squid -k shutdown
 
   or::
 
-    killall -9 squid
+    killall -9 squid
 
 Once the squid process is fully terminated, access to the WebGUI will be
 available again. Be aware that work must be done quickly, or repeat the

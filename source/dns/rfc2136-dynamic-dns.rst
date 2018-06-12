@@ -45,7 +45,7 @@ place, add a zone there too::
 
 On the master name server, make the keys directory::
 
-  # mkdir -p /etc/namedb/keys
+  # mkdir -p /etc/namedb/keys
 
 And now generate a host key (the second line is the output of the
 command, *not* part of the command itself)::
@@ -87,12 +87,12 @@ This can be automated a bit with a simple script, **make-ddns-host.sh**::
 
 After making the file, make it executable::
 
-  # chmod u+x make-ddns-host.sh
+  # chmod u+x make-ddns-host.sh
 
 To use the script::
 
-  # ./make-ddns-host.sh mynewhost.dyn.example.com
-  # rndc reload
+  # ./make-ddns-host.sh mynewhost.dyn.example.com
+  # rndc reload
 
 To add a DynDNS entry in the pfSense GUI
 

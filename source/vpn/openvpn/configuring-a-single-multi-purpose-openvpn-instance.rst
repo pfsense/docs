@@ -41,7 +41,7 @@ broken up into /30 mini subnets - one per client. If those run out, then
 start on *10.33.251.0/24*. Each of these new subnets needs a route in
 the main OpenVPN server Advanced settings, such as::
 
-  route 10.33.250.0 255.255.255.0;
+  route 10.33.250.0 255.255.255.0;
 
 OpenVPN certificate
 ~~~~~~~~~~~~~~~~~~~

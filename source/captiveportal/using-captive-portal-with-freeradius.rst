@@ -143,18 +143,18 @@ To reset the counter *daily* at midnight, manually add a cron job.
 Easiest way to do so is to install the “Cron” package from pfSense
 package manager: Reset everyday at midnight::
 
-  minute hour    mday    month   wday    who     command
-  0      0   *   *   *   root    /bin/rm /var/log/radacct/datacounter/daily/used-octets-*
+  minute hour    mday    month   wday    who     command
+  0      0   *   *   *   root    /bin/rm /var/log/radacct/datacounter/daily/used-octets-*
 
 Reset weekly on sunday needs this cron job::
 
-  minute hour    mday    month   wday    who     command
-  0      0   *   *   Sun     root    /bin/rm /var/log/radacct/datacounter/weekly/used-octets-*
+  minute hour    mday    month   wday    who     command
+  0      0   *   *   Sun     root    /bin/rm /var/log/radacct/datacounter/weekly/used-octets-*
 
 Reset monthly on the first day needs this cron job::
 
-  minute hour    mday    month   wday    who     command
-  0      0   1   *   *   root    /bin/rm /var/log/radacct/datacounter/monthly/used-octets-*
+  minute hour    mday    month   wday    who     command
+  0      0   1   *   *   root    /bin/rm /var/log/radacct/datacounter/monthly/used-octets-*
 
 If a user was offered an amount of 500MB per week and the user reached
 this limit then he cannot reconnect or will be disconnected when
@@ -216,11 +216,11 @@ Captive Portal configuration
 
 This should appear in Syslog::
 
-  radiusd[13660]: Login OK: [00-04-23-5c-9d-19/blaaa] (from client pfsense port 2 cli 00-04-23-5c-9d-19)
+  radiusd[13660]: Login OK: [00-04-23-5c-9d-19/blaaa] (from client pfsense port 2 cli 00-04-23-5c-9d-19)
 
 This should appear in **Status > System Logs**, **Portal Auth** tab::
 
-  logportalauth[10059]: MACHINE LOGIN: 00-04-23-5c-9d-19, 00:04:23:5c:9d:19, 192.168.0.88
+  logportalauth[10059]: MACHINE LOGIN: 00-04-23-5c-9d-19, 00:04:23:5c:9d:19, 192.168.0.88
 
 CP recognizes a **MACHINE LOGIN**. This is an indicator that the
 authentication was processed with a MAC address.
@@ -250,18 +250,18 @@ Captive Portal configuration
 
 This should appear in Syslog::
 
-  radiusd[23825]: Login OK: [00-04-23-5c-9d-19/blaaa] (from client pfsense port 2 cli 00-04-23-5c-9d-19)
+  radiusd[23825]: Login OK: [00-04-23-5c-9d-19/blaaa] (from client pfsense port 2 cli 00-04-23-5c-9d-19)
 
 This should appear in **Status > System Logs**, **Portal Auth** tab:
 
-  logportalauth[10059]: MACHINE LOGIN: 00-04-23-5c-9d-19, 00:04:23:5c:9d:19, 192.168.0.88
+  logportalauth[10059]: MACHINE LOGIN: 00-04-23-5c-9d-19, 00:04:23:5c:9d:19, 192.168.0.88
 
 Both outputs ('''FreeRADIUS Plain-MAC-Auth with Captive Portal ''' and
 **FreeRADIUS Plain-MAC-Auth as 802.1X request with Captive Portal** are
 the same. I deleted the password for the MAC address in **FreeRADIUS >
 Users** and this appeared in Syslog::
 
-  radiusd[48561]: Login incorrect (rlm_pap: CLEAR TEXT password check failed): [00-04-23-5c-9d-19/blaaa] (from client pfsense port 13 cli 00-04-23-5c-9d-19)
+  radiusd[48561]: Login incorrect (rlm_pap: CLEAR TEXT password check failed): [00-04-23-5c-9d-19/blaaa] (from client pfsense port 13 cli 00-04-23-5c-9d-19)
 
 Captive Portal is sending the MAC address as username and the shared
 secret as password (blaaa) but FreeRADIUS did not found this password

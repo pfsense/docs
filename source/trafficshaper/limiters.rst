@@ -132,7 +132,7 @@ Display Pipes
 Visit **Diagnostics > Limiter Info** in the GUI, and it will show the
 output of:
 
-`` ipfw pipe show``
+`` ipfw pipe show``
 
 Which lists all of the pipes currently configured on the system, and
 related information about their status.

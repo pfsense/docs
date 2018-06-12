@@ -84,19 +84,19 @@ and report the problem directly to FreeBSD.
 
 .. code::
 
-  (ada0:ata0:0:1:0): READ_DMA. ACB: c8 00 3f 95 07 40 00 00 00 00 08 00
-  (ada0:ata0:0:1:0): CAM status: ATA Status Error
-  (ada0:ata0:0:1:0): ATA status: ff (BSY DRDY DF SERV DRQ CORR IDX ERR), error: 00 ()
-  (ada0:ata0:0:1:0): RES: ff 00 46 95 07 00 00 00 00 00 00
-  (ada0:ata0:0:1:0): Retrying command
+  (ada0:ata0:0:1:0): READ_DMA. ACB: c8 00 3f 95 07 40 00 00 00 00 08 00
+  (ada0:ata0:0:1:0): CAM status: ATA Status Error
+  (ada0:ata0:0:1:0): ATA status: ff (BSY DRDY DF SERV DRQ CORR IDX ERR), error: 00 ()
+  (ada0:ata0:0:1:0): RES: ff 00 46 95 07 00 00 00 00 00 00
+  (ada0:ata0:0:1:0): Retrying command
 
 .. code::
 
-  (ada0:ata0:0:1:0): WRITE_DMA. ACB: ca 00 ef e8 1a 40 00 00 00 00 08 00
-  (ada0:ata0:0:1:0): CAM status: ATA Status Error
-  (ada0:ata0:0:1:0): ATA status: ff (BSY DRDY DF SERV DRQ CORR IDX ERR), error: 00 ()
-  (ada0:ata0:0:1:0): RES: ff 00 ef e8 1a 00 00 00 00 08 00
-  (ada0:ata0:0:1:0): Retrying command
+  (ada0:ata0:0:1:0): WRITE_DMA. ACB: ca 00 ef e8 1a 40 00 00 00 00 08 00
+  (ada0:ata0:0:1:0): CAM status: ATA Status Error
+  (ada0:ata0:0:1:0): ATA status: ff (BSY DRDY DF SERV DRQ CORR IDX ERR), error: 00 ()
+  (ada0:ata0:0:1:0): RES: ff 00 ef e8 1a 00 00 00 00 08 00
+  (ada0:ata0:0:1:0): Retrying command
 
 This appears to further be limited to onboard CF-to-SATA sockets. Using
 another disk type (mSATA, SATA, etc) may also be a viable workaround.

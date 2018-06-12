@@ -31,7 +31,7 @@ FAQ
 
 If the following is observed::
 
-  Traffic data for Notice: Undefined index: pppoe0 in /usr/local/www/vnstat2/index.php on line 160 (pppoe0)
+  Traffic data for Notice: Undefined index: pppoe0 in /usr/local/www/vnstat2/index.php on line 160 (pppoe0)
 
 Try pressing Shift+f5 on each page to force the browser to refresh, this
 error will stay if the interface no longer exists, but since there is

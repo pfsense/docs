@@ -5,7 +5,7 @@ Troubleshooting Disk Check Errors (fsck)
 
 If this message appears when booting a new NanoBSD-based embedded image:
 
-``Disk is dirty, running fsck -y``
+``Disk is dirty, running fsck -y``
 
 Pull the card and try to write the image again, and make sure there were
 no errors.

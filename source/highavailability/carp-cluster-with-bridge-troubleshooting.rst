@@ -17,19 +17,19 @@ to prefer the correct port.
 
 Configuration example for a Cisco Switch::
 
-  interface FastEthernet0/1
-   description Firewall - Primary - DMZ Port
-   switchport access vlan 20
-   spanning-tree vlan 20 port-priority 64
-   no cdp enable
+  interface FastEthernet0/1
+   description Firewall - Primary - DMZ Port
+   switchport access vlan 20
+   spanning-tree vlan 20 port-priority 64
+   no cdp enable
 
 .. code::
 
-  interface FastEthernet0/2
-   description Firewall - Secondary - DMZ Port
-   switchport access vlan 20
-   spanning-tree vlan 20 cost 500
-   no cdp enable
+  interface FastEthernet0/2
+   description Firewall - Secondary - DMZ Port
+   switchport access vlan 20
+   spanning-tree vlan 20 cost 500
+   no cdp enable
 
 See also `this forum
 thread <http://forum.pfsense.org/index.php/topic,4984.0.html>`__.

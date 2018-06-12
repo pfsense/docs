@@ -25,7 +25,7 @@ In order to eliminate the possibility that the drive is actually full
 (perhaps a package went crazy eating up space), try to get to a shell
 from the console or ssh, and run the following command::
 
-  : df -hi
+  : df -hi
 
 The output shows disk space usage for both capacity and inodes, using
 human-readable numbers. The **System Information** widget on the
@@ -33,13 +33,13 @@ Dashboard on pfSense 2.2 shows the usage for all mounted partitions.
 Earlier versions only showed usage for the root (/) slice. The
 following output is from an ALIX system running NanoBSD::
 
-  Filesystem           Size    Used   Avail Capacity iused ifree %iused  Mounted on
-  /dev/ufs/pfsense1    442M    167M    239M    41%    6.3k   52k   11%   /
-  devfs                1.0k    1.0k      0B   100%       0     0  100%   /dev
-  /dev/ufs/cf           48M    1.7M     43M     4%      26  6.4k    0%   /cf
-  /dev/md0              48M     84k     44M     0%      56  6.6k    1%   /tmp
-  /dev/md1              77M     16M     54M    24%     133   10k    1%   /var
-  devfs                1.0k    1.0k      0B   100%       0     0  100%   /var/dhcpd/dev
+  Filesystem           Size    Used   Avail Capacity iused ifree %iused  Mounted on
+  /dev/ufs/pfsense1    442M    167M    239M    41%    6.3k   52k   11%   /
+  devfs                1.0k    1.0k      0B   100%       0     0  100%   /dev
+  /dev/ufs/cf           48M    1.7M     43M     4%      26  6.4k    0%   /cf
+  /dev/md0              48M     84k     44M     0%      56  6.6k    1%   /tmp
+  /dev/md1              77M     16M     54M    24%     133   10k    1%   /var
+  devfs                1.0k    1.0k      0B   100%       0     0  100%   /var/dhcpd/dev
 
 Note that the devfs lines do NOT indicate an actual problem; The devfs
 filesystem is virtual and used for housing device nodes not for files.

@@ -26,11 +26,11 @@ Server1 custom options::
 
 Client Specific Overrides for **Common Name**: *client1* Custom options::
 
-  iroute b.b.b.0 255.255.255.0;
+  iroute b.b.b.0 255.255.255.0;
 
 client1 custom options::
 
-  (blank -- no route statements needed)
+  (blank -- no route statements needed)
 
 Every *iroute* needs a corresponding *route*. The *route*' entries are
 for the OS to know that the subnet(s) should be routed to OpenVPN from

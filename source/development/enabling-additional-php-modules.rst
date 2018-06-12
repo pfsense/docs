@@ -33,10 +33,10 @@ To activate one of these, create a file named for the extension in the
 
 Activate the *mysql.so* module::
 
-  $ mkdir -p /etc/php_dynamodules/
-  $ touch /etc/php_dynamodules/mysql
-  $ /etc/rc.php_ini_setup 
-  $ php -m | grep mysql
+  $ mkdir -p /etc/php_dynamodules/
+  $ touch /etc/php_dynamodules/mysql
+  $ /etc/rc.php_ini_setup 
+  $ php -m | grep mysql
   mysql
 
 A reload of the WebGUI process may also be required. Use option **11**
@@ -59,8 +59,8 @@ default. They may be easily added using *pkg install*.
 
 For example, to install the *mysqli* extension, use::
 
-  pkg install php56-mysqli
+  pkg install php56-mysqli
 
 If the package name is not known, use search to find it::
 
-  pkg search mysql
+  pkg search mysql

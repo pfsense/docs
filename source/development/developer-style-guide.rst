@@ -142,22 +142,22 @@ General rules
 
 - Try to simplify code for better readability::
 
-    if ($bool1)
-       if ($bool2)
-           if ($bool3)
-               do_it();
+    if ($bool1)
+       if ($bool2)
+           if ($bool3)
+               do_it();
     whatever();
 
 - Should be written as::
 
-    if ($bool1 && $bool2 && $bool3)
-       do_it();
+    if ($bool1 && $bool2 && $bool3)
+       do_it();
     whatever();
 
 - Do not set unnecessary variables::
 
-    $is_set = isset($var);
-    if ($is_set) ...
+    $is_set = isset($var);
+    if ($is_set) ...
 
 - Loop variables are $i, $j, $k, ...
 
@@ -181,12 +181,12 @@ Indent style
 - Use “K&R, BSD KNF variant style” (see
   https://en.wikipedia.org/wiki/Indent_style#Variant:_BSD_KNF )::
 
-    if ($x == $y) {
-       something();
-       ...
-    } else {
-       somethingelse();
-       ...
+    if ($x == $y) {
+       something();
+       ...
+    } else {
+       somethingelse();
+       ...
     }
     finalthing();
 
@@ -196,21 +196,21 @@ Indent style
 
   For example, good::
 
-    if ($foo) {
-       something();
+    if ($foo) {
+       something();
     }
 
   Not so good:::
 
-    if ($foo)
-       something();
+    if ($foo)
+       something();
 
 - If a conditional statement must span multiple lines, indent using
   four spaces to align with the start of the conditional above it::
 
-    if ($foo1 && $foo2 && $foo3 && $foo4 && $foo5 && $foo6 &&
-        $foo7 && $foo8 && $foo9) {
-       something();
+    if ($foo1 && $foo2 && $foo3 && $foo4 && $foo5 && $foo6 &&
+        $foo7 && $foo8 && $foo9) {
+       something();
     }
 
 - There should not be a space between a function name and its argument
@@ -220,7 +220,7 @@ Indent style
 
 - ... but separate function arguments with a single space::
 
-    do_something($foo, 27, false);
+    do_something($foo, 27, false);
 
 - Use tabs for indentation (not spaces or a mixture of both)
 - Use a tab stop of 8, rather than 4
@@ -269,12 +269,12 @@ Useful resources for working with pkg and ports include:
   - Install portlint on a FreeBSD system and run the following command
     inside the root directory of the port::
 
-      portlint -CN
+      portlint -CN
 
 - Run a the following command to make sure the contents of pkg-plist
   are correct::
 
-    make -DNO_DEPENDS check-plist
+    make -DNO_DEPENDS check-plist
 
 Other Guidelines:
 

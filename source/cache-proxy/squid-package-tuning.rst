@@ -35,7 +35,7 @@ configuration.
 By setting a number of days to retain the logs, the squid package will
 activate a nightly cron job which runs::
 
-  squid -k rotate
+  squid -k rotate
 
 Part of this rotation process includes compacting the swap.state file,
 keeping it from getting too large.
@@ -43,12 +43,12 @@ keeping it from getting too large.
 If this file is too large and needs to be removed, this may be done
 while squid is running. After the file is removed, run::
 
-  squid -k rotate
+  squid -k rotate
 
 This will cause it to be written out again (but compacted). Alternately,
 tell squid to perform a clean shutdown with::
 
-  squid -k shutdown
+  squid -k shutdown
 
 This will also write the *swap.state* file out again, but squid will
 stop after this and must be restarted, so it is a less desirable option.
@@ -59,7 +59,7 @@ is restart. This can be a lengthy and time consuming process. It may be
 better to remove the contents of the existing cache folder, and rebuild
 the structure again by running::
 
-  squid -z
+  squid -z
 
 See the `Squid FAQ entry <http://wiki.squid-cache.org/SquidFaq/SquidLogs#swap.state>`__ for
 more details.
@@ -83,8 +83,8 @@ server is not an option, squid can cache them.
   (**Services > Proxy Server**), place the following in the **Custom
   Options** box at the bottom::
 
-    refresh_pattern ([^.]+.|)(download|(windows|)update|).(microsoft.|)com/.*\.(cab|exe|msi|msp) 4320 100% 43200 reload-into-ims;
-    range_offset_limit -1;
+    refresh_pattern ([^.]+.|)(download|(windows|)update|).(microsoft.|)com/.*\.(cab|exe|msi|msp) 4320 100% 43200 reload-into-ims;
+    range_offset_limit -1;
 
 - Click **Save**
 - On the **Cache Management** tab of the Squid configuration:
@@ -99,14 +99,14 @@ server is not an option, squid can cache them.
 
 If that refresh pattern does not work, try::
 
-  refresh_pattern ([^.]+\.)?(download|(windows)?update)\.(microsoft\.)?com/.*\.(cab|exe|msi|msp|psf) 4320 100% 43200 reload-into-ims; range_offset_limit -1;
+  refresh_pattern ([^.]+\.)?(download|(windows)?update)\.(microsoft\.)?com/.*\.(cab|exe|msi|msp|psf) 4320 100% 43200 reload-into-ims; range_offset_limit -1;
 
 Caching Mac Updates
 ~~~~~~~~~~~~~~~~~~~
 
 .. code::
 
-  refresh_pattern ([^.]+.|)(download|adcdownload).(apple.|)com/.*\.(pkg|dmg) 4320 100% 43200 reload-into-ims;
+  refresh_pattern ([^.]+.|)(download|adcdownload).(apple.|)com/.*\.(pkg|dmg) 4320 100% 43200 reload-into-ims;
 
 Caching AVG and other Updates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,10 +114,10 @@ Caching AVG and other Updates
 As above, but add this before the other options. The same warnings
 apply::
 
-  refresh_pattern ([^.]+.|)avg.com/.*\.(bin) 4320 100% 43200 reload-into-ims;
-  refresh_pattern ([^.]+.|)spywareblaster.net/.*\.(dtb) 4320 100% 64800 reload-into-ims;
-  refresh_pattern ([^.]+.|)symantecliveupdate.com/.*\.(zip|exe) 43200 100% 43200 reload-into-ims
-  refresh_pattern ([^.]+.|)avast.com/.*\.(vpu|vpaa) 4320 100% 43200 reload-into-ims
+  refresh_pattern ([^.]+.|)avg.com/.*\.(bin) 4320 100% 43200 reload-into-ims;
+  refresh_pattern ([^.]+.|)spywareblaster.net/.*\.(dtb) 4320 100% 64800 reload-into-ims;
+  refresh_pattern ([^.]+.|)symantecliveupdate.com/.*\.(zip|exe) 43200 100% 43200 reload-into-ims
+  refresh_pattern ([^.]+.|)avast.com/.*\.(vpu|vpaa) 4320 100% 43200 reload-into-ims
 
 Tweaking Update Caching / Squid seems to download on its own
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -126,20 +126,20 @@ From
 `here <http://forum.pfsense.org/index.php/topic,38141.msg198482.html#msg198482>`__.
 Change This::
 
-  range_offset_limit -1;
+  range_offset_limit -1;
 
 To::
 
-  range_offset_limit 0;
+  range_offset_limit 0;
 
 As an alternative, also try::
 
-  quick_abort_min 0 KB;
-  quick_abort_max 0 KB;
+  quick_abort_min 0 KB;
+  quick_abort_max 0 KB;
 
 Or::
 
-  quick_abort_pct 70;
+  quick_abort_pct 70;
 
 To ensure that a file is only downloaded if a user actually receives 70%
 or more of it. Otherwise if a user requests a file and then aborts, it

@@ -38,7 +38,7 @@ Troubleshooting
 
 .. code::
 
-  nc: bind failed: Address already in use
+  nc: bind failed: Address already in use
 
 This error will occur if the **Source Port** field is set to a port that
 is already bound to a local daemon on the firewall. Leave **Source

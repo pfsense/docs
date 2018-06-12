@@ -29,8 +29,8 @@ First Configuration
 After this, have a look at the pfSense syslog. There should be the
 following::
 
-  radiusd[16634]: Ready to process requests.
-  radiusd[16627]: Loaded virtual server
+  radiusd[16634]: Ready to process requests.
+  radiusd[16627]: Loaded virtual server
 
 Testing FreeRADIUS
 ^^^^^^^^^^^^^^^^^^
@@ -93,7 +93,7 @@ The features below were tested on pfSense 2.x
 
 - Simultaneous-Use - The following will be present in the system log::
 
-    radiusd[3206]: Multiple logins (max 1) : [testuser/testpw] (from client testing port 10)
+    radiusd[3206]: Multiple logins (max 1) : [testuser/testpw] (from client testing port 10)
 
 - A certain amount of time per day/week/month/forever (CHECK-ITEM:
   Max-Daily-Session := 60 ) The user will be disconnected and cannot
@@ -105,8 +105,8 @@ The features below were tested on pfSense 2.x
   be disconnected and cannot re-login after the amount of traffic is
   reached. The syslog output looks like this::
 
-    root: FreeRADIUS: Used amount of daily upload and download traffic by testuser is 0 of 100 MB! The user was accepted!!!
-    root: FreeRADIUS: Credentials are probably correct but the user testuser has reached the daily amount of upload and download traffic which is 243 of 100 MB! The user was rejected!!!
+    root: FreeRADIUS: Used amount of daily upload and download traffic by testuser is 0 of 100 MB! The user was accepted!!!
+    root: FreeRADIUS: Credentials are probably correct but the user testuser has reached the daily amount of upload and download traffic which is 243 of 100 MB! The user was rejected!!!
 
 - Plain MAC Auth
 
@@ -168,17 +168,17 @@ server do the following:
 
 The output should look like this::
 
-  Received response ID 223, code 3, length = 140
-         FreeRADIUS-Total-Access-Requests = 1
-         FreeRADIUS-Total-Access-Accepts = 0
-         FreeRADIUS-Total-Access-Rejects = 14
-         FreeRADIUS-Total-Access-Challenges = 0
-         FreeRADIUS-Total-Auth-Responses = 14
-         FreeRADIUS-Total-Auth-Duplicate-Requests = 0
-         FreeRADIUS-Total-Auth-Malformed-Requests = 0
-         FreeRADIUS-Total-Auth-Invalid-Requests = 0
-         FreeRADIUS-Total-Auth-Dropped-Requests = 0
-         FreeRADIUS-Total-Auth-Unknown-Types = 0
+  Received response ID 223, code 3, length = 140
+         FreeRADIUS-Total-Access-Requests = 1
+         FreeRADIUS-Total-Access-Accepts = 0
+         FreeRADIUS-Total-Access-Rejects = 14
+         FreeRADIUS-Total-Access-Challenges = 0
+         FreeRADIUS-Total-Auth-Responses = 14
+         FreeRADIUS-Total-Auth-Duplicate-Requests = 0
+         FreeRADIUS-Total-Auth-Malformed-Requests = 0
+         FreeRADIUS-Total-Auth-Invalid-Requests = 0
+         FreeRADIUS-Total-Auth-Dropped-Requests = 0
+         FreeRADIUS-Total-Auth-Unknown-Types = 0
 
 To request other status updates, replace **FreeRADIUS-Statistics-Type =
 1** from the command above with another value. More values can be found

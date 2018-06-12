@@ -41,7 +41,7 @@ Underneath the text for **Log File Size (Bytes)** the current and
 available disk space is displayed based on the current log file sizes
 and their location. For example::
 
-  Disk space currently used by log files: 9.8M. Remaining disk space for log files: 11G
+  Disk space currently used by log files: 9.8M. Remaining disk space for log files: 11G
 
 There are approximately 20 log files affected by the size control. The
 value entered in **Log File Size (Bytes)** is for a single log file, so

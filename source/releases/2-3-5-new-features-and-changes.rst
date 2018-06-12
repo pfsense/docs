@@ -20,7 +20,7 @@ proceed, ensure the firewall has correct versions of the repository
 configuration and upgrade script for 2.3.x by running the following
 commands from the console or shell::
 
-  pkg install -fy pfSense-repo pfSense-upgrade
+  pkg install -fy pfSense-repo pfSense-upgrade
 
 Firewalls running 32-bit (i386) installations of pfSense software do not
 need to take any special actions to remain on 2.3.x as they are unable

@@ -129,7 +129,7 @@ be a problem with that package.
 The ruleset can also be verified from the console or **Diagnostics >
 Command** in the **Shell Execute** box by running::
 
-  pfctl -f /tmp/rules.debug
+  pfctl -f /tmp/rules.debug
 
 If an error is displayed, it may have an obvious fix, or search for that
 error to find possible resolutions.

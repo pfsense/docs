@@ -34,7 +34,7 @@ following:
    }
   ?>
 
-  [Rest of CP login page]
+  [Rest of CP login page]
 
 The user will be redirected to that URL, and then when the user clicks
 back to pfSense using a link to the firewall IP address/port, such as

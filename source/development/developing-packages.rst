@@ -345,7 +345,7 @@ operations needed.
 For example, a basic thing like Cron is pfSense-pkg-Cron-0.3.3, so if a
 new copy is built and put on the firewall::
 
-  pkg add /path/to/file/pfSense-pkg-Cron-0.3.3.txz
+  pkg add /path/to/file/pfSense-pkg-Cron-0.3.3.txz
 
 It will also work with “pkg add” and a URL to an http or https web
 server.
@@ -357,11 +357,11 @@ Making the package involves:
 - Making changes
 - Running “make package” like so::
 
-    $ git clone git@github.com:pfsense/FreeBSD-ports.git pfSense-ports
-    $ cd pfSense-ports/blah/pfSense-pkg-foo/
-    [hack, hack, hack]
-    $ make package  (might need sudo)
-    $ scp work/pkg/pfSense-pkg-foo* root@myfirewall:.
+    $ git clone git@github.com:pfsense/FreeBSD-ports.git pfSense-ports
+    $ cd pfSense-ports/blah/pfSense-pkg-foo/
+    [hack, hack, hack]
+    $ make package  (might need sudo)
+    $ scp work/pkg/pfSense-pkg-foo* root@myfirewall:.
 
 And then on the firewall::
 

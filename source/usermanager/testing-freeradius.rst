@@ -32,7 +32,7 @@ a **NAS/Client** and a **user** must all be configured:
 - SSH to the pfSense firewall and type in the following on the command
   line while FreeRADIUS is running (check before in System Log)::
 
-    radtest testuser testpassword 127.0.0.1:1812 0 testing123
+    radtest testuser testpassword 127.0.0.1:1812 0 testing123
 
 The following output should appear if everything was setup correctly::
 
@@ -48,7 +48,7 @@ The following output should appear if everything was setup correctly::
 The really necessary thing is **Access-Accept**. Check the system log
 for the following output::
 
-  radiusd[44793]: Login OK: [testuser/testpassword] (from client testing port 10)
+  radiusd[44793]: Login OK: [testuser/testpassword] (from client testing port 10)
 
 If something was configured wrong (such as an incorrect username) then
 this will be displayed::
@@ -65,7 +65,7 @@ this will be displayed::
 The **Accesss-Reject** packet is visible, and the system log will
 contain the following output::
 
-  radiusd[44793]: Login incorrect: [testser/testpassword] (from client testing port 10)
+  radiusd[44793]: Login incorrect: [testser/testpassword] (from client testing port 10)
 
 If the steps above do not work then do not need proceed with any other
 configuration. This is the first thing that should be tested.
@@ -88,11 +88,11 @@ run. I tried with openSUSE:
 - Download `JRadius Minimal (client) <http://coova.org/JRadius>`__.
 - Unzip the file with the following command::
 
-    unzip jradius-client-1.1.4-release.zip
+    unzip jradius-client-1.1.4-release.zip
 
 - Start the application with the following command::
 
-    sh simulator.sh
+    sh simulator.sh
 
 The application window will open. Fill out the fields:
 

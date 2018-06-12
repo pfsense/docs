@@ -10,26 +10,26 @@ Run the following commands:
 To view the top processes, including interrupt processing CPU usage and
 system CPU::
 
-  # top -aSH
+  # top -aSH
 
 To view the interrupt counters and other system usage::
 
-  # systat -vmstat 1
+  # systat -vmstat 1
 
 To view the mbuf usage::
 
-  # netstat -m
+  # netstat -m
 
 (Alternately, check the dashboard mbuf counter, and the graph under
 **Status > RRD Graphs** on the **System** tab)
 
 To view I/O operations::
 
-  # systat -iostat 1
+  # systat -iostat 1
 
 OR::
 
-  # top -aSH
+  # top -aSH
 
 - Then press *m* to switch to I/O mode to view disk activity
 

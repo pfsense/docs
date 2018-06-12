@@ -21,7 +21,7 @@ The most obvious test is to watch the system's CPU load while
 transferring data. This can be observed from **Diagnostics > System
 Activity** or from the shell by running:
 
-``top -aSH``
+``top -aSH``
 
 If an IRQ process for a network card is using a significant amount of
 CPU on a core, then either the hardware is being fully (or over)

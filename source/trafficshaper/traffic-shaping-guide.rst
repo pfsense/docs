@@ -155,7 +155,7 @@ View Queues with pfTop
 To view live stats on traffic shaping (altq) from the command line use
 the following command::
 
-  pftop -s1 -v queue
+  pftop -s1 -v queue
 
 Limiters
 --------

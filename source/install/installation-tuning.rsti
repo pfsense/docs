@@ -8,19 +8,19 @@ Tuning intr\_queue
 
 This will show the current setting::
 
-  sysctl net.inet.ip.intr_queue_maxlen
+  sysctl net.inet.ip.intr_queue_maxlen
 
 However, in largely loaded installations this may not be enough. Here is
 how to check::
 
-  sysctl net.inet.ip.intr_queue_drops
+  sysctl net.inet.ip.intr_queue_drops
 
 If the above shows values above 0, try changing
 net.inet.ip.intr\_queue\_maxlen \*2.
 
 For example::
 
-  sysctl net.inet.ip.intr_queue_maxlen=3000
+  sysctl net.inet.ip.intr_queue_maxlen=3000
 
 Keep performing the above until the point is found where drops are
 eliminated without any adverse effects.

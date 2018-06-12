@@ -91,7 +91,7 @@ Known Issues
    rather than *vt* by editing */boot/loader.conf.local* and adding this
    line:
 
-`` kern.vty=sc``
+`` kern.vty=sc``
 
 Cleanup
 -------

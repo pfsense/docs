@@ -31,12 +31,12 @@ There are two ways to perform a gitsync, both perform the same function:
 Method 1: From the console menu, press option 12 to start a developer
 shell, then type::
 
-  > playback gitsync master
+  > playback gitsync master
 
 Method 2: From a normal shell (console menu option 8), type the
 following command::
 
-# pfSsh.php playback gitsync master
+# pfSsh.php playback gitsync master
 
 The “master” part of the command tells the gitsync process to grab the
 code for the “master” branch, a.k.a. HEAD, which as of this writing is
@@ -45,7 +45,7 @@ the development code for 2.3. That can be replaced with RELENG\_2\_2 for
 
 For example, on 2.2.4, to sync post-release code changes for 2.2.x, use::
 
-  # pfSsh.php playback gitsync RELENG_2_2
+  # pfSsh.php playback gitsync RELENG_2_2
 
 Troubleshooting
 ---------------
@@ -56,7 +56,7 @@ performed before, the git package may need to be added manually. This
 can be done from the GUI using the 'Available Packages' list, or from a
 shell prompt::
 
-  pfSsh.php playback installpkg git
+  pfSsh.php playback installpkg git
 
 Git URL Moved
 -------------
@@ -65,7 +65,7 @@ If gitsync was run prior to the pfSense repository moving to github, and
 the default 2.0 URL was used, one of the following must be performed
 before the next gitsync: 1::
 
-  rm -rf /root/pfsense/
+  rm -rf /root/pfsense/
 
 2::
 

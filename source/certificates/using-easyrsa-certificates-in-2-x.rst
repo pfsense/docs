@@ -16,10 +16,10 @@ somewhere, locate the backup the files within.
 
 Assuming the files are present, Login to the shell, then run::
 
-  # cat /root/easyrsa4pfsense/keys/ca.key
-  -----BEGIN RSA PRIVATE KEY-----
+  # cat /root/easyrsa4pfsense/keys/ca.key
+  -----BEGIN RSA PRIVATE KEY-----
   [...]
-  -----END RSA PRIVATE KEY-----
+  -----END RSA PRIVATE KEY-----
 
 That will show the existing CA key. Then from the GUI, go to **System >
 Cert Manager**, find the imported CA, and click |fa-pencil| to edit. Copy/paste
@@ -29,7 +29,7 @@ name from the upgrade process. Do not click **Save** yet.
 
 From the shell, run::
 
-  # printf '%d\n' 0x`cat /root/easyrsa4pfsense/keys/serial`
+  # printf '%d\n' 0x`cat /root/easyrsa4pfsense/keys/serial`
 
 That should return a decimal number, such as *11* - that's the serial
 number of the next certificate to make. Copy that number into the GUI in
@@ -51,11 +51,11 @@ existing certificate*. Add a descriptive name (like the name of the
 cert). Now to get that certificate and key, go back to the shell and
 find the key in */root/easyrsa4pfsense/keys/*. For example::
 
-  # cd /root/easyrsa4pfsense/keys/
-  # ls -l tester*
-  -rw-r--r-- 1 root staff 3739 Feb 3 2010 tester.crt
-  -rw-r--r-- 1 root staff 688 Feb 3 2010 tester.csr
-  -rw------- 1 root staff 887 Feb 3 2010 tester.key
+  # cd /root/easyrsa4pfsense/keys/
+  # ls -l tester*
+  -rw-r--r-- 1 root staff 3739 Feb 3 2010 tester.crt
+  -rw-r--r-- 1 root staff 688 Feb 3 2010 tester.csr
+  -rw------- 1 root staff 887 Feb 3 2010 tester.key
 
 Cat the *.crt* and *.key* files, copying them into the GUI box (just the
 BEGIN/.../END block that includes the encoded version), then click

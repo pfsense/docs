@@ -40,7 +40,7 @@ Blocking Facebook
 To find the most current list of Facebook subnets, query a server to
 find subnets for their AS and make an alias from there::
 
-  whois -h whois.radb.net -- '-i origin AS32934' | awk '/^route:/ {print $2;}' | sort | uniq
+  whois -h whois.radb.net -- '-i origin AS32934' | awk '/^route:/ {print $2;}' | sort | uniq
 
 Once the list of netblocks is in hand, create an alias containing that
 data and then use it in Firewall rules to control direct access to

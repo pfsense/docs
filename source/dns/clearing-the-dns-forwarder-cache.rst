@@ -15,7 +15,7 @@ Restarting the daemon will clear the internal cache, but the client PCs
 may still have cached entries. The DNS cache on a Windows PC may be
 cleaned from a command prompt or **Start > Run**::
 
-  ipconfig /flushdns
+  ipconfig /flushdns
 
 This may need to be executed from an Administrator command prompt on
 Windows Vista and later.
@@ -24,7 +24,7 @@ Other operating systems will surely have other means to clear the DNS
 resolver cache. For example, Ubuntu-based distributions also use
 *dnsmasq*, and it may be restarted using::
 
-  sudo service network-manager restart
+  sudo service network-manager restart
 
 Browsers also have their own internal DNS caches separate from the OS.
 Close and re-open the browser if none of the above help.

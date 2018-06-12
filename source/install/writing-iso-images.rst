@@ -65,12 +65,12 @@ If a GUI burning program is not installed, it may still be possible to
 burn from the command line. First, determine the burning device's SCSI
 ID/LUN (Logical Unit Number) with the following command::
 
-  # cdrecord --scanbus
-  Cdrecord-Clone 2.01 (i686-pc-linux-gnu) Copyright (C) 1995-2004 Jörg Schilling
-  Linux sg driver version: 3.1.25
-  Using libscg version 'schily-0.8'.
+  # cdrecord --scanbus
+  Cdrecord-Clone 2.01 (i686-pc-linux-gnu) Copyright (C) 1995-2004 Jörg Schilling
+  Linux sg driver version: 3.1.25
+  Using libscg version 'schily-0.8'.
   scsibus0:
-     0,0,0 100) 'LITE-ON ' 'COMBO LTC-48161H' 'KH0F' Removable CD-ROM
+     0,0,0 100) 'LITE-ON ' 'COMBO LTC-48161H' 'KH0F' Removable CD-ROM
 
 .. note:: The SCSI ID/LUN is *0,0,0*.
 
@@ -85,7 +85,7 @@ Burning in FreeBSD
 FreeBSD includes the *burncd* program in its base system which can be
 used to burn ISO images::
 
-  # burncd -s max -e data pfSense-CE-2.3-RELEASE-amd64.iso fixate
+  # burncd -s max -e data pfSense-CE-2.3-RELEASE-amd64.iso fixate
 
 For more information on creating CDs in FreeBSD, please see the entry
 for CD burning in the FreeBSD Handbook at

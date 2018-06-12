@@ -30,6 +30,6 @@ If the system log doesn't offer adequate information, such as simply
 logging “nut: Service failed to start: check configuration”, log in via
 SSH and choose option *8*, then run the following command::
 
-  /usr/local/etc/rc.d/nut.sh start
+  /usr/local/etc/rc.d/nut.sh start
 
 Configuration errors will be displayed in the output if any are found.

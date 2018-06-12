@@ -22,29 +22,29 @@ Set up a web server (which must be visible from the pfSense box), and
 install PHP. After installing PHP, enable it in the web server. On an
 Apache 2.x server, add this to *httpd.conf*:
 
-| ``AddHandler php5-script php``
-| ``AddType text/html php``
+| ``AddHandler php5-script php``
+| ``AddType text/html php``
 
 On a Lighttpd server, enable the server module “mod\_fastcgi” and add
 this to *lighttpd.conf*:
 
-| ``       fastcgi.server = ( ``\ “``.php``”\ `` =>``
-| ``                           ( ``\ “``127.0.0.1``”\ `` =>``
-| ``                               (   ``
-| ``                                   ``\ “``socket``”\ `` => ``\ “``/var/run/lighttpd/php-fastcgi.socket``”\ ``,``
-| ``                                   ``\ “``bin-path``”\ `` => ``\ “``/usr/local/bin/php-cgi``”\ ``,``
-| ``                                   ``\ “``max-procs``”\ `` => 2,``
-| ``                                   ``\ “``bin-environment``”\ `` => (``
-| ``                                       ``\ “``PHP_FCGI_CHILDREN``”\ `` => ``\ “``16``”\ ``,``
-| ``                                       ``\ “``PHP_FCGI_MAX_REQUESTS``”\ `` => ``\ “``10000``”
-| ``                                   ),``
-| ``                                   ``\ “``bin-copy-environment``”\ `` => (``
-| ``                                       ``\ “``PATH``”\ ``, ``\ “``SHELL``”\ ``, ``\ “``USER``”
-| ``                                   ),``
-| ``                                   ``\ “``broken-scriptfilename``”\ `` => ``\ “``enable``”
-| ``                               )``
-| ``                           )``
-| ``                       )``
+| ``       fastcgi.server = ( ``\ “``.php``”\ `` =>``
+| ``                           ( ``\ “``127.0.0.1``”\ `` =>``
+| ``                               (   ``
+| ``                                   ``\ “``socket``”\ `` => ``\ “``/var/run/lighttpd/php-fastcgi.socket``”\ ``,``
+| ``                                   ``\ “``bin-path``”\ `` => ``\ “``/usr/local/bin/php-cgi``”\ ``,``
+| ``                                   ``\ “``max-procs``”\ `` => 2,``
+| ``                                   ``\ “``bin-environment``”\ `` => (``
+| ``                                       ``\ “``PHP_FCGI_CHILDREN``”\ `` => ``\ “``16``”\ ``,``
+| ``                                       ``\ “``PHP_FCGI_MAX_REQUESTS``”\ `` => ``\ “``10000``”
+| ``                                   ),``
+| ``                                   ``\ “``bin-copy-environment``”\ `` => (``
+| ``                                       ``\ “``PATH``”\ ``, ``\ “``SHELL``”\ ``, ``\ “``USER``”
+| ``                                   ),``
+| ``                                   ``\ “``broken-scriptfilename``”\ `` => ``\ “``enable``”
+| ``                               )``
+| ``                           )``
+| ``                       )``
 
 This server can be located on a WAN, LAN, or even a VPN as long as it is
 reachable by the pfSense box without hitting some kind of authenticating
@@ -66,14 +66,14 @@ and upload them with FTP.
 If a UNIX-based web server is being used, go to the root of the web
 server (e.g. */usr/local/www/*) and run the following commands:
 
-``# git clone ``\ ```git://github.com/pfsense/xmlrpc-server.git`` <git://github.com/pfsense/xmlrpc-server.git>`__\ `` pfSense``
+``# git clone ``\ ```git://github.com/pfsense/xmlrpc-server.git`` <git://github.com/pfsense/xmlrpc-server.git>`__\ `` pfSense``
 
 This will download the XML-RPC package code into the *pfSense* folder
 (the default location looked for by pfSense installations). This path
 may be changed, it is governed by the **xmlrpcpath** setting in
 */etc/inc/globals.inc* located on the pfSense firewall.
 
-``# git clone ``\ ```git://github.com/pfsense/pfsense-packages.git`` <git://github.com/pfsense/pfsense-packages.git>`__\ `` packages``
+``# git clone ``\ ```git://github.com/pfsense/pfsense-packages.git`` <git://github.com/pfsense/pfsense-packages.git>`__\ `` packages``
 
 This will download the actual packages repository, which contains the
 individual package GUI elements, pfSense-related package code, and
@@ -111,11 +111,11 @@ If XMLRPC is still not working check the following in *xmlrpc.php*:
 
 *xmlrpc.php*, line 45:
 
-``$path_to_files = './xmlrpc/';``
+``$path_to_files = './xmlrpc/';``
 
 *xmlrpc.php*, line 124:
 
-``$path_to_files = './packages/';``
+``$path_to_files = './packages/';``
 
 Cloning on a Workstation
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -152,8 +152,8 @@ instead of downloaded intact.
 Create a .htaccess file in the *packages* directory or the config
 directory under that, containing:
 
-| ``RemoveHandler .php``
-| ``RemoveType .php``
+| ``RemoveHandler .php``
+| ``RemoveType .php``
 
 Step 4: Have pfSense use the repository
 ---------------------------------------
@@ -233,14 +233,14 @@ Maintaining the Package Repository
 To keep the repository up-to-date, change to the packages directory and
 then run:
 
-``# git pull``
+``# git pull``
 
 That will update the repository with any changes made since the initial
 clone. If changes were made, it may be possible to keep them if they are
 committed locally first:
 
-| ``# git commit -a -m 'My Local Changes'``
-| ``# git pull``
+| ``# git commit -a -m 'My Local Changes'``
+| ``# git pull``
 
 Changes should be reapplied after the new code is updated, provided none
 of the changes conflict.

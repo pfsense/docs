@@ -23,7 +23,7 @@ rules required to pass the traffic to the internal IP.
 
 In the custom options of the OpenVPN instance, add the following::
 
-  port-share x.x.x.x 443
+  port-share x.x.x.x 443
 
 Where *x.x.x.x* is the internal IP address of the web server to which
 the non-VPN traffic will be forwarded.

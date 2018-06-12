@@ -534,8 +534,8 @@ violation of RFC 1812.
 
 .. pull-quote::
 
-   A router MUST not believe any ARP reply that claims that the Link
-   Layer address of another host or router is a broadcast or multicast
+   A router MUST not believe any ARP reply that claims that the Link
+   Layer address of another host or router is a broadcast or multicast
    address.
 
 The default behavior on pfSense 2.2 is correct, but it may be changed.
@@ -704,7 +704,7 @@ Upgrading from a 2.3 Snapshot
   new packages from installing properly. Run the following command the
   clean up outdated symlinks that are not relevant for 2.3::
 
-     find / -type l -lname '/usr/pbi/*' -delete
+     find / -type l -lname '/usr/pbi/*' -delete
 
 Multi-WAN Weighted Load Balancing
 """""""""""""""""""""""""""""""""

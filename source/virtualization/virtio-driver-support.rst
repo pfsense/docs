@@ -64,9 +64,9 @@ If unable to make changes to the network and the VM is VirtIO only, then
 the loader prompt will be needed to load the modules. During the boot
 process, press option 7 for a loader prompt, then type::
 
-  load virtio_blk
-  load virtio_pci
-  load vtnet
+  load virtio_blk
+  load virtio_pci
+  load vtnet
   boot
 
 Then proceed to install the system. After install use the loader menu
@@ -83,11 +83,11 @@ VirtIO module settings. This may be performed in the GUI using
 
 Editing at the shell could use vi::
 
-  # vi /boot/loader.conf.local
+  # vi /boot/loader.conf.local
 
 Or ee::
 
-  # ee /boot/loader.conf.local
+  # ee /boot/loader.conf.local
 
 The following lines should be added::
 
@@ -136,7 +136,7 @@ Edit /etc/fstab (see above) and add::
 
 Alternately, from a shell prompt, run::
 
-  # ufslabels.sh
+  # ufslabels.sh
 
 Then follow the prompts. This changes the fstab automatically to use UFS
 IDs and does not reference the device name directly.

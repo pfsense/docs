@@ -64,12 +64,12 @@ Sample Configuration for vsftpd
 
 In vsftpd.conf::
 
-  # Do not allow the client to use PORT
+  # Do not allow the client to use PORT
   port_enable=NO
-  # Use the hostname in the PASV response (DNS must be setup and match!)
+  # Use the hostname in the PASV response (DNS must be setup and match!)
   pasv_addr_resolve=YES
-  # Enable Passive Mode
+  # Enable Passive Mode
   pasv_enable=YES
-  # Set the passive port range (1000 ports)
+  # Set the passive port range (1000 ports)
   pasv_min_port=20000
   pasv_max_port=20999

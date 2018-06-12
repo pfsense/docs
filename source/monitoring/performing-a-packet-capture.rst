@@ -36,7 +36,7 @@ to a file called Sniff\_output in the current directory.
 
 .. code::
 
-  tcpdump -i em0 not port 22 and not port 53 and not arp and not stp >> Sniff_output
+  tcpdump -i em0 not port 22 and not port 53 and not arp and not stp >> Sniff_output
 
 The -i is designating traffic from the em0 interface. In this example
 traffic from one of the subnets em0 connected to pfSense is being
@@ -52,18 +52,18 @@ iftop allows designating the interface from which to grab traffic.
 
 In this example em1 is the LAN Interface::
 
-  iftop -i em1
+  iftop -i em1
 
 Sample Output::
 
-  cf-in-f18.google.com              => 192.168.1.245                        0b
-                                    <=                                      0b
-  cf-in-f97.google.com              => 192.168.1.245                        0b
-                                    <=                                      0b
-  cf-in-f103.google.com             => 192.168.1.245                        0b
-                                    <=                                      0b
-  google.navigation.opendns.com     => 192.168.1.245                        0b
-                                    <=                                      0b
+  cf-in-f18.google.com              => 192.168.1.245                        0b
+                                    <=                                      0b
+  cf-in-f97.google.com              => 192.168.1.245                        0b
+                                    <=                                      0b
+  cf-in-f103.google.com             => 192.168.1.245                        0b
+                                    <=                                      0b
+  google.navigation.opendns.com     => 192.168.1.245                        0b
+                                    <=                                      0b
 
 pftop
 -----

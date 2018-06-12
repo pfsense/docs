@@ -27,7 +27,7 @@ writing the image to boot properly.
 
 Plug the CF into a working pfSense or FreeBSD system and then run:
 
-``boot0cfg -v -B da0``
+``boot0cfg -v -B da0``
 
 Where *da0* is the CF device. Check the boot log to confirm that the
 device is correct.

@@ -286,251 +286,251 @@ IPsec Connect
 
 Log entries from a successful IPsec connect::
 
-  Feb 4 13:56:37 charon: 16[NET] received packet: from 192.0.2.52[500] to 192.0.2.90[500] (408 bytes)
-  Feb 4 13:56:37 charon: 16[ENC] parsed ID_PROT request 0 [ SA V V V V V V V V ]
-  Feb 4 13:56:37 charon: 16[ENC] received unknown vendor ID: 01:52:8b:bb:c0:06:96:12:18:49:ab:9a:1c:5b:2a:51:00:00:00:01
-  Feb 4 13:56:37 charon: 16[IKE] <1> received MS NT5 ISAKMPOAKLEY vendor ID
-  Feb 4 13:56:37 charon: 16[IKE] received MS NT5 ISAKMPOAKLEY vendor ID
-  Feb 4 13:56:37 charon: 16[IKE] <1> received NAT-T (RFC 3947) vendor ID
-  Feb 4 13:56:37 charon: 16[IKE] received NAT-T (RFC 3947) vendor ID
-  Feb 4 13:56:37 charon: 16[IKE] <1> received draft-ietf-ipsec-nat-t-ike-02\n vendor ID
-  Feb 4 13:56:37 charon: 16[IKE] received draft-ietf-ipsec-nat-t-ike-02\n vendor ID
-  Feb 4 13:56:37 charon: 16[IKE] <1> received FRAGMENTATION vendor ID
-  Feb 4 13:56:37 charon: 16[IKE] received FRAGMENTATION vendor ID
-  Feb 4 13:56:37 charon: 16[ENC] received unknown vendor ID: fb:1d:e3:cd:f3:41:b7:ea:16:b7:e5:be:08:55:f1:20
-  Feb 4 13:56:37 charon: 16[ENC] received unknown vendor ID: 26:24:4d:38:ed:db:61:b3:17:2a:36:e3:d0:cf:b8:19
-  Feb 4 13:56:37 charon: 16[ENC] received unknown vendor ID: e3:a5:96:6a:76:37:9f:e7:07:22:82:31:e5:ce:86:52
-  Feb 4 13:56:37 charon: 16[IKE] <1> 192.0.2.52 is initiating a Main Mode IKE_SA
-  Feb 4 13:56:37 charon: 16[IKE] 192.0.2.52 is initiating a Main Mode IKE_SA
-  Feb 4 13:56:37 charon: 16[ENC] generating ID_PROT response 0 [ SA V V V V V ]
-  Feb 4 13:56:37 charon: 16[NET] sending packet: from 192.0.2.90[500] to 192.0.2.52[500] (180 bytes)
-  Feb 4 13:56:37 charon: 15[NET] received packet: from 192.0.2.52[500] to 192.0.2.90[500] (388 bytes)
-  Feb 4 13:56:37 charon: 15[ENC] parsed ID_PROT request 0 [ KE No NAT-D NAT-D ]
-  Feb 4 13:56:37 charon: 15[ENC] generating ID_PROT response 0 [ KE No NAT-D NAT-D ]
-  Feb 4 13:56:37 charon: 15[NET] sending packet: from 192.0.2.90[500] to 192.0.2.52[500] (372 bytes)
-  Feb 4 13:56:37 charon: 15[NET] received packet: from 192.0.2.52[500] to 192.0.2.90[500] (76 bytes)
-  Feb 4 13:56:37 charon: 15[ENC] parsed ID_PROT request 0 [ ID HASH ]
-  Feb 4 13:56:37 charon: 15[CFG] looking for pre-shared key peer configs matching 192.0.2.90...192.0.2.52[192.0.2.52]
-  Feb 4 13:56:37 charon: 15[CFG] selected peer config “con1”
-  Feb 4 13:56:37 charon: 15[IKE] <con1|1> IKE_SA con1[1] established between 192.0.2.90[192.0.2.90]...192.0.2.52[192.0.2.52]
-  Feb 4 13:56:37 charon: 15[IKE] IKE_SA con1[1] established between 192.0.2.90[192.0.2.90]...192.0.2.52[192.0.2.52]
-  Feb 4 13:56:37 charon: 15[IKE] <con1|1> scheduling reauthentication in 28069s
-  Feb 4 13:56:37 charon: 15[IKE] scheduling reauthentication in 28069s
-  Feb 4 13:56:37 charon: 15[IKE] <con1|1> maximum IKE_SA lifetime 28609s
-  Feb 4 13:56:37 charon: 15[IKE] maximum IKE_SA lifetime 28609s
-  Feb 4 13:56:37 charon: 15[IKE] <con1|1> DPD not supported by peer, disabled
-  Feb 4 13:56:37 charon: 15[IKE] DPD not supported by peer, disabled
-  Feb 4 13:56:37 charon: 15[ENC] generating ID_PROT response 0 [ ID HASH ]
-  Feb 4 13:56:37 charon: 15[NET] sending packet: from 192.0.2.90[500] to 192.0.2.52[500] (76 bytes)
-  Feb 4 13:56:37 charon: 14[NET] received packet: from 192.0.2.52[500] to 192.0.2.90[500] (316 bytes)
-  Feb 4 13:56:37 charon: 14[ENC] parsed QUICK_MODE request 1 [ HASH SA No ID ID ]
-  Feb 4 13:56:37 charon: 14[IKE] <con1|1> received 250000000 lifebytes, configured 0
-  Feb 4 13:56:37 charon: 14[IKE] received 250000000 lifebytes, configured 0
-  Feb 4 13:56:37 charon: 14[ENC] generating QUICK_MODE response 1 [ HASH SA No ID ID ]
-  Feb 4 13:56:37 charon: 14[NET] sending packet: from 192.0.2.90[500] to 192.0.2.52[500] (188 bytes)
-  Feb 4 13:56:37 charon: 14[NET] received packet: from 192.0.2.52[500] to 192.0.2.90[500] (60 bytes)
-  Feb 4 13:56:37 charon: 14[ENC] parsed QUICK_MODE request 1 [ HASH ]
-  Feb 4 13:56:37 charon: 14[IKE] <con1|1> CHILD_SA con1{1} established with SPIs cfcf5cfc_i 4beb8c5a_o and TS 192.0.2.90/32|/0[udp/l2f] === 192.0.2.52/32|/0[udp/l2f]
-  Feb 4 13:56:37 charon: 14[IKE] CHILD_SA con1{1} established with SPIs cfcf5cfc_i 4beb8c5a_o and TS 192.0.2.90/32|/0[udp/l2f] === 192.0.2.52/32|/0[udp/l2f]
-  Feb 4 13:56:40 charon: 14[KNL] interface l2tp0 activated
-  Feb 4 13:56:40 charon: 15[KNL] 192.168.32.1 appeared on l2tp0
+  Feb 4 13:56:37 charon: 16[NET] received packet: from 192.0.2.52[500] to 192.0.2.90[500] (408 bytes)
+  Feb 4 13:56:37 charon: 16[ENC] parsed ID_PROT request 0 [ SA V V V V V V V V ]
+  Feb 4 13:56:37 charon: 16[ENC] received unknown vendor ID: 01:52:8b:bb:c0:06:96:12:18:49:ab:9a:1c:5b:2a:51:00:00:00:01
+  Feb 4 13:56:37 charon: 16[IKE] <1> received MS NT5 ISAKMPOAKLEY vendor ID
+  Feb 4 13:56:37 charon: 16[IKE] received MS NT5 ISAKMPOAKLEY vendor ID
+  Feb 4 13:56:37 charon: 16[IKE] <1> received NAT-T (RFC 3947) vendor ID
+  Feb 4 13:56:37 charon: 16[IKE] received NAT-T (RFC 3947) vendor ID
+  Feb 4 13:56:37 charon: 16[IKE] <1> received draft-ietf-ipsec-nat-t-ike-02\n vendor ID
+  Feb 4 13:56:37 charon: 16[IKE] received draft-ietf-ipsec-nat-t-ike-02\n vendor ID
+  Feb 4 13:56:37 charon: 16[IKE] <1> received FRAGMENTATION vendor ID
+  Feb 4 13:56:37 charon: 16[IKE] received FRAGMENTATION vendor ID
+  Feb 4 13:56:37 charon: 16[ENC] received unknown vendor ID: fb:1d:e3:cd:f3:41:b7:ea:16:b7:e5:be:08:55:f1:20
+  Feb 4 13:56:37 charon: 16[ENC] received unknown vendor ID: 26:24:4d:38:ed:db:61:b3:17:2a:36:e3:d0:cf:b8:19
+  Feb 4 13:56:37 charon: 16[ENC] received unknown vendor ID: e3:a5:96:6a:76:37:9f:e7:07:22:82:31:e5:ce:86:52
+  Feb 4 13:56:37 charon: 16[IKE] <1> 192.0.2.52 is initiating a Main Mode IKE_SA
+  Feb 4 13:56:37 charon: 16[IKE] 192.0.2.52 is initiating a Main Mode IKE_SA
+  Feb 4 13:56:37 charon: 16[ENC] generating ID_PROT response 0 [ SA V V V V V ]
+  Feb 4 13:56:37 charon: 16[NET] sending packet: from 192.0.2.90[500] to 192.0.2.52[500] (180 bytes)
+  Feb 4 13:56:37 charon: 15[NET] received packet: from 192.0.2.52[500] to 192.0.2.90[500] (388 bytes)
+  Feb 4 13:56:37 charon: 15[ENC] parsed ID_PROT request 0 [ KE No NAT-D NAT-D ]
+  Feb 4 13:56:37 charon: 15[ENC] generating ID_PROT response 0 [ KE No NAT-D NAT-D ]
+  Feb 4 13:56:37 charon: 15[NET] sending packet: from 192.0.2.90[500] to 192.0.2.52[500] (372 bytes)
+  Feb 4 13:56:37 charon: 15[NET] received packet: from 192.0.2.52[500] to 192.0.2.90[500] (76 bytes)
+  Feb 4 13:56:37 charon: 15[ENC] parsed ID_PROT request 0 [ ID HASH ]
+  Feb 4 13:56:37 charon: 15[CFG] looking for pre-shared key peer configs matching 192.0.2.90...192.0.2.52[192.0.2.52]
+  Feb 4 13:56:37 charon: 15[CFG] selected peer config “con1”
+  Feb 4 13:56:37 charon: 15[IKE] <con1|1> IKE_SA con1[1] established between 192.0.2.90[192.0.2.90]...192.0.2.52[192.0.2.52]
+  Feb 4 13:56:37 charon: 15[IKE] IKE_SA con1[1] established between 192.0.2.90[192.0.2.90]...192.0.2.52[192.0.2.52]
+  Feb 4 13:56:37 charon: 15[IKE] <con1|1> scheduling reauthentication in 28069s
+  Feb 4 13:56:37 charon: 15[IKE] scheduling reauthentication in 28069s
+  Feb 4 13:56:37 charon: 15[IKE] <con1|1> maximum IKE_SA lifetime 28609s
+  Feb 4 13:56:37 charon: 15[IKE] maximum IKE_SA lifetime 28609s
+  Feb 4 13:56:37 charon: 15[IKE] <con1|1> DPD not supported by peer, disabled
+  Feb 4 13:56:37 charon: 15[IKE] DPD not supported by peer, disabled
+  Feb 4 13:56:37 charon: 15[ENC] generating ID_PROT response 0 [ ID HASH ]
+  Feb 4 13:56:37 charon: 15[NET] sending packet: from 192.0.2.90[500] to 192.0.2.52[500] (76 bytes)
+  Feb 4 13:56:37 charon: 14[NET] received packet: from 192.0.2.52[500] to 192.0.2.90[500] (316 bytes)
+  Feb 4 13:56:37 charon: 14[ENC] parsed QUICK_MODE request 1 [ HASH SA No ID ID ]
+  Feb 4 13:56:37 charon: 14[IKE] <con1|1> received 250000000 lifebytes, configured 0
+  Feb 4 13:56:37 charon: 14[IKE] received 250000000 lifebytes, configured 0
+  Feb 4 13:56:37 charon: 14[ENC] generating QUICK_MODE response 1 [ HASH SA No ID ID ]
+  Feb 4 13:56:37 charon: 14[NET] sending packet: from 192.0.2.90[500] to 192.0.2.52[500] (188 bytes)
+  Feb 4 13:56:37 charon: 14[NET] received packet: from 192.0.2.52[500] to 192.0.2.90[500] (60 bytes)
+  Feb 4 13:56:37 charon: 14[ENC] parsed QUICK_MODE request 1 [ HASH ]
+  Feb 4 13:56:37 charon: 14[IKE] <con1|1> CHILD_SA con1{1} established with SPIs cfcf5cfc_i 4beb8c5a_o and TS 192.0.2.90/32|/0[udp/l2f] === 192.0.2.52/32|/0[udp/l2f]
+  Feb 4 13:56:37 charon: 14[IKE] CHILD_SA con1{1} established with SPIs cfcf5cfc_i 4beb8c5a_o and TS 192.0.2.90/32|/0[udp/l2f] === 192.0.2.52/32|/0[udp/l2f]
+  Feb 4 13:56:40 charon: 14[KNL] interface l2tp0 activated
+  Feb 4 13:56:40 charon: 15[KNL] 192.168.32.1 appeared on l2tp0
 
 L2TP Connect
 ^^^^^^^^^^^^
 
 Log entries from a successful L2TP Connect::
 
-  Feb 4 13:56:38 l2tps: Incoming L2TP packet from 192.0.2.52 1701
-  Feb 4 13:56:38 l2tps: L2TP: Control connection 0x80301b608 connected
-  Feb 4 13:56:38 l2tps: L2TP: Incoming call #0 via connection 0x80301b608 received
-  Feb 4 13:56:38 l2tps: [l2tp0] L2TP: Incoming call #0 via control connection 0x80301b608 accepted
-  Feb 4 13:56:38 l2tps: [l2tp0] opening link “l2tp0”...
-  Feb 4 13:56:38 l2tps: [l2tp0] link: OPEN event
-  Feb 4 13:56:38 l2tps: [l2tp0] LCP: Open event
-  Feb 4 13:56:38 l2tps: [l2tp0] LCP: state change Initial --> Starting
-  Feb 4 13:56:38 l2tps: [l2tp0] LCP: LayerStart
-  Feb 4 13:56:38 l2tps: [l2tp0] L2TP: Call #0 connected
-  Feb 4 13:56:38 l2tps: [l2tp0] link: UP event
-  Feb 4 13:56:38 l2tps: [l2tp0] link: origination is remote
-  Feb 4 13:56:38 l2tps: [l2tp0] LCP: Up event
-  Feb 4 13:56:38 l2tps: [l2tp0] LCP: state change Starting --> Req-Sent
-  Feb 4 13:56:38 l2tps: [l2tp0] LCP: SendConfigReq #1
-  Feb 4 13:56:38 l2tps: ACFCOMP
-  Feb 4 13:56:38 l2tps: PROTOCOMP
-  Feb 4 13:56:38 l2tps: MRU 1500
-  Feb 4 13:56:38 l2tps: MAGICNUM 2ded8fa2
-  Feb 4 13:56:38 l2tps: AUTHPROTO CHAP MD5
-  Feb 4 13:56:38 l2tps: [l2tp0] LCP: rec'd Configure Request #0 (Req-Sent)
-  Feb 4 13:56:38 l2tps: MRU 1400
-  Feb 4 13:56:38 l2tps: MAGICNUM 16c02943
-  Feb 4 13:56:38 l2tps: PROTOCOMP
-  Feb 4 13:56:38 l2tps: ACFCOMP
-  Feb 4 13:56:38 l2tps: CALLBACK 6
-  Feb 4 13:56:38 l2tps: [l2tp0] LCP: SendConfigRej #0
-  Feb 4 13:56:38 l2tps: CALLBACK 6
-  Feb 4 13:56:38 l2tps: [l2tp0] LCP: rec'd Configure Request #1 (Req-Sent)
-  Feb 4 13:56:38 l2tps: MRU 1400
-  Feb 4 13:56:38 l2tps: MAGICNUM 16c02943
-  Feb 4 13:56:38 l2tps: PROTOCOMP
-  Feb 4 13:56:38 l2tps: ACFCOMP
-  Feb 4 13:56:38 l2tps: [l2tp0] LCP: SendConfigAck #1
-  Feb 4 13:56:38 l2tps: MRU 1400
-  Feb 4 13:56:38 l2tps: MAGICNUM 16c02943
-  Feb 4 13:56:38 l2tps: PROTOCOMP
-  Feb 4 13:56:38 l2tps: ACFCOMP
-  Feb 4 13:56:38 l2tps: [l2tp0] LCP: state change Req-Sent --> Ack-Sent
-  Feb 4 13:56:40 l2tps: [l2tp0] LCP: SendConfigReq #2
-  Feb 4 13:56:40 l2tps: ACFCOMP
-  Feb 4 13:56:40 l2tps: PROTOCOMP
-  Feb 4 13:56:40 l2tps: MRU 1500
-  Feb 4 13:56:40 l2tps: MAGICNUM 2ded8fa2
-  Feb 4 13:56:40 l2tps: AUTHPROTO CHAP MD5
-  Feb 4 13:56:40 l2tps: [l2tp0] LCP: rec'd Configure Ack #2 (Ack-Sent)
-  Feb 4 13:56:40 l2tps: ACFCOMP
-  Feb 4 13:56:40 l2tps: PROTOCOMP
-  Feb 4 13:56:40 l2tps: MRU 1500
-  Feb 4 13:56:40 l2tps: MAGICNUM 2ded8fa2
-  Feb 4 13:56:40 l2tps: AUTHPROTO CHAP MD5
-  Feb 4 13:56:40 l2tps: [l2tp0] LCP: state change Ack-Sent --> Opened
-  Feb 4 13:56:40 l2tps: [l2tp0] LCP: auth: peer wants nothing, I want CHAP
-  Feb 4 13:56:40 l2tps: [l2tp0] CHAP: sending CHALLENGE len:20
-  Feb 4 13:56:40 l2tps: [l2tp0] LCP: LayerUp
-  Feb 4 13:56:40 l2tps: [l2tp0] LCP: rec'd Ident #2 (Opened)
-  Feb 4 13:56:40 l2tps: MESG: MSRASV5.20
-  Feb 4 13:56:40 l2tps: [l2tp0] LCP: rec'd Ident #3 (Opened)
-  Feb 4 13:56:40 l2tps: MESG: MSRAS-0-WIN-LIIRCM8BRIK
-  Feb 4 13:56:40 l2tps: [l2tp0] LCP: rec'd Ident #4 (Opened)
-  Feb 4 13:56:40
-  Feb 4 13:56:40 l2tps: [l2tp0] CHAP: rec'd RESPONSE #1
-  Feb 4 13:56:40 l2tps: Name: “jim”
-  Feb 4 13:56:40 l2tps: [l2tp0] AUTH: Auth-Thread started
-  Feb 4 13:56:40 l2tps: [l2tp0] AUTH: Trying INTERNAL
-  Feb 4 13:56:40 l2tps: [l2tp0] AUTH: INTERNAL returned undefined
-  Feb 4 13:56:40 l2tps: [l2tp0] AUTH: Auth-Thread finished normally
-  Feb 4 13:56:40 l2tps: [l2tp0] CHAP: ChapInputFinish: status undefined
-  Feb 4 13:56:40 l2tps: Response is valid
-  Feb 4 13:56:40 l2tps: Reply message: Welcome
-  Feb 4 13:56:40 l2tps: [l2tp0] CHAP: sending SUCCESS len:7
-  Feb 4 13:56:40 l2tps: [l2tp0] LCP: authorization successful
-  Feb 4 13:56:40 l2tps: [l2tp0] Bundle up: 1 link, total bandwidth 64000 bps
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: Open event
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: state change Initial --> Starting
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: LayerStart
-  Feb 4 13:56:40 l2tps: [l2tp0] CCP: Open event
-  Feb 4 13:56:40 l2tps: [l2tp0] CCP: state change Initial --> Starting
-  Feb 4 13:56:40 l2tps: [l2tp0] CCP: LayerStart
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: Up event
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: state change Starting --> Req-Sent
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: SendConfigReq #1
-  Feb 4 13:56:40 l2tps: IPADDR 192.168.32.1
-  Feb 4 13:56:40 l2tps: COMPPROTO VJCOMP, 16 comp. channels, no comp-cid
-  Feb 4 13:56:40 l2tps: [l2tp0] CCP: Up event
-  Feb 4 13:56:40 l2tps: [l2tp0] CCP: state change Starting --> Req-Sent
-  Feb 4 13:56:40 l2tps: [l2tp0] CCP: SendConfigReq #1
-  Feb 4 13:56:40 l2tps: [l2tp0] rec'd unexpected protocol IPV6CP, rejecting
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: rec'd Configure Request #6 (Req-Sent)
-  Feb 4 13:56:40 l2tps: IPADDR 0.0.0.0
-  Feb 4 13:56:40 l2tps: NAKing with 192.168.32.128
-  Feb 4 13:56:40 l2tps: PRIDNS 0.0.0.0
-  Feb 4 13:56:40 l2tps: NAKing with 192.168.48.1
-  Feb 4 13:56:40 l2tps: PRINBNS 0.0.0.0
-  Feb 4 13:56:40 l2tps: SECDNS 0.0.0.0
-  Feb 4 13:56:40 l2tps: SECNBNS 0.0.0.0
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: SendConfigRej #6
-  Feb 4 13:56:40 l2tps: PRINBNS 0.0.0.0
-  Feb 4 13:56:40 l2tps: SECDNS 0.0.0.0
-  Feb 4 13:56:40 l2tps: SECNBNS 0.0.0.0
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: rec'd Configure Reject #1 (Req-Sent)
-  Feb 4 13:56:40 l2tps: COMPPROTO VJCOMP, 16 comp. channels, no comp-cid
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: SendConfigReq #2
-  Feb 4 13:56:40 l2tps: IPADDR 192.168.32.1
-  Feb 4 13:56:40 l2tps: [l2tp0] LCP: rec'd Protocol Reject #7 (Opened)
-  Feb 4 13:56:40 l2tps: [l2tp0] LCP: protocol CCP was rejected
-  Feb 4 13:56:40 l2tps: [l2tp0] CCP: protocol was rejected by peer
-  Feb 4 13:56:40 l2tps: [l2tp0] CCP: state change Req-Sent --> Stopped
-  Feb 4 13:56:40 l2tps: [l2tp0] CCP: LayerFinish
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: rec'd Configure Request #8 (Req-Sent)
-  Feb 4 13:56:40 l2tps: IPADDR 0.0.0.0
-  Feb 4 13:56:40 l2tps: NAKing with 192.168.32.128
-  Feb 4 13:56:40 l2tps: PRIDNS 0.0.0.0
-  Feb 4 13:56:40 l2tps: NAKing with 192.168.48.1
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: SendConfigNak #8
-  Feb 4 13:56:40 l2tps: IPADDR 192.168.32.128
-  Feb 4 13:56:40 l2tps: PRIDNS 192.168.48.1
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: rec'd Configure Ack #2 (Req-Sent)
-  Feb 4 13:56:40 l2tps: IPADDR 192.168.32.1
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: state change Req-Sent --> Ack-Rcvd
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: rec'd Configure Request #9 (Ack-Rcvd)
-  Feb 4 13:56:40 l2tps: IPADDR 192.168.32.128
-  Feb 4 13:56:40 l2tps: 192.168.32.128 is OK
-  Feb 4 13:56:40 l2tps: PRIDNS 192.168.48.1
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: SendConfigAck #9
-  Feb 4 13:56:40 l2tps: IPADDR 192.168.32.128
-  Feb 4 13:56:40 l2tps: PRIDNS 192.168.48.1
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: state change Ack-Rcvd --> Opened
-  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: LayerUp
-  Feb 4 13:56:40 l2tps: 192.168.32.1 -> 192.168.32.128
-  Feb 4 13:56:40 l2tps: [l2tp0] IFACE: Up event
-  Feb 4 13:56:40 l2tps: [l2tp0] no interface to proxy arp on for 192.168.32.128
+  Feb 4 13:56:38 l2tps: Incoming L2TP packet from 192.0.2.52 1701
+  Feb 4 13:56:38 l2tps: L2TP: Control connection 0x80301b608 connected
+  Feb 4 13:56:38 l2tps: L2TP: Incoming call #0 via connection 0x80301b608 received
+  Feb 4 13:56:38 l2tps: [l2tp0] L2TP: Incoming call #0 via control connection 0x80301b608 accepted
+  Feb 4 13:56:38 l2tps: [l2tp0] opening link “l2tp0”...
+  Feb 4 13:56:38 l2tps: [l2tp0] link: OPEN event
+  Feb 4 13:56:38 l2tps: [l2tp0] LCP: Open event
+  Feb 4 13:56:38 l2tps: [l2tp0] LCP: state change Initial --> Starting
+  Feb 4 13:56:38 l2tps: [l2tp0] LCP: LayerStart
+  Feb 4 13:56:38 l2tps: [l2tp0] L2TP: Call #0 connected
+  Feb 4 13:56:38 l2tps: [l2tp0] link: UP event
+  Feb 4 13:56:38 l2tps: [l2tp0] link: origination is remote
+  Feb 4 13:56:38 l2tps: [l2tp0] LCP: Up event
+  Feb 4 13:56:38 l2tps: [l2tp0] LCP: state change Starting --> Req-Sent
+  Feb 4 13:56:38 l2tps: [l2tp0] LCP: SendConfigReq #1
+  Feb 4 13:56:38 l2tps: ACFCOMP
+  Feb 4 13:56:38 l2tps: PROTOCOMP
+  Feb 4 13:56:38 l2tps: MRU 1500
+  Feb 4 13:56:38 l2tps: MAGICNUM 2ded8fa2
+  Feb 4 13:56:38 l2tps: AUTHPROTO CHAP MD5
+  Feb 4 13:56:38 l2tps: [l2tp0] LCP: rec'd Configure Request #0 (Req-Sent)
+  Feb 4 13:56:38 l2tps: MRU 1400
+  Feb 4 13:56:38 l2tps: MAGICNUM 16c02943
+  Feb 4 13:56:38 l2tps: PROTOCOMP
+  Feb 4 13:56:38 l2tps: ACFCOMP
+  Feb 4 13:56:38 l2tps: CALLBACK 6
+  Feb 4 13:56:38 l2tps: [l2tp0] LCP: SendConfigRej #0
+  Feb 4 13:56:38 l2tps: CALLBACK 6
+  Feb 4 13:56:38 l2tps: [l2tp0] LCP: rec'd Configure Request #1 (Req-Sent)
+  Feb 4 13:56:38 l2tps: MRU 1400
+  Feb 4 13:56:38 l2tps: MAGICNUM 16c02943
+  Feb 4 13:56:38 l2tps: PROTOCOMP
+  Feb 4 13:56:38 l2tps: ACFCOMP
+  Feb 4 13:56:38 l2tps: [l2tp0] LCP: SendConfigAck #1
+  Feb 4 13:56:38 l2tps: MRU 1400
+  Feb 4 13:56:38 l2tps: MAGICNUM 16c02943
+  Feb 4 13:56:38 l2tps: PROTOCOMP
+  Feb 4 13:56:38 l2tps: ACFCOMP
+  Feb 4 13:56:38 l2tps: [l2tp0] LCP: state change Req-Sent --> Ack-Sent
+  Feb 4 13:56:40 l2tps: [l2tp0] LCP: SendConfigReq #2
+  Feb 4 13:56:40 l2tps: ACFCOMP
+  Feb 4 13:56:40 l2tps: PROTOCOMP
+  Feb 4 13:56:40 l2tps: MRU 1500
+  Feb 4 13:56:40 l2tps: MAGICNUM 2ded8fa2
+  Feb 4 13:56:40 l2tps: AUTHPROTO CHAP MD5
+  Feb 4 13:56:40 l2tps: [l2tp0] LCP: rec'd Configure Ack #2 (Ack-Sent)
+  Feb 4 13:56:40 l2tps: ACFCOMP
+  Feb 4 13:56:40 l2tps: PROTOCOMP
+  Feb 4 13:56:40 l2tps: MRU 1500
+  Feb 4 13:56:40 l2tps: MAGICNUM 2ded8fa2
+  Feb 4 13:56:40 l2tps: AUTHPROTO CHAP MD5
+  Feb 4 13:56:40 l2tps: [l2tp0] LCP: state change Ack-Sent --> Opened
+  Feb 4 13:56:40 l2tps: [l2tp0] LCP: auth: peer wants nothing, I want CHAP
+  Feb 4 13:56:40 l2tps: [l2tp0] CHAP: sending CHALLENGE len:20
+  Feb 4 13:56:40 l2tps: [l2tp0] LCP: LayerUp
+  Feb 4 13:56:40 l2tps: [l2tp0] LCP: rec'd Ident #2 (Opened)
+  Feb 4 13:56:40 l2tps: MESG: MSRASV5.20
+  Feb 4 13:56:40 l2tps: [l2tp0] LCP: rec'd Ident #3 (Opened)
+  Feb 4 13:56:40 l2tps: MESG: MSRAS-0-WIN-LIIRCM8BRIK
+  Feb 4 13:56:40 l2tps: [l2tp0] LCP: rec'd Ident #4 (Opened)
+  Feb 4 13:56:40
+  Feb 4 13:56:40 l2tps: [l2tp0] CHAP: rec'd RESPONSE #1
+  Feb 4 13:56:40 l2tps: Name: “jim”
+  Feb 4 13:56:40 l2tps: [l2tp0] AUTH: Auth-Thread started
+  Feb 4 13:56:40 l2tps: [l2tp0] AUTH: Trying INTERNAL
+  Feb 4 13:56:40 l2tps: [l2tp0] AUTH: INTERNAL returned undefined
+  Feb 4 13:56:40 l2tps: [l2tp0] AUTH: Auth-Thread finished normally
+  Feb 4 13:56:40 l2tps: [l2tp0] CHAP: ChapInputFinish: status undefined
+  Feb 4 13:56:40 l2tps: Response is valid
+  Feb 4 13:56:40 l2tps: Reply message: Welcome
+  Feb 4 13:56:40 l2tps: [l2tp0] CHAP: sending SUCCESS len:7
+  Feb 4 13:56:40 l2tps: [l2tp0] LCP: authorization successful
+  Feb 4 13:56:40 l2tps: [l2tp0] Bundle up: 1 link, total bandwidth 64000 bps
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: Open event
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: state change Initial --> Starting
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: LayerStart
+  Feb 4 13:56:40 l2tps: [l2tp0] CCP: Open event
+  Feb 4 13:56:40 l2tps: [l2tp0] CCP: state change Initial --> Starting
+  Feb 4 13:56:40 l2tps: [l2tp0] CCP: LayerStart
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: Up event
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: state change Starting --> Req-Sent
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: SendConfigReq #1
+  Feb 4 13:56:40 l2tps: IPADDR 192.168.32.1
+  Feb 4 13:56:40 l2tps: COMPPROTO VJCOMP, 16 comp. channels, no comp-cid
+  Feb 4 13:56:40 l2tps: [l2tp0] CCP: Up event
+  Feb 4 13:56:40 l2tps: [l2tp0] CCP: state change Starting --> Req-Sent
+  Feb 4 13:56:40 l2tps: [l2tp0] CCP: SendConfigReq #1
+  Feb 4 13:56:40 l2tps: [l2tp0] rec'd unexpected protocol IPV6CP, rejecting
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: rec'd Configure Request #6 (Req-Sent)
+  Feb 4 13:56:40 l2tps: IPADDR 0.0.0.0
+  Feb 4 13:56:40 l2tps: NAKing with 192.168.32.128
+  Feb 4 13:56:40 l2tps: PRIDNS 0.0.0.0
+  Feb 4 13:56:40 l2tps: NAKing with 192.168.48.1
+  Feb 4 13:56:40 l2tps: PRINBNS 0.0.0.0
+  Feb 4 13:56:40 l2tps: SECDNS 0.0.0.0
+  Feb 4 13:56:40 l2tps: SECNBNS 0.0.0.0
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: SendConfigRej #6
+  Feb 4 13:56:40 l2tps: PRINBNS 0.0.0.0
+  Feb 4 13:56:40 l2tps: SECDNS 0.0.0.0
+  Feb 4 13:56:40 l2tps: SECNBNS 0.0.0.0
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: rec'd Configure Reject #1 (Req-Sent)
+  Feb 4 13:56:40 l2tps: COMPPROTO VJCOMP, 16 comp. channels, no comp-cid
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: SendConfigReq #2
+  Feb 4 13:56:40 l2tps: IPADDR 192.168.32.1
+  Feb 4 13:56:40 l2tps: [l2tp0] LCP: rec'd Protocol Reject #7 (Opened)
+  Feb 4 13:56:40 l2tps: [l2tp0] LCP: protocol CCP was rejected
+  Feb 4 13:56:40 l2tps: [l2tp0] CCP: protocol was rejected by peer
+  Feb 4 13:56:40 l2tps: [l2tp0] CCP: state change Req-Sent --> Stopped
+  Feb 4 13:56:40 l2tps: [l2tp0] CCP: LayerFinish
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: rec'd Configure Request #8 (Req-Sent)
+  Feb 4 13:56:40 l2tps: IPADDR 0.0.0.0
+  Feb 4 13:56:40 l2tps: NAKing with 192.168.32.128
+  Feb 4 13:56:40 l2tps: PRIDNS 0.0.0.0
+  Feb 4 13:56:40 l2tps: NAKing with 192.168.48.1
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: SendConfigNak #8
+  Feb 4 13:56:40 l2tps: IPADDR 192.168.32.128
+  Feb 4 13:56:40 l2tps: PRIDNS 192.168.48.1
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: rec'd Configure Ack #2 (Req-Sent)
+  Feb 4 13:56:40 l2tps: IPADDR 192.168.32.1
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: state change Req-Sent --> Ack-Rcvd
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: rec'd Configure Request #9 (Ack-Rcvd)
+  Feb 4 13:56:40 l2tps: IPADDR 192.168.32.128
+  Feb 4 13:56:40 l2tps: 192.168.32.128 is OK
+  Feb 4 13:56:40 l2tps: PRIDNS 192.168.48.1
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: SendConfigAck #9
+  Feb 4 13:56:40 l2tps: IPADDR 192.168.32.128
+  Feb 4 13:56:40 l2tps: PRIDNS 192.168.48.1
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: state change Ack-Rcvd --> Opened
+  Feb 4 13:56:40 l2tps: [l2tp0] IPCP: LayerUp
+  Feb 4 13:56:40 l2tps: 192.168.32.1 -> 192.168.32.128
+  Feb 4 13:56:40 l2tps: [l2tp0] IFACE: Up event
+  Feb 4 13:56:40 l2tps: [l2tp0] no interface to proxy arp on for 192.168.32.128
 
 L2TP Disconnect
 ^^^^^^^^^^^^^^^
 
 Log entries from a successful L2TP Disconnect::
 
-  Feb 4 13:57:07 l2tps: [l2tp0] LCP: rec'd Terminate Request #10 (Opened)
-  Feb 4 13:57:07 l2tps: [l2tp0] LCP: state change Opened --> Stopping
-  Feb 4 13:57:07 l2tps: [l2tp0] AUTH: Accounting data for user jim: 29 seconds, 8139 octets in, 737 octets out
-  Feb 4 13:57:07 l2tps: [l2tp0] Bundle up: 0 links, total bandwidth 9600 bps
-  Feb 4 13:57:07 l2tps: [l2tp0] IPCP: Close event
-  Feb 4 13:57:07 l2tps: [l2tp0] IPCP: state change Opened --> Closing
-  Feb 4 13:57:07 l2tps: [l2tp0] IPCP: SendTerminateReq #3
-  Feb 4 13:57:07 l2tps: [l2tp0] error writing len 8 frame to bypass: Network is down
-  Feb 4 13:57:07 l2tps: [l2tp0] IPCP: LayerDown
-  Feb 4 13:57:07 l2tps: [l2tp0] IFACE: Down event
-  Feb 4 13:57:07 l2tps: [l2tp0] CCP: Close event
-  Feb 4 13:57:07 l2tps: [l2tp0] CCP: state change Stopped --> Closed
-  Feb 4 13:57:07 l2tps: [l2tp0] IPCP: Down event
-  Feb 4 13:57:07 l2tps: [l2tp0] IPCP: LayerFinish
-  Feb 4 13:57:07 l2tps: [l2tp0] No NCPs left. Closing links...
-  Feb 4 13:57:07 l2tps: [l2tp0] closing link “l2tp0”...
-  Feb 4 13:57:07 l2tps: [l2tp0] IPCP: state change Closing --> Initial
-  Feb 4 13:57:07 l2tps: [l2tp0] CCP: Down event
-  Feb 4 13:57:07 l2tps: [l2tp0] CCP: state change Closed --> Initial
-  Feb 4 13:57:07 l2tps: [l2tp0] AUTH: Cleanup
-  Feb 4 13:57:07 l2tps: [l2tp0] LCP: SendTerminateAck #3
-  Feb 4 13:57:07 l2tps: [l2tp0] LCP: LayerDown
-  Feb 4 13:57:07 l2tps: [l2tp0] link: CLOSE event
-  Feb 4 13:57:07 l2tps: [l2tp0] LCP: Close event
-  Feb 4 13:57:07 l2tps: [l2tp0] LCP: state change Stopping --> Closing
-  Feb 4 13:57:09 l2tps: [l2tp0] LCP: rec'd Terminate Request #11 (Closing)
-  Feb 4 13:57:09 l2tps: [l2tp0] LCP: SendTerminateAck #4
-  Feb 4 13:57:09 l2tps: [l2tp0] LCP: state change Closing --> Closed
-  Feb 4 13:57:09 l2tps: [l2tp0] LCP: LayerFinish
-  Feb 4 13:57:09 l2tps: [l2tp0] link: DOWN event
-  Feb 4 13:57:09 l2tps: [l2tp0] LCP: Down event
-  Feb 4 13:57:09 l2tps: [l2tp0] LCP: state change Closed --> Initial
-  Feb 4 13:57:09 l2tps: [l2tp0] L2TP: Call #0 terminated locally
-  Feb 4 13:57:09 l2tps: L2TP: Control connection 0x80301b608 terminated: 0 (no more sessions exist in this tunnel)
-  Feb 4 13:57:20 l2tps: L2TP: Control connection 0x80301b608 destroyed
+  Feb 4 13:57:07 l2tps: [l2tp0] LCP: rec'd Terminate Request #10 (Opened)
+  Feb 4 13:57:07 l2tps: [l2tp0] LCP: state change Opened --> Stopping
+  Feb 4 13:57:07 l2tps: [l2tp0] AUTH: Accounting data for user jim: 29 seconds, 8139 octets in, 737 octets out
+  Feb 4 13:57:07 l2tps: [l2tp0] Bundle up: 0 links, total bandwidth 9600 bps
+  Feb 4 13:57:07 l2tps: [l2tp0] IPCP: Close event
+  Feb 4 13:57:07 l2tps: [l2tp0] IPCP: state change Opened --> Closing
+  Feb 4 13:57:07 l2tps: [l2tp0] IPCP: SendTerminateReq #3
+  Feb 4 13:57:07 l2tps: [l2tp0] error writing len 8 frame to bypass: Network is down
+  Feb 4 13:57:07 l2tps: [l2tp0] IPCP: LayerDown
+  Feb 4 13:57:07 l2tps: [l2tp0] IFACE: Down event
+  Feb 4 13:57:07 l2tps: [l2tp0] CCP: Close event
+  Feb 4 13:57:07 l2tps: [l2tp0] CCP: state change Stopped --> Closed
+  Feb 4 13:57:07 l2tps: [l2tp0] IPCP: Down event
+  Feb 4 13:57:07 l2tps: [l2tp0] IPCP: LayerFinish
+  Feb 4 13:57:07 l2tps: [l2tp0] No NCPs left. Closing links...
+  Feb 4 13:57:07 l2tps: [l2tp0] closing link “l2tp0”...
+  Feb 4 13:57:07 l2tps: [l2tp0] IPCP: state change Closing --> Initial
+  Feb 4 13:57:07 l2tps: [l2tp0] CCP: Down event
+  Feb 4 13:57:07 l2tps: [l2tp0] CCP: state change Closed --> Initial
+  Feb 4 13:57:07 l2tps: [l2tp0] AUTH: Cleanup
+  Feb 4 13:57:07 l2tps: [l2tp0] LCP: SendTerminateAck #3
+  Feb 4 13:57:07 l2tps: [l2tp0] LCP: LayerDown
+  Feb 4 13:57:07 l2tps: [l2tp0] link: CLOSE event
+  Feb 4 13:57:07 l2tps: [l2tp0] LCP: Close event
+  Feb 4 13:57:07 l2tps: [l2tp0] LCP: state change Stopping --> Closing
+  Feb 4 13:57:09 l2tps: [l2tp0] LCP: rec'd Terminate Request #11 (Closing)
+  Feb 4 13:57:09 l2tps: [l2tp0] LCP: SendTerminateAck #4
+  Feb 4 13:57:09 l2tps: [l2tp0] LCP: state change Closing --> Closed
+  Feb 4 13:57:09 l2tps: [l2tp0] LCP: LayerFinish
+  Feb 4 13:57:09 l2tps: [l2tp0] link: DOWN event
+  Feb 4 13:57:09 l2tps: [l2tp0] LCP: Down event
+  Feb 4 13:57:09 l2tps: [l2tp0] LCP: state change Closed --> Initial
+  Feb 4 13:57:09 l2tps: [l2tp0] L2TP: Call #0 terminated locally
+  Feb 4 13:57:09 l2tps: L2TP: Control connection 0x80301b608 terminated: 0 (no more sessions exist in this tunnel)
+  Feb 4 13:57:20 l2tps: L2TP: Control connection 0x80301b608 destroyed
 
 IPsec Disconnect
 ^^^^^^^^^^^^^^^^
 
 .. code::
 
-  Feb 4 13:57:07 charon: 12[KNL] 192.168.32.1 disappeared from l2tp0
-  Feb 4 13:57:07 charon: 12[KNL] interface l2tp0 deactivated
-  Feb 4 13:57:11 charon: 13[NET] received packet: from 192.0.2.52[500] to 192.0.2.90[500] (76 bytes)
-  Feb 4 13:57:11 charon: 13[ENC] parsed INFORMATIONAL_V1 request 3840243157 [ HASH D ]
-  Feb 4 13:57:11 charon: 13[IKE] <con1|1> received DELETE for ESP CHILD_SA with SPI 4beb8c5a
-  Feb 4 13:57:11 charon: 13[IKE] received DELETE for ESP CHILD_SA with SPI 4beb8c5a
-  Feb 4 13:57:11 charon: 13[IKE] <con1|1> closing CHILD_SA con1{1} with SPIs cfcf5cfc_i (12669 bytes) 4beb8c5a_o (3120 bytes) and TS 192.0.2.90/32|/0[udp/l2f] === 192.0.2.52/32|/0[udp/l2f]
-  Feb 4 13:57:11 charon: 13[IKE] closing CHILD_SA con1{1} with SPIs cfcf5cfc_i (12669 bytes) 4beb8c5a_o (3120 bytes) and TS 192.0.2.90/32|/0[udp/l2f] === 192.0.2.52/32|/0[udp/l2f]
-  Feb 4 13:57:11 charon: 13[NET] received packet: from 192.0.2.52[500] to 192.0.2.90[500] (92 bytes)
-  Feb 4 13:57:11 charon: 13[ENC] parsed INFORMATIONAL_V1 request 1351826790 [ HASH D ]
-  Feb 4 13:57:11 charon: 13[IKE] <con1|1> received DELETE for IKE_SA con1[1]
-  Feb 4 13:57:11 charon: 13[IKE] received DELETE for IKE_SA con1[1]
-  Feb 4 13:57:11 charon: 13[IKE] <con1|1> deleting IKE_SA con1[1] between 192.0.2.90[192.0.2.90]...192.0.2.52[192.0.2.52]
-  Feb 4 13:57:11 charon: 13[IKE] deleting IKE_SA con1[1] between 192.0.2.90[192.0.2.90]...192.0.2.52[192.0.2.52]
+  Feb 4 13:57:07 charon: 12[KNL] 192.168.32.1 disappeared from l2tp0
+  Feb 4 13:57:07 charon: 12[KNL] interface l2tp0 deactivated
+  Feb 4 13:57:11 charon: 13[NET] received packet: from 192.0.2.52[500] to 192.0.2.90[500] (76 bytes)
+  Feb 4 13:57:11 charon: 13[ENC] parsed INFORMATIONAL_V1 request 3840243157 [ HASH D ]
+  Feb 4 13:57:11 charon: 13[IKE] <con1|1> received DELETE for ESP CHILD_SA with SPI 4beb8c5a
+  Feb 4 13:57:11 charon: 13[IKE] received DELETE for ESP CHILD_SA with SPI 4beb8c5a
+  Feb 4 13:57:11 charon: 13[IKE] <con1|1> closing CHILD_SA con1{1} with SPIs cfcf5cfc_i (12669 bytes) 4beb8c5a_o (3120 bytes) and TS 192.0.2.90/32|/0[udp/l2f] === 192.0.2.52/32|/0[udp/l2f]
+  Feb 4 13:57:11 charon: 13[IKE] closing CHILD_SA con1{1} with SPIs cfcf5cfc_i (12669 bytes) 4beb8c5a_o (3120 bytes) and TS 192.0.2.90/32|/0[udp/l2f] === 192.0.2.52/32|/0[udp/l2f]
+  Feb 4 13:57:11 charon: 13[NET] received packet: from 192.0.2.52[500] to 192.0.2.90[500] (92 bytes)
+  Feb 4 13:57:11 charon: 13[ENC] parsed INFORMATIONAL_V1 request 1351826790 [ HASH D ]
+  Feb 4 13:57:11 charon: 13[IKE] <con1|1> received DELETE for IKE_SA con1[1]
+  Feb 4 13:57:11 charon: 13[IKE] received DELETE for IKE_SA con1[1]
+  Feb 4 13:57:11 charon: 13[IKE] <con1|1> deleting IKE_SA con1[1] between 192.0.2.90[192.0.2.90]...192.0.2.52[192.0.2.52]
+  Feb 4 13:57:11 charon: 13[IKE] deleting IKE_SA con1[1] between 192.0.2.90[192.0.2.90]...192.0.2.52[192.0.2.52]
 

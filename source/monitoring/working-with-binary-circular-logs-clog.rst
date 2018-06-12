@@ -19,14 +19,14 @@ Viewing Log Contents
 The *clog* command must be used to view the contents of log files from
 the shell, like so::
 
-  clog /var/log/filter.log
+  clog /var/log/filter.log
 
 Then the output may be piped to tools like *grep* if needed.
 
 In order to follow the log files in a manner like *tail -f* would allow,
 use::
 
-  clog -f /var/log/filter.log
+  clog -f /var/log/filter.log
 
 The contents of the log will be printed to the console, and then new
 entries will appear as they are written.

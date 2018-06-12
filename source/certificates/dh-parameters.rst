@@ -20,9 +20,9 @@ are not stored in config.xml.
 To generate a new set of DH parameters, which can take quite a long time
 depending on the hardware in use, run the following commands::
 
-  /usr/bin/openssl dhparam -out /etc/dh-parameters.1024 1024
-  /usr/bin/openssl dhparam -out /etc/dh-parameters.2048 2048
-  /usr/bin/openssl dhparam -out /etc/dh-parameters.4096 4096
+  /usr/bin/openssl dhparam -out /etc/dh-parameters.1024 1024
+  /usr/bin/openssl dhparam -out /etc/dh-parameters.2048 2048
+  /usr/bin/openssl dhparam -out /etc/dh-parameters.4096 4096
 
 CPU time used to generate the parameters increases significantly with
 length. For example, generating 1024-bit DH parameters only takes about
@@ -37,4 +37,4 @@ Supported lengths are: 1024, 2048, 3072, 4096, 7680, 8192, 15360, and
 
 For example, to generate a new set of DH parameters of length 8192, run::
 
-  /usr/bin/openssl dhparam -out /etc/dh-parameters.8192 8192
+  /usr/bin/openssl dhparam -out /etc/dh-parameters.8192 8192

@@ -31,16 +31,16 @@ First, decompress the .img.gz file. This will leave a large .img file
 that is the full size of the target CF size, be sure there is enough
 space to store it!
 
-``# gunzip pfSense-2.1.5-RELEASE-2g-amd64-nanobsd.img.gz``
+``# gunzip pfSense-2.1.5-RELEASE-2g-amd64-nanobsd.img.gz``
 
 Make a mountpoint for the image:
 
-``# mkdir /mnt/pfsense``
+``# mkdir /mnt/pfsense``
 
 Load the image onto an md(4) device. The mdconfig command will return
 the id of the next available md device, like so:
 
-| ``# mdconfig -f pfSense-2.1.5-RELEASE-2g-amd64-nanobsd.img``
+| ``# mdconfig -f pfSense-2.1.5-RELEASE-2g-amd64-nanobsd.img``
 | ``md0``
 
 N.B.: When using -f, options “-a -t vnode” are assumed and are not
@@ -48,43 +48,43 @@ needed.
 
 (Optional) Confirm that the md device is present as expected:
 
-| ``# mdconfig -lv``
-| ``md0     vnode     1.9G  /home/jim/pfSense-2.1.5-RELEASE-2g-amd64-nanobsd.img``
+| ``# mdconfig -lv``
+| ``md0     vnode     1.9G  /home/jim/pfSense-2.1.5-RELEASE-2g-amd64-nanobsd.img``
 
 Mount the configuration slice, using the md device name returned above
 plus the configuration slice, s3:
 
-``# mount /dev/md0s3 /mnt/pfsense``
+``# mount /dev/md0s3 /mnt/pfsense``
 
 Access to the partition that holds the configuration is now possible:
 
-| ``# ls -l /mnt/pfsense/conf/``
-| ``total 13``
-| ``drwxr-xr-x  2 root  wheel    512 Sep 27 23:39 backup/``
-| ``-rw-r--r--  1 root  wheel  12755 Sep 27 23:08 config.xml``
-| ``-rw-r--r--  1 root  wheel      0 Sep 27 23:08 ez-ipupdate.cache``
-| ``-rw-r--r--  1 root  wheel      0 Sep 27 23:08 trigger_initial_wizard``
+| ``# ls -l /mnt/pfsense/conf/``
+| ``total 13``
+| ``drwxr-xr-x  2 root  wheel    512 Sep 27 23:39 backup/``
+| ``-rw-r--r--  1 root  wheel  12755 Sep 27 23:08 config.xml``
+| ``-rw-r--r--  1 root  wheel      0 Sep 27 23:08 ez-ipupdate.cache``
+| ``-rw-r--r--  1 root  wheel      0 Sep 27 23:08 trigger_initial_wizard``
 
 Copy over an existing configuration file. When doing so, be sure to
 remove the file that starts the configuration wizard.
 
-| ``# cp /home/mystuff/oldconfig.xml /mnt/pfsense/conf/config.xml``
-| ``# rm /mnt/pfsense/conf/trigger_initial_wizard``
+| ``# cp /home/mystuff/oldconfig.xml /mnt/pfsense/conf/config.xml``
+| ``# rm /mnt/pfsense/conf/trigger_initial_wizard``
 
 Now unmount the configuration slice
 
-``# umount /mnt/pfsense``
+``# umount /mnt/pfsense``
 
 (optional) Make any other desired changes at this point also, by
 mounting the slice containing the operating system.
 
-| ``# mount /dev/md0s1a /mnt/pfsense``
+| ``# mount /dev/md0s1a /mnt/pfsense``
 | 
-| ``# umount /mnt/pfsense``
+| ``# umount /mnt/pfsense``
 
 And remove the md device. Since we had md0 above, the unit number is 0.
 
-``# mdconfig -d -u 0``
+``# mdconfig -d -u 0``
 
 Modifying a CF After Writing the Image
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

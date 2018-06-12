@@ -57,7 +57,7 @@ If the pfSense LAN address is 192.168.1.1, and that IP is a part of the
 subnet defined for the IPsec tunnel, to ping 10.0.0.1 on the other side,
 do this::
 
-  ping -S 192.168.1.1 10.0.0.1
+  ping -S 192.168.1.1 10.0.0.1
 
 Another alternative, depending on the version, would be to change the
 interface binding of the target service so that it only listens on the

@@ -13,9 +13,9 @@ sendto error: 55
 
 .. code::
 
-  55 ENOBUFS
-  No buffer space available.
-  An operation on a socket or pipe was not performed because the system lacked sufficient buffer space or because a queue was full.
+  55 ENOBUFS
+  No buffer space available.
+  An operation on a socket or pipe was not performed because the system lacked sufficient buffer space or because a queue was full.
 
 Several possible conditions can cause this. For a list of possible
 causes and solutions, see :doc:`No buffer space available </routing/no-buffer-space-available>`.
@@ -25,9 +25,9 @@ sendto error: 64
 
 .. code::
 
-  64 EHOSTDOWN
-  Host is down.
-  A socket operation failed because the destination host was down.
+  64 EHOSTDOWN
+  Host is down.
+  A socket operation failed because the destination host was down.
 
 In this case, the firewall is unable to reach the a target host directly
 connected at layer 2 (No ARP response), or it received a similar error
@@ -40,9 +40,9 @@ sendto error: 65
 
 .. code::
 
-  65 EHOSTUNREACH
-  No route to host.
-  A socket operation was attempted to an unreachable host.
+  65 EHOSTUNREACH
+  No route to host.
+  A socket operation was attempted to an unreachable host.
 
 Either there is no possible route to the target locally, or status
 information was received from an upstream router that indicated the same

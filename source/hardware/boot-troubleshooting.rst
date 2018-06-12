@@ -19,13 +19,13 @@ boot process, press space or another key.
 Once at the loader prompt, type the following to boot with the serial
 console active:::
 
-  set console=comconsole
-  boot -v
+  set console=comconsole
+  boot -v
 
 Similarly, if a VGA-enabled NanoBSD image is used that prefers the
 serial console, the video console can be used instead as follows::
 
-  set console=vidconsole
+  set console=vidconsole
   boot
 
 Booting from USB
@@ -79,8 +79,8 @@ then either of the following installer choices will work:
 
 Other platforms may need more changes to the memstick, including::
 
-  gpart bootcode -b /boot/pmbr -p /boot/gptboot -i 2 da1
-  gpart set -a bootme -i 2 da1
+  gpart bootcode -b /boot/pmbr -p /boot/gptboot -i 2 da1
+  gpart set -a bootme -i 2 da1
 
 In this case the hardware may not be capable of booting ZFS, but use the
 same option above for UFS with BSD Labels which should work.
@@ -116,8 +116,8 @@ BIOS/Disk Errors
   - Boot from another disk and run: (note that ad0 is the first ata
     hard drive)::
 
-      # dd if=/dev/zero of=/dev/ad0 bs=8k count=16
-      # fdisk -I ad0
+      # dd if=/dev/zero of=/dev/ad0 bs=8k count=16
+      # fdisk -I ad0
 
 -  If all those fail...
 
@@ -145,8 +145,8 @@ Boot Blocks/Loader Issues
   CD and running the following (`More
   Info <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/boot-introduction.html>`__)::
 
-    # fdisk -B -b /boot/boot0 /dev/ad0
-    # bsdlabel -B /dev/ad0s1
+    # fdisk -B -b /boot/boot0 /dev/ad0
+    # bsdlabel -B /dev/ad0s1
 
 - (note that ad0 is the first ata hard drive)
 
@@ -162,7 +162,7 @@ Vendor-Specific Issues
 
   - Escape to the loader prompt during bootup and run::
 
-      set hw.clflush_disable=1``
+      set hw.clflush_disable=1``
       boot``
 
     At that point, boot the rest of the way and install pfSense. After
@@ -205,7 +205,7 @@ prompt.
 
 At this point hit any key and a prompt will be displayed. Then type::
 
-  set hint.acpi.0.disabled=1
+  set hint.acpi.0.disabled=1
   boot
 
 Make it Persistent
@@ -245,11 +245,11 @@ pfSense 2.1 and earlier
 
 To disable DMA for hard drives and compact flash::
 
-  set hw.ata.ata_dma=0
+  set hw.ata.ata_dma=0
 
 To disable DMA for optical drives::
 
-  set hw.ata.atapi_dma=0
+  set hw.ata.atapi_dma=0
 
 After the installation, add the following line to
 */boot/loader.conf.local*:
@@ -273,7 +273,7 @@ later due to changes in the underlying disk driver structure on FreeBSD.
 
 To disable DMA from a loader prompt, use::
 
-  set hint.ata.0.mode=PIO4
+  set hint.ata.0.mode=PIO4
 
 To make the change permanent, add the following line to
 */boot/loader.conf.local*::
@@ -310,7 +310,7 @@ pfSense 2.1 and earlier
 
 To disable write caching for all ATA drives::
 
-  set hw.ata.wc=0
+  set hw.ata.wc=0
 
 After the installation, add the following line to
 */boot/loader.conf.local*:
@@ -328,7 +328,7 @@ structure on FreeBSD.
 
 To disable write caching from a loader prompt, use::
 
-  set kern.cam.ada.write_cache=0
+  set kern.cam.ada.write_cache=0
 
 To make the change permanent, add the following line to
 */boot/loader.conf.local*::
@@ -342,15 +342,15 @@ Certain “fake” RAID cards, driver/software-based RAID adapters that are
 not true hardware RAID, may fail to mount properly with the following
 error::
 
-  Root mount waiting for: GRAID
+  Root mount waiting for: GRAID
   mountroot>
 
 Another symptom can be that “Intel RAID” messages are shown during the
 boot sequence, and typing ? at the mountroot prompt it only shows the
 drive itself and no partitions::
 
-  Mounting from ufs:/dev/ada0s1a failed with error 19
-  mountroot> ?
+  Mounting from ufs:/dev/ada0s1a failed with error 19
+  mountroot> ?
   [...]
   ada0
 
@@ -405,7 +405,7 @@ Conflicting Hardware
 
 - If the system stops with an error such as::
 
-    run_interrupt_driven_hooks: still waiting after 60 seconds for xpt_action
+    run_interrupt_driven_hooks: still waiting after 60 seconds for xpt_action
 
   Disable any Firewire/1394 controllers and USB Card Readers in the BIOS.
 

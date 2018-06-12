@@ -174,13 +174,13 @@ using VLANs with Intel 10 Gb ix(4) cards, some features of the driver
 for VLANs may need to be disabled to work correctly. For instance, to
 apply these settings on NIC ix0, run the following::
 
-  ifconfig ix0 -vlanhwfilter
+  ifconfig ix0 -vlanhwfilter
 
 That alone should be enough, but in some cases it may be necessary to
 disable TSO in addition to VLAN hardware filtering, which can be done
 like so::
 
-  ifconfig ix0 -vlanhwfilter -vlanhwtso -tso
+  ifconfig ix0 -vlanhwfilter -vlanhwtso -tso
 
 These commands may be placed into a :doc:`shellcmd tag </development/executing-commands-at-boot-time>`
 to execute at boot time to make the change persistent.

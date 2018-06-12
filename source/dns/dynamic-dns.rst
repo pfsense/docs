@@ -147,9 +147,9 @@ is a DNS hosting provider that also allows dynamic DNS services.
 .. note:: Seems there might be an issue using complex passwords, testing
    shows that letters and numbers only works without problems
 
-   1. Use a "simple" password (alphanumeric), using the 15-byte maximum (for DNS Made Easy) to make things as secure as possible,
-   2. You do not need a "business" account on DNS Made Easy; any account at all works fine,
-   3. Enter the DNS ID for both the hostname and the username in the pfSense software.
+   1. Use a "simple" password (alphanumeric), using the 15-byte maximum (for DNS Made Easy) to make things as secure as possible,
+   2. You do not need a "business" account on DNS Made Easy; any account at all works fine,
+   3. Enter the DNS ID for both the hostname and the username in the pfSense software.
 
 DynDNS
 ~~~~~~

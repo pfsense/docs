@@ -64,27 +64,27 @@ second IDE drive. SCSI drives will be da0 and da1. YMMV.
 
 -  Run the following commands to create the mirror :
 
-| ``sysctl kern.geom.debugflags=16         # Enable footshooting``
-| ``gmirror label -v -b round-robin pfSenseMirror /dev/ad0 # Tell gmirror to create raid0 array using /dev/ad0 as the first disk``
-| ``gmirror configure -a pfSenseMirror     # Tell geom to automatically rebuild array``
-| ``gmirror insert pfSenseMirror /dev/ad1      # Add the second disk to the mirror ``
-| ``gmirror status                 # Wait until the mirror builds``
-| ``exit                       # Exit when it's 100%``
+| ``sysctl kern.geom.debugflags=16         # Enable footshooting``
+| ``gmirror label -v -b round-robin pfSenseMirror /dev/ad0 # Tell gmirror to create raid0 array using /dev/ad0 as the first disk``
+| ``gmirror configure -a pfSenseMirror     # Tell geom to automatically rebuild array``
+| ``gmirror insert pfSenseMirror /dev/ad1      # Add the second disk to the mirror ``
+| ``gmirror status                 # Wait until the mirror builds``
+| ``exit                       # Exit when it's 100%``
 
 If it all went right, it should show a good mirror:
 
-| ``# gmirror status``
-| ``      Name    Status  Components``
-| ``mirror/pfSenseMirror  COMPLETE  ad0``
-| ``                                ad1``
+| ``# gmirror status``
+| ``      Name    Status  Components``
+| ``mirror/pfSenseMirror  COMPLETE  ad0``
+| ``                                ad1``
 
 After creating the mirror, it may be selected as an installation target.
 
 Should a drive be lost, replace it physically and then run the following
 if it doesn't automatically try to rebuild:
 
-| ``gmirror forget pfSenseMirror /dev/ad1``
-| ``gmirror insert pfSenseMirror /dev/ad1``
+| ``gmirror forget pfSenseMirror /dev/ad1``
+| ``gmirror insert pfSenseMirror /dev/ad1``
 
 Check out `this
 article <http://www.google.com/url?sa=t&ct=res&cd=1&url=http%3A%2F%2Fwww.onlamp.com%2Fpub%2Fa%2Fbsd%2F2005%2F11%2F10%2FFreeBSD_Basics.html&ei=eZStRNHjB8KYaJzrwaAI&sig2=6zrC2Qt34476zBGvhB-uxA>`__

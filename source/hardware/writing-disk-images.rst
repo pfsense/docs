@@ -148,11 +148,11 @@ root, omit **sudo**.
 
 .. code::
 
-  $ gzip -dc pfSense-memstick-2.2.3-RELEASE-amd64.img.gz | sudo dd of=/dev/sdz bs=1M
-  [sudo] password for user:
-  0+7416 records in
-  0+7416 records out
-  243048448 bytes (243 MB) copied, 26.3313 s, 9.2 MB/s
+  $ gzip -dc pfSense-memstick-2.2.3-RELEASE-amd64.img.gz | sudo dd of=/dev/sdz bs=1M
+  [sudo] password for user:
+  0+7416 records in
+  0+7416 records out
+  243048448 bytes (243 MB) copied, 26.3313 s, 9.2 MB/s
   $
 
 If a warning is printed about “trailing garbage” is may be safely
@@ -171,7 +171,7 @@ target disk.
 
 .. code::
 
-  $ gzip -dc pfSense-memstick-2.2.3-RELEASE-amd64.img.gz | sudo dd of=/dev/da9 obs=64k
+  $ gzip -dc pfSense-memstick-2.2.3-RELEASE-amd64.img.gz | sudo dd of=/dev/da9 obs=64k
 
 If a warning is printed about “trailing garbage” is may be safely
 ignored, as it is from the file's digital signature.
@@ -190,9 +190,9 @@ located first (e.g. /dev/rdisk3).
 - Locate the disk using **diskutil list**
 - Unmount the disk using the identifier listed from diskutil::
 
-    diskutil umount disk3s1
+    diskutil umount disk3s1
 
 - Decompress and write the image::
 
-    $ gzcat pfSense-memstick-2.2.3-RELEASE-amd64.img.gz | sudo dd of=/dev/rdisk3 bs=1m
+    $ gzcat pfSense-memstick-2.2.3-RELEASE-amd64.img.gz | sudo dd of=/dev/rdisk3 bs=1m
 

@@ -35,7 +35,7 @@ Server-Side Configuration Examples
 Hosting one of these services is very simple. The server page need only
 print the requesting client IP address in the expected format::
 
-  Current IP Address: x.x.x.x
+  Current IP Address: x.x.x.x
 
 nginx (internal/native)
 ^^^^^^^^^^^^^^^^^^^^^^^

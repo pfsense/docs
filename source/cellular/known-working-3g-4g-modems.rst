@@ -159,9 +159,9 @@ Mode Switching
 Some devices show up as a media device, such as *cd0*, in this case it
 may be possible to switch modes by executing a command::
 
-  camcontrol eject cd0
+  camcontrol eject cd0
 
 If that does switch the modem to the proper mode, it may be added as a
 :doc:`/development/executing-commands-at-boot-time` using the full path::
 
-  /sbin/camcontrol eject cd0
+  /sbin/camcontrol eject cd0

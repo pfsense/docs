@@ -13,20 +13,20 @@ typical CE full installation.
 
 -  Ensure that the package database directory exists:
 
-`` /bin/mkdir -p /var/db/pkg/ /root/var/db/pkg/``
+`` /bin/mkdir -p /var/db/pkg/ /root/var/db/pkg/``
 
 -  Force an update of the package repository data:
 
-`` /usr/sbin/pkg update -f``
+`` /usr/sbin/pkg update -f``
 
 -  Force a reinstall of the pfSense base package and kernel:
 
-`` /usr/sbin/pkg install -yf pkg pfSense pfSense-kernel-pfSense``
+`` /usr/sbin/pkg install -yf pkg pfSense pfSense-kernel-pfSense``
 
 -  Refresh the php.ini and extensions.ini to ensure they are loading the
    correct modules
 
-`` /etc/rc.php_ini_setup``
+`` /etc/rc.php_ini_setup``
 
 If any additional packages were installed, reinstall them manually using
 the GUI if possible, or using “pkg install -f” as above.

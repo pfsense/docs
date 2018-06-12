@@ -38,11 +38,11 @@ To view statistics about the running softflowd process, run the
 following command, replacing *em0* with the actual network interface to
 query::
 
-  : softflowctl -c /var/run/softflowd.em0.ctl statistics
+  : softflowctl -c /var/run/softflowd.em0.ctl statistics
 
 To expire all flows and force an update to be sent to the netflow
 server, run the following command, replacing *em0* with the actual
 network interface to control::
 
-  : softflowctl -c /var/run/softflowd.em0.ctl expire-all
+  : softflowctl -c /var/run/softflowd.em0.ctl expire-all
 

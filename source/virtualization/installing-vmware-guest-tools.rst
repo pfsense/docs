@@ -42,24 +42,24 @@ VMware Tools** if using VMware workstation.
 
 .. code::
 
-  mount -t cd9660 /dev/acd0 /mnt/
-  cd /tmp
-  tar xvzf /mnt/vmware-freebsd-tools.tar.gz
-  cd vmware-tools-distrib/
-  ./vmware-install.pl -d
+  mount -t cd9660 /dev/acd0 /mnt/
+  cd /tmp
+  tar xvzf /mnt/vmware-freebsd-tools.tar.gz
+  cd vmware-tools-distrib/
+  ./vmware-install.pl -d
 
 Ignore any settings or changes mentioned by the script.
 
 .. code::
 
-  rm -f /etc/vmware-tools/not_configured
+  rm -f /etc/vmware-tools/not_configured
 
 A little startup script is required to add the compat6x library path at
 boot time, or else the VMware tools won't fully start up properly::
 
-  echo '#\!/bin/sh' > /usr/local/etc/rc.d/000-ldconfig.sh
-  echo '/sbin/ldconfig -m /usr/local/lib/compat' >> /usr/local/etc/rc.d/000-ldconfig.sh
-  chmod a+x /usr/local/etc/rc.d/000-ldconfig.sh
+  echo '#\!/bin/sh' > /usr/local/etc/rc.d/000-ldconfig.sh
+  echo '/sbin/ldconfig -m /usr/local/lib/compat' >> /usr/local/etc/rc.d/000-ldconfig.sh
+  chmod a+x /usr/local/etc/rc.d/000-ldconfig.sh
 
 Now reboot the VM and then it should come back up and show the tools as
 running. If a vmxnet3 NIC is desired, shut the VM down and add them, and

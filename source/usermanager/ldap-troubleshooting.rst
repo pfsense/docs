@@ -100,12 +100,12 @@ If the LDAP server certificate CA is part of a chain, or there is an
 intermediate CA, every CA certificate must be pasted into the form when
 importing the CA into pfSense. For example::
 
-  -----BEGIN CERTIFICATE-----
-  Subordinate/Intermediate CA certificate text
-  -----END CERTIFICATE-----
-  -----BEGIN CERTIFICATE-----
-  Root CA certificate text
-  -----END CERTIFICATE-----
+  -----BEGIN CERTIFICATE-----
+  Subordinate/Intermediate CA certificate text
+  -----END CERTIFICATE-----
+  -----BEGIN CERTIFICATE-----
+  Root CA certificate text
+  -----END CERTIFICATE-----
 
 Other Cert/CA Issues
 ~~~~~~~~~~~~~~~~~~~~

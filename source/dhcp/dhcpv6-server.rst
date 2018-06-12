@@ -82,7 +82,7 @@ DUID Format
 The DUID format is listed on the page, but it roughly follows the
 format::
 
-  DUID-LLT - ETH -- TIME --- ---- address ----
+  DUID-LLT - ETH -- TIME --- ---- address ----
 
 DUID-LLT is link-layer plus time, which means it uses the link type of a
 network interface on the system (Generally 00:01 to indicate the format,

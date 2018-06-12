@@ -27,7 +27,7 @@ iftop
 Install iftop from the package list, then tun it from the shell (console
 or SSH) as follows::
 
-  iftop -nNpPi em0
+  iftop -nNpPi em0
 
 Change *em0* to be the interface that should be monitored.
 

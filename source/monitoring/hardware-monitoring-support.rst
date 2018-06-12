@@ -28,22 +28,22 @@ FreeBSD also handles some settings through ACPI. To see if the hardware
 supports temperature monitoring, try the following command from a shell
 prompt or **Diagnostics > Command**::
 
-  sysctl hw.acpi.thermal
+  sysctl hw.acpi.thermal
 
 If the hardware is supported, output similar to the following will be
 shown::
 
-  hw.acpi.thermal.min_runtime: 0
-  hw.acpi.thermal.polling_rate: 10
-  hw.acpi.thermal.user_override: 0
-  hw.acpi.thermal.tz0.temperature: 22.5C
-  hw.acpi.thermal.tz0.active: -1
-  hw.acpi.thermal.tz0.passive_cooling: 1
-  hw.acpi.thermal.tz0.thermal_flags: 0
-  hw.acpi.thermal.tz0._PSV: 85.0C
-  hw.acpi.thermal.tz0._HOT: -1
-  hw.acpi.thermal.tz0._CRT: 100.0C
-  hw.acpi.thermal.tz0._ACx: 85.0C -1 -1 -1 -1 -1 -1 -1 -1 -1
+  hw.acpi.thermal.min_runtime: 0
+  hw.acpi.thermal.polling_rate: 10
+  hw.acpi.thermal.user_override: 0
+  hw.acpi.thermal.tz0.temperature: 22.5C
+  hw.acpi.thermal.tz0.active: -1
+  hw.acpi.thermal.tz0.passive_cooling: 1
+  hw.acpi.thermal.tz0.thermal_flags: 0
+  hw.acpi.thermal.tz0._PSV: 85.0C
+  hw.acpi.thermal.tz0._HOT: -1
+  hw.acpi.thermal.tz0._CRT: 100.0C
+  hw.acpi.thermal.tz0._ACx: 85.0C -1 -1 -1 -1 -1 -1 -1 -1 -1
 
 In this example, there is only one Thermal Zone, and its temperature is
 22.5C (72.5F).
@@ -108,11 +108,11 @@ The defaults for these values are taken from the BIOS, and some systems
 will not allow changes. The only way to know is to try. Before
 attempting to alter any of these values, set this OID::
 
-  sysctl -w hw.acpi.thermal.user_override=1
+  sysctl -w hw.acpi.thermal.user_override=1
 
 These values may be set by adding the appropriate lines for the OIDs to
 **System > Advanced** on the **Tunables** tab. Try setting them on the
 fly like so::
 
-  sysctl -w hw.acpi.thermal.tz0._CRT=120C
+  sysctl -w hw.acpi.thermal.tz0._CRT=120C
 

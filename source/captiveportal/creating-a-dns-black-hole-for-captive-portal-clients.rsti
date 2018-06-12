@@ -25,9 +25,9 @@ To setup the BIND service on a pfSense box, the DNS forwarder must first
 be disabled or moved to another port. Then add the BIND package. This
 can be installed from the CLI or by using the GUI package
 
-| ``pkg_add -r ``\ ```ftp://ftp-archive.freebsd.org/pub/FreeBSD-Archive/ports/i386/packages-8.3-release/Latest/bind99.tbz`` <ftp://ftp-archive.freebsd.org/pub/FreeBSD-Archive/ports/i386/packages-8.3-release/Latest/bind99.tbz>`__
+| ``pkg_add -r ``\ ```ftp://ftp-archive.freebsd.org/pub/FreeBSD-Archive/ports/i386/packages-8.3-release/Latest/bind99.tbz`` <ftp://ftp-archive.freebsd.org/pub/FreeBSD-Archive/ports/i386/packages-8.3-release/Latest/bind99.tbz>`__
 | ``rehash``
-| ``mkdir -p /etc/namedb/``
+| ``mkdir -p /etc/namedb/``
 
 This configuration is not currently possible in the BIND pfSense package
 GUI without using a manual configuration. The zone file could be created
@@ -41,16 +41,16 @@ existing BIND config is present, it can be altered to work with this
 zone. A basic config is given here that will let it run, but it can be
 tweaked in various ways.
 
-| ``options {``
-| ``   directory   ``\ “``/etc/namedb``”\ ``;``
-| ``   pid-file    ``\ “``/var/run/named/pid``”\ ``;``
-| ``   allow-query { any; };``
-| ``   allow-recursion { any; };``
+| ``options {``
+| ``   directory   ``\ “``/etc/namedb``”\ ``;``
+| ``   pid-file    ``\ “``/var/run/named/pid``”\ ``;``
+| ``   allow-query { any; };``
+| ``   allow-recursion { any; };``
 | ``};``
 
-| ``zone ``\ “``.``”\ `` {``
-| ``   type master;``
-| ``   file ``\ “``/etc/namedb/db.catchall``”\ ``;``
+| ``zone ``\ “``.``”\ `` {``
+| ``   type master;``
+| ``   file ``\ “``/etc/namedb/db.catchall``”\ ``;``
 | ``};``
 
 Create the zone file
@@ -59,16 +59,16 @@ Create the zone file
 Edit /etc/namedb/db.catchall - use the IP address of the web server in
 place of 192.168.1.5 in the blow example.
 
-| ``$TTL    604800``
-| ``@       IN      SOA     . root.localhost. (``
-| ``                              1         ; Serial``
-| ``                         604800         ; Refresh``
-| ``                          86400         ; Retry``
-| ``                        2419200         ; Expire``
-| ``                         604800 )       ; Negative Cache TTL``
-| ``   IN  NS  .``
-| ``.  IN  A   192.168.1.5``
-| ``*. IN  A   192.168.1.5``
+| ``$TTL    604800``
+| ``@       IN      SOA     . root.localhost. (``
+| ``                              1         ; Serial``
+| ``                         604800         ; Refresh``
+| ``                          86400         ; Retry``
+| ``                        2419200         ; Expire``
+| ``                         604800 )       ; Negative Cache TTL``
+| ``   IN  NS  .``
+| ``.  IN  A   192.168.1.5``
+| ``*. IN  A   192.168.1.5``
 
 Start BIND
 ==========
@@ -76,28 +76,28 @@ Start BIND
 Start the bind service by hand for now (a startup script will be covered
 later):
 
-``# named -u bind``
+``# named -u bind``
 
 Initial Testing
 ===============
 
 Test a host that exists:
 
-| ``# host www.google.com 127.0.0.1``
-| ``Using domain server:``
-| ``Name: 127.0.0.1``
-| ``Address: 127.0.0.1#53``
-| ``Aliases: ``
-| ``www.google.com has address 192.168.1.5``
+| ``# host www.google.com 127.0.0.1``
+| ``Using domain server:``
+| ``Name: 127.0.0.1``
+| ``Address: 127.0.0.1#53``
+| ``Aliases: ``
+| ``www.google.com has address 192.168.1.5``
 
 Test a host that does not exist:
 
-| ``# host www.rjksjklghhslkrgjhslhrgk.com 127.0.0.1``
-| ``Using domain server:``
-| ``Name: 127.0.0.1``
-| ``Address: 127.0.0.1#53``
-| ``Aliases: ``
-| ``www.rjksjklghhslkrgjhslhrgk.com has address 192.168.1.5``
+| ``# host www.rjksjklghhslkrgjhslhrgk.com 127.0.0.1``
+| ``Using domain server:``
+| ``Name: 127.0.0.1``
+| ``Address: 127.0.0.1#53``
+| ``Aliases: ``
+| ``www.rjksjklghhslkrgjhslhrgk.com has address 192.168.1.5``
 
 Adjust the web server
 =====================
@@ -118,27 +118,27 @@ A simple startup script like this can be placed in
 /usr/local/etc/rc.d/named.sh :
 
 | ``#!/bin/sh``
-| ``rc_start() {``
-| ``   # start``
-| ``   if [ "" = ``\ “```ps``\ `` ``\ ``auxwww``\ `` ``\ ``|``\ `` ``\ ``grep``\ `` ``\ ``'[n]amed``\ `` ``\ ``'``\ `` ``\ ``|``\ `` ``\ ``awk``\ `` ``\ ``'{print``\ `` ``\ ``$2}'```”\ `` ]; then``
-| ``       /usr/local/sbin/named -u bind``
-| ``   fi``
+| ``rc_start() {``
+| ``   # start``
+| ``   if [ "" = ``\ “```ps``\ `` ``\ ``auxwww``\ `` ``\ ``|``\ `` ``\ ``grep``\ `` ``\ ``'[n]amed``\ `` ``\ ``'``\ `` ``\ ``|``\ `` ``\ ``awk``\ `` ``\ ``'{print``\ `` ``\ ``$2}'```”\ `` ]; then``
+| ``       /usr/local/sbin/named -u bind``
+| ``   fi``
 | ``}``
-| ``rc_stop() {``
-| ``   killall -9 named 2>/dev/null``
-| ``   wait``
+| ``rc_stop() {``
+| ``   killall -9 named 2>/dev/null``
+| ``   wait``
 | ``}``
-| ``case $1 in``
-| ``   start)``
-| ``       rc_start``
-| ``       ;;``
-| ``   stop)``
-| ``       rc_stop``
-| ``       ;;``
-| ``   restart)``
-| ``       rc_stop``
-| ``       rc_start``
-| ``       ;;``
+| ``case $1 in``
+| ``   start)``
+| ``       rc_start``
+| ``       ;;``
+| ``   stop)``
+| ``       rc_stop``
+| ``       ;;``
+| ``   restart)``
+| ``       rc_stop``
+| ``       rc_start``
+| ``       ;;``
 | ``esac``
 
 Configure DHCP

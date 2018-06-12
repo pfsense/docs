@@ -174,4 +174,4 @@ Playing back a session
 
 Sessions can be played back directly from the command line as well::
 
-  # pfSsh.php playback resetrrd
+  # pfSsh.php playback resetrrd

@@ -22,7 +22,7 @@ annoying because they can fill up logs **very** fast.
 
 The messages look like this::
 
-  calcru: negative runtime of -350418 usec for bufdaemon
+  calcru: negative runtime of -350418 usec for bufdaemon
 
 To alleviate the problem, add the following line to /boot/device.hints
 at the very bottom::
@@ -39,7 +39,7 @@ an IBM X335 with Intel Xeon 2.8ghz and 2.5 GB of RAM), it would take the
 system upwards of 6 minutes to get fully booted with an older version of
 pfSense. The majority of the time was spent at the following message::
 
-  smp: AP CPU #1 Launched!
+  smp: AP CPU #1 Launched!
 
 Booting the same system with ACPI disabled (via the boot menu), it came
 up in under a minute. Use the same procedure as above to disable ACPI.
