@@ -11,7 +11,7 @@ amazing things it can. A basic, working, pfSense virtual machine will
 exist by the end of this document.
 
 .. note:: If pfSense will be running as a perimeter
-   firewall for an organization and the “attack surface” should be
+   firewall for an organization and the "attack surface" should be
    minimized, many will say it is preferable to run it unvirtualized on
    stand-alone hardware. That is a decision for the user and/or
    organization to make, however. Now back to the topic.*
@@ -46,8 +46,8 @@ switches for WAN and LAN and after that two port groups for the WAN and
 LAN.
 
 From the vSphere web client navigator, click on Networking and then
-click on Virtual switches tab. From there, click on “Add a new standard
-virtual switch”.
+click on Virtual switches tab. From there, click on "Add a new standard
+virtual switch".
 
 .. image:: /_static/virtualization/vsphereaddswitch1.png
 
@@ -60,7 +60,7 @@ Creating port groups
 --------------------
 
 After creating Virtual switches, click on Port groups tab. On the Port
-groups tab click on “Add port group”. Add WAN and LAN port groups, each
+groups tab click on "Add port group". Add WAN and LAN port groups, each
 using WAN and LAN switches respectively.
 
 .. image:: /_static/virtualization/vsphereaddport1.png
@@ -69,11 +69,11 @@ Creating a pfSense VM
 ---------------------
 
 Now that the networking part is done, we continue to create a virtual
-machine. From the dashboard click on “Create/Register VM”. On the first
-wizard screen select “Create a new virtual machine”. pfSense Gold
+machine. From the dashboard click on "Create/Register VM". On the first
+wizard screen select "Create a new virtual machine". pfSense Gold
 subscribers can download pre-made VMware certified pfSense OVA and
-select the second option “Deploy a virtual machine from an OVF or OVA
-file”
+select the second option "Deploy a virtual machine from an OVF or OVA
+file"
 
 .. image:: /_static/virtualization/vsphereweb1.png
 
@@ -105,7 +105,7 @@ pfSense installation
 --------------------
 
 Once the pfSense virtual machine is created, under vSphere web client
-navigator click on “Virtual Machines” and select your newly created VM.
+navigator click on "Virtual Machines" and select your newly created VM.
 
 .. image:: /_static/virtualization/prepower.png
 
@@ -113,21 +113,21 @@ Power on the virtual machine.
 
 .. image:: /_static/virtualization/poweredon.png
 
-On the next screen, press “I” to invoke installer mode.
+On the next screen, press "I" to invoke installer mode.
 
 .. image:: /_static/virtualization/selectvirtual.png.png
 
 After pfSense boots you will be greeted by the setup wizard. Select
-“Accept these settings”
+"Accept these settings"
 
 .. image:: /_static/virtualization/pfsensetup.png
 
-On the following screen choose “Quick/Easy Install” after which
+On the following screen choose "Quick/Easy Install" after which
 installation starts.
 
 .. image:: /_static/virtualization/screen_shot_2017-07-25_at_17.49.32.png
 
-When prompted, select “Standard Kernel”.
+When prompted, select "Standard Kernel".
 
 .. image:: /_static/virtualization/screen_shot_2017-07-25_at_17.50.11.png
 
@@ -163,7 +163,7 @@ by clicking **Networking** on the **Configuration** tab:
 .. image:: /_static/virtualization/esxi_pfs_2_1a.png
 
 After ESXi was installed, before it was possible to connect to it with
-the vSphere client, a physical network adapter (a “vmnic” in the
+the vSphere client, a physical network adapter (a "vmnic" in the
 diagram) had to be nominated to be the ESXi Management Network. An IP
 address also had to be assigned to Management Network interface on the
 the ESXi host, either through DHCP or manually through the console.
@@ -180,7 +180,7 @@ virtual switch, **vSwitch0**, to that interface.
 
 In addition to the VMkernel port, ESXi will also attach a Virtual
 Machine Port Group to the vSwitch. In the diagram above it's labeled as
-“Virtual Machine Network”. The VM Port group is where Virtual Machines
+"Virtual Machine Network". The VM Port group is where Virtual Machines
 can be attached to this virtual network.
 
 In summary, in the above diagram, vSwitch0 has both a VM Port Group
@@ -208,7 +208,7 @@ delete the Virtual Machine Port Group by clicking the Properties link
 above **vmnic0**, highlight the VM Port Group and click Remove.*
 
 Assuming there are only two NICs in the ESXi host, rename the VM Port
-Group from “Virtual Machine Network” to something a bit more meaningful.
+Group from "Virtual Machine Network" to something a bit more meaningful.
 Click the **Properties...** link for vmnic0:
 
 .. image:: /_static/virtualization/esxi_pfs_2_1c.png
@@ -217,7 +217,7 @@ Highlight the Virtual Machine Network and click the Edit button.
 
 .. image:: /_static/virtualization/esxi_pfs_2_1b.png
 
-Change the **Network label** to “LAN” and click OK then Close.
+Change the **Network label** to "LAN" and click OK then Close.
 
 .. image:: /_static/virtualization/esxi_pfs_2_2a.png
 
@@ -260,7 +260,7 @@ virtual switch and check vmnic1. Click Next.
 .. image:: /_static/virtualization/esxi_pfs_2_5a.png
 
 As we did with the LAN, let's give this VM Port Group a more
-meaningful name of “WAN”. Click Next.
+meaningful name of "WAN". Click Next.
 
 The next dialog simply confirms that everything looks OK. Click Finish.
 
@@ -284,7 +284,7 @@ Configuration
 
 In the **Configuration** window, I always like to take the **Custom**
 option. (I've never really trusted what someone else thinks is
-“typical”). Click **Next**
+"typical"). Click **Next**
 
 Name and Location
 ~~~~~~~~~~~~~~~~~
@@ -292,7 +292,7 @@ Name and Location
 .. image:: /_static/virtualization/esxi_pfs_3-2a.png
 
 In the Name and Location window, let's give the virtual machine a
-meaningful name like “pfSense” and click\ *' Next*'
+meaningful name like "pfSense" and click\ *' Next*'
 
 Storage
 ~~~~~~~
@@ -357,7 +357,7 @@ VM could be reduced to, say, 384MB. If lots of memory-hungry packages
 will be run, give it more.
 
 To change the memory allocation to one of the sizes shown on the scale
-of the memory “thermometer”, click that value on the scale. Click\ *'
+of the memory "thermometer", click that value on the scale. Click\ *'
 Next*'
 
 Network
@@ -548,7 +548,7 @@ However, it's included here to save jumping around between documents.**
 
 .. image:: /_static/virtualization/esxi_pfs_4-1a.png
 
-Allow the timer to expire and boot pfSense from the “Live CD”.
+Allow the timer to expire and boot pfSense from the "Live CD".
 
 When the following console message is seen:
 
@@ -626,7 +626,7 @@ press return.
 
 .. image:: /_static/virtualization/esxi_pfs_4_11a.png
 
-Now enter the LAN interface name, “em1” in this example, and press
+Now enter the LAN interface name, "em1" in this example, and press
 return.
 
 .. image:: /_static/virtualization/esxi_pfs_4_12a.png
@@ -635,7 +635,7 @@ As there are not any OPT interfaces, yet, press return.
 
 .. image:: /_static/virtualization/esxi_pfs_4_13a.png
 
-Lastly, check that the interface assignments are correct, enter “y”
+Lastly, check that the interface assignments are correct, enter "y"
 and press return.
 
 .. image:: /_static/virtualization/esxi_pfs_4_14a.png
@@ -705,7 +705,7 @@ selected, then click **Next**
 
 .. image:: /_static/virtualization/esxi_pfs_5_3a.png
 
-As with the LAN and WAN, give the new network a name. “DMZ” would be
+As with the LAN and WAN, give the new network a name. "DMZ" would be
 good. Click **Next**.
 
 .. image:: /_static/virtualization/esxi_pfs_5_4a.png
@@ -715,7 +715,7 @@ Click Finish.
 .. image:: /_static/virtualization/esxi_pfs_5_5a.png
 
 Now the Networking diagram will look like this - just a vSwitch and a
-Virtual Machine Port group called “DMZ” with no physical NICs
+Virtual Machine Port group called "DMZ" with no physical NICs
 attached.
 
 .. image:: /_static/virtualization/esxi_pfs_5_5b.png

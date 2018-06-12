@@ -34,7 +34,7 @@ services, but such services may have been manually added by the user.
 Not Relevant
 ~~~~~~~~~~~~
 
--  OpenSSL “FREAK” vulnerability:
+-  OpenSSL "FREAK" vulnerability:
 
    -  Does not affect the web server configuration on the firewall as it
       does not have export ciphers enabled.
@@ -59,7 +59,7 @@ General
 -------
 
 -  Updated the default SSL cipher list to be stronger, obsoletes the
-   need for a “BEAST protection” option
+   need for a "BEAST protection" option
    `#4230 <https://redmine.pfsense.org/issues/4230>`__
 -  Fixed gen\_subnet\_max returning an incorrect result on 32 bit (i386)
    versions, which in turn fixed Wake on LAN and other areas on 32 bit
@@ -83,7 +83,7 @@ General
 -  Added more cleanup to the **Restart PHP-FPM** console menu action.
 -  Removed PTR records for aliases in host overrides.
 -  Fixed *diag\_arp.php* to allow underscore in resolved host names.
--  Fixed an issue in DHCP settings where the “add routers” value was not
+-  Fixed an issue in DHCP settings where the "add routers" value was not
    being preserved across a loop for each interface.
 -  Added capability to handle reverse lookup domain overrides.
 -  Fixed issues with NTP RRD graph state changes.
@@ -97,7 +97,7 @@ General
    `#4464 <https://redmine.pfsense.org/issues/4464>`__
 -  Updated pfSense PHP shell help to current configuration structure.
    `#4492 <https://redmine.pfsense.org/issues/4492>`__
--  Fixed switching from a PPP type WAN to “None” or “DHCP”.
+-  Fixed switching from a PPP type WAN to "None" or "DHCP".
 -  Disables SNMP hostres module on APU boards until we figure out why
    it's crashing on this specific board.
    `#4403 <https://redmine.pfsense.org/issues/4403>`__
@@ -129,7 +129,7 @@ Rules / NAT
    (Related to `#4318 <https://redmine.pfsense.org/issues/4318>`__)
 -  Fixed input validation on Outbound NAT to accept a port range.
    `#4300 <https://redmine.pfsense.org/issues/4300>`__
--  Removed Carrier-Grade NAT subnet from “Block private networks” as it
+-  Removed Carrier-Grade NAT subnet from "Block private networks" as it
    was in 2.0.x and earlier releases since it specifically notes RFC
    1918 and CGN is more closely related to bogon networks.
    `#4379 <https://redmine.pfsense.org/issues/4379>`__
@@ -259,7 +259,7 @@ IPv6
 VIP/CARP
 --------
 
--  Added input validation to prevent the VIP “interfaces” from being
+-  Added input validation to prevent the VIP "interfaces" from being
    assigned since they are just an identification of the VIP for
    tracking and not actual interfaces.
    `#4389 <https://redmine.pfsense.org/issues/4389>`__

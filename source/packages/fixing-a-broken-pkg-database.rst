@@ -29,5 +29,5 @@ typical CE full installation.
 `` /etc/rc.php_ini_setup``
 
 If any additional packages were installed, reinstall them manually using
-the GUI if possible, or using “pkg install -f” as above.
+the GUI if possible, or using "pkg install -f" as above.
 

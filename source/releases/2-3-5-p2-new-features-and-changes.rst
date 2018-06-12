@@ -54,7 +54,7 @@ Misc
    of an hour) `#8129 <https://redmine.pfsense.org/issues/8129>`__
 -  Fixed selection of IPv6 gateways when creating a new firewall rule
    `#8053 <https://redmine.pfsense.org/issues/8053>`__
--  Fixed various pf “busy” errors when the ruleset is reloaded
+-  Fixed various pf "busy" errors when the ruleset is reloaded
 -  Improved handling of aliases that mix IP addresses and FQDNs
    `#8290 <https://redmine.pfsense.org/issues/8290>`__
 -  Improved update repository controls

@@ -15,7 +15,7 @@ internal web site instead.
 To fix this, edit the NAT Port Forward for the offending port, and
 change **External Address** to ***Interface Address*** instead of *any*.
 
-If an external address of “any” is absolutely required, then NAT
+If an external address of "any" is absolutely required, then NAT
 Reflection will not be possible on this firewall and `Split
 DNS <Why_can't_I_access_forwarded_ports_on_my_WAN_IP_from_my_LAN/OPTx_networks>`__
 must be used instead.

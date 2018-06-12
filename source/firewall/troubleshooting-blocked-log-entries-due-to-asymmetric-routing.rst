@@ -6,7 +6,7 @@ Troubleshooting Blocked Log Entries due to Asymmetric Routing
 Asymmetric routing happens when traffic between two nodes takes a
 different path in each direction (e.g. A->B->C, C->D->A), it can be a
 problem for TCP which has strict state tracking but often does not
-affect “stateless” protocols such as ICMP or UDP.
+affect "stateless" protocols such as ICMP or UDP.
 
 Common Scenario
 ---------------
@@ -37,7 +37,7 @@ located under **System > Advanced** on the **Firewall/NAT tab**
 activates rules for traffic to/from the static route networks which are
 much more permissive when it comes to creating states for TCP traffic
 and allowing it to pass. The rules allow any TCP packets, regardless of
-their flags, to create a state and also have the “*sloppy state*” type
+their flags, to create a state and also have the "*sloppy state*" type
 set which performs a less strict state match.
 
 Manual Fix

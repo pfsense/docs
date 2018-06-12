@@ -59,7 +59,7 @@ Bug Fixes
 -  Fixed display of OpenSSL and input errors when working in the
    Certificate Manager
    `#7370 <https://redmine.pfsense.org/issues/7370>`__
--  Fixed Captive Portal “disconnect all” button
+-  Fixed Captive Portal "disconnect all" button
 -  Fixed pkg handling timeouts
    `#6594 <https://redmine.pfsense.org/issues/6594>`__
 -  Updated blog URL in the RSS widget

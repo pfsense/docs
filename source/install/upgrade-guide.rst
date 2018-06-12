@@ -22,7 +22,7 @@ Backup/Restore** and download a backup of the firewall configuration
 (*config.xml*). Those with a `pfSense
 Gold <https://www.pfsense.org/our-services/gold-membership.html>`__
 subscription may also use the :doc:`AutoConfigBackup </backup/autoconfigbackup>`
-package to make a manual backup noting the reason as “before upgrade”.
+package to make a manual backup noting the reason as "before upgrade".
 Keeping a local and remote copy of the backup *config.xml* is strongly
 advised.
 
@@ -120,7 +120,7 @@ hard-coded to a user-specified value. If this is done on a 32 bit
 system, and that configuration later restored to a 64 bit system, the
 next upgrade of the restored system will switch it to 32 bit. When using
 auto-update, first browse to System>Firmware, Updater Settings tab. If
-the “Use an unofficial server for firmware upgrades” box is checked,
+the "Use an unofficial server for firmware upgrades" box is checked,
 un-check it, and click Save. Then your system will remain on its current
 architecture.
 
@@ -201,7 +201,7 @@ will not upgrade to any current version of pfSense.
 
 pfSense 2.0 and later will reset and toss out the config.xml on every
 reboot if it contains these characters bare, leaving the firewall at an
-“assign interfaces” prompt since it does not have a valid configuration.
+"assign interfaces" prompt since it does not have a valid configuration.
 
 The *config.xml* file can be run through an XML parser such as *xmllint*
 and the parser will show where problems exist, if any. Fix the errors,
@@ -294,7 +294,7 @@ glxsb Crypto Accelerator Warning
 For those using the glxsb crypto accelerator in the ALIX and other
 systems with Geode CPUs, only AES 128 bit is supported by those cards.
 Any key length > 128 bit has never worked, and shouldn't be configured.
-There appear to be some circumstances where AES on “auto” with racoon
+There appear to be some circumstances where AES on "auto" with racoon
 preferred 128 bit where strongswan prefers the strongest-available and
 is choosing 256 bit, which glxsb breaks. Input validation in 2.2.1
 prevents such invalid configurations when adding configurations or
@@ -307,7 +307,7 @@ Mobile client users, verify Local Network
 
 For mobile IPsec clients, clients could pass traffic in some
 circumstances without having specified the necessary matching local
-network in the mobile phase 2 configuration. The “Local Network”
+network in the mobile phase 2 configuration. The "Local Network"
 specified in mobile IPsec phase 2 must include all networks your mobile
 clients need to reach. If your mobile IPsec clients need to access the
 Internet via IPsec, your mobile phase 2 must specify 0.0.0.0/0 as the
@@ -317,11 +317,11 @@ Stricter Phase 1 Identifier Validation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In 2.1x and earlier versions, racoon could accept mismatched phase 1
-identifiers where using “IP Address” as the identifier. This is most
+identifiers where using "IP Address" as the identifier. This is most
 commonly a problem where one of the endpoints is behind NAT and you're
-using “My IP Address” and “Peer IP Address” for your identifiers. On the
-side with the private IP WAN, “My IP Address” will be its private WAN
-IP. On the opposite end, “Peer IP Address” will be the public IP of the
+using "My IP Address" and "Peer IP Address" for your identifiers. On the
+side with the private IP WAN, "My IP Address" will be its private WAN
+IP. On the opposite end, "Peer IP Address" will be the public IP of the
 opposite side. Hence, these two values don't match, and should have
 resulted in a connection failure. racoon would fall back to checking the
 source IP of the initiating host as an identifier, where it found the
@@ -395,8 +395,8 @@ vmxnet3 (VMware/ESX) users
 Users who manually installed :doc:`VMware Tools </virtualization/installing-vmware-guest-tools>` to use
 vmxnet3 may encounter an issue with interface name changes when
 upgrading to pfSense 2.2, similar to those with Xen mentioned above. In
-pfSense 2.1.x the vmxnet3 interfaces were named starting with “vmx3f”
-and on pfSense 2.2.x they are simply “vmx” using the built-in support.
+pfSense 2.1.x the vmxnet3 interfaces were named starting with "vmx3f"
+and on pfSense 2.2.x they are simply "vmx" using the built-in support.
 Manually reassigning the interfaces or correcting them in config.xml
 followed by a restore is required.
 
@@ -423,7 +423,7 @@ CARP Changes
 """"""""""""
 
 Due to the new CARP subsystem, the old method of having a virtual
-“interface” for CARP VIPs is no longer available. CARP VIPs work more
+"interface" for CARP VIPs is no longer available. CARP VIPs work more
 like IP Aliases, existing directly on the main interface. For most, the
 changes we have made to accommodate this new system will be transparent,
 but there are some potential issues, such as:
@@ -473,7 +473,7 @@ wireless interfaces, including .
 LAGG LACP Behavior Change
 """""""""""""""""""""""""
 
-LAGG using LACP in FreeBSD 10.0 and newer defaults to “strict mode”
+LAGG using LACP in FreeBSD 10.0 and newer defaults to "strict mode"
 being enabled, which means the lagg does not come up unless your switch
 is speaking LACP. This will cause your LAGG to not function after
 upgrade if your switch isn't using active mode LACP.
@@ -562,7 +562,7 @@ larger list of changes
 
 -  Due to the GUI overhaul, older themes have been removed. All
    previously chosen themes are reset on upgrade to the default
-   “pfSense” 2.3 theme.
+   "pfSense" 2.3 theme.
 -  **Status > RRD Graphs** moved to **Status > Monitoring** and has been
    revamped. The same data, and more, is still accessible but with a
    more modern interface.
@@ -634,7 +634,7 @@ Removed features that are disabled on upgrade
 -  Groups with spaces are no longer permitted. They are not allowed at
    the OS level and were not functioning properly. On upgrade, such
    groups are renamed with an underscore ('\_') in place of a space.
--  The “Enable” checkbox for IPsec has been removed. If IPsec was
+-  The "Enable" checkbox for IPsec has been removed. If IPsec was
    disabled, all Phase 1 entries are disabled automatically on upgrade.
 -  The Unity plugin for IPsec has been disabled by default, where it was
    previously enabled by default. This is preferable for the vast
@@ -649,7 +649,7 @@ Removed features that are disabled on upgrade
 
    -  The PPTP server settings, firewall rules, and so on have all been
       removed
-   -  If the “Redirect” PPTP server type was in use, add manual NAT
+   -  If the "Redirect" PPTP server type was in use, add manual NAT
       rules for TCP/1723 and GRE to point to the actual server.
 
 -  Layer 7 classification support has been removed and any configuration

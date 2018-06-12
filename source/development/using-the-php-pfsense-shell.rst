@@ -9,9 +9,9 @@ can also allow rapid deployment of pfSense and or the setup of exotic
 configurations.
 
 The following will show an example session, with the text coming from
-the “help” command in the PHP shell.
+the "help" command in the PHP shell.
 
-Follow each line or group of lines to run with “exec;”::
+Follow each line or group of lines to run with "exec;"::
 
   *** Welcome to pfSense 2.3-RELEASE-pfSense (amd64) on pfs23 ***
   

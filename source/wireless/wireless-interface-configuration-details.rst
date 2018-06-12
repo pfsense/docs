@@ -54,7 +54,7 @@ card.
     transmission regulations in the region where the firewall is
     deployed, such as the *FCC* or *ETSI*.
   - **Country**: The country code and regulatory domain in which the
-    card is used. Any country setting other than “Default” will
+    card is used. Any country setting other than "Default" will
     override the regulatory domain setting.
   - **Location**: The physical location of the device, typically
     *Indoor*. Some regulatory bodies have different rules for *Indoor*
@@ -71,7 +71,7 @@ Configuration of the wireless Interface:
 -  **SSID**: Whatever desired, typically something short without spaces
    in the name.
 -  **Enable WPA**: *Checked*
--  **WPA Pre-Shared Key**: The “password” to use for wireless access by
+-  **WPA Pre-Shared Key**: The "password" to use for wireless access by
    clients (8-63 chars)
 -  **WPA mode**: *WPA2*
 -  **WPA Key Management Mode**: *Pre Shared Key*
@@ -125,7 +125,7 @@ The following settings must match those found on the AP, but examples
 are provided:
 
 -  **Enable WPA**: *Checked*
--  **WPA Pre-Shared Key**: The “password” set on the AP
+-  **WPA Pre-Shared Key**: The "password" set on the AP
 -  **WPA mode**: *WPA2*
 -  **WPA Key Management Mode**: *Pre Shared Key*
 -  **Authentication**: *Open System Authentication*

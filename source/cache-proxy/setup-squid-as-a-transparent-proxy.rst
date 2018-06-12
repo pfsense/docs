@@ -12,7 +12,7 @@ Install the Package
 First, install the Squid package.
 
 #. Click **System > Packages**
-#. Scroll down until the “squid” package listing is visible
+#. Scroll down until the "squid" package listing is visible
 #. Click |fa-plus| located to the right of the squid package description
 #. Wait for the installer to download, install, and do post-install
    tasks for squid, such as creating the cache directories.

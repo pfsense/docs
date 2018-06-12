@@ -23,12 +23,12 @@ Linksys, D-Link, Netgear and other major manufacturers commonly change
 the chipsets used in their wireless cards without changing the model
 number. There is no way to ensure a specific model card from these
 vendors will be compatible because there is rarely a way of knowing
-which “minor” card revision is being purchased. While one revision of a
+which "minor" card revision is being purchased. While one revision of a
 particular model may be compatible and work well, another card of the
 same model may be incompatible. For this reason, we recommend avoiding
 cards from the major manufacturers. If one is already on hand, it's
 worth trying to see if it is compatible, but be warned if purchasing one
-because the “same” model worked for someone else, it may end up being a
+because the "same" model worked for someone else, it may end up being a
 completely different piece of hardware that is incompatible.
 
 Supported Wireless Drivers

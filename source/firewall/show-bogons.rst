@@ -3,7 +3,7 @@
 Bogons Firewall Table
 =====================
 
-pfSense maintains an internal list of “bogon” networks, which are
+pfSense maintains an internal list of "bogon" networks, which are
 networks that are marked as reserved and not yet allocated. Traffic from
 within these bogon networks should never be seen as coming from the
 Internet.

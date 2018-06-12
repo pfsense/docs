@@ -63,7 +63,7 @@ gateway fields of the WebGUI.
 Gateway groups are managed from the **Groups** tab on **System > Routing**.
 
 When creating a gateway group, enter a group name, select a tier for
-each gateway (or “never” if the gateway is not part of this group), a
+each gateway (or "never" if the gateway is not part of this group), a
 trigger for when to exclude a group member, and an optional description.
 Lower tiers are preferred over higher tiers (see the next section).
 

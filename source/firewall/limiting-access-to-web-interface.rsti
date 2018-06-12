@@ -29,7 +29,7 @@ Hack the source code to include IP restrictions in the Lighttpd web
 server configuration, the server that powers the web interface. Add a
 section such as this:
 
-| ``$HTTP[``\ “``remoteip``”\ ``] !~ ``\ “``192.168.1.5|192.168.1.50``”\ `` {``
+| ``$HTTP[``\ "``remoteip``"\ ``] !~ ``\ "``192.168.1.5|192.168.1.50``"\ `` {``
 | ``       url.access-deny = ( "" )``
 | ``}``
 
@@ -42,21 +42,21 @@ file */etc/inc/system.inc* via a SSH session, or under **Diagnostics >
 Edit file** in the web interface. Scroll down to the lines reading:
 
 | ``#### CGI module``
-| ``cgi.assign                 = ( ``\ “``.cgi``”\ `` => "" )``
+| ``cgi.assign                 = ( ``\ "``.cgi``"\ `` => "" )``
 
 Which are lines 784 and 785 in 1.2.3 release. Under those lines, and
-above the “EOD;” line following it on line 787, add the following three
+above the "EOD;" line following it on line 787, add the following three
 lines:
 
-| ``$HTTP[``\ “``remoteip``”\ ``] !~ ``\ “``192.168.1.5|192.168.1.50``”\ `` {``
+| ``$HTTP[``\ "``remoteip``"\ ``] !~ ``\ "``192.168.1.5|192.168.1.50``"\ `` {``
 | ``       url.access-deny = ( "" )``
 | ``}``
 
 So that section of the file looks like this:
 
 | ``#### CGI module``
-| ``cgi.assign                 = ( ``\ “``.cgi``”\ `` => "" )``
-| ``$HTTP[``\ “``remoteip``”\ ``] !~ ``\ “``192.168.1.5|192.168.1.50``”\ `` {``
+| ``cgi.assign                 = ( ``\ "``.cgi``"\ `` => "" )``
+| ``$HTTP[``\ "``remoteip``"\ ``] !~ ``\ "``192.168.1.5|192.168.1.50``"\ `` {``
 | ``       url.access-deny = ( "" )``
 | ``}``
 | ``EOD;``
@@ -91,7 +91,7 @@ the line showing the following::
 
 Right beneath that line, add the following line::
 
-  server.bind = “127.0.0.1”
+  server.bind = "127.0.0.1"
 
 Then save the changes, and restart the web interface via option *11* at
 the console.

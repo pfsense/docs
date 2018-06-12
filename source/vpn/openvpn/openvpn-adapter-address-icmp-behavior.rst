@@ -11,7 +11,7 @@ something in the remote subnet, such as the LAN IP of the server.
 
 According to the `OpenVPN
 FAQ <http://www.openvpn.net/index.php/documentation/faq.html>`__, in the
-section titled *Why does OpenVPN's “ifconfig-pool” option use a /30
+section titled *Why does OpenVPN's "ifconfig-pool" option use a /30
 subnet (4 private IP addresses per client) when used in TUN mode?*:
 
 .. pull-quote::
@@ -45,9 +45,9 @@ route instead.
 There are many cases where the far side of an OpenVPN tunnel **can**
 respond to ping, but not the local. This is also counter-intuitive, but
 works especially in cases where there is a site-to-site link. If the
-server shows its tun addresses as “x.x.x.1 -> x.x.x.2” and the client
-shows the reverse - “x.x.x.2 -> x.x.x.1”, then the far side will likely
+server shows its tun addresses as "x.x.x.1 -> x.x.x.2" and the client
+shows the reverse - "x.x.x.2 -> x.x.x.1", then the far side will likely
 respond to ping from both ends.
 
-In contrast, when using “topology subnet” these virtual addresses and
+In contrast, when using "topology subnet" these virtual addresses and
 /30 subnets are not used so these issues are not present.

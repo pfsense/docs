@@ -7,8 +7,8 @@ With pfSense 2.1 and later Multi-WAN with IPv6 is possible provided that
 multiple ISPs or tunnels are setup and working. See :doc:`Using IPv6 with a Tunnel Broker </interfaces/using-ipv6-with-a-tunnel-broker>` if help is needed
 setting up a tunnel.
 
-Throughout this document “Second WAN” refers to the second or additional
-interface with IPv6 connectivity. It might be the “real” interface if
+Throughout this document "Second WAN" refers to the second or additional
+interface with IPv6 connectivity. It might be the "real" interface if
 native connectivity is present, or a tunnel if a tunnel broker is being
 used. Keep that in mind, as it will make understanding the rest of this
 document easier.
@@ -22,9 +22,9 @@ PI space and a BGP peering. It doesn't work so well in practice for home
 users.
 
 Network Prefix Translation (NPt) will allow one subnet to be used for
-LAN and have full connectivity with that subnet via its “native” WAN,
+LAN and have full connectivity with that subnet via its "native" WAN,
 and also have it translated on the additional WANs so it appears to
-originate there. While not “true” connectivity for the LAN subnet via
+originate there. While not "true" connectivity for the LAN subnet via
 that path, it is better than no connectivity at all if the primary WAN
 is down.
 
@@ -74,5 +74,5 @@ Setup
 Alternate Tactics
 -----------------
 
-Some may prefer to use a “private” IPv6 subnet in LAN from the fc00::/7
+Some may prefer to use a "private" IPv6 subnet in LAN from the fc00::/7
 space, and setup NPt for both WANs.

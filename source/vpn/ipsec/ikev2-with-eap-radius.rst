@@ -12,8 +12,8 @@ To setup IKEv2 with EAP-RADIUS, follow the directions for :doc:`IKEv2 with EAP-M
    IPsec Phase 1 entry
 
 Note: When using Windows 7 as a client, be sure to import the CA
-Certificate from the VPN server as a machine certificate under “Computer
-Account” as described
+Certificate from the VPN server as a machine certificate under "Computer
+Account" as described
 `here <https://wiki.strongswan.org/projects/strongswan/wiki/Win7Certs>`__.
 
 EAP-RADIUS with FreeRADIUS

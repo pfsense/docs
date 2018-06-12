@@ -68,12 +68,12 @@ Dynamic DNS
 Interfaces
 ----------
 
--  Fix “can't assign requested address” during boot with track6
+-  Fix "can't assign requested address" during boot with track6
    interfaces. `#6317 <https://redmine.pfsense.org/issues/6317>`__
 -  Remove deprecated link options from GRE and gif.
    `#6586 <https://redmine.pfsense.org/issues/6586>`__,
    `#6587 <https://redmine.pfsense.org/issues/6587>`__
--  Obey “Reject leases from” when DHCP “Advanced options” is checked.
+-  Obey "Reject leases from" when DHCP "Advanced options" is checked.
    `#6595 <https://redmine.pfsense.org/issues/6595>`__
 -  Protect enclosed delimiters in DHCP client advanced configuration, so
    commas can be used there.
@@ -91,7 +91,7 @@ IPsec
 Gateway Monitoring
 ------------------
 
--  Fixed “socket name too large” making gateway monitoring fail on long
+-  Fixed "socket name too large" making gateway monitoring fail on long
    interface names and IPv6 addresses.
    `#6505 <https://redmine.pfsense.org/issues/6505>`__
 
@@ -106,7 +106,7 @@ Monitoring
 
 -  Fixed no data periods being reported as 0, skewing averages.
    `#6334 <https://redmine.pfsense.org/issues/6334>`__
--  Fix tooltip showing as “none” for some values.
+-  Fix tooltip showing as "none" for some values.
    `#6044 <https://redmine.pfsense.org/issues/6044>`__
 -  Fix saving of some default configuration options.
    `#6402 <https://redmine.pfsense.org/issues/6402>`__
@@ -123,13 +123,13 @@ OpenVPN
 Operating System
 ----------------
 
--  Fixed pf fragment states not being purged, triggering “PF frag
-   entries limit reached”.
+-  Fixed pf fragment states not being purged, triggering "PF frag
+   entries limit reached".
    `#6499 <https://redmine.pfsense.org/issues/6499>`__
 -  Set core file location so they can't end up in /var/run and exhaust
    its available space.
    `#6510 <https://redmine.pfsense.org/issues/6510>`__
--  Fixed “runtime went backwards” log spam in Hyper-V.
+-  Fixed "runtime went backwards" log spam in Hyper-V.
    `#6446 <https://redmine.pfsense.org/issues/6446>`__
 -  Fixed traceroute6 hang with non-responding hop in path.
    `#3069 <https://redmine.pfsense.org/issues/3069>`__
@@ -155,7 +155,7 @@ Routing
 Rules / NAT
 -----------
 
--  Fixed “PPPoE Clients” placeholder in rules and NAT, and ruleset error
+-  Fixed "PPPoE Clients" placeholder in rules and NAT, and ruleset error
    when using floating rules specifying PPPoE server.
    `#6597 <https://redmine.pfsense.org/issues/6597>`__
 -  Fixed failure to load ruleset with URL Table aliases where empty file
@@ -219,7 +219,7 @@ Web Interface
    `#6074 <https://redmine.pfsense.org/issues/6074>`__
 -  Clean up Network Booting section of DHCP Server screen.
    `#6050 <https://redmine.pfsense.org/issues/6050>`__
--  Fix “UNKNOWN” links in package manager.
+-  Fix "UNKNOWN" links in package manager.
    `#6617 <https://redmine.pfsense.org/issues/6617>`__
 -  Fix missing bandwidth field for traffic shaper CBQ queues.
    `#6437 <https://redmine.pfsense.org/issues/6437>`__
@@ -240,8 +240,8 @@ Other
 -----
 
 -  Added PHP shell sessions to enable and disable persistent CARP
-   maintenance mode. “playback enablecarpmaint” and “playback
-   disablecarpmaint”.
+   maintenance mode. "playback enablecarpmaint" and "playback
+   disablecarpmaint".
    `#6560 <https://redmine.pfsense.org/issues/6560>`__
 -  Exposed serial console configuration for nanobsd VGA.
    `#6291 <https://redmine.pfsense.org/issues/6291>`__

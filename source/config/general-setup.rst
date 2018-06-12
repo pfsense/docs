@@ -7,7 +7,7 @@ Some basic/common settings are available under **System > General
 Setup**.
 
 -  **Hostname**: The name by which this pfSense router is known. Should
-   only include the portion before the first “.”.
+   only include the portion before the first ".".
 -  **Domain**: The domain name in which this pfSense is used. Together
    with the hostname, this will form the Fully Qualified Domain Name
    (FQDN) of the firewall.

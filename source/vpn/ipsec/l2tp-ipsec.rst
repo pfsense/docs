@@ -25,8 +25,8 @@ Configure L2TP Server
 *  Set **Server Address** to an unused private subnet
    IP, such as *192.168.32.1*
 
-   .. note:: This is **not** a public IP address or “listen” IP for the
-      L2TP service, it is a local IP address set as the “gateway” on the
+   .. note:: This is **not** a public IP address or "listen" IP for the
+      L2TP service, it is a local IP address set as the "gateway" on the
       clients
 
 *  Set **Remote Address Range** to an unused private subnet, such as
@@ -131,7 +131,7 @@ configured in a special way, which is common for all clients.
 *  Click |fa-plus| to add a new PSK
 *  Set the **Identifier** to *allusers*
 
-   .. note:: The “allusers” name is a special keyword used by pfSense to
+   .. note:: The "allusers" name is a special keyword used by pfSense to
       configure a wildcard PSK, which is necessary for L2TP/IPsec to
       function. Do not use any other **Identifier** for this PSK!
 
@@ -152,7 +152,7 @@ IPsec Rules
 ^^^^^^^^^^^
 
 *  Navigate to **Firewall > Rules**, **IPsec** tab
-*  Review the current rules. If there is an “allow all” style rule, then
+*  Review the current rules. If there is an "allow all" style rule, then
    there is no need to add another. Continue to the next task.
 *  Click |fa-plus| to add a new rule
 *  Set the **Protocol** to *any*, and set the **Source** and
@@ -168,7 +168,7 @@ L2TP Rules
 ^^^^^^^^^^
 
 *  Navigate to **Firewall > Rules**, **L2TP VPN** tab
-*  Review the current rules. If there is an “allow all” style rule, then
+*  Review the current rules. If there is an "allow all" style rule, then
    there is no need to add another. Continue to the next task.
 *  Click |fa-plus| to add a new rule
 *  Set the **Protocol** to *any*, and set the **Source** and
@@ -262,7 +262,7 @@ Troubleshooting
 Firewall traffic blocked outbound
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If the firewall logs show traffic blocked “out” on L2TP, then add a
+If the firewall logs show traffic blocked "out" on L2TP, then add a
 floating firewall rule to work around the block:
 
 *  Navigate to **Firewall > Rules**, **Floating** tab
@@ -311,7 +311,7 @@ Log entries from a successful IPsec connect::
   Feb 4 13:56:37 charon: 15[NET] received packet: from 192.0.2.52[500] to 192.0.2.90[500] (76 bytes)
   Feb 4 13:56:37 charon: 15[ENC] parsed ID_PROT request 0 [ ID HASH ]
   Feb 4 13:56:37 charon: 15[CFG] looking for pre-shared key peer configs matching 192.0.2.90...192.0.2.52[192.0.2.52]
-  Feb 4 13:56:37 charon: 15[CFG] selected peer config “con1”
+  Feb 4 13:56:37 charon: 15[CFG] selected peer config "con1"
   Feb 4 13:56:37 charon: 15[IKE] <con1|1> IKE_SA con1[1] established between 192.0.2.90[192.0.2.90]...192.0.2.52[192.0.2.52]
   Feb 4 13:56:37 charon: 15[IKE] IKE_SA con1[1] established between 192.0.2.90[192.0.2.90]...192.0.2.52[192.0.2.52]
   Feb 4 13:56:37 charon: 15[IKE] <con1|1> scheduling reauthentication in 28069s
@@ -344,7 +344,7 @@ Log entries from a successful L2TP Connect::
   Feb 4 13:56:38 l2tps: L2TP: Control connection 0x80301b608 connected
   Feb 4 13:56:38 l2tps: L2TP: Incoming call #0 via connection 0x80301b608 received
   Feb 4 13:56:38 l2tps: [l2tp0] L2TP: Incoming call #0 via control connection 0x80301b608 accepted
-  Feb 4 13:56:38 l2tps: [l2tp0] opening link “l2tp0”...
+  Feb 4 13:56:38 l2tps: [l2tp0] opening link "l2tp0"...
   Feb 4 13:56:38 l2tps: [l2tp0] link: OPEN event
   Feb 4 13:56:38 l2tps: [l2tp0] LCP: Open event
   Feb 4 13:56:38 l2tps: [l2tp0] LCP: state change Initial --> Starting
@@ -402,7 +402,7 @@ Log entries from a successful L2TP Connect::
   Feb 4 13:56:40 l2tps: [l2tp0] LCP: rec'd Ident #4 (Opened)
   Feb 4 13:56:40
   Feb 4 13:56:40 l2tps: [l2tp0] CHAP: rec'd RESPONSE #1
-  Feb 4 13:56:40 l2tps: Name: “jim”
+  Feb 4 13:56:40 l2tps: Name: "jim"
   Feb 4 13:56:40 l2tps: [l2tp0] AUTH: Auth-Thread started
   Feb 4 13:56:40 l2tps: [l2tp0] AUTH: Trying INTERNAL
   Feb 4 13:56:40 l2tps: [l2tp0] AUTH: INTERNAL returned undefined
@@ -493,7 +493,7 @@ Log entries from a successful L2TP Disconnect::
   Feb 4 13:57:07 l2tps: [l2tp0] IPCP: Down event
   Feb 4 13:57:07 l2tps: [l2tp0] IPCP: LayerFinish
   Feb 4 13:57:07 l2tps: [l2tp0] No NCPs left. Closing links...
-  Feb 4 13:57:07 l2tps: [l2tp0] closing link “l2tp0”...
+  Feb 4 13:57:07 l2tps: [l2tp0] closing link "l2tp0"...
   Feb 4 13:57:07 l2tps: [l2tp0] IPCP: state change Closing --> Initial
   Feb 4 13:57:07 l2tps: [l2tp0] CCP: Down event
   Feb 4 13:57:07 l2tps: [l2tp0] CCP: state change Closed --> Initial

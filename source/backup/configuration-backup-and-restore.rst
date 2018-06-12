@@ -36,7 +36,7 @@ This page also contains two useful package functions:
 currently installed packages.
 
 **Clear Package Lock**: This button is only shown when the
-post-upgrade/post-restore “Packages are Reinstalling” screen is active.
+post-upgrade/post-restore "Packages are Reinstalling" screen is active.
 If a package reinstall fails the lock may be left in place and this
 button will clear it manually.
 

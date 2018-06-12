@@ -48,7 +48,7 @@ Firewall Log Summary View
 
 The firewall log summary view produces pie charts which summarize the
 log data. Each item is listed with a chart and a table containing the
-top five entries in the chart, and “other”.
+top five entries in the chart, and "other".
 
 Summarized data includes actions, interfaces, protocols, source IPs,
 destination IPs, source ports, and destination ports.

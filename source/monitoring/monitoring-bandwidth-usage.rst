@@ -18,7 +18,7 @@ console (physical access or ssh) and watch the traffic flow with pftop
 (Option 9).
 
 The output can be changed to show several views (press 0-8 or 'v' to
-cycle) and may be sorted in various ways. Press “?” for a list of
+cycle) and may be sorted in various ways. Press "?" for a list of
 available command keys while running pftop.
 
 iftop

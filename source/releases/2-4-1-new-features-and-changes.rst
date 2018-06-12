@@ -68,7 +68,7 @@ DNS
    speed in some cases
    `#7814 <https://redmine.pfsense.org/issues/7814>`__
 -  Fixed the DNS Resolver (Unbound) to allow snoop from localhost by
-   default, otherwise “dig +trace” or “drill -T” queries from the
+   default, otherwise "dig +trace" or "drill -T" queries from the
    firewall itself fail
    `#7884 <https://redmine.pfsense.org/issues/7884>`__
 
@@ -87,7 +87,7 @@ Misc
    `#7939 <https://redmine.pfsense.org/issues/7939>`__
 -  Added UEFI 32 and UEFI 64 filenames defined inside a pool to
    dhcpd.conf `#7949 <https://redmine.pfsense.org/issues/7949>`__
--  Fixed operation of the “Reset All States on WAN IP Change” GUI
+-  Fixed operation of the "Reset All States on WAN IP Change" GUI
    setting `#7921 <https://redmine.pfsense.org/issues/7921>`__
 -  Changed OpenVPN to retry client auth when it fails by default
    (auth-retry nointeract)
@@ -98,6 +98,6 @@ Misc
 -  Added URL fingerprinting to the login page CSS
 -  Added the device serial/id to the console and SSH menu banner
    `#7968 <https://redmine.pfsense.org/issues/7968>`__
--  Fixed “Unknown Step Values” in certain RRD graph cases
+-  Fixed "Unknown Step Values" in certain RRD graph cases
    `#6860 <https://redmine.pfsense.org/issues/6860>`__
 

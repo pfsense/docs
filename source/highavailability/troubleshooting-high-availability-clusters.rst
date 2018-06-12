@@ -50,12 +50,12 @@ settings may be present on Hyper-V, VirtualBox, and other similar
 hypervisors.
 
 #. Enable promiscuous mode on the vSwitch
-#. Enable “MAC Address changes”
-#. Enable “Forged transmits”
+#. Enable "MAC Address changes"
+#. Enable "Forged transmits"
 #. If multiple physical ports exist on the same vswitch, the
    Net.ReversePathFwdCheckPromisc option must be enabled to work around
    a vswitch bug where multicast traffic will loop back to the host,
-   causing CARP to not function with “link states coalesced” messages.
+   causing CARP to not function with "link states coalesced" messages.
    (See below)
 
 ESX VDS Promisc Workaround
@@ -97,7 +97,7 @@ group to hash based on IP, not the originating interface.
 Side effects of having that set incorrectly include:
 
 -  Traffic only reaching the target VM in promisc mode on its NIC
--  Inability to reach the CARP IP from the target VM when the “real” IP
+-  Inability to reach the CARP IP from the target VM when the "real" IP
    of the primary firewall is reachable
 -  Port forwards or other inbound connections to the target VM work from
    some IPs and not others.
@@ -169,7 +169,7 @@ VirtualBox Issues
 From `this
 thread <http://forum.pfsense.org/index.php/topic,48327.0.html>`__:
 
--  Setting “Promiscuous mode: Allow All” on the relevant interfaces of
+-  Setting "Promiscuous mode: Allow All" on the relevant interfaces of
    the VM allows CARP to function on any interface type (Bridged,
    Host-Only, Internal)
 

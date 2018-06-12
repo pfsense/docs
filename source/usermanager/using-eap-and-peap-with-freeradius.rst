@@ -86,10 +86,10 @@ PEAP and MSCHAPv2
       CA-Certificate will first need to be accepted. This is the
       certificate created on pfSense.
 
-If Authentication isn't working then on some devices (Windows XP) “Check
-server certificate” may be disabled.
+If Authentication isn't working then on some devices (Windows XP) "Check
+server certificate" may be disabled.
 
-The most part of the “command line action” which is done in these
+The most part of the "command line action" which is done in these
 tutorials can be done from FreeRADIUS GUI.
 
 -  A very good how-to with screenshots in german language can be found

@@ -101,10 +101,10 @@ NAT
 -  All of the NAT screens were updated with additional functionality
 -  Port forwards can now handle create/update associated firewall rules
    automatically, instead of just creating unrelated entries.
--  Port forwards can optionally use “rdr pass” so no firewall rule is
+-  Port forwards can optionally use "rdr pass" so no firewall rule is
    needed.
 -  Port forwards can be disabled
--  Port forwards can be negated (“no rdr”)
+-  Port forwards can be negated ("no rdr")
 -  Port forwards can have source and destination filters
 -  NAT reflection improvements, including NAT reflection for 1:1 NAT
 -  Per-entry NAT reflection overrides
@@ -175,7 +175,7 @@ Captive Portal
 -  Custom logout page contents can be uploaded
 -  Allowed IP addresses bandwidth restrictions
 -  Allowed IP addresses supports IP subnets
--  “Both” direction added to Allowed IP addresses
+-  "Both" direction added to Allowed IP addresses
 -  Pass-through MAC Auto Entry - upon successful authentication, a
    pass-through MAC entry can be automatically added.
 -  Ability to configure calling station RADIUS attributes

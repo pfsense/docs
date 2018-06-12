@@ -10,7 +10,7 @@ General Issues
 
 With IPv6, there will be access issues with VPNs that require some care.
 Because most people will be using routable addresses, NAT can no longer
-be relied upon to “hide” the internal networks. As such, firewall rules
+be relied upon to "hide" the internal networks. As such, firewall rules
 must be carefully crafted to allow traffic in from remote networks. If
 the rules are too permissive traffic could reach LAN to LAN without
 actually going across the VPN!

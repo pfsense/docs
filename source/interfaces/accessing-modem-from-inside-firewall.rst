@@ -26,7 +26,7 @@ physical port.
 
 Under **Interfaces > (assign)**, create a new *OPT* interface, and
 assign it to the physical network card that is on WAN. For example, if
-the WAN on the assignment page is “*PPPOE0(re2)*”, choose *re2*, and
+the WAN on the assignment page is "*PPPOE0(re2)*", choose *re2*, and
 **Save** the changes.
 
 Go to **Interfaces > (new OPT interface)**, and **Enable** the

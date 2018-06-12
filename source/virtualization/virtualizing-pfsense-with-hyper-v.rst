@@ -13,7 +13,7 @@ Windows Server. A basic, working, pfSense virtual machine will exist by
 the end of this article.
 
 .. note:: If pfSense will be running as a perimeter firewall for an
-   organization and the “attack surface” should be minimized, many will say
+   organization and the "attack surface" should be minimized, many will say
    it is preferable to run it non-virtualized on stand-alone hardware. That
    is a decision for the user and/or organization to make, however. Now
    back to the topic.

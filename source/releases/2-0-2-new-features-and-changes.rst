@@ -115,7 +115,7 @@ User Manager Fixes
 -  Include admin user in bootup account sync
 -  Fix permission and certificate display for the admin user
 -  Fix ssh key note to refer to DSA not just RSA since both work.
--  “:” chars are invalid in a comment field, filter them out.
+-  ":" chars are invalid in a comment field, filter them out.
 -  When renaming a user, make sure to remove the previous user or it
    gets left in /etc/passwd.
 -  `#2326 <http://redmine.pfsense.org/issues/2326>`__ Do not allow empty
@@ -149,7 +149,7 @@ NAT/Firewall Rules/Alias Fixes
 ------------------------------
 
 -  `#2327 <http://redmine.pfsense.org/issues/2327>`__ Respect the value
-   of the per-rule “disable reply-to” checkbox.
+   of the per-rule "disable reply-to" checkbox.
 -  `#1882 <http://redmine.pfsense.org/issues/1882>`__ Fix an invalid pf
    rule generated from a port forward with dest=any on an interface with
    ip=none
@@ -158,11 +158,11 @@ NAT/Firewall Rules/Alias Fixes
    interface.
 -  Better validation on URL table alias input from downloaded files.
 -  `#2293 <http://redmine.pfsense.org/issues/2293>`__ Don't put an extra
-   space after “pass” when assuming it as the default action or later
+   space after "pass" when assuming it as the default action or later
    tests will fail to match this as a pass rule.
 -  Update help text for Host aliases to indicate FQDNs are allowed.
 -  `#2210 <http://redmine.pfsense.org/issues/2210>`__ Go back to scrub
-   rather than “scrub in”, the latter breaks MSS clamping for egress
+   rather than "scrub in", the latter breaks MSS clamping for egress
    traffic the way we use it.
 -  Fix preservation of the selection of interfaces on input errors for
    floating rules.
@@ -186,7 +186,7 @@ Interface/Bridging Fixes
 -  Use the latest functions from pfSense module for creating bridges
 -  Implement is\_jumbo\_capable in a more performant way. This should
    help with large number of interfaces
--  Since the CARP interface name changed to “vipN” from “carpN”, devd
+-  Since the CARP interface name changed to "vipN" from "carpN", devd
    needs to follow that change as well.
 -  `#2242 <http://redmine.pfsense.org/issues/2242>`__ Show lagg protocol
    and member interfaces on Status > Interfaces.
@@ -201,7 +201,7 @@ Other Misc. Fixes
 -  `#2057 <http://redmine.pfsense.org/issues/2057>`__ Add a checkbox
    that disables automatically generating negate rules for directly
    connected networks and VPNs.
--  Mark “Destination server” as a required field for DHCP Relay
+-  Mark "Destination server" as a required field for DHCP Relay
 -  Clarify the potential pitfalls when setting the Frequency Probe and
    Down parameters.
 -  Add a PHP Shell shortcut to disable referer check (playback
@@ -270,7 +270,7 @@ Other Misc. Fixes
    being inaccessible after a firmware update.
 -  Fix some issues with upgrading NanoBSD+VGA and NanoBSD+VGA Image
    Generation
--  Fix issues upgrading from systems with the old “Uniprocessor” kernel
+-  Fix issues upgrading from systems with the old "Uniprocessor" kernel
    which no longer exists.
 -  Fix a few potential XSS/CSRF vectors.
 -  Fixed issue with login page not showing the correct selected theme in

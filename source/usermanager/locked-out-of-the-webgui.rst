@@ -60,7 +60,7 @@ Ensure that the proper protocol is in use, either HTTP or HTTPS. The
 default WebGUI protocol is HTTPS.
 
 If one doesn't work, try the other. It may also be necessary to force
-the “wrong” protocol on a port, like so:
+the "wrong" protocol on a port, like so:
 
 - http://pfsensebox:443
 - https://pfsensebox:80
@@ -124,12 +124,12 @@ permanent. *(From billm in `this forum
 post <http://forum.pfsense.org/index.php/topic,14299.msg75932.html#msg75932>`__)*
 
 To get in without disabling pf, the following shell command can be run
-to add an “allow all” rule on the WAN::
+to add an "allow all" rule on the WAN::
 
   pfSsh.php playback enableallowallwan
 
 This is **VERY DANGEROUS** to keep around, so once access to the GUI has
-been regained with proper rules, be sure to delete this “allow all”
+been regained with proper rules, be sure to delete this "allow all"
 rule.
 
 Add firewall rule at the command line with easyrule
@@ -151,7 +151,7 @@ smart to do!) but SSH access is still available, then there is a
 relatively easy way to get in: SSH Tunneling.
 
 If the WebGUI is on port 80, set the ssh client to forward local port 80
-(or 8080, or whatever) to remote port “localhost:80”, then point a
+(or 8080, or whatever) to remote port "localhost:80", then point a
 browser to http://127.0.0.1:80 (or whichever local port was chosen.) If
 the WebGUI is on another port, use that instead. Obviously, if https was
 used, use https on the URL to access the WebGUI this way.

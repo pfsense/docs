@@ -27,7 +27,7 @@ explained there, such as selecting a cable for a driver type that does
 not need (nor permit) the cable selection.
 
 If the system log doesn't offer adequate information, such as simply
-logging “nut: Service failed to start: check configuration”, log in via
+logging "nut: Service failed to start: check configuration", log in via
 SSH and choose option *8*, then run the following command::
 
   /usr/local/etc/rc.d/nut.sh start

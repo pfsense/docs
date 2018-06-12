@@ -45,7 +45,7 @@ Certificates
       -  Create your own new CA/Server certificate and use that for the
          GUI
       -  Activate the local browser
-         “`EnableCommonNameFallbackForLocalAnchors <https://www.chromium.org/administrators/policy-list-3#EnableCommonNameFallbackForLocalAnchors>`__”
+         "`EnableCommonNameFallbackForLocalAnchors <https://www.chromium.org/administrators/policy-list-3#EnableCommonNameFallbackForLocalAnchors>`__"
          option in Chrome 58 (this setting will be removed by Chrome
          eventually, so this is only a temporary fix)
 
@@ -78,7 +78,7 @@ Dashboard
    `#6841 <https://redmine.pfsense.org/issues/6841>`__
 -  Fixed the NTP widget to show the server time instead of client time
    `#7245 <https://redmine.pfsense.org/issues/7245>`__
--  Added a “None” option to Widgets with filtering options
+-  Added a "None" option to Widgets with filtering options
    `#7318 <https://redmine.pfsense.org/issues/7318>`__
 -  Added PPPoE uptime display on the Interfaces dashboard widget
    `#6032 <https://redmine.pfsense.org/issues/6032>`__
@@ -166,7 +166,7 @@ Misc
    `#7435 <https://redmine.pfsense.org/issues/7435>`__
 -  Fixed service handling (start/stop/restart) for Captive Portal
    `#7444 <https://redmine.pfsense.org/issues/7444>`__
--  Fixed display of the ALTQ “queue” view in pfTop due to recent changes
+-  Fixed display of the ALTQ "queue" view in pfTop due to recent changes
    in the pfTop port `#7461 <https://redmine.pfsense.org/issues/7461>`__
 -  Added support for the Dynamic DNS Client Hover
    `#7511 <https://redmine.pfsense.org/issues/7511>`__

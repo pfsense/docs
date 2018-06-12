@@ -4,7 +4,7 @@ Forcing a Filesystem Check
 ==========================
 
 The firewall will automatically run a filesystem check at boot time when
-it was not shut down cleanly. In such a case the disk is still “dirty”
+it was not shut down cleanly. In such a case the disk is still "dirty"
 so the OS can tell that it needs a check. However there are times when
 the filesystem is marked clean but there may still be some minor
 filesystem corruption. This can manifest as files being inaccessible,

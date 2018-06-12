@@ -60,12 +60,12 @@ LAN Interface
 
     - This will interfere with automatic outbound NAT
 
--  Check that LAN does NOT have “Block Private Networks” set
+-  Check that LAN does NOT have "Block Private Networks" set
    (**Interfaces > LAN**)
 
     - Should be obvious
 
--  Check that LAN does NOT have “Block Bogon Networks” set (**Interfaces
+-  Check that LAN does NOT have "Block Bogon Networks" set (**Interfaces
    > LAN**)
 
     - See above
@@ -94,9 +94,9 @@ Firewall/Rules
 -  Check that the LAN rule allows to a destination of *any* (**Firewall
    > Rules**, **LAN** tab)
 
-    - Traffic going to the Internet will need an “*any*” destination.
+    - Traffic going to the Internet will need an "*any*" destination.
       Using the wrong destination would not allow traffic to reach the
-      Internet (e.g. “*WAN net*” which is only the subnet of the WAN
+      Internet (e.g. "*WAN net*" which is only the subnet of the WAN
       interface, **NOT** the Internet.)
 
 -  Check that the LAN rule does not have an improper gateway set

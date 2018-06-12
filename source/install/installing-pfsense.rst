@@ -177,7 +177,7 @@ expected order.
 If the hardware platform cannot be identified, a list of network
 interfaces and their MAC addresses that were located on the system will
 appear, along with an indication of their link state if that is
-supported by the network card. The link state is denoted by “(up)”
+supported by the network card. The link state is denoted by "(up)"
 appearing after the MAC address if a link is detected on that interface.
 The MAC (Media Access Control) address of a network card is a unique
 identifier assigned to each card, and no two network cards should have
@@ -219,7 +219,7 @@ assigned interfaces is displayed. If the mappings are correct, enter
     Mode. In this mode, pfSense will move the GUI anti-lockout rule to
     the WAN interface so the firewall may be accessed from there. The
     usual routing functions would not be active since there is no
-    “internal” interface. This type of configuration is useful for VPN
+    "internal" interface. This type of configuration is useful for VPN
     appliances, DNS servers, etc.
 
 Auto Assign Procedure

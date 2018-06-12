@@ -4,7 +4,7 @@ Virtual IP Address Feature Comparison
 =====================================
 
 Virtual IPs add knowledge of additional IP addresses to the firewall
-that are different from the firewall's actual “real” interface
+that are different from the firewall's actual "real" interface
 addresses. Most often, these are used for NAT, but they can also be used
 for other functions such as clustering, binding services such as DNS,
 load balancing in packages, and so on.
@@ -33,7 +33,7 @@ Table: VIP Features
     NAT. With 1:1 NAT, any VIP will pass ICMP through to the target
     device. On 2.1+ ICMP can also be used as a protocol in port forward
     entries.
-    2: “Other” type VIPs are for routed subnets, and CARP is irrelevant,
+    2: "Other" type VIPs are for routed subnets, and CARP is irrelevant,
     so they work (See below)
     3: CARP type VIPs must be in the same subnet as other interface VIPs
     on pfSense <=2.1.x, on >= 2.2 they may be in other subnets, but see

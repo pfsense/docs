@@ -14,7 +14,7 @@ configuration immediately without needing intermediate steps.
 Recover config.xml
 ------------------
 
-The installer in 2.4 has a “Recover config.xml” option which will read a
+The installer in 2.4 has a "Recover config.xml" option which will read a
 configuration off an existing installation being overwritten. This makes
 it useful for upgrades, filesystem changes, or any other situation where
 a reinstallation is required on the same hardware.
@@ -22,7 +22,7 @@ a reinstallation is required on the same hardware.
 -  Before starting, take a backup of the configuration if possible, just
    in case this procedure doesn't work as expected.
 -  Boot a 2.4 install memstick or CD
--  Choose “Recover config.xml” when the option appears
+-  Choose "Recover config.xml" when the option appears
 -  Pick the existing installation drive (e.g. ada0), the selection list
    shows the disk name, size, and filesystem type which should be enough
    to identify the disk
@@ -34,13 +34,13 @@ configuration.
 Configuration from USB during Install
 -------------------------------------
 
-pfSense has, as part of the installation routine, a “Pre-Flight Install”
+pfSense has, as part of the installation routine, a "Pre-Flight Install"
 or PFI. PFI will check for an existing configuration on a USB drive, and
 use it instead. When installing to the target disk, it will copy this
 configuration.
 
 -  First, make sure to have a config.xml backup from the old system
--  On a DOS/FAT formatted USB drive, make a directory called “conf”
+-  On a DOS/FAT formatted USB drive, make a directory called "conf"
 -  Copy a backup configuration file to the conf directory
 -  Rename the backup to config.xml
 

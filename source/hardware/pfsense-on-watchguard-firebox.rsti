@@ -597,7 +597,7 @@ booted you must edit /etc/fstab and change the references to ad0 to ad1.
 You can do that either via the edit file page in the webgui or from the
 command line using: ee /etc/fstab (or vi if you're a masochist). In
 order to make it boot verbose every time you need to add
-boot\_verbose=“1” to /boot/loader.conf.local. You can do it easily from
+boot\_verbose="1" to /boot/loader.conf.local. You can do it easily from
 the command line:
 
 ::

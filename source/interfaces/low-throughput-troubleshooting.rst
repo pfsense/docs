@@ -29,7 +29,7 @@ utilized, or the driver may need some adjustments to work as expected.
 If the system is not under any stress whatsoever while transferring
 data, the problem likely lies elsewhere.
 
-If the amount of “System” CPU is high and the amount of interrupts is
+If the amount of "System" CPU is high and the amount of interrupts is
 low, the problem may be in the amount of packet processing happening in
 pf or being used for encryption. If pf is pushing the CPU as high as it
 can, it may require a faster CPU. On pfSense 2.1.x and earlier, pf is

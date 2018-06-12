@@ -87,7 +87,7 @@ User Settings
    permission.
 
    -  Note that for xauth, the password used is the password for the
-      user, not the “IPsec Pre-Shared Key” field. That is used for
+      user, not the "IPsec Pre-Shared Key" field. That is used for
       non-xauth IPsec.
 
 Firewall Rules

@@ -25,7 +25,7 @@ prefixed with *pfSense-pkg-*::
 
   FreeBSD-ports/sysutils/pfSense-pkg-Cron/
 
-From here down the “FreeBSD-ports” prefix will be omitted for brevity.
+From here down the "FreeBSD-ports" prefix will be omitted for brevity.
 
 The main Makefile, which includes version information, information about
 binaries, dependencies, install procedures, where to copy files, and so

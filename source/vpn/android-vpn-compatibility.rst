@@ -79,7 +79,7 @@ See this note on Android and PPTP from a user on `the forum <http://forum.pfsens
 Android 2.3 (Gingerbread) IPsec
 -------------------------------
 
-For some devices, Gingerbread brought with it the “Advanced IPsec VPN”
+For some devices, Gingerbread brought with it the "Advanced IPsec VPN"
 choices that will let it work with 2.0 and most likely other scenarios
 as well. Specifically these options are found on at least the Motorola
 Droid X, and likely others.
@@ -98,7 +98,7 @@ The VPN choices on these versions are:
 -  PSK v2 (AES)
 
 The choices that use main mode (anything that isn't labeled
-“aggressive”) likely won't work as the IP of the phone is used as the
+"aggressive") likely won't work as the IP of the phone is used as the
 identifier, no matter what is entered in the phone's GUI, so it would
 require anonymous PSKs which are only available on pfSense 2.2 and
 later. Some Android IPsec GUIs may have an option to manually set an
@@ -185,7 +185,7 @@ third-party clients available.
 Android 4.4 (KitKat)
 ~~~~~~~~~~~~~~~~~~~~
 
-Android 4.4 (KitKat) removed the “tun” device (/dev/tun); this change is
+Android 4.4 (KitKat) removed the "tun" device (/dev/tun); this change is
 reported to break most, if not all, of the OpenVPN clients, but has
 since been worked around.
 
@@ -197,14 +197,14 @@ Transformer Prime and a Motorola Droid Razr, both with Android 4.0.x.
 
 `Stefan Baur confirms <http://lists.pfsense.org/pipermail/list/2013-November/005176.html>`__
 that the FEAT client works on his Motorola Milestone 2 (aka European/GSM
-“Droid 2”), and that none of the clients he tested work under Android
+"Droid 2"), and that none of the clients he tested work under Android
 v4.4 (KitKat).
 
 Exporting configuration
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 With the latest update to the pfSense OpenVPN Client Export package, an
-“Inline Configuration” can be exported that has the config, the certs,
+"Inline Configuration" can be exported that has the config, the certs,
 keys, etc, in a single file. This file imports into the client linked
 above quite easily, as follows:
 
@@ -213,7 +213,7 @@ above quite easily, as follows:
    to the device and use a mail client that can save attachments, grab
    it from a file share on the network, etc.)
 -  Open the OpenVPN App
--  Click “All your precious VPNs”
+-  Click "All your precious VPNs"
 -  Click Import (File folder icon in top right)
 -  Find the ovpn file saved above, click it
 -  Click Select

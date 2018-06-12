@@ -331,10 +331,10 @@ pre-shared keys.
 A shortcut may be created directly to the tunnel: create a shortcut to
 ipsecc.exe (in c:\\program files etc.). Right-click the shortcut and
 choose **Properties**. In the **Target** field, add **-a -r
-“MyTunnel”**. -a means: start automatically. This starts the connection
+"MyTunnel"**. -a means: start automatically. This starts the connection
 without the user having to press the Connect button. -r specifies the
-tunnel name. If the tunnel was named “Work”, write “Work” in stead of
-“MyTunnel”.
+tunnel name. If the tunnel was named "Work", write "Work" in stead of
+"MyTunnel".
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_043.jpg
 

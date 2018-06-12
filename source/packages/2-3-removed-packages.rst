@@ -64,8 +64,8 @@ Removed Package List
 -  spamd - no package maintainer, not converted
 
 -  squid3 - the squid packages have been consolidated into a single
-   squid package, using version 3.5. The “squid3” package has been
-   removed, and the “squid” package is now version 3.
+   squid package, using version 3.5. The "squid3" package has been
+   removed, and the "squid" package is now version 3.
 
 -  squidGuard-devel - squidGuard-devel no longer exists, use squidGuard
    instead.

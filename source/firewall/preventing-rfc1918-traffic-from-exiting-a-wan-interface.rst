@@ -52,7 +52,7 @@ not desirable:
    looking at the WAN interface IP address on the pfSense dashboard. If
    the assigned address is from one of the private IP ranges listed
    above, RFC1918 traffic should NOT be blocked.
-*  **pfSense is “chained” behind another device like a consumer firewall
+*  **pfSense is "chained" behind another device like a consumer firewall
    or wifi router (double NAT)** - In this case, pfSense performs NAT
    for devices connected to the pfSense LAN, and the WAN interface
    forwards traffic to the upstream device, where it undergoes a second

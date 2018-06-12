@@ -29,7 +29,7 @@ Rules for Interface Groups are processed *after* Floating rules, but
 Limitations
 -----------
 
-Using Interface Groups for WANs will not put “reply-to” on the resulting
+Using Interface Groups for WANs will not put "reply-to" on the resulting
 pass rules because it can't do so for rules in groups. Due to this,
 traffic that enters via an alternate WAN (non-default route) and is
 allowed by pass rules on an interface group will exit back via the

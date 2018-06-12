@@ -94,13 +94,13 @@ IPsec
 -  Added option for enabling Strict CRL Checking (strictcrlpolicy in
    strongSwan config).
 -  Fixed saving Advanced IPsec options before IPsec is enabled.
--  Changed LAN bypass to be from “LAN subnet” to “LAN subnet” rather
-   than from “LAN subnet” to “LAN address” to allow it to work for VIPs
+-  Changed LAN bypass to be from "LAN subnet" to "LAN subnet" rather
+   than from "LAN subnet" to "LAN address" to allow it to work for VIPs
    on the interface.
--  Remove “Auto” key exchange option, and change upgraded configurations
+-  Remove "Auto" key exchange option, and change upgraded configurations
    to IKEv2. `#4873 <https://redmine.pfsense.org/issues/4873>`__
 -  Specify rightid for mobile IPsec non-PSK configurations. Add peer ID
-   option “any” for excluding peer identifier checks for mobile IPsec
+   option "any" for excluding peer identifier checks for mobile IPsec
    circumstances where peer ID matching is impossible or undesirable.
 
 OpenVPN
@@ -174,7 +174,7 @@ Misc
 -  Fixed display of advanced DHCP settings when present.
 -  Removed old, unused *NetUtils.js*.
 -  Retain */usr/bin/fsync* from FreeBSD in images.
--  Added “netstat -ni” to /status.php output.
+-  Added "netstat -ni" to /status.php output.
 -  Fixed a typo in upgrade code for Captive Portal.
 -  Fixed limiter upgrade code to allocate pipe numbers even if no rules
    are present.

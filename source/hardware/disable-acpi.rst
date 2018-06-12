@@ -4,7 +4,7 @@ Disabling ACPI
 ==============
 
 This article shows how ACPI can effectively be disabled. This method is
-“semi-permanent” in that it will probably need to be disabled again when
+"semi-permanent" in that it will probably need to be disabled again when
 the firewall is upgraded.
 
 There is typically no need to disable ACPI on current versions of

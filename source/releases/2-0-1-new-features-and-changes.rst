@@ -44,7 +44,7 @@ The following changes were made after 2.0-RELEASE and were included in
    various ways (`#1954 <http://redmine.pfsense.org/issues/1954>`__)
 -  Fixed policy route negation for VPN networks
    (`#1950 <http://redmine.pfsense.org/issues/1950>`__)
--  Fixed “Bypass firewall rules for traffic on the same interface”
+-  Fixed "Bypass firewall rules for traffic on the same interface"
    (`#1950 <http://redmine.pfsense.org/issues/1950>`__)
 -  Fixed VoIP rules produced by the traffic shaper wizard
    (`#1948 <http://redmine.pfsense.org/issues/1948>`__)
@@ -64,7 +64,7 @@ The following changes were made after 2.0-RELEASE and were included in
    (`#1976 <http://redmine.pfsense.org/issues/1976>`__)
 -  Added tab under Diagnostics > States to view/clear the source
    tracking table if sticky is enabled
--  Fixed CARP status widget to properly show “disabled” status.
+-  Fixed CARP status widget to properly show "disabled" status.
 -  Fixed end time of custom timespan RRD graphs
    (`#1990 <http://redmine.pfsense.org/issues/1990>`__)
 -  Fixed situation where certain NICs would constantly cycle link with

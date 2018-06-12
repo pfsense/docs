@@ -9,7 +9,7 @@ additional PHP extensions may be required that are not enabled.
 There are several PHP extensions that are included in the pfSense binary
 distribution on pfSense 2.2 and before, but are left disabled by default
 to conserve resources since they are not required by the base system.
-These disabled modules may be activated using the “dynamodules” system.
+These disabled modules may be activated using the "dynamodules" system.
 
 The extensions included and activated vary by pfSense version, look in
 */usr/local/lib/php/* to see which extensions are present, and check the

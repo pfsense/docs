@@ -9,7 +9,7 @@ constant log size.
 There are multiple benefits to this method. The primary advantage is
 that the log files cannot grow and fill up filesystems. The downside is
 that they are no longer plain text logs, and cannot be directly used by
-programs like *cat* or *grep*. If they are viewed directly, “random”
+programs like *cat* or *grep*. If they are viewed directly, "random"
 binary data may be seen inside the log and entries may appear out of
 order.
 

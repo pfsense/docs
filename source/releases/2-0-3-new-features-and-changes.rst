@@ -38,7 +38,7 @@ OpenVPN
    to avoid a situation where a learned route from OSPF or elsewhere
    could prevent an instance from restarting properly
 -  Always clear the OpenVPN route when using shared key, no matter how
-   the tunnel network “CIDR” is set
+   the tunnel network "CIDR" is set
 -  Use the actual OpenVPN restart routine when starting/stopping from
    services rather than killing/restarting manually
 -  Allow editing an imported CRL, and refresh OpenVPN CRLs when saving.
@@ -101,7 +101,7 @@ Misc Changes
 
 -  Change how the listening address is passed to miniupnpd, the old
    method was resulting in errors for some users
--  Fix “out” packet count reporting
+-  Fix "out" packet count reporting
 -  Be a little smarter about the default kernel in rare cases where we
    cannot determine what was in use
 -  Pass -S to tcpdump to avoid an increase in memory consumption over
@@ -118,7 +118,7 @@ Misc Changes
    handles files with spaces in the CA certificate filename
 -  Bring in the RCFILEPREFIX as constant fixes from HEAD, since
    otherwise rc.stop\_packages was globbing in the wrong dir and
-   executing the wrong scripts. Also seems to have fixed the “bad fd”
+   executing the wrong scripts. Also seems to have fixed the "bad fd"
    error
 -  NTP restart fixes
 -  Gitsync now pulls in git package from pfSense package repository
@@ -155,7 +155,7 @@ Binary changes
 -  PHP to 5.2.17\_13
 -  OpenVPN 2.2 stock again (Removed IPv6 patches since those are only
    needed on 2.1 now)
--  Fix missing “beep” binary on amd64
+-  Fix missing "beep" binary on amd64
 -  Fix potential issue with IPsec routing of client traffic
 -  Remove lighttpd spawnfcgi dependency
 -  Add splash device to wrap\_vga kernels (It's in GENERIC so full

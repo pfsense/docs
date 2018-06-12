@@ -20,7 +20,7 @@ A list from
    3-way handshake (added to header by RFC 3168).
 -  URG – indicates that the URGent pointer field is significant
 -  ACK – indicates that the ACKnowledgment field is significant
-   (Sometimes abbreviated by tcpdump as “.”)
+   (Sometimes abbreviated by tcpdump as ".")
 -  PSH – Push function
 -  RST – Reset the connection (Seen on rejected connections)
 -  SYN – Synchronize sequence numbers (Seen on new connections)

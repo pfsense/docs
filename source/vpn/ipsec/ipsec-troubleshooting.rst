@@ -260,13 +260,13 @@ Incorrect Destination Address
 
 When multiple WAN IP addresses are available, such as with CARP VIPs or
 IP Alias VIPs, an additional failure mode can occur where the connection
-appears in the logs but matches bypasslan or “%any...%any”. In this
+appears in the logs but matches bypasslan or "%any...%any". In this
 case, IPsec is configured to listen to one IP address but the client is
 connecting to another address. For example, an IPsec Phase 1 entry may
 be configured to use the WAN IP address but clients are connecting to a
 CARP VIP. In this case, the destination address in the logs will be the
 VIP address and not the interface address. Confirm by checking the logs
-against “ipsec statusall”.
+against "ipsec statusall".
 
 Disappearing Traffic
 ~~~~~~~~~~~~~~~~~~~~
@@ -310,7 +310,7 @@ Mismatched Local/Remote Subnets
 
 This can result from mismatched subnet masks in the IPsec tunnel
 definitions. Check to be sure that the local and remote subnet masks
-match up on each side, typically they should be “*/24*” and not “*/32*”.
+match up on each side, typically they should be "*/24*" and not "*/32*".
 
 Failed pfkey align
 ~~~~~~~~~~~~~~~~~~
@@ -440,13 +440,13 @@ NAT Problems
 
 If the tunnel can initiate one way but not the other, and the settings
 match, the problem could also be with outbound NAT. If outbound NAT
-rules are present with a source of “*any*” (*\**), that will also match
+rules are present with a source of "*any*" (*\**), that will also match
 outbound traffic from the firewall itself. At best this will rewrite the
 source port and at worst it could change the outbound IP entirely
 depending on the NAT rule settings.
 
 Check **Diagnostics > States**, filtered on the remote peer IP, or
-“:500”. If a NAT state is present that includes the WAN address of the
+":500". If a NAT state is present that includes the WAN address of the
 firewall as the source, then fix the NAT rules and clear the offending
 states.
 

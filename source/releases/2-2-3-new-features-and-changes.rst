@@ -55,7 +55,7 @@ Security/Errata Notices
 Rules/Aliases/NAT
 -----------------
 
--  Fixed a problem with more than 64 IP addresses in the “self” table in
+-  Fixed a problem with more than 64 IP addresses in the "self" table in
    pf.
 -  Fixed issues with FQDNs in aliases causing static entries to be lost.
    `#4296 <https://redmine.pfsense.org/issues/4296>`__
@@ -104,7 +104,7 @@ IPsec
    `#4268 <https://redmine.pfsense.org/issues/4268>`__
 -  Added new modes for IPsec Phase 1 according to RFC 5903 (Ecliptic
    Curve groups). `#4260 <https://redmine.pfsense.org/issues/4260>`__
--  Implemented the “make before break” feature available in strongSwan
+-  Implemented the "make before break" feature available in strongSwan
    5.3.0, which is useful for IKEv2.
    `#4626 <https://redmine.pfsense.org/issues/4626>`__
 -  Fixed vpn\_ipsec\_configure so it always performs a filter reload to
@@ -192,7 +192,7 @@ Interfaces/NIC Drivers
    `#4483 <https://redmine.pfsense.org/issues/4483>`__
 -  Corrected descriptions on Key Rotation and Master Key Regeneration
    for wireless interfaces.
--  Removed the “insert my MAC” feature from interfaces.php.
+-  Removed the "insert my MAC" feature from interfaces.php.
 -  Defined $var\_path as a global key since it is being used in
    interfaces.inc, but it was not declared.
 -  Fixed issues setting the MTU on certain interfaces.
@@ -226,7 +226,7 @@ DHCP/RA
    and router advertisements.
    `#3730 <https://redmine.pfsense.org/issues/3730>`__
 -  Removed unnecessary filtering on the DHCP static mappings table.
--  Added appropriate RA Flags for “Stateless DHCP”.
+-  Added appropriate RA Flags for "Stateless DHCP".
 -  Added error checking to avoid warnings about DHCP relay during boot.
 -  Fixed hostname validation for static DHCP leases such that only fully
    qualified hostnames must be unique, not only short names.
@@ -280,7 +280,7 @@ CARP
    the value is 0, which can cause the cluster to misbehave.
 -  Fixed issues for CARP+Bridges where pfSense would crash or freeze.
    `#4607 <https://redmine.pfsense.org/issues/4607>`__
--  Fixed the CARP plugin call for packages. The “interface” parameter
+-  Fixed the CARP plugin call for packages. The "interface" parameter
    was coming through as NULL during CARP events.
 -  Added INIT event for CARP in devd.conf as an alternate for 'backup',
    otherwise scripts would not take down services during a MASTER->INIT
@@ -307,7 +307,7 @@ DNS
    Unbound, otherwise DHCP static mappings would not fully apply when
    Unbound was in use.
    `#4678 <https://redmine.pfsense.org/issues/4678>`__
--  Fixed an Unbound warning when “dnsallowoverride” was off and port
+-  Fixed an Unbound warning when "dnsallowoverride" was off and port
    forwarding was on.
    `#4682 <https://redmine.pfsense.org/issues/4682>`__
 -  Re-enabled verification for selfhost DynDNS since their chain issue
@@ -332,10 +332,10 @@ Misc
    `#4107 <https://redmine.pfsense.org/issues/4107>`__
 -  Deprecated */usr/local/bin/3gstat* as it was no longer used. It was
    replaced by *3gstats.php* long ago.
--  Started using the “host!” flag when setting CURLOPT\_INTERFACE, as
+-  Started using the "host!" flag when setting CURLOPT\_INTERFACE, as
    recommended by the CURL documentation.
 -  Started passing the interface to CURLOPT\_INTERFACE instead of the IP
-   address, also started using the “if!” flag to avoid CURL trying to
+   address, also started using the "if!" flag to avoid CURL trying to
    resolve the interface name.
 -  Fixed NTP serial configuration to setup the serial port before
    attempting to configure a GPS unit.

@@ -3,7 +3,7 @@
 LAGG Interfaces
 ===============
 
-Multiple network interfaces may be bonded (“teamed”) together using
+Multiple network interfaces may be bonded ("teamed") together using
 `lagg(4) <https://www.freebsd.org/cgi/man.cgi?query=lagg%284%29&apropos=0&sektion=0&manpath=FreeBSD+10.1-RELEASE&arch=default&format=html>`__
 for fault tolerance and/or increased bandwidth.
 

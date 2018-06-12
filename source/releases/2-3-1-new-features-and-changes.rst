@@ -121,7 +121,7 @@ Web GUI
    configured. `#6173 <https://redmine.pfsense.org/issues/6173>`__
 -  Fix load balancer monitor edit.
    `#6171 <https://redmine.pfsense.org/issues/6171>`__
--  Restore “none” in load balancer fall-back pool.
+-  Restore "none" in load balancer fall-back pool.
    `#6170 <https://redmine.pfsense.org/issues/6170>`__
 -  Restore use of aliases in load balancer.
    `#6169 <https://redmine.pfsense.org/issues/6169>`__
@@ -143,7 +143,7 @@ Web GUI
    `#6123 <https://redmine.pfsense.org/issues/6123>`__
 -  Fix typo on OpenVPN server description.
    `#6102 <https://redmine.pfsense.org/issues/6102>`__
--  Fix missing string on notification “mark as read” button.
+-  Fix missing string on notification "mark as read" button.
    `#6104 <https://redmine.pfsense.org/issues/6104>`__
 -  Fix firewall rule separator positioning with easy rule addition.
    `#6105 <https://redmine.pfsense.org/issues/6105>`__
@@ -152,7 +152,7 @@ Web GUI
 -  Add custom date range option to monitoring page.
 -  Use infoblock on IPsec PSK screen.
    `#6107 <https://redmine.pfsense.org/issues/6107>`__
--  Fixed loss of “Do not NAT” enable on edit on outbound NAT.
+-  Fixed loss of "Do not NAT" enable on edit on outbound NAT.
    `#6112 <https://redmine.pfsense.org/issues/6112>`__
 -  Correct label of 1:1 NAT edit screen.
    `#6114 <https://redmine.pfsense.org/issues/6114>`__
@@ -326,13 +326,13 @@ following fixes/changes since 2.3.1-RELEASE.
    accommodate systems with a large number of active states.
    `#6364 <https://redmine.pfsense.org/issues/6364>`__
 -  Set request\_terminate\_timeout the same as max\_execution\_time to
-   prevent many possible circumstances of “504 gateway error” from
+   prevent many possible circumstances of "504 gateway error" from
    occurring. `#6396 <https://redmine.pfsense.org/issues/6396>`__
 -  Fix use of URL IP type aliases in firewall rules.
    `#6403 <https://redmine.pfsense.org/issues/6403>`__
 -  Fix show/hide fields Javascript in Chrome on Mac OS X.
    `#6401 <https://redmine.pfsense.org/issues/6401>`__
--  Fixed save of “IPv6 over IPv4 Tunneling” address on System>Advanced,
+-  Fixed save of "IPv6 over IPv4 Tunneling" address on System>Advanced,
    Networking. `#6381 <https://redmine.pfsense.org/issues/6381>`__
 
 Update 2 through 4
@@ -360,13 +360,13 @@ following fixes/changes since 2.3.1\_1.
    `#6254 <https://redmine.pfsense.org/issues/6254>`__
 -  Fixed schedule editing on firewall rules page.
    `#6428 <https://redmine.pfsense.org/issues/6428>`__
--  Allow “-” character in TFTP server field on DHCP Server page.
+-  Allow "-" character in TFTP server field on DHCP Server page.
    `#6433 <https://redmine.pfsense.org/issues/6433>`__
--  Allow “-” and “\_” characters in system tunables.
+-  Allow "-" and "\_" characters in system tunables.
    `#6438 <https://redmine.pfsense.org/issues/6438>`__
 -  Fixed changing of link type on PPPs edit screen.
    `#6439 <https://redmine.pfsense.org/issues/6439>`__
--  Fixed setting of “RADIUS issued IPs” on L2TP page.
+-  Fixed setting of "RADIUS issued IPs" on L2TP page.
    `#6440 <https://redmine.pfsense.org/issues/6440>`__
 -  Restored apply changes button for interface mismatch post-config
    restore. `#6460 <https://redmine.pfsense.org/issues/6460>`__

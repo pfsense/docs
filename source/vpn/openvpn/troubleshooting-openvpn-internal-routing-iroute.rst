@@ -9,7 +9,7 @@ Overrides** tab set for the client certificate's **common name**.
 
 First, ensure that the **common name** matches and that the internal
 route is being learned/added as it should be. OpenVPN's log verbosity
-may need increased (i.e. “verb 10” in the custom options) to see if this
+may need increased (i.e. "verb 10" in the custom options) to see if this
 is working. On **Status > OpenVPN** the internal routing for the OpenVPN
 server may also be viewed while the client is connected.
 

@@ -42,6 +42,6 @@ the query being answered by the firewall itself. Access to other DNS
 servers on port 53 is impossible.
 
 This could be adapted to allow access to only a specific set of DNS
-servers by changing the Destination network from “LAN Address” to an
+servers by changing the Destination network from "LAN Address" to an
 alias containing the allowed DNS servers. The **Invert match** box
 should remain checked.

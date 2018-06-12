@@ -11,7 +11,7 @@ This will commonly be used to drive 3G modems for wireless WAN access,
 but could also be used for controlling dialup modems.
 
 The parent interface of a PPP interface is a serial device. Check the
-:doc:`System Logs </monitoring/system-logs>` or the output of the “dmesg” command to
+:doc:`System Logs </monitoring/system-logs>` or the output of the "dmesg" command to
 see which serial device should be used.
 
 There are some pre-defined connection profiles available for cellular

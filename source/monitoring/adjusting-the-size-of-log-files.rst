@@ -5,7 +5,7 @@ Adjusting the Size of Log Files
 
 pfSense stores its logs in `binary circular log
 files <Why_can't_I_view_view_log_files_with_cat/grep/etc?_(clog)>`__
-that never grow in size. These are known as “clog” files. The fixed size
+that never grow in size. These are known as "clog" files. The fixed size
 prevents the logs from filling up available storage space and eliminates
 the need for rotation, but the down side is that the logs wrap around
 once full, losing older messages in the process. These log files are

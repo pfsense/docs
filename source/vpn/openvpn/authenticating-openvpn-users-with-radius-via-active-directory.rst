@@ -495,11 +495,11 @@ Change the cryptoapicert SUBJ
 Open *C:\\Program Files\\OpenVPN\\config\\config.ovpn* or *C:\\Program
 Files(x86)\\OpenVPN\\config\\config.ovpn* and change the line that says
 
-    cryptoapicert “SUBJ:”
+    cryptoapicert "SUBJ:"
 
 to
 
-    cryptoapicert “SUBJ:\ *vorkbaard*”
+    cryptoapicert "SUBJ:\ *vorkbaard*"
 
 ...replace *vorkbaard* by the user's actual username.
 
@@ -563,7 +563,7 @@ firewall instead of first starting OpenVPN and then starting the
 connection by right-clicking the shortcut and adding to the **Target**
 field:
 
-    --connect “Headquarters.ovpn”
+    --connect "Headquarters.ovpn"
 
 ...if *Headquarters.ovpn* is the name of the *.ovpn* file.
 

@@ -10,7 +10,7 @@ Systems <http://en.wikipedia.org/wiki/Network_monitoring>`__.
 
 At a minimum, to enable the service, set a **Polling Port** (Default is
 udp/161) and a **Read Community String**. It is strongly recommended
-that the **Read Community String** be changed, as the default “public”
+that the **Read Community String** be changed, as the default "public"
 value is a well-known default across vendors and may lead to unintended
 information leaks.
 
@@ -24,7 +24,7 @@ the number of modules also limits the amount of information that could
 be exposed via SNMP should the service be queried by an untrusted
 source.
 
-To get the latest set of MIBs for translating “enterprises” (Fokus) ,
+To get the latest set of MIBs for translating "enterprises" (Fokus) ,
 they are installed at /usr/share/snmp/mibs on the firewall itself.
 
 See Also

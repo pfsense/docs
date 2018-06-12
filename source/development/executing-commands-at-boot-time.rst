@@ -27,7 +27,7 @@ add a line such as the following::
 
   <shellcmd>mycommand -a -b -c 123</shellcmd>
 
-Where “mycommand -a -b -c 123” is the command to run. Multiple lines may
+Where "mycommand -a -b -c 123" is the command to run. Multiple lines may
 be added to execute multiple commands. Save the changes and restore the
 modified configuration.
 

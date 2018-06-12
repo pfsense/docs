@@ -78,7 +78,7 @@ that there is a 5:1 ratio of usage to prefer the faster WAN.
 Loss/Latency Thresholds
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Every WAN is different in how it operates “normally”. Some WANs have low
+Every WAN is different in how it operates "normally". Some WANs have low
 latency and no loss and are great, others perform normally even when
 there is some loss registered on the line or higher latency. These
 fields can be used to dial in link-appropriate values for what is
@@ -109,7 +109,7 @@ In a gateway group, each gateway is assigned to a tier to determine when
 it is used. The lower tier numbers are preferred. If any two gateways
 are on the same tier, they will load balance. If they are on different
 tiers, they will do failover preferring the lower tier. If the tier is
-set to “*Never*” then the gateway is not considered part of this group.
+set to "*Never*" then the gateway is not considered part of this group.
 
 Trigger Level
 ~~~~~~~~~~~~~

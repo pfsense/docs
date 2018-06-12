@@ -34,7 +34,7 @@ a /24 is enough for most configurations.
 
 This means that all connections will get an address from a global pool
 but they are useless unless access is allowed from that subnet in the
-firewall rules for the OpenVPN “interface”
+firewall rules for the OpenVPN "interface"
 
 Pick a subnet such as *10.33.250.0/24* which is not in use. This will be
 broken up into /30 mini subnets - one per client. If those run out, then
@@ -64,7 +64,7 @@ will be *10.33.127.4/30* and so on.
 -  **Description** - set to the Tunnel Network range, to make it easy to
    spot who has what
 -  **Tunnel Network** = last one allocated + 4 (see above)
--  **Advanced** - *push “route 10.33.x.0 255.255.255.0”;*
+-  **Advanced** - *push "route 10.33.x.0 255.255.255.0";*
 
 In the *route* above *x* is the customer network that this client may
 access.

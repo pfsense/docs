@@ -70,8 +70,8 @@ Known Issues
    Auth only). As this configuration is not valid nor a recommended
    practice, this issue is not considered a bug. When this condition is
    present only a single user can connect, additional users may see a
-   client log entry such as “CreateIpForwardEntry: The object already
-   exists”.
+   client log entry such as "CreateIpForwardEntry: The object already
+   exists".
 -  Firewall rules without an IP protocol set in the configuration which
    also have an ICMP type set may not load or display correctly.
    `#7299 <https://redmine.pfsense.org/issues/7299>`__
@@ -128,7 +128,7 @@ OpenVPN
    `#7136 <https://redmine.pfsense.org/issues/7136>`__
 -  Fixed display of disabled OpenVPN clients
    `#7180 <https://redmine.pfsense.org/issues/7180>`__
--  Fixed handling of “redirect-gateway” in Client-Specific Overrides
+-  Fixed handling of "redirect-gateway" in Client-Specific Overrides
    `#6633 <https://redmine.pfsense.org/issues/6633>`__
 
 IPsec
@@ -159,7 +159,7 @@ Interfaces
 -  Updated interface group name validation rules to match limits of the
    operating system
 -  Prevented interface group names, interface names, and aliases from
-   starting with “pkg\_” to reserve it for packages use (e.g. tinc)
+   starting with "pkg\_" to reserve it for packages use (e.g. tinc)
    `#7173 <https://redmine.pfsense.org/issues/7173>`__
 -  Added validation to prevent Interface Group Names from containing a
    dash `#7173 <https://redmine.pfsense.org/issues/7173>`__
@@ -175,8 +175,8 @@ Interfaces
    `#6732 <https://redmine.pfsense.org/issues/6732>`__
 -  Added validation to prevent adding duplicate gateways from the
    Interface configuration page
--  Fixed handling of IPv6 checksum options for “Disable hardware
-   checksum offload” `#5321 <https://redmine.pfsense.org/issues/5321>`__
+-  Fixed handling of IPv6 checksum options for "Disable hardware
+   checksum offload" `#5321 <https://redmine.pfsense.org/issues/5321>`__
 -  Fixed handling of the confirmation dialog when deleting a VLAN
    `#6916 <https://redmine.pfsense.org/issues/6916>`__
 -  Fixed handling of wireless MAC address spoofing
@@ -230,7 +230,7 @@ Firewall / Rules / NAT / Aliases / States
 -  Corrected the descriptions and behavior of the Adaptive Start and
    Adaptive End settings for firewall state handling
 -  Fixed display of the number of states in the Firewall Rules page
--  Moved “Any” to top of protocol list in firewall rules
+-  Moved "Any" to top of protocol list in firewall rules
 -  Fixed issues with hidden fields on firewall\_rules\_edit.php
    `#7057 <https://redmine.pfsense.org/issues/7057>`__
 -  Fixed issues with moving rules that required scrolling while dragging
@@ -245,7 +245,7 @@ Firewall / Rules / NAT / Aliases / States
 -  Fixed issues with **Firewall > NAT > Edit** forgetting destination
    type selection when input errors occur
    `#6224 <https://redmine.pfsense.org/issues/6224>`__
--  Removed “self” as a destination from NAT 1:1 rules
+-  Removed "self" as a destination from NAT 1:1 rules
 -  Fixed NAT rules so that when a port forward is disabled, its
    associated firewall rule is also disabled
    `#6472 <https://redmine.pfsense.org/issues/6472>`__
@@ -288,8 +288,8 @@ DHCP/DHCPv6 Server / Router Advertisements
 -  Updated the ISC DHCP Daemon to fix issues with missing hostnames in
    leases, and removed workarounds that are no longer needed
    `#6840 <https://redmine.pfsense.org/issues/6840>`__
--  Fixed reversed behavior of “Change DHCPv6 display lease time from UTC
-   to local time” `#6640 <https://redmine.pfsense.org/issues/6640>`__
+-  Fixed reversed behavior of "Change DHCPv6 display lease time from UTC
+   to local time" `#6640 <https://redmine.pfsense.org/issues/6640>`__
 -  Fixed incorrect index for edit action on DHCP Leases
    `#7233 <https://redmine.pfsense.org/issues/7233>`__
 -  Added an option to force a Dynamic DNS hostname in DHCP/DHCP6 Server
@@ -318,7 +318,7 @@ DHCP/DHCPv6 Server / Router Advertisements
    `#6930 <https://redmine.pfsense.org/issues/6930>`__
 -  Changed DHCP6 client to allow a prefix size of /59
 -  Changed DHCP6 server to allow a prefix size of /59 and /61
--  Added new “Ignore client identifiers” option to DHCP Server
+-  Added new "Ignore client identifiers" option to DHCP Server
 -  Fixed handling of DNS entries for IPv6 static mappings when using
    delegated prefixes
    `#6768 <https://redmine.pfsense.org/issues/6768>`__
@@ -335,7 +335,7 @@ DNS / Resolver / Forwarder
    `#6903 <https://redmine.pfsense.org/issues/6903>`__
 -  Fixed DNS Resolver (unbound) logging after clearing logs
    `#6915 <https://redmine.pfsense.org/issues/6915>`__
--  Added support for “deny\_non\_local” and “refuse\_non\_local” ACLs in
+-  Added support for "deny\_non\_local" and "refuse\_non\_local" ACLs in
    the DNS Resolver `#6914 <https://redmine.pfsense.org/issues/6914>`__
 -  Fixed DNS Server Gateway validation
 -  Changed behavior of DNS Resolver overrides to only add FQDN entries,
@@ -378,7 +378,7 @@ Captive Portal
    `#6786 <https://redmine.pfsense.org/issues/6786>`__
 -  Fixed handling of Captive Portal user bandwidth set to 0
    `#6872 <https://redmine.pfsense.org/issues/6872>`__
--  Changed Captive portal to send “Admin Reset” as termination cause
+-  Changed Captive portal to send "Admin Reset" as termination cause
    when disconnecting a user from the WebGUI
 -  Added option to Captive Portal to include idle time in total session
    time
@@ -480,7 +480,7 @@ Graphs / Monitoring
    `#6860 <https://redmine.pfsense.org/issues/6860>`__
 -  Added support for multiple views in Status > Monitoring graphs (Adds
    tab shortcuts to different graph views)
--  Added a per-view “Refresh Interval” option to Status > Monitoring
+-  Added a per-view "Refresh Interval" option to Status > Monitoring
    graphs
 -  Fixed fix null acronyms and axis label for queues/queuedrops graph in
    Status > Monitoring
@@ -498,7 +498,7 @@ WebGUI
 -  Improved Compact-RED theme
 -  Changed service running/stopped icons
 -  Fixed issues with JavaScript confirmation prompts missing words (e.g.
-   “Are you sure you wish to?”)
+   "Are you sure you wish to?")
    `#6972 <https://redmine.pfsense.org/issues/6972>`__
 -  Fixed issues with packages that toggle visibility of advanced options
    areas `#7100 <https://redmine.pfsense.org/issues/7100>`__
@@ -507,7 +507,7 @@ WebGUI
    `#7043 <https://redmine.pfsense.org/issues/7043>`__
 -  Fixed display of Package installation message
    `#7226 <https://redmine.pfsense.org/issues/7226>`__
--  Fixed “” tag processing in package XML handling
+-  Fixed "" tag processing in package XML handling
 -  Fixed inconsistent handling of empty/null configuration settings in
    config.xml `#6893 <https://redmine.pfsense.org/issues/6893>`__
 
@@ -531,12 +531,12 @@ Misc
 -  Updated simplepie (RSS Parsing library) to 1.4.3
 -  Fixed storing of IPv6 addresses so they are always saved in lower
    case `#6864 <https://redmine.pfsense.org/issues/6864>`__
--  Fixed bsnmpd “printcap” log errors
+-  Fixed bsnmpd "printcap" log errors
    `#6838 <https://redmine.pfsense.org/issues/6838>`__
 -  Fixed a foreach error when restoring a configuration without packages
 -  Fixed handling of signal traps in the console menu
    `#6741 <https://redmine.pfsense.org/issues/6741>`__
--  Fixed “Goto line #” action on diag\_edit.php so pressing the enter
+-  Fixed "Goto line #" action on diag\_edit.php so pressing the enter
    key also activates the function
 -  Changed the PHP Execute feature of Diagnostics > Command so that it
    does not generate a crash report from a syntax error

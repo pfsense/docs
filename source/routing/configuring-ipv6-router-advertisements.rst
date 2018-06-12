@@ -25,7 +25,7 @@ this firewall as a router for IPv6. The following modes are available:
    both).
 
 In either Managed or Assisted mode, it is not required to activate the
-DHCPv6 server on this firewall when set to “Managed”. DHCPv6 service can
+DHCPv6 server on this firewall when set to "Managed". DHCPv6 service can
 be offered by another host on the network. This flag tells clients to
 request an address separately.
 

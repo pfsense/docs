@@ -3,7 +3,7 @@
 Show Source Tracking
 ====================
 
-The list of active **Source Tracking** (“sticky”) states may be viewed
+The list of active **Source Tracking** ("sticky") states may be viewed
 at **Diagnostics > States** on the **Source Tracking** tab.
 
 This list contains all currently active Source Tracking states, with

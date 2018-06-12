@@ -147,7 +147,7 @@ wrong pfSense normally won't even see the packet, as the Ethernet
 hardware internally throws away the packet (though there are exceptions,
 such as when the interface is in promiscuous mode).
 
-Higher-level checksums are “traditionally” calculated by the protocol
+Higher-level checksums are "traditionally" calculated by the protocol
 implementation and the completed packet is then handed over to the
 hardware. Recent network hardware can perform the IP checksum
 calculation, also known as checksum offloading. The network driver won't
@@ -159,10 +159,10 @@ but this isn't of value on a router.
 
 It's possible, when everything else is right, that IP checksum
 offloading can provide a modest performance improvement, but this is
-unlikely to be more than “noticeable” with the traffic processed by most
+unlikely to be more than "noticeable" with the traffic processed by most
 pfSense installations. However, at 10Gbps or above, such offloading can
 become quite useful. Support for these is an important component of the
-pfSense “3.0” effort.
+pfSense "3.0" effort.
 
 Defaults
 ~~~~~~~~

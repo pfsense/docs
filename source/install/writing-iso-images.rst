@@ -20,7 +20,7 @@ Burning in Windows
 Virtually every major disc burning software package for Windows includes
 the ability to burn ISO images. Refer to the documentation of the disc
 burning program being used. A Google search with the name of the
-software and “burn iso” should help to locate instructions.
+software and "burn iso" should help to locate instructions.
 
 Burning with Nero
 ~~~~~~~~~~~~~~~~~

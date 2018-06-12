@@ -93,13 +93,13 @@ internally.
 BIOS/Disk Errors
 ----------------
 
-- If after installation, a “cannot load kernel” error is observed, or
+- If after installation, a "cannot load kernel" error is observed, or
   the firewall hangs at the spinner (/):
 
   - Make sure BIOS is up to date
   - Reinstall but do not check the packet mode option during boot
     block installation process
-  - Set the HDD mode in BIOS to LBA (don't use “auto”, the detected
+  - Set the HDD mode in BIOS to LBA (don't use "auto", the detected
     geometry is different if it is set to auto and it fails)
   - Set the HDD mode in BIOS to CHS if the above fails
   - Set AHCI mode in the BIOS
@@ -335,17 +335,17 @@ To make the change permanent, add the following line to
 
   kern.cam.ada.write_cache=0
 
-“Fake” RAID cards with a GRAID error
+"Fake" RAID cards with a GRAID error
 ------------------------------------
 
-Certain “fake” RAID cards, driver/software-based RAID adapters that are
+Certain "fake" RAID cards, driver/software-based RAID adapters that are
 not true hardware RAID, may fail to mount properly with the following
 error::
 
   Root mount waiting for: GRAID
   mountroot>
 
-Another symptom can be that “Intel RAID” messages are shown during the
+Another symptom can be that "Intel RAID" messages are shown during the
 boot sequence, and typing ? at the mountroot prompt it only shows the
 drive itself and no partitions::
 

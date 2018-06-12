@@ -23,8 +23,8 @@ of subnets configured for use in OpenVPN must be disabled. IPsec and
 OpenVPN do not conflict otherwise.
 
 The way OpenVPN works is that one end of the tunnel needs to be the
-“server” and the other the “client”, it does not matter which, though if
-there is more than one remote site, the main “hub” site should be the
+"server" and the other the "client", it does not matter which, though if
+there is more than one remote site, the main "hub" site should be the
 server. If one site has a dynamic IP address and the other has a static
 IP address, then the static IP address end should be the server.
 
@@ -69,8 +69,8 @@ port first.
 the VPN can be selected from a list, such as **Status > Services**, or
 **Diagnostics > Packet Capture**.
 
-**Shared key** : The keys can be made in the GUI. Check “Automatically
-generate a shared key.”, and when the settings are saved, a key will be
+**Shared key** : The keys can be made in the GUI. Check "Automatically
+generate a shared key.", and when the settings are saved, a key will be
 generated. Then copy/paste the key into the client.
 
 **Encryption algorithm** : This setting must match on both sides. Any of

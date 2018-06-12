@@ -26,14 +26,14 @@ considerably for I actually would need less than 10 ports open for RTP.
 Configure the WAN IP Address
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Also be sure to specify “externip” or “externhost” in sip.conf. I
+Also be sure to specify "externip" or "externhost" in sip.conf. I
 personally have externhost configured to a dyndns.org account that
 resolves to my WAN IP address.
 
 Configure NAT
 ~~~~~~~~~~~~~
 
-Make sure you have “nat=yes” and “canreinvite=no” in sip.conf
+Make sure you have "nat=yes" and "canreinvite=no" in sip.conf
 
 Configure your local network
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -48,7 +48,7 @@ Configure your SIP context
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In your SIP provider's context in sip.conf, make sure you have
-“outboundproxy=192.168.1.1”, replacing 192.168.1.1 with whatever your
+"outboundproxy=192.168.1.1", replacing 192.168.1.1 with whatever your
 pfSense running siproxd IP address is. Here is my example context for
 use with BroadVoice:
 
@@ -118,7 +118,7 @@ The SIP Proxy siproxd
 Install siproxd
 ~~~~~~~~~~~~~~~
 
-Go to the pfSense web UI and going to System -> Packages. Hit the “+”
+Go to the pfSense web UI and going to System -> Packages. Hit the "+"
 button to the right of siproxd and let pfSense install the SIP proxy.
 
 Configure siproxd
@@ -126,7 +126,7 @@ Configure siproxd
 
 Go back to the main pfSense web UI page then go to Services -> siproxd.
 It may be under Services -> SIP Proxy as well. Here is how I have my
-siproxd configured, be sure to change your “Outbound Proxy Hostname” to
+siproxd configured, be sure to change your "Outbound Proxy Hostname" to
 the hostname or IP (IP in my case) to your SIP provider. Options I don't
 specify here I leave blank or default.
 
@@ -143,7 +143,7 @@ Summary
 Basically when you make a call your Asterisk box will talk to the SIP
 proxy, the SIP proxy will then talk to your VoIP provider. When you
 receive a call your VoIP provider will talk directly with your Asterisk
-box (this is important for setting “externip” or “externhost” in
+box (this is important for setting "externip" or "externhost" in
 sip.conf).
 
 And that's it! That is how my Asterisk/siproxd is configured and has

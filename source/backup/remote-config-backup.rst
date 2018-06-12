@@ -18,7 +18,7 @@ Pull it
 2.3.3 and Later
 ^^^^^^^^^^^^^^^
 
-Changes to the diag\_backup.php “Download” button on 2.3.3 and later
+Changes to the diag\_backup.php "Download" button on 2.3.3 and later
 require a slight adjustment compared to previous versions.
 
 - Fetch the login form and save the cookies and CSRF token::
@@ -92,7 +92,7 @@ configuration. CURL may also be used.
 Backing up RRD
 ^^^^^^^^^^^^^^
 
-To have RRD contents included in the backup, omit the “donotbackuprrd”
+To have RRD contents included in the backup, omit the "donotbackuprrd"
 variable and its value from the backup URL.
 
 Push it

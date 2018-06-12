@@ -17,7 +17,7 @@ tab.
 Automatic Outbound NAT
 ----------------------
 
-The default “Automatic” scenario is to have all traffic that enters from
+The default "Automatic" scenario is to have all traffic that enters from
 a LAN (or LAN type) interface to have NAT applied so it is translated to
 the WAN IP address before it leaves.
 
@@ -104,7 +104,7 @@ Limitations
 ^^^^^^^^^^^
 
 Only Round Robin types work with Host Aliases. Any type can be used with
-a Proxy ARP or “Other Subnet” pool.
+a Proxy ARP or "Other Subnet" pool.
 
 Disable NAT
 -----------
@@ -139,8 +139,8 @@ Disable NAT and Firewall
 ------------------------
 
 To completely disable NAT **and all firewall functions from all
-interfaces**, do the following. Note that the previous section (“Disable
-NAT”) is skipped when taking this approach.
+interfaces**, do the following. Note that the previous section ("Disable
+NAT") is skipped when taking this approach.
 
 #. Navigate to **System > Advanced**, **Firewall / NAT** tab
 #. Check **Disable Firewall / Disable all packet filtering**

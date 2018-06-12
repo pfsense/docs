@@ -7,7 +7,7 @@ IPsec mobile client settings (**VPN > IPsec**, **Mobile clients** tab)
 control how remote IPsec users will connect without a defined remote
 peer address.
 
-Normally, this includes “road warrior” style clients, but may also
+Normally, this includes "road warrior" style clients, but may also
 include routers in some rare cases.
 
 The IPsec mobile client system supports extended authentication (xauth),

@@ -9,7 +9,7 @@ General Issues
 mbuf / nmbclusters
 ------------------
 
-To oversimplify, “mbufs” are network memory buffers; portions of RAM set
+To oversimplify, "mbufs" are network memory buffers; portions of RAM set
 aside for use by networking for moving data around.
 
 The count of active mbufs is shown on the dashboard and is tracked by a
@@ -79,7 +79,7 @@ MSI/MSIX
 Interrupts <http://en.wikipedia.org/wiki/Message_Signaled_Interrupts>`__
 are an alternative to classic style Interrupts for retrieving data from
 hardware. Some cards behave better with MSI, MSIX, or classic style
-Interrupts, but the card will try the “best” available choice (MSIX,
+Interrupts, but the card will try the "best" available choice (MSIX,
 then MSI, then Interrupts).
 
 MSIX and MSI can be disabled via loader tunables. In
@@ -127,7 +127,7 @@ tunables::
 Broadcom bge(4) Cards
 ---------------------
 
-See above, but change “bce” to “bge” in the setting names.
+See above, but change "bce" to "bge" in the setting names.
 
 Intel igb(4) and em(4) Cards
 ----------------------------

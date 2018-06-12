@@ -53,7 +53,7 @@ Check Firewall Boot Partition
 -  Look at **Bootup Slice**
 
    -  Note the disk name, which is the part before 's1' or 's2'. This
-      may be *ada0*, *da0*, or something else entirely. Wherever “XXX”
+      may be *ada0*, *da0*, or something else entirely. Wherever "XXX"
       appears later in this article, use this disk name instead.
    -  If **Bootup Slice** ends in *s1* then skip to the next section
    -  If **Bootup Slice** ends in *s2* then the firewall is booting from

@@ -48,7 +48,7 @@ per-host options which can be sent as well.
 Deny Unknown Clients / Static ARP
 ---------------------------------
 
-Using the “Deny unknown clients” option, DHCP access can be prevented
+Using the "Deny unknown clients" option, DHCP access can be prevented
 for any client which is not listed in the list at the bottom of the
 page. Similarly, Static ARP may also be enabled to further restrict
 access so that only those clients listed can talk to the pfSense router.

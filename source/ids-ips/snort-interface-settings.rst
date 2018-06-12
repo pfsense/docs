@@ -65,7 +65,7 @@ Snort interface by selecting the appropriate list in the drop-down
 selector.
 
 **Pass List:** selects the networks and IP addresses that Snort will
-never block. These represent “trusted hosts”. Even if a trusted host
+never block. These represent "trusted hosts". Even if a trusted host
 generates a Snort alert, it will not be blocked if the IP address is on
 a Pass List. The default Pass List contains the same addresses as
 HOME\_NET. Create additional pass lists on the IP LISTS tab, and then

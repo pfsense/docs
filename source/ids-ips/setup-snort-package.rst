@@ -235,7 +235,7 @@ might be done when trusted external hosts exist that are not located on
 networks directly connected to the firewall. To add external hosts in
 this manner, first create an Alias under **Firewall > Aliases** and then
 assign that alias to the **Assigned Aliases** field. In the example
-shown below, the alias “*Friendly\_ext\_hosts*” has been assigned. This
+shown below, the alias "*Friendly\_ext\_hosts*" has been assigned. This
 alias would contain the IP addresses of the trusted external hosts.
 
 When creating a custom Pass List, leave all the auto-generated IP

@@ -14,7 +14,7 @@ Packages for pfSense 2.3 are built from files in the pfSense copy of the
 repository, not from the older pfSense-packages repository.
 
 pfSense packages contain the files needed for the package to operate and
-also act as “meta” ports that include the proper dependencies to pull in
+also act as "meta" ports that include the proper dependencies to pull in
 binary packages if needed. See :doc:`Package Port Directory Structure </development/package-port-directory-structure>`
 for more information on the new package port structure. And
 :doc:`Developing Packages </development/developing-packages>` for general information on

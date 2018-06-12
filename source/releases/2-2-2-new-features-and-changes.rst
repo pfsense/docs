@@ -28,7 +28,7 @@ Rules / NAT
    recommended, violates RFC 3927.
 
 -  Fixed invalid ruleset generation when using port forwards with
-   destination “any” on a DHCP client WAN-type interface, have pure NAT
+   destination "any" on a DHCP client WAN-type interface, have pure NAT
    mode reflection enabled, and have the interface with link up but
    unable to reach a DHCP server for an extended period.
    `#4564 <https://redmine.pfsense.org/issues/4564>`__
@@ -49,7 +49,7 @@ Rules / NAT
 IPsec
 -----
 
--  Enforce disabling of “prefer old SAs” option. When the GUI
+-  Enforce disabling of "prefer old SAs" option. When the GUI
    configuration checkbox was removed in 2.2.1, it fell through to the
    default of the underlying software in many cases, leaving the option
    enabled instead of disabled. Having this option enabled will cause
@@ -75,7 +75,7 @@ IPsec
 DNS Forwarder/Resolver
 ----------------------
 
--  Fix DNS registration of hostname “0”
+-  Fix DNS registration of hostname "0"
    `#4573 <https://redmine.pfsense.org/issues/4573>`__
 
 -  Domain overrides to multiple server IPs are possible in DNS Resolver.
@@ -96,9 +96,9 @@ Wireless
 -  Wireless cards removed from ALTQ-capable interfaces (traffic shaper
    capability) since that isn't supported at the moment.
    `#4406 <https://redmine.pfsense.org/issues/4406>`__
--  New option “auto” added for Standard. This omits configuring mode
+-  New option "auto" added for Standard. This omits configuring mode
    with ifconfig, which currently can trigger driver problems that don't
-   exist when not specified. Standard “auto” is preferred, and possibly
+   exist when not specified. Standard "auto" is preferred, and possibly
    required, for BSS and IBSS wireless modes with Atheros cards (at a
    minimum, potentially others).
 
@@ -110,7 +110,7 @@ IPv6
    configuration file.
 -  DHCPv6 Relay fixed.
    `#4572 <https://redmine.pfsense.org/issues/4572>`__
--  Allow “0” for id-assoc na ID, id-assoc pd ID, sla-id and sla-len
+-  Allow "0" for id-assoc na ID, id-assoc pd ID, sla-id and sla-len
    DHCP6 configuration options.
    `#4547 <https://redmine.pfsense.org/issues/4547>`__
 -  Fix the use of multiple prefixes in IPv6 router advertisements.
@@ -142,9 +142,9 @@ Other
 -  Show friendly name of the interface on custom RRD graph drop-down
    selection
 -  PHP upgraded to 5.5.23
--  Prevent a user from adding a VLAN using the invalid ID “0”
+-  Prevent a user from adding a VLAN using the invalid ID "0"
 -  Cleanup display of times in DHCP leases
--  Use the correct field for voucher “expired” and “no access” messages
+-  Use the correct field for voucher "expired" and "no access" messages
 -  Fix traffic shaper wizard bandwidth input validation calculations
    [https://redmine.pfsense.org/issues/4259 #4259
 -  Changed Diagnostics > Sockets to display sockets bound to localhost

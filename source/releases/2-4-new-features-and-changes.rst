@@ -26,7 +26,7 @@ Operating System / Architecture changes
       hardware, see :doc:`/hardware/boot-troubleshooting`
    -  The installer now supports ZFS
    -  Added support to the new installer to copy an existing config.xml
-      off an MS DOS formatted USB drive (formerly known as “PFI”)
+      off an MS DOS formatted USB drive (formerly known as "PFI")
       `#7689 <https://redmine.pfsense.org/issues/7689>`__
    -  Added support to the new installer to optionally recover
       config.xml off an existing installation drive (works with UFS and
@@ -135,13 +135,13 @@ Firewall / Rules / NAT / Aliases
 -  Fixed issues with limiters used in conjunction with a transparent
    proxy or other local redirect rule
    `#7050 <https://redmine.pfsense.org/issues/7050>`__
--  Fixed expansion of “Other” type VIP subnet entries in NAT destination
+-  Fixed expansion of "Other" type VIP subnet entries in NAT destination
    drop-down selections
    `#6094 <https://redmine.pfsense.org/issues/6094>`__
 -  Fixed NAT rules so that when a port forward is disabled, its
    associated firewall rule is also disabled
    `#6472 <https://redmine.pfsense.org/issues/6472>`__
--  Fixed handling of “URL Table (IPs)” and “URL (IPs)” when the file is
+-  Fixed handling of "URL Table (IPs)" and "URL (IPs)" when the file is
    hosted a server using HTTPS with a self-signed certificate
    `#4766 <https://redmine.pfsense.org/issues/4766>`__
 -  Show firewall rule descriptions in a column when viewing the log on
@@ -192,18 +192,18 @@ OpenVPN
       type. This encrypts the control channel, providing privacy and
       protocol obfuscation
       `#7071 <https://redmine.pfsense.org/issues/7071>`__
-   -  Added ECDH options to OpenVPN server and client options (“ECDH
-      Only” choice for DH, ECDH Curve selection)
+   -  Added ECDH options to OpenVPN server and client options ("ECDH
+      Only" choice for DH, ECDH Curve selection)
       `#7063 <https://redmine.pfsense.org/issues/7063>`__
    -  Restructured the compression options to include LZ4 support and
-      the new “compress” directive which replaces “comp-lzo” which has
+      the new "compress" directive which replaces "comp-lzo" which has
       been deprecated. The old options remain for now, but are labeled
-      “Legacy” `#7064 <https://redmine.pfsense.org/issues/7064>`__
+      "Legacy" `#7064 <https://redmine.pfsense.org/issues/7064>`__
    -  Changed protocol selection for OpenVPN clients and servers because
-      OpenVPN 2.4 treats “udp” and “tcp” as dual stack now
+      OpenVPN 2.4 treats "udp" and "tcp" as dual stack now
       `#7062 <https://redmine.pfsense.org/issues/7062>`__
 
-      -  Added “multihome” option in relevant protocol cases so OpenVPN
+      -  Added "multihome" option in relevant protocol cases so OpenVPN
          will reply back using the address used to receive a packet
          `#7062 <https://redmine.pfsense.org/issues/7062>`__
 
@@ -212,12 +212,12 @@ OpenVPN
       `#7061 <https://redmine.pfsense.org/issues/7061>`__
    -  Added IPv6 support to status\_openvpn.php and the OpenVPN widget
       `#2766 <https://redmine.pfsense.org/issues/2766>`__
-   -  Removed uses of the deprecated “tun-ipv6” OpenVPN directive,
+   -  Removed uses of the deprecated "tun-ipv6" OpenVPN directive,
       OpenVPN now always assumes IPv6 is enabled
       `#7054 <https://redmine.pfsense.org/issues/7054>`__
-   -  Replaced uses of the deprecated “client-cert-not-required”
-      directive with its functional replacement “verify-client-cert
-      none” `#7073 <https://redmine.pfsense.org/issues/7073>`__
+   -  Replaced uses of the deprecated "client-cert-not-required"
+      directive with its functional replacement "verify-client-cert
+      none" `#7073 <https://redmine.pfsense.org/issues/7073>`__
    -  Added support for Negotiable Crypto Parameters (NCP) to control
       automatic cipher selection between clients and servers
       `#7072 <https://redmine.pfsense.org/issues/7072>`__
@@ -239,15 +239,15 @@ OpenVPN
 -  Check OpenVPN server/client option visibility changes per mode
    `#7331 <https://redmine.pfsense.org/issues/7331>`__
    `#7451 <https://redmine.pfsense.org/issues/7451>`__
--  Added an OpenVPN GUI option for “fast-io” to clients and servers
+-  Added an OpenVPN GUI option for "fast-io" to clients and servers
    `#7507 <https://redmine.pfsense.org/issues/7507>`__
--  Added an OpenVPN GUI Option for “sndbuf” and “rcvbuf”, using the same
+-  Added an OpenVPN GUI Option for "sndbuf" and "rcvbuf", using the same
    value for both `#7507 <https://redmine.pfsense.org/issues/7507>`__
 -  Removed references to the defunct OpenVPN client manager port
    `#7568 <https://redmine.pfsense.org/issues/7568>`__
--  Removed references to unused “Address Pool” setting in OpenVPN
+-  Removed references to unused "Address Pool" setting in OpenVPN
    `#7567 <https://redmine.pfsense.org/issues/7567>`__
--  Fixed OpenVPN server port validation to disallow “0”, while still
+-  Fixed OpenVPN server port validation to disallow "0", while still
    allowing it for a client port, which is the same meaning as
    blank/empty `#7565 <https://redmine.pfsense.org/issues/7565>`__
 -  Fixed OpenVPN help text for route\_no\_exec
@@ -255,7 +255,7 @@ OpenVPN
 -  Fixed description of the address assignment behavior for Tunnel
    Network fields in OpenVPN clients and servers
    `#7573 <https://redmine.pfsense.org/issues/7573>`__
--  Remove the GUI option for “resolv-retry infinite” from OpenVPN, it is
+-  Remove the GUI option for "resolv-retry infinite" from OpenVPN, it is
    always enabled `#7572 <https://redmine.pfsense.org/issues/7572>`__
 -  Fixed the OpenVPN wizard so it better handles a user choosing a
    different type of authentication server than a previous run of the
@@ -278,7 +278,7 @@ IPsec
 
 -  Upgraded strongSwan to version 5.6.0
 -  Changed the default strongSwan logging levels such that IKE SA, IKE
-   Child SA, and Configuration Backend all default to “Diag”
+   Child SA, and Configuration Backend all default to "Diag"
    `#7007 <https://redmine.pfsense.org/issues/7007>`__
 -  Added an option to set the Rekey Margin for IPsec tunnels in the
    Phase 1 settings
@@ -306,7 +306,7 @@ Certificate Management
 -  Fixed handling of Certificate Authority deletion so that it does not
    remove associated certificates
    `#6947 <https://redmine.pfsense.org/issues/6947>`__
--  Added “in-use” testing for Certificate Authority entries and disabled
+-  Added "in-use" testing for Certificate Authority entries and disabled
    the delete action for CAs which are actively in use
    `#6947 <https://redmine.pfsense.org/issues/6947>`__
 -  Fixed choosing an existing user certificate when adding a certificate
@@ -326,11 +326,11 @@ Certificate Management
       signing using the certificate manager
    -  NOTE: Attributes such as SANs and KU/EKU cannot be copied from a
       CSR when signing due to a deficiency in OpenSSL's x509 functions
-      (they do not support “copy\_extensions” at this time); These
+      (they do not support "copy\_extensions" at this time); These
       attributes must be specified manually when signing
 
--  Fixed “server” certificate detection to key off of the EKU For “TLS
-   Web Server Authentication” since nsCertType has been deprecated
+-  Fixed "server" certificate detection to key off of the EKU For "TLS
+   Web Server Authentication" since nsCertType has been deprecated
 -  Added SAN, KU, and EKU information in an info block for each entry in
    the the certificate list
    `#7505 <https://redmine.pfsense.org/issues/7505>`__
@@ -408,7 +408,7 @@ Captive Portal
 
 -  Adapted Captive Portal to work without multi-instance ipfw patches
    `#6606 <https://redmine.pfsense.org/issues/6606>`__
--  Fixed Captive Portal instances to select “No Authentication” for a
+-  Fixed Captive Portal instances to select "No Authentication" for a
    zone by default, since it is the default behavior
    `#7591 <https://redmine.pfsense.org/issues/7591>`__
 -  Fixed links to the Captive Portal MAC management page so they include
@@ -419,13 +419,13 @@ XMLRPC
 
 -  Switched to pear-XML\_RPC2 and removed the outdated static client
    files
--  Fixed handling of XMLRPC sync using a username other than “admin”
+-  Fixed handling of XMLRPC sync using a username other than "admin"
    `#809 <https://redmine.pfsense.org/issues/809>`__
 
 Routing/Gateways
 ----------------
 
--  Removed “route change” patches and updated code that relied on the
+-  Removed "route change" patches and updated code that relied on the
    deprecated behavior
    `#6828 <https://redmine.pfsense.org/issues/6828>`__
 -  Fixed handling of default routes when a default gateway is removed or
@@ -482,7 +482,7 @@ Interfaces / Virtual IP Addresses
 NTP
 ---
 
--  Added support for the ntpd “pool” directive to make better use of
+-  Added support for the ntpd "pool" directive to make better use of
    servers in NTP pools
    `#5985 <https://redmine.pfsense.org/issues/5985>`__
 -  Fixed time display on the NTP widget to show server time
@@ -512,7 +512,7 @@ User Management / Authentication
    `#7587 <https://redmine.pfsense.org/issues/7587>`__
 -  Added a log message if a user tries to save the configuration but has
    the 'deny config write' permission
--  Added “auth\_check” type of simple test that a page can use to verify
+-  Added "auth\_check" type of simple test that a page can use to verify
    a user is logged in and has access, using less cpu, which is better
    for AJAX data polling
 -  Fixed certificate chain verification issues with LDAP authentication
@@ -587,7 +587,7 @@ WebGUI
    different platforms
 -  Completed work to mark required fields on GUI pages
    `#7160 <https://redmine.pfsense.org/issues/7160>`__
--  Fixed long hostnames overlapping the “time” title in the monitoring
+-  Fixed long hostnames overlapping the "time" title in the monitoring
    graphs `#6138 <https://redmine.pfsense.org/issues/6138>`__
 -  Fixed CIDR/Prefix selector handling for IPv4/IPv6
    `#7625 <https://redmine.pfsense.org/issues/7625>`__
@@ -618,7 +618,7 @@ Dashboard
    `#7122 <https://redmine.pfsense.org/issues/7122>`__
 -  Added customization for dashboard widget names
 -  Fixed Interface Statistics dashboard widget issues with interfaces in
-   a “down” state
+   a "down" state
 -  Fixed formatting issues with the Interface Statistics dashboard
    widget `#7501 <https://redmine.pfsense.org/issues/7501>`__
 -  Added the ability to place multiple copies of widgets on the
@@ -653,8 +653,8 @@ Dashboard
 pftop
 -----
 
--  Removed the “size” option from pftop as it had no effect, use the
-   “bytes” option instead
+-  Removed the "size" option from pftop as it had no effect, use the
+   "bytes" option instead
    `#7579 <https://redmine.pfsense.org/issues/7579>`__
 -  Removed the 'peak' and 'rate' views for pftop since they only work in
    interactive mode with cached data, not batch mode which is used by
@@ -717,7 +717,7 @@ Misc
    `#6748 <https://redmine.pfsense.org/issues/6748>`__
 -  Fixed various issues when the configuration backup count was set to 0
    (disabled) `#7273 <https://redmine.pfsense.org/issues/7273>`__
--  Fixed handling of “0” for the number of backups to retain in the
+-  Fixed handling of "0" for the number of backups to retain in the
    configuration history
    `#7273 <https://redmine.pfsense.org/issues/7273>`__
 -  Fixed an issue with long configuration change descriptions leading to

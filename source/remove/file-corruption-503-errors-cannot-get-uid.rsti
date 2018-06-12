@@ -14,8 +14,8 @@ messages such as one or more of the following:
 | ``Warning: chown(): Unable to find uid for nobody in /etc/inc/rrd.inc on line 289``
 
 The web interface on the firewall will also be inaccessible when this
-problem is present; Attempting to access the GUI results in a “503 -
-Service Not Available” error.
+problem is present; Attempting to access the GUI results in a "503 -
+Service Not Available" error.
 
 Resolving the Problem
 ---------------------

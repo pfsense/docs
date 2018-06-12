@@ -70,6 +70,6 @@ if used, TLS key files. It does not appear to accept .p12 files
 containing the CA and client certificate/keys.
 
 If attempting to import a previously exported inline style config, first
-edit the file and remove any lines containing “[inline]” and also
-“tls-remote”. It should then be possible to import the configuration
+edit the file and remove any lines containing "[inline]" and also
+"tls-remote". It should then be possible to import the configuration
 file.

@@ -4,7 +4,7 @@ Using Wake on LAN
 =================
 
 The Wake on LAN (WoL) service, at **Services > Wake on LAN**, can send a
-“magic packet” to a workstation on a locally connected network which
+"magic packet" to a workstation on a locally connected network which
 will power on a workstation if it is configured properly.
 
 To send a WoL magic packet, pick the **Interface**, enter a **MAC

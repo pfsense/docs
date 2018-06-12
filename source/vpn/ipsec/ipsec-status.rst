@@ -21,7 +21,7 @@ SAD Tab
 -------
 
 Shows the contents of the IPsec Security Association Database. There
-should be one for each “direction” between *public peer addresses* of an
+should be one for each "direction" between *public peer addresses* of an
 active IPsec tunnel.
 
 SPD Tab

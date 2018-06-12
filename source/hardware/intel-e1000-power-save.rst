@@ -3,8 +3,8 @@
 Intel e1000 power save
 ======================
 
-From Paul M in a post to support@, in reference to “em0: Watchdog
-timeout -- resetting” problem.
+From Paul M in a post to support@, in reference to "em0: Watchdog
+timeout -- resetting" problem.
 
 .. pull-quote::
 
@@ -21,7 +21,7 @@ timeout -- resetting” problem.
    a copy here:
    http://www.zaurus.org.uk/download/scripts/fixeep-82573-dspd.sh
    
-   if you have the problem on linux you get “detected tx unit hang”
+   if you have the problem on linux you get "detected tx unit hang"
    thus:
    http://sourceforge.net/tracker/index.php?func=detail&aid=1463045&group_id=42302&atid=447449
 

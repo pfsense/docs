@@ -43,7 +43,7 @@ the id of the next available md device, like so:
 | ``# mdconfig -f pfSense-2.1.5-RELEASE-2g-amd64-nanobsd.img``
 | ``md0``
 
-N.B.: When using -f, options “-a -t vnode” are assumed and are not
+N.B.: When using -f, options "-a -t vnode" are assumed and are not
 needed.
 
 (Optional) Confirm that the md device is present as expected:

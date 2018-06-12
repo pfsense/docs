@@ -136,7 +136,7 @@ NAT/Firewall Rules/Aliases
 -  Load only the options rather than clearing the whole ruleset.
 -  Validate IP address ranges correctly on Alias Bulk Import
 -  Fix display of CIDR/Update Freq in Alias Edit
--  In the filter log, the protocol might also say “icmpv6” so account
+-  In the filter log, the protocol might also say "icmpv6" so account
    for that when making a rule using Easy Rule.
 -  Move 'allow dhcpv6 client' rules above block bogonsv6 ones.
    `#3395 <http://redmine.pfsense.org/issues/3395>`__
@@ -211,7 +211,7 @@ Dashboard & General GUI
    to unintentional edits to the wrong account.
 -  Add specific privilege for easyrule.
 -  Return all stats when all or remote is selected on Traffic Graph and
-   make the default query return “Local” traffic.
+   make the default query return "Local" traffic.
 -  Update year, links for 2.1.1.
 
 Captive Portal
@@ -287,9 +287,9 @@ Certificates
 -  Perform a much more accurate comparison between two certificates to
    determine if they are identical when checking their revocation
    status. `#3237 <http://redmine.pfsense.org/issues/3237>`__
--  Allow an “empty” CRL to be exported, since this is still a valid
+-  Allow an "empty" CRL to be exported, since this is still a valid
    action.
--  Fixes for “Alternative Names” on certificates.
+-  Fixes for "Alternative Names" on certificates.
 -  Fix issue with CSR generation.
    `#2820 <http://redmine.pfsense.org/issues/2820>`__
 -  Increase default openssl to bits 2048.
@@ -339,16 +339,16 @@ Time
 -  Add 'limited' to ntpd restrict list to workaround
    FreeBSD-SA-14:02.ntpd/CVE-2013-5211.
    `#3384 <http://redmine.pfsense.org/issues/3384>`__
--  Use “disable monitor” in NTP config to mitigate
+-  Use "disable monitor" in NTP config to mitigate
    FreeBSD-SA-14:02.ntpd/CVE-2013-5211.
 -  Update ntp to ntp-devel for FreeBSD-SA-14:02.ntpd/CVE-2013-5211.
--  Avoid placing an empty “interface listen” directive in ntpd.conf.
+-  Avoid placing an empty "interface listen" directive in ntpd.conf.
 
 Misc
 ----
 
 -  Fix ALIX upgrade crash during RRD processing
--  Fix “Could not open shared memory for read 1000” issue on Diagnostics
+-  Fix "Could not open shared memory for read 1000" issue on Diagnostics
    > NanoBSD. `#3235 <http://redmine.pfsense.org/issues/3235>`__
 -  Fix ufslabels.sh logic to avoid trying to convert slices which are
    already using appropriate labels. Fixes
@@ -364,7 +364,7 @@ Misc
    effectively over a VPN.
    `#355 <http://redmine.pfsense.org/issues/355>`__
 -  Rework the usage of the shell i/o during stop\_packages(), fixes the
-   “Syntax error: bad fd number” for the remaining people who still saw
+   "Syntax error: bad fd number" for the remaining people who still saw
    it on shutdown
 -  Switch to rw mode before file operations on RFC2136 cache. Fixes
    `#3201 <http://redmine.pfsense.org/issues/3201>`__

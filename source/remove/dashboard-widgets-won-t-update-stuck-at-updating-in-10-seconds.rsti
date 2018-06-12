@@ -3,7 +3,7 @@ Dashboard widgets won't update (Stuck at "Updating in 10 seconds")
 
 When upgrading between major versions of pfSense, a condition can occur
 leading to the Dashboard widgets not updating properly. The most obvious
-symptom is the CPU activity being stuck saying “Updating in 10 seconds”.
+symptom is the CPU activity being stuck saying "Updating in 10 seconds".
 
 There are three ways this can happen.
 
@@ -18,7 +18,7 @@ To fix this issue, look for the file
 /usr/local/www/javascript/index/sajax.js - If it is present on a system
 running 2.0 or later, it should be removed.
 
-The only file that should exist in that directory is “ajax.js”
+The only file that should exist in that directory is "ajax.js"
 
 Browser Caching
 ---------------

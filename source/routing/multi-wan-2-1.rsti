@@ -9,8 +9,8 @@ Multi-WAN in pfSense 2.1 works the same as `Multi-WAN on
 The main difference is that with 2.1 `Multi-WAN for
 IPv6 <Multi-WAN_for_IPv6>`__ is possible.
 
-In the default configuration on pfSense 2.1, “State Killing on Gateway
-Failure” is not active. Because of this, Multi-WAN may not work ideally
+In the default configuration on pfSense 2.1, "State Killing on Gateway
+Failure" is not active. Because of this, Multi-WAN may not work ideally
 out of the box. For example, if connections should be forced to failover
 from WAN1 to WAN2, it may be desirable to enable that option. It can be
 found under **System > Advanced** on the **Miscellaneous** tab, under

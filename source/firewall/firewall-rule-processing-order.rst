@@ -50,8 +50,8 @@ ruleset (Check */tmp/rules.debug*):
 Floating Rules notes
 --------------------
 
-Floating rules without **quick** set process in a “last match wins” way
-instead of “first match wins” So if a floating rule is set without
+Floating rules without **quick** set process in a "last match wins" way
+instead of "first match wins" So if a floating rule is set without
 **quick** and it matches a packet, then a later rule also matches, the
 later rule will be used. This is the opposite of the other tab rules
 (groups, interfaces) and rules with **quick** set which stop processing

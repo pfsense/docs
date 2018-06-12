@@ -21,8 +21,8 @@ Floating Rules can:
 -  Filter traffic in the outbound direction (all other tabs are Inbound
    processing only)
 -  Apply rules to multiple interfaces
--  Apply filtering in a “last match wins” way rather than “first match
-   wins” (**quick**)
+-  Apply filtering in a "last match wins" way rather than "first match
+   wins" (**quick**)
 -  Apply traffic shaping to match traffic but not affect it's pass/block
    action
 -  Much more.

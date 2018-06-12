@@ -25,23 +25,23 @@ Apache 2.x server, add this to *httpd.conf*:
 | ``AddHandler php5-script php``
 | ``AddType text/html php``
 
-On a Lighttpd server, enable the server module “mod\_fastcgi” and add
+On a Lighttpd server, enable the server module "mod\_fastcgi" and add
 this to *lighttpd.conf*:
 
-| ``       fastcgi.server = ( ``\ “``.php``”\ `` =>``
-| ``                           ( ``\ “``127.0.0.1``”\ `` =>``
+| ``       fastcgi.server = ( ``\ "``.php``"\ `` =>``
+| ``                           ( ``\ "``127.0.0.1``"\ `` =>``
 | ``                               (   ``
-| ``                                   ``\ “``socket``”\ `` => ``\ “``/var/run/lighttpd/php-fastcgi.socket``”\ ``,``
-| ``                                   ``\ “``bin-path``”\ `` => ``\ “``/usr/local/bin/php-cgi``”\ ``,``
-| ``                                   ``\ “``max-procs``”\ `` => 2,``
-| ``                                   ``\ “``bin-environment``”\ `` => (``
-| ``                                       ``\ “``PHP_FCGI_CHILDREN``”\ `` => ``\ “``16``”\ ``,``
-| ``                                       ``\ “``PHP_FCGI_MAX_REQUESTS``”\ `` => ``\ “``10000``”
+| ``                                   ``\ "``socket``"\ `` => ``\ "``/var/run/lighttpd/php-fastcgi.socket``"\ ``,``
+| ``                                   ``\ "``bin-path``"\ `` => ``\ "``/usr/local/bin/php-cgi``"\ ``,``
+| ``                                   ``\ "``max-procs``"\ `` => 2,``
+| ``                                   ``\ "``bin-environment``"\ `` => (``
+| ``                                       ``\ "``PHP_FCGI_CHILDREN``"\ `` => ``\ "``16``"\ ``,``
+| ``                                       ``\ "``PHP_FCGI_MAX_REQUESTS``"\ `` => ``\ "``10000``"
 | ``                                   ),``
-| ``                                   ``\ “``bin-copy-environment``”\ `` => (``
-| ``                                       ``\ “``PATH``”\ ``, ``\ “``SHELL``”\ ``, ``\ “``USER``”
+| ``                                   ``\ "``bin-copy-environment``"\ `` => (``
+| ``                                       ``\ "``PATH``"\ ``, ``\ "``SHELL``"\ ``, ``\ "``USER``"
 | ``                                   ),``
-| ``                                   ``\ “``broken-scriptfilename``”\ `` => ``\ “``enable``”
+| ``                                   ``\ "``broken-scriptfilename``"\ `` => ``\ "``enable``"
 | ``                               )``
 | ``                           )``
 | ``                       )``
@@ -162,7 +162,7 @@ Step 4: Have pfSense use the repository
 -  Browse to http://pfsense/pkg_mgr_settings.php
 -  Enter the hostname of the server, such as *reposerver*
 
-    NOTE: “*reposerver*” is only the hostname, NOT a full URL.
+    NOTE: "*reposerver*" is only the hostname, NOT a full URL.
 
 Screenshot of Package Settings:
 

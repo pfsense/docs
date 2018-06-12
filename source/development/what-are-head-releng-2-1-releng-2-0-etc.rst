@@ -9,7 +9,7 @@ pfSense source code.
 HEAD (master)
 -------------
 
-HEAD, also known as -HEAD or “master”, refers to the development version
+HEAD, also known as -HEAD or "master", refers to the development version
 of pfSense, where all new features are first added. When a release
 nears, HEAD is branched to a RELENG (Release Engineering) branch. This
 follows the FreeBSD project's development model.

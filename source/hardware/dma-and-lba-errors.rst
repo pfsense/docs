@@ -28,11 +28,11 @@ that log message says.
 
 .. pull-quote::
 
-   according to ATA-7 specification, Section 6.59.6 is: “IDNF shall be
+   according to ATA-7 specification, Section 6.59.6 is: "IDNF shall be
    set to one if a user-accessible address could not be found. IDNF
    shall be set to one if an address outside of the range of
    user-accessible addresses is requested if command aborted is not
-   returned.” FreeBSD labels this bit as NID\_NOT\_FOUND
+   returned." FreeBSD labels this bit as NID\_NOT\_FOUND
 
 Summarized from `this forum
 post <http://forum.pfsense.org/index.php/topic,41312.msg226353.html#msg226353>`__.

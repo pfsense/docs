@@ -9,7 +9,7 @@ associate a commit with a specific ticket automatically, creating a link
 in the ticket to the relevant commits.
 
 When using these keywords immediately follow them by a # and then the
-ticket number, such as “Ticket #1234”. They are not case sensitive.
+ticket number, such as "Ticket #1234". They are not case sensitive.
 
 The following keywords will reference a ticket but take no action on the
 ticket status:

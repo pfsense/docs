@@ -237,7 +237,7 @@ Exporting a Configuration
 
 .. image:: /_static/vpn/openvpn/openvpn_ra-expoptions.png
 
-The Windows Installer choices are the most common. The “Inline”
+The Windows Installer choices are the most common. The "Inline"
 configuration choices are best when using a current client that isn't
 listed. Some older clients may not fully understand these, but older
 clients should be upgraded as soon as possible.

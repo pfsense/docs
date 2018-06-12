@@ -140,7 +140,7 @@ Portal is the same as for *Amount of Time* from above.
     /var/log/radacct/datacounter/forever/
 
 To reset the counter *daily* at midnight, manually add a cron job.
-Easiest way to do so is to install the “Cron” package from pfSense
+Easiest way to do so is to install the "Cron" package from pfSense
 package manager: Reset everyday at midnight::
 
   minute hour    mday    month   wday    who     command
@@ -181,7 +181,7 @@ limits work, enable it in Captive Portal first and leave this field
 blank or fill in a zero. As far as I know - test this and give feedback
 - but changes made in FreeRADIUS will first take effect on CP if the
 user gets re-authenticated. Perhaps it will help to enable
-“re-authenticate every minute” in CP.
+"re-authenticate every minute" in CP.
 
 MAC Address Authentication with Captive Portal
 ----------------------------------------------

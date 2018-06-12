@@ -3,9 +3,9 @@
 Full Install and NanoBSD Comparison
 ===================================
 
-“Full Install” and “NanoBSD” are pfSense installation types. They differ
+"Full Install" and "NanoBSD" are pfSense installation types. They differ
 in many ways, and each has its own set of optimal uses. There often
-isn't any one “right” choice for every deployment. Consult the list
+isn't any one "right" choice for every deployment. Consult the list
 below to find the best fit.
 
 Full Install
@@ -38,10 +38,10 @@ Full Install
    preferred)
 -  Can be installed using a CD (ISO), USB memstick image, or a serial
    console-enabled USB memstick image
--  Can be run in a “trial” type mode by booting the media without
+-  Can be run in a "trial" type mode by booting the media without
    invoking the installation process (no packages)
 -  Selection of either VGA or serial kernel during installation
--  Indicated by a platform of “pfSense” inside the System Information
+-  Indicated by a platform of "pfSense" inside the System Information
    widget on the Dashboard
 
 NanoBSD
@@ -92,6 +92,6 @@ NanoBSD
 -  Available in serial console or VGA console varieties
 -  Installed by writing the disk image directly to the target media
    (e.g. using dd, physdiskwrite, Win32 Disk Imager)
--  Indicated by a platform of “NanoBSD” along with the image size inside
+-  Indicated by a platform of "NanoBSD" along with the image size inside
    the System Information widget on the Dashboard
 

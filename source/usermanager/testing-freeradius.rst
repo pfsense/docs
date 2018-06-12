@@ -104,9 +104,9 @@ The application window will open. Fill out the fields:
    -  **Auth Port**: *1812*
    -  **Acct Port**: *1813*
    -  **Send Timeout**: *10* (or fill in what the NAS offers as timeout
-      to make test more “real”)
+      to make test more "real")
    -  **Send Retries**: *0* (or fill in what the NAS offers as timeout
-      to make test more “real”)
+      to make test more "real")
    -  **Requester Threads**: *1* (To understand this option think about
       the number of NAS nodes. Every NAS is a *Requester Thread*. In
       worst case after a power cycle all NAS reboot at once so enter

@@ -9,8 +9,8 @@ board such as like the one used on ALIX systems. Add on cards such as
 those from Hifn are also supported. Any crypto accelerator supported by
 FreeBSD will work.
 
-Boards utilizing the AMD Geode platform typically have the “AMD Geode LX
-Security Block” which supports certain encryption types. It will show up
+Boards utilizing the AMD Geode platform typically have the "AMD Geode LX
+Security Block" which supports certain encryption types. It will show up
 in dmesg as the glxsb device::
 
   glxsb0: <AMD Geode LX Security Block (AES-128-CBC, RNG)> mem 0xefff4000-0xefff7fff irq 9 at device 1.2 on pci0

@@ -43,7 +43,7 @@ Host Name Resolution
 --------------------
 
 Controls the format of the server address in the client configuration's
-“*remote*” statement.
+"*remote*" statement.
 
 -  **Interface IP Address**: Uses the actual configured interface IP
    address/VIP literally (most common choice)

@@ -16,7 +16,7 @@ contents of */etc/fstab* or the output of **df** to find the disk
 holding the root (*/*) slice. For this, we will assume *ada0*.
 
 First, set a special debug mode that allows writing to the early parts
-of the disk. This enables the so-called “foot shooting mode” so be
+of the disk. This enables the so-called "foot shooting mode" so be
 careful!
 
 .. code::
@@ -79,7 +79,7 @@ Now either reboot, or run::
 
  # sysctl kern.geom.debugflags=0
 
-Which will disable the “foot shooting mode” and also stop printing geom
+Which will disable the "foot shooting mode" and also stop printing geom
 debug messages to the console.
 
 If this error is received::

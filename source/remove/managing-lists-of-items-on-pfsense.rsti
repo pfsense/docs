@@ -18,9 +18,9 @@ context in which they are seen.
 -  |down| (down) - Move an item down in an ordered list
 
     When dealing with certificates, the down arrow may also indicate
-    “download”.
+    "download".
 
--  `17px\|alt=“left pointing triangle”\|left pointing
+-  `17px\|alt="left pointing triangle"\|left pointing
    triangle <Image:icon_left.png>`__ (left pointing triangle) - used for
    moving items.
 
@@ -29,7 +29,7 @@ context in which they are seen.
     When working with side-by-side lists, this button will move an item
     from the right list to the left list.
 
--  `17px\|alt=“right pointing triangle”\|right pointing
+-  `17px\|alt="right pointing triangle"\|right pointing
    triangle <Image:icon_right.png>`__ (right pointing triangle) - used
    for moving items.
 

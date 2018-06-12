@@ -90,7 +90,7 @@ FreeBSD-ports <https://github.com/pfsense/FreeBSD-ports/>`__ is:
    (net-mgmt/pfSense-pkg-zabbix-proxy) <https://github.com/pfsense/FreeBSD-ports/tree/devel/net-mgmt/pfSense-pkg-zabbix-proxy>`__
 
 Note that each package is under a category and prefixed with
-“pfSense-pkg-”.
+"pfSense-pkg-".
 
 See :doc:`Package Port Directory Structure </development/package-port-directory-structure>` for details about the
 structure of files inside the package directory.

@@ -10,7 +10,7 @@ firewall from the outside, port forward entries must be added to negate
 the 1:1 NAT for the specific ports on the firewall to be reached.
 
 If there is only one WAN IP, and a Linksys (or other SOHO router) style
-“DMZ”\ :sup:`1` configuration is being attempted, consider only forward
+"DMZ"\ :sup:`1` configuration is being attempted, consider only forward
 the ranges of ports and protocols that are absolutely necessary, and use
 appropriate firewall rules to protect access to these ports.
 

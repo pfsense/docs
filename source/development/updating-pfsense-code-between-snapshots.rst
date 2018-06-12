@@ -38,8 +38,8 @@ following command::
 
 # pfSsh.php playback gitsync master
 
-The “master” part of the command tells the gitsync process to grab the
-code for the “master” branch, a.k.a. HEAD, which as of this writing is
+The "master" part of the command tells the gitsync process to grab the
+code for the "master" branch, a.k.a. HEAD, which as of this writing is
 the development code for 2.3. That can be replaced with RELENG\_2\_2 for
 2.2.x.
 

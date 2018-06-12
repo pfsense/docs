@@ -90,7 +90,7 @@ enforcing an upper limit, make four limiters as follows:
 #. Total bandwidth upload (less guaranteed above)
 #. Total bandwidth download (less guaranteed above)
 
-The Mask must be “*none*” for these to work properly, otherwise it
+The Mask must be "*none*" for these to work properly, otherwise it
 cannot enforce a total limit.
 
 If the WAN has 8Mb down and 2Mb up, to guarantee 512Kb/s for service X
@@ -102,7 +102,7 @@ create queues sized like so:
 #. 7680 Kb/s
 
 Then direct the guaranteed service traffic into the first two limiters,
-and everything else into the “total” limiters.
+and everything else into the "total" limiters.
 
 Limiters on Bridges
 -------------------

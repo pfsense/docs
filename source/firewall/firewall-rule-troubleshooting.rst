@@ -14,7 +14,7 @@ Review the filter logs, which can be found under **Status > System
 Logs**, on the **Firewall** tab. The log will show if a packet is
 blocked, and if so, why. Click the action icon (|block| or |pass|) at
 the *far left* and the rule which caused the packet to be blocked will
-be displayed. If it says “Default Deny”, and the packet should have been
+be displayed. If it says "Default Deny", and the packet should have been
 allowed, then it did not match any rule in the ruleset.
 
 Interface Selection
@@ -88,7 +88,7 @@ same subnet and switch; In that case, the routing of packets is handled
 at the switch level, and pfSense has no knowledge of the traffic. If
 there is a need to control access in this way, the systems in question
 should be on separate interfaces on the pfSense firewall. When on
-different “legs” of the network, their traffic will route through the
+different "legs" of the network, their traffic will route through the
 pfSense system, and full control of the flow can be attained.
 
 Port Forward *pass* action
@@ -122,7 +122,7 @@ Typically this would result in a notification in the GUI, however some
 manual tests can be performed to check what is happening.
 
 From the GUI, visit Status > Filter Reload. Press the **Reload Filter**
-button and wait to see if the process returns to say “Done.” or if it
+button and wait to see if the process returns to say "Done." or if it
 stops. If it stops, for example in a particular package, then there may
 be a problem with that package.
 

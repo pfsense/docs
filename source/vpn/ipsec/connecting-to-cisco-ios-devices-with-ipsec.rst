@@ -137,14 +137,14 @@ recommended. For pfSense, browse to **Status > System Logs** on the
 in a session. The output can be verbose, but will usually tell
 specifically what was mismatched.
 
-“No NAT” List on Cisco IOS
+"No NAT" List on Cisco IOS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 It may also be necessary to tell Cisco IOS *not* to NAT the traffic that
 is destined for the IPsec tunnel. There are several ways to accomplish
 this, depending on how the router has NAT configured. If the following
 example does not help, there are several examples that turn up in a
-Google search for “cisco ios nonat ipsec”::
+Google search for "cisco ios nonat ipsec"::
 
   ip nat inside source route-map NONAT interface FastEthernet0/0 overload
   access-list 110 deny   ip 172.26.5.0 0.0.0.255 192.168.11.0 0.0.0.255

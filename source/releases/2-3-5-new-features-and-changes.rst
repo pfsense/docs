@@ -94,12 +94,12 @@ WebGUI
 -  Updated favicon to the new logo and added multiple sizes for
    different platforms
 -  Added an option for sorting the Interfaces menu by description
--  Added “auth\_check” type of simple test that a page can use to verify
+-  Added "auth\_check" type of simple test that a page can use to verify
    a user is logged in and has access, using less cpu, which is better
    for AJAX data polling
 -  Improved handling of PHP errors for user-entered PHP code on
    diag\_command.php
--  Changed Interfaces menu “(Assign)” to “Assignments” and added support
+-  Changed Interfaces menu "(Assign)" to "Assignments" and added support
    for menu divider bars
 -  Fixed automatic selection of '128' as prefix/mask for IPv6 address
    fields `#7625 <https://redmine.pfsense.org/issues/7625>`__

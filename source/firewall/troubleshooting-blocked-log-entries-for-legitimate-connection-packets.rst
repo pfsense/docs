@@ -4,7 +4,7 @@ Troubleshooting Blocked Log Entries for Legitimate Connection Packets
 =====================================================================
 
 Sometimes log entries will be present that, while labeled with the
-“Default deny” rule, look like they belong to legitimate traffic. The
+"Default deny" rule, look like they belong to legitimate traffic. The
 most common example is seeing a connection blocked involving a web
 server.
 
@@ -20,7 +20,7 @@ stateful firewalls do this, though some don't generate log messages for
 this blocked traffic even if all blocked traffic is logged.
 
 These blocked packets will occur even if rules exist which look as
-though they should match the traffic, such as an “Allow All” rule, as
+though they should match the traffic, such as an "Allow All" rule, as
 pass rules for TCP only allow **TCP SYN** packets to create a state.
 These rules assume TCP traffic with other flags will either be part of
 an existing state in the state table, or packets with spoofed TCP flags.

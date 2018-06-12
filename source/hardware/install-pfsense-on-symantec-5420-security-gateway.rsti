@@ -43,9 +43,9 @@ First, what you will need:
 #. Take a HDD that can be erased and put it in your PC – remove all
    other HDDs from the computer so you don’t overwrite the wrong one and
    set this one to Master.
-#. Boot the pfSense CD and choose “Easy Install” which will give you the
+#. Boot the pfSense CD and choose "Easy Install" which will give you the
    kernel option we need at the end.
-#. After the files are copied to the hard disk, choose “Embedded Kernel”
+#. After the files are copied to the hard disk, choose "Embedded Kernel"
    from the custom kernel choices – this will give us output to the
    serial port since the Symantec 5420 does not have a monitor output or
    keyboard inputs.
@@ -67,13 +67,13 @@ First, what you will need:
    installation.
 #. This step seems to only happen if the drive was not Master in the
    computer it was installed in. If it doesn’t boot the first time and
-   you get a “mountroot>” prompt it is because the name of the drive was
+   you get a "mountroot>" prompt it is because the name of the drive was
    different in the machine you installed pfSense on. As the prompt will
-   tell you, type “?” to see a list of the possible valid partitions.
+   tell you, type "?" to see a list of the possible valid partitions.
    You want to replace the first part (drive name) with what you see in
    the currently installed and possible drive partitions. If you got the
-   message “Trying to mount root from **ufs:/dev/ad2s1a**” but your
-   valid drives all start with **ad0**, then type “**ufs: ad0s1a**”.
+   message "Trying to mount root from **ufs:/dev/ad2s1a**" but your
+   valid drives all start with **ad0**, then type "**ufs: ad0s1a**".
    Once the computer has booted you will need to take one more step to
    avoid this in future boots. You will need to edit the file
    **/etc/fstab** and change the drive reference (**ad0** in the
@@ -84,7 +84,7 @@ First, what you will need:
    you are using pfSense frequently.
 #. Next, to make sure it boots with ACPI disabled by default you will
    need to make another edit. **/boot/device.hints** is the file. Add a
-   line at the bottom that says **hint.acpi.0.disabled=“1”**. Now when
+   line at the bottom that says **hint.acpi.0.disabled="1"**. Now when
    the system is booted, boot with ACPI disabled will be default.
 
 Currently I do not know of a way to get the LCD screen functioning.

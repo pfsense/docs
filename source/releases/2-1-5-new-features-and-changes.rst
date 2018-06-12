@@ -45,7 +45,7 @@ Other Fixes
    daemon settings, and GIF/GRE interfaces
 -  Per the dhcpd.conf man page and other documentation from ISC, mclt
    must not be defined on the secondary
--  Shorten the wait at “reload” in startup wizard to 5 seconds from 60
+-  Shorten the wait at "reload" in startup wizard to 5 seconds from 60
 -  Do not execute DNS lookups on GET, only pre-fill Host box so the user
    can press the button to execute
 -  Turn alias creation links from DNS lookups into submit buttons for
@@ -55,7 +55,7 @@ Other Fixes
    GET action to perform that action
 -  Require click-through POST confirmation when restoring or deleting a
    configuation from the backup history page
--  Avoid a “Cannot use string offset as an array” error if the packages
+-  Avoid a "Cannot use string offset as an array" error if the packages
    section of the config is missing
 -  Avoid generating an invalid IPsec (racoon) config if the user
    specified a mobile pool that is too small

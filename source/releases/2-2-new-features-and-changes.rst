@@ -216,7 +216,7 @@ Firewall Rules
    pf on FreeBSD 10 does not have any limits for these.
 -  Expose all p0f OS types that it supports so that subtypes of various
    Operating Systems can be detected (e.g. blocking Windows XP)
--  The “(self)” concept of “Any IP address on this firewall” is now a
+-  The "(self)" concept of "Any IP address on this firewall" is now a
    choice for firewall rule destination (and floating rule source for
    out direction rules), port forward destination, and outbound NAT
    source.
@@ -228,9 +228,9 @@ Firewall Rules
    `#2121 <https://redmine.pfsense.org/issues/2121>`__
 -  Add a more obvious note on group rules about how they do not work as
    expected for WANs
--  block IPv4 link-local/APIPA 169.254.0.0/16. Per RFC 3927, hosts “MUST
-   NOT send the packet to any router for forwarding”, and “any network
-   device receiving such a packet MUST NOT forward it”. FreeBSD won't
+-  block IPv4 link-local/APIPA 169.254.0.0/16. Per RFC 3927, hosts "MUST
+   NOT send the packet to any router for forwarding", and "any network
+   device receiving such a packet MUST NOT forward it". FreeBSD won't
    route it (route-to can override in some circumstances), so it can't
    be in use as a real network anywhere with the possible exception of
    local-only networks. Unlikely any such situation exists anywhere
@@ -283,15 +283,15 @@ Dashboard & General GUI
 -  Add a setting to allow the user to specify the clog file size so more
    (or less) entries may be kept in the raw logs. Retain previous
    default size values if the user has not specified a preferred size.
-   Files can only be resized when initialized, so provide a “Reset All
-   Logs” button as well to force clear all logs and set them up at the
+   Files can only be resized when initialized, so provide a "Reset All
+   Logs" button as well to force clear all logs and set them up at the
    new size.
 -  Add an option for users to be able to adjust how many configuration
    revisions are kept in the local backup cache.
 -  Show backup file size in config history.
 -  Display pfSense interface name on status interfaces
 -  Dashboard cleanups/fixes for jQuery
--  Add “pfsense\_ng\_fs” full screen/widescreen theme
+-  Add "pfsense\_ng\_fs" full screen/widescreen theme
 -  GUI redirect works on both IPv4 and IPv6
    `#3437 <https://redmine.pfsense.org/issues/3437>`__
 -  Disk usage section of the System Information widget now shows all
@@ -329,9 +329,9 @@ Captive Portal
 -  For more than 100 MAC pass-through entries create pipes in line with
    the rules file to speedup the process.
    `#3932 <https://redmine.pfsense.org/issues/3932>`__
--  Zone backend changed from text-based (e.g. “cpzone”) to using the
-   zone id (e.g. “2”) for specifying the context.
--  ipfw\_context has been removed. To list zones, use “ipfw zone list”
+-  Zone backend changed from text-based (e.g. "cpzone") to using the
+   zone id (e.g. "2") for specifying the context.
+-  ipfw\_context has been removed. To list zones, use "ipfw zone list"
 -  Default lighttpd daemon port for a Captive Portal zone is based on
    the zone ID. For example, zone ID 2 uses port 8002. There may not be
    a daemon on port 8000.
@@ -347,8 +347,8 @@ IPsec
    and 2.
 -  IPsec status page and dashboard widget changes to accommodate
    different output from strongSwan
--  Move the IPsec settings from System > Advanced, Misc tab to “Advanced
-   Settings” tab under VPN > IPsec.
+-  Move the IPsec settings from System > Advanced, Misc tab to "Advanced
+   Settings" tab under VPN > IPsec.
 -  It is now possible to configure :doc:`L2TP/IPsec </vpn/ipsec/l2tp-ipsec>`
 -  Add AES-GCM and AES-XCBC to the list of available IPsec algorithms
    and hashes, respectively. Expand P1 DH groups up to 24.
@@ -390,12 +390,12 @@ OpenVPN
    export use
 -  Ensure e-mail address carries over from the CA screen to the Cert
    screen in the OpenVPN wizard.
--  Allow the user to select “None” for OpenVPN client certificate, so
+-  Allow the user to select "None" for OpenVPN client certificate, so
    long as they supply an auth user/pass.
    `#3633 <https://redmine.pfsense.org/issues/3633>`__
 -  Byte counts on OpenVPN status are now human readable rather than huge
    unformatted numbers.
--  OpenVPN instances have new options: “Disable IPv6”, route-nopull,
+-  OpenVPN instances have new options: "Disable IPv6", route-nopull,
    route-noexec, verb selector
 -  Use stronger defaults in the OpenVPN wizard.
 -  Fix ovpn-linkup for tun + topology subnet case setting router as
@@ -422,10 +422,10 @@ Packages
 -  Added the capability for package hooks in /etc/rc.carpmaster and
    /etc/rc.carpbackup
 -  Split package category display into separate tabs for categories, and
-   provide an “All” tab
+   provide an "All" tab
 -  Move the fetching of a package's config file and additional files to
-   separate functions, and then have the “xml” package button perform
-   these so that it is not only a redundant copy of the “pkg” reinstall
+   separate functions, and then have the "xml" package button perform
+   these so that it is not only a redundant copy of the "pkg" reinstall
    button. This can help ensure a package files are in a known-good
    state before other actions are performed, in case the deinstall would
    fail or behave erratically due to other files being missing.
@@ -437,11 +437,11 @@ Packages
 Dynamic DNS
 -----------
 
-- Added support for DynDNS Provider “City Network”
-- Added support for DynDNS Provider “OVH DynHOST”
-- Added support for DynDNS Provider “GratisDNS”
-- Added support for DynDNS Provider “Euro DNS”
-- Added support for DynDNS Provider “CloudFlare”
+- Added support for DynDNS Provider "City Network"
+- Added support for DynDNS Provider "OVH DynHOST"
+- Added support for DynDNS Provider "GratisDNS"
+- Added support for DynDNS Provider "Euro DNS"
+- Added support for DynDNS Provider "CloudFlare"
 - Add support for custom IPv6 DDNS.
 - Add backend support for HE.net AAAA record updates.
 - Add additional options to Custom DynDNS
@@ -500,7 +500,7 @@ Traffic Shaping
 -  Fix logic to find available next number for limiters and queues.
    `#3998 <https://redmine.pfsense.org/issues/3998>`__
 -  Add vmx and hn to list of ALTQ capable interfaces.
--  Remove the “Limiter burst” parameter as it currently doesn't work
+-  Remove the "Limiter burst" parameter as it currently doesn't work
    with dummynet in pf.
 
 Misc
@@ -515,7 +515,7 @@ Misc
    interface. This should increase the general performance since pflog
    is always enabled.
 -  Add sshd service to list (if enabled)
--  Add a “status” subcommand to the svc php shell script.
+-  Add a "status" subcommand to the svc php shell script.
 -  When using the reset webConfigurator password option on the console,
    if authentication server is not Local Database, ask user if they want
    to revert back to it.
@@ -526,7 +526,7 @@ Misc
 -  Layer 7 Pattern: EAOrigin.pat
 -  Layer 7 Pattern: SWF (Flash)
 -  Remove some old obsolete code that referred to the now-defunct
-   “embedded” platform that was replaced with NanoBSD back in 1.2.x.
+   "embedded" platform that was replaced with NanoBSD back in 1.2.x.
 -  Sometimes fsck requires a second run, teach rc script to call it more
    than once when it's necessary
 -  Add column for internal port on UPnP status page
@@ -535,10 +535,10 @@ Misc
    `#3874 <https://redmine.pfsense.org/issues/3874>`__
 -  Packet Capture: Host field supports rudimentary boolean logic.
    Captures can specify multiple IP addresses and use and/or between IP
-   addresses. Example: To perform an “and” match where both hosts must
-   match: “192.168.1.1, 192.168.1.2”. To perform an “or” match where any
+   addresses. Example: To perform an "and" match where both hosts must
+   match: "192.168.1.1, 192.168.1.2". To perform an "or" match where any
    of the specified hosts can match:
-   “192.168.1.1\|192.168.1.2\|192.168.1.3”
+   "192.168.1.1\|192.168.1.2\|192.168.1.3"
 -  Packet Capture: Protocol, host, and port now support negation.
 -  Added interface column to Diagnostics > States
 -  Change is\_port() to only validate a single port, we have
@@ -565,7 +565,7 @@ Misc
 -  Add input checkboxes to remove multiple users and groups
 -  Make sure an empty group or user is not created when editing
 -  Update URLs in help.php.
--  Change wording at the end of the wizard to remove “donate” since that
+-  Change wording at the end of the wizard to remove "donate" since that
    is no longer an option.
 -  Put the booting signal in globals.inc since it makes all the other
    scripts detect we are booting. Otherwise separate PHP instances will

@@ -33,6 +33,6 @@ Supernetting Example
 At Site A, there is one subnet, 10.0.0.0/24. This should reach
 192.168.0.0/24, 192.168.1.0/24, and 192.168.2.0/24 at Site B.
 
-Due to the “closeness” of the subnets, they could be grouped into a
+Due to the "closeness" of the subnets, they could be grouped into a
 larger network in the tunnel definition: 192.168.0.0/22 (This would also
 include 192.168.3.0/24)

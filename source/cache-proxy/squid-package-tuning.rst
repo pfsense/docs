@@ -11,7 +11,7 @@ have reported that making the following change has greatly increased
 performance:
 
 -  Edit /boot/loader.conf.local
--  Change kern.ipc.nmbclusters=“0” to kern.ipc.nmbclusters=“32768”
+-  Change kern.ipc.nmbclusters="0" to kern.ipc.nmbclusters="32768"
 -  Reboot the pfSense router
 
 See :doc:`Tuning and Troubleshooting Network Cards </hardware/tuning-and-troubleshooting-network-cards>`

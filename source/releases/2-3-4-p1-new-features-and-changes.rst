@@ -81,7 +81,7 @@ DNS
 -  Fixed calls to unbound-control to have the full configuration path
    specified so they do not fail
    `#7667 <https://redmine.pfsense.org/issues/7667>`__
--  Fixed handling of “redirect” zone entries in the DNS Resolver so they
+-  Fixed handling of "redirect" zone entries in the DNS Resolver so they
    do not produce invalid zones
    `#7690 <https://redmine.pfsense.org/issues/7690>`__
 -  Changed the way the DNS Resolver code writes out host entries, so the
@@ -115,14 +115,14 @@ DHCP
 Misc
 ^^^^
 
--  Removed “/usr/local/share/examples” from obsolete files list, some
+-  Removed "/usr/local/share/examples" from obsolete files list, some
    packages rely on the files being there
 -  Added a few more items to status.php for support purposes, such as a
    download button, socket buffer info, and the netgate ID
 -  Fixed status.php to redact BGP MD5 password/key in output
    `#7642 <https://redmine.pfsense.org/issues/7642>`__
 -  Fixed OpenVPN to use is\_numeric() to make sure $prefix is not 0
--  Changed the “Rule Information” section so it is consistent between
+-  Changed the "Rule Information" section so it is consistent between
    firewall and NAT rule pages
 -  Fixed APU2 detection for devices running coreboot v4.x
 -  Fixed the tunable description for net.inet.ip.random\_id

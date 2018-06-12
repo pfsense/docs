@@ -8,7 +8,7 @@ address range using OpenVPN so that they can be accessed from a central
 site. For example 192.168.0/24 is a very common addressing scheme and
 you may wish to be able to access all the systems on those networks.
 
-This is the desired outcome, Site 0 is “us”::
+This is the desired outcome, Site 0 is "us"::
 
   Site 0 - 10.1.1/24
   Site 1 - 192.168.0/24 -> 10.10.1/24
@@ -21,7 +21,7 @@ To get this to work we have to use 1:1 NAT and you should note that this
 means that some things simply will not work, see notes below.
 
 This is not the only way to do this. I have chosen to make the remote
-sites (Sites 1-3) run the “server” and run the “client” at Site 0. You
+sites (Sites 1-3) run the "server" and run the "client" at Site 0. You
 can do it the other way around.
 
 Preliminary
@@ -88,8 +88,8 @@ At each remote site, create a new OpenVPN server::
   IPv4 Remote networks: <IP range(s) at Site 0> eg 10.1.1.0/24
 
 If Site 0 has multiple IP ranges then specify them all in IPv4 Remote
-networks, comma separated. After saving, copy the key (“2048 bit OpenVPN
-static key”) that was generated to the other end (see below)
+networks, comma separated. After saving, copy the key ("2048 bit OpenVPN
+static key") that was generated to the other end (see below)
 
 1:1 NAT
 ^^^^^^^

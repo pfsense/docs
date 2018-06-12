@@ -4,7 +4,7 @@ EtherChannel
 Summary
 -------
 
-EtherChannel is a Cisco-specific technology used to “trunk” 2 (or more)
+EtherChannel is a Cisco-specific technology used to "trunk" 2 (or more)
 switches together. It is also used for aggregating link bandwidth (4 x
 100mbit trunks between 2 switches) and achieving failover (if one of
 those 4 x 100mbit trunk links is lost, traffic still flows over the

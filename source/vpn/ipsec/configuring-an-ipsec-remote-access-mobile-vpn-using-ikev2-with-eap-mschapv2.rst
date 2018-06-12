@@ -163,7 +163,7 @@ Add Firewall Rules for IPsec
 Firewall rules are necessary to pass traffic from IPsec clients.
 
 *  Navigate to **Firewall > Rules**, **IPsec** tab
-*  Review the current rules. If there is an “allow all” style rule, then
+*  Review the current rules. If there is an "allow all" style rule, then
    there is no need to add another. Continue to the next task.
 *  Click |fa-plus| to add a new rule
 *  Set the **Protocol** to *any*, and set the **Source** and

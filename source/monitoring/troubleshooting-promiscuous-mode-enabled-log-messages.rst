@@ -4,7 +4,7 @@ Troubleshooting "promiscuous mode enabled" Log Messages
 =======================================================
 
 The following log messages are recorded when a utility has placed the
-network card into “promiscuous mode”::
+network card into "promiscuous mode"::
 
   Feb 10 01:41:58    kernel: vr0: promiscuous mode disabled
   Feb 10 01:41:57    kernel: vr0: promiscuous mode enabled

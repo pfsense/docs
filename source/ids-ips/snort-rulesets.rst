@@ -16,11 +16,11 @@ policies are only available when the Snort VRT rules are enabled.
 
 The three Snort VRT IPS Policies are: (1) Connectivity, (2) Balanced and
 (3) Security. These are listed in order of increasing security. However,
-resist the temptation to immediately jump to the most secure “Security”
+resist the temptation to immediately jump to the most secure "Security"
 policy if new to using Snort. False positives can frequently occur with
 the more secure policies, and careful tuning by an experienced
 administrator may be required. So if new to Snort, then using the less
-restrictive “Connectivity” policy in non-blocking mode is recommended as
+restrictive "Connectivity" policy in non-blocking mode is recommended as
 a starting point. Once experience with Snort has been gained in the
 network environment, blocking mode can be enabled and then move up to
 more restrictive IPS policies.

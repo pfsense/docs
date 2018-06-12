@@ -28,8 +28,8 @@
 -  Added output encoding to diag\_dns.php for results returned from DNS.
    `#6737 <https://redmine.pfsense.org/issues/6737>`__
 -  Worked around a Chrome bug with regular expression parsing of escaped
-   characters within character sets. Fixes “Please match the requested
-   format” on recent Chrome versions.
+   characters within character sets. Fixes "Please match the requested
+   format" on recent Chrome versions.
    `#6762 <https://redmine.pfsense.org/issues/6762>`__
 -  Fixed DHCPv6 server time format option
    `#6640 <https://redmine.pfsense.org/issues/6640>`__
@@ -48,18 +48,18 @@
 -  Added a field to CA/Cert pages for OU, which is required by some
    external CAs and users.
    `#6672 <https://redmine.pfsense.org/issues/6672>`__
--  Fixed a redundant HTTP “User-Agent” string in DynDNS updates.
+-  Fixed a redundant HTTP "User-Agent" string in DynDNS updates.
 -  Fixed the font for sortable tables.
 -  Added a check to verify if an interface is active in a gateway group
    before updating dynamic DNS.
--  Fixed wording of the “Reject leases from” option for a DHCP interface
+-  Fixed wording of the "Reject leases from" option for a DHCP interface
    (it can only take addresses, not subnets.)
    `#6646 <https://redmine.pfsense.org/issues/6646>`__
 -  Fixed error reporting for SMTP settings test.
 -  Fixed saving of country, provider, and plan values for PPP interfaces
--  Fixed checking of invalid “Go To Line” numbers on diag\_edit.php.
+-  Fixed checking of invalid "Go To Line" numbers on diag\_edit.php.
    `#6704 <https://redmine.pfsense.org/issues/6704>`__
--  Fixed off-by-one error with “Rows to Display” on diag\_routes.php.
+-  Fixed off-by-one error with "Rows to Display" on diag\_routes.php.
    `#6705 <https://redmine.pfsense.org/issues/6705>`__
 -  Fixed description of the filter box on diag\_routes.php to reflect
    that all fields are searchable.
@@ -79,10 +79,10 @@
    deleted. `#6716 <https://redmine.pfsense.org/issues/6716>`__
 -  Fixed dynamic DNS domain for static map DHCP entries
 -  Added control to set dashboard widget refresh period
--  Added “-C /dev/null” to the dnsmasq command line parameters to avoid
+-  Added "-C /dev/null" to the dnsmasq command line parameters to avoid
    it picking up an incorrect default configuration which would override
    our options. `#6730 <https://redmine.pfsense.org/issues/6730>`__
--  Added “-l” to traceroute6 to show both IP Addresses and Hostnames
+-  Added "-l" to traceroute6 to show both IP Addresses and Hostnames
    when resolving hops on diag\_traceroute.php.
    `#6715 <https://redmine.pfsense.org/issues/6715>`__
 -  Added note about max ttl/hop limit in source comment on
@@ -106,8 +106,8 @@
 -  Fixed handling of backup config count.
    `#6771 <https://redmine.pfsense.org/issues/6771>`__
 -  Removed some dangling PPTP references that are no longer relevant.
--  Fixed up/caught up remote syslog areas. Added “routing”, “ntpd”,
-   “ppp”, “resolver”, fixed “vpn” to include all VPN areas (IPsec,
+-  Fixed up/caught up remote syslog areas. Added "routing", "ntpd",
+   "ppp", "resolver", fixed "vpn" to include all VPN areas (IPsec,
    OpenVPN, L2TP, PPPoE Server).
    `#6780 <https://redmine.pfsense.org/issues/6780>`__
 -  Fixed missing checkboxes in some cases when adding rows on

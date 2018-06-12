@@ -66,7 +66,7 @@ Select the **Virtual Server Pool** created previously, and optionally
 select a **Fall Back Pool**. The **Fall Back Pool** may serve the same
 content as the rest of the servers in the pool (eg, in a two-server
 live/hot-standby setup), or it may be a server that always returns a
-static “Sorry, this site is offline” message. If a **Fall Back Pool** is
+static "Sorry, this site is offline" message. If a **Fall Back Pool** is
 not selected, or if the server is unavailable, connections to the
 virtual server will fall through and will not be redirected.
 
@@ -142,7 +142,7 @@ real servers reside.
 
 Manual Outbound NAT rules may be added to work around this limitation
 section. The outbound NAT rules must hide the true source of the traffic
-so “reflected” client connections appear to originate from the firewall
+so "reflected" client connections appear to originate from the firewall
 itself.
 
 For more details on why internal connections do not work and what rules

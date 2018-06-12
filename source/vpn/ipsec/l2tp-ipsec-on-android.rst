@@ -13,13 +13,13 @@ IPsec Setup
 -----------
 
 The setup is similar to a standard :doc:`IPsec Road Warrior/Mobile Client How-To </vpn/ipsec/configuring-an-ipsec-remote-access-mobile-vpn-using-ikev1-xauth>` setup except that
-xauth is not used, but rather “**Mutual PSK**”, and Phase 2 uses
+xauth is not used, but rather "**Mutual PSK**", and Phase 2 uses
 **Transport** mode rather than Tunnel.
 
 Pre-Shared Keys
 ~~~~~~~~~~~~~~~
 
-After the tunnel has been configured, click to the “Pre-Shared Keys” tab
+After the tunnel has been configured, click to the "Pre-Shared Keys" tab
 in the IPsec settings, and add IPsec keys. A single group key may be
 used if desired, or make many keys for different users.
 

@@ -60,7 +60,7 @@ User Management/Authentication
 ------------------------------
 
 -  Added support for GUI auth from RADIUS to obtain group names from the
-   RADIUS reply attribute “Class” as a string (local groups must exist,
+   RADIUS reply attribute "Class" as a string (local groups must exist,
    similar to LDAP). `#935 <https://redmine.pfsense.org/issues/935>`__
 -  Added an LDAP server timeout field to address GUI access issues when
    the LDAP server is down/unreachable.
@@ -94,9 +94,9 @@ IPsec
 -  Fixed handling of IPv4 IPsec Phase 1 endpoints that resolve to an
    IPv6 address. `#4147 <https://redmine.pfsense.org/issues/4147>`__
    (Fixed by strongSwan update to 5.3.3)
--  Brought back “auto” IKE version and fixed problems with its previous
+-  Brought back "auto" IKE version and fixed problems with its previous
    implementation.
--  Pre-shared keys configured as “any” under VPN>IPsec, Pre-Shared Keys
+-  Pre-shared keys configured as "any" under VPN>IPsec, Pre-Shared Keys
    tab are added as %any to ipsec.secrets now, as described in the note
    on the page. `#5246 <https://redmine.pfsense.org/issues/5246>`__
 -  Resolved memory leak by switching printf hooks to vstr.
@@ -152,10 +152,10 @@ Rules/NAT
    `#5156 <https://redmine.pfsense.org/issues/5156>`__
 -  Added a check to prevent renaming an alias to an existing name.
    `#5162 <https://redmine.pfsense.org/issues/5162>`__
--  Improved the fix for increasing the “self” table size in pf.
+-  Improved the fix for increasing the "self" table size in pf.
 -  Imported fixes from FreeBSD for a situation that could result in a
-   panic/crash due to source address limits in pf rules (“pf\_hashsrc:
-   unknown address family 0”).
+   panic/crash due to source address limits in pf rules ("pf\_hashsrc:
+   unknown address family 0").
    `#4874 <https://redmine.pfsense.org/issues/4874>`__
 
 Captive Portal
@@ -211,7 +211,7 @@ Interfaces
 
 -  Fixed identification of IPv6 interfaces with PPP-type interfaces and
    DHCP6 `#3670 <https://redmine.pfsense.org/issues/3670>`__
--  Removed “Could not find gateway for interface...” log messages as
+-  Removed "Could not find gateway for interface..." log messages as
    they were largely useless.
    `#4102 <https://redmine.pfsense.org/issues/4102>`__
 -  Added OpenVPN interfaces to the list of available interfaces when
@@ -249,7 +249,7 @@ Misc
    `#4907 <https://redmine.pfsense.org/issues/4907>`__
 -  Fixed killing of individual states for IPv6.
    `#4906 <https://redmine.pfsense.org/issues/4906>`__
--  Changed the “enableallowallwan” script to also allow bogons, which
+-  Changed the "enableallowallwan" script to also allow bogons, which
    makes the use of RFC 5735 / RFC 6890 test networks easier in lab
    environments.
 -  Fixed handling of VIPs in source address selection for Diagnostics >
@@ -266,13 +266,13 @@ Misc
 -  Improved handling of the cron service reconfiguration process.
 -  Added option to display monitor IP on Gateways widget
    `#4782 <https://redmine.pfsense.org/issues/4782>`__
--  Added “Description” as a display option on Traffic Graphs.
+-  Added "Description" as a display option on Traffic Graphs.
    `#4783 <https://redmine.pfsense.org/issues/4783>`__
 -  Fixed handling of L2TP server interface selection.
    `#4830 <https://redmine.pfsense.org/issues/4830>`__
 -  Added /usr/bin/dc back into the build.
    `#5111 <https://redmine.pfsense.org/issues/5111>`__
--  Fixed a crash/panic “Sleeping thread owns a non-sleepable lock” in
+-  Fixed a crash/panic "Sleeping thread owns a non-sleepable lock" in
    ARP code when using Proxy ARP type VIPs.
    `#4685 <https://redmine.pfsense.org/issues/4685>`__
 -  Added support for Sierra Wireless 7355.

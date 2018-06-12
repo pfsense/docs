@@ -18,7 +18,7 @@ resolved (e.g. because it has been deleted), the corresponding element
 Why would I want to use Aliases?
 --------------------------------
 
-The best example is for blocking a list of hosts considered “bad”. If a
+The best example is for blocking a list of hosts considered "bad". If a
 rule were added for each host to block individually, the rules list
 would grow quite large. By adding all of these hosts to an alias, only
 one firewall rule is necessary.

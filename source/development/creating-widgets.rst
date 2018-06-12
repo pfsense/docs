@@ -65,7 +65,7 @@ To show the configuration button use the following code::
   </script>
 
 where widget\_name is the name of the widget file minus the .widget.php.
-An example is selectIntLink = “traffic\_graphs-configure”;
+An example is selectIntLink = "traffic\_graphs-configure";
 
 To show additional configuration options use a <div> section at the top
 of the widget. Use the following code and insert whatever is needed

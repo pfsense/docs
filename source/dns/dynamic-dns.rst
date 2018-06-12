@@ -87,9 +87,9 @@ GratisDNS
 HE.net
 ~~~~~~
 
-There are three options for Hurricane Electric. The “HE.net” option
+There are three options for Hurricane Electric. The "HE.net" option
 updates the IPv4 IP with their `DNS service <https://dns.he.net>`__.
-“HE.net (v6)” does the same, except for IPv6. “HE.net Tunnelbroker”
+"HE.net (v6)" does the same, except for IPv6. "HE.net Tunnelbroker"
 updates the tunnel endpoint IPv4 IP for their `IPv6 tunnel broker
 service tunnelbroker.net <https://tunnelbroker.net>`__.
 

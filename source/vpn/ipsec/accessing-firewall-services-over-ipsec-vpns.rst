@@ -27,7 +27,7 @@ September 12, 2004 why this is, and it's the same reason in pfSense.
    Redirect.
 
 Most notably this is a problem for UDP services. UDP services reply
-using the “closest” address to the client as seen from the perspective
+using the "closest" address to the client as seen from the perspective
 of the system routing table. Without a route present, that ends up being
 the IP address of the default gateway on WAN.
 

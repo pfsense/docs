@@ -172,7 +172,7 @@ Interfaces / VIPs
 -  Fixed issues with rtsold on VLAN interfaces
    `#7412 <https://redmine.pfsense.org/issues/7412>`__
 -  Fixed issues with dhcp6c lock files after unclean shutdown when using
-   “Do not wait for an RA” on IPv6 WAN interface
+   "Do not wait for an RA" on IPv6 WAN interface
    `#8106 <https://redmine.pfsense.org/issues/8106>`__
 -  Added a feature to allow pppoe on a CARP VIP so it will only be
    active on whichever node is master
@@ -230,7 +230,7 @@ Gateways/Routing
 Rules/NAT
 ---------
 
--  Fixed various pf “busy” errors when the ruleset is reloaded
+-  Fixed various pf "busy" errors when the ruleset is reloaded
 -  Fixed issues with editing firewall rules in non-English languages
    that contain single quotes in translated strings
    `#8219 <https://redmine.pfsense.org/issues/8219>`__

@@ -93,12 +93,12 @@ pfSense 2.0
 -  Ericsson F5521GW Gobi3000 / Lenovo
 -  Ericsson N5321 / Lenovo
 
-   -  May need “AT+CFUN=1” in the init string. Serial port varies from
+   -  May need "AT+CFUN=1" in the init string. Serial port varies from
       /dev/cuaU[0-3]
 
 -  ZTE MF915 LTE modem (T-Mobile)
 -  ZTE MF190 USB (1&1) using */dev/cuaU0.2*
--  ZTE MF669 - May need “camcontrol eject da0” in shellcmd, uses
+-  ZTE MF669 - May need "camcontrol eject da0" in shellcmd, uses
    */dev/cuaU0.2*
 -  ZTE MF830 - Can be switched from Ethernet to Modem by accessing the
    device's web interface, depending on preference.

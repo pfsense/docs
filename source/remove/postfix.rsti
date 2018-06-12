@@ -43,8 +43,8 @@ Second stage antispam checks:
 TLS Config
 ----------
 
-If a TLS Config is needed, put the following into the “custom main.cf
-options” Field:
+If a TLS Config is needed, put the following into the "custom main.cf
+options" Field:
 
 | ``# Add TLS``
 | ``#``

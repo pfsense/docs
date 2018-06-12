@@ -19,10 +19,10 @@ To manually configure the speed and duplex, do the following:
 
 #. Visit the page for the physical interface under, for example,
    Interfaces > WAN.
-#. Click “Advanced” next to “Speed and duplex”
+#. Click "Advanced" next to "Speed and duplex"
 #. Select the desired speed and duplex from the drop-down menu, which
-   contains all media types supported by the card. (ex: “100BaseTX
-   full-duplex”)
+   contains all media types supported by the card. (ex: "100BaseTX
+   full-duplex")
 #. Click Save
 #. Click Apply Changes
 #. Visit Status > Interfaces and check the Media line for the interface
@@ -30,7 +30,7 @@ To manually configure the speed and duplex, do the following:
    setting has been applied as expected.
 
 To switch back to autoselect, visit the same setting and select
-“Default”.
+"Default".
 
 NIC Support
 -----------

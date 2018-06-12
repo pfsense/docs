@@ -144,19 +144,19 @@ system.
 
 **To remove items from the cache:**
 
--  unbound-control flush *name* - removes “name” from the cache all
+-  unbound-control flush *name* - removes "name" from the cache all
    record types which include A, AAAA, NS< SOA, CNAME, DNAME, MX, PTR,
    SRV and NAPTR records.
--  unbound-control flush\_type “name” “type” - removes the “name” and
-   “type” from the cache where “type” is a particular record type.
--  unbound-control flush\_zone “name” - removes all information at or
+-  unbound-control flush\_type "name" "type" - removes the "name" and
+   "type" from the cache where "type" is a particular record type.
+-  unbound-control flush\_zone "name" - removes all information at or
    below the name from cache. For example if .com is specified, all
    entries below .com will be removed. Note this process is slow as the
    entire cache needs to be inspected.
 
 **To determine the name servers that will be queried to lookup a zone:**
 
--  unbound-control lookup “name”
+-  unbound-control lookup "name"
 
 .. note:: Unbound does not use the default conf file location, so you will need
    to use the ``-c`` flag to tell it where it is::

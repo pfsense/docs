@@ -8,7 +8,7 @@ Troubleshooting DHCP Failover
    and the DHCP daemon processes will not communicate.
 #. Look at the pool status section at **Status > DHCP leases**. All
    defined pools (often 1 per interface) are listed here. If any of the
-   pools are in a state other than “normal”, then debug the problem.
+   pools are in a state other than "normal", then debug the problem.
 #. If interfaces have been used and then removed they could be out of
    sync between the two nodes, which can lead to inconsistencies in the
    failover numbering and can make certain configurations fail. This

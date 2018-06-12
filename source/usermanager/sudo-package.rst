@@ -50,7 +50,7 @@ Examples:
 
 ``/sbin/ping 192.168.1.2``
 
--  Run command “*blah*” without any parameters:
+-  Run command "*blah*" without any parameters:
 
 ``/usr/local/bin/blah ""``
 

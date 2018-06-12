@@ -68,7 +68,7 @@ areas/features are IPv6-enabled. Others may work as well
    be installed to activate
 
 NOTE: Unlike earlier snapshots, BETA, etc, currently we do NOT flip the
-“Allow IPv6” checkbox on upgrade, to preserve existing behavior. To
+"Allow IPv6" checkbox on upgrade, to preserve existing behavior. To
 activate IPv6 traffic, a user will have to flip this setting manually
 
 Packages
@@ -193,12 +193,12 @@ Multi-WAN
    enabled
 -  Fixes for apinger to reload via SIGHUP properly, to avoid unnecessary
    restarts and loss of gateway status data
--  “State Killing on Gateway Failure” now kills ALL states when a
+-  "State Killing on Gateway Failure" now kills ALL states when a
    gateway has been detected as down, not just states on the failing
    WAN. This is done because otherwise the LAN-side states were not
    killed before, and thus some connections would be in limbo,
    especially SIP.
--  Due to the change in its behavior, “State Killing on Gateway Failure”
+-  Due to the change in its behavior, "State Killing on Gateway Failure"
    is now disabled by default in new configurations and is disabled
    during upgrade. If the feature is desired, it must be manually
    re-enabled post-upgrade.
@@ -211,9 +211,9 @@ NTP
 IPsec
 -----
 
--  More IPsec hash algorithms and DH key groups added, “base”
+-  More IPsec hash algorithms and DH key groups added, "base"
    negotiation mode added
--  Mobile IPsec supports separate “split dns” field and doesn't just
+-  Mobile IPsec supports separate "split dns" field and doesn't just
    assume the default domain for split DNS domains
 -  Properly ignore disabled IPsec phase 2 entries
 -  NAT before IPsec (1:1 or many:1) outbound
@@ -233,13 +233,13 @@ OpenVPN
 
 -  OpenVPN can accept attributes from RADIUS via avpairs for things like
    inacl, outacl, dns-server, routes
--  OpenVPN checkbox for “topology subnet” to use one IP per client in
+-  OpenVPN checkbox for "topology subnet" to use one IP per client in
    tun mode
 -  OpenVPN local/remote network boxes can accept multiple
    comma-separated networks
 -  OpenVPN status for SSL/TLS server instances can now display the
    routing table for the VPN instance
--  OpenVPN now allows selecting “localhost” as the interface
+-  OpenVPN now allows selecting "localhost" as the interface
 -  Gateways are created for assigned OpenVPN server instances as well as
    clients
 -  OpenVPN instances can run on the same port on different interfaces
@@ -276,7 +276,7 @@ NAT/Firewall Rules/Alias
    outbound NAT
 -  Fix generation of manual outbound NAT rules so that localhost and VPN
    rules are not unnecessarily duplicated
--  Prevent using “block” for an alias name, as it is a pf reserved
+-  Prevent using "block" for an alias name, as it is a pf reserved
    keyword
 -  Allow TCP flags to be used on block or reject rules, since they are
    also valid there
@@ -342,12 +342,12 @@ Notifications
 High Availability (CARP, pfSync, XML-RPC)
 -----------------------------------------
 
--  High Availability Synchronization options (Formerly known as “CARP
-   Settings” under Virtual IPs Promoted to its own menu entry, System >
+-  High Availability Synchronization options (Formerly known as "CARP
+   Settings" under Virtual IPs Promoted to its own menu entry, System >
    High Avail. Sync
 
    -  This is to make it easier to find, as well as make its purpose
-      more clear. “CARP” is a part of High Availability, as is
+      more clear. "CARP" is a part of High Availability, as is
       XMLRPC/pfsync state synchronization, but it's a bit of a misnomer
       to refer to the sync settings as CARP
 
@@ -521,7 +521,7 @@ Misc
    DHCP server. `#2704 <http://redmine.pfsense.org/issues/2704>`__
 -  Updated the help system to handle some recent added files for 2.x and
    clean out some old/obsolete files
--  Allow selecting “Localhost” as an interface for IP Alias VIPs - this
+-  Allow selecting "Localhost" as an interface for IP Alias VIPs - this
    way IP Alias VIPs may be used for binding firewall services (e.g.
    Proxy, VPN, etc) in routed subnets without burning IPs for CARP
    unnecessarily

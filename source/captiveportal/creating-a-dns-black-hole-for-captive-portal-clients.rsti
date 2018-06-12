@@ -5,7 +5,7 @@ Creating a DNS Black Hole for Captive Portal Clients
 
 If all portal clients must be directed to a single page, but the clients
 can fail to redirect due to flaky DNS resolution or missing DNS entries,
-a DNS “Black Hole” can be setup that will resolve all queries to a
+a DNS "Black Hole" can be setup that will resolve all queries to a
 single IP address.
 
 Setup BIND
@@ -42,15 +42,15 @@ zone. A basic config is given here that will let it run, but it can be
 tweaked in various ways.
 
 | ``options {``
-| ``   directory   ``\ “``/etc/namedb``”\ ``;``
-| ``   pid-file    ``\ “``/var/run/named/pid``”\ ``;``
+| ``   directory   ``\ "``/etc/namedb``"\ ``;``
+| ``   pid-file    ``\ "``/var/run/named/pid``"\ ``;``
 | ``   allow-query { any; };``
 | ``   allow-recursion { any; };``
 | ``};``
 
-| ``zone ``\ “``.``”\ `` {``
+| ``zone ``\ "``.``"\ `` {``
 | ``   type master;``
-| ``   file ``\ “``/etc/namedb/db.catchall``”\ ``;``
+| ``   file ``\ "``/etc/namedb/db.catchall``"\ ``;``
 | ``};``
 
 Create the zone file
@@ -120,7 +120,7 @@ A simple startup script like this can be placed in
 | ``#!/bin/sh``
 | ``rc_start() {``
 | ``   # start``
-| ``   if [ "" = ``\ “```ps``\ `` ``\ ``auxwww``\ `` ``\ ``|``\ `` ``\ ``grep``\ `` ``\ ``'[n]amed``\ `` ``\ ``'``\ `` ``\ ``|``\ `` ``\ ``awk``\ `` ``\ ``'{print``\ `` ``\ ``$2}'```”\ `` ]; then``
+| ``   if [ "" = ``\ "```ps``\ `` ``\ ``auxwww``\ `` ``\ ``|``\ `` ``\ ``grep``\ `` ``\ ``'[n]amed``\ `` ``\ ``'``\ `` ``\ ``|``\ `` ``\ ``awk``\ `` ``\ ``'{print``\ `` ``\ ``$2}'```"\ `` ]; then``
 | ``       /usr/local/sbin/named -u bind``
 | ``   fi``
 | ``}``

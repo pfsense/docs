@@ -11,12 +11,12 @@ match the service of any commercial firewall vendor, we exceed it. This
 page serves to debunk the common myths when comparing to commercial
 alternatives.
 
-“Hardware” firewalls are better myth
+"Hardware" firewalls are better myth
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Commercial firewall companies' marketing departments have done a fine
-job engraining the myth of “hardware firewalls” into some people's
-minds. The reality is there is no such thing as a “hardware firewall.”
+job engraining the myth of "hardware firewalls" into some people's
+minds. The reality is there is no such thing as a "hardware firewall."
 All firewalls are hardware that runs software. Most commercial firewalls
 are based on BSD (same as pfSense) or Linux. Numerous commercial
 firewalls run many of the same underlying software programs that pfSense
@@ -75,8 +75,8 @@ the firewall as the source of the problem, and wish you luck in solving
 it. Because we do hourly support, and our staff all have a wide range of
 experience, we can frequently not only eliminate the firewall but also
 help customers fix or at least nail down the actual source of the
-problem. In one recent example, a support call started with “the
-firewall isn't routing and it's breaking Active Directory.” We quickly
+problem. In one recent example, a support call started with "the
+firewall isn't routing and it's breaking Active Directory." We quickly
 determined there were no network connectivity problems, and a packet
 capture of the affected traffic showed numerous Active Directory DNS
 queries coming back as NXDOMAIN (host not found). Upon inspection of the

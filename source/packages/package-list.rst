@@ -96,7 +96,7 @@ repository:
 
 -  **NRPE** - pfSense GUI for Nagios NRPE nrpe is used to execute Nagios
    plugins on remote hosts and report the results to the main Nagios
-   server. From the Nagios homepage: Allows you to execute “local”
+   server. From the Nagios homepage: Allows you to execute "local"
    plugins (like check\_disk, check\_procs, etc.) on remote hosts. The
    check\_nrpe plugin is called from Nagios and actually makes the
    plugin requests to the remote host. Requires that nrpe be running on

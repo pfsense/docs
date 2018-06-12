@@ -39,7 +39,7 @@ Full Install without Swap Space
 
 If the system is running a full installation without swap space, it may
 not be able to take a crash dump or automatically restart, and may stop
-at a “**db>**” prompt on the console. Capture the output there, and also
-the output of the “*bt*” command at that prompt, then manually restart
+at a "**db>**" prompt on the console. Capture the output there, and also
+the output of the "*bt*" command at that prompt, then manually restart
 the unit.
 

@@ -18,11 +18,11 @@ one of our `available support
 resources <https://pfsense.org/support>`__. If/when a specific bug is
 found, a bug ticket can be opened.
 
-An example of an invalid bug report is “XYZ doesn't work!” without
+An example of an invalid bug report is "XYZ doesn't work!" without
 appropriate accompanying detail. An alternative, to make that a legit
-bug report, is “XYZ doesn't work, because the underlying xyz.conf has
+bug report, is "XYZ doesn't work, because the underlying xyz.conf has
 option1=1 where it should be option1=5 when I check box A on
-thispage.php in the web interface”.
+thispage.php in the web interface".
 
 See also `How to report bugs
 effectively <http://www.chiark.greenend.org.uk/~sgtatham/bugs.html>`__.
@@ -93,8 +93,8 @@ Packages <https://redmine.pfsense.org/projects/pfsense-packages>`__.
    assign it to them directly.
 
 -  **Category**: Pick the closest relevant category for the issue, if
-   possible, or a generic category such as “Web Interface” for GUI
-   issues and “Operating System” for OS-level issues.
+   possible, or a generic category such as "Web Interface" for GUI
+   issues and "Operating System" for OS-level issues.
 
 -  **Target Version**: Leave this **empty** unless directed by a
    developer to assign a specific target. Developers will assign a

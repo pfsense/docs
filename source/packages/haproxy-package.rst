@@ -53,7 +53,7 @@ Older Releases:
 -  1.00 - A lot of changes and fixes:
 
    -  **Versioning changed** - The package will show the version as
-      “1.4.18 pkg v 1.0” where the first version is the version of the
+      "1.4.18 pkg v 1.0" where the first version is the version of the
       HAProxy binary, and the second is the package version.
    -  HAProxy has been updated to 1.4.18, with separate compiled
       versions for 32 bit (i386) and 64 bit (amd64).
@@ -113,7 +113,7 @@ Known issues
 ------------
 
 -  When editing a frontend, choose an **External Address** and the
-   description refers to “the interface chosen above” but it isn't
+   description refers to "the interface chosen above" but it isn't
    possible to choose an interface. The only options for the address are
    *Interface Address*, *Any*, and any defined VIPs. I assume that the
    interface it chooses normally is the WAN, but this should be
@@ -126,7 +126,7 @@ Known issues
    to be generated, HAProxy will not be stopped nor will it be
    restarted. There is no error message to indicate that this is the
    case and the **Apply Changes** button will disappear.
--  Most time-based options appear to be optional and specify “default”
+-  Most time-based options appear to be optional and specify "default"
    amounts but are actually required (and shouldn't be).
 -  Some unexpected behavior for those who are used to HAProxy
    configuration alone (see the differences section).
@@ -143,7 +143,7 @@ Things that could be improved
    boxes.
 -  An overhaul of the package to fully utilize HAProxy's capabilities.
    It would be difficult to simply add in tabs for the other sections
-   due to internal naming. In the package, the “frontends” set up in the
+   due to internal naming. In the package, the "frontends" set up in the
    Frontends tab are referred to in the configuration as backends.
    Including full support for frontends, backends, and listen sections
    would make it possible to use a lot more advanced features even
@@ -181,7 +181,7 @@ to forward incoming connections.
 **listen** defines a complete proxy with its frontend and backend parts
 combined in one section. It is generally useful for TCP-only traffic.
 
-In the pfSense package, tabs exist to define “frontends” and “servers”
+In the pfSense package, tabs exist to define "frontends" and "servers"
 but the resulting configuration is actually made up completely of listen
 sections. This is okay for the most part, but it does prevent advanced
 usages that need to refer to several backends and the like.

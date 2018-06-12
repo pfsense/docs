@@ -167,8 +167,8 @@ VMware ESX Users
 ~~~~~~~~~~~~~~~~
 
 #. Enable promiscuous mode on the vSwitch
-#. Enable “MAC Address changes”
-#. Enable “Forged transmits”
+#. Enable "MAC Address changes"
+#. Enable "Forged transmits"
 
 ESX VDS Config
 ^^^^^^^^^^^^^^

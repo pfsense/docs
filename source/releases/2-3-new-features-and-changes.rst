@@ -54,11 +54,11 @@ noted again in the sections below, but worth emphasizing:
 -  The default system password hash has been changed to bcrypt. Current
    passwords will continue to work. Existing users need to reset their
    password to convert to the new hash. More info below under
-   “Authentication”. `#4120 <https://redmine.pfsense.org/issues/4120>`__
+   "Authentication". `#4120 <https://redmine.pfsense.org/issues/4120>`__
 -  The LiveCD platform has been removed. The ISO is a bootable
    installer, as always, but it cannot run a live system.
 
-   -  The installer ISO image is now named “pfSense--RELEASE-.iso”, with
+   -  The installer ISO image is now named "pfSense--RELEASE-.iso", with
       the .iso extension signifying the type of image it is (optical
       media installer).
    -  For the very few people who were still using LiveCD, if the
@@ -140,8 +140,8 @@ OS/Backend
    `#5330 <https://redmine.pfsense.org/issues/5330>`__
 -  Rewrote system\_set\_harddisk\_standby() for the current CAM-based
    ATA stack. `#4569 <https://redmine.pfsense.org/issues/4569>`__
--  Fixed a Panic/Crash with “sbflush\_internal: cc 4294967166 \|\| mb 0
-   \|\| mbcnt 0”. `#4689 <https://redmine.pfsense.org/issues/4689>`__
+-  Fixed a Panic/Crash with "sbflush\_internal: cc 4294967166 \|\| mb 0
+   \|\| mbcnt 0". `#4689 <https://redmine.pfsense.org/issues/4689>`__
 -  Fixed a kernel panic with AES-NI.
    `#4702 <https://redmine.pfsense.org/issues/4702>`__
 -  Updated AES-GCM/AES-NI bits from FreeBSD -HEAD.
@@ -196,16 +196,16 @@ System Updates
 --------------
 
 -  Major changes to update management
--  Removed “full update” or “full slice” upgrade for systems on 2.3 to
+-  Removed "full update" or "full slice" upgrade for systems on 2.3 to
    later versions
 
    -  These files will remain available for use by older versions
       updating to 2.3.
 
--  The “Full Backup” feature has been deprecated.
+-  The "Full Backup" feature has been deprecated.
 -  Changed system updates to be handled via pkg
 -  Changed Base, kernel, and standard pre-installed binares to packages
--  Removed “Firmware” nomenclature, now only referred to as “Update”
+-  Removed "Firmware" nomenclature, now only referred to as "Update"
 -  Fixed updating of base to work the same from the console or the GUI
 -  Added preliminary support for restarting system services without
    rebooting in cases when the base is updated but the kernel is the
@@ -231,7 +231,7 @@ Gateways/Routing
 
 -  Added code to allow gateways outside of an interface subnet.
    `#972 <https://redmine.pfsense.org/issues/972>`__
--  Corrected “State Killing on Gateway Failure” description.
+-  Corrected "State Killing on Gateway Failure" description.
    `#4709 <https://redmine.pfsense.org/issues/4709>`__
 -  Fixed disabling of a static route set to use a disabled gateway.
    `#4813 <https://redmine.pfsense.org/issues/4813>`__
@@ -258,7 +258,7 @@ Rules/NAT/pf
 -  Fixed a situation where pf drops IPv6 packets with fragment header
    followed by a last fragment only.
    `#2762 <https://redmine.pfsense.org/issues/2762>`__
--  Fixed “LAN network” in v6 rules not working when a link-local address
+-  Fixed "LAN network" in v6 rules not working when a link-local address
    is assigned to LAN.
    `#3656 <https://redmine.pfsense.org/issues/3656>`__
 -  Added reordering for 1:1 NAT rules.
@@ -270,11 +270,11 @@ Rules/NAT/pf
    `#5373 <https://redmine.pfsense.org/issues/5373>`__
 -  Standardized the NPt options in the GUI so their options and
    appearance are more similar to 1:1 NAT
--  Added a “no binat” checkbox to 1:1 NAT screen for exclusions.
+-  Added a "no binat" checkbox to 1:1 NAT screen for exclusions.
    `#3887 <https://redmine.pfsense.org/issues/3887>`__
 -  Limited pfsync syncpeer to IPv4 since it does not support IPv6
    `#4648 <https://redmine.pfsense.org/issues/4648>`__
--  Changed the default CARP pass rules to use “no state” to avoid issues
+-  Changed the default CARP pass rules to use "no state" to avoid issues
    with broken L2 gear that duplicates packets
    `#5800 <https://redmine.pfsense.org/issues/5800>`__
 -  Added sorting to Alias lists
@@ -285,7 +285,7 @@ Rules/NAT/pf
    concurrently (on different ports) in an HA environment
    `#5882 <https://redmine.pfsense.org/issues/5882>`__
 -  Added a visual indication in the rule list for floating rules with
-   the “quick” property set
+   the "quick" property set
    `#5860 <https://redmine.pfsense.org/issues/5860>`__
 -  Improved state display on **Diagnostics > States**, now shows packets
    and bytes for each state
@@ -407,7 +407,7 @@ Authentication
 -  Fixed updating of group file for renamed groups.
    `#6013 <https://redmine.pfsense.org/issues/6013>`__
 -  Fixed handling of groups with spaces in their names. Local group
-   names can no longer contain spaces. New group scope option “Remote”
+   names can no longer contain spaces. New group scope option "Remote"
    added for LDAP and RADIUS use where spaces in group names are valid.
    `#6012 <https://redmine.pfsense.org/issues/6012>`__
 -  Added support for RFC2307 style LDAP groups.
@@ -534,7 +534,7 @@ IPsec
    `#4178 <https://redmine.pfsense.org/issues/4178>`__
 -  Removed unnecessary and troublesome 'pass out' rules for mobile IPsec
    `#5819 <https://redmine.pfsense.org/issues/5819>`__
--  Fixed “no valid leases object found” log spam with IPsec dashboard
+-  Fixed "no valid leases object found" log spam with IPsec dashboard
    widget. `#5855 <https://redmine.pfsense.org/issues/5855>`__
 -  Fixed automatically added WAN rules (UDP 500, 4500, ESP) when using
    IPsec with IP aliases.
@@ -542,7 +542,7 @@ IPsec
 -  Fixed IKEv2 to Cisco ASA resulting in traffic selector mismatch when
    initiated by traffic.
    `#4719 <https://redmine.pfsense.org/issues/4719>`__
--  Added “split connections” option to phase 1 for IKEv2 for
+-  Added "split connections" option to phase 1 for IKEv2 for
    interoperability with third party devices that do not support
    multiple traffic selectors on one child SA (Cisco ASA, others).
    `#4704 <https://redmine.pfsense.org/issues/4704>`__
@@ -623,8 +623,8 @@ Traffic Shaping
 -  Relaxed the shaper wizard interface validation when there are no
    interfaces with gateways selected
    `#4524 <https://redmine.pfsense.org/issues/4524>`__
--  Fixed traffic shaper failure with “bandwidth for q... higher than
-   interface” in some edge cases.
+-  Fixed traffic shaper failure with "bandwidth for q... higher than
+   interface" in some edge cases.
    `#5721 <https://redmine.pfsense.org/issues/5721>`__
 
 Misc
@@ -632,7 +632,7 @@ Misc
 
 -  Allow wildcards in Certificate Subject Alternative Names.
    `#3733 <https://redmine.pfsense.org/issues/3733>`__
--  Removed the “Certificate Authority” option on the **Certificates**
+-  Removed the "Certificate Authority" option on the **Certificates**
    tab of the Cert Manager when creating a **Certificate**. To make a
    Certificate Authority, use the **CAs** tab instead.
    `#5924 <https://redmine.pfsense.org/issues/5924>`__
@@ -643,7 +643,7 @@ Misc
    accurate output
 -  Added pfsync protocol option to packet capture page.
    `#5866 <https://redmine.pfsense.org/issues/5866>`__
--  Added “GoTo line #” control to Diagnostics > Edit File
+-  Added "GoTo line #" control to Diagnostics > Edit File
 -  Corrected help in pfSsh.php to properly reflect how recording works
 -  Fixed validation of playback file passed to pfSsh.php
    `#5657 <https://redmine.pfsense.org/issues/5657>`__

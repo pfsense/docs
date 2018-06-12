@@ -15,23 +15,23 @@ parties involved.
 
 What can not be offered is a commercial redistribution of pfSense®
 software, for example the guidelines do not permit someone to offer
-“Installation of pfSense® software” as a service or to sell a device
+"Installation of pfSense® software" as a service or to sell a device
 pre-loaded with pfSense® software to customers without the prior express
 written permission of ESF pursuant to the trademark policy as referenced
 in the `RCL Terms and
 Conditions <https://www.netgate.com/RCL-Terms-and-Conditions.pdf>`__.
 
-Example 1: A consultant may offer firewall services (e.g. “Fred’s
-Firewalls”), without mentioning pfSense® software or using the logo in
+Example 1: A consultant may offer firewall services (e.g. "Fred’s
+Firewalls"), without mentioning pfSense® software or using the logo in
 their advertising, marketing material, and so on. They can install
 pfSense® software and manage it for their customers.
 
 Example 2: Fred’s Firewalls may make a customized distribution pfSense®
 software with their own name and logo used in place of the pfSense
 marks. They can use the pfSense marks to truthfully describe the origin
-of the software, such as “Fred’s Firewall software is derived from the
-pfSense CE source code.” Even though Fred’s Firewall is based on
-pfSense® software, it can **not** be referred to as “pfSense® software”
+of the software, such as "Fred’s Firewall software is derived from the
+pfSense CE source code." Even though Fred’s Firewall is based on
+pfSense® software, it can **not** be referred to as "pfSense® software"
 since it has been modified.
 
 Example 3: Fred’s Firewalls may sell their customized firewall
@@ -72,7 +72,7 @@ this support is critically important.
 Using the pfSense Name and Logo
 -------------------------------
 
-The “pfSense” name and logo are trademarks of `Electric Sheep Fencing,
+The "pfSense" name and logo are trademarks of `Electric Sheep Fencing,
 LLC <http://electricsheepfencing.com/>`__.
 
 The pfSense software source code is open source and covered by the
@@ -82,7 +82,7 @@ which have restricted usage.
 
 We think it is great that people want to promote and support the pfSense
 project. At the same time, we also need to verify that what is referred
-to as “pfSense” is a genuine instance of pfSense software and **not**
+to as "pfSense" is a genuine instance of pfSense software and **not**
 modified in any way.
 
 -  The pfSense name and logo **MAY NOT** be used physically on a
@@ -103,40 +103,40 @@ modified in any way.
 
    -  Some examples:
 
-      -  “Blahsoft Fireblah based on pfSense software” -- Acceptable
-      -  “Blahsoft pfSense Firewall” -- NOT Allowed
+      -  "Blahsoft Fireblah based on pfSense software" -- Acceptable
+      -  "Blahsoft pfSense Firewall" -- NOT Allowed
 
 -  You may **ONLY** install an **UNMODIFIED** version of pfSense
-   software and still call it “pfSense software”.
+   software and still call it "pfSense software".
 
    -  If the source code has been changed, compiled/rebuilt separately,
       included extra file installations such as themes or add-on
       scripts, or any other customizations, it can **not** be called
-      “pfSense software”, it must be called something else.
+      "pfSense software", it must be called something else.
    -  Trademark protection aside, this requirement preserves the
       integrity and reputation of the pfSense project. It also prevents
       unverified changes that may be questionably implemented from being
       attributed to pfSense.
 
 -  If a pfSense distribution is modified, the resulting software
-   **CANNOT** be called “pfSense” or anything *similar*. The new name
+   **CANNOT** be called "pfSense" or anything *similar*. The new name
    must be distinct from pfSense. Trademark law does not allow use of
    names or trademarks that are confusingly similar to the pfSense
    Marks. This means, among other things, that you may **not** use a
    variation of the pfSense Marks, their phonetic equivalents, mimicry,
    wordplay, or abbreviation with respect to similar or related
-   projects, products, or services (for example, “pfSense Lifestyle,”
-   “PFsense Community,” “pf-Sense Sensibility,” “pfSensor”, etc.,
+   projects, products, or services (for example, "pfSense Lifestyle,"
+   "PFsense Community," "pf-Sense Sensibility," "pfSensor", etc.,
    **all** infringe on ESF’s rights).
 
    -  Examples:
 
-      -  “pfSomething”, or “somethingSense” -- INFRINGING references
-      -  “ExampleWall”, “FireWidget” -- NON-Infringing references
+      -  "pfSomething", or "somethingSense" -- INFRINGING references
+      -  "ExampleWall", "FireWidget" -- NON-Infringing references
 
--  The “pfSense” name **MAY NOT** be used in a company name or similar.
-   You **CANNOT** call your company “pfSense Support, Ltd” or “pfSense
-   Experts, LLC”, or use it in a domain name or subdomain reference.
+-  The "pfSense" name **MAY NOT** be used in a company name or similar.
+   You **CANNOT** call your company "pfSense Support, Ltd" or "pfSense
+   Experts, LLC", or use it in a domain name or subdomain reference.
    However, you can state support for pfSense software, offer training
    for pfSense software, etc.
 

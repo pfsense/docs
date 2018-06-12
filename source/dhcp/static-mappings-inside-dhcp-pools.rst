@@ -7,7 +7,7 @@ While ISC dhcpd will allow a static mapping to be defined inside the
 DHCP range/pool, it can result in unexpected behavior.
 
 ISC dhcpd only checks via ping to ensure that an IP is not actively in
-use when making assignments. Making a static mapping does not “reserve”
+use when making assignments. Making a static mapping does not "reserve"
 that IP out of the pool. The static mapping in this case merely
 represents a preference for an IP and others are not prevented from
 taking the IP if it is not in use.

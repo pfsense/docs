@@ -24,7 +24,7 @@ CARP IP on the interconnect subnet with that upstream provider.
 On pfSense 2.1.x and before
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Another option is to use “*local-address *” and “*depend-on carpX*”.
+Another option is to use "*local-address *" and "*depend-on carpX*".
 This way the bgpd daemon on the secondary node only starts connecting
 when CARP has failed over (when the CARP VIP enters a MASTER state).
 This is likely to be disruptive to connectivity during failover where

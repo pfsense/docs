@@ -39,17 +39,17 @@ Developer Rules
 
    -  Brief first sentence that describes the commit
    -  Start with an action word describing the nature of the change
-      (“Adds...”, “Changes...”, “Improves...”, “Corrects...”)
+      ("Adds...", "Changes...", "Improves...", "Corrects...")
    -  Reference the ticket number in the first sentence (see previous
       bullet point)
-   -  Examples: “Change X to Y which fixes #1234”, “Correct check for
-      XYZ in some\_page.php to prevent badthing. Fixes #2345”, or “Add
-      coolnewthing to some\_page.php. Implements #3456”
+   -  Examples: "Change X to Y which fixes #1234", "Correct check for
+      XYZ in some\_page.php to prevent badthing. Fixes #2345", or "Add
+      coolnewthing to some\_page.php. Implements #3456"
    -  Longer, more detailed explanations can be placed on the next line
       and later.
 
 -  Always use full paths when calling an executable (e.g.
-   “/usr/bin/grep” NOT “grep”)
+   "/usr/bin/grep" NOT "grep")
 
 HTML Specific Rules
 -------------------
@@ -79,10 +79,10 @@ code against the following ruleset:
 - A <div /> tag does not have a name attribute
 - A <ul /> tag does not have a name attribute
 - A <li /> tag does not have a name attribute
-- Checkbox checked attributes must be coded as checked=“checked”
-- HTML field disabled attributes must be coded as disabled=“disabled”
-- HTML field readonly attributes must be coded as readonly=“readonly”
-- Any HTML <input /> field has a type attribute (e.g. type=“text”)
+- Checkbox checked attributes must be coded as checked="checked"
+- HTML field disabled attributes must be coded as disabled="disabled"
+- HTML field readonly attributes must be coded as readonly="readonly"
+- Any HTML <input /> field has a type attribute (e.g. type="text")
 - Opening <p>, <b> tags must have a matching closing tag (e.g. </p>)
 - <table /> tags do not contain a <form /> tag
 - Place the inputerror <div /> after the "tabnavtbl" < td />, before the "mainarea" <div />
@@ -118,16 +118,16 @@ General rules
 - Add comments in English, whenever necessary or helpful
 - Use // or /\* \*/ style syntax for single line comments, do not use #
 - Use /\* \*/ style syntax for multi-line comments
-- Use “elseif” and not “else if” when given a choice. The “else if”
+- Use "elseif" and not "else if" when given a choice. The "else if"
   variant `only works with braced
   syntax <http://php.net/manual/en/control-structures.elseif.php>`__
-  and not colon syntax (e.g. “if: ... elseif: ... endif;”).
+  and not colon syntax (e.g. "if: ... elseif: ... endif;").
 - For testing the same variable against multiple strings or values
   directly, use a switch statement rather than a long chain of
   if/elseif/elseif/elseif/.../else statements.
-- Add “TODO:” comments, when there is something to be done
-- Add “FIXME:” comments, when something is broken
-- add “NOTE:” comments, when there is something important other people
+- Add "TODO:" comments, when there is something to be done
+- Add "FIXME:" comments, when something is broken
+- add "NOTE:" comments, when there is something important other people
   should know beyond a traditional comment, for example a warning about
   not changing code in certain ways.
 - Try to code in a readable way::
@@ -165,7 +165,7 @@ General rules
     global $g used by pfSense
 
 - All switch statements must have a default
-- In classes, use “private”, “protected” and “public”, not “var” for
+- In classes, use "private", "protected" and "public", not "var" for
   attribute declaration
 - Do not to use deprecated or obsolete functions
 
@@ -178,7 +178,7 @@ General rules
 Indent style
 ~~~~~~~~~~~~
 
-- Use “K&R, BSD KNF variant style” (see
+- Use "K&R, BSD KNF variant style" (see
   https://en.wikipedia.org/wiki/Indent_style#Variant:_BSD_KNF )::
 
     if ($x == $y) {

@@ -8,20 +8,18 @@ Using OpenVPN with the :doc:`FreeRADIUS 2.x package </usermanager/freeradius-2-x
 Purpose
 -------
 
-This document will show how to setup OpenVPN on while allowing for
-authentication via RADIUS. This is so that certificates may be used as
-well as a username/password. Usernames and Passwords can also be managed
-centrally on the firewall, and additional RADIUS-specific options may be
-used. This is a plus because login times, access limits, and other
-options are possible.
+This document will show how to setup OpenVPN while allowing for authentication
+via RADIUS. Usernames and Passwords can be managed centrally on the firewall,
+and additional RADIUS-specific options may be used. This is a plus because login
+times, access limits, and other options are possible.
 
 Requirements
 ------------
 
 -  A working OpenVPN server. See :doc:`OpenVPN Remote Access Server </vpn/openvpn/openvpn-remote-access-server>` for a How-To.
--  FreeRADIUS2 Installed: See :doc:`FreeRADIUS 2.x package </usermanager/freeradius-2-x-package>`
+-  FreeRADIUS Installed: See :doc:`FreeRADIUS 2.x package </usermanager/freeradius-2-x-package>`
 
-After installing FreeRADIUS2, :doc:`perform the initial configuration </usermanager/freeradius-2-x-package>`
+After installing FreeRADIUS, :doc:`perform the initial configuration </usermanager/freeradius-2-x-package>`
 to allow access from the firewall as a NAS client.
 
 Add an interface to FreeRADIS2
@@ -30,9 +28,9 @@ Add an interface to FreeRADIS2
 -  Navigate to **Services > FreeRADIUS**
 -  Select the **Interfaces** tab
 -  Click + to add a new entry
--  Enter *\** for **the Interface IP Address**, or *127.0.0.1* to bind
+-  Enter ``*`` for the **Interface IP Address**, or ``127.0.0.1`` to bind
    only to Localhost
--  Enter *1812* for the **Port**
+-  Enter ``1812`` for the **Port**
 -  Select *Authentication* for the **Interface Type**
 -  Click Save
 
@@ -42,12 +40,11 @@ Add a NAS client to FreeRADIUS
 -  Navigate to **Services > FreeRADIUS**
 -  Select the **NAS / Clients** tab
 -  Click + to add a new entry
--  Enter *127.0.0.1* in the **Client IP Address** field
--  Enter *pfSense*, *OpenVPN*, or similar in the **Client Shortname**
-   field
+-  Enter ``127.0.0.1`` in the **Client IP Address** field
+-  Enter ``pfSense``, ``OpenVPN``, or similar in the **Client Shortname** field
 -  Enter a random/long password in the **Client Shared Secret** field
 -  Enter a **Description** that will help identify this connection.
--  Click “Save”
+-  Click "Save"
 
 Add Users
 ---------
@@ -65,7 +62,7 @@ Add Users
 -  [optional] Set the **Session Timeout** When this timer expires, the
    user will be kicked off and will have to login again
 -  Repeat as needed for additional users
--  Click “Save”
+-  Click "Save"
 
 Configure a pfSense Authentication Server
 -----------------------------------------
@@ -117,7 +114,7 @@ via SSH unless otherwise specified.
    location so it can be read it easier.
 
    -  Navigate to **VPN > OpenVPN** and select the server
-   -  Modify the “Advanced” text box to include the following:
+   -  Modify the "Advanced" text box to include the following:
 
 ``verb 7``
 

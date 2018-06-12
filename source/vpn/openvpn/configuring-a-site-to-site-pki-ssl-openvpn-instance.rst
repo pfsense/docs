@@ -41,7 +41,7 @@ to that for a :doc:`remote access setup </vpn/openvpn/openvpn-remote-access-serv
 -  **Server Certificate**: The *Server* certificate created in the :doc:`cert manager </certificates/certificate-management>`
 -  **IPv4 Tunnel Network**: An *unused* subnet. When using subnet
    topology, OpenVPN will assign one address out of this pool to each
-   client. When using the older “net30” topology, OpenVPN will carve /30
+   client. When using the older "net30" topology, OpenVPN will carve /30
    networks (4 IP addresses each) for each client connection out of this
    network. Make sure this network is large enough to handle all of the
    clients. With net30 allocations, a /24 will fit 63 clients (64 total

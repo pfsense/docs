@@ -34,8 +34,8 @@ screen.
 
 -  **Source**: Allows matching a specific original source of the
    traffic, and is hidden behind an Advanced button as in most cases it
-   should be “any”, allowing all Internet hosts through. The source port
-   range when using TCP and/or UDP, and will almost always be “any”.
+   should be "any", allowing all Internet hosts through. The source port
+   range when using TCP and/or UDP, and will almost always be "any".
    **The source port is not the same as the destination port**, and is
    normally a random port between 1024-65535.
 

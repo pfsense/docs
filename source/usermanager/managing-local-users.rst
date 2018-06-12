@@ -16,11 +16,11 @@ confirmation of the password). The other information is optional, but
 may be desirable to set.
 
 A user may be added to a :doc:`group </usermanager/group-manager>` by clicking (or
-ctrl-clicking for multiple) groups, and then press the `17px\|alt=“right
-pointing triangle”\|right pointing triangle <Image:icon_right.png>`__
+ctrl-clicking for multiple) groups, and then press the `17px\|alt="right
+pointing triangle"\|right pointing triangle <Image:icon_right.png>`__
 button to add group memberships. Groups can be removed by clicking (or
-ctrl-clicking for multiple) and then pressing `17px\|alt=“left pointing
-triangle”\|left pointing triangle <Image:icon_left.png>`__.
+ctrl-clicking for multiple) and then pressing `17px\|alt="left pointing
+triangle"\|left pointing triangle <Image:icon_left.png>`__.
 
 If this user will be accessing the system with SSH, and key-based
 authentication may be used instead of passwords. Paste their public ssh

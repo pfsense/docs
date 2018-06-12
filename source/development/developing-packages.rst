@@ -317,7 +317,7 @@ will not be rebuilt and made available to others.
 Repository Branches
 ~~~~~~~~~~~~~~~~~~~
 
-When submitting changes, they are typically submitted to the “devel”
+When submitting changes, they are typically submitted to the "devel"
 branch of the pfSense copy of FreeBSD-ports. In order to show to all
 users, the changes must be placed in the current release branch as well,
 such as RELENG\_2\_3\_0. Furthermore, the changes should be on any
@@ -347,7 +347,7 @@ new copy is built and put on the firewall::
 
   pkg add /path/to/file/pfSense-pkg-Cron-0.3.3.txz
 
-It will also work with “pkg add” and a URL to an http or https web
+It will also work with "pkg add" and a URL to an http or https web
 server.
 
 Making the package involves:
@@ -355,7 +355,7 @@ Making the package involves:
 - Checking out the `ports tree copy from github <https://github.com/pfsense/FreeBSD-ports>`__.
 - :doc:`Locating the port's directory </development/package-port-directory-structure>`
 - Making changes
-- Running “make package” like so::
+- Running "make package" like so::
 
     $ git clone git@github.com:pfsense/FreeBSD-ports.git pfSense-ports
     $ cd pfSense-ports/blah/pfSense-pkg-foo/

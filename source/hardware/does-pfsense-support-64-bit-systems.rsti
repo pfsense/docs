@@ -5,7 +5,7 @@ Does pfSense support 64 bit systems
 
 Yes. All supported releases of pfSense are 64-bit capable when using
 pfSense images labeled with
-“`amd64 <http://en.wikipedia.org/wiki/X86-64>`__” for both Intel and AMD
+"`amd64 <http://en.wikipedia.org/wiki/X86-64>`__" for both Intel and AMD
 CPUs using the AMD64 architecture, also known as x86-64.
 
 32-bit images and support (i386) are deprecated with the pfSense

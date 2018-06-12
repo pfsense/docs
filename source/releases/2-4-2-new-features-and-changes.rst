@@ -75,7 +75,7 @@ Certificates
    non-standard usage of openssl in the cli/shell)
    `#8059 <https://redmine.pfsense.org/issues/8059>`__
 -  Fixed LDAP authentication when the server uses a globally trusted
-   root CA (new CA selection for “Global Root CA List”)
+   root CA (new CA selection for "Global Root CA List")
    `#8044 <https://redmine.pfsense.org/issues/8044>`__
 -  Fixed issues creating a certificate with a wildcard CN/SAN
    `#7994 <https://redmine.pfsense.org/issues/7994>`__
@@ -103,9 +103,9 @@ IPsec
 OpenVPN
 -------
 
--  Added an option for OpenVPN servers to utilize “redirect-gateway
-   ipv6” to act as the default gateway for connecting VPN clients with
-   IPv6, similar to “redirect-gateway def1” for IPv4.
+-  Added an option for OpenVPN servers to utilize "redirect-gateway
+   ipv6" to act as the default gateway for connecting VPN clients with
+   IPv6, similar to "redirect-gateway def1" for IPv4.
    `#8082 <https://redmine.pfsense.org/issues/8082>`__
 -  Fixed the OpenVPN Client Certificate Revocation List option
    `#8088 <https://redmine.pfsense.org/issues/8088>`__

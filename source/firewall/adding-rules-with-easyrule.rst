@@ -14,7 +14,7 @@ from the source of that log entry to the destination IP address and
 port.
 
 There is a command line program that handles the same functionality. It
-is called “easyrule” and can be run from the shell like so:
+is called "easyrule" and can be run from the shell like so:
 
 ::
 

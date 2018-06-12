@@ -159,7 +159,7 @@ To configure a new tunnel, a new Phase 1 must be created. Click the
 
 Phase 1:
 
-#. **Disabled**: This is an “on / off” button. If the tunnel should be
+#. **Disabled**: This is an "on / off" button. If the tunnel should be
    disabled for any reason, check this option. When tunnel is needed
    again, uncheck it.
 #. **Internet Protocol**: Selects whether the tunnel will connect to an
@@ -201,7 +201,7 @@ Phase 1:
 #. **Pre-Shared Key**: This key must be exactly the same on both VPN
    routers. It is case sensitive, and it does support special
    characters. Using both is a good idea, such as: f00m0nk3y@BubbaLand.
-   The longer the key, the better. Think of this like a “password” for
+   The longer the key, the better. Think of this like a "password" for
    the tunnel. Since this only gets entered once on each side and there
    is no need to remember it, it is better to make this as long and
    complex as possible.
@@ -268,13 +268,13 @@ The Phase 2 information can be filled in as follows:
    than tunneling other interesting traffic.
 #. **Local Network**: This defines which subnet or host can be accessed
    from the other side of the VPN tunnel. The easiest thing to do is to
-   set this to “LAN subnet”. This means the entire LAN will be
+   set this to "LAN subnet". This means the entire LAN will be
    accessible from the remote network. **IMPORTANT**: The other end of
-   the tunnel has this same field, except on the far side it is “Remote
-   Subnet”. Ensure that the other end is set exactly the same. For
-   example, if “Single host” is chosen in this section and the IP
+   the tunnel has this same field, except on the far side it is "Remote
+   Subnet". Ensure that the other end is set exactly the same. For
+   example, if "Single host" is chosen in this section and the IP
    address of a host was entered, the other side would need to set that
-   host in the “Remote Subnet” field.
+   host in the "Remote Subnet" field.
 #. **Local Network: NAT**: If the actual **Local Network** must be
    hidden from the far side, enter the settings to present to the far
    side (NAT+IPsec). For more details, see :doc:`NAT with IPsec Phase 2 Networks
@@ -282,7 +282,7 @@ The Phase 2 information can be filled in as follows:
 #. **Remote Network**: This defines which subnet or host to be accessed
    on the other end of the tunnel. As mentioned in the previous item, it
    is paramount that this is set this exactly like the other end's
-   “local subnet” section. If not, phase 2 of the VPN connection will
+   "local subnet" section. If not, phase 2 of the VPN connection will
    fail and traffic will not pass from one VPN segment to the other.
 #. **Description**: A description for this Phase 2 entry. Shows up in
    the IPsec status for reference.
@@ -342,7 +342,7 @@ In some cases there is a different firewall or router sitting between
 pfSense and the Internet. If this is the case, then it is necessary to
 add a port forward for ESP and UDP 500 to pfSense. The outside router
 must be able to properly handle NAT of this traffic, and some do not. A
-modem's “DMZ” mode may also help here. In this case, **NAT Traversal**
+modem's "DMZ" mode may also help here. In this case, **NAT Traversal**
 should also be enabled on Phase 1.
 
 This may introduce routing difficulties on the internal network. More

@@ -22,7 +22,7 @@ Example of a basic lock down of the LAN and DMZ out going rules
 Outbound LAN
 ~~~~~~~~~~~~
 
--  Make sure the “Default LAN > any” rule is either disabled or removed.
+-  Make sure the "Default LAN > any" rule is either disabled or removed.
 -  Allow DNS access - if pfSense is the DNS server, use LAN address, if
    using outside DNS create rule to allow TCP/UDP 53 to anywhere
 

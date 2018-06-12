@@ -92,11 +92,11 @@ Is the last rule in the **Firewall > Rules** list the Balance rule?
 Are all the ISP connections being used?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Use a search engine (Google) to search for “what is my ip”
+Use a search engine (Google) to search for "what is my ip"
 
 Click on several of the resulting sites. The results should show that
 the IP address is each of the WAN IP addresses. If there is only one
 person using the pfSense firewall, every time a page is reloaded one of
-the “what is my IP” pages should give a different IP address. The
+the "what is my IP" pages should give a different IP address. The
 browser cache may need cleared, or the browser closed and reopened
 between tests on the same site.

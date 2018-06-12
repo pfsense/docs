@@ -15,7 +15,7 @@ Settings for High Availability are found under **System > High Avail.
 Sync**, and sometimes on other areas that have special handling
 (Vouchers, packages, etc.).
 
-Often such collections of hosts are referred to as “CARP Clusters” but
+Often such collections of hosts are referred to as "CARP Clusters" but
 CARP is only one aspect. High Availability is achieved using a
 combination of multiple related techniques, including CARP, State
 Synchronization (pfsync), and Configuration Synchronization (XMLRPC
@@ -25,7 +25,7 @@ CARP
 ----
 
 Common Address Redundancy Protocol (**CARP**) is used by multiple nodes
-to “share” a :doc:`Virtual IP address </firewall/virtual-ip-address-feature-comparison>`
+to "share" a :doc:`Virtual IP address </firewall/virtual-ip-address-feature-comparison>`
 between multiple nodes in such a way that if the preferred node fails,
 another will take over seamlessly.
 `CARP <http://en.wikipedia.org/wiki/Common_Address_Redundancy_Protocol>`__

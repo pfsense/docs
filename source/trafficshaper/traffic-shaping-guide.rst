@@ -13,7 +13,7 @@ Shaping**.
 What is traffic Shaping?
 ------------------------
 
-    Traffic shaping (also known as “packet shaping”) is the control of
+    Traffic shaping (also known as "packet shaping") is the control of
     computer network traffic in order to optimize or guarantee
     performance, lower latency, and/or increase usable bandwidth by
     delaying packets that meet certain criteria. More specifically,
@@ -172,7 +172,7 @@ ACK Queue Sizing
 ----------------
 
 When data is downloaded, a computer needs to send (upload) ACK packets.
-These are basically saying “yep, I got that part of the download OK”. If
+These are basically saying "yep, I got that part of the download OK". If
 the computer being downloaded from detects that an ACK has not been
 received, it assumes that the data was not received and sends it again.
 The rate at which ACKs are sent back is also used to help determine the

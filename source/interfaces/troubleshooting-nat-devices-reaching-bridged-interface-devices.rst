@@ -13,6 +13,6 @@ the firewall.
 
 For hosts on the bridged segment to reach hosts behind the NAT segment
 directly, a static route could be used on the bridged hosts or upstream
-gateway to send the “private” subnet traffic to the IP address of the
+gateway to send the "private" subnet traffic to the IP address of the
 firewall in the bridged network.
 

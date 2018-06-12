@@ -82,7 +82,7 @@ USB keys/pendrives, memory sticks
 -  Extract the .img file from the .gz archive first
 -  Download Rufus from https://rufus.akeo.ie/
 -  Select your USB under Device
--  Under “Create bootable disk using” click on CD-ROM icon
+-  Under "Create bootable disk using" click on CD-ROM icon
 -  Select extracted pfSense .img that you downloaded as described above
 -  Click Start and wait for image to be copied to USB.
 
@@ -155,7 +155,7 @@ root, omit **sudo**.
   243048448 bytes (243 MB) copied, 26.3313 s, 9.2 MB/s
   $
 
-If a warning is printed about “trailing garbage” is may be safely
+If a warning is printed about "trailing garbage" is may be safely
 ignored, as it is from the file's digital signature.
 
 FreeBSD
@@ -173,7 +173,7 @@ target disk.
 
   $ gzip -dc pfSense-memstick-2.2.3-RELEASE-amd64.img.gz | sudo dd of=/dev/da9 obs=64k
 
-If a warning is printed about “trailing garbage” is may be safely
+If a warning is printed about "trailing garbage" is may be safely
 ignored, as it is from the file's digital signature.
 
 Writing Images in Mac OS X
