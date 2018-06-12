@@ -6,9 +6,8 @@ Tuning the Squid Package
 Performance Tweaks
 ------------------
 
-`Some users <http://forum.pfsense.org/index.php/topic,14673.0.html>`__
-have reported that making the following change has greatly increased
-performance:
+Some users have reported that `making the following change`_ has greatly
+increased performance:
 
 -  Edit /boot/loader.conf.local
 -  Change kern.ipc.nmbclusters="0" to kern.ipc.nmbclusters="32768"
@@ -122,8 +121,6 @@ apply::
 Tweaking Update Caching / Squid seems to download on its own
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-From
-`here <http://forum.pfsense.org/index.php/topic,38141.msg198482.html#msg198482>`__.
 Change This::
 
   range_offset_limit -1;
@@ -145,8 +142,8 @@ To ensure that a file is only downloaded if a user actually receives 70%
 or more of it. Otherwise if a user requests a file and then aborts, it
 will download the whole file.
 
-.. note:: If range\_offset\_limit is set to -1 the quick abort options will
-   NOT work
+.. note:: If **range_offset_limit** is set to ``-1`` the quick abort options
+   will NOT work
 
 Parent proxy
 ~~~~~~~~~~~~
@@ -161,3 +158,5 @@ the **Proxy server: General settings** tab. For example for use as a
 parent proxy installed package HAVP need to add the line *cache\_peer
 127.0.0.1 parent 3121 7 no-query* (Here HAVP configured to use the IP
 address *127.0.0.1* port *3121*).
+
+.. _making the following change: https://forum.netgate.com/topic/13819/squid-kern-ipc-nmbclusters-32768-seemed-to-be-large-improvement-here

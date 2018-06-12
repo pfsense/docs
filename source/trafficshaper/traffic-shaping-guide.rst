@@ -7,23 +7,23 @@ Traffic Shaping and queuing in pfSense can be accomplished in several
 ways. The easiest to implement is ALTQ-based shaping with the Traffic
 Shaping Wizard.
 
-Traffic Shaping configuration is based at **Firewall > Traffic
-Shaping**.
+Traffic Shaping configuration is based at **Firewall > Traffic Shaping**.
 
 What is traffic Shaping?
 ------------------------
 
-    Traffic shaping (also known as "packet shaping") is the control of
-    computer network traffic in order to optimize or guarantee
-    performance, lower latency, and/or increase usable bandwidth by
-    delaying packets that meet certain criteria. More specifically,
-    traffic shaping is any action on a set of packets (often called a
-    stream or a flow) which imposes additional delay on those packets
-    such that they conform to some predetermined constraint (a contract
-    or traffic profile).
+.. epigraph::
 
-`From Traffic Shaping Wikipedia
-article <http://en.wikipedia.org/wiki/Traffic_shaping>`__.
+   Traffic shaping (also known as "packet shaping") is the control of
+   computer network traffic in order to optimize or guarantee
+   performance, lower latency, and/or increase usable bandwidth by
+   delaying packets that meet certain criteria. More specifically,
+   traffic shaping is any action on a set of packets (often called a
+   stream or a flow) which imposes additional delay on those packets
+   such that they conform to some predetermined constraint (a contract
+   or traffic profile).
+
+   -- `From Traffic Shaping Wikipedia article <http://en.wikipedia.org/wiki/Traffic_shaping>`_
 
 Limitations
 -----------
@@ -136,8 +136,8 @@ Rules there may also be set to *Match* which selects them for traffic
 shaping queues but does NOT affect whether or not the traffic is passed
 or blocked. These rules are evaluated before the interface rules, and
 are non terminating. The last floating rule that matches a stream will
-be the one that applies. See :doc:`/firewall/floating-rules` for more details on how Floating
-Rules operate.
+be the one that applies. See :doc:`/firewall/floating-rules` for more details on
+how Floating Rules operate.
 
 Tips
 ~~~~
@@ -210,28 +210,12 @@ Other Documentation
 
 Links to other useful documentation.
 
--  `PF packet flow
-   diagram. <http://homepage.mac.com/quension/pf/flow.png>`__ - Notice
-   how Altq is the last item to get processed.
--  `Shaper 2.0 bounty
-   thread. <http://forum.pfsense.org/index.php/topic,2718.0.html>`__
--  `ACK queue sizing
-   thread. <http://forum.pfsense.org/index.php/topic,2484.0.html>`__
--  `QoS/Traffic Shaping information and
-   tips. <http://forum.pfsense.org/index.php/topic,11986.0.html>`__
--  `Tips and Tricks
-   thread. <http://forum.pfsense.org/index.php/topic,1384.0.html>`__
--  `P2P queue sizing
-   discussion. <http://forum.pfsense.org/index.php/topic,9129.0.html>`__
--  `P2P queue sizing
-   post. <http://forum.pfsense.org/index.php/topic,9427.0.html>`__
--  `Monitoring PF
-   article. <http://prefetch.net/articles/monitoringpf.html>`__
--  `PF: Packet Queueing and Prioritization (OpenBSD not
-   FreeBSD) <https://web.archive.org/web/20160404153707/http://www.openbsd.org/faq/pf/queueing.html>`__
--  `HFSC howto on Calomel.org. <https://calomel.org/pf_hfsc.html>`__
--  `Paper on HFSC
-   design. <http://www.cs.cmu.edu/~hzhang/HFSC/main.html>`__
--  `Linux HFSC description, good conceptual
-   examples. <http://linux-ip.net/articles/hfsc.en/>`__
-
+- `ACK queue sizing thread. <https://forum.netgate.com/topic/2322/calculating-the-required-bandwidth-for-ack-queues-for-asymetric-link>`_
+- `QoS/Traffic Shaping information and tips. <https://forum.netgate.com/topic/11316/qos-traffic-shaping-information-and-tips>`_
+- `Tips and Tricks thread. <https://forum.netgate.com/topic/1288/traffic-shaping-tips-and-tricks>`_
+- `P2P queue sizing discussion. <https://forum.netgate.com/topic/8605/bandwidth-saturated-by-lowest-priority-queue>`_
+- `Monitoring PF article. <http://prefetch.net/articles/monitoringpf.html>`_
+- `PF: Packet Queueing and Prioritization (OpenBSD not FreeBSD) <https://web.archive.org/web/20160404153707/http://www.openbsd.org/faq/pf/queueing.html>`_
+- `HFSC howto on Calomel.org. <https://calomel.org/pf_hfsc.html>`_
+- `Paper on HFSC design. <http://www.cs.cmu.edu/~hzhang/HFSC/main.html>`_
+- `Linux HFSC description, good conceptual examples. <http://linux-ip.net/articles/hfsc.en/>`_
