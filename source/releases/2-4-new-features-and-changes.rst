@@ -87,11 +87,11 @@ Known Issues
    code <https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=217282>`__.
    This crash is infrequent and does not affect most users or most boot
    attempts, but since it is a race condition it can manifest randomly.
-   To avoid the crash, configure the VM to use the *syscons* console
-   rather than *vt* by editing */boot/loader.conf.local* and adding this
-   line:
+   To avoid the crash, configure the VM to use the ``syscons`` console
+   rather than ``vt`` by editing ``/boot/loader.conf.local`` and adding this
+   line::
 
-`` kern.vty=sc``
+     kern.vty=sc
 
 Cleanup
 -------

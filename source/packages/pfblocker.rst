@@ -95,22 +95,16 @@ http://www.iblocklist.com/lists.php
 FAQ
 ---
 
-I'm getting memory errors while applying pfblocker lists, how to fix
-this?
-
-``Increase table size to avoid memory errors in Advanced settings.``
-
-I can't see any pfblocker rules applied, whats wrong?
-
-``pfblocker requires at least one firewall entry (any interface) for it to be active. One way to verify is to check the front page widget.``
-
-pfBlocker always moves its rules to the top, how can I stop this?
-
-``Change rule action to Alias only and then apply custom rules using pfBlocker aliases with an arbitrary sequence.``
-
-How can I apply pfBlocker lists in floating rules?
-
-``Aliases are used for customized filter entries and float rules.``
+:I'm getting memory errors while applying pfblocker lists, how to fix this?:
+  Increase table size to avoid memory errors in Advanced settings.
+:I can't see any pfblocker rules applied, whats wrong?:
+  pfblocker requires at least one firewall entry (any interface) for it to be
+  active. One way to verify is to check the front page widget.
+:pfBlocker always moves its rules to the top, how can I stop this?:
+  Change rule action to Alias only and then apply custom rules using pfBlocker
+  aliases with an arbitrary sequence.
+:How can I apply pfBlocker lists in floating rules?:
+  Aliases are used for customized filter entries and float rules.
 
 Known issues
 ------------

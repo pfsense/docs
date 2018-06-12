@@ -473,10 +473,10 @@ and not using the pfSense installer gmirror option before install, there
 is a chance that the mirror will not function on pfSense 2.2 because the
 manual post-install method did not create a completely proper mirror
 setup. If the upgraded mirror does not function on 2.2, the following
-*/boot/loader.conf.local* entry may be used to work around the integrity
-check that would otherwise fail.
+``/boot/loader.conf.local`` entry may be used to work around the integrity
+check that would otherwise fail::
 
-``kern.geom.part.check_integrity=0``
+  kern.geom.part.check_integrity=0
 
 If one of these configurations is present, we strongly recommend backing
 up the configuration and reinstalling using the built-in gmirror option
