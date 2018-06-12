@@ -3,20 +3,89 @@
 
 .. |netagate_support| replace:: `Netgate Global Support`_
 .. _Netgate Global Support: https://www.netgate.com/support/
+.. |forum_link| replace:: `Netgate Forum`_
+.. _Netgate Forum: https://forum.netgate.com/
 
 .. |doc_updates| replace:: :doc:`submit a documentation update </references/updating-docs>`
 .. _Documentation Source: https://github.com/pfsense/docs
 
 .. Inline icons for reference.
+.. |fa-anchor|                  image:: /_static/icons/fa-anchor.png
+.. |fa-angle-double-left|       image:: /_static/icons/fa-angle-double-left.png
+.. |fa-angle-double-right|      image:: /_static/icons/fa-angle-double-right.png
+.. |fa-archive|                 image:: /_static/icons/fa-archive.png
+.. |fa-arrow-down|              image:: /_static/icons/fa-arrow-down.png
+.. |fa-arrow-up|                image:: /_static/icons/fa-arrow-up.png
+.. |fa-ban|                     image:: /_static/icons/fa-ban.png
+.. |fa-bar-chart|               image:: /_static/icons/fa-bar-chart.png
+.. |fa-bell|                    image:: /_static/icons/fa-bell.png
+.. |fa-calculator|              image:: /_static/icons/fa-calculator.png
+.. |fa-caret-square-o-up|       image:: /_static/icons/fa-caret-square-o-up.png
+.. |fa-certificate|             image:: /_static/icons/fa-certificate.png
+.. |fa-check-circle-o|          image:: /_static/icons/fa-check-circle-o.png
+.. |fa-check-circle|            image:: /_static/icons/fa-check-circle.png
+.. |fa-check|                   image:: /_static/icons/fa-check.png
+.. |fa-check-square-o|          image:: /_static/icons/fa-check-square-o.png
+.. |fa-circle|                  image:: /_static/icons/fa-circle.png
+.. |fa-clock-o|                 image:: /_static/icons/fa-clock-o.png
+.. |fa-clone|                   image:: /_static/icons/fa-clone.png
+.. |fa-cloud-download|          image:: /_static/icons/fa-cloud-download.png
+.. |fa-cog|                     image:: /_static/icons/fa-cog.png
+.. |fa-download|                image:: /_static/icons/fa-download.png
+.. |fa-exclamation|             image:: /_static/icons/fa-exclamation.png
+.. |fa-file-excel-o|            image:: /_static/icons/fa-file-excel-o.png
+.. |fa-file-text-o|             image:: /_static/icons/fa-file-text-o.png
+.. |fa-filter|                  image:: /_static/icons/fa-filter.png
+.. |fa-forward|                 image:: /_static/icons/fa-forward.png
+.. |fa-hand-stop-o|             image:: /_static/icons/fa-hand-stop-o.png
+.. |fa-info-circle|             image:: /_static/icons/fa-info-circle.png
+.. |fa-info|                    image:: /_static/icons/fa-info.png
+.. |fa-key|                     image:: /_static/icons/fa-key.png
+.. |fa-level-down|              image:: /_static/icons/fa-level-down.png
+.. |fa-level-up|                image:: /_static/icons/fa-level-up.png
+.. |fa-list-alt|                image:: /_static/icons/fa-list-alt.png
+.. |fa-list|                    image:: /_static/icons/fa-list.png
+.. |fa-lock|                    image:: /_static/icons/fa-lock.png
+.. |fa-minus-circle|            image:: /_static/icons/fa-minus-circle.png
+.. |fa-minus-square-o|          image:: /_static/icons/fa-minus-square-o.png
+.. |fa-paperclip|               image:: /_static/icons/fa-paperclip.png
+.. |fa-pause-circle|            image:: /_static/icons/fa-pause-circle.png
+.. |fa-pencil|                  image:: /_static/icons/fa-pencil.png
+.. |fa-play-circle|             image:: /_static/icons/fa-play-circle.png
+.. |fa-play|                    image:: /_static/icons/fa-play.png
+.. |fa-plus-circle|             image:: /_static/icons/fa-plus-circle.png
+.. |fa-plus|                    image:: /_static/icons/fa-plus.png
+.. |fa-plus-square-o|           image:: /_static/icons/fa-plus-square-o.png
+.. |fa-plus-square|             image:: /_static/icons/fa-plus-square.png
+.. |fa-power-off|               image:: /_static/icons/fa-power-off.png
+.. |fa-question-circle|         image:: /_static/icons/fa-question-circle.png
+.. |fa-random|                  image:: /_static/icons/fa-random.png
+.. |fa-refresh|                 image:: /_static/icons/fa-refresh.png
+.. |fa-repeat|                  image:: /_static/icons/fa-repeat.png
+.. |fa-retweet|                 image:: /_static/icons/fa-retweet.png
+.. |fa-rss|                     image:: /_static/icons/fa-rss.png
+.. |fa-save|                    image:: /_static/icons/fa-save.png
+.. |fa-search|                  image:: /_static/icons/fa-search.png
+.. |fa-send|                    image:: /_static/icons/fa-send.png
+.. |fa-sign-in|                 image:: /_static/icons/fa-sign-in.png
+.. |fa-sign-out|                image:: /_static/icons/fa-sign-out.png
+.. |fa-sliders|                 image:: /_static/icons/fa-sliders.png
+.. |fa-stop-circle|             image:: /_static/icons/fa-stop-circle.png
+.. |fa-tasks|                   image:: /_static/icons/fa-tasks.png
+.. |fa-times-circle-o|          image:: /_static/icons/fa-times-circle-o.png
+.. |fa-times-circle|            image:: /_static/icons/fa-times-circle.png
+.. |fa-times|                   image:: /_static/icons/fa-times.png
+.. |fa-trash|                   image:: /_static/icons/fa-trash.png
+.. |fa-undo|                    image:: /_static/icons/fa-undo.png
+.. |fa-unlock|                  image:: /_static/icons/fa-unlock.png
+.. |fa-upload|                  image:: /_static/icons/fa-upload.png
+.. |fa-user|                    image:: /_static/icons/fa-user.png
+.. |fa-wrench|                  image:: /_static/icons/fa-wrench.png
+
+.. Old icons that should be replaced, see https://github.com/pfsense/docs/issues/6
 .. |block|                      image:: /_static/icons/icon_block.png
 .. |block+add|                  image:: /_static/icons/icon_block_add.png
 .. |down|                       image:: /_static/icons/icon_down.png
-.. |fa-check|                   image:: /_static/icons/fa-check.png
-.. |fa-level-up|                image:: /_static/icons/fa-level-up.png
-.. |fa-pencil|                  image:: /_static/icons/fa-pencil.png
-.. |fa-plus|                    image:: /_static/icons/fa-plus.png
-.. |fa-trash|                   image:: /_static/icons/fa-trash.png
-.. |fa-times|                   image:: /_static/icons/fa-times.png
 .. |help|                       image:: /_static/icons/icon_help.png
 .. |import_alias|               image:: /_static/icons/icon_import_alias.gif
 .. |log|                        image:: /_static/icons/icon_log.png
