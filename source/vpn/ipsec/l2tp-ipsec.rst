@@ -37,7 +37,7 @@ Configure L2TP Server
    expected L2TP users, such as *8*
 *  Leave **Secret** blank
 *  Set **Authentication Type** to *CHAP*
-*  Set *'L2TP DNS Servers* as needed, or leave blank
+*  Set **L2TP DNS Servers** as needed, or leave blank
 *  Set **RADIUS** options if desired
 
 Add L2TP Users
@@ -267,7 +267,7 @@ floating firewall rule to work around the block:
 
 *  Navigate to **Firewall > Rules**, **Floating** tab
 *  Click |fa-plus| to add a new rule
-*  Set *'Action* to *Pass*
+*  Set **Action** to *Pass*
 *  Check **Quick**
 *  Select *L2TP VPN* for the **Interface**
 *  Set **Direction** to *Out*

@@ -36,7 +36,7 @@ card.
   - **Diversity**: Switch off and on the use of antenna diversity
     (normally only used if two antennas are connected), to allow both
     antenna to be used for both transmit and receive.
-  - *'Transmit/Receive Antenna*: Allows manually specifying which
+  - **Transmit/Receive Antenna**: Allows manually specifying which
     antenna should be used to transmit and which is used to receive.
     The numbers may not line up with the numbers noted on the physical
     adapter.

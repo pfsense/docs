@@ -157,7 +157,7 @@ on the hostname it is validating.
 nsupdate
 ^^^^^^^^
 
-The *'nsupdate* method uses RFC2136 style DNS updates to populate a TXT
+The ``nsupdate`` method uses RFC2136 style DNS updates to populate a TXT
 record in DNS to validate ownership of the domain.
 
 We recommend using this method as it does not require external inbound

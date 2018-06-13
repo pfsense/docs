@@ -48,11 +48,8 @@ especially the bits about what to do when replacing a drive.
 Creating a RAID1 Array with pfSense
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. raw:: mediawiki
-
-   {{Warn|Center|100|WARNING! THIS SECTION IS NOT A COMPLETE GUIDE.
-
-   This may break your car, eat your cat, submerge your basement in water, etc.  Don't blame us for damage, it's '''unsupported'''!}}
+.. warning:: This may break your car, eat your cat, submerge your basement in
+   water, etc.  Don't blame us for damage, it's **unsupported**!
 
 This must be done **prior** to the installation. Creating a mirror from
 an existing drive which already contains data will corrupt areas of the

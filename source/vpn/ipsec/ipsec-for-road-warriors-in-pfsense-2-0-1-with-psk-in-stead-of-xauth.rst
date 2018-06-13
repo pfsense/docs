@@ -244,7 +244,7 @@ screenshots.
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_025.jpg
 
 On the **Client** tab, set **NAT Traversal** to **force-rfc** and
-**uncheck 'Enable Dead Peer Detection**'. If these settings are wrong,
+uncheck **Enable Dead Peer Detection**. If these settings are wrong,
 an established tunnel may not let any traffic through.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_026.jpg

@@ -119,14 +119,14 @@ The standard screen controls apply. **Press Ctrl-A, \\** to quit.
 tip
 ~~~
 
-The *tip*' command on FreeBSD consults */etc/remotes* and connects to
+The ``tip`` command on FreeBSD consults ``/etc/remotes`` and connects to
 serial ports based on the settings there. To setup a connection to a
 USB-to-serial adapter at *115200*, add a line such as the following to
-*/etc/remote*::
+``/etc/remote``::
 
   ucom1fast:dv=/dev/cuaU0:br#115200:pa=none:
 
-To access the port, invoke *tip*:::
+To access the port, invoke *tip*::
 
   # tip ucom1fast
 

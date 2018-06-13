@@ -186,7 +186,7 @@ The format is::
     </field>
 
 - password - special input element for passwords, all input will be
-  masked with '\*' symbol on gui but clear text on xml config file::
+  masked with ``*`` symbol on gui but clear text on xml config file::
 
     <field>
       <fielddescr>password</fielddescr>

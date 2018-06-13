@@ -21,9 +21,9 @@ Required settings:
    (typically a WAN)
 -  **Remote tunnel endpoint IP address** - Far side peer address
    *outside* the tunnel
--  '''Local tunnel IP address ''' - Local address for *inside* the GRE
+-  **Local tunnel IP address** - Local address for *inside* the GRE
    tunnel (typically a small private network)
--  '''Remote tunnel IP address ''' - Remote address for *inside* the GRE
+-  **Remote tunnel IP address** - Remote address for *inside* the GRE
    tunnel (typically a small private network)
 
 The following are optional:

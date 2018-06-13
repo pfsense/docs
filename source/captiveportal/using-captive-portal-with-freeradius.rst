@@ -256,7 +256,7 @@ This should appear in **Status > System Logs**, **Portal Auth** tab:
 
   logportalauth[10059]: MACHINE LOGIN: 00-04-23-5c-9d-19, 00:04:23:5c:9d:19, 192.168.0.88
 
-Both outputs ('''FreeRADIUS Plain-MAC-Auth with Captive Portal ''' and
+Both outputs (**FreeRADIUS Plain-MAC-Auth with Captive Portal** and
 **FreeRADIUS Plain-MAC-Auth as 802.1X request with Captive Portal** are
 the same. I deleted the password for the MAC address in **FreeRADIUS >
 Users** and this appeared in Syslog::

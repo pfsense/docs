@@ -158,8 +158,8 @@ and much more. To enable status server and request information from the
 server do the following:
 
 - Setup an interface with **Interface-Type**: *status* and a free port.
-  I choose **Port**: *1818* in this how-to.
-- Setup a NAS/Client with **IP-Address**: *127.0.0.1*'' and a password.
+  I choose **Port**: ``1818`` in this how-to.
+- Setup a NAS/Client with **IP-Address**: ``127.0.0.1`` and a password.
   I choose *testing123* in this how-to.
 - SSH to the pfSense firewall and enter the following command on the
   command line::

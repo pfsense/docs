@@ -174,9 +174,9 @@ to vmnic0 and it has an IP address of *192.168.111.30*.
 Whatever subnet was chosen, the VMkernel Port in the diagram is the
 Management Network and that's what the vSphere client is now talking to.
 
-ESXi will name the first physical NIC it finds **"vmnic0″**. If vmnic0
+ESXi will name the first physical NIC it finds ``vmnic0``. If vmnic0
 is the management interface, ESXi will have automatically attached a
-virtual switch, **vSwitch0**, to that interface.
+virtual switch, ``vSwitch0``, to that interface.
 
 In addition to the VMkernel port, ESXi will also attach a Virtual
 Machine Port Group to the vSwitch. In the diagram above it's labeled as
@@ -275,7 +275,7 @@ Configuring the Virtual Machine
 -------------------------------
 
 Right click the ESXi host in the left pane of the vSphere client and
-select '''New virtual machine... '''
+select **New virtual machine...**
 
 Configuration
 ~~~~~~~~~~~~~
@@ -292,7 +292,7 @@ Name and Location
 .. image:: /_static/virtualization/esxi_pfs_3-2a.png
 
 In the Name and Location window, let's give the virtual machine a
-meaningful name like "pfSense" and click\ *' Next*'
+meaningful name like "pfSense" and click **Next**
 
 Storage
 ~~~~~~~
@@ -357,8 +357,7 @@ VM could be reduced to, say, 384MB. If lots of memory-hungry packages
 will be run, give it more.
 
 To change the memory allocation to one of the sizes shown on the scale
-of the memory "thermometer", click that value on the scale. Click\ *'
-Next*'
+of the memory "thermometer", click that value on the scale. Click **Next**
 
 Network
 ~~~~~~~

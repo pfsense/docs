@@ -60,7 +60,7 @@ Now connections matching that rule will have their source port retained.
 Manual Outbound NAT
 -------------------
 
-This procedure can also be performed with *'Manual Outbound NAT* rules
+This procedure can also be performed with **Manual Outbound NAT** rules
 but using **Hybrid Outbound NAT** is easier because it allows the
 automatic rules to be used rather than having to manually maintain all
 outbound NAT rules.

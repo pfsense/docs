@@ -16,5 +16,5 @@ the **Filter** button.
 Individual states can be removed by clicking the |fa-trash| at the end of the
 line. All states can be reset by using the `Reset States <Reset_States>`_ tab.
 
-This tab may only appear if *' Use sticky connections*' is enabled under
+This tab may only appear if **Use sticky connections** is enabled under
 **System > Advanced** on the **Miscellaneous** tab.
