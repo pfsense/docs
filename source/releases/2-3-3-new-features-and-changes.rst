@@ -159,7 +159,7 @@ Interfaces
 -  Updated interface group name validation rules to match limits of the
    operating system
 -  Prevented interface group names, interface names, and aliases from
-   starting with "pkg_" to reserve it for packages use (e.g. tinc)
+   starting with ``pkg_`` to reserve it for packages use (e.g. tinc)
    `#7173 <https://redmine.pfsense.org/issues/7173>`__
 -  Added validation to prevent Interface Group Names from containing a
    dash `#7173 <https://redmine.pfsense.org/issues/7173>`__
