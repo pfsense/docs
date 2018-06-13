@@ -15,4 +15,5 @@ Configuration and WebGUI
    general-setup
    manually-editing-the-pfsense-configuration
    shortcut-bar
+   managing-lists-of-items
    troubleshooting-time-zone-configuration
