@@ -1,8 +1,0 @@
-.. include:: /substitutions.rsti
-
-Can I use m0n0wall's firmware upgrade to install pfSense on a firewall running m0n0wall
-=======================================================================================
-
-No. Because of the way m0n0wall works, an in-place upgrade is not
-possible. The operating system must be reinstalled as pfSense directly.
-

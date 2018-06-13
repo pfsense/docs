@@ -1,8 +1,0 @@
-.. include:: /substitutions.rsti
-
-Will removing a CARP Virtual IP require a reboot
-================================================
-
-On current supported releases, removing a CARP type Virutal IP address
-does not require a reboot.
-

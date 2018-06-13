@@ -92,6 +92,31 @@ does not exist)::
 To nudge the card to use MSI, disable only MSIX. To nudge the card to
 use regular Interrupts, disable both MSI and MSIX.
 
+IP Input Queue (intr_queue)
+---------------------------
+
+This will show the current setting::
+
+  sysctl net.inet.ip.intr_queue_maxlen
+
+However, in largely loaded installations this may not be enough. Here is how to
+check::
+
+  sysctl net.inet.ip.intr_queue_drops
+
+If the above shows values above ``0``, try doubling the current value of
+``net.inet.ip.intr_queue_maxlen``.
+
+For example::
+
+  sysctl net.inet.ip.intr_queue_maxlen=3000
+
+Keep performing the above until the point is found where drops are eliminated
+without any adverse effects.
+
+Afterwards, add an entry under **System > Advanced**, **System Tunables** tab to
+set ``net.inet.ip.intr_queue_maxlen`` to ``3000``
+
 Card-Specific Issues
 ====================
 
