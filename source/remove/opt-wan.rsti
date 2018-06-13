@@ -1,7 +1,0 @@
-OPT WAN
-=======
-
-OPT WAN is a term used for additional WAN interfaces in a multi-WAN
-configuration. Any interface with a gateway configured under
-**Interfaces > [Name]** is considered a WAN.
-
