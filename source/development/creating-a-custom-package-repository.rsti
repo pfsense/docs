@@ -25,7 +25,7 @@ Apache 2.x server, add this to *httpd.conf*:
 | ``AddHandler php5-script php``
 | ``AddType text/html php``
 
-On a Lighttpd server, enable the server module "mod\_fastcgi" and add
+On a Lighttpd server, enable the server module "mod_fastcgi" and add
 this to *lighttpd.conf*:
 
 | ``       fastcgi.server = ( ``\ "``.php``"\ `` =>``
@@ -182,16 +182,16 @@ Step 6: Edit Package List
 
 To limit the packages which are shown in this list, edit the file in the
 packages directory for the appropriate platform. For pfSense 2.0/2.1 it
-is *pkg\_config.8.xml*. For pfSense 2.0/2.1 64-bit packages, this is
-*pkg\_config.8.xml.amd64*. For pfSense 2.2, both are in one file:
-*pkg\_config.10.xml*.
+is *pkg_config.8.xml*. For pfSense 2.0/2.1 64-bit packages, this is
+*pkg_config.8.xml.amd64*. For pfSense 2.2, both are in one file:
+*pkg_config.10.xml*.
 
 Remove the entries from the file that are not wanted, or set their
-required\_version much higher (3, 4, etc)
+required_version much higher (3, 4, etc)
 
 Change paths for packages intended to be useed so that they point to a
 custom server as well. For example, on the **System Patches** package,
-the stock *pkg\_config.10.xml* looks like this for the config\_file URL:
+the stock *pkg_config.10.xml* looks like this for the config_file URL:
 
 \ ```https://packages.pfsense.org/packages/config/systempatches/systempatches.xml`` <https://packages.pfsense.org/packages/config/systempatches/systempatches.xml>`__\
 

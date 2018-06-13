@@ -35,9 +35,9 @@ Operating System / Architecture changes
 Security / Errata
 -----------------
 
--  `pfSense-SA-17\_07.packages <https://www.pfsense.org/security/advisories/pfSense-SA-17_07.packages.asc>`__
+-  `pfSense-SA-17_07.packages <https://www.pfsense.org/security/advisories/pfSense-SA-17_07.packages.asc>`__
 -  Fixes for the set of WPA2 Key Reinstallation Attack issues commonly
-   known as `KRACK <https://www.krackattacks.com/>`__ in wpa\_supplicant
+   known as `KRACK <https://www.krackattacks.com/>`__ in wpa_supplicant
    and hostapd
    (`FreeBSD-SA-17:07.wpa <https://www.freebsd.org/security/advisories/FreeBSD-SA-17:07.wpa.asc>`__)
 -  A number of base system packages have been updated to address
@@ -48,7 +48,7 @@ Security / Errata
 Interfaces
 ----------
 
--  Added support for the IPv6 AUTO\_LINKLOCAL flag on bridge interfaces
+-  Added support for the IPv6 AUTO_LINKLOCAL flag on bridge interfaces
 -  Added an option to use static IPv6 over an IPv4 PPP parent (e.g.
    PPPoE) `#7598 <https://redmine.pfsense.org/issues/7598>`__
 -  Added IPv6 Prefix Delegation interface selection
@@ -94,11 +94,11 @@ WebGUI
 -  Updated favicon to the new logo and added multiple sizes for
    different platforms
 -  Added an option for sorting the Interfaces menu by description
--  Added "auth\_check" type of simple test that a page can use to verify
+-  Added "auth_check" type of simple test that a page can use to verify
    a user is logged in and has access, using less cpu, which is better
    for AJAX data polling
 -  Improved handling of PHP errors for user-entered PHP code on
-   diag\_command.php
+   diag_command.php
 -  Changed Interfaces menu "(Assign)" to "Assignments" and added support
    for menu divider bars
 -  Fixed automatic selection of '128' as prefix/mask for IPv6 address
@@ -107,7 +107,7 @@ WebGUI
    traffic graphs `#7804 <https://redmine.pfsense.org/issues/7804>`__
 -  Changed nginx configuration so it does not allow direct download of
    .inc files `#8005 <https://redmine.pfsense.org/issues/8005>`__
--  Fixed hostname input handling on diag\_dns.php
+-  Fixed hostname input handling on diag_dns.php
 
 Gateways
 --------
@@ -135,7 +135,7 @@ IPsec
 -  Added RADIUS accounting support for mobile IPsec when accounting is
    enabled on the Authentication Server entry
 -  Added checks to prevent simultaneous/repeated calling of
-   vpn\_ipsec\_configure() by /etc/rc.newipsecdns
+   vpn_ipsec_configure() by /etc/rc.newipsecdns
 
 Misc
 ----

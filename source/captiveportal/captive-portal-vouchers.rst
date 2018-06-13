@@ -19,7 +19,7 @@ integrated the exported voucher lists into their point of sale
 applications to print a voucher on customer receipts.
 
 To use vouchers, a custom portal page must be used that submits the
-voucher as *auth\_voucher*.
+voucher as *auth_voucher*.
 
 Setting Up Vouchers
 -------------------

@@ -12,16 +12,16 @@ release. Refer to the :doc:`2.1.1 release notes </releases/2-1-1-new-features-an
 Security Fixes
 --------------
 
--  `pfSense-SA-14\_07.openssl <https://pfsense.org/security/advisories/pfSense-SA-14_07.openssl.asc>`__
+-  `pfSense-SA-14_07.openssl <https://pfsense.org/security/advisories/pfSense-SA-14_07.openssl.asc>`__
 
    -  `FreeBSD-SA-14:14.openssl <http://www.freebsd.org/security/advisories/FreeBSD-SA-14:14.openssl.asc>`__
 
--  `pfSense-SA-14\_08.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_08.webgui.asc>`__
--  `pfSense-SA-14\_09.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_09.webgui.asc>`__
--  `pfSense-SA-14\_10.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_10.webgui.asc>`__
--  `pfSense-SA-14\_11.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_11.webgui.asc>`__
--  `pfSense-SA-14\_12.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_12.webgui.asc>`__
--  `pfSense-SA-14\_13.packages <https://pfsense.org/security/advisories/pfSense-SA-14_13.packages.asc>`__
+-  `pfSense-SA-14_08.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_08.webgui.asc>`__
+-  `pfSense-SA-14_09.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_09.webgui.asc>`__
+-  `pfSense-SA-14_10.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_10.webgui.asc>`__
+-  `pfSense-SA-14_11.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_11.webgui.asc>`__
+-  `pfSense-SA-14_12.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_12.webgui.asc>`__
+-  `pfSense-SA-14_13.packages <https://pfsense.org/security/advisories/pfSense-SA-14_13.packages.asc>`__
 
 Packages also had their own independent fixes and need updating. During
 the firmware update process the packages will be reinstalled properly.
@@ -44,8 +44,8 @@ Other Fixes
    `#3646 <http://redmine.pfsense.org/issues/3646>`__
 -  Add guiconfig to widgets not including it.
    `#3498 <http://redmine.pfsense.org/issues/3498>`__
--  /etc/version\_kernel and /etc/version\_base no longer exist, use
-   php\_uname to get the version for XMLRPC check instead.
+-  /etc/version_kernel and /etc/version_base no longer exist, use
+   php_uname to get the version for XMLRPC check instead.
 -  Fix variable typo. `#3669 <http://redmine.pfsense.org/issues/3669>`__
 -  Delete all IP Aliases when an interface is disabled.
    `#3650 <http://redmine.pfsense.org/issues/3650>`__
@@ -61,10 +61,10 @@ Other Fixes
    OpenVPN's internal DHCP while bridging, so add it in that case also.
 -  Use curl instead of fetch to download update files.
    `#3691 <http://redmine.pfsense.org/issues/3691>`__
--  Escape variable before passing to shell from stop\_service().
--  Add some protection to parameters that come through \_GET in service
+-  Escape variable before passing to shell from stop_service().
+-  Add some protection to parameters that come through _GET in service
    management.
--  Escape argument on call to is\_process\_running, also remove some
+-  Escape argument on call to is_process_running, also remove some
    unecessary mwexec() calls.
 -  Do not allow interface group name to be bigger than 15 chars.
    `#3208 <http://redmine.pfsense.org/issues/3208>`__
@@ -73,33 +73,33 @@ Other Fixes
 -  Do not expire already disabled users, it fixes
    `#3644 <http://redmine.pfsense.org/issues/3644>`__
 -  Validate starttime and stoptime format on
-   firewall\_schedule\_edit.php
--  Be more careful with host parameter on diag\_dns.php and make sure
+   firewall_schedule_edit.php
+-  Be more careful with host parameter on diag_dns.php and make sure
    it's escaped when call shell functions
--  Escape parameters passed to shell\_exec() in diag\_smart.php and
+-  Escape parameters passed to shell_exec() in diag_smart.php and
    elsewhere
 -  Make sure variables are escaped/sanitized on
-   status\_rrd\_graph\_img.php
--  Replace exec calls to run rm by unlink\_if\_exists() on
-   status\_rrd\_graph\_img.php
--  Replace all \`hostname\` calls by php\_uname('n') on
-   status\_rrd\_graph\_img.php
+   status_rrd_graph_img.php
+-  Replace exec calls to run rm by unlink_if_exists() on
+   status_rrd_graph_img.php
+-  Replace all \`hostname\` calls by php_uname('n') on
+   status_rrd_graph_img.php
 -  Replace all \`date\` calls by strftime() on
-   status\_rrd\_graph\_img.php
--  Add $\_gb to collect possibly garbage from exec return on
-   status\_rrd\_graph\_img.php
--  Avoid directory traversal in pkg\_edit.php when reading package xml
+   status_rrd_graph_img.php
+-  Add $_gb to collect possibly garbage from exec return on
+   status_rrd_graph_img.php
+-  Avoid directory traversal in pkg_edit.php when reading package xml
    files, also check if file exists before try to read it
 -  Remove id=0 from miniupnpd menu and shortcut
 -  Remove . and / from pkg name to avoid directory traversal in
-   pkg\_mgr\_install.php
+   pkg_mgr_install.php
 -  Fix core dump on viewing invalid package log
--  Avoid directory traversal on system\_firmware\_restorefullbackup.php
+-  Avoid directory traversal on system_firmware_restorefullbackup.php
 -  Re-generate session ID on a successful login to avoid session
    fixation
 -  Protect rssfeed parameters with htmlspecialchars() in rss.widget.php
 -  Protect servicestatusfilter parameter with htmlspecialchars() in
-   services\_status.widget.php
+   services_status.widget.php
 -  Always set httponly attribute on cookies
 -  Set 'Disable webConfigurator login autocomplete' as on by default for
    new installs
@@ -107,7 +107,7 @@ Other Fixes
    log.widget.php
 -  Make sure single quotes are encoded and avoid javascript injection on
    exec.php
--  Add missing NAT protocols on firewall\_nat\_edit.php
+-  Add missing NAT protocols on firewall_nat_edit.php
 -  Remove extra data after space in DSCP and fix pf rule syntax.
    `#3688 <http://redmine.pfsense.org/issues/3688>`__
 -  Only include a scheduled rule if it is strictly before the end time.

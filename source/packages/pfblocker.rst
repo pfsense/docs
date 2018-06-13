@@ -19,9 +19,9 @@ and table manipulation as was done in Countryblock and IPblocklist.
 
 Current version is 1.0.1 and includes:
 
-`Country\_Block <Country_Block>`__ features
+`Country_Block <Country_Block>`__ features
 
-`IP\_Blocklist <IP_Blocklist>`__ features
+`IP_Blocklist <IP_Blocklist>`__ features
 
 Dashboard widget
 

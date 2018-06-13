@@ -24,8 +24,8 @@ default.
 
 By default, traffic is filtered on the member interfaces and not on the
 bridge interface itself. This behavior may be changed by toggling the
-values of **net.link.bridge.pfil\_member** and
-**net.link.bridge.pfil\_bridge** under **System > Advanced** on the
+values of **net.link.bridge.pfil_member** and
+**net.link.bridge.pfil_bridge** under **System > Advanced** on the
 **System Tunables** tab. With them set at *0* and *1*, respectively,
 then filtering would be performed on the bridge only.
 

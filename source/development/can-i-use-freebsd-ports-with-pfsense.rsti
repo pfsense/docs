@@ -8,7 +8,7 @@ to install on a firewall.
 
 Ports cannot be built from source directly on the firewall because
 pfSense does not have a compiler or related tools/includes, but
-**pkg\_add**/**pkg add** may be used to add binary packages.
+**pkg_add**/**pkg add** may be used to add binary packages.
 
 See :doc:`Installing FreeBSD Packages </packages/installing-freebsd-packages>` for
 more information.

@@ -64,7 +64,7 @@ The package's include files and XML files::
   sysutils/pfSense-pkg-Cron/files/usr/local/pkg/cron.xml
 
 The packages XML metadata (which formerly would have been found in, for
-example, pkg\_config.10.xml::
+example, pkg_config.10.xml::
 
   sysutils/pfSense-pkg-Cron/files/usr/local/share/pfSense-pkg-Cron/info.xml
 

@@ -19,8 +19,8 @@ Security/Errata
 
 -  pfSense Security Advisories:
 
-   -  `pfSense-SA-16\_01.webgui <https://pfsense.org/security/advisories/pfSense-SA-16_01.webgui.asc>`__
-   -  `pfSense-SA-16\_02.webgui <https://pfsense.org/security/advisories/pfSense-SA-16_02.webgui.asc>`__
+   -  `pfSense-SA-16_01.webgui <https://pfsense.org/security/advisories/pfSense-SA-16_01.webgui.asc>`__
+   -  `pfSense-SA-16_02.webgui <https://pfsense.org/security/advisories/pfSense-SA-16_02.webgui.asc>`__
 
 Several obsolete items were removed from this release. The items are
 noted again in the sections below, but worth emphasizing:
@@ -101,8 +101,8 @@ Dashboard/Widgets/GUI
    instead. All password fields have also been changed to require
    confirmation.
 -  Many pages have been reworked for improved internationalization
--  Changed info box functions, removed print\_info\_box\_np, now
-   print\_info\_box and print\_apply\_box are used to print appropriate
+-  Changed info box functions, removed print_info_box_np, now
+   print_info_box and print_apply_box are used to print appropriate
    boxes without problematic automatic detection
 -  Moved RRD graphs to **Status > Monitoring**
    `#5498 <https://redmine.pfsense.org/issues/5498>`__
@@ -112,7 +112,7 @@ Dashboard/Widgets/GUI
    `#5498 <https://redmine.pfsense.org/issues/5498>`__
 -  Monitor IP added to gateways widget.
    `#4782 <https://redmine.pfsense.org/issues/4782>`__
--  Increased max\_input\_vars from 1000 to 5000 to accommodate larger
+-  Increased max_input_vars from 1000 to 5000 to accommodate larger
    aliases. `#4780 <https://redmine.pfsense.org/issues/4780>`__
 -  Fixed NTP RRD graphs to accommodate negative values.
    `#4423 <https://redmine.pfsense.org/issues/4423>`__
@@ -138,9 +138,9 @@ OS/Backend
    `#4422 <https://redmine.pfsense.org/issues/4422>`__
 -  Added optional package for kernel debug symbols.
    `#5330 <https://redmine.pfsense.org/issues/5330>`__
--  Rewrote system\_set\_harddisk\_standby() for the current CAM-based
+-  Rewrote system_set_harddisk_standby() for the current CAM-based
    ATA stack. `#4569 <https://redmine.pfsense.org/issues/4569>`__
--  Fixed a Panic/Crash with "sbflush\_internal: cc 4294967166 \|\| mb 0
+-  Fixed a Panic/Crash with "sbflush_internal: cc 4294967166 \|\| mb 0
    \|\| mbcnt 0". `#4689 <https://redmine.pfsense.org/issues/4689>`__
 -  Fixed a kernel panic with AES-NI.
    `#4702 <https://redmine.pfsense.org/issues/4702>`__
@@ -148,7 +148,7 @@ OS/Backend
    `#4841 <https://redmine.pfsense.org/issues/4841>`__
 -  Removed zoneinfo.tgz file for Time Zones, move to the same format as
    FreeBSD. `#4726 <https://redmine.pfsense.org/issues/4726>`__
--  Fixed tcpdump with zerocopy enabled (net.bpf.zerocopy\_enable=1).
+-  Fixed tcpdump with zerocopy enabled (net.bpf.zerocopy_enable=1).
    `#5257 <https://redmine.pfsense.org/issues/5257>`__
 -  Added ability to disable PV disks and NICs on Xen.
    `#5452 <https://redmine.pfsense.org/issues/5452>`__
@@ -306,7 +306,7 @@ Rules/NAT/pf
 Interfaces/VIPs
 ---------------
 
--  Fixed pfSense\_getall\_interface\_addresses truncating IPv6 link
+-  Fixed pfSense_getall_interface_addresses truncating IPv6 link
    local IP addresses.
    `#4062 <https://redmine.pfsense.org/issues/4062>`__
 -  Add GUI setting for VLANs PCP.
@@ -389,7 +389,7 @@ Authentication
    server 'Descriptive Name'.
    `#4469 <https://redmine.pfsense.org/issues/4469>`__
 -  Fixed default Auth Server selection on
-   system\_usermanager\_settings.php.
+   system_usermanager_settings.php.
    `#5440 <https://redmine.pfsense.org/issues/5440>`__
 -  Added support for bcrypt as a passwd hash and enabled it as the
    system default `#4120 <https://redmine.pfsense.org/issues/4120>`__
@@ -460,7 +460,7 @@ Services
    `#3029 <https://redmine.pfsense.org/issues/3029>`__
 -  Fixed RADIUS NAS IP in PPPoE server.
    `#185 <https://redmine.pfsense.org/issues/185>`__
--  Deprecated ntpdate\_sync\_once.sh, replacing with ntpd -g.
+-  Deprecated ntpdate_sync_once.sh, replacing with ntpd -g.
    `#6053 <https://redmine.pfsense.org/issues/6053>`__
 
 DNS
@@ -546,7 +546,7 @@ IPsec
    interoperability with third party devices that do not support
    multiple traffic selectors on one child SA (Cisco ASA, others).
    `#4704 <https://redmine.pfsense.org/issues/4704>`__
--  Added dynamic AJAX update to status\_ipsec.php.
+-  Added dynamic AJAX update to status_ipsec.php.
    `#6049 <https://redmine.pfsense.org/issues/6049>`__
 
 OpenVPN
@@ -593,7 +593,7 @@ UPnP/NAT-PMP
    `#4320 <https://redmine.pfsense.org/issues/4320>`__
 -  Enabled IPv6 for miniupnpd.
    `#4321 <https://redmine.pfsense.org/issues/4321>`__
--  Set secure\_mode=yes in miniupnpd configuration
+-  Set secure_mode=yes in miniupnpd configuration
    `#5627 <https://redmine.pfsense.org/issues/5627>`__
 
 Wireless
@@ -665,10 +665,10 @@ Update Patches
 
 This section lists the changes contained in patch updates post-release.
 
-2.3\_1
+2.3_1
 ~~~~~~
 
-The 2.3\_1 update upgrades NTP to fix `FreeBSD security advisory
+The 2.3_1 update upgrades NTP to fix `FreeBSD security advisory
 SA-16:16.ntp <https://www.freebsd.org/security/advisories/FreeBSD-SA-16:16.ntp.asc>`__.
 The only change is upgrading ntpd from 4.2.8p6 to 4.2.8p7.
 

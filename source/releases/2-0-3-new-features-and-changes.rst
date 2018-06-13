@@ -69,7 +69,7 @@ Dashboard & General GUI
 
 -  Use some tweaks to PHP session management to prevent the GUI from
    blocking additional requests while others are active
--  Remove cmd\_chain.inc and preload.php to fix some issues with
+-  Remove cmd_chain.inc and preload.php to fix some issues with
    lighttpd, fastcgi, and resource usage
 -  Firmware settings manifest (Site list) now bolds and denotes entries
    that match the current architecture, to help avoid accidental
@@ -108,7 +108,7 @@ Misc Changes
    time in certain cases
 -  Minimise rewriting of /etc/gettytab
    (http://forum.pfsense.org/index.php/topic,57325.0.html)
--  Make is\_pid\_running function return more conistent results by using
+-  Make is_pid_running function return more conistent results by using
    isvalidpid
 -  Fix ataidle error on systems that have no ATA HDD.
    `#2739 <https://redmine.pfsense.org/issues/2739>`__
@@ -117,7 +117,7 @@ Misc Changes
 -  Fix handling of LDAP certificates, the library no longer properly
    handles files with spaces in the CA certificate filename
 -  Bring in the RCFILEPREFIX as constant fixes from HEAD, since
-   otherwise rc.stop\_packages was globbing in the wrong dir and
+   otherwise rc.stop_packages was globbing in the wrong dir and
    executing the wrong scripts. Also seems to have fixed the "bad fd"
    error
 -  NTP restart fixes
@@ -140,8 +140,8 @@ lighttpd changes
 -  Use separate paths for GUI and Captive Portal fastcgi sockets
 -  Always make sure php has its own process manager to make lighttpd
    happy
--  Make mod\_fastcgi last to have url.rewrite work properly
--  Enable mod\_evasive if needed for Captive Portal
+-  Make mod_fastcgi last to have url.rewrite work properly
+-  Enable mod_evasive if needed for Captive Portal
 -  Simplify lighttpd config
 -  Send all lighttpd logs to syslog
 
@@ -152,13 +152,13 @@ Binary changes
 -  rsync to 3.0.9
 -  links 2.7
 -  rrdtool to 1.2.30
--  PHP to 5.2.17\_13
+-  PHP to 5.2.17_13
 -  OpenVPN 2.2 stock again (Removed IPv6 patches since those are only
    needed on 2.1 now)
 -  Fix missing "beep" binary on amd64
 -  Fix potential issue with IPsec routing of client traffic
 -  Remove lighttpd spawnfcgi dependency
--  Add splash device to wrap\_vga kernels (It's in GENERIC so full
+-  Add splash device to wrap_vga kernels (It's in GENERIC so full
    installs already have it).
    `#2723 <https://redmine.pfsense.org/issues/2723>`__
 

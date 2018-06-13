@@ -23,7 +23,7 @@ FreeBSD-ports <https://github.com/pfsense/FreeBSD-ports/>`__ is:
 -  `FreeRADIUS2
    (net/pfSense-pkg-freeradius2) <https://github.com/pfsense/FreeBSD-ports/tree/devel/net/pfSense-pkg-freeradius2>`__
 -  `FTP Client Proxy
-   (ftp/pfSense-pkg-FTP\_Client\_Proxy) <https://github.com/pfsense/FreeBSD-ports/tree/devel/ftp/pfSense-pkg-FTP_Client_Proxy>`__
+   (ftp/pfSense-pkg-FTP_Client_Proxy) <https://github.com/pfsense/FreeBSD-ports/tree/devel/ftp/pfSense-pkg-FTP_Client_Proxy>`__
 -  `gwled
    (sysutils/pfSense-pkg-gwled) <https://github.com/pfsense/FreeBSD-ports/tree/devel/sysutils/pfSense-pkg-gwled>`__
 -  `HAProxy
@@ -57,13 +57,13 @@ FreeBSD-ports <https://github.com/pfsense/FreeBSD-ports/>`__ is:
 -  `pfBlockerNG
    (net/pfSense-pkg-pfBlockerNG) <https://github.com/pfsense/FreeBSD-ports/tree/devel/net/pfSense-pkg-pfBlockerNG>`__
 -  `Quagga OSPF
-   (net/pfSense-pkg-Quagga\_OSPF) <https://github.com/pfsense/FreeBSD-ports/tree/devel/net/pfSense-pkg-Quagga_OSPF>`__
+   (net/pfSense-pkg-Quagga_OSPF) <https://github.com/pfsense/FreeBSD-ports/tree/devel/net/pfSense-pkg-Quagga_OSPF>`__
 -  `routed
    (net/pfSense-pkg-routed) <https://github.com/pfsense/FreeBSD-ports/tree/devel/net/pfSense-pkg-routed>`__
 -  `RRD Summary
-   (sysutils/pfSense-pkg-RRD\_Summary) <https://github.com/pfsense/FreeBSD-ports/tree/devel/sysutils/pfSense-pkg-RRD_Summary>`__
+   (sysutils/pfSense-pkg-RRD_Summary) <https://github.com/pfsense/FreeBSD-ports/tree/devel/sysutils/pfSense-pkg-RRD_Summary>`__
 -  `Service Watchdog
-   (sysutils/pfSense-pkg-Service\_Watchdog) <https://github.com/pfsense/FreeBSD-ports/tree/devel/sysutils/pfSense-pkg-Service_Watchdog>`__
+   (sysutils/pfSense-pkg-Service_Watchdog) <https://github.com/pfsense/FreeBSD-ports/tree/devel/sysutils/pfSense-pkg-Service_Watchdog>`__
 -  `shellcmd
    (sysutils/pfSense-pkg-Shellcmd) <https://github.com/pfsense/FreeBSD-ports/tree/devel/sysutils/pfSense-pkg-Shellcmd>`__
 -  `siproxd
@@ -83,7 +83,7 @@ FreeBSD-ports <https://github.com/pfsense/FreeBSD-ports/>`__ is:
 -  `syslog-ng
    (sysutils/pfSense-pkg-syslog-ng) <https://github.com/pfsense/FreeBSD-ports/tree/devel/sysutils/pfSense-pkg-syslog-ng>`__
 -  `System Patches
-   (sysutils/pfSense-pkg-System\_Patches) <https://github.com/pfsense/FreeBSD-ports/tree/devel/sysutils/pfSense-pkg-System_Patches>`__
+   (sysutils/pfSense-pkg-System_Patches) <https://github.com/pfsense/FreeBSD-ports/tree/devel/sysutils/pfSense-pkg-System_Patches>`__
 -  `Zabbix-Agent
    (net-mgmt/pfSense-pkg-zabbix-agent) <https://github.com/pfsense/FreeBSD-ports/tree/devel/net-mgmt/pfSense-pkg-zabbix-agent>`__
 -  `Zabbix-Proxy

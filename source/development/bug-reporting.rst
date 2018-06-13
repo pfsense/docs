@@ -66,7 +66,7 @@ Packages <https://redmine.pfsense.org/projects/pfsense-packages>`__.
    problem. If the problem is specific to one page or file, prefix the
    subject with that page filename.
 
-   -  Example: *services\_rfc2136\_edit.php: Save and Force Update
+   -  Example: *services_rfc2136_edit.php: Save and Force Update
       button does not perform any action*
 
 -  **Description**: A full description of the problem. Include any

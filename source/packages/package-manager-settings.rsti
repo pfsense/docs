@@ -3,7 +3,7 @@
 Package Manager Settings
 ========================
 
-This unlinked page (/pkg\_mgr\_settings.php) sets a custom package
+This unlinked page (/pkg_mgr_settings.php) sets a custom package
 repository URL for testing purposes or for working with an offline
 private package repository. **This is not recommended for production use
 as package files would be obtained from untrusted and unverified

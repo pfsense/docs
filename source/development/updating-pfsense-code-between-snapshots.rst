@@ -40,7 +40,7 @@ following command::
 
 The "master" part of the command tells the gitsync process to grab the
 code for the "master" branch, a.k.a. HEAD, which as of this writing is
-the development code for 2.3. That can be replaced with RELENG\_2\_2 for
+the development code for 2.3. That can be replaced with RELENG_2_2 for
 2.2.x.
 
 For example, on 2.2.4, to sync post-release code changes for 2.2.x, use::

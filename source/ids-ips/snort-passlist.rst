@@ -25,7 +25,7 @@ This might be needed when trusted external hosts are needed that are not
 located on networks directly connected to the firewall. To add external
 hosts in this manner, first create an Alias under **Firewall > Aliases**
 and then assign that alias to the **Assigned Aliases:** field. In the
-example shown below, the alias "*Friendly\_ext\_hosts*" has been
+example shown below, the alias "*Friendly_ext_hosts*" has been
 assigned. This alias would contain the IP addresses of the trusted
 external hosts.
 

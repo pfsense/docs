@@ -11,11 +11,11 @@ Security / Errata
 -  Fixed a potential authenticated command execution issue in
    certificate data handling
    `#8153 <https://redmine.pfsense.org/issues/8153>`__
-   `pfSense-SA-17\_10.packages.asc <https://www.pfsense.org/security/advisories/pfSense-SA-17_10.packages.asc>`__
+   `pfSense-SA-17_10.packages.asc <https://www.pfsense.org/security/advisories/pfSense-SA-17_10.packages.asc>`__
 -  Fixed a potential clickjacking issue in the CSRF error page
--  Fixed a potential XSS issue in status\_filter\_reload.php
+-  Fixed a potential XSS issue in status_filter_reload.php
    `#8143 <https://redmine.pfsense.org/issues/8143>`__
-   `pfSense-SA-17\_11.packages.asc <https://www.pfsense.org/security/advisories/pfSense-SA-17_11.packages.asc>`__
+   `pfSense-SA-17_11.packages.asc <https://www.pfsense.org/security/advisories/pfSense-SA-17_11.packages.asc>`__
 
 Misc
 ----
@@ -37,9 +37,9 @@ Misc
 -  Fixed an indexing issue when deleting Host Override entries from the
    DNS Forwarder `#8159 <https://redmine.pfsense.org/issues/8159>`__
 -  Fixed a premature session timeout issue on pages which update
-   exclusively using AJAX, such as status\_graph.php
+   exclusively using AJAX, such as status_graph.php
    `#8116 <https://redmine.pfsense.org/issues/8116>`__
--  Fixed ping\_hosts.sh so it does not unnecessarily run a CARP check
+-  Fixed ping_hosts.sh so it does not unnecessarily run a CARP check
    when there are no IPsec hosts to ping
    `#8172 <https://redmine.pfsense.org/issues/8172>`__
 -  Fixed a missing global variable declaration in interface IP address

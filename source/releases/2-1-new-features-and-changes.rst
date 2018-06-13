@@ -12,7 +12,7 @@ anyone who can execute arbitrary code on the firewall could use one or
 more of these to escalate privileges.
 `FreeBSD-SA-13:13.nullfs <http://www.freebsd.org/security/advisories/FreeBSD-SA-13:13.nullfs.asc>`__
 `FreeBSD-SA-13:12.ifioctl.asc <http://www.freebsd.org/security/advisories/FreeBSD-SA-13:12.ifioctl.asc>`__
-`FreeBSD-SA-13:09.ip\_multicast.asc <http://www.freebsd.org/security/advisories/FreeBSD-SA-13:09.ip_multicast.asc>`__
+`FreeBSD-SA-13:09.ip_multicast.asc <http://www.freebsd.org/security/advisories/FreeBSD-SA-13:09.ip_multicast.asc>`__
 
 IPv6 Support
 ------------
@@ -380,7 +380,7 @@ High Availability (CARP, pfSync, XML-RPC)
 NanoBSD
 -------
 
--  Fixes for conf\_mount\_ro/conf\_mount\_rw reference checking/locking
+-  Fixes for conf_mount_ro/conf_mount_rw reference checking/locking
 -  Diag > NanoBSD now has button to switch media between read/write and
    read-only
 -  Diag > NanoBSD now has a checkbox option to keep the media read/write
@@ -533,7 +533,7 @@ Misc
 -  Add a setting to configure the filterdns hostname resolution interval
    (defaults to 300s, 5 minutes)
 -  Omit IP mismatch warnings (e.g. behind a port forward, VPN IP, etc)
-   if HTTP\_REFERER protection is disabled
+   if HTTP_REFERER protection is disabled
 -  Fixes for selecting/detecting PPP devices such as 3G/4G modems
 -  Rather than doing auto-detection to find serial PPP devices, use a
    glob when listing potential PPP serial devices

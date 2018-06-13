@@ -6,14 +6,14 @@
 Security/Errata Notices
 -----------------------
 
--  `pfSense-SA-15\_07.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_07.webgui.asc>`__:
+-  `pfSense-SA-15_07.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_07.webgui.asc>`__:
    Multiple Stored XSS Vulnerabilities in the pfSense WebGUI
 
    -  The complete list of affected pages and fields is listed in the
       linked SA.
 
 -  `FreeBSD-SA-15:13.tcp <https://www.freebsd.org/security/advisories/FreeBSD-SA-15:13.tcp.asc>`__:
-   Resource exhaustion due to sessions stuck in LAST\_ACK state. Note
+   Resource exhaustion due to sessions stuck in LAST_ACK state. Note
    this only applies to scenarios where ports listening on pfSense
    itself (not things passed through via NAT, routing or bridging) are
    opened to untrusted networks. This doesn't apply to the default
@@ -135,7 +135,7 @@ Load Balancer
 
 -  Improved handling of port ranges in relayd.
    `#4810 <https://redmine.pfsense.org/issues/4810>`__
--  Fixed references to Load Balancer Virtual Server *redirect\_mode*.
+-  Fixed references to Load Balancer Virtual Server *redirect_mode*.
 
 Traffic Shaping
 ---------------

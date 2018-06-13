@@ -21,10 +21,10 @@ Aliases** to make the rules easier to accomplish:
 
 -  Host alias for the PBX itself, named *PBX*, containing the local IP
    address of the PBX.
--  Network or Host alias called *SIP\_Trunks* for the upstream SIP trunk
-   addresses, if known. If the *SIP\_Trunk* address/network is not known
+-  Network or Host alias called *SIP_Trunks* for the upstream SIP trunk
+   addresses, if known. If the *SIP_Trunk* address/network is not known
    or changes, do not make an alias and leave these values set to *any*.
--  Port alias called *PBX\_Ports* containing all of the port numbers
+-  Port alias called *PBX_Ports* containing all of the port numbers
    needed for SIP, RTP, and other control ports. (usually *5060* and
    *10000:20000*, but varies from provider to provider and PBX
    implementation)
@@ -37,13 +37,13 @@ be set as follows:
 
 -  **Interface**: *WAN*
 -  **Protocol**: *UDP* (or *TCP/UDP* if needed)
--  **Source**: Type *Single Host or Alias*: *SIP\_Trunks* -- or a *Any*
+-  **Source**: Type *Single Host or Alias*: *SIP_Trunks* -- or a *Any*
    for the type if the SIP trunk IP addresses are not known.
 -  **Source Port**: *any/any*
 -  **Destination**: *WAN address* or external VIP for the PBX
--  **Destination Port**: *PBX\_Ports*
+-  **Destination Port**: *PBX_Ports*
 -  **Redirect target IP**: *PBX*
--  **Redirect target port**: *PBX\_Ports*
+-  **Redirect target port**: *PBX_Ports*
 
 Manual Outbound NAT
 -------------------
@@ -57,9 +57,9 @@ like so:
 -  **Protocol**: *UDP*
 -  **Source**: *Network*, *PBX*
 -  **Source Port**: *[blank]*
--  **Destination**: *Network*, *SIP\_Trunks* -- Or *Any* for the type if
+-  **Destination**: *Network*, *SIP_Trunks* -- Or *Any* for the type if
    the SIP trunk IP addresses are not known
--  **Destination Port**: *PBX\_Ports* (or leave blank)
+-  **Destination Port**: *PBX_Ports* (or leave blank)
 -  **Translation**: *Interface address* if using the WAN IP address, or
    the external VIP for the PBX
 -  **Port**: *[blank]*

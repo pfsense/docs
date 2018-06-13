@@ -12,18 +12,18 @@ Security / Errata
 
 -  pfSense Advisories
 
-   -  `pfSense-SA-17\_05.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_05.webgui.asc>`__:
+   -  `pfSense-SA-17_05.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_05.webgui.asc>`__:
 
-      -  Fixed a potential XSS issue in the diag\_edit.php file browser
+      -  Fixed a potential XSS issue in the diag_edit.php file browser
          `#7650 <https://redmine.pfsense.org/issues/7650>`__
       -  Fixed a potential XSS in handling of the 'type' parameter on
-         diag\_table.php
+         diag_table.php
          `#7652 <https://redmine.pfsense.org/issues/7652>`__
       -  Fixed validation and a potential XSS in interface names on
-         firewall\_nat\_edit.php
+         firewall_nat_edit.php
          `#7651 <https://redmine.pfsense.org/issues/7651>`__
 
-   -  `pfSense-SA-17\_06.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_06.webgui.asc>`__:
+   -  `pfSense-SA-17_06.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_06.webgui.asc>`__:
 
       -  Added a warning screen to the GUI and prevent access if the
          client IP address is currently in the lockout table, and also
@@ -70,13 +70,13 @@ Virtual IP Addresses
 DNS
 ^^^
 
--  Fixed diag\_dns.php so it will not create an empty alias if name does
+-  Fixed diag_dns.php so it will not create an empty alias if name does
    not resolve
--  Fixed diag\_dns.php to not show Add Alias if the user does not have
+-  Fixed diag_dns.php to not show Add Alias if the user does not have
    privileges to add an alais
--  Fixed diag\_dns.php to change the update alias button text after
+-  Fixed diag_dns.php to change the update alias button text after
    adding an alias
--  Fixed diag\_dns.php to disable the Add Alias button when the host
+-  Fixed diag_dns.php to disable the Add Alias button when the host
    field is changed
 -  Fixed calls to unbound-control to have the full configuration path
    specified so they do not fail
@@ -121,11 +121,11 @@ Misc
    download button, socket buffer info, and the netgate ID
 -  Fixed status.php to redact BGP MD5 password/key in output
    `#7642 <https://redmine.pfsense.org/issues/7642>`__
--  Fixed OpenVPN to use is\_numeric() to make sure $prefix is not 0
+-  Fixed OpenVPN to use is_numeric() to make sure $prefix is not 0
 -  Changed the "Rule Information" section so it is consistent between
    firewall and NAT rule pages
 -  Fixed APU2 detection for devices running coreboot v4.x
--  Fixed the tunable description for net.inet.ip.random\_id
+-  Fixed the tunable description for net.inet.ip.random_id
    `#6087 <https://redmine.pfsense.org/issues/6087>`__
 -  Fixed some outdated links for help and support
 -  Fixed some issues with empty config tags in packages

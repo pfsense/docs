@@ -62,9 +62,9 @@ Accounting with Captive Portal
 ------------------------------
 
 To use the **Amount of Time** options together with Captive Portal
-*Acct\_unique* **must** be disabled in **FreeRADIUS > Settings**.
+*Acct_unique* **must** be disabled in **FreeRADIUS > Settings**.
 
-The **Acct\_unique module** tries to create a unique ID for an
+The **Acct_unique module** tries to create a unique ID for an
 accounting session but this does not work correctly when a user changes
 NAS or NAS-Port and so on. Other NAS perhaps do need different
 configuration but probably not.
@@ -81,7 +81,7 @@ all. To use this, configure the following:
 
 -  FreeRADIUS configuration:
 
-   -  Disable **Acct\_unique** in **FreeRADIUS > Settings**
+   -  Disable **Acct_unique** in **FreeRADIUS > Settings**
    -  Create a user with username and password **Services >
       FreeRADIUS**, **Users** tab
    -  Enter the **Amount of Time** in minutes and the time within the

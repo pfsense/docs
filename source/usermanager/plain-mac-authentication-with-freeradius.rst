@@ -18,7 +18,7 @@ into the username and password field. This can be entered in
 But older NAS equipment is not able to do 802.1X but only Plain MAC
 Auth. These NAS can not send any username and password but only the
 Calling-Station-Id. FreeRADIUS Package is able to perform first a check
-against a list of MACs (authorized\_macs) and if this fails then do a
+against a list of MACs (authorized_macs) and if this fails then do a
 check against all the other modules like CHAP, EAP and so.
 
 I would advise to only enable plain MAC auth if absolutely necessary.

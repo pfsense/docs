@@ -32,7 +32,7 @@ tcpdump
 tcpdump comes installed with pfSense. It can be used over SSH or on the
 console in a shell. In this example a method of capturing traffic other
 than SSH, ARP, DNS and STP is highlighted. The capture will be directed
-to a file called Sniff\_output in the current directory.
+to a file called Sniff_output in the current directory.
 
 .. code::
 
@@ -46,7 +46,7 @@ iftop
 -----
 
 A second method of sniffing traffic via a shell is with iftop. The
-method of installing iftop is highlighted at `Add\_Packages <Add_Packages>`__.
+method of installing iftop is highlighted at `Add_Packages <Add_Packages>`__.
 
 iftop allows designating the interface from which to grab traffic.
 

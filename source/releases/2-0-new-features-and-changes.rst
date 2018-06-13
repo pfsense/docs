@@ -33,7 +33,7 @@ Interfaces
    interface
 -  All interfaces are optional except WAN
 -  All interfaces can be renamed, even LAN/WAN
--  Bridging enhancements - can now control all options of if\_bridge,
+-  Bridging enhancements - can now control all options of if_bridge,
    and assign bridge interfaces
 
 Gateways/Multi-WAN
@@ -59,7 +59,7 @@ General Web GUI
 -  System > Advanced screen split into multiple tabs, more options
    available.
 -  SMTP email alerts and growl alerts
--  New default theme - pfsense\_ng
+-  New default theme - pfsense_ng
 -  Some community-contributed themes added
 -  Contextual help available on every page in the web interface, linking
    to a webpage containing help and documentation specific to that page.
@@ -125,7 +125,7 @@ IPsec
 -  IPsec transport mode added
 -  IPsec NAT-T
 -  Option to push settings such as IP, DNS, etc, to mobile IPsec clients
-   (mod\_cfg)
+   (mod_cfg)
 -  Mobile IPsec works with iOS and Android (Certain versions, see :doc:`IPsec Road Warrior/Mobile Client How-To </vpn/ipsec/configuring-an-ipsec-remote-access-mobile-vpn-using-ikev1-xauth>`)
 -  More Phase 1/2 options can be configured, including the cipher
    type/strength

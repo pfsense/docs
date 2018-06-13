@@ -7,23 +7,23 @@ Getting Started
 ---------------
 
 Creating widgets is simple. First, create the html code to be displayed,
-save it to a file named widget\_name.widget.php, and put it into the
+save it to a file named widget_name.widget.php, and put it into the
 /usr/local/www/widgets/widgets directory on the firewall.
 
 Do not include any **<body>**, **<html>**, or pgtitle defintions, etc. Just the
 basic HTML code for what needs to be displayed. See the current widgets for
 examples.
 
-The file must be named in the name\_name.widget.php format. No spaces
+The file must be named in the name_name.widget.php format. No spaces
 are allowed. The name that will displayed is the name of the file. For
 example the Traffic Graphs widget file is named
-traffic\_graphs.widget.php.
+traffic_graphs.widget.php.
 
 And that's it! The rest of the widget (buttons, border, dragging,
 sequence, etc) is handled automatically by the dashboard.
 
 To include custom PHP or JavaScript code into the widget upon rendering,
-create a file named widget\_name.inc for PHP or widget\_name.js for
+create a file named widget_name.inc for PHP or widget_name.js for
 JavaScript. Copy .inc files in the /usr/local/www/widgets/include
 directory and JavaScript files into the
 /usr/local/www/widgets/javascript directory.
@@ -37,7 +37,7 @@ To store the data to the XML config use the following code::
 
   <input type="hidden" id="widget_name-config" name="widget_name-config" value="">
 
-where widget\_name is the name of the widget file minus the .widget.php.
+where widget_name is the name of the widget file minus the .widget.php.
 An example is::
 
   <input type="hidden" id="traffic_graphs-config" name="traffic_graphs-config" value="">
@@ -47,7 +47,7 @@ stored to this input field the data will be stored as a string into the
 config.
 
 To retrieve the stored value for the widget use variables such as
-$config['widgets']['widget\_name\_setting'], where widget\_name is the
+$config['widgets']['widget_name_setting'], where widget_name is the
 name of the widget. An example would be
 $config['widgets']['filterlogentriesinterfaces']
 
@@ -64,8 +64,8 @@ To show the configuration button use the following code::
   //]]>
   </script>
 
-where widget\_name is the name of the widget file minus the .widget.php.
-An example is selectIntLink = "traffic\_graphs-configure";
+where widget_name is the name of the widget file minus the .widget.php.
+An example is selectIntLink = "traffic_graphs-configure";
 
 To show additional configuration options use a <div> section at the top
 of the widget. Use the following code and insert whatever is needed

@@ -25,7 +25,7 @@
    display purposes and facilitates users seeking support in identifying
    their hardware.
 -  Added encoding to the 'zone' parameter on Captive Portal pages.
--  Added output encoding to diag\_dns.php for results returned from DNS.
+-  Added output encoding to diag_dns.php for results returned from DNS.
    `#6737 <https://redmine.pfsense.org/issues/6737>`__
 -  Worked around a Chrome bug with regular expression parsing of escaped
    characters within character sets. Fixes "Please match the requested
@@ -57,23 +57,23 @@
    `#6646 <https://redmine.pfsense.org/issues/6646>`__
 -  Fixed error reporting for SMTP settings test.
 -  Fixed saving of country, provider, and plan values for PPP interfaces
--  Fixed checking of invalid "Go To Line" numbers on diag\_edit.php.
+-  Fixed checking of invalid "Go To Line" numbers on diag_edit.php.
    `#6704 <https://redmine.pfsense.org/issues/6704>`__
--  Fixed off-by-one error with "Rows to Display" on diag\_routes.php.
+-  Fixed off-by-one error with "Rows to Display" on diag_routes.php.
    `#6705 <https://redmine.pfsense.org/issues/6705>`__
--  Fixed description of the filter box on diag\_routes.php to reflect
+-  Fixed description of the filter box on diag_routes.php to reflect
    that all fields are searchable.
    `#6706 <https://redmine.pfsense.org/issues/6706>`__
--  Fixed description of the box for the file to edit on diag\_edit.php.
+-  Fixed description of the box for the file to edit on diag_edit.php.
    `#6703 <https://redmine.pfsense.org/issues/6703>`__
--  Fixed description of the main panel on diag\_resetstate.php.
+-  Fixed description of the main panel on diag_resetstate.php.
    `#6709 <https://redmine.pfsense.org/issues/6709>`__
--  Fixed warning dialog when a box is unchecked on diag\_resetstate.php.
+-  Fixed warning dialog when a box is unchecked on diag_resetstate.php.
    `#6710 <https://redmine.pfsense.org/issues/6710>`__
 -  Fixed log shortcut for DHCP6 areas.
    `#6700 <https://redmine.pfsense.org/issues/6700>`__
 -  Fixed the network delete button showing when only one row was present
-   on services\_unbound\_acls.php
+   on services_unbound_acls.php
    `#6716 <https://redmine.pfsense.org/issues/6716>`__
 -  Fixed disappearing help text on repeatable rows when the last row is
    deleted. `#6716 <https://redmine.pfsense.org/issues/6716>`__
@@ -83,13 +83,13 @@
    it picking up an incorrect default configuration which would override
    our options. `#6730 <https://redmine.pfsense.org/issues/6730>`__
 -  Added "-l" to traceroute6 to show both IP Addresses and Hostnames
-   when resolving hops on diag\_traceroute.php.
+   when resolving hops on diag_traceroute.php.
    `#6715 <https://redmine.pfsense.org/issues/6715>`__
 -  Added note about max ttl/hop limit in source comment on
-   diag\_traceroute.php.
--  Clarified language on diag\_tables.php.
+   diag_traceroute.php.
+-  Clarified language on diag_tables.php.
    `#6713 <https://redmine.pfsense.org/issues/6713>`__
--  Cleaned up the text on diag\_sockets.php.
+-  Cleaned up the text on diag_sockets.php.
    `#6708 <https://redmine.pfsense.org/issues/6708>`__
 -  Fixed display of VLAN interface names during console assignment.
    `#6724 <https://redmine.pfsense.org/issues/6724>`__
@@ -111,7 +111,7 @@
    OpenVPN, L2TP, PPPoE Server).
    `#6780 <https://redmine.pfsense.org/issues/6780>`__
 -  Fixed missing checkboxes in some cases when adding rows on
-   services\_ntpd.php.
+   services_ntpd.php.
    `#6788 <https://redmine.pfsense.org/issues/6788>`__
 -  Revised service running/stopped icons.
 -  Added a check to CRL management to remove certificates from the

@@ -18,7 +18,7 @@ Pull it
 2.3.3 and Later
 ^^^^^^^^^^^^^^^
 
-Changes to the diag\_backup.php "Download" button on 2.3.3 and later
+Changes to the diag_backup.php "Download" button on 2.3.3 and later
 require a slight adjustment compared to previous versions.
 
 - Fetch the login form and save the cookies and CSRF token::
@@ -104,7 +104,7 @@ isn't recommended, but it is possible to make it work over ssh.
 - Generate an ssh key for the root pfSense user *without a passphrase*.
   (That's the potentially dangerous part)
 - Add a user to a remote system, and add the pfSense root user's new
-  public key to its *~/.ssh/authorized\_keys* file
+  public key to its *~/.ssh/authorized_keys* file
 - Create a cron job on the pfSense box that would copy
   */cf/conf/config.xml* to the remote system with *scp*
 - If this is implemented, be careful to manage the remote users as such

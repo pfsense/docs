@@ -10,7 +10,7 @@ Security / Errata
 
 -  FreeBSD/ports Security Advisories
 
-   -  Updated ntpd to 4.2.8p10\_2 (
+   -  Updated ntpd to 4.2.8p10_2 (
       `FreeBSD-SA-17:03.ntp.asc <https://www.freebsd.org/security/advisories/FreeBSD-SA-17:03.ntp.asc>`__
       )
    -  Updated cURL to 7.54.0 ( CVE-2017-7407, CVE-2017-7468 )
@@ -22,7 +22,7 @@ Security / Errata
    -  Fixed encoding of displayed values from DHCP leases to prevent a
       badly formatted DHCP lease hostname from causing a potential XSS
       `#7497 <https://redmine.pfsense.org/issues/7497>`__ (
-      `pfSense-SA-17\_04.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_04.webgui.asc>`__
+      `pfSense-SA-17_04.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_04.webgui.asc>`__
       )
 
 -  See the Certificates section below for an important note about GUI
@@ -102,7 +102,7 @@ Configuration
    `#6594 <https://redmine.pfsense.org/issues/6594>`__
 -  Fixed factory reset when Captive Portal has Vouchers enabled
    `#7508 <https://redmine.pfsense.org/issues/7508>`__
--  Cleaned up unused code in diag\_backup.php
+-  Cleaned up unused code in diag_backup.php
 
 Interfaces
 ----------
@@ -124,7 +124,7 @@ Interfaces
 User Manager / Authentication
 -----------------------------
 
--  Added a warning to system\_authservers.php to warn that RADIUS does
+-  Added a warning to system_authservers.php to warn that RADIUS does
    not work with IPv6
    `#4154 <https://redmine.pfsense.org/issues/4154>`__
 -  Added a status icon to the User Manager to show if a user is enabled
@@ -170,7 +170,7 @@ Misc
    in the pfTop port `#7461 <https://redmine.pfsense.org/issues/7461>`__
 -  Added support for the Dynamic DNS Client Hover
    `#7511 <https://redmine.pfsense.org/issues/7511>`__
--  Fixed UTF-8 handling in Base64 decoding on diag\_edit.php
+-  Fixed UTF-8 handling in Base64 decoding on diag_edit.php
 -  Fixed handling of traffic graph data irregularities
    `#7515 <https://redmine.pfsense.org/issues/7515>`__
 -  Added visual separation to the legend on the installed packages list

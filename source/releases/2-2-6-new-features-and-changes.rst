@@ -17,11 +17,11 @@ Security/Errata Notices
       vulnerability <https://www.strongswan.org/blog/2015/11/16/strongswan-vulnerability-(cve-2015-8023).html>`__
       in the eap-mschapv2 plugin.
 
--  `pfSense-SA-15\_09.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_09.webgui.asc>`__:
+-  `pfSense-SA-15_09.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_09.webgui.asc>`__:
    Local File Inclusion Vulnerability in the pfSense WebGUI
--  `pfSense-SA-15\_10.captiveportal <https://www.pfsense.org/security/advisories/pfSense-SA-15_10.captiveportal.asc>`__:
+-  `pfSense-SA-15_10.captiveportal <https://www.pfsense.org/security/advisories/pfSense-SA-15_10.captiveportal.asc>`__:
    SQL Injection Vulnerability in the pfSense captive portal logout
--  `pfSense-SA-15\_11.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_11.webgui.asc>`__:
+-  `pfSense-SA-15_11.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_11.webgui.asc>`__:
    Multiple XSS and CSRF Vulnerabilities in the pfSense WebGUI
 
 Logging

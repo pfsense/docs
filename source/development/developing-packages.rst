@@ -79,7 +79,7 @@ Package Configuration Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The manifest specifies a Package Configuration File for the package
-using the *config\_file* tag. The convention is to keep this file inside
+using the *config_file* tag. The convention is to keep this file inside
 the *files/usr/local/pkg/* directory inside the port structure for the
 package.
 
@@ -151,7 +151,7 @@ The format is::
 
 **Field types:**
 
-- interfaces\_selection - combo/list box with interfaces list::
+- interfaces_selection - combo/list box with interfaces list::
 
     <field>
       <fielddescr>Interface Selection</fielddescr>
@@ -247,7 +247,7 @@ for pfsense 2.1 and above:
 
 **Field groups (any pfsense version):**
 
-- rowhelper - used in pkg\_edit.php to add multiple config lines like a
+- rowhelper - used in pkg_edit.php to add multiple config lines like a
   table on package gui. Inside rowhelper, add any field type described
   above::
 
@@ -320,8 +320,8 @@ Repository Branches
 When submitting changes, they are typically submitted to the "devel"
 branch of the pfSense copy of FreeBSD-ports. In order to show to all
 users, the changes must be placed in the current release branch as well,
-such as RELENG\_2\_3\_0. Furthermore, the changes should be on any
-current maintenance release branches as well, such as RELENG\_2\_3.
+such as RELENG_2_3_0. Furthermore, the changes should be on any
+current maintenance release branches as well, such as RELENG_2_3.
 
 Ideally, the changes should be submitted to the development branches and
 tested on systems pulling packages from the development repository. Once

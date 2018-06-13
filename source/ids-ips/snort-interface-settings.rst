@@ -47,19 +47,19 @@ Snort in the signature detection engine.
 Choose the networks Snort should inspect and whitelist
 ------------------------------------------------------
 
-**Home Net:** selects the network Snort will use as the HOME\_NET
+**Home Net:** selects the network Snort will use as the HOME_NET
 variable. Default is the recommended choice and contains the firewall
 WAN IP address and WAN gateway, all networks locally-attached to a
 firewall interface, the configured DNS servers, VPN addresses and
-Virtual IP addresses. Additional HOME\_NET networks may be created on
+Virtual IP addresses. Additional HOME_NET networks may be created on
 the IP LISTS tab, and then return to this tab to assign them to the
 Snort interface by selecting the appropriate list in the drop-down
 selector. View the contents of the selected list by clicking the **View
 List** button.
 
-**External Net:** selects the network will use as the EXTERNAL\_NET
+**External Net:** selects the network will use as the EXTERNAL_NET
 variable. Default is the recommended choice and contains all networks
-not included in HOME\_NET. Create additional EXTERNAL\_NET networks on
+not included in HOME_NET. Create additional EXTERNAL_NET networks on
 the IP LISTS tab, and then return to this tab to assign them to the
 Snort interface by selecting the appropriate list in the drop-down
 selector.
@@ -68,7 +68,7 @@ selector.
 never block. These represent "trusted hosts". Even if a trusted host
 generates a Snort alert, it will not be blocked if the IP address is on
 a Pass List. The default Pass List contains the same addresses as
-HOME\_NET. Create additional pass lists on the IP LISTS tab, and then
+HOME_NET. Create additional pass lists on the IP LISTS tab, and then
 return to this tab to assign them to the Snort interface by selecting
 the appropriate list in the drop-down selector. Snort must be restarted
 on the interface when making changes to the Pass List. View the contents

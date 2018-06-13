@@ -8,9 +8,9 @@ Security / Errata
 
 -  `FreeBSD-SA-18:01.ipsec <https://security.freebsd.org/advisories/FreeBSD-SA-18:01.ipsec.asc>`__
 -  Kernel PTI mitigations for Meltdown (optional tunable)
-   `FreeBSD-SA-18:03.speculative\_execution.asc <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:03.speculative_execution.asc>`__
+   `FreeBSD-SA-18:03.speculative_execution.asc <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:03.speculative_execution.asc>`__
 -  IBRS mitigation for Spectre V2 (requires updated CPU microcode)
-   `FreeBSD-SA-18:03.speculative\_execution.asc <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:03.speculative_execution.asc>`__
+   `FreeBSD-SA-18:03.speculative_execution.asc <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:03.speculative_execution.asc>`__
 -  Added a CPU Microcode update mechanism (cpuctl module,
    sysutils/devcpu-data port)
 -  Imported a FreeBSD patch to fix boot issues when running as a
@@ -20,13 +20,13 @@ Security / Errata
    valid `#8269 <https://redmine.pfsense.org/issues/8269>`__
 -  Fixed a potential XSS vector in RRD error output encoding
    `#8269 <https://redmine.pfsense.org/issues/8269>`__
-   `pfSense-SA-18\_01.packages <https://www.pfsense.org/security/advisories/pfSense-SA-18_01.packages>`__
--  Fixed a potential XSS vector in diag\_system\_activity.php output
+   `pfSense-SA-18_01.packages <https://www.pfsense.org/security/advisories/pfSense-SA-18_01.packages>`__
+-  Fixed a potential XSS vector in diag_system_activity.php output
    encoding `#8300 <https://redmine.pfsense.org/issues/8300>`__
-   `pfSense-SA-18\_02.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_02.webgui>`__
--  Fixed a potential XSS vector in traffic\_graphs.widget.php settings
+   `pfSense-SA-18_02.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_02.webgui>`__
+-  Fixed a potential XSS vector in traffic_graphs.widget.php settings
    `#8302 <https://redmine.pfsense.org/issues/8302>`__
-   `pfSense-SA-18\_03.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_03.webgui>`__
+   `pfSense-SA-18_03.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_03.webgui>`__
 -  Fixed a potential CSRF issue in service control request processing
    `#8296 <https://redmine.pfsense.org/issues/8296>`__
 -  Enabled CSRF protection for all dashboard widgets
@@ -41,7 +41,7 @@ Security / Errata
 -  Imported a netstat fix for ARM platforms to improve performance and
    reduce CPU usage, especially on the Dashboard
    `#8237 <https://redmine.pfsense.org/issues/8237>`__
--  Fixed a memory leak in the pfSense\_getall\_interface\_addresses()
+-  Fixed a memory leak in the pfSense_getall_interface_addresses()
    function in the pfSense PHP module
    `#8249 <https://redmine.pfsense.org/issues/8249>`__
 -  Hardware support for the XG-7100, including:
@@ -59,7 +59,7 @@ Traffic Shaping / Limiters
    `#7607 <https://redmine.pfsense.org/issues/7607>`__
 -  Fixed an issue with limiters that had fractional bandwidth values
    `#8091 <https://redmine.pfsense.org/issues/8091>`__
--  Changed status\_queues.php to provide 'realtime' statistics
+-  Changed status_queues.php to provide 'realtime' statistics
    `#8185 <https://redmine.pfsense.org/issues/8185>`__
 
 IPsec
@@ -163,7 +163,7 @@ Dynamic DNS
 Interfaces / VIPs
 -----------------
 
--  Fixed issues on assign\_interfaces.php with large numbers of
+-  Fixed issues on assign_interfaces.php with large numbers of
    interfaces `#6400 <https://redmine.pfsense.org/issues/6400>`__
 -  Fixed handling of CARP VIPs on disabled interfaces at boot time
    `#6677 <https://redmine.pfsense.org/issues/6677>`__
@@ -184,7 +184,7 @@ Interfaces / VIPs
 -  Added support for configuring the DUID type for an IPv6 interfaces
    `#8191 <https://redmine.pfsense.org/issues/8191>`__
 -  Allow custom INIT string for PPP modem SIM Pin and APN settings
--  Added an indicator for disabled interfaces on status\_interfaces.php
+-  Added an indicator for disabled interfaces on status_interfaces.php
 -  Fixed an issue with the PPP linkup and linkdown scripts and cellular
    modems
 -  Fixed an issue where the combination of CARP with bridging could lead
@@ -222,7 +222,7 @@ Gateways/Routing
 ----------------
 
 -  Fixed handling of the Router Lifetime value on
-   services\_router\_advertisements.php so it allows a value of *0*
+   services_router_advertisements.php so it allows a value of *0*
    `#7502 <https://redmine.pfsense.org/issues/7502>`__
 -  Added ospf6d to the routing log
 -  Allow recursive aliases to be used with static routes
@@ -272,7 +272,7 @@ Misc
 -  Fixed a references to an undefined function while restoring a
    config.xml file from an older version
    `#8231 <https://redmine.pfsense.org/issues/8231>`__
--  Added support to diag\_packet\_capture.php to capture traffic on the
+-  Added support to diag_packet_capture.php to capture traffic on the
    loopback interface
    `#8257 <https://redmine.pfsense.org/issues/8257>`__
 -  Fixed an issue with the RAM disk warning pop-up appearing when no

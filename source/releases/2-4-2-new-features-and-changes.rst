@@ -10,18 +10,18 @@ Security / Errata
    CVE-2017-3735 <https://www.openssl.org/news/secadv/20171102.txt>`__
 -  `FreeBSD-SA-17:10.kldstat <https://www.freebsd.org/security/advisories/FreeBSD-SA-17:10.kldstat.asc>`__
 -  `FreeBSD-SA-17:08.ptrace <https://www.freebsd.org/security/advisories/FreeBSD-SA-17:08.ptrace.asc>`__
--  Fixed a potential XSS vector in status\_monitoring.php
+-  Fixed a potential XSS vector in status_monitoring.php
    `#8037 <https://redmine.pfsense.org/issues/8037>`__
-   `pfSense-SA-17\_07.packages.asc <https://www.pfsense.org/security/advisories/pfSense-SA-17_07.packages.asc>`__
--  Fixed a potential XSS vector in diag\_dns.php
+   `pfSense-SA-17_07.packages.asc <https://www.pfsense.org/security/advisories/pfSense-SA-17_07.packages.asc>`__
+-  Fixed a potential XSS vector in diag_dns.php
    `#7999 <https://redmine.pfsense.org/issues/7999>`__
-   `pfSense-SA-17\_08.webgui.asc <https://www.pfsense.org/security/advisories/pfSense-SA-17_08.webgui.asc>`__
+   `pfSense-SA-17_08.webgui.asc <https://www.pfsense.org/security/advisories/pfSense-SA-17_08.webgui.asc>`__
 -  Fixed a potential XSS vector on index.php via widget sequence
    parameters `#8000 <https://redmine.pfsense.org/issues/8000>`__
-   `pfSense-SA-17\_09.webgui.asc <https://www.pfsense.org/security/advisories/pfSense-SA-17_09.webgui.asc>`__
+   `pfSense-SA-17_09.webgui.asc <https://www.pfsense.org/security/advisories/pfSense-SA-17_09.webgui.asc>`__
 -  Fixed a potential XSS in the widgetkey parameter of multi-instance
    dashboard widgets `#7998 <https://redmine.pfsense.org/issues/7998>`__
-   `pfSense-SA-17\_09.webgui.asc <https://www.pfsense.org/security/advisories/pfSense-SA-17_09.webgui.asc>`__
+   `pfSense-SA-17_09.webgui.asc <https://www.pfsense.org/security/advisories/pfSense-SA-17_09.webgui.asc>`__
 -  Fixed a potential clickjacking issue in the CSRF error page
 
 Interfaces
@@ -203,7 +203,7 @@ Misc
 -  Fixed interface binding in ntpd so it does not erroneously listen on
    all interfaces `#8046 <https://redmine.pfsense.org/issues/8046>`__
 -  Fixed a problem where restarting the syslogd service would make
-   sshlockout\_pf process orphans
+   sshlockout_pf process orphans
    `#7984 <https://redmine.pfsense.org/issues/7984>`__
 -  Added support for the ClouDNS dynamic DNS provider
    `#7823 <https://redmine.pfsense.org/issues/7823>`__

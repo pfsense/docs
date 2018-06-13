@@ -17,8 +17,8 @@ See :doc:`Tuning and Troubleshooting Network Cards </hardware/tuning-and-trouble
 for more information on that setting.
 
 Some people have also seen better performance by using the *ufs* cache
-filesystem setting. When using *ufs* filesystem, **vfs.read\_max=32**
-may be increased to **vfs.read\_max=128** in **System > Advanced**,
+filesystem setting. When using *ufs* filesystem, **vfs.read_max=32**
+may be increased to **vfs.read_max=128** in **System > Advanced**,
 **Sytem Tunables** tab. Read
 `more <http://ivoras.sharanet.org/blog/tree/2010-11-19.ufs-read-ahead.html>`__.
 
@@ -155,7 +155,7 @@ also squid.
 To use a parent proxy on another server (not squid), it is necessary to
 disable **Upstream proxy settings**, and use the **Custom options** in
 the **Proxy server: General settings** tab. For example for use as a
-parent proxy installed package HAVP need to add the line *cache\_peer
+parent proxy installed package HAVP need to add the line *cache_peer
 127.0.0.1 parent 3121 7 no-query* (Here HAVP configured to use the IP
 address *127.0.0.1* port *3121*).
 

@@ -57,7 +57,7 @@ Interfaces
    We do not need to change settings for disabled interfaces.
    `#3313 <http://redmine.pfsense.org/issues/3313>`__
 -  Skip processing in rc.newwanip if the interface has no IP address.
--  Fix pkg\_edit.php to show interface description instead of interface
+-  Fix pkg_edit.php to show interface description instead of interface
    name
 -  Make sure vlan interface exist when they are configured
    `#3270 <http://redmine.pfsense.org/issues/3270>`__
@@ -92,7 +92,7 @@ Gateways/Routing
 -  Use a more accurate error message when attempting to add/edit a
    gateway that does not have an appropriate IP address for the type.
    `#3282 <http://redmine.pfsense.org/issues/3282>`__
--  Make return\_gateways\_array() return all disabled gateways when
+-  Make return_gateways_array() return all disabled gateways when
    $disabled is true. `#3291 <http://redmine.pfsense.org/issues/3291>`__
 -  Don't flush interface cache on each call of the function when looping
    through all gateways.
@@ -124,12 +124,12 @@ NAT/Firewall Rules/Aliases
    `#3283 <http://redmine.pfsense.org/issues/3283>`__
 -  Make sure pf rule labels never have more than 63 chars.
    `#3208 <http://redmine.pfsense.org/issues/3208>`__
--  Rewrite the display\_host\_results() function to use spaces instead
+-  Rewrite the display_host_results() function to use spaces instead
    of tabs. It does a much better job of aligning the fields in each
    column and works in all the browsers, particularly chrome which
    doesn't support the tab character.
 -  Handle comma-separated list of remote networks when making
-   vpn\_networks table
+   vpn_networks table
 -  Fix rules that pass out traffic for Proxy ARP VIP entries which had
    incorrect destination
    `#3331 <http://redmine.pfsense.org/issues/3331>`__
@@ -222,7 +222,7 @@ Captive Portal
 -  Remove redundant copies of getNasIP()
    `#3234 <http://redmine.pfsense.org/issues/3234>`__
 -  Set default captive portal RADIUS authentication value to
-   radius\_protocol during upgrade
+   radius_protocol during upgrade
    `#3226 <http://redmine.pfsense.org/issues/3226>`__
 -  Add Captive Portal Zones privileges definition.
    `#3216 <http://redmine.pfsense.org/issues/3216>`__
@@ -263,17 +263,17 @@ Captive Portal
 VPN
 ---
 
--  Fix find\_service\_by\_openvpn\_vpnid() on OpenVPN Status
+-  Fix find_service_by_openvpn_vpnid() on OpenVPN Status
 -  Allow special characters to be used on IPsec mobile login banner.
    `#3247 <http://redmine.pfsense.org/issues/3247>`__
 -  Fix cisco-avpair processing for IPsec and OpenVPN, and route
    processing from avpair replies.
 -  Fix logic in detecting if OpenVPN resync needed
--  Fix vpn\_pppoe\_get\_id and stop duplicating pppoeid for multiple
+-  Fix vpn_pppoe_get_id and stop duplicating pppoeid for multiple
    servers. `#2286 <http://redmine.pfsense.org/issues/2286>`__
 -  Use env var provided by openvpn to determine if it's tun or tap.
    `#3475 <http://redmine.pfsense.org/issues/3475>`__
--  Add an option to verify IPsec peers\_identifier when it's ASN.1
+-  Add an option to verify IPsec peers_identifier when it's ASN.1
    distinguished name.
    `#2904 <http://redmine.pfsense.org/issues/2904>`__
 
@@ -333,7 +333,7 @@ Time
 -  Allow multiple valid time servers to be entered in the wizard, as
    they are allowed under System > General
 -  Update time zone data to 2013i
--  Teach system\_timezone\_configure() to deal with symlinks to avoid
+-  Teach system_timezone_configure() to deal with symlinks to avoid
    having timezone misconfigured.
    `#3293 <http://redmine.pfsense.org/issues/3293>`__
 -  Add 'limited' to ntpd restrict list to workaround
@@ -363,7 +363,7 @@ Misc
 -  Add source address selection to syslog settings, so it can work more
    effectively over a VPN.
    `#355 <http://redmine.pfsense.org/issues/355>`__
--  Rework the usage of the shell i/o during stop\_packages(), fixes the
+-  Rework the usage of the shell i/o during stop_packages(), fixes the
    "Syntax error: bad fd number" for the remaining people who still saw
    it on shutdown
 -  Switch to rw mode before file operations on RFC2136 cache. Fixes
@@ -371,7 +371,7 @@ Misc
 -  Make the RADIUS settings respect the description of the timeout
    field. If the timeout value is left blank, use 5 seconds, don't print
    an error.
--  Call conf\_mount\_rw before deleting a user.
+-  Call conf_mount_rw before deleting a user.
    `#3294 <http://redmine.pfsense.org/issues/3294>`__
 -  Handle the reinstallall case with confirmation.
    `#3548 <http://redmine.pfsense.org/issues/3548>`__
@@ -379,7 +379,7 @@ Misc
 -  Accept adding an IP Aliases on top of CARP VIP when the parent
    interface does have a valid IP address in the alias subnet.
 -  Simplify log filtering logic calling grep less times, as done on
-   mail\_reports.inc on 2c6efc9.
+   mail_reports.inc on 2c6efc9.
 -  Fix console recent config restore, allow restoration of the last
    backup listed. `#3438 <http://redmine.pfsense.org/issues/3438>`__
 -  Enhanced validation of general DNS servers and gateways
@@ -389,10 +389,10 @@ Misc
    preferred in cases where there are multiple consoles present.
 -  Skip input validation when choosing an existing certificate in the
    User Manager. `#3505 <http://redmine.pfsense.org/issues/3505>`__
--  pfSense\_interface\_deladdress() only knows how to delete an ip
+-  pfSense_interface_deladdress() only knows how to delete an ip
    address, not a subnet.
    `#3513 <http://redmine.pfsense.org/issues/3513>`__
--  Make is\_linklocal case-insensitive.
+-  Make is_linklocal case-insensitive.
    `#3433 <http://redmine.pfsense.org/issues/3433>`__
 -  Errors in in RRD graph calculations
 -  Delete /var/crash content when the user clicks 'No'.
@@ -400,7 +400,7 @@ Misc
 -  Make sure filesystem is read-write when operating on groups.
    `#3492 <http://redmine.pfsense.org/issues/3492>`__
 -  Fix OpenVPN XML section name for selective configuration backup.
--  Remove TRIM\_set and TRIM\_unset support. This method isn't very
+-  Remove TRIM_set and TRIM_unset support. This method isn't very
    elegant and isn't necessary in the long run. It's better handled
    during the install process or while booted off other media (e.g. CD
    or Memstick).

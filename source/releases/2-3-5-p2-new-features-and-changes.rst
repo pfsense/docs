@@ -10,16 +10,16 @@ Security / Errata
    `FreeBSD-EN-18:05.mem <https://www.freebsd.org/security/advisories/FreeBSD-EN-18:05.mem.asc>`__
 -  Fixed a potential XSS vector in RRD error output encoding
    `#8269 <https://redmine.pfsense.org/issues/8269>`__
-   `pfSense-SA-18\_01.packages <https://www.pfsense.org/security/advisories/pfSense-SA-18_01.packages>`__
--  Fixed a potential XSS vector in diag\_system\_activity.php output
+   `pfSense-SA-18_01.packages <https://www.pfsense.org/security/advisories/pfSense-SA-18_01.packages>`__
+-  Fixed a potential XSS vector in diag_system_activity.php output
    encoding `#8300 <https://redmine.pfsense.org/issues/8300>`__
-   `pfSense-SA-18\_02.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_02.webgui>`__
--  Fixed a potential LFI in pkg\_mgr\_install.php
+   `pfSense-SA-18_02.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_02.webgui>`__
+-  Fixed a potential LFI in pkg_mgr_install.php
    `#8485 <https://redmine.pfsense.org/issues/8485>`__
-   `pfSense-SA-18\_04.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_04.webgui>`__
--  Fixed a potential XSS in pkg\_mgr\_install.php
+   `pfSense-SA-18_04.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_04.webgui>`__
+-  Fixed a potential XSS in pkg_mgr_install.php
    `#8486 <https://redmine.pfsense.org/issues/8486>`__
-   `pfSense-SA-18\_05.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_05.webgui>`__
+   `pfSense-SA-18_05.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_05.webgui>`__
 -  Changed sshd to use delayed compression
    `#8245 <https://redmine.pfsense.org/issues/8245>`__
 -  Added encoding for firewall schedule range descriptions
@@ -32,8 +32,8 @@ Misc
    `#6650 <https://redmine.pfsense.org/issues/6650>`__
 -  Added filtering to pfTop page
 -  Added ospf6d to the routing log
--  Change get\_interface\_subnet() to use configured value if available
--  Corrected sethelp call on firewall\_rules\_edit.php
+-  Change get_interface_subnet() to use configured value if available
+-  Corrected sethelp call on firewall_rules_edit.php
    `#8242 <https://redmine.pfsense.org/issues/8242>`__
 -  Fixed an issue with selecting a gateway when switching a firewall
    rule away from IPv4+IPv6 mode

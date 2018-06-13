@@ -69,7 +69,7 @@ When a validation method starts, the client obtains an authorization
 value from the server (authz).
 
 For DNS-based methods, Let's Encrypt checks for a TXT record in the form
-of *\_acme-challenge.* which must contain the authorization value. This
+of *_acme-challenge.* which must contain the authorization value. This
 proves that the person or system requesting the certificate controls DNS
 records for the domain.
 
@@ -166,7 +166,7 @@ cannot receive Internet traffic.
 
 Before starting, an appropriate DNS key and settings must be in place in
 the DNS infrastructure for the domain to allow the host to update a TXT
-DNS record for *\_acme-challenge.*.
+DNS record for *_acme-challenge.*.
 
 To use this method:
 
@@ -177,7 +177,7 @@ To use this method:
 -  Click + to expand the method-specific settings
 -  Fill in the info
 
-   -  The package assumes the key name *\_acme-challenge.*
+   -  The package assumes the key name *_acme-challenge.*
    -  **Server**: The IP address or hostname of the DNS server
    -  **Key Type**: The type of update key to use (Typically Host)
    -  **Key Algorithm**: The algorithm used for the key
@@ -219,7 +219,7 @@ To use this method:
     [Mon Feb 6 14:49:23 EST 2017] Please add the TXT records to the domains, and retry again.
 
 - Add or update the TXT record in the domain's DNS server for
-  *\_acme-challenge.* with the TXT value from the output
+  *_acme-challenge.* with the TXT value from the output
 - Wait ~2+ minutes for DNS to propagate
 - Click **Renew**
 

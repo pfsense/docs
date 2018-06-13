@@ -97,8 +97,8 @@ repository:
 -  **NRPE** - pfSense GUI for Nagios NRPE nrpe is used to execute Nagios
    plugins on remote hosts and report the results to the main Nagios
    server. From the Nagios homepage: Allows you to execute "local"
-   plugins (like check\_disk, check\_procs, etc.) on remote hosts. The
-   check\_nrpe plugin is called from Nagios and actually makes the
+   plugins (like check_disk, check_procs, etc.) on remote hosts. The
+   check_nrpe plugin is called from Nagios and actually makes the
    plugin requests to the remote host. Requires that nrpe be running on
    the remote host (either as a standalone daemon or as a service under
    inetd).
@@ -127,7 +127,7 @@ repository:
 -  **OpenBGPD** - OpenBGPD is a free implementation of the Border
    Gateway Protocol, version 4. It allows ordinary machines to be used
    as routers exchanging routes with other systems speaking the BGP
-   protocol. Conflicts with Quagga\_OSPF; both packages cannot be
+   protocol. Conflicts with Quagga_OSPF; both packages cannot be
    installed at the same time.
 
 -  **pfBlockerNG** - pfBlockerNG is the Next Generation of pfBlocker.
@@ -138,7 +138,7 @@ repository:
    Proofpoint ET IQRisk IP Reputation Threat Sources. Domain Name
    (DNSBL) blocking via Unbound DNS Resolver.
 
--  **Quagga\_OSPF** - OSPF routing protocol using Quagga. Conflicts with
+-  **Quagga_OSPF** - OSPF routing protocol using Quagga. Conflicts with
    OpenBGPD; both packages cannot be installed at the same time.
 
 -  **Routed** - RIP v1 and v2 daemon.

@@ -26,23 +26,23 @@ Security / Errata
 
 -  pfSense Advisories
 
-   -  `pfSense-SA-17\_01.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_01.webgui.asc>`__
+   -  `pfSense-SA-17_01.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_01.webgui.asc>`__
 
       -  Fixed validation and encoding on Captive Portal status pages
          `#7019 <https://redmine.pfsense.org/issues/7019>`__
 
-   -  `pfSense-SA-17\_02.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_02.webgui.asc>`__
+   -  `pfSense-SA-17_02.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_02.webgui.asc>`__
 
-      -  Fixed update\_config\_field() in wizard.php so it does not pass
+      -  Fixed update_config_field() in wizard.php so it does not pass
          user input through eval()
          `#7230 <https://redmine.pfsense.org/issues/7230>`__
 
-   -  `pfSense-SA-17\_03.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_03.webgui.asc>`__
+   -  `pfSense-SA-17_03.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_03.webgui.asc>`__
 
       -  Added encoding for 'from' and 'to' before output on
-         pkg\_mgr\_install.php
+         pkg_mgr_install.php
          `#7225 <https://redmine.pfsense.org/issues/7225>`__
-      -  Added encoding for the contents of pkg\_filter before output
+      -  Added encoding for the contents of pkg_filter before output
          `#7227 <https://redmine.pfsense.org/issues/7227>`__
       -  Converted easyrule.php to use a confirmation landing page so
          that the parameters can be submitted via POST
@@ -159,7 +159,7 @@ Interfaces
 -  Updated interface group name validation rules to match limits of the
    operating system
 -  Prevented interface group names, interface names, and aliases from
-   starting with "pkg\_" to reserve it for packages use (e.g. tinc)
+   starting with "pkg_" to reserve it for packages use (e.g. tinc)
    `#7173 <https://redmine.pfsense.org/issues/7173>`__
 -  Added validation to prevent Interface Group Names from containing a
    dash `#7173 <https://redmine.pfsense.org/issues/7173>`__
@@ -167,7 +167,7 @@ Interfaces
    existing name `#7183 <https://redmine.pfsense.org/issues/7183>`__
 -  Fixed issues with Interface Statistics widget display
    `#7134 <https://redmine.pfsense.org/issues/7134>`__
--  Fixes for interfaces\_ppps\_edit.php to fix MTU validation, interface
+-  Fixes for interfaces_ppps_edit.php to fix MTU validation, interface
    friendly names, advanced options expansion
 -  Changed linkup event handling to ignore events for interfaces that
    are member of bridges which have no IP address configured
@@ -201,7 +201,7 @@ Users / Authentication / Privileges
    `#6963 <https://redmine.pfsense.org/issues/6963>`__
 -  Added STARTTLS to LDAP Authentication Server Configuration
 -  Improved WebGUI usability when a remote LDAP server is not available
--  Fixed issues with local\_sync\_accounts failing during boot when
+-  Fixed issues with local_sync_accounts failing during boot when
    using an LDAP server on a non-local network or hostname
    `#6857 <https://redmine.pfsense.org/issues/6857>`__
 -  Fixed port build options for scponly
@@ -231,7 +231,7 @@ Firewall / Rules / NAT / Aliases / States
    Adaptive End settings for firewall state handling
 -  Fixed display of the number of states in the Firewall Rules page
 -  Moved "Any" to top of protocol list in firewall rules
--  Fixed issues with hidden fields on firewall\_rules\_edit.php
+-  Fixed issues with hidden fields on firewall_rules_edit.php
    `#7057 <https://redmine.pfsense.org/issues/7057>`__
 -  Fixed issues with moving rules that required scrolling while dragging
    `#6895 <https://redmine.pfsense.org/issues/6895>`__
@@ -256,10 +256,10 @@ Firewall / Rules / NAT / Aliases / States
 -  Changed the Status > Filter Reload page so it shows the entire filter
    reload progress, rather than only the last state
    `#6931 <https://redmine.pfsense.org/issues/6931>`__
--  Fixed labels on diag\_states\_summary.php
+-  Fixed labels on diag_states_summary.php
    `#6711 <https://redmine.pfsense.org/issues/6711>`__
 -  Fixed initial state of confirmation checkboxes on
-   diag\_resetstate.php
+   diag_resetstate.php
 -  Changed Diag > States so it can optionally require a filter before
    displaying states, to improve handling with large state tables
    `#7069 <https://redmine.pfsense.org/issues/7069>`__
@@ -335,7 +335,7 @@ DNS / Resolver / Forwarder
    `#6903 <https://redmine.pfsense.org/issues/6903>`__
 -  Fixed DNS Resolver (unbound) logging after clearing logs
    `#6915 <https://redmine.pfsense.org/issues/6915>`__
--  Added support for "deny\_non\_local" and "refuse\_non\_local" ACLs in
+-  Added support for "deny_non_local" and "refuse_non_local" ACLs in
    the DNS Resolver `#6914 <https://redmine.pfsense.org/issues/6914>`__
 -  Fixed DNS Server Gateway validation
 -  Changed behavior of DNS Resolver overrides to only add FQDN entries,
@@ -392,13 +392,13 @@ Captive Portal
 -  Added popup with session details to the Captive Portal active
    sessions list on the status page
 -  Added button to disconnect all Captive Portal users
--  Worked around race condition between captiveportal\_disconnect\_all()
-   and captiveportal\_prune\_old()
+-  Worked around race condition between captiveportal_disconnect_all()
+   and captiveportal_prune_old()
 -  Added locking to avoid race conditions between rc.prunecaptiveportal
-   and captiveportal\_disconnect\_all()
+   and captiveportal_disconnect_all()
 -  Reworked logging and RADIUS accounting when disabling a Captive
    Portal zone or rebooting
--  Increased speed of captiveportal\_disconnect\_all()
+-  Increased speed of captiveportal_disconnect_all()
 
 Dynamic DNS
 -----------
@@ -464,7 +464,7 @@ Notifications
 -  Removed validation of password mismatches when SMTP or Growl
    notifications are disabled
    `#7129 <https://redmine.pfsense.org/issues/7129>`__
--  Changed format of file\_notice() alerts in webgui for easier reading
+-  Changed format of file_notice() alerts in webgui for easier reading
 
 Graphs / Monitoring
 -------------------
@@ -503,7 +503,7 @@ WebGUI
 -  Fixed issues with packages that toggle visibility of advanced options
    areas `#7100 <https://redmine.pfsense.org/issues/7100>`__
 -  Removed the crash reporter link from the dashboard when a user does
-   not have crash\_reporter page access
+   not have crash_reporter page access
    `#7043 <https://redmine.pfsense.org/issues/7043>`__
 -  Fixed display of Package installation message
    `#7226 <https://redmine.pfsense.org/issues/7226>`__
@@ -536,7 +536,7 @@ Misc
 -  Fixed a foreach error when restoring a configuration without packages
 -  Fixed handling of signal traps in the console menu
    `#6741 <https://redmine.pfsense.org/issues/6741>`__
--  Fixed "Goto line #" action on diag\_edit.php so pressing the enter
+-  Fixed "Goto line #" action on diag_edit.php so pressing the enter
    key also activates the function
 -  Changed the PHP Execute feature of Diagnostics > Command so that it
    does not generate a crash report from a syntax error
@@ -550,7 +550,7 @@ Misc
 -  Added validation to prevent duplicate Wake on LAN entries
 -  Fixed permissions on /var/tmp when /var is a RAM disk
    `#7120 <https://redmine.pfsense.org/issues/7120>`__
--  Added a fallback for get\_pkg\_info() to use pkg info if there is no
+-  Added a fallback for get_pkg_info() to use pkg info if there is no
    local copy of the repository catalog
 -  Removed spurious output from the PHP Shell executable when running a
    playback script from a command prompt

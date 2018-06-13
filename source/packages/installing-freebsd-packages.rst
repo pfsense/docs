@@ -157,7 +157,7 @@ i386 instead, replace *amd64* with *i386* in the URLs.
 Caveats
 ~~~~~~~
 
-The *pkg\_add* command used by pfSense 2.1.x will not properly download
+The *pkg_add* command used by pfSense 2.1.x will not properly download
 packages because the locations have changed on FreeBSD's servers since
 FreeBSD 8.3 is no longer supported upstream. By using the current
 location of archived packages from FreeBSD's servers,
@@ -202,7 +202,7 @@ Now the program may be executed::
   # iftop -nNpPi (interface)
 
 The alternate site may also be set in a variable to be used by
-*pkg\_add* if several packages will be installed::
+*pkg_add* if several packages will be installed::
 
   setenv PACKAGESITE ftp://ftp-archive.freebsd.org/pub/FreeBSD-Archive/ports/`uname -m`/packages-8.3-release/Latest/
 

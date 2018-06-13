@@ -10,14 +10,14 @@ release.
 Security Fixes
 --------------
 
--  `pfSense-SA-14\_14.openssl <https://pfsense.org/security/advisories/pfSense-SA-14_14.openssl.asc>`__
+-  `pfSense-SA-14_14.openssl <https://pfsense.org/security/advisories/pfSense-SA-14_14.openssl.asc>`__
 
    -  See http://www.openssl.org/news/secadv_20140806.txt
    -  Updated to OpenSSL 0.9.8zb and 1.0.1i
 
--  `pfSense-SA-14\_15.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_15.webgui.asc>`__
--  `pfSense-SA-14\_16.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_16.webgui.asc>`__
--  `pfSense-SA-14\_17.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_17.webgui.asc>`__
+-  `pfSense-SA-14_15.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_15.webgui.asc>`__
+-  `pfSense-SA-14_16.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_16.webgui.asc>`__
+-  `pfSense-SA-14_17.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_17.webgui.asc>`__
 
 Other Fixes
 -----------
@@ -36,7 +36,7 @@ Other Fixes
    `#3728 <https://redmine.pfsense.org/issues/3728>`__
 -  Allow hostnames in bulk import since they are valid entries in a
    network type alias
--  Fix input validation logic on diag\_testport.php, escape more shell
+-  Fix input validation logic on diag_testport.php, escape more shell
    arguments for good measure
 -  Escape the individual dnsmasq advanced/custom options
 -  Encode the detail field of an alias entry before displaying its
@@ -66,7 +66,7 @@ Other Fixes
 -  Do not reset source and destination port range values when it's an
    associated rule created by NAT port forward.
    `#3778 <https://redmine.pfsense.org/issues/3778>`__
--  Added filter.so to list of extensions loaded for filter\_var()
+-  Added filter.so to list of extensions loaded for filter_var()
    support.
 -  The pfSense PHP module was setting the subnet mask of lo0 to /0,
    which could break some routes and cause other unintended routing side

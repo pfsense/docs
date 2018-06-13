@@ -184,7 +184,7 @@ Interface/Bridging Fixes
 -  Use the latest functions from pfSense module for getting interface
    list
 -  Use the latest functions from pfSense module for creating bridges
--  Implement is\_jumbo\_capable in a more performant way. This should
+-  Implement is_jumbo_capable in a more performant way. This should
    help with large number of interfaces
 -  Since the CARP interface name changed to "vipN" from "carpN", devd
    needs to follow that change as well.
@@ -232,10 +232,10 @@ Other Misc. Fixes
 -  Allow specifying the branch name after the repository URL for gitsync
    command-line arguments and remove an unnecessary use of the backtick
    operator.
--  Correct send\_multiple\_events to conform with new
-   check\_reload\_status behaviour
+-  Correct send_multiple_events to conform with new
+   check_reload_status behaviour
 -  Do not wipe logs on reboot on full install
--  Set FCGI\_CHILDREN to 0 since it does not make sense for php to
+-  Set FCGI_CHILDREN to 0 since it does not make sense for php to
    manage itself when lighttpd is doing so. This makes it possible to
    recover from 550-Internal... error.
 -  Support for xmlrpcauthuser and xmlrpcauthpass in $g.
@@ -247,7 +247,7 @@ Other Misc. Fixes
 -  Use !empty instead of isset to prevent accidental deletion of the
    last used repository URL when firmware update gitsync settings have
    been saved without a repository URL.
--  Better error handling for crypt\_data and also better password
+-  Better error handling for crypt_data and also better password
    argument handling
 -  Stop service needs to wait for the process to be stopped before
    trying to restart it.
@@ -255,7 +255,7 @@ Other Misc. Fixes
 -  Fix missing description in rowhelper for packages.
 -  `#2402 <http://redmine.pfsense.org/issues/2402>`__,
    `#1564 <http://redmine.pfsense.org/issues/1564>`__ Move the
-   stop\_packages code to a function, and call the function from the
+   stop_packages code to a function, and call the function from the
    shell script, and call the function directly for a reboot.
 -  `#1917 <http://redmine.pfsense.org/issues/1917>`__ Fix DHCP domain
    search list

@@ -4,7 +4,7 @@ Troubleshooting Installation Issues
 ===================================
 
 There are more troubleshooting techniques listed at
-:doc:`Boot\_Troubleshooting </hardware/boot-troubleshooting>`
+:doc:`Boot_Troubleshooting </hardware/boot-troubleshooting>`
 
 Misc
 ----

@@ -24,7 +24,7 @@ Step 1, Download pfSense Image
 
 Download a pfSense image from
 `1 <http://pfsense.com/mirror.php?section=downloads>`__. I used the
-pfSense-2.1.5-RELEASE-4g-amd64-nanobsd\_vga.img.gz image file.
+pfSense-2.1.5-RELEASE-4g-amd64-nanobsd_vga.img.gz image file.
 
 Step 2, Write image to thumb drive
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -50,7 +50,7 @@ following:
 | ``/etc/rc.conf_mount_rw``
 | ``echo kern.cam.boot_delay=10000 >> /boot/loader.conf.local``
 
-The *kern.cam.boot\_relay=10000* line may also be added to
+The *kern.cam.boot_relay=10000* line may also be added to
 /boot/loader.conf.local from the GUI using **Diagnostics > Edit File**.
 
 Without the above setting, on bootup an error that looks like this block

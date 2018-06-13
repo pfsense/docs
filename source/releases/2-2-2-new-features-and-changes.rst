@@ -6,7 +6,7 @@
 Security/Errata Notices
 -----------------------
 
--  `pfSense-SA-15\_05.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_05.webgui.asc>`__:
+-  `pfSense-SA-15_05.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_05.webgui.asc>`__:
    Multiple XSS Vulnerabilities in the pfSense WebGUI
 
 -  `FreeBSD-SA-15:09.ipv6 <https://www.freebsd.org/security/advisories/FreeBSD-SA-15:09.ipv6.asc>`__:
@@ -68,7 +68,7 @@ IPsec
    where remote IPsec overlaps with local LAN subnet.
    `#4504 <https://redmine.pfsense.org/issues/4504>`__
 
--  Enable ike\_name for daemon logging, adding connection identifiers to
+-  Enable ike_name for daemon logging, adding connection identifiers to
    IPsec logs that can be correlated to output of 'ipsec statusall' (GUI
    log viewer integration to come).
 

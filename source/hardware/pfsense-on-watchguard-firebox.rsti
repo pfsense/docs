@@ -209,7 +209,7 @@ card and put in the slot. It will boot using the front serial port as
 console. No configuration is necessary to boot the new card, no bios or
 jumper changes. There are no known size restrictions on the card.
 
-See: `Installing\_pfSense#Embedded <Installing_pfSense#Embedded>`__
+See: `Installing_pfSense#Embedded <Installing_pfSense#Embedded>`__
 
 Booting from HD
 ^^^^^^^^^^^^^^^
@@ -300,7 +300,7 @@ Installing pfSense on this box is simply a matter of writing one of the
 32bit NanoBSD images to a CF card and putting it in the slot. It will
 boot using the front serial port as console.
 
-See: `Installing\_pfSense#Embedded <Installing_pfSense#Embedded>`__
+See: `Installing_pfSense#Embedded <Installing_pfSense#Embedded>`__
 
 Booting from HD
 ^^^^^^^^^^^^^^^
@@ -315,7 +315,7 @@ Freeswitch package (which isn't available at all in embedded).
 You must first install pfSense to the HD by installing it in a laptop or
 other suitable machine. Then boot from the CD and install as normal.
 See:
-`Installing\_pfSense#Performing\_a\_Full\_Install\_.28ISO.2C\_Memstick.29 <Installing_pfSense#Performing_a_Full_Install_.28ISO.2C_Memstick.29>`__
+`Installing_pfSense#Performing_a_Full_Install_.28ISO.2C_Memstick.29 <Installing_pfSense#Performing_a_Full_Install_.28ISO.2C_Memstick.29>`__
 
 Boot the laptop into pfSense and select 'use serial console' in the
 webgui. You must do this as the X-peak box has no video hardware.
@@ -545,7 +545,7 @@ hidden.
 
 Now you have BIOS access you can power off the box and replace the CF
 card with one that contains the pfSense image. See:
-`Installing\_pfSense#Embedded <Installing_pfSense#Embedded>`__
+`Installing_pfSense#Embedded <Installing_pfSense#Embedded>`__
 
 Power back up the box and enter the BIOS setup. Enter the IDE setup and
 autodetect the new CF card. The BIOS should see the card and will
@@ -597,7 +597,7 @@ booted you must edit /etc/fstab and change the references to ad0 to ad1.
 You can do that either via the edit file page in the webgui or from the
 command line using: ee /etc/fstab (or vi if you're a masochist). In
 order to make it boot verbose every time you need to add
-boot\_verbose="1" to /boot/loader.conf.local. You can do it easily from
+boot_verbose="1" to /boot/loader.conf.local. You can do it easily from
 the command line:
 
 ::
@@ -731,7 +731,7 @@ follows:
 
 -  These kernel modules have been compiled against FreeBSD 8.3, they
    will only load successfully in pfSense 2.1.\*
--  The modified kernel modules, if\_sk.ko and if\_msk.ko along with the
+-  The modified kernel modules, if_sk.ko and if_msk.ko along with the
    source and the older modules compiles against FreeBSD 8.1 are here.
    `2 <https://sites.google.com/site/pfsensefirebox/>`__. You can fetch
    them directly to the box though which is less open to error.
@@ -800,7 +800,7 @@ mini-PCI slot is fully functional. However you obviously need to add the
 mini-PCI card carrier and that requires surface mount soldering
 techniques. Additionally it is probably necessary to use a 'tall'
 carrier in order to miss the BIOS ROM chip. There are a number of
-unpopulated USB headers on the board. CN\_USB1 is fully functional if an
+unpopulated USB headers on the board. CN_USB1 is fully functional if an
 appropriate header or socket is fitted. This is useful for a keyboard or
 booting from USB, which is reported possible.
 
@@ -899,7 +899,7 @@ using the front serial port as console. Since this is the first firebox
 capable of supporting a 64bit CPU it can also run 64bit Nano images *if*
 one is fitted.
 
-See: `Installing\_pfSense#Embedded <Installing_pfSense#Embedded>`__
+See: `Installing_pfSense#Embedded <Installing_pfSense#Embedded>`__
 
 Further Enhancements
 ~~~~~~~~~~~~~~~~~~~~

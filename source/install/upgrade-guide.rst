@@ -547,7 +547,7 @@ tunable as follows:
 -  Click |fa-plus|
 -  Enter the following values:
 
-   -  **Tunable**: *net.link.ether.inet.allow\_multicast*
+   -  **Tunable**: *net.link.ether.inet.allow_multicast*
    -  **Description**: Optional. It would be wise to enter the URL to
       this note or a similar note.
    -  **Value**: *1*
@@ -633,7 +633,7 @@ Removed features that are disabled on upgrade
 
 -  Groups with spaces are no longer permitted. They are not allowed at
    the OS level and were not functioning properly. On upgrade, such
-   groups are renamed with an underscore ('\_') in place of a space.
+   groups are renamed with an underscore ('_') in place of a space.
 -  The "Enable" checkbox for IPsec has been removed. If IPsec was
    disabled, all Phase 1 entries are disabled automatically on upgrade.
 -  The Unity plugin for IPsec has been disabled by default, where it was

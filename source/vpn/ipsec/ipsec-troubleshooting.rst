@@ -290,10 +290,10 @@ If the IPsec status page prints errors such as::
   Warning: Illegal string offset 'type' in /etc/inc/xmlreader.inc on line 116
 
 That is a sign that the incomplete xmlreader XML parser is active, which
-is triggered by the presence of the file */cf/conf/use\_xmlreader*. This
+is triggered by the presence of the file */cf/conf/use_xmlreader*. This
 alternate parser can be faster for reading large config.xml files, but
 lacks certain features necessary for other areas to function well.
-Removing */cf/conf/use\_xmlreader* will return the system to the default
+Removing */cf/conf/use_xmlreader* will return the system to the default
 parser immediately, which will correct the display of the IPsec status
 page.
 

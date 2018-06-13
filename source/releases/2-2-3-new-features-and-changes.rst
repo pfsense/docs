@@ -6,7 +6,7 @@
 Security/Errata Notices
 -----------------------
 
--  `pfSense-SA-15\_06.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_06.webgui.asc>`__:
+-  `pfSense-SA-15_06.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_06.webgui.asc>`__:
    Multiple XSS Vulnerabilities in the pfSense WebGUI
 
    -  The complete list of affected pages and fields is very large and
@@ -88,7 +88,7 @@ IPsec
    to help address IPsec rekey issues.
 -  Backported FreeBSD r283146 and patch from `FreeBSD PR
    192774 <https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=192774>`__
-   to address PF\_KEY ACQUIRE missing port and protocol information.
+   to address PF_KEY ACQUIRE missing port and protocol information.
 -  Added reply-to/route-to rules for mobile-ipsec.
    `#4235 <https://redmine.pfsense.org/issues/4235>`__
 -  Removed the manual specification of reqid in the IPsec configuration
@@ -107,7 +107,7 @@ IPsec
 -  Implemented the "make before break" feature available in strongSwan
    5.3.0, which is useful for IKEv2.
    `#4626 <https://redmine.pfsense.org/issues/4626>`__
--  Fixed vpn\_ipsec\_configure so it always performs a filter reload to
+-  Fixed vpn_ipsec_configure so it always performs a filter reload to
    ensure the ruleset is updated where necessary in every IPsec change
    scenario. `#4631 <https://redmine.pfsense.org/issues/4631>`__
 -  Added support for EAP-RADIUS to IKEv2 Mobile Clients.
@@ -124,7 +124,7 @@ OpenVPN
 
 -  Added a space to the OpenVPN TLS Verify script to avoid appended
    parameters appearing the same as existing parameters.
--  Fixed get\_interface\_ip() to return the IP address correctly for
+-  Fixed get_interface_ip() to return the IP address correctly for
    gateway groups specifying a VIP, which fixed OpenVPN clients not
    working with gateway groups specifying VIPs.
    `#4661 <https://redmine.pfsense.org/issues/4661>`__
@@ -159,14 +159,14 @@ Operating System
    `#4689 <https://redmine.pfsense.org/issues/4689>`__
 -  Fixed AESNI to be SMP friendly to avoid various decryption errors and
    possible encryption mistakes. Also present
-   critical\_enter/critical\_exit to avoid preemption of the
+   critical_enter/critical_exit to avoid preemption of the
    currentrunning thread which should fix panics.
    `#4702 <https://redmine.pfsense.org/issues/4702>`__
 -  Updated time zone data from FreeBSD 10.1-RELEASE.
    `#4459 <https://redmine.pfsense.org/issues/4459>`__
 -  Fixed creation of */var/spool/lock* on NanoBSD at boot time.
    `#4532 <https://redmine.pfsense.org/issues/4532>`__
--  Removed boot\_serial='yes' from loader.conf when serial is disabled.
+-  Removed boot_serial='yes' from loader.conf when serial is disabled.
    `#4617 <https://redmine.pfsense.org/issues/4617>`__
 -  Fixed an issue where mtree would fail during an upgrade from a
    previous version of FreeBSD when moving to 2.2.x.
@@ -193,7 +193,7 @@ Interfaces/NIC Drivers
 -  Corrected descriptions on Key Rotation and Master Key Regeneration
    for wireless interfaces.
 -  Removed the "insert my MAC" feature from interfaces.php.
--  Defined $var\_path as a global key since it is being used in
+-  Defined $var_path as a global key since it is being used in
    interfaces.inc, but it was not declared.
 -  Fixed issues setting the MTU on certain interfaces.
    `#4397 <https://redmine.pfsense.org/issues/4397>`__
@@ -204,7 +204,7 @@ Packages
 -  Fixed various issues with PBI generation.
 -  Synchronized and cleaned up various pfPorts, eliminated several that
    had changes pushed back into FreeBSD ports.
--  Fixed an issue where rebuild\_package\_binaries\_pbi.php could fail
+-  Fixed an issue where rebuild_package_binaries_pbi.php could fail
    due to missing build files.
    `#4600 <https://redmine.pfsense.org/issues/4600>`__
 -  Backported `patches from FreeBSD
@@ -214,7 +214,7 @@ Packages
 -  Fixed pfflowd to use the correct version for parsing the new pfsync
    header and corrected the pfsync version check.
    `#4304 <https://redmine.pfsense.org/issues/4304>`__
--  Updated pkg\_edit.php with fixes for usecolspan2 and combinedfields.
+-  Updated pkg_edit.php with fixes for usecolspan2 and combinedfields.
 -  Fixed pagination on pkg.php.
 -  Fixed boot-time log file initialization for package logs.
    `#4603 <https://redmine.pfsense.org/issues/4603>`__
@@ -271,7 +271,7 @@ Web GUI
    of crash report, which would fail to save the report on the server.
    `#4650 <https://redmine.pfsense.org/issues/4650>`__
 -  Set a user agent for the Crash Reporter.
--  Cleaned up code logic in status\_upnp.php.
+-  Cleaned up code logic in status_upnp.php.
 
 CARP
 ----
@@ -302,8 +302,8 @@ Traffic Shaper/Limiters
 DNS
 ---
 
--  Consistently handle clear\_subsystem\_dirty after an Unbound restart.
--  Added a call to clear\_subsystem\_dirty('staticmaps') when using
+-  Consistently handle clear_subsystem_dirty after an Unbound restart.
+-  Added a call to clear_subsystem_dirty('staticmaps') when using
    Unbound, otherwise DHCP static mappings would not fully apply when
    Unbound was in use.
    `#4678 <https://redmine.pfsense.org/issues/4678>`__
@@ -332,9 +332,9 @@ Misc
    `#4107 <https://redmine.pfsense.org/issues/4107>`__
 -  Deprecated */usr/local/bin/3gstat* as it was no longer used. It was
    replaced by *3gstats.php* long ago.
--  Started using the "host!" flag when setting CURLOPT\_INTERFACE, as
+-  Started using the "host!" flag when setting CURLOPT_INTERFACE, as
    recommended by the CURL documentation.
--  Started passing the interface to CURLOPT\_INTERFACE instead of the IP
+-  Started passing the interface to CURLOPT_INTERFACE instead of the IP
    address, also started using the "if!" flag to avoid CURL trying to
    resolve the interface name.
 -  Fixed NTP serial configuration to setup the serial port before

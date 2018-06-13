@@ -12,7 +12,7 @@ shown.
 
 The **Interface** column shows the interface name or identifier for the
 VIP at the operating system level. This has changed over the years, and
-currently shows as "\_vip" (ex: *lan\_vip1*) on pfSense 2.1.x, and on
+currently shows as "_vip" (ex: *lan_vip1*) on pfSense 2.1.x, and on
 pfSense 2.2, it shows as "@" (ex: *LAN@1*).
 
 The **Virtual IP** column shows the IP address associated with the

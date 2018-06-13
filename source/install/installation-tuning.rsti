@@ -3,7 +3,7 @@
 Tuning pfSense Software Installations
 =====================================
 
-Tuning intr\_queue
+Tuning intr_queue
 ------------------
 
 This will show the current setting::
@@ -16,7 +16,7 @@ how to check::
   sysctl net.inet.ip.intr_queue_drops
 
 If the above shows values above 0, try changing
-net.inet.ip.intr\_queue\_maxlen \*2.
+net.inet.ip.intr_queue_maxlen \*2.
 
 For example::
 

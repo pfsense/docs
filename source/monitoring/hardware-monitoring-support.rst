@@ -49,7 +49,7 @@ In this example, there is only one Thermal Zone, and its temperature is
 22.5C (72.5F).
 
 From
-`acpi\_thermal(4) <http://www.freebsd.org/cgi/man.cgi?query=acpi_thermal&apropos=0&sektion=0&manpath=FreeBSD+7.2-RELEASE&format=html>`__::
+`acpi_thermal(4) <http://www.freebsd.org/cgi/man.cgi?query=acpi_thermal&apropos=0&sektion=0&manpath=FreeBSD+7.2-RELEASE&format=html>`__::
 
   hw.acpi.thermal.min_runtime
        Number of seconds to continue active cooling once started.  A new

@@ -6,12 +6,12 @@
 Security/Errata Notices
 -----------------------
 
--  `pfSense-SA-15\_02.igmp <https://www.pfsense.org/security/advisories/pfSense-SA-15_02.igmp.asc>`__:
+-  `pfSense-SA-15_02.igmp <https://www.pfsense.org/security/advisories/pfSense-SA-15_02.igmp.asc>`__:
    Integer overflow in IGMP protocol
    (`FreeBSD-SA-15:04.igmp <https://www.freebsd.org/security/advisories/FreeBSD-SA-15%3A04.igmp.asc>`__)
--  `pfSense-SA-15\_03.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_03.webgui.asc>`__:
+-  `pfSense-SA-15_03.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_03.webgui.asc>`__:
    Multiple XSS Vulnerabilities in the pfSense WebGUI
--  `pfSense-SA-15\_04.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_04.webgui.asc>`__:
+-  `pfSense-SA-15_04.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_04.webgui.asc>`__:
    Arbitrary file deletion vulnerability in the pfSense WebGUI
 
 -  `FreeBSD-EN-15:01.vt <https://www.freebsd.org/security/advisories/FreeBSD-EN-15%3A01.vt.asc>`__:
@@ -27,7 +27,7 @@ directly relevant. Neither pfSense nor its packages include SCTP
 services, but such services may have been manually added by the user.
 
 -  `FreeBSD-SA-15:02.kmem <https://www.freebsd.org/security/advisories/FreeBSD-SA-15%3A02.kmem.asc>`__:
-   SCTP SCTP\_SS\_VALUE kernel memory corruption and disclosure
+   SCTP SCTP_SS_VALUE kernel memory corruption and disclosure
 -  `FreeBSD-SA-15:03.sctp <https://www.freebsd.org/security/advisories/FreeBSD-SA-15%3A03.sctp.asc>`__:
    SCTP stream reset vulnerability
 
@@ -61,7 +61,7 @@ General
 -  Updated the default SSL cipher list to be stronger, obsoletes the
    need for a "BEAST protection" option
    `#4230 <https://redmine.pfsense.org/issues/4230>`__
--  Fixed gen\_subnet\_max returning an incorrect result on 32 bit (i386)
+-  Fixed gen_subnet_max returning an incorrect result on 32 bit (i386)
    versions, which in turn fixed Wake on LAN and other areas on 32 bit
    (i386) versions. `#4318 <https://redmine.pfsense.org/issues/4318>`__
 -  Fixed crash on boot with some hardware, caused by gpioapu on systems
@@ -82,7 +82,7 @@ General
    to prevent undersizing the logs.
 -  Added more cleanup to the **Restart PHP-FPM** console menu action.
 -  Removed PTR records for aliases in host overrides.
--  Fixed *diag\_arp.php* to allow underscore in resolved host names.
+-  Fixed *diag_arp.php* to allow underscore in resolved host names.
 -  Fixed an issue in DHCP settings where the "add routers" value was not
    being preserved across a loop for each interface.
 -  Added capability to handle reverse lookup domain overrides.
@@ -151,7 +151,7 @@ IPsec
    configurations with it enabled will not have that setting applied.
    This is almost never desirable, and with the change to strongSwan it
    frequently was the source of problems. The very few who might desire
-   such an option can configure the *net.key.preferred\_oldsa* sysctl
+   such an option can configure the *net.key.preferred_oldsa* sysctl
    accordingly under **System > Advanced**, **System Tunables**.
 -  Fixed Phase 2 duplication issue.
    `#4349 <https://redmine.pfsense.org/issues/4349>`__
@@ -247,7 +247,7 @@ IPv6
    with the actual check.
 -  Added *dhcp6.name-servers* option with DHCPD-PD regardless of PD
    length.
--  Fixed Net\_IPv6::compress() to properly handle all-zeros address.
+-  Fixed Net_IPv6::compress() to properly handle all-zeros address.
 -  Enabled *UnicastOnly* in radvd for *ovpn\** interfaces.
    `#4455 <https://redmine.pfsense.org/issues/4455>`__
 -  Removed requesting a prefix delegation when there are no tracking

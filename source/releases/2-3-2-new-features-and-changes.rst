@@ -98,7 +98,7 @@ Gateway Monitoring
 Limiters
 --------
 
--  Set pipe\_slot\_limit automatically to maximum configured qlimit
+-  Set pipe_slot_limit automatically to maximum configured qlimit
    value. `#6553 <https://redmine.pfsense.org/issues/6553>`__
 
 Monitoring
@@ -184,7 +184,7 @@ Web Interface
    `#6504 <https://redmine.pfsense.org/issues/6504>`__
 -  Fixed file upload of NTP leap seconds.
    `#6590 <https://redmine.pfsense.org/issues/6590>`__
--  Added IPv6 support to diag\_dns.php.
+-  Added IPv6 support to diag_dns.php.
    `#6561 <https://redmine.pfsense.org/issues/6561>`__
 -  Added IPv6 support to filter logs reverse lookup.
    `#6585 <https://redmine.pfsense.org/issues/6585>`__

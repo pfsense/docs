@@ -44,9 +44,9 @@ Security / Errata
    enable/disable an item) to avoid potential issues with cross-site
    request forgery and unintentional repeating of actions
    `#4083 <https://redmine.pfsense.org/issues/4083>`__
--  FreeBSD 11.1 includes MAP\_GUARD protection to protect against
+-  FreeBSD 11.1 includes MAP_GUARD protection to protect against
    attacks such as Stack Clash
--  `pfSense-SA-17\_07.packages <https://www.pfsense.org/security/advisories/pfSense-SA-17_07.packages.asc>`__
+-  `pfSense-SA-17_07.packages <https://www.pfsense.org/security/advisories/pfSense-SA-17_07.packages.asc>`__
 -  A number of base system packages have been updated to address
    security issues, including `dnsmasq,
    perl <https://www.netgate.com/blog/no-plan-survives-contact-with-the-internet.html>`__,
@@ -103,8 +103,8 @@ Cleanup
    `#3734 <https://redmine.pfsense.org/issues/3734>`__
 
    -  Notably, local static copies were replaced by their FreeBSD ports
-      counterparts: pear, pear-XML\_RPC2, pear-Net\_IPv6,
-      pear-Crypt\_CHAP, pear-Mail, pear-Net\_Growl
+      counterparts: pear, pear-XML_RPC2, pear-Net_IPv6,
+      pear-Crypt_CHAP, pear-Mail, pear-Net_Growl
    -  Code that relied on the old files was updated to use the current
       or replaced versions
 
@@ -112,7 +112,7 @@ Cleanup
    `#6755 <https://redmine.pfsense.org/issues/6755>`__
 -  Removed all code in the builder and pfSense for handling the NanoBSD
    platform
--  Removed all calls to conf\_mount\_rw / conf\_mount\_ro, since they
+-  Removed all calls to conf_mount_rw / conf_mount_ro, since they
    were only required for NanoBSD
 -  Improved help text in various parts of the GUI
 
@@ -158,7 +158,7 @@ Firewall / Rules / NAT / Aliases
    but valid IPv6 fragments, resulting in overlapping fragments
    `#7485 <https://redmine.pfsense.org/issues/7485>`__
 -  Fixed confirmation prompt handling when deleting a firewall state
-   from diag\_dump\_states.php
+   from diag_dump_states.php
    `#7827 <https://redmine.pfsense.org/issues/7827>`__
 -  Changed display of 1:1 NAT rules to match other firewall pages
    `#7728 <https://redmine.pfsense.org/issues/7728>`__
@@ -210,7 +210,7 @@ OpenVPN
    -  Changed the DNS Server fields in the OpenVPN server options so
       they can define either IPv4 or IPv6 DNS servers to push to clients
       `#7061 <https://redmine.pfsense.org/issues/7061>`__
-   -  Added IPv6 support to status\_openvpn.php and the OpenVPN widget
+   -  Added IPv6 support to status_openvpn.php and the OpenVPN widget
       `#2766 <https://redmine.pfsense.org/issues/2766>`__
    -  Removed uses of the deprecated "tun-ipv6" OpenVPN directive,
       OpenVPN now always assumes IPv6 is enabled
@@ -250,7 +250,7 @@ OpenVPN
 -  Fixed OpenVPN server port validation to disallow "0", while still
    allowing it for a client port, which is the same meaning as
    blank/empty `#7565 <https://redmine.pfsense.org/issues/7565>`__
--  Fixed OpenVPN help text for route\_no\_exec
+-  Fixed OpenVPN help text for route_no_exec
    `#7575 <https://redmine.pfsense.org/issues/7575>`__
 -  Fixed description of the address assignment behavior for Tunnel
    Network fields in OpenVPN clients and servers
@@ -264,7 +264,7 @@ OpenVPN
    duplicate/alias names in the list, and added upgrade code to fix
    existing entries on upgrade so they use the actual digest name and
    not an alias `#7685 <https://redmine.pfsense.org/issues/7685>`__
--  Fixed show/hide behavior of fields on vpn\_openvpn\_client.php in
+-  Fixed show/hide behavior of fields on vpn_openvpn_client.php in
    chrome `#7451 <https://redmine.pfsense.org/issues/7451>`__
 -  Changed OpenVPN wizard certificate input validation and encoding so
    it matches the standards of the current certificate manager
@@ -285,7 +285,7 @@ IPsec
 -  Added RADIUS accounting support for mobile IPsec when accounting is
    enabled on the Authentication Server entry
 -  Added checks to prevent simultaneous/repeated calling of
-   vpn\_ipsec\_configure() by /etc/rc.newipsecdns
+   vpn_ipsec_configure() by /etc/rc.newipsecdns
 -  Added DH Groups 22, 23, 24 to IPsec Phase 2 selection for
    compatibility, but they should not normally be used for security
    reasons `#6967 <https://redmine.pfsense.org/issues/6967>`__
@@ -326,7 +326,7 @@ Certificate Management
       signing using the certificate manager
    -  NOTE: Attributes such as SANs and KU/EKU cannot be copied from a
       CSR when signing due to a deficiency in OpenSSL's x509 functions
-      (they do not support "copy\_extensions" at this time); These
+      (they do not support "copy_extensions" at this time); These
       attributes must be specified manually when signing
 
 -  Fixed "server" certificate detection to key off of the EKU For "TLS
@@ -417,7 +417,7 @@ Captive Portal
 XMLRPC
 ------
 
--  Switched to pear-XML\_RPC2 and removed the outdated static client
+-  Switched to pear-XML_RPC2 and removed the outdated static client
    files
 -  Fixed handling of XMLRPC sync using a username other than "admin"
    `#809 <https://redmine.pfsense.org/issues/809>`__
@@ -463,7 +463,7 @@ Interfaces / Virtual IP Addresses
    T-Mobile `#6890 <https://redmine.pfsense.org/issues/6890>`__
 -  Fixed 3G service status so it does not report misleading information
    `#4287 <https://redmine.pfsense.org/issues/4287>`__
--  Added support for the IPv6 AUTO\_LINKLOCAL flag on bridge interfaces
+-  Added support for the IPv6 AUTO_LINKLOCAL flag on bridge interfaces
 -  Disabled DAD on stf interfaces to fix problems with dpinger
 -  Added an option to use static IPv6 over an IPv4 PPP parent (e.g.
    PPPoE) `#7598 <https://redmine.pfsense.org/issues/7598>`__
@@ -512,7 +512,7 @@ User Management / Authentication
    `#7587 <https://redmine.pfsense.org/issues/7587>`__
 -  Added a log message if a user tries to save the configuration but has
    the 'deny config write' permission
--  Added "auth\_check" type of simple test that a page can use to verify
+-  Added "auth_check" type of simple test that a page can use to verify
    a user is logged in and has access, using less cpu, which is better
    for AJAX data polling
 -  Fixed certificate chain verification issues with LDAP authentication
@@ -525,10 +525,10 @@ Packages
 
 -  Fixed issues with snort, squid/clamav, and squidGuard when /var is in
    a RAM disk `#6878 <https://redmine.pfsense.org/issues/6878>`__
--  Fixed handling of custom\_php\_deinstall\_command during
+-  Fixed handling of custom_php_deinstall_command during
    post-deinstall of a package
    `#7401 <https://redmine.pfsense.org/issues/7401>`__
--  Changed package related calls to get\_pkg\_info() to use the new pkg
+-  Changed package related calls to get_pkg_info() to use the new pkg
    metadata mechanism
 
 Console / Menu
@@ -595,7 +595,7 @@ WebGUI
 -  Fixed handling of info block content inside tables
    `#7504 <https://redmine.pfsense.org/issues/7504>`__
 -  Improved handling of PHP errors for user-entered PHP code on
-   diag\_command.php
+   diag_command.php
 -  Fixed alignment of the the IPv6 over IPv4 input fields
    `#7128 <https://redmine.pfsense.org/issues/7128>`__
 -  Optimized retrieval of Traffic Graph data to reduce spikes in the
@@ -713,7 +713,7 @@ Misc
 -  Fixed various issues with handling of unusually formatted, but valid,
    IPv6 addresses `#7147 <https://redmine.pfsense.org/issues/7147>`__
 -  Improved error handling when a client is logged when it attempts to
-   poll data via rrd\_fetch\_json.php
+   poll data via rrd_fetch_json.php
    `#6748 <https://redmine.pfsense.org/issues/6748>`__
 -  Fixed various issues when the configuration backup count was set to 0
    (disabled) `#7273 <https://redmine.pfsense.org/issues/7273>`__

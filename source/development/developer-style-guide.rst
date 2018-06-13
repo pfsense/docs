@@ -43,8 +43,8 @@ Developer Rules
    -  Reference the ticket number in the first sentence (see previous
       bullet point)
    -  Examples: "Change X to Y which fixes #1234", "Correct check for
-      XYZ in some\_page.php to prevent badthing. Fixes #2345", or "Add
-      coolnewthing to some\_page.php. Implements #3456"
+      XYZ in some_page.php to prevent badthing. Fixes #2345", or "Add
+      coolnewthing to some_page.php. Implements #3456"
    -  Longer, more detailed explanations can be placed on the next line
       and later.
 
@@ -109,7 +109,7 @@ General rules
 
 - All php files must start with a header block in English
 - Use descriptive variable names in English
-- Use lowercase variable names ($my\_very\_long\_var\_name) or Camel
+- Use lowercase variable names ($my_very_long_var_name) or Camel
   Case names ($myVeryLongVarName)
 - When referencing variables inline in double quoted strings, use braces around the variable names::
 

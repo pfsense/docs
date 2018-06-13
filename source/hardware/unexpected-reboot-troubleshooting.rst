@@ -25,7 +25,7 @@ If there is no kernel panic, then the cause is almost certainly a hardware probl
 
 -  If the firewall does panic, and the panic message contains a
    backtrace that mentions things like memory allocation, mbuf,
-   uma\_zalloc\_arg, or similar, then it may be crashing due to mbuf
+   uma_zalloc_arg, or similar, then it may be crashing due to mbuf
    exhaustion. See :doc:`Tuning and Troubleshooting Network Cards </hardware/tuning-and-troubleshooting-network-cards>`
    for information on how to overcome that problem.
 

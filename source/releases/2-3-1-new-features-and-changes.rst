@@ -23,10 +23,10 @@ Security/Errata
 
 -  pfSense Advisories
 
-   -  `pfSense-SA-16\_03.webgui <https://pfsense.org/security/advisories/pfSense-SA-16_03.webgui.asc>`__
-   -  `pfSense-SA-16\_04.filterlog <https://pfsense.org/security/advisories/pfSense-SA-16_04.filterlog.asc>`__
+   -  `pfSense-SA-16_03.webgui <https://pfsense.org/security/advisories/pfSense-SA-16_03.webgui.asc>`__
+   -  `pfSense-SA-16_04.filterlog <https://pfsense.org/security/advisories/pfSense-SA-16_04.filterlog.asc>`__
    -  2.3.1 update 1 patches
-      `pfSense-SA-16\_05.webgui <https://pfsense.org/security/advisories/pfSense-SA-16_05.webgui.asc>`__.
+      `pfSense-SA-16_05.webgui <https://pfsense.org/security/advisories/pfSense-SA-16_05.webgui.asc>`__.
 
 Config Upgrade
 --------------
@@ -111,7 +111,7 @@ Web GUI
 -  Add validation of IP aliases with CARP parent interfaces to ensure
    matching address family.
    `#6218 <https://redmine.pfsense.org/issues/6218>`__
--  Restore GET parameters on status\_graph.php.
+-  Restore GET parameters on status_graph.php.
    `#6192 <https://redmine.pfsense.org/issues/6192>`__
 -  Fixed PHP error on input validation failure with floating rules in
    some cases. `#6175 <https://redmine.pfsense.org/issues/6175>`__
@@ -178,7 +178,7 @@ Web GUI
    `#6341 <https://redmine.pfsense.org/issues/6341>`__
 -  Fix selection of configured speed and duplex on interface page.
    `#6331 <https://redmine.pfsense.org/issues/6331>`__
--  Fix division by zero in status\_queues.php.
+-  Fix division by zero in status_queues.php.
    `#6329 <https://redmine.pfsense.org/issues/6329>`__
 -  Fix alignment issues in forms.
    `#6327 <https://redmine.pfsense.org/issues/6327>`__
@@ -190,7 +190,7 @@ Web GUI
    `#6306 <https://redmine.pfsense.org/issues/6306>`__
 -  Fixed editing and deleting of additional DHCP pools.
    `#6303 <https://redmine.pfsense.org/issues/6303>`__
--  Fixed requests to diag\_system\_activity.php piling up on slow
+-  Fixed requests to diag_system_activity.php piling up on slow
    systems. `#6166 <https://redmine.pfsense.org/issues/6166>`__
 
 Interfaces
@@ -295,7 +295,7 @@ Other
    message. `#6134 <https://redmine.pfsense.org/issues/6134>`__
 -  Allow use of @ in hostname field for Namecheap DDNS.
    `#6122 <https://redmine.pfsense.org/issues/6122>`__
--  Fix console error where $nat\_if\_list isn't an array.
+-  Fix console error where $nat_if_list isn't an array.
    `#6307 <https://redmine.pfsense.org/issues/6307>`__
 -  Include patch number in version display.
    `#6309 <https://redmine.pfsense.org/issues/6309>`__
@@ -313,10 +313,10 @@ Other
 Update 1
 --------
 
-2.3.1 update 1 (2.3.1\_1) was released on May 25, 2016 with the
+2.3.1 update 1 (2.3.1_1) was released on May 25, 2016 with the
 following fixes/changes since 2.3.1-RELEASE.
 
--  Security issue `pfSense-SA-16\_05.webgui
+-  Security issue `pfSense-SA-16_05.webgui
    patched <https://pfsense.org/security/advisories/pfSense-SA-16_05.webgui.asc>`__.
 -  Lowered default LDAP timeout from 25 seconds to 5 seconds.
    `#6367 <https://redmine.pfsense.org/issues/6367>`__
@@ -325,7 +325,7 @@ following fixes/changes since 2.3.1-RELEASE.
 -  Increase PHP's memory limit to 512 MB on 64 bit versions to better
    accommodate systems with a large number of active states.
    `#6364 <https://redmine.pfsense.org/issues/6364>`__
--  Set request\_terminate\_timeout the same as max\_execution\_time to
+-  Set request_terminate_timeout the same as max_execution_time to
    prevent many possible circumstances of "504 gateway error" from
    occurring. `#6396 <https://redmine.pfsense.org/issues/6396>`__
 -  Fix use of URL IP type aliases in firewall rules.
@@ -343,16 +343,16 @@ These were internal-only versions that weren't publicly-released.
 Update 5
 --------
 
-2.3.1 update 5 (2.3.1\_5) was released on June 16, 2016 with the
-following fixes/changes since 2.3.1\_1.
+2.3.1 update 5 (2.3.1_5) was released on June 16, 2016 with the
+following fixes/changes since 2.3.1_1.
 
 -  Fixed command injection vulnerability in auth.inc via User Manager.
    `#6475 <https://redmine.pfsense.org/issues/6475>`__
--  Fixed command injection vulnerability in pkg\_mgr\_install.php id
+-  Fixed command injection vulnerability in pkg_mgr_install.php id
    parameter. `#6474 <https://redmine.pfsense.org/issues/6474>`__
 -  Upgraded PHP to 5.6.22
 -  Fixed Captive Portal redirect hangs caused by longer
-   keepalive\_timeout in nginx.
+   keepalive_timeout in nginx.
    `#6421 <https://redmine.pfsense.org/issues/6421>`__
 -  Fixed DDNS PTR zone in dhcpd.conf with third octet of 0.
    `#6413 <https://redmine.pfsense.org/issues/6413>`__
@@ -362,7 +362,7 @@ following fixes/changes since 2.3.1\_1.
    `#6428 <https://redmine.pfsense.org/issues/6428>`__
 -  Allow "-" character in TFTP server field on DHCP Server page.
    `#6433 <https://redmine.pfsense.org/issues/6433>`__
--  Allow "-" and "\_" characters in system tunables.
+-  Allow "-" and "_" characters in system tunables.
    `#6438 <https://redmine.pfsense.org/issues/6438>`__
 -  Fixed changing of link type on PPPs edit screen.
    `#6439 <https://redmine.pfsense.org/issues/6439>`__

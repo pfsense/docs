@@ -21,7 +21,7 @@ Disable Login Beep
 ------------------
 
 The GUI login beep happens because the GUI login is sent through syslog
-using the LOG\_AUTH facility for which the operating system will beep
+using the LOG_AUTH facility for which the operating system will beep
 when the message appears. To disable the beep, the GUI login messages
 must be suppressed as follows:
 
@@ -51,7 +51,7 @@ As an alternative, the system bell may be disabled globally:
 - Navigate to **System > Advanced**, **System Tunables** tab
 - Click |fa-plus| to create a new tunable entry using the following values:
 
-  - **Tunable**: *kern.vt.enable\_bell*
+  - **Tunable**: *kern.vt.enable_bell*
   - **Description**: *Control system sounds*
   - **Value**: *0*
 

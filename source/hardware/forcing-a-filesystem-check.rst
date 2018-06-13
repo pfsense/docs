@@ -14,14 +14,14 @@ to do so properly requires that it be done during the boot cycle before
 the drives have been mounted read/write.
 
 Fortunately there is a way to trigger a check manually when necessary by
-creating the file */root/force\_fsck* and then rebooting the firewall.
+creating the file */root/force_fsck* and then rebooting the firewall.
 
 There are many ways to create the file, a few simple examples are:
 
 From the GUI:
 
 - Navigate to **Diagnostics > Command**
-- Enter *touch /root/force\_fsck* in the **Execute Shell Command** area
+- Enter *touch /root/force_fsck* in the **Execute Shell Command** area
 - Click **Execute**
 
 From the shell (Full install)::
@@ -36,4 +36,4 @@ From the shell (NanoBSD)::
 
 After creating the file, :doc:`reboot </hardware/reboot-system>`. The firewall will
 run a filesystem check and then continue to boot the rest of the way.
-The */root/force\_fsck* file will be removed automatically.
+The */root/force_fsck* file will be removed automatically.

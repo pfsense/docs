@@ -14,7 +14,7 @@ these packages before upgrading to 2.3.
 Removed Package List
 ~~~~~~~~~~~~~~~~~~~~
 
--  Apache with mod\_security-dev / Proxy Server with mod\_security -
+-  Apache with mod_security-dev / Proxy Server with mod_security -
    neither ever worked well, no active maintainer.
 
 -  arpwatch - no package maintainer, not converted
@@ -25,12 +25,12 @@ Removed Package List
 
 -  bandwidthd - Is now available on 2.3.4
 
--  check\_mk agent - no package maintainer, not converted
+-  check_mk agent - no package maintainer, not converted
 
 -  DansGuardian - the upstream DansGuardian package is no longer
    maintained.
 
--  diag\_new\_states - no package maintainer, not converted
+-  diag_new_states - no package maintainer, not converted
 
 -  dns-server - no package maintainer, not converted
 
@@ -80,7 +80,7 @@ Removed Package List
 
 -  vHosts - no package maintainer, not converted
 
--  vnstat2 - Replaced by Status\_Traffic\_Totals which uses vnstat for a
+-  vnstat2 - Replaced by Status_Traffic_Totals which uses vnstat for a
    backend
 
 -  widentd - no package maintainer, not converted

@@ -27,7 +27,7 @@ Security/Errata Notices
       scripts to the ed(1) editor, which would run commands.
    -  `FreeBSD-SA-15:20.expat <https://www.freebsd.org/security/advisories/FreeBSD-SA-15:20.expat.asc>`__:
       Multiple integer overflows have been discovered in the
-      XML\_GetBuffer() function in the expat library.
+      XML_GetBuffer() function in the expat library.
    -  `FreeBSD-SA-15:21.amd64 <https://www.freebsd.org/security/advisories/FreeBSD-SA-15:21.amd64.asc>`__:
       If the kernel-mode IRET instruction generates an #SS or #NP
       exception, but the exception handler does not properly ensure that
@@ -44,7 +44,7 @@ Security/Errata Notices
       error in the session multiplexing code in the sshd(8) service may
       result in unintended termination of the connection.
 
--  `pfSense-SA-15\_08.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_08.webgui.asc>`__:
+-  `pfSense-SA-15_08.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_08.webgui.asc>`__:
    Multiple Stored XSS Vulnerabilities in the pfSense WebGUI
 
    -  The complete list of affected pages and fields is listed in the
@@ -140,7 +140,7 @@ IPsec
 Rules/NAT
 ---------
 
--  Fixed handling of url\_port alias types when processing items that
+-  Fixed handling of url_port alias types when processing items that
    should be handled by filterdns.
    `#4888 <https://redmine.pfsense.org/issues/4888>`__
 -  Fixed handling of line endings when parsing a URL table ports file.
@@ -154,7 +154,7 @@ Rules/NAT
    `#5162 <https://redmine.pfsense.org/issues/5162>`__
 -  Improved the fix for increasing the "self" table size in pf.
 -  Imported fixes from FreeBSD for a situation that could result in a
-   panic/crash due to source address limits in pf rules ("pf\_hashsrc:
+   panic/crash due to source address limits in pf rules ("pf_hashsrc:
    unknown address family 0").
    `#4874 <https://redmine.pfsense.org/issues/4874>`__
 

@@ -100,7 +100,7 @@ Adding additional DSCP values for experimental use
 
 Assuming basic knowledge about PHP, it is possible to add additional
 DiffServ Code Point values by editing **/usr/local/www/guiconfig.inc**.
-In this file, the variable **$firewall\_rules\_dscp\_types** is
+In this file, the variable **$firewall_rules_dscp_types** is
 initialized with an array containing the recognized DSCP values. New
 values can be specified as hex values, optionally followed by a blank
 and a comment like, for example::

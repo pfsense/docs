@@ -81,7 +81,7 @@ To add a block rule for RFC1918 traffic, navigate to **Firewall >
 Aliases**:
 
 *  Create an alias for the RFC1918 network ranges. Call it
-   *private\_networks* and include the following ranges:
+   *private_networks* and include the following ranges:
 
    *  10.0.0.0/8
    *  172.16.0.0/12
@@ -100,7 +100,7 @@ Aliases**:
    *  **TCP/IP version** - *IPv4*
    *  **Protocol** - *any*
    *  **Source** - *any*
-   *  **Destination** - *Single host or alias: private\_networks*
+   *  **Destination** - *Single host or alias: private_networks*
    *  **Log** - *optional*
 
 *  Save the changes and reload the firewall. Verify that local LAN and

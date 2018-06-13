@@ -17,7 +17,7 @@ Security Fixes
 -  Update to openssl 1.0.1k to address `FreeBSD
    SA-15:01 <https://www.freebsd.org/security/advisories/FreeBSD-SA-15:01.openssl.asc>`__
 -  Multiple XSS vulnerabilities in web interface
-   `pfSense-SA-15\_01 <https://www.pfsense.org/security/advisories/pfSense-SA-15_01.webgui.asc>`__
+   `pfSense-SA-15_01 <https://www.pfsense.org/security/advisories/pfSense-SA-15_01.webgui.asc>`__
 -  OpenVPN update for
    `CVE-2014-8104 <http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8104>`__
 -  NTP update
@@ -59,7 +59,7 @@ Security Enhancements
    the GUI as they were touched.
 -  Update jquery to 1.11.1
 -  Remove almost all calls to history.back() and make Cancel button back
-   to HTTP\_REFERER
+   to HTTP_REFERER
 -  Hide FreeBSD version from sshd banner.
    `#3840 <https://redmine.pfsense.org/issues/3840>`__
 -  Disable SSLv3 in lighttpd
@@ -90,7 +90,7 @@ OS Changes
 -  Sync gettytab and etc/ttys with FreeBSD 10-STABLE and reduce
    customizations
 -  Log pfSense version to syslog after bootup
--  Set the sysctl net.inet.icmp.reply\_from\_interface to 1 to use the
+-  Set the sysctl net.inet.icmp.reply_from_interface to 1 to use the
    incoming interface to send ICMP replies.
    `#3666 <https://redmine.pfsense.org/issues/3666>`__
 -  Switched the hash method in pf to XXHASH for speed improvements
@@ -144,10 +144,10 @@ Interfaces
    for sending the dhcpv6 information. Usually useful for PPP[oE] type
    links and some ISPs
 -  Add gre and gif checks for for IPv4 function
-   interface\_has\_gateway($friendly), like they are already for IPv6
+   interface_has_gateway($friendly), like they are already for IPv6
 -  Do not allow the user to set IPs for GRE interfaces on interface edit
    page. `#3575 <https://redmine.pfsense.org/issues/3575>`__
--  On interfaces\_assign.php, let user select network port to add
+-  On interfaces_assign.php, let user select network port to add
    instead of picking the first available
    `#3846 <https://redmine.pfsense.org/issues/3846>`__
 -  When changing an existing VIP, use previous configured interface for
@@ -163,13 +163,13 @@ Interfaces
 -  Don't allow interface descriptions that are strictly numbers as that
    generates an invalid ruleset.
    `#4005 <https://redmine.pfsense.org/issues/4005>`__
--  Disable delete\_old\_states in dhclient-script. rc.newwanip handles
+-  Disable delete_old_states in dhclient-script. rc.newwanip handles
    this correctly in 2.2, and this killed states in multiple
    circumstances where that isn't necessary nor desirable.
 -  Do not unset configuration values from PPP config if not needed.
    `#3727 <https://redmine.pfsense.org/issues/3727>`__
 -  Overhaul handling of flags for hardware offloading and make it work
-   correctly for system\_advanced page settings. Lagg is still a special
+   correctly for system_advanced page settings. Lagg is still a special
    case that may require a reboot initially to apply.
    `#1047 <https://redmine.pfsense.org/issues/1047>`__
 -  Don't try to launch 3gstats unless it's on a valid device.
@@ -291,7 +291,7 @@ Dashboard & General GUI
 -  Show backup file size in config history.
 -  Display pfSense interface name on status interfaces
 -  Dashboard cleanups/fixes for jQuery
--  Add "pfsense\_ng\_fs" full screen/widescreen theme
+-  Add "pfsense_ng_fs" full screen/widescreen theme
 -  GUI redirect works on both IPv4 and IPv6
    `#3437 <https://redmine.pfsense.org/issues/3437>`__
 -  Disk usage section of the System Information widget now shows all
@@ -314,7 +314,7 @@ Translations
 ------------
 
 -  Change default charset on pages to utf-8
--  Updates to pt\_BR translation
+-  Updates to pt_BR translation
 -  Added Japanese translation
 -  Added Turkish translation
 -  Fixes for gettext
@@ -331,7 +331,7 @@ Captive Portal
    `#3932 <https://redmine.pfsense.org/issues/3932>`__
 -  Zone backend changed from text-based (e.g. "cpzone") to using the
    zone id (e.g. "2") for specifying the context.
--  ipfw\_context has been removed. To list zones, use "ipfw zone list"
+-  ipfw_context has been removed. To list zones, use "ipfw zone list"
 -  Default lighttpd daemon port for a Captive Portal zone is based on
    the zone ID. For example, zone ID 2 uses port 8002. There may not be
    a daemon on port 8000.
@@ -361,8 +361,8 @@ IPsec
    It is a start and might not work on all cases
 -  Do not accept non-ASCII characters on IPsec PSK
    `#3931 <https://redmine.pfsense.org/issues/3931>`__
--  Fix ping\_hosts.sh to not ping IPsec if CARP is in backup.
--  Allow accept\_unencrypted\_mainmode\_messages to be enabled for IPsec
+-  Fix ping_hosts.sh to not ping IPsec if CARP is in backup.
+-  Allow accept_unencrypted_mainmode_messages to be enabled for IPsec
    if needed.
 -  Check that subnet masks are equal when choosing binat type for IPsec
    to avoid errors on ruleset.
@@ -399,7 +399,7 @@ OpenVPN
    route-noexec, verb selector
 -  Use stronger defaults in the OpenVPN wizard.
 -  Fix ovpn-linkup for tun + topology subnet case setting router as
-   ifconfig\_local envvar when route\_vpn\_gateway and ifconfig\_remote
+   ifconfig_local envvar when route_vpn_gateway and ifconfig_remote
    are both not defined.
    `#3968 <https://redmine.pfsense.org/issues/3968>`__
 
@@ -410,7 +410,7 @@ DHCP
 -  Advanced RFC 2136 configuration for DHCPd service
 -  Add ability to not supply a DHCP gateway to clients
 -  Allow defining DHCP static mappings using dhcp-client-identifier
--  Do not call write\_config() when Applying Changes on DHCP settings
+-  Do not call write_config() when Applying Changes on DHCP settings
    `#3797 <https://redmine.pfsense.org/issues/3797>`__
 
 Packages
@@ -511,7 +511,7 @@ Misc
 -  Optimizations/changes to the XML Parsing code
 -  NTP updates to handle a wider ranges of GPS devices and more NTP
    options
--  Move to zerocopy\_enable for bpf to optimize logging which uses bpf
+-  Move to zerocopy_enable for bpf to optimize logging which uses bpf
    interface. This should increase the general performance since pflog
    is always enabled.
 -  Add sshd service to list (if enabled)
@@ -541,10 +541,10 @@ Misc
    "192.168.1.1\|192.168.1.2\|192.168.1.3"
 -  Packet Capture: Protocol, host, and port now support negation.
 -  Added interface column to Diagnostics > States
--  Change is\_port() to only validate a single port, we have
-   is\_portrange() for specific cases.
+-  Change is_port() to only validate a single port, we have
+   is_portrange() for specific cases.
    `#3857 <https://redmine.pfsense.org/issues/3857>`__
--  Fix guess\_interface\_from\_ip() to account for differences in
+-  Fix guess_interface_from_ip() to account for differences in
    netstat output. `#3853 <https://redmine.pfsense.org/issues/3853>`__
 -  Fix Certificate Authority SAN name handling
    `#3347 <https://redmine.pfsense.org/issues/3347>`__
