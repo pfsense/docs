@@ -10,27 +10,26 @@ connections blocked by the default deny rule.
 How to Read the Logs
 --------------------
 
-Each entry is displayed with the action (|pass| pass or |block| block,
-reject is only logged as block), time, interface, source, destination,
-and protocol.
+Each entry is displayed with the action (|fa-play| pass or |fa-times| block,
+reject is only logged as block), time, interface, source, destination, and
+protocol.
 
-The action icon depicts the action taken on the connection. |block|
-indicates a block action, |pass| indicates a pass action. Hover over the
-link for a text description if the meaning of the icon is not clear.
-Clicking on the action icon will produce a box that shows which rule
-caused the action. Using the **Settings** tab, these rule descriptions
-may also be shown in a separate column of the rules, or on a second
-line.
+The action icon depicts the action taken on the connection. |fa-times| indicates
+a block action, |fa-play| indicates a pass action. Hover over the link for a
+text description if the meaning of the icon is not clear. Clicking on the action
+icon will produce a box that shows which rule caused the action. Using the
+**Settings** tab, these rule descriptions may also be shown in a separate column
+of the rules, or on a second line.
 
-The |log| icon next to the source and destination addresses will run the
-IP address through the :doc:`DNS Lookup </dns/dns-lookup>` page and attempt to
-resolve it into a hostname via DNS.
+The |fa-info| icon next to the source and destination addresses will attempt to
+reverse resolve the IP address into a hostname via DNS.
 
-The |block+add| icon next to the source address will add a full block
-for traffic coming from that IP address via `Easy Rule <Easy_Rule>`__.
-The |pass+add| icon next to the destination address also invokes `Easy Rule <Easy_Rule>`__, and will add a pass rule for traffic of this
-protocol, going from the source IP address to the destination IP address
-on the destination port.
+The |fa-minus-square-o| icon next to the source address will add a full block
+for traffic coming from that IP address via `Easy Rule <Easy_Rule>`__. The
+|fa-plus-square-o| icon next to the destination address also invokes `Easy Rule
+<Easy_Rule>`__, and will add a pass rule for traffic of this protocol, going
+from the source IP address to the destination IP address on the destination
+port.
 
 If the logged entry is from a TCP connection, the TCP flags may also be
 displayed. For more information, see `What are TCP Flags? <What_are_TCP_Flags?>`__.

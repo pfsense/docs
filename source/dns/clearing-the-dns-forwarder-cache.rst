@@ -8,8 +8,8 @@ follows:
 
 -  Click **Status > Services**
 -  Find **dnsmasq** in the list
--  Click |restart|, or stop the service using |stop| then start again
-   with |start|.
+-  Click |fa-repeat|, or stop the service using |fa-stop-circle| then start
+   again with |fa-play-circle|.
 
 Restarting the daemon will clear the internal cache, but the client PCs
 may still have cached entries. The DNS cache on a Windows PC may be

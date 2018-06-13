@@ -14,7 +14,7 @@ To view expired leases, click the **Show All Configured Leases** button.
 To switch the view back, click **Show Active and Static Leases**.
 
 A DHCP static IP mapping may be added by clicking |fa-plus|, send a WoL magic
-packet by clicking |w| or the MAC address, or delete an offline dynamic
-lease by clicking |fa-trash|.
+packet by clicking |fa-power-off| or the MAC address, or delete an offline
+dynamic lease by clicking |fa-trash|.
 
 .. seealso:: :doc:`Why does the DHCP Leases page show active systems offline </dhcp/troubleshooting-offline-dhcp-leases>`

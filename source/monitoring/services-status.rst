@@ -10,9 +10,9 @@ There are many more services than are shown here, but only the ones
 meant to be user-controlled are displayed. A service is also not
 displayed if it is disabled.
 
-To stop a service, press the stop button |stop|. To start a service,
-press the start button |start|, to restart, press the restart button
-|restart|.
+To stop a service, press the stop button |fa-stop-circle|. To start a service,
+press the start button |fa-play-circle|, to restart, press the restart button
+|fa-repeat|.
 
 More icons are displayed to visit other pages associated with a given
 service's area. See :doc:`Shortcut Bar </config/shortcut-bar>` for details.

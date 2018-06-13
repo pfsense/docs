@@ -80,7 +80,7 @@ traditional alias.
 Bulk Import
 -----------
 
-On the main alias screen, click |up| and the **Bulk Import** screen will
-be presented. A large text area on this page is used for IP address or
-CIDR entries. They may be entered/pasted here, one per line, to create a
+On the main alias screen, click |fa-upload| **Import** and the **Bulk Import**
+screen will be presented. A large text area on this page is used for IP address
+or CIDR entries. They may be entered/pasted here, one per line, to create a
 large alias quickly.

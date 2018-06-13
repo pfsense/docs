@@ -10,9 +10,9 @@ interface, it can also be started or stopped.
 
 .. image:: /_static/ids-ips/snortinterfacesrunning.png
 
-The green icon indicates a running Snort process for the interface. To
-stop a running process, click the |service running| icon and wait for it
-to change to |service stopped| as shown below.
+The green icon indicates a running Snort process for the interface. To stop a
+running process, click the |fa-check-circle| icon and wait for it to change to
+|fa-times-circle| as shown below.
 
 .. image:: /_static/ids-ips/snortinterfacesstart.png
 
