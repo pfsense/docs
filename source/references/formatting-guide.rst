@@ -305,7 +305,7 @@ blank line. These two colons may also be on a line by themselves::
 
     code code code
 
-The lines inside the code block be indented to the same level, usually two
+The lines inside the code block must be indented to the same level, usually two
 spaces.
 
 Blank spaces may be used between lines of code, they do not need to contain
