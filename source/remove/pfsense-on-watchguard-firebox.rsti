@@ -28,9 +28,8 @@ second hand CPUs and RAM.
 Problems with this document
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Please post in
-`this <http://forum.pfsense.org/index.php/topic,59821.0.html>`__ thread
-to discuss what I got wrong.
+Please post in `this <https://forum.netgate.com/post/53952>`__ thread to discuss
+what I got wrong.
 
 Looking for Watchguard Support?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -49,7 +48,7 @@ Supported Fireboxes
 -  XTM-5 series: XTM 505, XTM 510, XTM 520 and XTM 530
 -  XTM-8 series: The XTM 810 has been tested and can work but due to the
    particular hardware arrangement the install is difficult. See forum
-   `thread <https://forum.pfsense.org/index.php/topic,61970.0.html>`__.
+   `thread <https://forum.netgate.com/post/55986>`__.
 
 The more recent XTM 5 boxes and other higher end hardware are too
 expensive at this point to be available to test. Though they would
@@ -121,7 +120,7 @@ http://web.archive.org/web/20111219022542/http://www.ls-net.com/m0n0wall-watchgu
 Forum thread for the LED driver
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-http://forum.pfsense.org/index.php/topic,36546.0.html
+https://forum.netgate.com/post/33434
 
 X-Core
 ------
@@ -130,7 +129,7 @@ Original Forum Thread
 ~~~~~~~~~~~~~~~~~~~~~
 
 The most complete source of information can be found here:
-http://forum.pfsense.org/index.php/topic,7458.0.html
+https://forum.netgate.com/post/7024
 
 Hardware Description
 ~~~~~~~~~~~~~~~~~~~~
@@ -257,7 +256,7 @@ Original Forum Thread
 ~~~~~~~~~~~~~~~~~~~~~
 
 The most complete source of information can be found here:
-http://forum.pfsense.org/index.php/topic,25011.0.html
+https://forum.netgate.com/post/23462
 
 Hardware Description
 ~~~~~~~~~~~~~~~~~~~~
@@ -385,12 +384,6 @@ of only the connector. This requires some delicate soldering.
 
 X-Core-e
 --------
-
-Original Forum Thread
-~~~~~~~~~~~~~~~~~~~~~
-
-The most complete source of information can be found here:
-http://forum.pfsense.org/index.php/topic,20095.0.html
 
 Hardware Description
 ~~~~~~~~~~~~~~~~~~~~
@@ -568,9 +561,7 @@ Booting from HD
 Booting the X-Core-e from a HD may not be at all straight forward so you
 should only try it if you have a good reason! Depending on your HD
 geometry it may just work or you may need to follow the instructions
-below. At least one user
-`reports <http://forum.pfsense.org/index.php/topic,20095.msg320418.html#msg320418>`__
-no problems at all when using a 120GB HD.
+below. At least one user reports no problems at all when using a 120GB HD.
 
 These instructions allowed the X-Core-e to reliably and repeatedly, boot
 from a 40GB HD connected via the rear drive bay caddy connector. See HD
@@ -718,10 +709,7 @@ you might expect them to. In the default condition after install they
 will show only activity on the NIC rather than showing the LINK state as
 most other devices would. This is because the Marvell 88e8053 and
 88e8001 both have programmable LED outputs and the default state is
-incorrect for the LED configuration in the Firebox. For a *much* more
-complete explanation see the forum thread from
-`this <http://forum.pfsense.org/index.php/topic,20095.msg272392.html#msg272392>`__
-post onwards.
+incorrect for the LED configuration in the Firebox.
 
 To get a more expected LED behaviour we need to reprogram the LED
 control registers on the NIC. Currently the best (only?) way to do this
@@ -840,7 +828,7 @@ Original Forum Thread
 ~~~~~~~~~~~~~~~~~~~~~
 
 The most complete source of information can be found here:
-http://forum.pfsense.org/index.php/topic,43574.0.html
+https://forum.netgate.com/post/39639
 
 Hardware Description
 ~~~~~~~~~~~~~~~~~~~~
@@ -919,7 +907,7 @@ OS...' continuously.
 To skip the background I am currently running this install method on all
 my boxes and it works well. I've not had any reports of it failing. This
 is currently what I'm recommending. See this forum post:
-http://forum.pfsense.org/index.php/topic,7920.msg344513.html#msg344513
+https://forum.netgate.com/post/7467
 
 Current State
 ~~~~~~~~~~~~~
@@ -931,7 +919,7 @@ updated several times to include support for the backlight and the
 cursor buttons but it required some command line work and, more
 importantly, would not survive a firmware update. For reference the most
 recent version of that file, lcdd5.tar, is
-`here <http://forum.pfsense.org/index.php/topic,7920.msg207659.html#msg207659>`__.
+`here <https://forum.netgate.com/post/292910>`__.
 
 More recently lcdproc pfSense package was forked to update it and
 include support for more hardware. At that time the driver for the
@@ -1081,7 +1069,7 @@ You will notice that some of the temperatures shown are clearly wrong.
 mbmon reads all the temperature registers from the the chip even if
 there is no sensor. Use Ctl-C to quit mbmon and **killall burnP6** to
 quit cpuburn (if you used the P6 variant). More detail is
-`here <http://forum.pfsense.org/index.php/topic,25011.msg132050.html#msg132050>`__.
+`here <https://forum.netgate.com/post/23462>`__.
 
 Further Reading
 ---------------
@@ -1089,17 +1077,17 @@ Further Reading
 The original forum thread for the initial LCD driver
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-http://forum.pfsense.org/index.php/topic,7920.0.html
+https://forum.netgate.com/post/7467
 
 The forum thread for the re-written LCD driver, now included in lcdproc-dev
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-http://forum.pfsense.org/index.php/topic,44034.msg239685.html#msg239685
+https://forum.netgate.com/topic/40052/lcdproc-0-5-4-dev
 
 The original forum thread detailing the control of the arm/disarm LED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-http://forum.pfsense.org/index.php/topic,32013.0.html
+https://forum.netgate.com/post/29470
 
 Acknowledgements
 ----------------

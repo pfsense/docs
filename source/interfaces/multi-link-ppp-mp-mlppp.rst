@@ -50,7 +50,7 @@ Caveats
 
 -  Disabling Scrub (**System > Advanced**, **Firewall/NAT** tab) is
    known to create problems on some systems.
-   (http://forum.pfsense.org/index.php/topic,42586.0.html)
+   (https://forum.netgate.com/post/38740)
 
 -  Changes made on the **PPPs** page do not take effect until **Apply
    Changes** is clicked on the interface configuration page, e.g.

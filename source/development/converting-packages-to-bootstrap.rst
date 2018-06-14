@@ -6,7 +6,7 @@ Converting Packages to Bootstrap
 For help converting older packages and PHP pages to Bootstrap format,
 see
 `BOOTSTRAP.md <https://github.com/pfsense/pfsense/blob/master/BOOTSTRAP.md>`__
-and `Bootstrap Conversion Notes <https://forum.pfsense.org/index.php?topic=101062.0>`__ for
+and `Bootstrap Conversion Notes <https://forum.netgate.com/post/90525>`__ for
 general Bootstrap help and information.
 
 Packages for pfSense 2.3 are built from files in the pfSense copy of the
@@ -56,5 +56,6 @@ The current process should be close to this:
 Once the PR is merged, the package builder will see the version change
 and automatically build a new copy of the package.
 
-Start a new thread on the `2.3 development board <https://forum.pfsense.org/index.php?board=65.0>`__ on the forum
-to solicit testing and advice/help as needed.
+Start a new thread on the `Development category
+<https://forum.netgate.com/category/28/development>`__ on the forum to solicit
+testing and advice/help as needed.

@@ -116,10 +116,8 @@ pfSense 2.0
 If you have a modem that **DOES WORK** but is not on the list - Please
 |doc_updates|.
 
-If you have a modem that **DOES NOT WORK** - post about it on the
-`forum <http://forum.pfsense.org>`__ for help, **do not send us e-mail
-asking for support or drivers**, as the above address is only for
-updating the documentation, not for technical assistance.
+If you have a modem that **DOES NOT WORK** - post about it on the |forum_link|
+for help, **do not send us e-mail asking for support or drivers**.
 
 Modems reported to work as Ethernet devices
 -------------------------------------------

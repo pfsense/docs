@@ -26,9 +26,7 @@ Several obsolete items were removed from this release. The items are
 noted again in the sections below, but worth emphasizing:
 
 -  The PPTP **VPN Server** has been completely removed. The protocol has
-   been broken for over three years. `A longer explanation has been
-   posted on the
-   forum <https://forum.pfsense.org/index.php?topic=102976.0>`__
+   been broken for over three years.
 
    -  The PPTP WAN client remains for use with ISPs still using PPTP.
 

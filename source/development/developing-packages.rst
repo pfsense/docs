@@ -62,7 +62,7 @@ the manifest XML file is as follows::
   <package>
   	<name>someprogram</name>
   	<internal_name>someprogram</internal_name>
-  	<pkginfolink>https://forum.pfsense.org/</pkginfolink>
+  	<pkginfolink>https://forum.netgate.com/</pkginfolink>
   	<descr><![CDATA[Some cool program]]></descr>
   	<website>http://www.example.org/someprogram</website>
   	<category>Services</category>

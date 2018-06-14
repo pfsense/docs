@@ -23,7 +23,7 @@ Rules / NAT
 -----------
 
 -  Added `hidden config option to disable blocking of link-local
-   IPv4 <https://forum.pfsense.org/index.php?topic=91739.msg509667#msg509667>`__
+   IPv4 <https://forum.netgate.com/post/82238>`__
    (169.254.0.0/16) for the rare instances where it's required. Not
    recommended, violates RFC 3927.
 

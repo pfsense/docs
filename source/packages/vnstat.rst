@@ -48,6 +48,6 @@ Resources
 
 `vnStat homepage <http://humdi.net/vnstat/>`__
 
-`Forum <http://forum.pfsense.org/index.php/topic,14179.0.html>`__
+`Forum <https://forum.netgate.com/post/13356>`__
 
 Similar tools available for pfSense :doc:`How can I monitor bandwidth usage </monitoring/monitoring-bandwidth-usage>`

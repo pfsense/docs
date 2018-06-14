@@ -276,8 +276,7 @@ major security issue.
 
 This method can, however, be used in conjunction with the HAProxy
 package to host the files on the firewall itself in some circumstances.
-See https://forum.pfsense.org/index.php?topic=101186.msg690924#msg690924
-for details.
+See https://forum.netgate.com/post/677786 for details.
 
 Standalone
 ^^^^^^^^^^

@@ -120,8 +120,7 @@ be edited to fix the connectivity issue and reload those rules like so::
   pfctl -f /tmp/rules.debug
 
 After that, do whatever work is necessary in the WebGUI to make the fix
-permanent. *(From billm in `this forum
-post <http://forum.pfsense.org/index.php/topic,14299.msg75932.html#msg75932>`__)*
+permanent. *(See https://forum.netgate.com/post/13464)*
 
 To get in without disabling pf, the following shell command can be run
 to add an "allow all" rule on the WAN::

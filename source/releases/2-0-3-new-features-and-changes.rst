@@ -107,7 +107,7 @@ Misc Changes
 -  Pass -S to tcpdump to avoid an increase in memory consumption over
    time in certain cases
 -  Minimise rewriting of /etc/gettytab
-   (http://forum.pfsense.org/index.php/topic,57325.0.html)
+   (https://forum.netgate.com/post/51581)
 -  Make is_pid_running function return more conistent results by using
    isvalidpid
 -  Fix ataidle error on systems that have no ATA HDD.

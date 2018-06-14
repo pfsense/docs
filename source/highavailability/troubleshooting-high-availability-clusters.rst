@@ -166,8 +166,7 @@ never leave init state.
 VirtualBox Issues
 -----------------
 
-From `this
-thread <http://forum.pfsense.org/index.php/topic,48327.0.html>`__:
+From `this thread <https://forum.netgate.com/post/43928>`__:
 
 -  Setting "Promiscuous mode: Allow All" on the relevant interfaces of
    the VM allows CARP to function on any interface type (Bridged,

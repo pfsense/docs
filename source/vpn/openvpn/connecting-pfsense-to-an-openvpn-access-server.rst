@@ -77,6 +77,5 @@ in the *.ovpn* file
 Credits
 -------
 
-Thanks to Jason and his great post
-https://forum.pfsense.org/index.php?topic=74685.msg408337#msg408337
+Thanks to this great post https://forum.netgate.com/post/67545
 

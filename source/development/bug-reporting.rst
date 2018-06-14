@@ -31,7 +31,7 @@ Where to submit
 ---------------
 
 For anything that is not a confirmed, specific, detailed bug report,
-post to the `forum <https://forum.pfsense.org>`__ or mailing list first.
+post to the |forum_link| or |subreddit| first.
 
 After discussion and confirmation of a specific, legitimate bug report
 on the forum or mailing list, please open a ticket in

@@ -67,7 +67,7 @@ forum links on the ticket it explain how it can be fixed.
    http://redmine.pfsense.org/issues/2164 )
 -  http://redmine.pfsense.org/issues/2143
 
-`Discuss about FreeRADIUS 2 package in the forum <http://forum.pfsense.org/index.php/topic,43675.0.html>`__
+`Discuss about FreeRADIUS package in the forum <https://forum.netgate.com/post/39727>`__
 
 Features
 ^^^^^^^^
@@ -128,8 +128,7 @@ Ask Questions? - Give Feedback!
 -  To participate on development of this package...
 -  To help others who have trouble with this package...
 
-...please come to pfSense Forum and talk with us in this
-`thread <http://forum.pfsense.org/index.php/topic,43675.0.html>`__.
+...please come to pfSense Forum and talk with us in this `thread <https://forum.netgate.com/post/39727>`__.
 
 FreeRADIUS General Configuration
 --------------------------------
@@ -223,22 +222,17 @@ to be restarted.
 Microsoft Active Directory and LDAP
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Thanks very much
-`pszafer <http://forum.pfsense.org/index.php?action=profile;u=103941>`__
-for explanation. I will try to write a tutorial here in future - or
-somebody else does :)
+Thanks very much pszafer for explanation. I will try to write a tutorial here in
+future - or somebody else does :)
 
--  `Here <http://forum.pfsense.org/index.php/topic,43675.msg235285.html#msg235285>`__
-   is the link to the forum posts.
+* `Link to the forum post <https://forum.netgate.com/post/39727>`__
 
 Video tutorials
 ^^^^^^^^^^^^^^^
 
-Forum user
-`Blasterreal <http://forum.pfsense.org/index.php?action=profile;u=11733>`__
-made a video tutorial for some FreeRADIUS features. It can be found on
-`youtube.com <http://www.youtube.com/watch?v=B6Hjxd1Af-s>`__ or in the
-`forum <http://forum.pfsense.org/index.php/topic,45312.0.html>`__.
+Forum user Blasterreal made a video tutorial for some FreeRADIUS features. It
+can be found on `youtube.com <http://www.youtube.com/watch?v=B6Hjxd1Af-s>`__ or
+in the `forum <https://forum.netgate.com/post/41146>`__.
 
 Copyrights and Credits
 ^^^^^^^^^^^^^^^^^^^^^^

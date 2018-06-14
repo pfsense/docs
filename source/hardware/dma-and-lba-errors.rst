@@ -34,8 +34,7 @@ that log message says.
    user-accessible addresses is requested if command aborted is not
    returned." FreeBSD labels this bit as NID_NOT_FOUND
 
-Summarized from `this forum
-post <http://forum.pfsense.org/index.php/topic,41312.msg226353.html#msg226353>`__.
+Summarized from `this forum post <https://forum.netgate.com/post/37576>`__.
 
 SETFEATURES Error
 ~~~~~~~~~~~~~~~~~

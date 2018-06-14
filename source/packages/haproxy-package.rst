@@ -36,7 +36,7 @@ On 2.1 and before: Some of these may not appear on all platforms.
 -  HAproxy-full - The current recommended package for general use.
 -  HAproxy - A version based on HAproxy-full's predecessor that does not
    include the changes in HAproxy-full. See `this forum
-   thread <http://forum.pfsense.org/index.php/topic,46558.0.html>`__ for
+   thread <https://forum.netgate.com/post/42309>`__ for
    details.
 
 Recent Changes

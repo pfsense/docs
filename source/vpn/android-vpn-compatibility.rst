@@ -71,7 +71,7 @@ IKEv2 support on Android 4+ works with the `strongSwan app <https://play.google.
 Android 2.1 (Eclair)
 --------------------
 
-See this note on Android and PPTP from a user on `the forum <http://forum.pfsense.org/index.php/topic,34485.0.html>`__:
+See this note on Android and PPTP from a user on `the forum <https://forum.netgate.com/post/31657>`__:
 
     Android 2.1 does not have MPPE and therefor will not connect to
     -any- PPTP server that requires encryption.

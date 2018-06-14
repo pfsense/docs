@@ -190,6 +190,6 @@ More information
 ----------------
 
 More information about IPv6 support may be found in the pfSense forum at
-http://forum.pfsense.org/index.php/board,52.0.html
+https://forum.netgate.com/category/46/ipv6
 
 World IPv6 Day may have passed, but now every day can be IPv6 day.

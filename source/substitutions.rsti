@@ -5,6 +5,8 @@
 .. _Netgate Global Support: https://www.netgate.com/support/
 .. |forum_link| replace:: `Netgate Forum`_
 .. _Netgate Forum: https://forum.netgate.com/
+.. |subreddit| replace:: `pfSense subreddit`_
+.. _pfSense subreddit: https://www.reddit.com/r/pfSense/
 
 .. |doc_updates| replace:: :doc:`submit a documentation update </references/updating-docs>`
 .. _Documentation Source: https://github.com/pfsense/docs

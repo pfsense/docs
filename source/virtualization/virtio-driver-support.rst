@@ -19,7 +19,7 @@ https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=165059
 
 Hardware checksums and other NIC offloading features like TSO may also
 need to be disabled on the hypervisor system in addition to the pfSense
-VM: https://forum.pfsense.org/index.php?topic=88467.0
+VM.
 
 Enabling VirtIO Driver Support on pfSense 2.1.x and before
 ==========================================================
@@ -27,8 +27,7 @@ Enabling VirtIO Driver Support on pfSense 2.1.x and before
 The following instructions are not necessary on pfSense 2.2 and later,
 which have the proper drivers built into the kernel.
 
-Adapted from a `forum port by
-JR <http://forum.pfsense.org/index.php/topic,50128.0.html>`__
+Adapted from a `forum port by JR <https://forum.netgate.com/post/45590>`__
 
 For those who run pfSense inside a KVM Virtual Machine, here are some
 easy steps to enable VirtIO for a pfSense VM.

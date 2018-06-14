@@ -282,20 +282,14 @@ Tutorial
 CaptivePortal Self-Registration: FreeRADIUS + MySQL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Thanks very much
-`khan <http://forum.pfsense.org/index.php?action=profile;u=15749>`__ and
-`sash99 <http://forum.pfsense.org/index.php?action=profile;u=22012>`__
-for explanation. I will try to write a tutorial here in future - or
-somebody else does :)
+Thanks very much khan and sash99 for explanation. I will try to write a tutorial
+here in future - or somebody else does :)
 
--  `Here <http://forum.pfsense.org/index.php/topic,57260.msg305604.html#msg305604>`__
-   is the link to the forum posts.
+`Link to the forum posts <https://forum.netgate.com/post/51520>`__
 
 Others
 ~~~~~~
 
-Thanks to
-`periko <http://forum.pfsense.org/index.php?action=profile;u=1672>`__
-for making `a tutorial how to patch the code if
-necessary <http://pheriko.blogspot.mx/2013/01/pfsense-2-captive-portalfreeradius2.html>`__
-and how to configure everything..
+Thanks to periko for making `a tutorial how to patch the code if necessary
+<http://pheriko.blogspot.mx/2013/01/pfsense-2-captive-portalfreeradius2.html>`__
+and how to configure everything.
