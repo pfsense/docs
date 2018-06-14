@@ -6,7 +6,7 @@ Can I sell pfSense
 Many consulting companies offer pfSense solutions to their customers. A
 business or individual can load pfSense for themselves, friends,
 relatives, employers, and, yes, even customers, so long as the Trademark
-Guidelines and `Apache 2.0 license>`_ requirements as detailed on the
+Guidelines and `Apache 2.0 license`_ requirements as detailed on the
 website are obeyed by all parties involved.
 
 What can not be offered is a commercial redistribution of pfSense®
