@@ -10,7 +10,7 @@ This article covers configuring a site to site VPN link between two
 pfSense firewalls using IPsec, and discusses how to configure site to
 site links with third party IPsec-compliant devices.
 
-In other parts of the `IPsec category <:Category:IPsec>`__ there are
+In other parts of the :doc:`IPsec section </vpn/ipsec/index>` there are
 example VPN Configurations that cover how to configure site to site
 IPsec links with some third party IPsec devices. If pfSense is known to
 work in a site to site IPsec configuration with some third party IPsec
