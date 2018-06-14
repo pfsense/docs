@@ -4,15 +4,28 @@
 Installing and Upgrading
 ************************
 
+Installing
+''''''''''
+
 .. toctree::
    :maxdepth: 1
 
-   installation-troubleshooting
+   installing-pfsense
+   verify-downloaded-files
+   /hardware/writing-disk-images
+   writing-iso-images
+   /hardware/connecting-to-the-serial-console
    installing-on-embedded-platforms
    installing-pfsense-over-an-existing-freebsd-installation
-   installing-pfsense
+   installation-troubleshooting
+
+Upgrading
+'''''''''
+
+.. toctree::
+   :maxdepth: 1
+
    upgrade-guide
-   upgrading-64-bit-nanobsd-2-3-to-2-4
    upgrading-pfsense-software-installations
-   verify-downloaded-files
-   writing-iso-images
+   /highavailability/redundant-firewalls-upgrade-guide
+   upgrading-64-bit-nanobsd-2-3-to-2-4

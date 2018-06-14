@@ -17,23 +17,23 @@ Management of packages is performed in the :doc:`package manager </packages/pack
 .. toctree::
    :maxdepth: 1
 
-   2-3-removed-packages
+   package-manager
+   package-list
+   fixing-a-broken-pkg-database
    arping-package
    avahi-package
-   fixing-a-broken-pkg-database
    haproxy-package
-   installing-freebsd-packages
+   troubleshooting-the-haproxy-package
    iperf-package
    lldp-on-pfsense
    nmap-package
    nut-package
    open-vm-tools-package
    openbgpd-package
-   package-list
-   package-manager
    pfblocker
    routing-information-protocol-rip
    siproxd-package
    stunnel-package
-   troubleshooting-the-haproxy-package
    vnstat
+   installing-freebsd-packages
+   2-3-removed-packages

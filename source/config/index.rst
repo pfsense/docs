@@ -7,13 +7,13 @@ Configuration and WebGUI
 .. toctree::
    :maxdepth: 1
 
-   advanced-setup
-   configuration-history
    dashboard
-   example-basic-configuration
-   factory-defaults
    general-setup
-   manually-editing-the-pfsense-configuration
+   advanced-setup
    shortcut-bar
    managing-lists-of-items
+   configuration-history
+   example-basic-configuration
+   manually-editing-the-pfsense-configuration
    troubleshooting-time-zone-configuration
+   factory-defaults

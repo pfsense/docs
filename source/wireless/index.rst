@@ -7,12 +7,12 @@
 .. toctree::
    :maxdepth: 1
 
-   802-11n-wireless-support
    should-i-use-pfsense-as-my-access-point
-   supported-wireless-cards
    use-an-existing-wireless-router-with-pfsense
+   supported-wireless-cards
    what-is-the-best-wireless-card-to-use
-   wireless-interface-configuration-details
+   802-11n-wireless-support
    wireless-interfaces
+   wireless-interface-configuration-details
    wireless-logs
    wireless-status

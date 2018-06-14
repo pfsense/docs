@@ -7,9 +7,9 @@ Services
 .. toctree::
    :maxdepth: 1
 
+   ntp-server
+   snmp-daemon
    configuring-upnp-and-nat-pmp
    igmp-proxy
-   ntp-server
-   pppoe-server-settings
-   snmp-daemon
    wake-on-lan
+   pppoe-server-settings

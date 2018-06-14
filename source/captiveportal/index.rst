@@ -7,11 +7,11 @@ Captive Portal
 .. toctree::
    :maxdepth: 1
 
-   captive-portal-authentication-logs
-   captive-portal-status
-   captive-portal-troubleshooting
-   captive-portal-vouchers
    captive-portal
+   captive-portal-status
+   captive-portal-vouchers
+   captive-portal-authentication-logs
+   using-captive-portal-with-freeradius
    configuring-a-pre-authentication-redirect-for-captive-portal-users
    troubleshooting-captive-portal-issues-with-apple-ios-clients
-   using-captive-portal-with-freeradius
+   captive-portal-troubleshooting

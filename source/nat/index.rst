@@ -33,20 +33,20 @@ is the `pfSense book <http://pfsense.org/book>`_.
 .. toctree::
    :maxdepth: 1
 
+   forwarding-ports-with-pfsense
    1-1-nat
-   accessing-port-forwards-from-local-networks
-   advanced-outbound-nat
+   port-forward-and-1-1-nat-interaction
+   outbound-nat
+   static-port
    automatic-nat-rules-generation
+   advanced-outbound-nat
    configuring-nat-for-a-voip-pbx
    configuring-nat-for-voip-phones
-   forwarding-ports-with-pfsense
-   ftp-without-a-proxy
-   outbound-nat
-   port-forward-and-1-1-nat-interaction
-   port-forward-troubleshooting
+   using-ipv6-network-prefix-translation-npt
+   accessing-port-forwards-from-local-networks
+   using-1-1-nat-on-a-wan-ip-address
    setup-ftp-server-behind-pfsense
-   static-port
+   ftp-without-a-proxy
+   port-forward-troubleshooting
    troubleshooting-1-1-nat
    troubleshooting-nat-reflection
-   using-1-1-nat-on-a-wan-ip-address
-   using-ipv6-network-prefix-translation-npt

@@ -7,21 +7,21 @@ User Management
 .. toctree::
    :maxdepth: 1
 
-   accessing-the-firewall-filesystem-with-scp
-   configuring-additional-logging-for-freeradius
-   freeradius-2-x-package
-   granting-users-access-to-ssh
+   pfsense-default-username-and-password
+   managing-local-users
    group-manager
-   ldap-troubleshooting
+   granting-users-access-to-ssh
+   accessing-the-firewall-filesystem-with-scp
+   sudo-package
+   user-authentication-servers
    locked-out-of-the-webgui
    logging-out-of-the-webgui
-   managing-local-users
-   mobile-one-time-passwords-with-freeradius
-   pfsense-default-username-and-password
-   plain-mac-authentication-with-freeradius
+   ldap-troubleshooting
    radius-errors
-   sudo-package
-   testing-freeradius
-   user-authentication-servers
+   freeradius-2-x-package
+   configuring-additional-logging-for-freeradius
+   mobile-one-time-passwords-with-freeradius
+   plain-mac-authentication-with-freeradius
    using-eap-and-peap-with-freeradius
    using-mysql-with-freeradius
+   testing-freeradius

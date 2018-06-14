@@ -7,28 +7,28 @@ Interfaces
 .. toctree::
    :maxdepth: 1
 
-   accessing-modem-from-inside-firewall
+   interface-settings
    assign-interfaces
-   checking-the-uptime-of-a-pppoe-wan-connection
-   controlling-ipv6-or-ipv4-preference
-   forcing-interface-speed-or-duplex-settings
+   opt-interfaces
+   vlan-trunking
+   lagg-interfaces
    gif-interfaces
    gre-interfaces
    interface-bridges
    interface-groups
-   interface-settings
-   lagg-interfaces
-   limitations-of-pptp-wan-interfaces
-   low-throughput-troubleshooting
-   migrate-assigned-lan-to-lagg
-   mixing-public-and-private-ip-addresses-on-an-interface
-   multi-link-ppp-mp-mlppp
-   opt-interfaces
-   ppp-interfaces
    qinq-interfaces
-   troubleshooting-nat-devices-reaching-bridged-interface-devices
+   ppp-interfaces
+   checking-the-uptime-of-a-pppoe-wan-connection
+   limitations-of-pptp-wan-interfaces
+   multi-link-ppp-mp-mlppp
+   forcing-interface-speed-or-duplex-settings
+   using-public-ip-addresses-on-an-interface
+   mixing-public-and-private-ip-addresses-on-an-interface
+   using-ipv6-with-a-tunnel-broker
+   migrate-assigned-lan-to-lagg
+   controlling-ipv6-or-ipv4-preference
    tuning-network-memory-buffers-mbufs
    using-a-large-number-of-interfaces
-   using-ipv6-with-a-tunnel-broker
-   using-public-ip-addresses-on-an-interface
-   vlan-trunking
+   accessing-modem-from-inside-firewall
+   low-throughput-troubleshooting
+   troubleshooting-nat-devices-reaching-bridged-interface-devices

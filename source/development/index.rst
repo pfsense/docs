@@ -7,29 +7,29 @@ Development
 .. toctree::
    :maxdepth: 1
 
+   software-release-schedule
    bug-reporting
-   checking-the-current-freebsd-version
-   compiling-software-on-the-firewall
-   converting-packages-to-bootstrap
-   creating-widgets
-   developer-style-guide
-   developing-packages
-   edit-file
-   enabling-additional-php-modules
+   obtaining-panic-information-for-developers
+   policy-on-freebsd-issues
+   requesting-new-pfsense-features
+   system-patches
    execute-command
    executing-command-line-commands-using-the-web-interface
-   executing-commands-at-boot-time
+   edit-file
+   using-the-php-pfsense-shell
    getting-started-with-pfsense-development
-   obtaining-panic-information-for-developers
+   developer-style-guide
+   referencing-tickets-in-commit-messages
+   submitting-a-pull-request-via-github
+   developing-packages
+   converting-packages-to-bootstrap
    package-port-directory-structure
    package-port-list
-   policy-on-freebsd-issues
-   referencing-tickets-in-commit-messages
-   requesting-new-pfsense-features
-   software-release-schedule
-   submitting-a-pull-request-via-github
+   checking-the-current-freebsd-version
+   creating-widgets
+   enabling-additional-php-modules
+   executing-commands-at-boot-time
    switching-kernels
-   system-patches
    updating-pfsense-code-between-snapshots
-   using-the-php-pfsense-shell
    what-are-head-releng-2-1-releng-2-0-etc
+   compiling-software-on-the-firewall

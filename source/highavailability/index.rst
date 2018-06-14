@@ -82,10 +82,10 @@ the related categories.
 .. toctree::
    :maxdepth: 1
 
-   carp-cluster-with-bridge-troubleshooting
    configuring-high-availability
-   dhcp-failover-troubleshooting
    redundant-firewalls-upgrade-guide
    troubleshooting-high-availability-clusters
    troubleshooting-vpn-connectivity-to-a-high-availability-secondary-node
    troubleshooting-xmlrpc-configuration-synchronization
+   carp-cluster-with-bridge-troubleshooting
+   dhcp-failover-troubleshooting
