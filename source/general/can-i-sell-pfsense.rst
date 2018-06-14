@@ -3,23 +3,18 @@
 Can I sell pfSense
 ==================
 
-Selling the Software
---------------------
-
 Many consulting companies offer pfSense solutions to their customers. A
 business or individual can load pfSense for themselves, friends,
 relatives, employers, and, yes, even customers, so long as the Trademark
-Guidelines and `Apache 2.0 license requirements as detailed on the
-website <https://pfsense.org/about-pfsense/#legal>`__ are obeyed by all
-parties involved.
+Guidelines and `Apache 2.0 license>`_ requirements as detailed on the
+website are obeyed by all parties involved.
 
 What can not be offered is a commercial redistribution of pfSense®
 software, for example the guidelines do not permit someone to offer
 "Installation of pfSense® software" as a service or to sell a device
 pre-loaded with pfSense® software to customers without the prior express
 written permission of ESF pursuant to the trademark policy as referenced
-in the `RCL Terms and
-Conditions <https://www.netgate.com/RCL-Terms-and-Conditions.pdf>`__.
+in the `RCL Terms and Conditions`_.
 
 Example 1: A consultant may offer firewall services (e.g. "Fred's
 Firewalls"), without mentioning pfSense® software or using the logo in
@@ -40,8 +35,7 @@ relationship to pfSense is clearly stated.
 
 The Apache 2.0 license only applies to the software and **not** the
 pfSense name and logo, which are trademarks and may not be used without
-a license. Reading and understanding the `RCL Terms and
-Conditions <https://www.netgate.com/RCL-Terms-and-Conditions.pdf>`__
+a license. Reading and understanding the `RCL Terms and Conditions`_
 document is required before one considers selling pfSense Software.
 
 Contributing Back to the Project
@@ -54,31 +48,27 @@ received from use of pfSense software. Many paths exist for resellers
 and consultants to contribute. For the long term success of the project
 this support is critically important.
 
-#. Purchase hardware and merchandise from `our
-   store <https://store.pfsense.org>`__.
-#. `Become a partner <https://www.netgate.com/partners/>`__ to resell
-   Netgate hardware pre-loaded with pfSense software.
+#. Purchase hardware and merchandise from the `Netgate store`_.
+#. Become a `Netgate partner`_ to resell Netgate hardware pre-loaded with
+   pfSense software.
 #. Development contributions - Dedicate a portion of your internal
    developers' time to open source development.
 #. Help with support and documentation - Assisting users on the forum
    and mailing list, or contributing documentation changes, aides the
    overall project.
 #. Support subscription - we're glad to help resellers under our
-   `support
-   subscription <https://portal.pfsense.org/index.php/support-subscription>`__.
+   `support subscription`_.
    Having direct access to our team for any questions or deployment
    assistance helps ensure your success as a reseller.
 
 Using the pfSense Name and Logo
 -------------------------------
 
-The "pfSense" name and logo are trademarks of `Electric Sheep Fencing,
-LLC <http://electricsheepfencing.com/>`__.
+The "pfSense" name and logo are trademarks of Electric Sheep Fencing, LLC.
 
 The pfSense software source code is open source and covered by the
-`Apache 2.0 license <https://pfsense.org/about-pfsense/#legal>`__. That
-license only covers the source code and **not** our name and trademarks,
-which have restricted usage.
+`Apache 2.0 license`_. That license only covers the source code and **not** our
+name and trademarks, which have restricted usage.
 
 We think it is great that people want to promote and support the pfSense
 project. At the same time, we also need to verify that what is referred
@@ -146,3 +136,8 @@ modified in any way.
    or implied between the two companies, unless we have explicitly
    licensed and agreed to such a statement.
 
+.. _Apache 2.0 license: https://pfsense.org/about-pfsense/#legal
+.. _Netgate partner: https://www.netgate.com/partners
+.. _Netgate store: https://store.netgate.com
+.. _support subscription: https://www.netgate.com/support
+.. _RCL Terms and Conditions: https://www.netgate.com/RCL-Terms-and-Conditions.pdf

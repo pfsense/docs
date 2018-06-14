@@ -176,12 +176,11 @@ Alternate Boot Managers
 `GAG <http://gag.sourceforge.net/>`__ or `Smart
 BootManager <http://sourceforge.net/projects/btmgr>`__ may be used.
 
-If all else fails, please visit one of our official support mechanisms
-listed at `pfsense.org <http://www.pfsense.org/support>`__ and also
-check out https://wiki.freebsd.org/BugBusting/Commonly_reported_issues
+If all else fails, we offer `official support plans`_ and `official hardware`_
+that has been pre-loaded with pfSense and proven to work. You can also
+check out https://wiki.freebsd.org/BugBusting/Commonly_reported_issues.
 
-Or purchase hardware from us that has been `pre-loaded with pfSense and
-proven to work <https://store.pfsense.org/>`__.
+
 
 Disabling ACPI
 --------------
@@ -409,3 +408,5 @@ Conflicting Hardware
 
   Disable any Firewire/1394 controllers and USB Card Readers in the BIOS.
 
+.. _official support plans: https://www.netgate.com/support
+.. __official hardware: https://store.netgate.com

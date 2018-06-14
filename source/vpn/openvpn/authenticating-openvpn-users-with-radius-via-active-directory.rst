@@ -7,12 +7,6 @@ This how-to will show how to set up OpenVPN on pfSense for Windows
 clients, using certificates with user authentication via RADIUS in
 Active Directory.
 
-Intro
------
-
-Intended audience
-^^^^^^^^^^^^^^^^^
-
 This how-to is intended for small businesses that want to roll out
 secure VPN connectivity for their users using free software. Due to the
 nature of its set up, which is mostly manual, this process may be too
@@ -300,7 +294,7 @@ Enter these values:
 | Local Network                | | 192.168.77.0/24                                                                                                                                                                                                                                                                                                                                                                         |
 |                              | | This is my range. Enter the actual LAN subnet here.                                                                                                                                                                                                                                                                                                                                     |
 +------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Concurrent connections       | Crypto can be tough on resources. If the pfSense installation runs on an appliance keep this number low. If it runs on an old computer it can do more. Keep en eye on the machine's CPU. If more concurrent VPN connections ask too much of resources, `upgrade the hardware <https://store.pfsense.org>`__.                                                                              |
+| Concurrent connections       | Crypto can be tough on resources. If the pfSense installation runs on an appliance keep this number low. If it runs on an old computer it can do more. Keep en eye on the machine's CPU. If more concurrent VPN connections ask too much of resources, `upgrade the hardware <https://store.netgate.com>`_.                                                                               |
 |                              |                                                                                                                                                                                                                                                                                                                                                                                           |
 |                              | I tend to set this number to the number of client installations.                                                                                                                                                                                                                                                                                                                          |
 +------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
