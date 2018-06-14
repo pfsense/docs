@@ -30,7 +30,7 @@ OpenVPN Wizard
 An OpenVPN remote access VPN can easily be configured using the wizard,
 as follows:
 
-Navitage to **VPN > OpenVPN** and Click the **Wizards** Tab to start the
+Navigate to **VPN > OpenVPN** and Click the **Wizards** Tab to start the
 wizard.
 
 Authentication
