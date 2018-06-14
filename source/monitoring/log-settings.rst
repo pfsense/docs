@@ -39,7 +39,7 @@ check **Show raw filter logs** and then view the log file again.
 
 **Filter descriptions**: Controls whether (and how) or not to display
 the firewall rule descriptions in the log. By default they are not
-shown, but can be viewed by clicking the action icon (|block| or |pass|)
+shown, but can be viewed by clicking the action icon (|fa-times| or |fa-play|)
 at the far left of the firewall log entry. Using this option, they may
 also be displayed in an additional column or a separate row.
 

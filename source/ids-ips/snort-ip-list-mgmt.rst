@@ -10,7 +10,7 @@ or network (expressed in CIDR notation) per line.
 .. image:: /_static/ids-ips/snortiplists.png
 
 To upload an IP list file to the firewall, click the
-|import_alias| icon to open the file upload dialog as shown
+|fa-upload| icon to open the file upload dialog as shown
 below. Browse to the file on the local machine using the **BROWSE**
 button, then click the **UPLOAD** button to upload the file to the
 firewall for use by the IP Reputation preprocessor in Snort.

@@ -173,8 +173,7 @@ client side.
 
    *  Navigate to **System > Cert Manager**, **Certificate Authorities**
       tab on pfSense
-   *  Click the first |down| by the CA to download *only* the
-      certificate
+   *  Click |fa-certificate| by the CA to download *only* the certificate
 
 *  Locate the downloaded file on the client PC (e.g. *MyCA.crt*)
 *  Double click the CA file
@@ -199,8 +198,8 @@ Import the Client Certificate to the Client PC
 
    *  Navigate to **System > Cert Manager**, **Certificates** tab on
       pfSense
-   *  Click the *third* |down| by the certificate to download a *.p12*
-      file containing the client certificate and key
+   *  Click |fa-archive| by the certificate to download a ``.p12`` file
+      containing the client certificate and key
 
 *  Locate the downloaded file on the client PC (e.g. *client1.p12*)
 *  Double click client certificate *.p12*

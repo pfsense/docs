@@ -13,11 +13,11 @@ network environment. Be sure they are in fact truly false positives
 before taking the step of disabling a Snort rule!
 
 Select a rules category from the **Category:** drop-down to view all the
-assigned rules. Click the |block| icon at the far-left of a
-row to toggle the rule's state from either enabled to disabled, or from
-disabled to enabled. The icon will change color to indicate the action
-taken. At the bottom of the page is a legend showing the four icon
-colors used to indicate the current state of a rule.
+assigned rules. Click the |fa-check-circle| or |fa-check-circle-o| icon at the
+far-left of a row to toggle the rule's state from enabled to disabled, or click
+|fa-times-circle| or |fa-times-circle-o| to toggle from disabled to enabled. The
+icon will change to indicate the state of the rule. At the top of the rule list
+is a legend showing the icons used to indicate the current state of a rule.
 
 .. image:: /_static/ids-ips/snortrulesenabledisable.png
 

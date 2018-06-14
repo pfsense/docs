@@ -82,9 +82,3 @@
 .. |fa-upload|                  image:: /_static/icons/fa-upload.png
 .. |fa-user|                    image:: /_static/icons/fa-user.png
 .. |fa-wrench|                  image:: /_static/icons/fa-wrench.png
-
-.. Old icons that should be replaced, see https://github.com/pfsense/docs/issues/6
-.. |block|                      image:: /_static/icons/icon_block.png
-.. |down|                       image:: /_static/icons/icon_down.png
-.. |import_alias|               image:: /_static/icons/icon_import_alias.gif
-.. |pass|                       image:: /_static/icons/icon_pass.png

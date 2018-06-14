@@ -38,11 +38,12 @@ Certificates
 
 **Certificates** are manage on the **Certificates** tab.
 
-The certificates and keys may also be downloaded from this list view.
-The left |down| button will export a certificate file for download, and
-the middle |down| button will export a key for download. The right
-|down| button generates a PKCS#12 *.p12* file for download with the CA
-certificate, user certificate, and user key contained inside.
+The certificates and keys may also be downloaded from this list view:
+
+:|fa-certificate|: Exports the certificate file
+:|fa-key|: Export the private key for this certificate
+:|fa-archive|: Generates a PKCS#12 ``.p12`` file with the CA certificate, user
+  certificate, and user key contained inside.
 
 A certificate may be added using the following **Method**\ s:
 

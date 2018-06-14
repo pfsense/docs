@@ -10,12 +10,12 @@ no changes at all? Hopefully this will help.
 Check the Logs!
 ---------------
 
-Review the filter logs, which can be found under **Status > System
-Logs**, on the **Firewall** tab. The log will show if a packet is
-blocked, and if so, why. Click the action icon (|block| or |pass|) at
-the *far left* and the rule which caused the packet to be blocked will
-be displayed. If it says "Default Deny", and the packet should have been
-allowed, then it did not match any rule in the ruleset.
+Review the filter logs, which can be found under **Status > System Logs**, on
+the **Firewall** tab. The log will show if a packet is blocked, and if so, why.
+Click the action icon (|fa-times| or |fa-play|) at the *far left* and the rule
+which caused the packet to be blocked will be displayed. If it says "Default
+Deny", and the packet should have been allowed, then it did not match any rule
+in the ruleset.
 
 Interface Selection
 -------------------
