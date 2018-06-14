@@ -21,20 +21,20 @@ written permission of ESF pursuant to the trademark policy as referenced
 in the `RCL Terms and
 Conditions <https://www.netgate.com/RCL-Terms-and-Conditions.pdf>`__.
 
-Example 1: A consultant may offer firewall services (e.g. "Fred’s
+Example 1: A consultant may offer firewall services (e.g. "Fred's
 Firewalls"), without mentioning pfSense® software or using the logo in
 their advertising, marketing material, and so on. They can install
 pfSense® software and manage it for their customers.
 
-Example 2: Fred’s Firewalls may make a customized distribution pfSense®
+Example 2: Fred's Firewalls may make a customized distribution pfSense®
 software with their own name and logo used in place of the pfSense
 marks. They can use the pfSense marks to truthfully describe the origin
-of the software, such as "Fred’s Firewall software is derived from the
-pfSense CE source code." Even though Fred’s Firewall is based on
+of the software, such as "Fred's Firewall software is derived from the
+pfSense CE source code." Even though Fred's Firewall is based on
 pfSense® software, it can **not** be referred to as "pfSense® software"
 since it has been modified.
 
-Example 3: Fred’s Firewalls may sell their customized firewall
+Example 3: Fred's Firewalls may sell their customized firewall
 distribution pre-loaded on systems to customers, so long as the
 relationship to pfSense is clearly stated.
 
@@ -127,7 +127,7 @@ modified in any way.
    wordplay, or abbreviation with respect to similar or related
    projects, products, or services (for example, "pfSense Lifestyle,"
    "PFsense Community," "pf-Sense Sensibility," "pfSensor", etc.,
-   **all** infringe on ESF’s rights).
+   **all** infringe on ESF's rights).
 
    -  Examples:
 

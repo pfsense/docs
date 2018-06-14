@@ -19,7 +19,7 @@ be enforced on the local network.
 #. Add a new rule blocking protocol *TCP/UDP* source: *any* destination: *any*.
 #. Move the rule created in step #4 to the second position behind the permit
    rule that was moved in step #3.
-#. That’s it. Enjoy the fact that the hosts behind pfSense can only talk to the
+#. That's it. Enjoy the fact that the hosts behind pfSense can only talk to the
    built in DNS resolver running on LAN which uses OpenDNS.
 
 When complete, there will be two rule entries that look like the following

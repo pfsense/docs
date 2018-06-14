@@ -72,8 +72,8 @@ Note that the Phase 1 entry is now shown on the IPsec page. Click
 In Site B
 
 Do the same as in Site A but in the **Remote Gateway** field enter Site
-A’s public IP address or FQDN and in the **Description** field enter
-‘Site A’.
+A's public IP address or FQDN and in the **Description** field enter
+'Site A'.
 
 Set up the IPsec tunnel Phase 2
 -------------------------------
@@ -81,7 +81,7 @@ Set up the IPsec tunnel Phase 2
 In Site A
 
 Click |fa-plus| under the Phase 1 entry. It will show an overview of all
-available Phase 2 entries. Since we haven’t made any yet none are shown.
+available Phase 2 entries. Since we haven't made any yet none are shown.
 
 .. image:: /_static/vpn/ipsec/ipsec-s2s-vork-05.png
 
@@ -120,7 +120,7 @@ Click **Save** and on the next page click **Apply Changes**.
 In Site B
 
 **Remote Network**, **Type**: Network **Local Network**, **Address**:
-0.0.0.0/0 **Remote Network**, **Address**: Site A’s LAN subnet Use the
+0.0.0.0/0 **Remote Network**, **Address**: Site A's LAN subnet Use the
 same Phase 2 proposal and Advanced options as in Site A.
 
 .. image:: /_static/vpn/ipsec/ipsec-s2s-vork-13.png
@@ -139,14 +139,14 @@ and click |fa-plus|.
 
 .. image:: /_static/vpn/ipsec/ipsec-s2s-vork-09.png
 
-Set the **Protocol** to **any** and in the Description field type ‘Allow
-everything through IPsec tunnel’. Click **Save** and on the next page
+Set the **Protocol** to **any** and in the Description field type 'Allow
+everything through IPsec tunnel'. Click **Save** and on the next page
 click **Apply changes**. Do this on both routers.
 
 .. image:: /_static/vpn/ipsec/ipsec-s2s-vork-10.png
 
 At this point the tunnel should be up and it should be possible to ping
-from one side to the other and back. Computers in Site A haven’t got an
+from one side to the other and back. Computers in Site A haven't got an
 Internet connection however. This is because we still need to configure
 NAT for the IPsec tunnel.
 
@@ -154,7 +154,7 @@ Configure outbound NAT
 ----------------------
 
 In the default setup outbound NAT is configured automatically. We need
-to set it to Manual in order to add Site A’s subnet.
+to set it to Manual in order to add Site A's subnet.
 
 In Site B
 
@@ -168,9 +168,9 @@ Click |fa-plus| to open the **New Mapping page**.
 .. image:: /_static/vpn/ipsec/ipsec-s2s-vork-11.png
 
 As the **Source Type**, select **Network**. In the **Source**,
-**Address** field type Site A’s subnet: *192.168.10.0/24*.
+**Address** field type Site A's subnet: *192.168.10.0/24*.
 
-In the **Description** field, type ‘NAT for IPsec tunnel Site A’.
+In the **Description** field, type 'NAT for IPsec tunnel Site A'.
 
 .. image:: /_static/vpn/ipsec/ipsec-s2s-vork-14.png
 
@@ -183,7 +183,7 @@ Note that the new entry is shown in the outbound NAT overview.
 This is not required on the router at site A.
 
 At this point Site B will have a working Internet connection through the
-IPsec tunnel out Site B’s Internet provider. Any Internet traffic from
+IPsec tunnel out Site B's Internet provider. Any Internet traffic from
 Site A will look as if it were coming from Site B (see the diagram at
 the beginning of this article).
 
