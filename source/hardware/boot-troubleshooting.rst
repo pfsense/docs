@@ -409,4 +409,4 @@ Conflicting Hardware
   Disable any Firewire/1394 controllers and USB Card Readers in the BIOS.
 
 .. _official support plans: https://www.netgate.com/support
-.. __official hardware: https://store.netgate.com
+.. _official hardware: https://store.netgate.com
