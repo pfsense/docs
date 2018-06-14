@@ -58,12 +58,12 @@ Setup
       the /64 of the WAN interface itself -- the /64 routed to pfSense
       on that WAN by the upstream)
 
-    What this does is act similar to 1:1 NAT for IPv4. As traffic leaves
-    the second WAN, if it's coming from the LAN subnet, it will be
-    translated to the equivalent IP in the other subnet. For example if
-    2001:xxx:yyy::/64 is on LAN, and 2001:\ aaa:bbb::/64 is the routed
-    subnet on the second WAN, then 2001:xxx:yyy::5 would appear as
-    2001:\ aaa:bbb::5 if the traffic goes out the second WAN.
+    What this does is act similar to 1:1 NAT for IPv4. As traffic leaves the
+    second WAN, if it's coming from the LAN subnet, it will be translated to the
+    equivalent IP in the other subnet. For example if ``2001:xxx:yyy::/64`` is
+    on LAN, and ``2001:aaa:bbb::/64`` is the routed subnet on the second WAN,
+    then ``2001:xxx:yyy::5`` would appear as ``2001:aaa:bbb::5`` if the traffic
+    goes out the second WAN.
 
 -  As with IPv4 the Gateway Groups must be used on the LAN firewall
    rules. Edit the LAN rules for IPv6 traffic and make them use the
@@ -74,5 +74,5 @@ Setup
 Alternate Tactics
 -----------------
 
-Some may prefer to use a "private" IPv6 subnet in LAN from the fc00::/7
+Some may prefer to use a "private" IPv6 subnet in LAN from the ``fc00::/7``
 space, and setup NPt for both WANs.

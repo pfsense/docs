@@ -98,7 +98,7 @@ To use VirtIO for only VM network interfaces, the configuration is
 complete. Shutdown the VM, change the single default Ethernet device
 used for installation to VirtIO and boot into pfSense. From here all
 VirtIO network interfaces should be visible and ready for final
-configuration ( interface name: vtnet\ *X* ).
+configuration ( interface name: ``vtnetX`` ).
 
 Add VirtIO Memory Ballooning
 ----------------------------

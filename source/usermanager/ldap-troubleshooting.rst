@@ -17,20 +17,20 @@ For **Base DN**, it's typical to use the root of the LDAP tree but
 typically **Entire Subtree** should also be selected for the **Search
 Scope**.
 
-**Authentication Containers** vary by system and setup. On Windows, it
-is commonly *CN=Users,DC=example,DC=com*, but it may vary. Try using an
-`LDAP browser <http://directory.apache.org/studio/>`__ or similar to
-locate the correct container.
+**Authentication Containers** vary by system and setup. On Windows, it is
+commonly ``CN=Users,DC=example,DC=com``, but it may vary. Try using an `LDAP
+browser <http://directory.apache.org/studio/>`__ or similar to locate the
+correct container.
 
-The LDAP path items are not case sensitive, so *CN=Administrator* is
-equivalent to *cn=administrator*.
+The LDAP path items are not case sensitive, so ``CN=Administrator`` is
+equivalent to ``cn=administrator``.
 
 Bind Credentials
 ----------------
 
-If Anonymous binds are not being used, the username supplied can be the
-short name (e.g. *DOMAIN\\User* for AD) or a full LDAP specification for
-a user (e.g. *CN=administrator,CN=Users,DC=example,DC=com*).
+If Anonymous binds are not being used, the username supplied can be the short
+name (e.g. ``DOMAIN\User`` for AD) or a full LDAP specification for a user (e.g.
+``CN=administrator,CN=Users,DC=example,DC=com``).
 
 For a production setup, an unprivileged user should be used for binding
 if possible, and not AS Administrator-level account. Such an
@@ -74,9 +74,9 @@ it will not work unless that IP happens to also be the CN or a SAN of
 the server certificate.
 
 If this must be worked around, it is possible to create a DNS host
-override in the DNS forwarder for *(common name of the
-cert)*.\ *(firewall's domain name)*. That assumes that the CN is in a
-format that could actually be a hostname.
+override in the DNS forwarder for ``<common name of the cert>.<firewall domain
+name>``. That assumes that the CN is in a format that could actually be a
+hostname.
 
 Use the Correct Port
 ~~~~~~~~~~~~~~~~~~~~

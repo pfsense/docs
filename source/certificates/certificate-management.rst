@@ -45,7 +45,7 @@ The certificates and keys may also be downloaded from this list view:
 :|fa-archive|: Generates a PKCS#12 ``.p12`` file with the CA certificate, user
   certificate, and user key contained inside.
 
-A certificate may be added using the following **Method**\ s:
+A certificate may be added using the following **Methods**:
 
 -  **Import an existing Certificate** by pasting in the certificate and
    private key

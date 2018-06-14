@@ -78,8 +78,7 @@ PEAP and MSCHAPv2
 
    -  Some devices can autoconfigure the Authentication- and
       Encryption-Method. If not choose **PEAP as encryption** and
-      **MS-CHAPv2 as
-      Authentication**.\ `1 <http://www-sga.iai.uni-bonn.de/Wob/images/51263715.jpg>`__
+      **MS-CHAPv2 as Authentication**. `1 <http://www-sga.iai.uni-bonn.de/Wob/images/51263715.jpg>`__
    -  Connect to WLAN AccessPoint and the client will be prompted for
       username and password
    -  Some devices auto-accept the CA-Certificate as valid. Often this
@@ -134,7 +133,7 @@ EAP-TLS
    -  Check validate server certificate
    -  Select **Trusted root certificate authorities** which is the CA
       imported
-      before.\ `3 <http://i.technet.microsoft.com/dynimg/IC120658.gif>`__
+      before. `3 <http://i.technet.microsoft.com/dynimg/IC120658.gif>`__
    -  Check **use a different username for connection** if the Windows
       logon name is **not** the same as set in **FreeRADIUS > Users** or
       if **Check cert CN** was set and the Windows logon name does not

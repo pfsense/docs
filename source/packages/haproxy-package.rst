@@ -221,37 +221,6 @@ an HAProxy configuration where a single server directive has no ports
 and effectively handles multiple (due to inheriting from the frontend)
 it will only show up in the stats once.
 
-Package maintainer special instructions
----------------------------------------
-
-Add to /etc/make.conf: CFLAGS=-O2 -static
-
-FreeBSD package information
----------------------------
-
-Built from /usr/ports/net/haproxy-devel. Code for the pfSense package is
-located
-here\ `1 <https://rcs.pfsense.org/projects/pfsense-packages/repos/mainline/trees/master/config/haproxy>`__.
-
-pfSense package creator
------------------------
-
-Scott Ullrich turned the submission into a package and added many
-features outlined above.
-
-Originally created by
----------------------
-
-Remco Hoef as a base system
-contribution\ `2 <https://rcs.pfsense.org/projects/pfsense/repos/sullrich-haproxy>`__.
-
-Additional features and improvements by
----------------------------------------
-
-Brian Scholer made the changes for package version 1.00, with help from
-forums user marcelloc to compile the binaries and publish the final
-version of the package.
-
 Package Support Status
 ----------------------
 

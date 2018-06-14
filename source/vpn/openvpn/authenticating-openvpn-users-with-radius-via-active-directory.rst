@@ -492,19 +492,19 @@ Have the wizard automatically select the archive.
 Change the cryptoapicert SUBJ
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Open *C:\\Program Files\\OpenVPN\\config\\config.ovpn* or *C:\\Program
-Files(x86)\\OpenVPN\\config\\config.ovpn* and change the line that says
+Open ``C:\Program Files\OpenVPN\config\config.ovpn`` or ``C:\Program
+Files(x86)\OpenVPN\config\config.ovpn`` and change the line that says
 
     cryptoapicert "SUBJ:"
 
 to
 
-    cryptoapicert "SUBJ:\ *vorkbaard*"
+    cryptoapicert "SUBJ:username"
 
-...replace *vorkbaard* by the user's actual username.
+...replace ``username`` by the user's actual username.
 
-I may be mistaken but I think this helps specifying which certificate
-OpenVPN should use in case certificates have a naming conflict.
+This helps specifying which certificate OpenVPN should use in case certificates
+have a naming conflict.
 
 Using the Windows client
 ^^^^^^^^^^^^^^^^^^^^^^^^

@@ -128,13 +128,3 @@ Screen shots
 
 .. image:: /_static/packages/pfb_sync.jpg
 
-Resources
----------
-
-This package is developed and maintained by marcelloc and
-tommyboy180\ `1 <http://tomschaefer.org/pfsense/>`__. This package gets
-its lists from the following sites:
-
-IP Blocklist\ `2 <http://www.iblocklist.com>`__
-
-Country IP Blocks\ `3 <http://www.countryipblocks.net/>`__

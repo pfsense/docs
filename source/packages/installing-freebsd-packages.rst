@@ -162,7 +162,7 @@ The *pkg_add* command used by pfSense 2.1.x will not properly download
 packages because the locations have changed on FreeBSD's servers since
 FreeBSD 8.3 is no longer supported upstream. By using the current
 location of archived packages from FreeBSD's servers,
-ftp://ftp-archive.freebsd.org/pub/FreeBSD-Archive/ports/\ *arch*/packages-8.3-release/Latest/,
+``ftp://ftp-archive.freebsd.org/pub/FreeBSD-Archive/ports/<arch>/packages-8.3-release/Latest/``,
 packages can be added.
 
 Replace *arch* in the URL with the appropriate architecture, *amd64* or
