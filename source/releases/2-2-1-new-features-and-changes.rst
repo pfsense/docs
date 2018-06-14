@@ -248,7 +248,7 @@ IPv6
 -  Added *dhcp6.name-servers* option with DHCPD-PD regardless of PD
    length.
 -  Fixed Net_IPv6::compress() to properly handle all-zeros address.
--  Enabled *UnicastOnly* in radvd for *ovpn\** interfaces.
+-  Enabled ``UnicastOnly`` in radvd for ``ovpnX`` interfaces.
    `#4455 <https://redmine.pfsense.org/issues/4455>`__
 -  Removed requesting a prefix delegation when there are no tracking
    interfaces setup to use it.

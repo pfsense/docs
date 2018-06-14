@@ -558,7 +558,7 @@ OpenVPN
    `#5526 <https://redmine.pfsense.org/issues/5526>`__
 -  Fixed OpenVPN Server validation of self-signed certificates with a
    depth of 2. `#4329 <https://redmine.pfsense.org/issues/4329>`__
--  Fixed overwriting of custom /etc/dh-parameters.\* on upgrade.
+-  Fixed overwriting of custom ``/etc/dh-parameters.*`` on upgrade.
    `#4816 <https://redmine.pfsense.org/issues/4816>`__
 -  Fixed invalid rules generated with some AVPair-defined ACLs.
    `#5451 <https://redmine.pfsense.org/issues/5451>`__

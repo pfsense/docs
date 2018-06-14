@@ -536,9 +536,9 @@ Misc
 -  Packet Capture: Host field supports rudimentary boolean logic.
    Captures can specify multiple IP addresses and use and/or between IP
    addresses. Example: To perform an "and" match where both hosts must
-   match: "192.168.1.1, 192.168.1.2". To perform an "or" match where any
+   match: ``192.168.1.1, 192.168.1.2``. To perform an "or" match where any
    of the specified hosts can match:
-   "192.168.1.1\|192.168.1.2\|192.168.1.3"
+   ``192.168.1.1|192.168.1.2|192.168.1.3``
 -  Packet Capture: Protocol, host, and port now support negation.
 -  Added interface column to Diagnostics > States
 -  Change is_port() to only validate a single port, we have

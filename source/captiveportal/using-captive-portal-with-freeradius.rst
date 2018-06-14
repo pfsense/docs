@@ -93,7 +93,7 @@ all. To use this, configure the following:
       -  monthly: Reset on 00:00:00 of the first day of each month
       -  forever: never (**IMPORTANT:** If this is set then this
          username will never ever be able to connect to this RADIUS
-         server until the whole *db.\*forever* has been removed. So
+         server until the whole ``db.*forever`` has been removed. So
          monthly is a better choice as maximum and set an expiration
          date for the account.
 

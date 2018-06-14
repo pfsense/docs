@@ -10,7 +10,7 @@ If a tunnel comes up initially, but then fails after a Phase 1 or Phase
 2 expiration, try changing the following settings on both ends of the
 tunnel:
 
--  **System > Advanced**, **Miscellaneous** tab: \*uncheck\* **Prefer
+-  **System > Advanced**, **Miscellaneous** tab: uncheck **Prefer
    Old IPsec SA** (No longer exists on pfSense 2.2.3+)
 -  On the IPsec Phase 1 settings, disable **NAT Traversal** (NAT-T)
 -  On the IPsec Phase 1 settings, enable **DPD**
@@ -440,7 +440,7 @@ NAT Problems
 
 If the tunnel can initiate one way but not the other, and the settings
 match, the problem could also be with outbound NAT. If outbound NAT
-rules are present with a source of "*any*" (*\**), that will also match
+rules are present with a source of "*any*" (``*``), that will also match
 outbound traffic from the firewall itself. At best this will rewrite the
 source port and at worst it could change the outbound IP entirely
 depending on the NAT rule settings.

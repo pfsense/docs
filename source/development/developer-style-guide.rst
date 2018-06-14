@@ -109,25 +109,26 @@ General rules
 
 - All php files must start with a header block in English
 - Use descriptive variable names in English
-- Use lowercase variable names ($my_very_long_var_name) or Camel
-  Case names ($myVeryLongVarName)
+- Use lowercase variable names (``$my_very_long_var_name``) or Camel
+  Case names (``$myVeryLongVarName``)
 - When referencing variables inline in double quoted strings, use braces around the variable names::
 
     $foo = "bar{$bar}bar";
 
 - Add comments in English, whenever necessary or helpful
-- Use // or /\* \*/ style syntax for single line comments, do not use #
-- Use /\* \*/ style syntax for multi-line comments
-- Use "elseif" and not "else if" when given a choice. The "else if"
+- Use ``//`` or ``/* */`` style syntax for single line comments, do not use
+  ``#``
+- Use ``/* */`` style syntax for multi-line comments
+- Use ``elseif`` and not ``else if`` when given a choice. The ``else if``
   variant `only works with braced
   syntax <http://php.net/manual/en/control-structures.elseif.php>`__
-  and not colon syntax (e.g. "if: ... elseif: ... endif;").
+  and not colon syntax (e.g. ``if: ... elseif: ... endif;``).
 - For testing the same variable against multiple strings or values
-  directly, use a switch statement rather than a long chain of
-  if/elseif/elseif/elseif/.../else statements.
-- Add "TODO:" comments, when there is something to be done
-- Add "FIXME:" comments, when something is broken
-- add "NOTE:" comments, when there is something important other people
+  directly, use a ``switch`` statement rather than a long chain of
+  ``if/elseif/elseif/elseif/.../else`` statements.
+- Add ``TODO:`` comments, when there is something to be done
+- Add ``FIXME:`` comments, when something is broken
+- add ``NOTE:`` comments, when there is something important other people
   should know beyond a traditional comment, for example a warning about
   not changing code in certain ways.
 - Try to code in a readable way::
@@ -159,13 +160,13 @@ General rules
     $is_set = isset($var);
     if ($is_set) ...
 
-- Loop variables are $i, $j, $k, ...
+- Loop variables are ``$i``, ``$j``, ``$k``, ...
 
-  - Do **NOT** use $g for a loop variable, as it conflicts with the
-    global $g used by pfSense
+  - Do **NOT** use ``$g`` for a loop variable, as it conflicts with the
+    global ``$g`` used by pfSense
 
 - All switch statements must have a default
-- In classes, use "private", "protected" and "public", not "var" for
+- In classes, use ``private``, ``protected`` and ``public``, not ``var`` for
   attribute declaration
 - Do not to use deprecated or obsolete functions
 
@@ -173,7 +174,7 @@ General rules
     that will be deprecated in the future as well
 
 - If a PHP-internal function is an alias for another function, use the
-  original (i.e. use exit() instead of die())
+  original (i.e. use ``exit()`` instead of ``die()``)
 
 Indent style
 ~~~~~~~~~~~~

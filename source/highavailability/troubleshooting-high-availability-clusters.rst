@@ -148,8 +148,8 @@ If using VMware workstation on Linux for testing/modeling and CARP does
 not function, it is likely because VMware workstation is running
 non-root and cannot set the vmnet adapter in Promiscuous mode.
 
-The permissions on */dev/vmnet\** should be changed such that the user
-running VMware workstation is allowed to modify the */dev/vmnet\**
+The permissions on ``/dev/vmnet*`` should be changed such that the user
+running VMware workstation is allowed to modify the ``/dev/vmnet*``
 devices. See `the VMware KB for
 details <http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=287>`__.
 

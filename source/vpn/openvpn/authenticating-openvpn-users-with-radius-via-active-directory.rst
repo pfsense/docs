@@ -541,8 +541,8 @@ Change the name of the .ovpn file
 When connecting to the firewall OpenVPN shows a balloon announcing that
 the VPN is up. It contains a rather cryptic Windows Installer name, but
 that can be changed to something more appropriate by renaming the
-*.ovpn* file in *C:\\Windows\\Program Files\\OpenVPN\\config* (or
-*C:\\Windows\\Program Files(x86)\\OpenVPN\\config*) to whatever name the
+``.ovpn`` file in ``C:\Windows\Program Files\OpenVPN\config`` (or
+``C:\Windows\Program Files(x86)\OpenVPN\config``) to whatever name the
 balloon should show.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_122.jpg

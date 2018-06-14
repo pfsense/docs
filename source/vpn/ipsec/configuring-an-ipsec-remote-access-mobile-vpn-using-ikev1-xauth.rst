@@ -68,8 +68,8 @@ Phase 2 settings
    -  **Local Network**: *(the local network, e.g. LAN, or 0.0.0.0/0 to
       send everything over VPN)*
    -  **Protocol**: *ESP*
-   -  **Encryption Algorithms**: *AES 128* **\*only\***
-   -  **Hash Algorithms**: *SHA1* **\*only\***
+   -  **Encryption Algorithms**: *AES 128* **only**
+   -  **Hash Algorithms**: *SHA1* **only**
    -  **PFS key group**: *off*
    -  **Lifetime**: *28800*
 

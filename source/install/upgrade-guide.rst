@@ -96,7 +96,7 @@ versions.
 
 Upgrading from 32-bit to 64-bit mostly works fine with a couple caveats
 - the 32-bit RRD data is invalid on the 64-bit version and will have to
-be deleted by running *rm -rf /var/db/rrd\**. All RRD history will be
+be deleted by running ``rm -rf /var/db/rrd*``. All RRD history will be
 lost, this cannot be converted. Also after the upgrade, the *reboot*
 binary will be 64-bit which cannot run on a 32-bit platform, so the
 system will fail to reboot on its own. The firewall must be power cycled

@@ -35,9 +35,9 @@ For example: If there are two WANs and the OpenVPN server is running on
 port *1194*, set the **Interface** to *Localhost*, then add two port
 forwards:
 
--  WAN1 - *UDP*, Source *\**, Destination *WAN1 Address* port *1194*,
+-  WAN1 - *UDP*, Source \*, Destination *WAN1 Address* port *1194*,
    redirect target *127.0.0.1* port *1194*
--  WAN2 - *UDP*, Source *\**, Destination *WAN2 Address* port *1194*,
+-  WAN2 - *UDP*, Source \*, Destination *WAN2 Address* port *1194*,
    redirect target *127.0.0.1* port *1194*
 
 Configure Clients

@@ -63,7 +63,7 @@ like so:
 -  **Translation**: *Interface address* if using the WAN IP address, or
    the external VIP for the PBX
 -  **Port**: *[blank]*
--  **Static Port**: *\*CHECKED\**
+-  **Static Port**: **CHECKED**
 
 Reset States
 ------------

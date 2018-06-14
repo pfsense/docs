@@ -45,7 +45,7 @@ configuration.
 -  Rename the backup to config.xml
 
     Example: If the USB drive is E:, the path to the config file would
-    be E:\\conf\\config.xml
+    be ``E:\conf\config.xml``
 
 -  Take the USB drive and Plug it into the router
 -  Boot the install media (Memstick, disc, etc)
@@ -66,7 +66,7 @@ External Configuration Locator (ECL)
 
 This procedure is nearly identical to the PFI method in the previous
 section, but you can insert the USB disk containing the configuration
-(in */config.xml* or */config/config.xml*) at boot time *after* the
+(in ``/config.xml`` or ``/config/config.xml``) at boot time *after* the
 installation and the firewall will read it in from there.
 
 If it is the first boot post-installation, then it will also restore

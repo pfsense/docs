@@ -15,16 +15,15 @@ When adding a user, fill in a **Username** and **Password** (and
 confirmation of the password). The other information is optional, but
 may be desirable to set.
 
-A user may be added to a :doc:`group </usermanager/group-manager>` by clicking (or
-ctrl-clicking for multiple) groups, and then press the `17px\|alt="right
-pointing triangle"\|right pointing triangle <Image:icon_right.png>`__
-button to add group memberships. Groups can be removed by clicking (or
-ctrl-clicking for multiple) and then pressing `17px\|alt="left pointing
-triangle"\|left pointing triangle <Image:icon_left.png>`__.
+A user may be added to a :doc:`group </usermanager/group-manager>` by clicking
+(or ctrl-clicking for multiple) groups, and then clicking
+|fa-angle-double-right| to add group memberships. Groups can be removed by
+clicking (or ctrl- clicking for multiple) and then pressing
+|fa-angle-double-left|.
 
-If this user will be accessing the system with SSH, and key-based
-authentication may be used instead of passwords. Paste their public ssh
-key into the **Authorized Keys** box.
+If this user will be accessing the firewall with SSH, and key-based
+authentication may be used instead of passwords. Paste their public ssh key into
+the **Authorized Keys** box.
 
 When editing an existing user, the user's **Effective Privileges** will
 be displayed based on group membership and additional permissions may be

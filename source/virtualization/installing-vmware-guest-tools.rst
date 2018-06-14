@@ -57,7 +57,7 @@ Ignore any settings or changes mentioned by the script.
 A little startup script is required to add the compat6x library path at
 boot time, or else the VMware tools won't fully start up properly::
 
-  echo '#\!/bin/sh' > /usr/local/etc/rc.d/000-ldconfig.sh
+  echo '#!/bin/sh' > /usr/local/etc/rc.d/000-ldconfig.sh
   echo '/sbin/ldconfig -m /usr/local/lib/compat' >> /usr/local/etc/rc.d/000-ldconfig.sh
   chmod a+x /usr/local/etc/rc.d/000-ldconfig.sh
 

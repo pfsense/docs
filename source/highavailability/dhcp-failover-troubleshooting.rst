@@ -13,7 +13,7 @@ Troubleshooting DHCP Failover
    sync between the two nodes, which can lead to inconsistencies in the
    failover numbering and can make certain configurations fail. This
    should be fixed on current releases, but in some cases may still
-   require hand-edit corrections to *config.xml* to make sure primary
+   require hand-edit corrections to ``config.xml`` to make sure primary
    and secondary nodes match.
 #. Stop and restart the DHCP daemon from **Status > Services** on both
    nodes and check the status after a few moments
@@ -22,6 +22,6 @@ Troubleshooting DHCP Failover
    versions may have problems with various aspects of DHCP failover that
    have already been corrected.
 #. If all else fails, stop the DHCP daemon on both nodes, remove the
-   DHCP lease database from */var/dhcpd/var/db/dhcpd.leases\**, then
+   DHCP lease database from ``/var/dhcpd/var/db/dhcpd.leases*``, then
    start the daemons again.
 

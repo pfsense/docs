@@ -329,7 +329,7 @@ pre-shared keys.
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_042.jpg
 
 A shortcut may be created directly to the tunnel: create a shortcut to
-ipsecc.exe (in c:\\program files etc.). Right-click the shortcut and
+ipsecc.exe (in ``c:\program files`` etc.). Right-click the shortcut and
 choose **Properties**. In the **Target** field, add **-a -r
 "MyTunnel"**. -a means: start automatically. This starts the connection
 without the user having to press the Connect button. -r specifies the

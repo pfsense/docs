@@ -17,11 +17,9 @@ When adding a group, a **Group name** is required. It may not contain
 spaces. A **Description** is optional, but recommended.
 
 Group membership may also be managed on the group editing page. To add a
-user, click or ctrl-click user(s), and then press the `17px\|alt="right
-pointing triangle"\|right pointing triangle <Image:icon_right.png>`__
-button to add them to this group. Members can be removed by clicking (or
-ctrl-clicking for multiple) and then pressing `17px\|alt="left pointing
-triangle"\|left pointing triangle <Image:icon_left.png>`__.
+user, click or ctrl-click user(s), and then click |fa-angle-double-right|
+to add them to this group. Members can be removed by clicking (or
+ctrl-clicking for multiple) and then clicking |fa-angle-double-left|.
 
 A user may also be added to a group by editing the user and managing
 their groups on that page instead.

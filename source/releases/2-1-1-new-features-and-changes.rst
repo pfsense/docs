@@ -47,7 +47,7 @@ Interfaces
 ----------
 
 -  Updated em/igb/ixgb/ixgbe drivers that add support for i210 and i354
-   NICs and fix issues with ix\* cards.
+   NICs and fix issues with ``ix(4)`` cards.
 -  Prevent assigned vlans from having their tag changed.
 -  Fix ifconfig error on gif in certain cases.
 -  If rc.newwanip is run on an interface that should not have an IP

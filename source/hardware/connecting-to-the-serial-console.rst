@@ -114,7 +114,8 @@ For example::
 
   # screen /dev/ttyUSB0 115200
 
-The standard screen controls apply. **Press Ctrl-A, \\** to quit.
+The standard screen controls apply. Press ``Ctrl-A``, ``\`` to quit, or
+``Ctrl-A``, ``Ctrl-\`` in some cases.
 
 tip
 ~~~
