@@ -72,7 +72,6 @@ hostname.
 If this message is encountered when a client attempted to access a
 forwarded service (Port forward, 1:1 NAT, relayd, etc) it indicates that
 the request did not match any NAT rules. From the inside of the network,
-this would require NAT reflection or split DNS to accomplish. See `Why
-can't I access forwarded ports on my WAN IP from my LAN/OPTx
-networks <Why_can't_I_access_forwarded_ports_on_my_WAN_IP_from_my_LAN/OPTx_networks>`__
-for more details.
+this would require NAT reflection or split DNS to accomplish.
+
+.. seealso:: :doc:`/nat/accessing-port-forwards-from-local-networks`

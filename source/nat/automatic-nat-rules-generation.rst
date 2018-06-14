@@ -11,12 +11,12 @@ WAN IP.
 
 In a default multi-WAN configuration, pfSense automatically generates
 NAT rules to NAT any internal subnet leaving any interface with a
-gateway (including `OPT WAN <OPT_WAN>`__ connections).
+gateway.
 
 The Outbound NAT Configuration may be changed by visiting **Firewall >
 NAT** on the **Outbound** tab.
 
-With :doc:`Manual Outbound NAT </nat/advanced-outbound-nat>` (`AON <AON>`__),
+With :doc:`Manual Outbound NAT </nat/advanced-outbound-nat>`,
 this automatic rule generation may be disabled and custom outbound NAT
 rules may be defined manually. When switching to **Manual Outbound NAT**
 without any rules defined, a set of rules is created automatically that

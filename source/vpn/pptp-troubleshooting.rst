@@ -43,20 +43,6 @@ Work-arounds:
 
 -  Use 1:1 or outbound NAT with multiple public IP's
 
-Outbound PPTP with PPTP Server Enabled
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Also, there is a pf limitation that stops any outbound PPTP connections
-from working if the PPTP Server on pfSense is enabled. This is a known
-issue with no simple work around. It may be possible to direct traffic
-bound for a specific remote PPTP server out a secondary WAN. See `this
-how-to <Connect_to_a_remote_PPTP_server_with_the_pfSense_PPTP_server_enabled>`__.
-
-Problems when pfSense is the PPTP Server
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Ensure that ALL protocols are being passed on the PPTP Firewall Rule tab
-
 Other tips
 ^^^^^^^^^^
 

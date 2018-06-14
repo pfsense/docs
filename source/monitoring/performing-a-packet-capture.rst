@@ -45,8 +45,8 @@ grabbed.
 iftop
 -----
 
-A second method of sniffing traffic via a shell is with iftop. The
-method of installing iftop is highlighted at `Add_Packages <Add_Packages>`__.
+A second method of sniffing traffic via a shell is with iftop, which is availabe
+in the package repository.
 
 iftop allows designating the interface from which to grab traffic.
 

@@ -25,16 +25,17 @@ The |fa-info| icon next to the source and destination addresses will attempt to
 reverse resolve the IP address into a hostname via DNS.
 
 The |fa-minus-square-o| icon next to the source address will add a full block
-for traffic coming from that IP address via `Easy Rule <Easy_Rule>`__. The
-|fa-plus-square-o| icon next to the destination address also invokes `Easy Rule
-<Easy_Rule>`__, and will add a pass rule for traffic of this protocol, going
-from the source IP address to the destination IP address on the destination
-port.
+for traffic coming from that IP address via :doc:`Easy Rule
+</firewall/adding-rules-with-easyrule>`. The |fa-plus-square-o| icon next to the
+destination address also invokes :doc:`Easy Rule
+</firewall/adding-rules-with-easyrule>`, and will add a pass rule for traffic of
+this protocol, going from the source IP address to the destination IP address on
+the destination port.
 
 If the logged entry is from a TCP connection, the TCP flags may also be
-displayed. For more information, see `What are TCP Flags? <What_are_TCP_Flags?>`__.
+displayed. For more information, see :doc:`/routing/list-of-routing-table-flags`.
 
-.. seealso:: `Logs show "blocked" for traffic from a legitimate connection, why? <Logs_show_"blocked"_for_traffic_from_a_legitimate_connection,_why?>`__
+.. seealso:: :doc:`/firewall/troubleshooting-blocked-log-entries-for-legitimate-connection-packets`
 
 Firewall Log Dynamic View
 -------------------------

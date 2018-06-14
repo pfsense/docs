@@ -21,8 +21,8 @@ demonstrated.
 If a Site-To-Site OpenVPN connection is desired instead, see one of the
 following pages:
 
--  :doc:`OpenVPN Site To Site </vpn/openvpn/configuring-a-site-to-site-static-key-openvpn-instance>`
--  `OpenVPN Site-to-Site PKI (SSL) <OpenVPN_Site-to-Site_PKI_(SSL)>`__
+-  :doc:`/vpn/openvpn/configuring-a-site-to-site-pki-ssl-openvpn-instance`
+-  :doc:`/vpn/openvpn/configuring-a-site-to-site-static-key-openvpn-instance`
 
 OpenVPN Wizard
 --------------

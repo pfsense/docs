@@ -7,11 +7,11 @@ Overview
 --------
 
 The L2TP (Layer 2 Tunneling Protocol) VPN protocol allows L2TP-only
-clients to connect remotely. It works much like the
-`PPTP <PPTP_VPN_Settings>`__ server, in that it tunnels Layer 2 Traffic.
+clients to connect remotely. It is capable of tunneling Layer 2 Traffic and
+above.
 
-Note that by itself, L2TP is **not** a secure protocol; it only provides
-tunneling, but not any cencruption.
+.. warning:: L2TP is **not** a secure protocol by itself; it only provides
+   tunneling, **not encryption**.
 
 Setup
 -----

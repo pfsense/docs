@@ -24,11 +24,8 @@ and enter a **Description**.
 Only actual gateways, not gateway groups, may be chosen for a static
 route.
 
-See Also
-
--  `Why can't I query SNMP, use syslog, NTP, or other services initiated
-   by the firewall itself over IPsec
-   VPN? <Why_can't_I_query_SNMP,_use_syslog,_NTP,_or_other_services_initiated_by_the_firewall_itself_over_IPsec_VPN?>`__
--  :doc:`Asymmetric Routing and Firewall Rules </firewall/troubleshooting-blocked-log-entries-due-to-asymmetric-routing>`
--  :doc:`Bypassing Policy Routing </routing/bypassing-policy-routing>`
+.. seealso::
+   * :doc:`/vpn/ipsec/accessing-firewall-services-over-ipsec-vpns`
+   * :doc:`Asymmetric Routing and Firewall Rules </firewall/troubleshooting-blocked-log-entries-due-to-asymmetric-routing>`
+   * :doc:`Bypassing Policy Routing </routing/bypassing-policy-routing>`
 

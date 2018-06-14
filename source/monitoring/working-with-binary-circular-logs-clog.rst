@@ -1,7 +1,7 @@
 .. include:: /substitutions.rsti
 
-Why can't I view view log files with cat/grep/etc? (clog)
-=========================================================
+Working with Binary Circular Logs (clog)
+========================================
 
 pfSense uses a Circular Log format known as *clog* to maintain a
 constant log size.

@@ -28,4 +28,4 @@ Individual states can be removed by clicking |fa-trash| at the end of the row.
 All states can be reset by using the :doc:`Reset States </firewall/reset-states>`
 tab.
 
-.. seealso:: `How can I increase the state table size? <How_can_I_increase_the_state_table_size?>`__
+.. seealso:: :doc:`/firewall/increasing-the-state-table-size`

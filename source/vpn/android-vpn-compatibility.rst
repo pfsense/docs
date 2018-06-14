@@ -105,10 +105,9 @@ later. Some Android IPsec GUIs may have an option to manually set an
 identifier. If that is present, it can work.
 
 PSK v1 (AES, xauth, aggressive) works against a 2.0 server when properly
-configured. This combination is reported to work well - see `IPsec Road
-Warrior/Mobile Client
-How-To <IPsec_Road_Warrior/Mobile_Client_How-To>`__ for configuration
-details.
+configured. This combination is reported to work well - see
+:doc:`/vpn/ipsec/configuring-an-ipsec-remote-access-mobile-vpn-using-ikev1-xauth`
+for configuration details.
 
 If another mode works that is not listed, let us know. The certificate
 method (Cert v1 (AES, aggressive)) should work in theory but has not yet

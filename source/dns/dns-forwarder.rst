@@ -43,7 +43,6 @@ reach the DNS Forwarder service on the firewall.**
 
 See Also
 
-- :doc:`Why can't I access forwarded ports on my WAN IP from my LAN/OPTx networks?
-  </nat/accessing-port-forwards-from-local-networks>` (Information on Split DNS)
-- :doc:`How do I clear the DNS Forwarder cache? </dns/clearing-the-dns-forwarder-cache>`
+- :doc:`/nat/accessing-port-forwards-from-local-networks` (Information on Split DNS)
+- :doc:`/dns/clearing-the-dns-forwarder-cache`
 

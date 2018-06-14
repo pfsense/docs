@@ -11,10 +11,9 @@ Linux, Android, iOS, etc), and it allows much more flexibility in
 routing than IPsec.
 
 OpenVPN configuration is performed under **VPN > OpenVPN**. For more
-details and How-To articles, see
-`:Category:OpenVPN <:Category:OpenVPN>`__ or for the most thorough and
-easy-to-follow documentation, see `pfSense: The Definitive
-Guide <http://pfsense.org/book>`__.
+details and How-To articles, see :doc:`/vpn/openvpn/index` or for the most
+thorough and easy-to-follow documentation, see `pfSense: The Definitive Guide
+<http://pfsense.org/book>`__.
 
 OpenVPN requires the use of a PKI CA/certificate structure setup for
 configurations using SSL/TLS. The certificates for a PKI setup can be

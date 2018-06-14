@@ -97,12 +97,10 @@ Notes
 Why use port 443/tcp ?
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Listening on port 443/tcp is optional but can be useful. Many firewalls
-allow outbound access to destination port 443/tcp (https) or the ability
-of OpenVPN to go through web proxies may be utilized. There tend to be
-less problems using port 433. If there is only one external IP address
-available and need to run a web server on it then this will be
-impractical, use port 1194 in that case, or see `Sharing a Port with
-OpenVPN and a Web
-Server <Sharing_a_Port_with_OpenVPN_and_a_Web_Server>`__. UDP is best
-for VPNs, but port 443 is used, then use TCP.
+Listening on port 443/tcp is optional but can be useful. Many firewalls allow
+outbound access to destination port 443/tcp (https) or the ability of OpenVPN to
+go through web proxies may be utilized. There tend to be less problems using
+port 433. If there is only one external IP address available and need to run a
+web server on it then this will be impractical, use port 1194 in that case, or
+see :doc:`/vpn/openvpn/sharing-a-port-between-openvpn-and-a-web-server`. UDP is
+best for VPNs, but if port 443 is used, then use TCP.

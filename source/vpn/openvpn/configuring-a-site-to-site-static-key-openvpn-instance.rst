@@ -7,8 +7,9 @@ Connecting two sites using OpenVPN is very simple. One side is
 configured as a client, and the other as a server. OpenVPN in shared key
 mode is the recommend method for site to site connections, unless there
 are a half dozen or more sites. For PKI and advanced
-options/configurations see `OpenVPN Site-to-Site PKI (SSL) <OpenVPN_Site-to-Site_PKI_(SSL)>`__
-and the `pfSense book <http://pfsense.org/book>`__.
+options/configurations see
+:doc:`/vpn/openvpn/configuring-a-site-to-site-pki-ssl-openvpn-instance` and the
+`pfSense book <http://pfsense.org/book>`__.
 
 The instructions below are for basic site to site connectivity. For
 other modes such as SSL/TLS, or remote access, look in the
@@ -34,7 +35,7 @@ traffic will be blocked and the VPN will fail to connect. To allow or
 filter incoming traffic inside the VPN tunnel, add rules to the
 **OpenVPN** tab under **Firewall > Rules**.
 
-For more than 6 site to site connections, `SSL/TLS (PKI) <OpenVPN_Site-to-Site_PKI_(SSL)>`__
+For more than 6 site to site connections, :doc:`SSL/TLS (PKI) </vpn/openvpn/configuring-a-site-to-site-pki-ssl-openvpn-instance>`
 can be a better fit for ease of management. Both methods work and require a fair
 amount of configuration on the server for each site, but there is lower overhead
 with SSL/TLS since it runs a single server process.

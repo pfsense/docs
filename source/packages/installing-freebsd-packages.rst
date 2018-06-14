@@ -24,7 +24,8 @@ it will be deleted. A custom startup script must be created in
 **/usr/local/etc/rc.d/** and its name must end with **.sh** and it must be
 marked executable (``chmod +x``), and it will run at boot time.
 Alternatively if it's something that can be started with a single
-command then it can easily be added as a `\<shellcmd\> in config.xml <Executing_commands_at_boot_time>`_.
+command then it can easily be added as a :doc:`\<shellcmd\> in config.xml
+</development/executing-commands-at-boot-time>`.
 
 pfSense 2.3
 -----------

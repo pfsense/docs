@@ -10,5 +10,6 @@ that support the technology.
 
 Multi-WAN IPv6 is also possible, see :doc:`Multi-WAN for IPv6 </routing/multi-wan-for-ipv6>`
 
-For guides on implementing Multi-WAN, see :doc:`Multi-WAN </routing/multi-wan>`
-and/or `Multi-Link PPP (MP/MLPPP) <Multi-Link_PPP_(MP/MLPPP)>`__
+.. seealso::
+   For guides on implementing Multi-WAN, see :doc:`Multi-WAN
+   </routing/multi-wan>` and/or :doc:`/interfaces/multi-link-ppp-mp-mlppp`.

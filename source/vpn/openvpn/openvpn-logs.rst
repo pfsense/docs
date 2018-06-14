@@ -13,6 +13,6 @@ traffic likely is not reaching the OpenVPN daemon. Check the WAN-side
 firewall rules and the address/port used by the client.
 
 There are several OpenVPN troubleshooting articles found in
-`:Category:OpenVPN <:Category:OpenVPN>`__, and in `The pfSense
-Book <https://www.pfsense.org/our-services/gold-membership.html>`__
+:doc:`/vpn/openvpn/index`, and in `The pfSense Book
+<https://www.pfsense.org/our-services/gold-membership.html>`__
 

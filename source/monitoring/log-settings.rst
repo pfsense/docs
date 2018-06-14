@@ -19,7 +19,7 @@ be increased at will. This will not resize the log files, however, only
 how many are displayed.
 
 **Log File Size (bytes)**: The size allocated for each
-`circular log file <Why_can't_I_view_view_log_files_with_cat/grep/etc?_(clog)>`__.
+:doc:`circular log file </monitoring/working-with-binary-circular-logs-clog>`.
 Defaults to 500KB per file. Described in more detail in
 :doc:`Adjusting the Size of Log Files </monitoring/adjusting-the-size-of-log-files>`.
 
@@ -78,9 +78,8 @@ non-default port.
 **Remote Syslog Contents**: Select the items which will be sent via
 remote syslog. **Everything** is the preferred choice.
 
-See also
-
--  :doc:`Copying Logs to a Remote Host with Syslog </monitoring/copying-logs-to-a-remote-host-with-syslog>`
--  `Why can't I query SNMP, use syslog, NTP, or other services initiated by the firewall itself over IPsec VPN? <Why_can't_I_query_SNMP,_use_syslog,_NTP,_or_other_services_initiated_by_the_firewall_itself_over_IPsec_VPN?>`__
--  `Why can't I view view log files with cat/grep/etc? (clog) <Why_can't_I_view_view_log_files_with_cat/grep/etc?_(clog)>`__
--  :doc:`Adjusting the Size of Log Files </monitoring/adjusting-the-size-of-log-files>`
+.. seealso::
+   * :doc:`Copying Logs to a Remote Host with Syslog </monitoring/copying-logs-to-a-remote-host-with-syslog>`
+   * :doc:`/vpn/ipsec/accessing-firewall-services-over-ipsec-vpns`
+   * :doc:`/monitoring/working-with-binary-circular-logs-clog`
+   * :doc:`Adjusting the Size of Log Files </monitoring/adjusting-the-size-of-log-files>`

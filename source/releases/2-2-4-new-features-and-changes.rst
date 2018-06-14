@@ -23,9 +23,8 @@ Security/Errata Notices
    does not apply to pfSense. pfSense did not include a vulnerable
    version of OpenSSL, and thus was not vulnerable.
 
--  Further fixes for `file
-   corruption <File_Corruption_(503_errors,_cannot_get_uid)>`__ in
-   various cases during an unclean shut down (crash, power loss, etc.).
+-  Further fixes for file corruption  in various cases during an unclean shut
+   down (crash, power loss, etc.).
    `#4523 <https://redmine.pfsense.org/issues/4523>`__
 
    -  Fixed pw in FreeBSD to address passwd/group corruption

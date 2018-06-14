@@ -24,4 +24,4 @@ large routing tables such as those found with a full BGP feed.
 -  **Update**: Click this button to save settings and redisplay the
    routing table.
 
-.. seealso:: `What do the flags on the routing table mean? <What_do_the_flags_on_the_routing_table_mean?>`__
+.. seealso:: :doc:`/routing/list-of-routing-table-flags`

@@ -14,4 +14,4 @@ These graphs measure things such as CPU usage, memory usage, state table
 usage, throughput (in bytes as well as packets), link quality, traffic
 shaping queue usage, and so on.
 
-.. seealso:: `How can I monitor bandwidth usage? <How_can_I_monitor_bandwidth_usage?>`__
+.. seealso:: :doc:`/monitoring/monitoring-bandwidth-usage`
