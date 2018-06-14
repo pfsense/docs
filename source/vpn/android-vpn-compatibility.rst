@@ -133,8 +133,7 @@ Android 4.1 (Jelly Bean) IPsec
 ------------------------------
 
 Should be identical to 4.0. One report so far of a working configuration
-with XAuth:
-`1 <http://lists.pfsense.org/pipermail/list/2013-February/003499.html>`__
+with XAuth
 
 Android 4.2 (Jelly Bean) IPsec
 ------------------------------
@@ -145,15 +144,13 @@ Android 4.2.2 (Jelly Bean) IPsec
 --------------------------------
 
 Should be identical to 4.2. One report so far of a working configuration
-with XAuth:
-`2 <http://lists.pfsense.org/pipermail/list/2013-September/004575.html>`__
+with XAuth
 
 Android 4.3 (Jelly Bean) IPsec
 ------------------------------
 
 Should be identical to 4.2.x. One report so far of a working
-configuration with XAuth:
-`3 <http://lists.pfsense.org/pipermail/list/2013-September/004575.html>`__
+configuration with XAuth
 
 Android 4.4 (KitKat) IPsec
 --------------------------
@@ -195,10 +192,9 @@ Testing results
 The FEAT VPN client has been tested and shown towork on an Asus
 Transformer Prime and a Motorola Droid Razr, both with Android 4.0.x.
 
-`Stefan Baur confirms <http://lists.pfsense.org/pipermail/list/2013-November/005176.html>`__
-that the FEAT client works on his Motorola Milestone 2 (aka European/GSM
-"Droid 2"), and that none of the clients he tested work under Android
-v4.4 (KitKat).
+A user confirms that the FEAT client works on his Motorola Milestone 2 (aka
+European/GSM "Droid 2"), and that none of the clients he tested work under
+Android v4.4 (KitKat).
 
 Exporting configuration
 ~~~~~~~~~~~~~~~~~~~~~~~
