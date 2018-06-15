@@ -128,5 +128,5 @@ either via the console or via SSH unless otherwise specified.
 -  With this information in hand, Google and the |forum_link| can be a very good
    resource.
 
-*Adapted from / Previously reprinted with permission from
-`Sky <http://www.fusionnetwork.us/index.php/component/content/article/15-general-tutorials/23-pfsense-openvpn-freeradius>`__*
+*Adapted from / Previously reprinted with permission from*
+http://www.fusionnetwork.us/index.php/component/content/article/15-general-tutorials/23-pfsense-openvpn-freeradius
