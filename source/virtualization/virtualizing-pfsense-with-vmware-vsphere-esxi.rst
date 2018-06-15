@@ -68,12 +68,11 @@ using WAN and LAN switches respectively.
 Creating a pfSense VM
 ---------------------
 
-Now that the networking part is done, we continue to create a virtual
-machine. From the dashboard click on "Create/Register VM". On the first
-wizard screen select "Create a new virtual machine". pfSense Gold
-subscribers can download pre-made VMware certified pfSense OVA and
-select the second option "Deploy a virtual machine from an OVF or OVA
-file"
+Now that the networking part is done, we continue to create a virtual machine.
+From the dashboard click on "Create/Register VM". On the first wizard screen
+select "Create a new virtual machine". Users with at |premium_content_link| can
+download pre-made VMware certified pfSense OVA and select the second option
+"Deploy a virtual machine from an OVF or OVA file"
 
 .. image:: /_static/virtualization/vsphereweb1.png
 

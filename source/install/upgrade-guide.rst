@@ -16,15 +16,13 @@ Pre-Upgrade Tasks
 Make a backup!
 ^^^^^^^^^^^^^^
 
-First, as always before any major change to the firewall, make sure
-there is a good, up-to-date backup. Visit **Diagnostics >
-Backup/Restore** and download a backup of the firewall configuration
-(*config.xml*). Those with a `pfSense
-Gold <https://www.pfsense.org/our-services/gold-membership.html>`__
-subscription may also use the :doc:`AutoConfigBackup </backup/autoconfigbackup>`
-package to make a manual backup noting the reason as "before upgrade".
-Keeping a local and remote copy of the backup *config.xml* is strongly
-advised.
+First, as always before any major change to the firewall, make sure there is a
+good, up-to-date backup. Visit **Diagnostics > Backup/Restore** and download a
+backup of the firewall configuration (``config.xml``). Those with a
+|premium_content_link| may also use the :doc:`AutoConfigBackup
+</backup/autoconfigbackup>` package to make a manual backup noting the reason as
+"before upgrade". Keeping a local and remote copy of the backup *config.xml* is
+strongly advised.
 
 Prepare a fall back plan
 ^^^^^^^^^^^^^^^^^^^^^^^^

@@ -9,7 +9,7 @@ mode is the recommend method for site to site connections, unless there
 are a half dozen or more sites. For PKI and advanced
 options/configurations see
 :doc:`/vpn/openvpn/configuring-a-site-to-site-pki-ssl-openvpn-instance` and the
-`pfSense book <http://pfsense.org/book>`__.
+|book_link|.
 
 The instructions below are for basic site to site connectivity. For
 other modes such as SSL/TLS, or remote access, look in the

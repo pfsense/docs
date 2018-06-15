@@ -130,8 +130,8 @@ lighttpd to write the error log for the debug messages. Once the GUI has
 restarted, try the LDAP query again, and then check
 */var/log/lighttpd-breakage.log* which should have sufficient detail to
 track down the cause of the problem. If assistance is needed with
-decoding the output, post in the forum for help or seek assistance from
-`pfSense Commercial Support <https://portal.pfsense.org>`__.
+decoding the output, post in the |forum_link| or |subreddit| for help or seek
+assistance from |support_link|.
 
 Group Membership
 ----------------

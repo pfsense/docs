@@ -69,7 +69,7 @@ configuration on a machine running the OpenVPN client or use the connect
 client downloaded at the same URL.
 
 It is now possible to connect and go to a site that reports the client
-IP address, such as https://pfsense.org/ip.php, which should show the IP
+IP address, such as http://checkip.dyndns.org/, which should show the IP
 address of the VPN server to confirm that the client traffic is using
 the VPN. Once that is working, pfSense may be configured to use the info
 in the *.ovpn* file

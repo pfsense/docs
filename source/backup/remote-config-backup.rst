@@ -3,14 +3,13 @@
 Performing a Remote Backup of a pfSense Configuration
 =====================================================
 
-Purchase a Gold Subscription and use the Auto Config Backup Package
--------------------------------------------------------------------
+Use the Auto Config Backup Package
+----------------------------------
 
-The easiest choice. Install the :doc:`/backup/autoconfigbackup` package, and enter the `subscription
-information <https://portal.pfsense.org/index.php/gold-subscription>`_,
-and rest easy knowing it's being taken care of without needing to worry.
-Sit back, have a cup of coffee, and read on to see what the other guys
-have to do.
+The easiest choice. Install the :doc:`/backup/autoconfigbackup` package, and
+enter the |premium_content_link| information, and rest easy knowing it's being
+taken care of without needing to worry. Sit back, have a cup of coffee, and read
+on to see what the other guys have to do.
 
 Pull it
 -------

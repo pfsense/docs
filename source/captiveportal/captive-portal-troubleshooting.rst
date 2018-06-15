@@ -4,7 +4,7 @@ Troubleshooting Captive Portal
 ==============================
 
 The best source of captive portal troubleshooting information can be found in
-the `pfSense book <http://pfsense.org/book>`__.
+the |book_link|.
 
 Captive portal not redirecting
 ------------------------------

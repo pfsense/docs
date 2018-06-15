@@ -29,8 +29,7 @@ either *Managed* or *Assisted* mode on the **Router Advertisements**
 tab.
 
 The other settings may be configured, but are optional. Each option is
-explained in more detail on the page and also in `pfSense: The
-Definitive Guide <https://portal.pfsense.org/gold-subscription.php>`_.
+explained in more detail on the page and also in the |book_link|.
 
 .. note:: DHCPv6 does not provide gateway information. :doc:`Router Advertisements </routing/configuring-ipv6-router-advertisements>` tell hosts on the network how
    to reach a router. DHCPv6 is for other host configuration such as DNS,

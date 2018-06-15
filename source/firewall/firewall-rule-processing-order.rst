@@ -3,14 +3,12 @@
 Firewall Rule Processing Order
 ==============================
 
-Rules in pfSense are processed in a specific order. Understanding this
-order is especially important when crafting more complicated sets of
-rules and when troubleshooting. This document is intended to give a
-*general* idea of how rules are processed. It can be much more
-complicated, especially when :doc:`floating rules are involved </firewall/floating-rules>`
-and *out* direction rules are used. See `The pfSense
-Book <https://www.pfsense.org/our-services/gold-membership.html>`__ for
-more in-depth information.
+Rules in pfSense are processed in a specific order. Understanding this order is
+especially important when crafting more complicated sets of rules and when
+troubleshooting. This document is intended to give a *general* idea of how rules
+are processed. It can be much more complicated, especially when :doc:`floating
+rules are involved </firewall/floating-rules>` and *out* direction rules are
+used. See the |book_link| for more in-depth information.
 
 Short Version
 -------------

@@ -5,21 +5,18 @@ High Availability
 *****************
 
 pfSense is capable of having multiple nodes act as a cluster for **High
-Availability**. This article is a brief overview. The **Hardware
-Redundancy** chapter in the `pfSense
-book <https://www.pfsense.org/our-services/gold-membership.html>`__
-should be consulted before configuring a high availability cluster
-utilizing CARP.
+Availability**. This article is a brief overview. The **Hardware Redundancy**
+chapter in the |book_link| should be consulted before configuring a high
+availability cluster utilizing CARP.
 
-Settings for High Availability are found under **System > High Avail.
-Sync**, and sometimes on other areas that have special handling
-(Vouchers, packages, etc.).
+Settings for High Availability are found under **System > High Avail. Sync**,
+and sometimes on other areas that have special handling (Vouchers, packages,
+etc.).
 
-Often such collections of hosts are referred to as "CARP Clusters" but
-CARP is only one aspect. High Availability is achieved using a
-combination of multiple related techniques, including CARP, State
-Synchronization (pfsync), and Configuration Synchronization (XMLRPC
-Sync).
+Often such collections of hosts are referred to as "CARP Clusters" but CARP is
+only one aspect. High Availability is achieved using a combination of multiple
+related techniques, including CARP, State Synchronization (pfsync), and
+Configuration Synchronization (XMLRPC Sync).
 
 CARP
 ----

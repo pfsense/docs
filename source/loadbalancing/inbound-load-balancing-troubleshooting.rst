@@ -3,8 +3,8 @@
 Troubleshooting Inbound Load Balancing
 ======================================
 
-A more thorough troubleshooting guide for inbound load balancing can be
-found in the `pfSense book <http://pfsense.org/book>`_.
+A more thorough troubleshooting guide for inbound load balancing can be found in
+the |book_link|.
 
 #. Ensure that all servers in the pool have pfSense set as their gateway
    (very important)

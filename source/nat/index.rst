@@ -28,7 +28,7 @@ Configuration of NAT in pfSense is categorized into three areas: Port
 Forward, 1:1 (One to One), and Outbound.
 
 See the links below for other NAT articles. The best source for NAT information
-is the `pfSense book <http://pfsense.org/book>`_.
+is the |book_link|.
 
 .. toctree::
    :maxdepth: 1

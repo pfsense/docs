@@ -14,7 +14,7 @@ repository:
 
 -  **AutoConfigBackup** - Automatically backs up your pfSense
    configuration. All contents are encrypted before being sent to the
-   server. Requires Gold Subscription.
+   server. Requires |premium_content_link|.
 
 -  **apcupsd** - Package can be used for controlling all APC UPS models
    It can monitor and log the current power and battery status, perform

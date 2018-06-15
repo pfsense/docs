@@ -22,8 +22,7 @@ Security Fixes
    `CVE-2014-8104 <http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8104>`__
 -  NTP update
    `FreeBSD-SA-14:31.ntp <https://www.freebsd.org/security/advisories/FreeBSD-SA-14:31.ntp.asc>`__
-   though these circumstances `don't seem to impact
-   pfSense <https://blog.pfsense.org/?p=1514>`__.
+   though these circumstances `don't seem to impact pfSense`_.
 
 Default Configuration Changes
 -----------------------------
@@ -297,8 +296,8 @@ Dashboard & General GUI
 -  Disk usage section of the System Information widget now shows all
    UFS, ZFS, and cd9660 filesystems, not just the root (/) slice, and
    also indicates if they are a RAM disk.
--  Add a message about Gold to the setup wizard and add a link in the
-   menu to the Gold signup page.
+-  Add a message about |premium_content_link| to the setup wizard and add a link
+   in the menu to the |premium_content_link| signup page.
 -  Add pages missing from the Status > Traffic Graph privilege that are
    required for the full page to load
 -  Fix traffic graph widget default autoscale
@@ -594,3 +593,4 @@ The NIC device change issue has no workaround. Manual reassignment is
 required at this time. Note there have been performance issues reported
 in Xen with this NIC device change.
 
+.. _don't seem to impact pfSense: https://www.netgate.com/blog/ntp-project-security-vulnerabilities.html

@@ -9,13 +9,10 @@ server, but a similar process could be applied for site to site VPNs.
 
 There are many different ways to configure multiple WANs with OpenVPN on
 pfSense for remote access or site to site VPNs. Many of these were
-covered during the September 2014 Hangout for `Gold
-Subscribers <https://www.pfsense.org/our-services/gold-membership.html>`__
-- The "Advanced OpenVPN Concepts" presentation can be downloaded by
-`Gold
-Subscribers <https://www.pfsense.org/our-services/gold-membership.html>`__
-from the Hangouts archive after login at
-https://portal.pfsense.org/members/
+covered during the September 2014 |hangout_link|.
+
+.. seealso:: The "Advanced OpenVPN Concepts" presentation is available through
+  |hangout_public_link|.
 
 OpenVPN Configuration
 ---------------------

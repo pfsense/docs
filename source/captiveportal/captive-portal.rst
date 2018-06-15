@@ -11,8 +11,7 @@ If authentication is used, this can be performed using pfSense's
 built-in user management, or an external authentication server such as a
 RADIUS server.
 
-The best source of captive portal information can be found in the
-`pfSense book <http://pfsense.org/book>`__.
+The best source of captive portal information can be found in the |book_link|.
 
 Captive Portal is configured from **Services > Captive Portal**.
 

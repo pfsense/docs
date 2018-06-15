@@ -24,8 +24,7 @@ range (starting and ending IP addresses) to use for DHCP clients must be
 defined.
 
 The other settings may be configured, but are optional. Each option is
-explained in more detail on the page and also in `The pfSense
-Book <https://www.pfsense.org/our-services/gold-membership.html>`_.
+explained in more detail on the page and also in the |book_link|.
 
 See the :doc:`DNS Forwarder </dns/dns-forwarder>` article for information on the
 default DNS server behavior.

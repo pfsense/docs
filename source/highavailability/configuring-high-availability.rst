@@ -3,10 +3,9 @@
 Configuring High Availability
 =============================
 
-**This guide is brief and omits important considerations.** The
-**Hardware Redundancy** chapter in the `pfSense
-book <http://pfsense.org/book>`__ should be consulted before configuring
-a high availability cluster utilizing CARP.
+**This guide is brief and omits important considerations.** The **Hardware
+Redundancy** chapter in the |book_link| should be consulted before configuring a
+high availability cluster utilizing CARP.
 
 .. image:: /_static/highavailability/carp_setup.png
 

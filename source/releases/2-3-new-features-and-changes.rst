@@ -68,8 +68,7 @@ noted again in the sections below, but worth emphasizing:
 Dashboard/Widgets/GUI
 ---------------------
 
--  Converted GUI to the `Bootstrap
-   framework <https://blog.pfsense.org/?p=1837>`__, completely new look
+-  Converted GUI to the `Bootstrap framework`_, completely new look
 -  Changed the GUI and Captive Portal web server to nginx; removed
    lighttpd. `#5719 <https://redmine.pfsense.org/issues/5719>`__
 -  Cleaned up a lot of GUI code, option text, etc
@@ -670,3 +669,4 @@ The 2.3_1 update upgrades NTP to fix `FreeBSD security advisory
 SA-16:16.ntp <https://www.freebsd.org/security/advisories/FreeBSD-SA-16:16.ntp.asc>`__.
 The only change is upgrading ntpd from 4.2.8p6 to 4.2.8p7.
 
+.. _Bootstrap framework: https://www.netgate.com/blog/pfsense-webgui-update-2.html

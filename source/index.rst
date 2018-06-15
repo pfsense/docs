@@ -46,15 +46,13 @@ Welcome to the pfSense Documentation site
 Recommended guides
 ------------------
 
--  :doc:`/ids-ips/setup-snort-package` -
-   Guide for setting up Snort IDS/IPS with Application ID detection and
-   filtering
--  `Virtualization <Virtualization>`_
-   - Several guides on virtualizing pfSense
--  :doc:`/certificates/acme-package` -
-   Setting up Let's Encrypt certificates with ACME package.
--  :doc:`/routing/multi-wan` - learn
-   about configuring failover and load balancing with pfSense.
+* :doc:`/ids-ips/setup-snort-package` - Guide for setting up Snort IDS/IPS with
+  Application ID detection and filtering
+* :doc:`/virtualization/index` - Several guides on virtualizing pfSense
+* :doc:`/certificates/acme-package` - Setting up Let's Encrypt certificates with
+  ACME package.
+* :doc:`/routing/multi-wan` - learn about configuring WAN failover and load
+  balancing with pfSense.
 
 Additional Support Resources
 ----------------------------
@@ -63,11 +61,8 @@ For a full list, visit https://www.netgate.com/support/
 
 Commercial Resources
 
--  The pfSense Book and monthly pfSense Hangouts include tutorials for
-   configuring various aspects of pfSense, both available to `Gold
-   Subscribers <https://www.netgate.com/our-services/gold-membership.html>`__
--  `Commercial Support <https://www.netgate.com/support/>`__ and
-   `Professional
-   Services <https://www.netgate.com/our-services/professional-services.html>`__
--  `pfSense Training <https://www.netgate.com/training/>`__
-
+* The pfSense Book and monthly pfSense Hangouts include tutorials for
+  configuring various aspects of pfSense, both available via
+  |premium_content_link|
+* |support_link| and |pse_link|
+* |training_link|

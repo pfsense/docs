@@ -44,7 +44,7 @@
    `#6669 <https://redmine.pfsense.org/issues/6669>`__
 -  Fixed various typos and wording errors.
 -  Removed defunct links to the devwiki site. Everything is on
-   https://doc.pfsense.org now.
+   https://www.netgate.com/docs/pfsense/ now.
 -  Added a field to CA/Cert pages for OU, which is required by some
    external CAs and users.
    `#6672 <https://redmine.pfsense.org/issues/6672>`__

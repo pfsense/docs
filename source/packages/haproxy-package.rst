@@ -224,5 +224,5 @@ it will only show up in the stats once.
 Package Support Status
 ----------------------
 
-This package is currently supported by |netagate_support|.
+This package is currently supported by |support_link|.
 

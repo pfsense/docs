@@ -133,7 +133,7 @@ Prior Versions
 NAT may be performed on some interfaces and not others by configuring
 Outbound NAT rules accordingly.
 
-Details may be found in `the pfSense book <http://pfsense.org/book>`__.
+Details may be found in the |book_link|.
 
 Disable NAT and Firewall
 ------------------------

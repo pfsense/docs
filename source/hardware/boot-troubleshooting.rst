@@ -176,11 +176,9 @@ Alternate Boot Managers
 `GAG <http://gag.sourceforge.net/>`__ or `Smart
 BootManager <http://sourceforge.net/projects/btmgr>`__ may be used.
 
-If all else fails, we offer `official support plans`_ and `official hardware`_
-that has been pre-loaded with pfSense and proven to work. You can also
-check out https://wiki.freebsd.org/BugBusting/Commonly_reported_issues.
-
-
+If all else fails, we offer |support_link| and hardware through the |store_link|
+that has been pre-loaded with pfSense and proven to work. You can also check
+out https://wiki.freebsd.org/BugBusting/Commonly_reported_issues.
 
 Disabling ACPI
 --------------
@@ -407,6 +405,3 @@ Conflicting Hardware
     run_interrupt_driven_hooks: still waiting after 60 seconds for xpt_action
 
   Disable any Firewire/1394 controllers and USB Card Readers in the BIOS.
-
-.. _official support plans: https://www.netgate.com/support
-.. _official hardware: https://store.netgate.com

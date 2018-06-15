@@ -6,9 +6,8 @@ VLAN Trunking
 This article will give a brief overview on VLANs and VLAN trunking to be
 used in pfSense.
 
-There is a **lot** more detail on VLANs, security issues with VLANs,
-pfSense VLAN configuration, VLAN switch configuration, and more in `The
-pfSense Book <https://www.netgate.com/our-services/gold-membership.html>`_.
+There is a **lot** more detail on VLANs, security issues with VLANs, pfSense
+VLAN configuration, VLAN switch configuration, and more in the |book_link|.
 
 Definitions
 -----------

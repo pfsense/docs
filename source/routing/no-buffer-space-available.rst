@@ -45,6 +45,6 @@ route if it has been lost. :doc:`Reset States </firewall/reset-states>`. Replaci
 the cable may also help. Removing traffic shaping if it is enabled is
 also a good test.
 
-Otherwise investigate the traffic on the NIC and look for other
-buffer-related causes. Seek help from `pfSense Commercial Support <https://portal.pfsense.org>`__ for assistance in diagnosing the
+Otherwise investigate the traffic on the NIC and look for other buffer-related
+causes. Seek help from |support_link| for assistance in diagnosing the
 issue, or post on the forum/mailing list.

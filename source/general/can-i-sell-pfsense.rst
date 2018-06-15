@@ -3,11 +3,10 @@
 Can I sell pfSense
 ==================
 
-Many consulting companies offer pfSense solutions to their customers. A
-business or individual can load pfSense for themselves, friends,
-relatives, employers, and, yes, even customers, so long as the Trademark
-Guidelines and `Apache 2.0 license`_ requirements as detailed on the
-website are obeyed by all parties involved.
+Many consulting companies offer pfSense solutions to their customers. A business
+or individual can load pfSense for themselves, friends, relatives, employers,
+and, yes, even customers, so long as the Trademark Guidelines and |license|
+requirements as detailed on the website are obeyed by all parties involved.
 
 What can not be offered is a commercial redistribution of pfSense®
 software, for example the guidelines do not permit someone to offer
@@ -33,10 +32,10 @@ Example 3: Fred's Firewalls may sell their customized firewall
 distribution pre-loaded on systems to customers, so long as the
 relationship to pfSense is clearly stated.
 
-The Apache 2.0 license only applies to the software and **not** the
-pfSense name and logo, which are trademarks and may not be used without
-a license. Reading and understanding the `RCL Terms and Conditions`_
-document is required before one considers selling pfSense Software.
+The |license| only applies to the software and **not** the pfSense name and
+logo, which are trademarks and may not be used without a license. Reading and
+understanding the `RCL Terms and Conditions`_ document is required before one
+considers selling pfSense Software.
 
 Contributing Back to the Project
 --------------------------------
@@ -48,27 +47,26 @@ received from use of pfSense software. Many paths exist for resellers
 and consultants to contribute. For the long term success of the project
 this support is critically important.
 
-#. Purchase hardware and merchandise from the `Netgate store`_.
-#. Become a `Netgate partner`_ to resell Netgate hardware pre-loaded with
-   pfSense software.
+#. Purchase hardware and merchandise from the |store_link|.
+#. Become a |partner_link| to resell Netgate hardware pre-loaded with pfSense
+   software.
 #. Development contributions - Dedicate a portion of your internal
    developers' time to open source development.
 #. Help with support and documentation - Assisting users on the forum
    and mailing list, or contributing documentation changes, aides the
    overall project.
-#. Support subscription - we're glad to help resellers under our
-   `support subscription`_.
+#. Support subscription via |support_link|
    Having direct access to our team for any questions or deployment
-   assistance helps ensure your success as a reseller.
+   assistance helps ensure your success.
 
 Using the pfSense Name and Logo
 -------------------------------
 
 The "pfSense" name and logo are trademarks of Electric Sheep Fencing, LLC.
 
-The pfSense software source code is open source and covered by the
-`Apache 2.0 license`_. That license only covers the source code and **not** our
-name and trademarks, which have restricted usage.
+The pfSense software source code is open source and covered by the |license|.
+That license only covers the source code and **not** our name and trademarks,
+which have restricted usage.
 
 We think it is great that people want to promote and support the pfSense
 project. At the same time, we also need to verify that what is referred
@@ -136,8 +134,4 @@ modified in any way.
    or implied between the two companies, unless we have explicitly
    licensed and agreed to such a statement.
 
-.. _Apache 2.0 license: https://pfsense.org/about-pfsense/#legal
-.. _Netgate partner: https://www.netgate.com/partners
-.. _Netgate store: https://store.netgate.com
-.. _support subscription: https://www.netgate.com/support
 .. _RCL Terms and Conditions: https://www.netgate.com/RCL-Terms-and-Conditions.pdf

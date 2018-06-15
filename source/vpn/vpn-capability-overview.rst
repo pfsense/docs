@@ -15,5 +15,5 @@ pfSense contains multiple VPN technologies, all of which work well.
 * Tinc (Via add-on package)
 
 The best choice for a given network depends on a number of factors. These are
-discussed in the VPN chapter of the `pfSense book <http://pfsense.org/book>`__.
+discussed in the VPN chapter of the |book_link|.
 

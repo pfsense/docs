@@ -3,10 +3,8 @@
 Using the AutoConfigBackup Service
 ==================================
 
-`Gold
-subscribers <https://www.pfsense.org/our-services/gold-membership.html>`__
-on portal.pfsense.org have access to our Automatic Configuration Backup
-Service, AutoConfigBackup.
+Users with a |premium_content_link| have access to our Automatic Configuration
+Backup Service, AutoConfigBackup.
 
 Functionality and Benefits
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -27,10 +25,8 @@ Backup Limits
 
 The most recent 100 configurations for each host are retained.
 
-`Gold
-subscribers <https://www.pfsense.org/our-services/gold-membership.html>`__
-can backup a maximum of 10 systems. If more systems are required,
-contact us for pricing information.
+Users with a |premium_content_link| can backup a maximum of 10 systems. If more
+systems are required, contact us for pricing information.
 
 Installation and Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,13 +57,12 @@ The service is configured under **Diagnostics > AutoConfigBackup**,
 **Settings** tab. Fill in the https://portal.pfsense.org username (not
 email) and password, and enter an encryption password.
 
-The username is the login name created when purchasing a Gold
-Subscription, not the e-mail address. Use a long, complex password and
-encryption key to ensure the configuration is secure. **It is very
-important to store this encryption key somewhere outside the firewall**
-- if it is lost, it will be impossible to restore a configuration the
-hard drive in the firewall fails. We retain only **encrypted**
-configurations, which are useless without the encryption key.
+The username is the login name created with the |premium_content_link|, not the
+e-mail address. Use a long, complex password and encryption key to ensure the
+configuration is secure. **It is very important to store this encryption key
+somewhere outside the firewall** - if it is lost, it will be impossible to
+restore a configuration the hard drive in the firewall fails. We retain only
+**encrypted** configurations, which are useless without the encryption key.
 
 Testing Backup Functionality
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
