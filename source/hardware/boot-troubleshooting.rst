@@ -162,13 +162,13 @@ Vendor-Specific Issues
 
   - Escape to the loader prompt during bootup and run::
 
-      set hw.clflush_disable=1``
-      boot``
+      set hw.clflush_disable=1
+      boot
 
     At that point, boot the rest of the way and install pfSense. After
     installation, add the following line to /boot/loader.conf.local::
 
-      hw.clflush_disable=1``
+      hw.clflush_disable=1
 
 Alternate Boot Managers
 -----------------------

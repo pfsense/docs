@@ -408,7 +408,9 @@ Go to **System > Packages**, **Available Packages** tab.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_106.jpg
 
-Scroll down to **:doc:`OpenVPN Client Export Package </vpn/openvpn/using-the-openvpn-client-export-package>`** and click |fa-plus| on the right.
+Scroll down to :doc:`OpenVPN Client Export Package
+</vpn/openvpn/using-the-openvpn-client-export-package>` and click |fa-plus| on
+the right.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_107.jpg
 

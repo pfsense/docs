@@ -47,7 +47,7 @@ line in the following format, preceded by the "server:" line.
 
 .. code::
 
-  server:``
+  server:
   private-domain: "example.com"
 
 Web interface protection

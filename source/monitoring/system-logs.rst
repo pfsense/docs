@@ -14,8 +14,6 @@ If something is not working properly, a message may be found here
 indicating an error condition or informational messages about system
 activity.
 
-Logs for other subsystems are located on individual tabs at the top of
-the log view. Click on a tab to view one of the other logs, or click the
-**:doc:`Settings </monitoring/log-settings>`** tab to make changes to the logging
-behavior.
-
+Logs for other subsystems are located on individual tabs at the top of the log
+view. Click on a tab to view one of the other logs, or click the :doc:`Settings
+</monitoring/log-settings>` tab to make changes to the logging behavior.
