@@ -11,10 +11,9 @@ Clients also exist for Windows, OSX, and so on.
 This document covers the most common setup for mobile devices, which is
 IPsec using Xauth and a mutual Pre-Shared Key.
 
-This setup has been tested and working on various
-`Android <#Device_Setup_(Android)>`__ and `iOS <#Device_Setup_(iOS)>`__
-devices (see text and links below for more detail). Other clients may
-work as well.
+This setup has been tested and working on various :ref:`Android
+<ipsec-ikev1-setup-android>` and :ref:`iOS <ipsec-ikev1-setup-ios>` devices (see
+text and links below for more detail). Other clients may work as well.
 
 IPsec Server Setup
 ------------------
@@ -106,6 +105,8 @@ IPsec SA Preference
 -  **System > Advanced**, **Miscellaneous** tab.
 -  Uncheck **Prefer Old IPsec SA**
 
+.. _ipsec-ikev1-setup-android:
+
 Device Setup (Android)
 ----------------------
 
@@ -130,6 +131,8 @@ Device Setup (Android)
 -  **Internal Subnet IP**: *Whatever subnet(s) were specified in Phase 2
    above*.
 -  Finish
+
+.. _ipsec-ikev1-setup-ios:
 
 Device Setup (iOS)
 ------------------

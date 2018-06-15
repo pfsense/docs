@@ -80,5 +80,6 @@ Usage with Multiple Switches
 ----------------------------
 
 Some protocols such as LACP will only work across multiple switches if
-the switches are `Stackable <Wikipedia:Stackable_switch>`__.
+the switches are `Stackable`_.
 
+.. _Stackable: https://en.wikipedia.org/wiki/Stackable_switch

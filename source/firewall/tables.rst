@@ -13,10 +13,10 @@ The current contents of tables on pfSense may be viewed at **Diagnostics
 
 The following tables have been automatically pre-defined:
 
--  **`bogons <Show_Bogons>`__**
--  **`sshlockout <sshlockout>`__**
--  **`snort2c <Setup_Snort_Package>`__**
--  **`virusprot <virusprot>`__**
+* :doc:`bogons </firewall/show-bogons>`
+* :doc:`sshlockout </firewall/sshlockout>`
+* :doc:`snort2c </ids-ips/setup-snort-package>`
+* :doc:`virusprot </firewall/virusprot>`
 
 The contents of :doc:`Aliases </firewall/aliases>` will typically show up as tables
 in this list, depending on their length and contents.
