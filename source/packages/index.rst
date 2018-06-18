@@ -4,15 +4,15 @@
 Packages
 ********
 
-Users wishing to extend the functionality of their pfSense installation
-may add packages from a selection of software.
+Packages extend the functionality of pfSense software. They provide additional
+services and utilities not found in the base installation. These are all
+completely optional and are not necessary for most deployments.
 
-Packages provide additional services and utilities not found in the base
-system. These are all completely optional and are not necessary for most
-deployments.
+Management of packages is performed in the :doc:`package manager
+</packages/package-manager>` found under **System > Packages**.
 
-Management of packages is performed in the :doc:`package manager </packages/package-manager>` found under
-**System > Packages** on platforms that are capable of using packages.
+Using Packages
+''''''''''''''
 
 .. toctree::
    :maxdepth: 1
@@ -20,6 +20,15 @@ Management of packages is performed in the :doc:`package manager </packages/pack
    package-manager
    package-list
    fixing-a-broken-pkg-database
+   installing-freebsd-packages
+   2-3-removed-packages
+
+Documented Packages
+'''''''''''''''''''
+
+.. toctree::
+   :maxdepth: 1
+
    arping-package
    avahi-package
    haproxy-package
@@ -35,5 +44,3 @@ Management of packages is performed in the :doc:`package manager </packages/pack
    siproxd-package
    stunnel-package
    vnstat
-   installing-freebsd-packages
-   2-3-removed-packages

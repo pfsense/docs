@@ -4,6 +4,14 @@
 IPsec
 *****
 
+`IPsec`_ is a standards-based VPN protocol which allows traffic to be encrypted
+and authenticated between multiple hosts. Being based on published standards
+means it is compatible with nearly every other device which also supports IPsec.
+This includes a wide variety of third-party software and hardware.
+
+IPsec can be used to carry traffic across untrusted networks. Either between
+local networks or to allow remote access clients to reach local resources.
+
 .. toctree::
    :maxdepth: 1
 
@@ -31,3 +39,5 @@ IPsec
    ipsec-troubleshooting
    l2tp-ipsec-on-android
    l2tp-ipsec
+
+.. _IPsec: https://en.wikipedia.org/wiki/IPsec

@@ -4,6 +4,9 @@
 802.11 Wireless
 ***************
 
+pfSene can utilize certain 802.11 wireless cards and either act in a client role
+(Wireless WAN) or an Access Point role.
+
 .. toctree::
    :maxdepth: 1
 

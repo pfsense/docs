@@ -4,6 +4,9 @@
 Releases
 ********
 
+This section contains information about past and present release of pfSense
+software. This includes release notes and detailed version information.
+
 General Release Information
 '''''''''''''''''''''''''''
 

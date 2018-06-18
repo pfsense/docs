@@ -7,35 +7,35 @@ Welcome to the pfSense Documentation site
 .. toctree::
    :maxdepth: 2
 
-   backup/index
-   cache-proxy/index
-   captiveportal/index
-   cellular/index
-   certificates/index
+   general/index
+   releases/index
+   install/index
+   hardware/index
    config/index
-   development/index
+   backup/index
+   interfaces/index
+   wireless/index
+   cellular/index
+   routing/index
+   firewall/index
+   nat/index
+   trafficshaper/index
+   certificates/index
+   usermanager/index
+   services/index
    dhcp/index
    dns/index
-   firewall/index
-   general/index
-   hardware/index
-   highavailability/index
-   ids-ips/index
-   install/index
-   interfaces/index
+   captiveportal/index
    loadbalancing/index
+   highavailability/index
    monitoring/index
-   routing/index
-   nat/index
-   packages/index
-   releases/index
-   services/index
-   trafficshaper/index
-   troubleshooting/index
-   usermanager/index
    virtualization/index
    vpn/index
-   wireless/index
+   troubleshooting/index
+   packages/index
+   cache-proxy/index
+   ids-ips/index
+   development/index
 
 .. toctree::
    :maxdepth: 2 

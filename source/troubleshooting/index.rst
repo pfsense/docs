@@ -4,6 +4,9 @@
 Troubleshooting
 ***************
 
+This section is a catch-all of troubleshooting resources cross-referenced from
+other areas of the documentation.
+
 .. toctree::
    :maxdepth: 1
 

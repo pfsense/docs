@@ -4,6 +4,18 @@
 VPN
 ***
 
+Virtual Private Networks, on VPNs, encrypt and authenticate traffic across
+untrusted networks.
+
+A VPN can link together two remote networks as if they were directly connected,
+or it can allow remote clients to securely reach local resources. They can also
+be used to redirect outbound Internet traffic so that it exits through a
+different location.
+
+VPNs offer a secure alternative to exposing sensitive or fragile local services
+to the Internet. For example, network management services, security systems and
+cameras, file servers, printers, and many other similar network devices.
+
 .. toctree::
    :maxdepth: 1
 

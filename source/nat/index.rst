@@ -4,31 +4,24 @@
 Network Address Translation
 ***************************
 
-Network Address Translation (NAT) refers to the process of modifying
-network address information contained in datagram packet headers while
-they are in transit, generally across a device or system similar to
-pfSense, in order to map an address on one subnet to an address on
-another.
+Network Address Translation (NAT) refers to the process of modifying network
+address information contained in datagram packet headers while they are in
+transit, generally across a device or system similar to pfSense, in order to map
+an address on one subnet to an address on another.
 
-In practice the most common use of NAT is to allow a private LAN to
-communicate with the public Internet and to allow access to servers on
-the private LAN from the Internet.
+In practice the most common use of NAT is to allow a private LAN to communicate
+with the public Internet (outbound NAT) and to allow access to servers on the
+private LAN from the Internet (port forwards).
 
-For the terminally curious, a more detailed discussion of NAT is
-available at
-`Wikipedia <http://en.wikipedia.org/wiki/Network_address_translation>`_.
-
-NAT in pfSense
---------------
+.. seealso:: A more detailed discussion of NAT is available in the `Wikipedia
+   article on NAT`_.
 
 The NAT settings in pfSense are accessed via the **Firewall > NAT** menu
 in the WebGUI.
 
-Configuration of NAT in pfSense is categorized into three areas: Port
-Forward, 1:1 (One to One), and Outbound.
-
-See the links below for other NAT articles. The best source for NAT information
-is the |book_link|.
+Configuration of NAT in pfSense is categorized into four areas: Port Forwards,
+1:1 (One to One) NAT, Outbound NAT, and NPt (Network Prefix Translation) for
+IPv6
 
 .. toctree::
    :maxdepth: 1
@@ -50,3 +43,5 @@ is the |book_link|.
    port-forward-troubleshooting
    troubleshooting-1-1-nat
    troubleshooting-nat-reflection
+
+.. _Wikipedia article on NAT: http://en.wikipedia.org/wiki/Network_address_translation

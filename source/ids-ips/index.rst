@@ -4,6 +4,16 @@
 IDS / IPS
 *********
 
+pfSense can act in an Intrusion Detection System (IDS) / Intrusion Prevention
+System (IPS) role with add-on packages like Snort and Suricata.
+
+.. note:: The Snort and Suricata packages share many design similarities, so
+   in most cases the instructions for Snort carry over to Suricata with only
+   minor adjustments.
+
+Snort
+'''''
+
 .. toctree::
    :maxdepth: 1
 

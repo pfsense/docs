@@ -4,6 +4,8 @@
 General Information
 *******************
 
+General information about the pfSense project/organization.
+
 .. toctree::
    :maxdepth: 1
 

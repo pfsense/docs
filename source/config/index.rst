@@ -4,6 +4,9 @@
 Configuration and WebGUI
 ************************
 
+The topics in this section cover configuration of pfSense and using the web
+interface (WebGUI).
+
 .. toctree::
    :maxdepth: 1
 
