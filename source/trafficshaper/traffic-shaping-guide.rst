@@ -9,22 +9,6 @@ Shaping Wizard.
 
 Traffic Shaping configuration is based at **Firewall > Traffic Shaping**.
 
-What is traffic Shaping?
-------------------------
-
-.. epigraph::
-
-   Traffic shaping (also known as "packet shaping") is the control of
-   computer network traffic in order to optimize or guarantee
-   performance, lower latency, and/or increase usable bandwidth by
-   delaying packets that meet certain criteria. More specifically,
-   traffic shaping is any action on a set of packets (often called a
-   stream or a flow) which imposes additional delay on those packets
-   such that they conform to some predetermined constraint (a contract
-   or traffic profile).
-
-   -- `From Traffic Shaping Wikipedia article <http://en.wikipedia.org/wiki/Traffic_shaping>`_
-
 Limitations
 -----------
 
