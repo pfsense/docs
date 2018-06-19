@@ -68,7 +68,7 @@ network. This will be described later in this chapter.
 
 Remote users running Windows can connect back to a pfSense router using
 IPsec client software, such as the `Shrew Soft VPN
-Client <http://www.shrew.net/>`__.
+Client <https://www.shrew.net/>`__.
 
 Prerequisites
 -------------
