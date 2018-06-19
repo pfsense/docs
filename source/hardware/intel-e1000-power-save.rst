@@ -23,7 +23,7 @@ timeout -- resetting" problem.
    
    if you have the problem on linux you get "detected tx unit hang"
    thus:
-   http://sourceforge.net/tracker/index.php?func=detail&aid=1463045&group_id=42302&atid=447449
+   https://sourceforge.net/tracker/index.php?func=detail&aid=1463045&group_id=42302&atid=447449
 
 Also mirrored here:
 http://files.pfsense.org/misc/fixeep-82573-dspd.sh.txt

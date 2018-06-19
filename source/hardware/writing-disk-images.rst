@@ -95,7 +95,7 @@ removable drives in its GUI which prevents accidentally overwriting a
 permanent disk.
 
 This program can be downloaded from
-http://sourceforge.net/projects/win32diskimager/
+https://sourceforge.net/projects/win32diskimager/
 
 First, decompress the image using the easy/free decompression utility: 7-zip -
 http://www.7-zip.org/
@@ -110,7 +110,7 @@ http://www.7-zip.org/
 Then, write the image
 
 -  Download and install Win32 Disk Imager from
-   http://sourceforge.net/projects/win32diskimager/ if it is not already
+   https://sourceforge.net/projects/win32diskimager/ if it is not already
    present.
 -  Start Win32 Disk Imager, and ensure it is running as Administrator
 -  Click the folder icon (1)

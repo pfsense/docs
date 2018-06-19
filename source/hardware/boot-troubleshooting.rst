@@ -174,7 +174,7 @@ Alternate Boot Managers
 -----------------------
 
 `GAG <http://gag.sourceforge.net/>`__ or `Smart
-BootManager <http://sourceforge.net/projects/btmgr>`__ may be used.
+BootManager <https://sourceforge.net/projects/btmgr>`__ may be used.
 
 If all else fails, we offer |support_link| and hardware through the |store_link|
 that has been pre-loaded with pfSense and proven to work. You can also check
