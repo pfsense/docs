@@ -142,20 +142,20 @@ RFCs
 * `RFC 3317`_ — Differentiated Services Quality of Service Policy Information
   Base
 
-.. _RFC 2474: http://tools.ietf.org/html/rfc2474
-.. _RFC 2475: http://tools.ietf.org/html/rfc2475
-.. _RFC 2597: http://tools.ietf.org/html/rfc2597
-.. _RFC 2598: http://tools.ietf.org/html/rfc2598
-.. _RFC 2836: http://tools.ietf.org/html/rfc2836
-.. _RFC 2983: http://tools.ietf.org/html/rfc2983
-.. _RFC 3086: http://tools.ietf.org/html/rfc3086
-.. _RFC 3140: http://tools.ietf.org/html/rfc3140
-.. _RFC 3246: http://tools.ietf.org/html/rfc3246
-.. _RFC 3247: http://tools.ietf.org/html/rfc3247
-.. _RFC 3260: http://tools.ietf.org/html/rfc3260
-.. _RFC 3289: http://tools.ietf.org/html/rfc3289
-.. _RFC 3290: http://tools.ietf.org/html/rfc3290
-.. _RFC 3317: http://tools.ietf.org/html/rfc3317
-.. _RFC 4542: http://tools.ietf.org/html/rfc4542
-.. _RFC 4594: http://tools.ietf.org/html/rfc4594
-.. _RFC 5865: http://tools.ietf.org/html/rfc5865
+.. _RFC 2474: https://tools.ietf.org/html/rfc2474
+.. _RFC 2475: https://tools.ietf.org/html/rfc2475
+.. _RFC 2597: https://tools.ietf.org/html/rfc2597
+.. _RFC 2598: https://tools.ietf.org/html/rfc2598
+.. _RFC 2836: https://tools.ietf.org/html/rfc2836
+.. _RFC 2983: https://tools.ietf.org/html/rfc2983
+.. _RFC 3086: https://tools.ietf.org/html/rfc3086
+.. _RFC 3140: https://tools.ietf.org/html/rfc3140
+.. _RFC 3246: https://tools.ietf.org/html/rfc3246
+.. _RFC 3247: https://tools.ietf.org/html/rfc3247
+.. _RFC 3260: https://tools.ietf.org/html/rfc3260
+.. _RFC 3289: https://tools.ietf.org/html/rfc3289
+.. _RFC 3290: https://tools.ietf.org/html/rfc3290
+.. _RFC 3317: https://tools.ietf.org/html/rfc3317
+.. _RFC 4542: https://tools.ietf.org/html/rfc4542
+.. _RFC 4594: https://tools.ietf.org/html/rfc4594
+.. _RFC 5865: https://tools.ietf.org/html/rfc5865
