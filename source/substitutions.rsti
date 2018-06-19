@@ -32,15 +32,15 @@
 .. |issue_tracker| replace:: `pfSense Redmine`_
 .. _pfSense Redmine: https://redmine.pfsense.org
 .. |repo_link| replace:: `pfSense repositories`_
-.. _pfSense repositories: https://github..com/pfsense
+.. _pfSense repositories: https://github.com/pfsense
 .. |repo_link_docs| replace:: `pfSense docs repository`_
-.. _pfSense docs repository: https://github..com/pfsense/docs
+.. _pfSense docs repository: https://github.com/pfsense/docs
 .. |repo_link_pfsense| replace:: `main pfSense repository`_
-.. _main pfSense repository: https://github..com/pfsense/pfsense
+.. _main pfSense repository: https://github.com/pfsense/pfsense
 .. |repo_link_ports| replace:: `pfSense ports repository`_
-.. _pfSense ports repository: https://github..com/pfsense/FreeBSD-ports
+.. _pfSense ports repository: https://github.com/pfsense/FreeBSD-ports
 .. |repo_link_src| replace:: `pfSense source repository`_
-.. _pfSense source repository: https://github..com/pfsense/FreeBSD-src
+.. _pfSense source repository: https://github.com/pfsense/FreeBSD-src
 
 .. |doc_updates| replace:: :doc:`submit a documentation update </references/updating-docs>`
 .. _Documentation Source: https://github.com/pfsense/docs
