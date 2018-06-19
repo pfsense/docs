@@ -141,7 +141,7 @@ then restore the configuration. Given the age of such systems, it is
 likely that the CF or other media would need replaced instead.
 
 On pfSense 1.2.3 or newer, an upgrade image may be `downloaded from the
-pfSense web site <http://www.pfsense.org/download/>`__. Be sure to
+pfSense web site <https://www.pfsense.org/download/>`__. Be sure to
 download an appropriate sized NanoBSD upgrade file for the CF card.
 If the size in uncertain, check */etc/nanosize.txt* or look on the
 dashboard for the current NanoBSD size.
