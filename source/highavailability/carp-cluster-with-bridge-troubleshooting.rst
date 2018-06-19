@@ -31,7 +31,7 @@ Configuration example for a Cisco Switch::
    spanning-tree vlan 20 cost 500
    no cdp enable
 
-See also `this forum thread`.
+See also `this forum thread`_.
 
 The bridge settings on pfSense may also need to have their spanning tree
 options changed in a similar manner.
