@@ -14,7 +14,7 @@ Security Fixes
 The `Heartbleed <http://heartbleed.com/>`__ OpenSSL bug and another
 OpenSSL bug were both covered by the following security announcements:
 
--  `pfSense-SA-14_04.openssl <https://pfsense.org/security/advisories/pfSense-SA-14_04.openssl.asc>`__
+-  `pfSense-SA-14_04.openssl <https://www.pfsense.org/security/advisories/pfSense-SA-14_04.openssl.asc>`__
 
    -  `FreeBSD-SA-14:06.openssl <http://security.freebsd.org/advisories/FreeBSD-SA-14:06.openssl.asc>`__
    -  `CVE-2014-0160 <https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0160>`__

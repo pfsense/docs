@@ -26,18 +26,18 @@ Security / Errata
 
 -  pfSense Advisories
 
-   -  `pfSense-SA-17_01.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_01.webgui.asc>`__
+   -  `pfSense-SA-17_01.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-17_01.webgui.asc>`__
 
       -  Fixed validation and encoding on Captive Portal status pages
          `#7019 <https://redmine.pfsense.org/issues/7019>`__
 
-   -  `pfSense-SA-17_02.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_02.webgui.asc>`__
+   -  `pfSense-SA-17_02.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-17_02.webgui.asc>`__
 
       -  Fixed update_config_field() in wizard.php so it does not pass
          user input through eval()
          `#7230 <https://redmine.pfsense.org/issues/7230>`__
 
-   -  `pfSense-SA-17_03.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_03.webgui.asc>`__
+   -  `pfSense-SA-17_03.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-17_03.webgui.asc>`__
 
       -  Added encoding for 'from' and 'to' before output on
          pkg_mgr_install.php

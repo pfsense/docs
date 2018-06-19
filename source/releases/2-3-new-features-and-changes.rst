@@ -19,8 +19,8 @@ Security/Errata
 
 -  pfSense Security Advisories:
 
-   -  `pfSense-SA-16_01.webgui <https://pfsense.org/security/advisories/pfSense-SA-16_01.webgui.asc>`__
-   -  `pfSense-SA-16_02.webgui <https://pfsense.org/security/advisories/pfSense-SA-16_02.webgui.asc>`__
+   -  `pfSense-SA-16_01.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-16_01.webgui.asc>`__
+   -  `pfSense-SA-16_02.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-16_02.webgui.asc>`__
 
 Several obsolete items were removed from this release. The items are
 noted again in the sections below, but worth emphasizing:

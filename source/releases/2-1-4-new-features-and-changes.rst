@@ -12,16 +12,16 @@ release. Refer to the :doc:`2.1.1 release notes </releases/2-1-1-new-features-an
 Security Fixes
 --------------
 
--  `pfSense-SA-14_07.openssl <https://pfsense.org/security/advisories/pfSense-SA-14_07.openssl.asc>`__
+-  `pfSense-SA-14_07.openssl <https://www.pfsense.org/security/advisories/pfSense-SA-14_07.openssl.asc>`__
 
    -  `FreeBSD-SA-14:14.openssl <http://www.freebsd.org/security/advisories/FreeBSD-SA-14:14.openssl.asc>`__
 
--  `pfSense-SA-14_08.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_08.webgui.asc>`__
--  `pfSense-SA-14_09.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_09.webgui.asc>`__
--  `pfSense-SA-14_10.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_10.webgui.asc>`__
--  `pfSense-SA-14_11.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_11.webgui.asc>`__
--  `pfSense-SA-14_12.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_12.webgui.asc>`__
--  `pfSense-SA-14_13.packages <https://pfsense.org/security/advisories/pfSense-SA-14_13.packages.asc>`__
+-  `pfSense-SA-14_08.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-14_08.webgui.asc>`__
+-  `pfSense-SA-14_09.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-14_09.webgui.asc>`__
+-  `pfSense-SA-14_10.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-14_10.webgui.asc>`__
+-  `pfSense-SA-14_11.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-14_11.webgui.asc>`__
+-  `pfSense-SA-14_12.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-14_12.webgui.asc>`__
+-  `pfSense-SA-14_13.packages <https://www.pfsense.org/security/advisories/pfSense-SA-14_13.packages.asc>`__
 
 Packages also had their own independent fixes and need updating. During
 the firmware update process the packages will be reinstalled properly.

@@ -12,7 +12,7 @@ Security / Errata
 
 -  pfSense Advisories
 
-   -  `pfSense-SA-17_05.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_05.webgui.asc>`__:
+   -  `pfSense-SA-17_05.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-17_05.webgui.asc>`__:
 
       -  Fixed a potential XSS issue in the diag_edit.php file browser
          `#7650 <https://redmine.pfsense.org/issues/7650>`__
@@ -23,7 +23,7 @@ Security / Errata
          firewall_nat_edit.php
          `#7651 <https://redmine.pfsense.org/issues/7651>`__
 
-   -  `pfSense-SA-17_06.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_06.webgui.asc>`__:
+   -  `pfSense-SA-17_06.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-17_06.webgui.asc>`__:
 
       -  Added a warning screen to the GUI and prevent access if the
          client IP address is currently in the lockout table, and also

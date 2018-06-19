@@ -23,10 +23,10 @@ Security/Errata
 
 -  pfSense Advisories
 
-   -  `pfSense-SA-16_03.webgui <https://pfsense.org/security/advisories/pfSense-SA-16_03.webgui.asc>`__
-   -  `pfSense-SA-16_04.filterlog <https://pfsense.org/security/advisories/pfSense-SA-16_04.filterlog.asc>`__
+   -  `pfSense-SA-16_03.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-16_03.webgui.asc>`__
+   -  `pfSense-SA-16_04.filterlog <https://www.pfsense.org/security/advisories/pfSense-SA-16_04.filterlog.asc>`__
    -  2.3.1 update 1 patches
-      `pfSense-SA-16_05.webgui <https://pfsense.org/security/advisories/pfSense-SA-16_05.webgui.asc>`__.
+      `pfSense-SA-16_05.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-16_05.webgui.asc>`__.
 
 Config Upgrade
 --------------
@@ -317,7 +317,7 @@ Update 1
 following fixes/changes since 2.3.1-RELEASE.
 
 -  Security issue `pfSense-SA-16_05.webgui
-   patched <https://pfsense.org/security/advisories/pfSense-SA-16_05.webgui.asc>`__.
+   patched <https://www.pfsense.org/security/advisories/pfSense-SA-16_05.webgui.asc>`__.
 -  Lowered default LDAP timeout from 25 seconds to 5 seconds.
    `#6367 <https://redmine.pfsense.org/issues/6367>`__
 -  Fixed handling of IPsec negotiation mode with IKE version set to

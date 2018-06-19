@@ -63,7 +63,7 @@ If one doesn't work, try the other. It may also be necessary to force
 the "wrong" protocol on a port, like so:
 
 - http://pfsensebox:443
-- https://pfsensebox:80
+- https://www.pfsensebox:80
 
 The GUI protocol may be reset from the console. Choose to reset the LAN
 IP, enter the same IP, and it will prompt to reset the WebGUI back to

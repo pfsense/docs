@@ -10,14 +10,14 @@ release.
 Security Fixes
 --------------
 
--  `pfSense-SA-14_14.openssl <https://pfsense.org/security/advisories/pfSense-SA-14_14.openssl.asc>`__
+-  `pfSense-SA-14_14.openssl <https://www.pfsense.org/security/advisories/pfSense-SA-14_14.openssl.asc>`__
 
    -  See http://www.openssl.org/news/secadv_20140806.txt
    -  Updated to OpenSSL 0.9.8zb and 1.0.1i
 
--  `pfSense-SA-14_15.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_15.webgui.asc>`__
--  `pfSense-SA-14_16.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_16.webgui.asc>`__
--  `pfSense-SA-14_17.webgui <https://pfsense.org/security/advisories/pfSense-SA-14_17.webgui.asc>`__
+-  `pfSense-SA-14_15.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-14_15.webgui.asc>`__
+-  `pfSense-SA-14_16.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-14_16.webgui.asc>`__
+-  `pfSense-SA-14_17.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-14_17.webgui.asc>`__
 
 Other Fixes
 -----------

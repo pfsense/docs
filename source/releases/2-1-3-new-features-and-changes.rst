@@ -12,11 +12,11 @@ from 2.1.1 to 2.1.2.
 Security Fixes
 --------------
 
--  `pfSense-SA-14_05.tcp <https://pfsense.org/security/advisories/pfSense-SA-14_05.tcp.asc>`__
+-  `pfSense-SA-14_05.tcp <https://www.pfsense.org/security/advisories/pfSense-SA-14_05.tcp.asc>`__
 
    -  `FreeBSD-SA-14:08.tcp <http://www.freebsd.org/security/advisories/FreeBSD-SA-14:08.tcp.asc>`__
 
--  `pfSense-SA-14_06.openssl <https://pfsense.org/security/advisories/pfSense-SA-14_06.openssl.asc>`__
+-  `pfSense-SA-14_06.openssl <https://www.pfsense.org/security/advisories/pfSense-SA-14_06.openssl.asc>`__
 
    -  `FreeBSD-SA-14:09.openssl <http://www.freebsd.org/security/advisories/FreeBSD-SA-14:09.openssl.asc>`__
 

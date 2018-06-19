@@ -22,7 +22,7 @@ Security / Errata
    -  Fixed encoding of displayed values from DHCP leases to prevent a
       badly formatted DHCP lease hostname from causing a potential XSS
       `#7497 <https://redmine.pfsense.org/issues/7497>`__ (
-      `pfSense-SA-17_04.webgui <https://pfsense.org/security/advisories/pfSense-SA-17_04.webgui.asc>`__
+      `pfSense-SA-17_04.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-17_04.webgui.asc>`__
       )
 
 -  See the Certificates section below for an important note about GUI
