@@ -231,7 +231,7 @@ Video tutorials
 ^^^^^^^^^^^^^^^
 
 Forum user Blasterreal made a video tutorial for some FreeRADIUS features. It
-can be found on `youtube.com <http://www.youtube.com/watch?v=B6Hjxd1Af-s>`__ or
+can be found on `youtube.com <https://www.youtube.com/watch?v=B6Hjxd1Af-s>`__ or
 in the `forum <https://forum.netgate.com/post/41146>`__.
 
 Copyrights and Credits
