@@ -76,7 +76,7 @@ MSI/MSIX
 --------
 
 `Message Signaled
-Interrupts <http://en.wikipedia.org/wiki/Message_Signaled_Interrupts>`__
+Interrupts <https://en.wikipedia.org/wiki/Message_Signaled_Interrupts>`__
 are an alternative to classic style Interrupts for retrieving data from
 hardware. Some cards behave better with MSI, MSIX, or classic style
 Interrupts, but the card will try the "best" available choice (MSIX,

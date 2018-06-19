@@ -28,7 +28,7 @@ configure the service.
 -  **Max Flows**: The number of flows to track before older flows expire
 -  **NetFlow Version**: The desired version of the NetFlow protocol. See
    `NetFlow Versions on
-   Wikipedia <http://en.wikipedia.org/wiki/NetFlow#NetFlow_Versions>`__
+   Wikipedia <https://en.wikipedia.org/wiki/NetFlow#NetFlow_Versions>`__
    for more information.
 
 Controlling softflowd from the Command Line

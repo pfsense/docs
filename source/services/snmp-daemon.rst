@@ -6,7 +6,7 @@ Configuring the SNMP Daemon
 The Simple Network Management Protocol (SNMP) Daemon, located at
 **Services > SNMP**, allows querying certain status information from
 pfSense with an SNMP client, such as those in `Network Monitoring
-Systems <http://en.wikipedia.org/wiki/Network_monitoring>`__.
+Systems <https://en.wikipedia.org/wiki/Network_monitoring>`__.
 
 At a minimum, to enable the service, set a **Polling Port** (Default is
 udp/161) and a **Read Community String**. It is strongly recommended

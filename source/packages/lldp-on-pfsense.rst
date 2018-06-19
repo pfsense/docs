@@ -34,4 +34,4 @@ Navigate to **Services > LLDP**, **LLDP Status** tab. The neighbors will be
 printed in the lower box.
 
 .. _lldpd: http://vincentbernat.github.io/lldpd/
-.. _LLDP: http://en.wikipedia.org/wiki/Link_Layer_Discovery_Protocol
+.. _LLDP: https://en.wikipedia.org/wiki/Link_Layer_Discovery_Protocol

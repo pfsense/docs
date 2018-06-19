@@ -16,7 +16,7 @@ better suited for another local web server if one is available.
    task.
 
 This process is known as WPAD, short for `Web Proxy AutoDiscovery
-Protocol <http://en.wikipedia.org/wiki/Web_Proxy_Autodiscovery_Protocol>`__.
+Protocol <https://en.wikipedia.org/wiki/Web_Proxy_Autodiscovery_Protocol>`__.
 If a web browser is configured for autodiscovery, it will try a few
 methods to figure out a proxy's location.
 
@@ -108,7 +108,7 @@ another internal DNS server used by client PCs.
 A client browser will ultimately try to access
 *http://wpad.example.com/wpad.dat* - among others. More details on the
 hostnames tried by WPAD are available in the `WPAD article on
-Wikipedia <http://en.wikipedia.org/wiki/Wpad>`__.
+Wikipedia <https://en.wikipedia.org/wiki/Wpad>`__.
 
 To add the entry using the DNS forwarder on pfSense, navigate to
 **Services > DNS Forwarder**. Click |fa-plus| to add a new **Host Override**.

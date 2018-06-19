@@ -25,7 +25,7 @@ Common Address Redundancy Protocol (**CARP**) is used by multiple nodes
 to "share" a :doc:`Virtual IP address </firewall/virtual-ip-address-feature-comparison>`
 between multiple nodes in such a way that if the preferred node fails,
 another will take over seamlessly.
-`CARP <http://en.wikipedia.org/wiki/Common_Address_Redundancy_Protocol>`__
+`CARP <https://en.wikipedia.org/wiki/Common_Address_Redundancy_Protocol>`__
 was originated by OpenBSD as an Open Source Alternative to the
 patent-encumbered VRRP.
 

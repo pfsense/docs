@@ -4,7 +4,7 @@ SMART Status
 ============
 
 If a hard drive is present in the firewall that supports reporting its
-status by [http://en.wikipedia.org/wiki/S.M.A.R.T. S.M.A.R.T.], it can
+status by [https://en.wikipedia.org/wiki/S.M.A.R.T. S.M.A.R.T.], it can
 be viewed by visiting **Diagnostics > SMART Status**.
 
 The most common views to use are:

@@ -65,9 +65,9 @@ pressing **Enter**.
 
 If a network cable is being connected directly between two systems and
 not to a switch, ensure that a `crossover
-cable <http://en.wikipedia.org/wiki/Ethernet_crossover_cable>`__ is
+cable <https://en.wikipedia.org/wiki/Ethernet_crossover_cable>`__ is
 being used. Newer adapters support
-`Auto-MDIX <http://en.wikipedia.org/wiki/Auto-MDIX>`__ and will handle
+`Auto-MDIX <https://en.wikipedia.org/wiki/Auto-MDIX>`__ and will handle
 this internally, but many older adapters do not. Similarly, if
 connecting a pfSense system to a switch that does not support Auto-MDIX,
 use a straight-through patch cable.

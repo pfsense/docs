@@ -18,7 +18,7 @@ is connected at Layer 2.
 website <http://www.habets.pp.se/synscan/programs.php?prog=arping>`__
 
 More information on `arping from
-Wikipedia <http://en.wikipedia.org/wiki/Arping>`__.
+Wikipedia <https://en.wikipedia.org/wiki/Arping>`__.
 
 Status
 ------

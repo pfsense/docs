@@ -14,4 +14,4 @@ A list of WoL clients may also be managed for later use. All clients in the WoL
 list may be awoken at once by clicking |fa-power-off| above the list.
 
 .. seealso:: Wikipedia article on
-   `WoL <http://en.wikipedia.org/wiki/Wake_on_lan>`_.
+   `WoL <https://en.wikipedia.org/wiki/Wake_on_lan>`_.

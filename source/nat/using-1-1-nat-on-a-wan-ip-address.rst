@@ -17,6 +17,6 @@ appropriate firewall rules to protect access to these ports.
 .. rubric:: Footnotes
 
 .. [#f1] That term is used very, very loosely. See the `Wikipedia Definition
-   of DMZ <http://en.wikipedia.org/wiki/DMZ_(computing)>`__ for more
+   of DMZ <https://en.wikipedia.org/wiki/DMZ_(computing)>`__ for more
    information.
 

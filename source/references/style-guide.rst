@@ -43,7 +43,7 @@ What to Avoid
   example "This should happen" or "That might appear". Some instances are
   expected/required when making recommendations, but reword where feasible.
 :Avoid the use of Weasel words:
-  See `Weasel Words <http://en.wikipedia.org/wiki/Weasel_word>`__ for reference.
+  See `Weasel Words <https://en.wikipedia.org/wiki/Weasel_word>`__ for reference.
 :Avoid redundant phrases:
   This especially includes acronym references that duplicate words: "WAN
   Network", "LAN Network", "DUID Identifier", "6RD Rapid Deployment". Remove the

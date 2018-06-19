@@ -17,7 +17,7 @@ this firewall as a router for IPv6. The following modes are available:
 
 -  **Router Only**: Clients will need to set addresses statically
 -  **Unmanaged**: Client addresses obtained only via `Stateless Address
-   Autoconfiguration <http://en.wikipedia.org/wiki/IPv6#Stateless_address_autoconfiguration_.28SLAAC.29>`__
+   Autoconfiguration <https://en.wikipedia.org/wiki/IPv6#Stateless_address_autoconfiguration_.28SLAAC.29>`__
    (SLAAC).
 -  **Managed**: Client addresses assigned only via
    :doc:`DHCPv6 </dhcp/dhcpv6-server>`.

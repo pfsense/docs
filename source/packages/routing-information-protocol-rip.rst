@@ -15,5 +15,5 @@ version**, and enter a **RIPv2 password** if using RIP version 2.
 See Also
 
 -  `Wikipedia article on
-   RIP <http://en.wikipedia.org/wiki/Routing_Information_Protocol>`__
+   RIP <https://en.wikipedia.org/wiki/Routing_Information_Protocol>`__
 

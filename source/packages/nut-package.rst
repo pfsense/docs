@@ -4,7 +4,7 @@ Nut package
 ===========
 
 The NUT package provides a way to monitor an `Uninterruptable Power
-Supply <http://en.wikipedia.org/wiki/Uninterruptible_power_supply>`__
+Supply <https://en.wikipedia.org/wiki/Uninterruptible_power_supply>`__
 (UPS) using `nut (network UPS
 tools) <http://www.networkupstools.org/>`__.
 

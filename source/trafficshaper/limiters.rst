@@ -28,7 +28,7 @@ Limiters are setup by creating them under **Firewall > Traffic Shaper**, on the
 
 One pipe may be used for both inbound and outbound traffic, but that would be
 simulating a `half-duplex connection
-<http://en.wikipedia.org/wiki/Half_duplex#Half-duplex>`__.
+<https://en.wikipedia.org/wiki/Half_duplex#Half-duplex>`__.
 
 The recommended method is to create 2 pipes, one for inbound traffic and one for
 outbound traffic. The direction is from the perspective of the interface. If

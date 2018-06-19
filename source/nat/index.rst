@@ -44,4 +44,4 @@ IPv6
    troubleshooting-1-1-nat
    troubleshooting-nat-reflection
 
-.. _Wikipedia article on NAT: http://en.wikipedia.org/wiki/Network_address_translation
+.. _Wikipedia article on NAT: https://en.wikipedia.org/wiki/Network_address_translation

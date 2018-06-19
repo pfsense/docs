@@ -4,11 +4,11 @@ Configuring UPnP and NAT-PMP
 ============================
 
 **UPnP** is short for `Universal Plug and
-Play <http://en.wikipedia.org/wiki/Universal_Plug_and_Play>`__ and is
+Play <https://en.wikipedia.org/wiki/Universal_Plug_and_Play>`__ and is
 commonly found on Windows, BSD and Linux systems.
 
 **NAT-PMP** is short for `NAT Port Mapping
-Protocol <http://en.wikipedia.org/wiki/NAT_Port_Mapping_Protocol>`__ and
+Protocol <https://en.wikipedia.org/wiki/NAT_Port_Mapping_Protocol>`__ and
 is similar to UPnP but found more commonly on Apple devices and
 programs.
 

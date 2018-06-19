@@ -42,9 +42,9 @@ Null Modem Serial Cables
 ------------------------
 
 Between the client serial port and firewall serial port, a `Null
-Modem <http://en.wikipedia.org/wiki/Null_modem>`__ serial cable is
+Modem <https://en.wikipedia.org/wiki/Null_modem>`__ serial cable is
 required, or a standard serial cable with a `Null
-Modem <http://en.wikipedia.org/wiki/Null_modem>`__ Adapter. These cables
+Modem <https://en.wikipedia.org/wiki/Null_modem>`__ Adapter. These cables
 are wired in a special way that rolls the transmit and receive pins
 allowing the serial ports to properly transmit and receive data from
 each other.

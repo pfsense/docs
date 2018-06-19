@@ -11,7 +11,7 @@ handled.
 They may be abbreviated even more to the first letter of the flag.
 
 A list from
-`Wikipedia <http://en.wikipedia.org/wiki/Transmission_Control_Protocol>`__:
+`Wikipedia <https://en.wikipedia.org/wiki/Transmission_Control_Protocol>`__:
 
 -  CWR – Congestion Window Reduced (CWR) flag is set by the sending host
    to indicate that it received a TCP segment with the ECE flag set

@@ -136,7 +136,7 @@ BNF / Grammar
 -------------
 
 For more technical purposes, this is a
-`BNF <http://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form>`__ format
+`BNF <https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form>`__ format
 representation of the log output. It is not a 100% complete BNF as the
 exact contents of many of the fields are beyond the scope of this
 document as they aren't generally relevant to typical logging, but they

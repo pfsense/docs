@@ -14,7 +14,7 @@ configuration, modification, and more from
 
 A one time password is a password which can be only used one time and
 will be only usable within a short time period (10s). So it can be
-compared with the handling of tokens from `RSA SecureID <http://en.wikipedia.org/wiki/SecurID>`__.
+compared with the handling of tokens from `RSA SecureID <https://en.wikipedia.org/wiki/SecurID>`__.
 
 This kind of password generation makes sense in some scenarios but not
 in all. It probably makes no sense to use these passwords in the office

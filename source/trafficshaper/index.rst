@@ -34,4 +34,4 @@ What is traffic Shaping?
 
    -- From the `Wikipedia article on Traffic Shaping`_
 
-.. _Wikipedia article on Traffic Shaping: http://en.wikipedia.org/wiki/Traffic_shaping
+.. _Wikipedia article on Traffic Shaping: https://en.wikipedia.org/wiki/Traffic_shaping
