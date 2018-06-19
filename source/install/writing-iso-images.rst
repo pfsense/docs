@@ -89,7 +89,7 @@ used to burn ISO images::
 
 For more information on creating CDs in FreeBSD, please see the entry
 for CD burning in the FreeBSD Handbook at
-http://www.freebsd.org/doc/en/books/handbook/creating-cds.html.
+https://www.freebsd.org/doc/en/books/handbook/creating-cds.html.
 
 Verifying the CD
 ----------------

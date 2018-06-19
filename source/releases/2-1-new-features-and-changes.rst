@@ -10,9 +10,9 @@ Three FreeBSD security advisories are applicable to prior pfSense
 releases. These aren't remotely exploitable in and of themselves, but
 anyone who can execute arbitrary code on the firewall could use one or
 more of these to escalate privileges.
-`FreeBSD-SA-13:13.nullfs <http://www.freebsd.org/security/advisories/FreeBSD-SA-13:13.nullfs.asc>`__
-`FreeBSD-SA-13:12.ifioctl.asc <http://www.freebsd.org/security/advisories/FreeBSD-SA-13:12.ifioctl.asc>`__
-`FreeBSD-SA-13:09.ip_multicast.asc <http://www.freebsd.org/security/advisories/FreeBSD-SA-13:09.ip_multicast.asc>`__
+`FreeBSD-SA-13:13.nullfs <https://www.freebsd.org/security/advisories/FreeBSD-SA-13:13.nullfs.asc>`__
+`FreeBSD-SA-13:12.ifioctl.asc <https://www.freebsd.org/security/advisories/FreeBSD-SA-13:12.ifioctl.asc>`__
+`FreeBSD-SA-13:09.ip_multicast.asc <https://www.freebsd.org/security/advisories/FreeBSD-SA-13:09.ip_multicast.asc>`__
 
 IPv6 Support
 ------------

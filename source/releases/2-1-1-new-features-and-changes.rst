@@ -6,11 +6,11 @@
 Security Fixes
 --------------
 
--  `FreeBSD-SA-14:01.bsnmpd <http://www.freebsd.org/security/advisories/FreeBSD-SA-14:01.bsnmpd.asc>`__
+-  `FreeBSD-SA-14:01.bsnmpd <https://www.freebsd.org/security/advisories/FreeBSD-SA-14:01.bsnmpd.asc>`__
    / CVE-2014-1452
--  `FreeBSD-SA-14:02.ntpd <http://www.freebsd.org/security/advisories/FreeBSD-SA-14:02.ntpd.asc>`__
+-  `FreeBSD-SA-14:02.ntpd <https://www.freebsd.org/security/advisories/FreeBSD-SA-14:02.ntpd.asc>`__
    / CVE-2013-5211
--  `FreeBSD-SA-14:03.openssl <http://www.freebsd.org/security/advisories/FreeBSD-SA-14:03.openssl.asc>`__
+-  `FreeBSD-SA-14:03.openssl <https://www.freebsd.org/security/advisories/FreeBSD-SA-14:03.openssl.asc>`__
    / CVE-2013-4353, CVE-2013-6449, CVE-2013-6450
 
     Note: This FreeBSD SA is only for the FreeBSD 10.x base, but we
@@ -19,8 +19,8 @@ Security Fixes
 -  The following FreeBSD Security Advisories were not relevant to
    pfSense:
 
-   -  `FreeBSD-SA-13:14.openssh <http://www.freebsd.org/security/advisories/FreeBSD-SA-13:14.openssh.asc>`__
-   -  `FreeBSD-SA-14:04.bind <http://www.freebsd.org/security/advisories/FreeBSD-SA-14:04.bind.asc>`__
+   -  `FreeBSD-SA-13:14.openssh <https://www.freebsd.org/security/advisories/FreeBSD-SA-13:14.openssh.asc>`__
+   -  `FreeBSD-SA-14:04.bind <https://www.freebsd.org/security/advisories/FreeBSD-SA-14:04.bind.asc>`__
 
 -  Use HTTPS to get updates.
    `#2952 <https://redmine.pfsense.org/issues/2952>`__

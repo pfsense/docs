@@ -13,8 +13,8 @@ The ALTQ framework is used for queuing/traffic shaping. In pfSense, this
 is utilized by the Shaper Wizard and the Queues/Interfaces tabs under
 **Firewall > Traffic Shaper**.
 
-See the `altq(4) <http://www.freebsd.org/cgi/man.cgi?query=altq&sektion=4>`_ or
-the `altq(9) <http://www.freebsd.org/cgi/man.cgi?query=altq&sektion=9>`_.
+See the `altq(4) <https://www.freebsd.org/cgi/man.cgi?query=altq&sektion=4>`_ or
+the `altq(9) <https://www.freebsd.org/cgi/man.cgi?query=altq&sektion=9>`_.
 
 On that page, select the :doc:`version of FreeBSD that corresponds to the version of pfSense being run </releases/versions-of-pfsense-and-freebsd>`.
 

@@ -16,7 +16,7 @@ Security Advisories
 -------------------
 
 -  Updated to OpenSSL 0.9.8y to address
-   `FreeBSD-SA-13:03 <http://www.freebsd.org/security/advisories/FreeBSD-SA-13:03.openssl.asc>`__
+   `FreeBSD-SA-13:03 <https://www.freebsd.org/security/advisories/FreeBSD-SA-13:03.openssl.asc>`__
 
 PPP
 ---

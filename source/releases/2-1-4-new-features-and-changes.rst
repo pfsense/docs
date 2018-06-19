@@ -14,7 +14,7 @@ Security Fixes
 
 -  `pfSense-SA-14_07.openssl <https://www.pfsense.org/security/advisories/pfSense-SA-14_07.openssl.asc>`__
 
-   -  `FreeBSD-SA-14:14.openssl <http://www.freebsd.org/security/advisories/FreeBSD-SA-14:14.openssl.asc>`__
+   -  `FreeBSD-SA-14:14.openssl <https://www.freebsd.org/security/advisories/FreeBSD-SA-14:14.openssl.asc>`__
 
 -  `pfSense-SA-14_08.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-14_08.webgui.asc>`__
 -  `pfSense-SA-14_09.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-14_09.webgui.asc>`__

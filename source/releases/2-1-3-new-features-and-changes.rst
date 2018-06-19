@@ -14,11 +14,11 @@ Security Fixes
 
 -  `pfSense-SA-14_05.tcp <https://www.pfsense.org/security/advisories/pfSense-SA-14_05.tcp.asc>`__
 
-   -  `FreeBSD-SA-14:08.tcp <http://www.freebsd.org/security/advisories/FreeBSD-SA-14:08.tcp.asc>`__
+   -  `FreeBSD-SA-14:08.tcp <https://www.freebsd.org/security/advisories/FreeBSD-SA-14:08.tcp.asc>`__
 
 -  `pfSense-SA-14_06.openssl <https://www.pfsense.org/security/advisories/pfSense-SA-14_06.openssl.asc>`__
 
-   -  `FreeBSD-SA-14:09.openssl <http://www.freebsd.org/security/advisories/FreeBSD-SA-14:09.openssl.asc>`__
+   -  `FreeBSD-SA-14:09.openssl <https://www.freebsd.org/security/advisories/FreeBSD-SA-14:09.openssl.asc>`__
 
 Packages also had their own independent fixes and need updating. During
 the firmware update process the packages will be reinstalled properly.

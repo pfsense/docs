@@ -22,7 +22,7 @@ Security Advisories:
 -  FreeBSD-SA-12:04.sysret (v1.0/v1.1)
    http://security.FreeBSD.org/advisories/FreeBSD-SA-12:04.sysret.asc
 -  FreeBSD-SA-12:07.hostapd
-   http://www.freebsd.org/security/advisories/FreeBSD-SA-12:07.hostapd.asc
+   https://www.freebsd.org/security/advisories/FreeBSD-SA-12:07.hostapd.asc
 
 -  NOTE: FreeBSD-SA-12:03.bind, FreeBSD-SA-12:05.bind, and
    FreeBSD-SA-12:06.bind do not apply to us, since we do not use nor
