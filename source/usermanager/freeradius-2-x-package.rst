@@ -49,7 +49,7 @@ KNOWN BUGS and FORUM
 -  When using "stop/start accounting" on CP then "Amount of Time" isn't
    working correctly.
 
-`This redmine ticket <http://redmine.pfsense.org/issues/2164>`__ and the
+`This redmine ticket <https://redmine.pfsense.org/issues/2164>`__ and the
 forum links on the ticket it explain how it can be fixed.
 
 -  "Amount of Traffic" isn't working correctly on versions older than
@@ -60,12 +60,12 @@ forum links on the ticket it explain how it can be fixed.
 -  When using CP + RADIUS + Vouchers and "reauthenticate every minute"
    is enabled then CP sends the voucher as username to RADIUS. This
    causes RADIUS to disconnect the "user/voucher" because of an
-   unknown/wrong "username". ( http://redmine.pfsense.org/issues/2155 )
+   unknown/wrong "username". ( https://redmine.pfsense.org/issues/2155 )
 -  When stop/start accounting on CP is enabled then the syslog shows
    many "wrong order" or "Login found bot no logout detected". This
    seems to not affect the usage of RADIUS but it is not 100% correct. (
-   http://redmine.pfsense.org/issues/2164 )
--  http://redmine.pfsense.org/issues/2143
+   https://redmine.pfsense.org/issues/2164 )
+-  https://redmine.pfsense.org/issues/2143
 
 `Discuss about FreeRADIUS package in the forum <https://forum.netgate.com/post/39727>`__
 

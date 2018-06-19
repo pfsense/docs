@@ -124,7 +124,7 @@ Misc Changes
 -  Gitsync now pulls in git package from pfSense package repository
    rather than FreeBSD
 -  Fixed handling of RRD data in config.xml backups when exporting an
-   encrypted config `#2836 <http://redmine.pfsense.org/issues/2836>`__
+   encrypted config `#2836 <https://redmine.pfsense.org/issues/2836>`__
 -  Moved apinger status to /var/run instead of /tmp
 -  Fixes for FTP proxy on non-default gateway WANs
 -  Fixes for OVA images

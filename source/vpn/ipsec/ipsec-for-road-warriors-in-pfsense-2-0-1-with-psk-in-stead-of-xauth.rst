@@ -372,7 +372,7 @@ help troubleshoot.
 -  Roy Blüthgen wrote in to say: I am running a pfSense 2.0.2
    installation and followed the guide to set up IPsec server/client.
    Afterwards when testing I was running into this issue:
-   http://redmine.pfSense.org/issues/1351. I tried the pfSense config
+   https://redmine.pfSense.org/issues/1351. I tried the pfSense config
    suggested in note 30 (by Jim) and that fixed my problem: **System >
    Advanced**, **Miscellaneous** tab, **IP Security** section:
    disable/uncheck **Prefer older IPsec SAs** (added this info as note

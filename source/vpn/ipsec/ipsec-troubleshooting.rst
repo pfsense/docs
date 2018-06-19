@@ -390,7 +390,7 @@ to be fixed.
 
 References:
 
-1: `Ticket #2324 <http://redmine.pfsense.org/issues/2324>`__
+1: `Ticket #2324 <https://redmine.pfsense.org/issues/2324>`__
 
 2: `FreeBSD PR
 kern/166508 <http://www.freebsd.org/cgi/query-pr.cgi?pr=166508>`__

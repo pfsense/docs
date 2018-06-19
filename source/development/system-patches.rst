@@ -41,7 +41,7 @@ Adding a patch
       the PR number. Set Path Strip = 2 if it does not adjust
       automatically.
    -  Full URL to a patch from another source (e.g.
-      *http://redmine.pfsense.org/attachments/594/0001-Add-support-for-aliases-in-DNS-Forwarder-fixes-2410.patch*)
+      *https://redmine.pfsense.org/attachments/594/0001-Add-support-for-aliases-in-DNS-Forwarder-fixes-2410.patch*)
       in the **URL/Commit ID** field.
    -  Leave **URL/Commit ID** blank and paste the contents of a patch
       into **Patch Contents** text area.

@@ -123,7 +123,7 @@ Dashboard & General GUI
 -  Added a note to the setup wizard letting the user know that it can be
    canceled at any time by clicking the logo image
 -  Make dashboard update check respect nanobsd-vga
-   `#3078 <http://redmine.pfsense.org/issues/3078>`__
+   `#3078 <https://redmine.pfsense.org/issues/3078>`__
 -  Firewall Logs Widget filtering and column changes
 -  Added totals for some dashboard widget meters (memory, swap, disk
    usage)
@@ -148,7 +148,7 @@ Captive Portal
    valid for incorrect IPs, and users switching IPs while they should
    still be connected to the portal
 -  Fixes for captive portal voucher syncing on HTTPS with a custom port
-   `#3001 <http://redmine.pfsense.org/issues/3001>`__
+   `#3001 <https://redmine.pfsense.org/issues/3001>`__
 -  Fixes for custom Captive Portal files leaving symlinks on the
    filesystem after files were removed
 -  Added MAC OUI database lookup support to CP status (requires nmap
@@ -172,7 +172,7 @@ OS/System Management
    /tmp/ as is done on NanoBSD. Reduces overall writes to the media,
    should be more SSD-friendly
 -  Use a custom sysDescr for snmp similar to m0n0wall's format. Fixes
-   `#2893 <http://redmine.pfsense.org/issues/2893>`__
+   `#2893 <https://redmine.pfsense.org/issues/2893>`__
 -  Added tunable to allow disabling net.inet.udp.checksum - disabling
    UDP checksums can improve performance, but can also have negative
    side effects
@@ -221,12 +221,12 @@ IPsec
 -  LDAP and RADIUS are now possible authentication sources for IPsec
    mobile xauth
 -  Delete the SPDs for an old IPsec entry when it is disabled or removed
-   `#2719 <http://redmine.pfsense.org/issues/2719>`__
+   `#2719 <https://redmine.pfsense.org/issues/2719>`__
 -  Manage active SPDs on CARP secondary during sync
-   `#2303 <http://redmine.pfsense.org/issues/2303>`__
+   `#2303 <https://redmine.pfsense.org/issues/2303>`__
 -  Add an option to force IPsec to reload on failover, which is needed
    in some cases for IPsec to fail from one interface to another.
-   `#2896 <http://redmine.pfsense.org/issues/2896>`__
+   `#2896 <https://redmine.pfsense.org/issues/2896>`__
 
 OpenVPN
 -------
@@ -263,11 +263,11 @@ NAT/Firewall Rules/Alias
 -  Filtering on ECE and CWR TCP flags is now possible
 -  Added ICMP to protocol list when creating rdr (port forward) rules
 -  Keep proper positioning of duplicated outbound NAT rules
-   `#1118 <http://redmine.pfsense.org/issues/1118>`__
+   `#1118 <https://redmine.pfsense.org/issues/1118>`__
 -  When using the + at the top of Outbound NAT rules, add the rule to
    the top of the list and not the bottom
 -  Fix ordering of interface group rules in the ruleset
-   `#2837 <http://redmine.pfsense.org/issues/2837>`__
+   `#2837 <https://redmine.pfsense.org/issues/2837>`__
 -  Track time and user@host which created or updated a firewall, NAT
    port forward, or outbound NAT rule. If timestamp records are present,
    display them at the bottom of the rule page when editing. Have the
@@ -284,7 +284,7 @@ NAT/Firewall Rules/Alias
 -  Allow advanced options state-related parameters to be used for TCP,
    UDP and ICMP -- Formerly only allowed on TCP
 -  Respect ports found in rules when policy route negation rules are
-   made, `#3173 <http://redmine.pfsense.org/issues/3173>`__
+   made, `#3173 <https://redmine.pfsense.org/issues/3173>`__
 -  Do not include disabled OpenVPN networks in generated policy route
    negation rules
 
@@ -297,7 +297,7 @@ Certificates
 -  Default digest algorithm is now SHA256
 -  Show CA and certificate start and end dates in the their listings
 -  Correct tooltip description when adding a certificate
-   `#3017 <http://redmine.pfsense.org/issues/3017>`__
+   `#3017 <https://redmine.pfsense.org/issues/3017>`__
 -  Relax input validation on a CA/Cert description since it is only used
    cosmetically in pfSense and not in the actual CA/cert subject
 -  Allow removing blank/empty CA and Cert entries
@@ -355,7 +355,7 @@ High Availability (CARP, pfSync, XML-RPC)
    for a CARP VIP in an additional subnet
 -  Disable pfsync interface when state synchronization is not in use
 -  Fixed issues with DHCP server config synchronization ordering on
-   secondary nodes `#2600 <http://redmine.pfsense.org/issues/2600>`__
+   secondary nodes `#2600 <https://redmine.pfsense.org/issues/2600>`__
 -  Restart OpenVPN servers when CARP transitions to master (clients were
    already restarted), otherwise if CARP was disabled, the servers would
    never recover
@@ -410,7 +410,7 @@ Traffic Shaper
 -  Traffic shaper queues view updated
 -  CoDel AQM Shaper Discipline
 -  Allow PRIQ queues to be deleted.
-   `#3037 <http://redmine.pfsense.org/issues/3037>`__
+   `#3037 <https://redmine.pfsense.org/issues/3037>`__
 -  Limiters now allow the user to set the mask they want to use, rather
    than assuming masking will always be per-IP. This allows per-subnet
    limits and similar
@@ -447,7 +447,7 @@ User Manager
    Helps track down reasons for authentication failures
 -  Re-enable admin user if it's disabled when 'Reset webConfigurator
    password' option is used. Fixes
-   `#2877 <http://redmine.pfsense.org/issues/2877>`__
+   `#2877 <https://redmine.pfsense.org/issues/2877>`__
 -  Restrict maximum group name length to 16 characters or less (OS
    restriction)
 -  Added option to UTF-8 encode LDAP parameters to improve handling of
@@ -493,10 +493,10 @@ Misc
    promiscuous mode is used on the NIC. Certain drivers have issues with
    promiscuous mode
 -  Make parent interface and all VLANs share MTU
-   `#2786 <http://redmine.pfsense.org/issues/2786>`__
+   `#2786 <https://redmine.pfsense.org/issues/2786>`__
 -  Fix cellular signal strength indicator
 -  Fix PPP config cleanup when removing an interface
-   `#2758 <http://redmine.pfsense.org/issues/2758>`__
+   `#2758 <https://redmine.pfsense.org/issues/2758>`__
 -  Disallow adding IP Alias or CARP VIP that would be the network or
    broadcast address of a subnet
 -  Diagnostics > Sockets page to show open network sockets on the
@@ -506,11 +506,11 @@ Misc
 -  The pftop page has additional options to display more detailed
    information and sort it
 -  Fixed conflict between static IP and static route in the same subnet
-   `#2039 <http://redmine.pfsense.org/issues/2039>`__
+   `#2039 <https://redmine.pfsense.org/issues/2039>`__
 -  Do not apply static ARP entries to disabled interfaces
-   `#1988 <http://redmine.pfsense.org/issues/1988>`__
+   `#1988 <https://redmine.pfsense.org/issues/1988>`__
 -  Do not allow bridge members to be assigned to itself
-   `#1153 <http://redmine.pfsense.org/issues/1153>`__
+   `#1153 <https://redmine.pfsense.org/issues/1153>`__
 -  Changed Diag > Ping to use more available source addresses (CARP
    VIPs, IP Alias VIPs, OpenVPN interfaces, IPv6 Link-Local IPs)
 -  Changed Diag > Traceroute to use more available source addresses
@@ -518,7 +518,7 @@ Misc
 -  Changed shell prompt to not force background color, to be kinder to
    those not using black as a background in their terminal
 -  Add a field to allow rejecting DHCP leases from a specific upstream
-   DHCP server. `#2704 <http://redmine.pfsense.org/issues/2704>`__
+   DHCP server. `#2704 <https://redmine.pfsense.org/issues/2704>`__
 -  Updated the help system to handle some recent added files for 2.x and
    clean out some old/obsolete files
 -  Allow selecting "Localhost" as an interface for IP Alias VIPs - this
@@ -528,7 +528,7 @@ Misc
 -  Updated list of mobile service providers
 -  Fix max length for wpa passphrase. A 64-char passphrase would be
    rejected by hostapd and leave an AP in an open state
-   `#3034 <http://redmine.pfsense.org/issues/3034>`__
+   `#3034 <https://redmine.pfsense.org/issues/3034>`__
 -  Added MSS clamping to the setup wizard
 -  Add a setting to configure the filterdns hostname resolution interval
    (defaults to 300s, 5 minutes)

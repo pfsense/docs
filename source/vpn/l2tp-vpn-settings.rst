@@ -36,7 +36,7 @@ encrypted IPsec tunnel.
 
 pfSense 2.1.x and earlier do **not** support L2TP+IPsec; they only
 support for plain L2TP tunneling. See `Ticket
-#475 <http://redmine.pfsense.org/issues/475>`__
+#475 <https://redmine.pfsense.org/issues/475>`__
 
 2.2 and up
 ~~~~~~~~~~

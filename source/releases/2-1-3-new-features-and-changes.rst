@@ -40,7 +40,7 @@ Other Fixes
 -  Move clog binary to its proper place in /usr/local/ to respect
    hier(7)
 -  Fix remove button on Diagnostics > Tables
-   `#3627 <http://redmine.pfsense.org/issues/3627>`__
+   `#3627 <https://redmine.pfsense.org/issues/3627>`__
 -  Fix more potential places for interface looping in OpenVPN and with
    normal interfaces
 -  Fixes for URL table alias updates (locking, reload)

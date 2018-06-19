@@ -67,7 +67,7 @@ Dashboard & General GUI Fixes
 -  Fix display of widgets with configuration controls in IE.
 -  Changed some padding/margin in the CSS in order to avoid wrapping the
    menu.
--  `#2165 <http://redmine.pfsense.org/issues/2165>`__ Change to embed to
+-  `#2165 <https://redmine.pfsense.org/issues/2165>`__ Change to embed to
    prevent IE9 from misbehaving when loading the Traffic Graph page
 
 OpenVPN Fixes
@@ -94,14 +94,14 @@ IPsec fixes
 -----------
 
 -  Only do foreach on IPsec p2's if it's actually an array.
--  `#2201 <http://redmine.pfsense.org/issues/2201>`__ Don't let an empty
+-  `#2201 <https://redmine.pfsense.org/issues/2201>`__ Don't let an empty
    subnet into racoon.conf, it can cause parse errors.
--  `#2201 <http://redmine.pfsense.org/issues/2201>`__ Reject an
+-  `#2201 <https://redmine.pfsense.org/issues/2201>`__ Reject an
    interface without a subnet as a network source in the IPsec Phase 2
    GUI.
 -  Add routes even when IPsec is on WAN, as WAN may not be the default
    gateway.
--  `#1986 <http://redmine.pfsense.org/issues/1986>`__ Revamped IPsec
+-  `#1986 <https://redmine.pfsense.org/issues/1986>`__ Revamped IPsec
    status display and widget to properly account for mobile clients.
 -  Fixed a bug that caused the IPsec status and widget to display slowly
    when mobile clients were enabled.
@@ -109,7 +109,7 @@ IPsec fixes
 User Manager Fixes
 ------------------
 
--  `#2066 <http://redmine.pfsense.org/issues/2066>`__ Improve
+-  `#2066 <https://redmine.pfsense.org/issues/2066>`__ Improve
    adding/removing of users accounts to the underlying OS, especially
    accounts with a numeric username.
 -  Include admin user in bootup account sync
@@ -118,7 +118,7 @@ User Manager Fixes
 -  ":" chars are invalid in a comment field, filter them out.
 -  When renaming a user, make sure to remove the previous user or it
    gets left in /etc/passwd.
--  `#2326 <http://redmine.pfsense.org/issues/2326>`__ Do not allow empty
+-  `#2326 <https://redmine.pfsense.org/issues/2326>`__ Do not allow empty
    passwords since this might cause problems for some authentication
    servers like LDAP.
 
@@ -134,34 +134,34 @@ Captive Portal Fixes
    STOP/START packets
 -  Correct the Called-Station-Id attribute setting to be consistent on
    the data sent
--  `#2082 <http://redmine.pfsense.org/issues/2082>`__ Correct the log to
+-  `#2082 <https://redmine.pfsense.org/issues/2082>`__ Correct the log to
    display the correct information about an existing session
--  `#2052 <http://redmine.pfsense.org/issues/2052>`__ Remove duplicate
+-  `#2052 <https://redmine.pfsense.org/issues/2052>`__ Remove duplicate
    rule
 -  Fix which roll to write when writing the active voucher db
 -  Always load ipfw when enabling CP to ensure the pfil hooks are setup
    right
--  `#2378 <http://redmine.pfsense.org/issues/2378>`__ Fix selection of
+-  `#2378 <https://redmine.pfsense.org/issues/2378>`__ Fix selection of
    CP interfaces when using more than 10 opt interfaces.
 -  Strengthen voucher randomization.
 
 NAT/Firewall Rules/Alias Fixes
 ------------------------------
 
--  `#2327 <http://redmine.pfsense.org/issues/2327>`__ Respect the value
+-  `#2327 <https://redmine.pfsense.org/issues/2327>`__ Respect the value
    of the per-rule "disable reply-to" checkbox.
--  `#1882 <http://redmine.pfsense.org/issues/1882>`__ Fix an invalid pf
+-  `#1882 <https://redmine.pfsense.org/issues/1882>`__ Fix an invalid pf
    rule generated from a port forward with dest=any on an interface with
    ip=none
--  `#2163 <http://redmine.pfsense.org/issues/2163>`__ 1:1 Reflection
+-  `#2163 <https://redmine.pfsense.org/issues/2163>`__ 1:1 Reflection
    fixes for static route subnets and multiple subnets on the same
    interface.
 -  Better validation on URL table alias input from downloaded files.
--  `#2293 <http://redmine.pfsense.org/issues/2293>`__ Don't put an extra
+-  `#2293 <https://redmine.pfsense.org/issues/2293>`__ Don't put an extra
    space after "pass" when assuming it as the default action or later
    tests will fail to match this as a pass rule.
 -  Update help text for Host aliases to indicate FQDNs are allowed.
--  `#2210 <http://redmine.pfsense.org/issues/2210>`__ Go back to scrub
+-  `#2210 <https://redmine.pfsense.org/issues/2210>`__ Go back to scrub
    rather than "scrub in", the latter breaks MSS clamping for egress
    traffic the way we use it.
 -  Fix preservation of the selection of interfaces on input errors for
@@ -188,9 +188,9 @@ Interface/Bridging Fixes
    help with large number of interfaces
 -  Since the CARP interface name changed to "vipN" from "carpN", devd
    needs to follow that change as well.
--  `#2242 <http://redmine.pfsense.org/issues/2242>`__ Show lagg protocol
+-  `#2242 <https://redmine.pfsense.org/issues/2242>`__ Show lagg protocol
    and member interfaces on Status > Interfaces.
--  `#2212 <http://redmine.pfsense.org/issues/2212>`__ Correctly stop
+-  `#2212 <https://redmine.pfsense.org/issues/2212>`__ Correctly stop
    dhclient process when an interface is changed away from DHCP.
 -  Fixed 3G SIM PIN usage for Huawei devices
 -  Properly obey MTU set on Interface page for PPP type WANs.
@@ -198,7 +198,7 @@ Interface/Bridging Fixes
 Other Misc. Fixes
 -----------------
 
--  `#2057 <http://redmine.pfsense.org/issues/2057>`__ Add a checkbox
+-  `#2057 <https://redmine.pfsense.org/issues/2057>`__ Add a checkbox
    that disables automatically generating negate rules for directly
    connected networks and VPNs.
 -  Mark "Destination server" as a required field for DHCP Relay
@@ -206,28 +206,28 @@ Other Misc. Fixes
    Down parameters.
 -  Add a PHP Shell shortcut to disable referer check (playback
    disablereferercheck)
--  `#2040 <http://redmine.pfsense.org/issues/2040>`__ Make Wireless
+-  `#2040 <https://redmine.pfsense.org/issues/2040>`__ Make Wireless
    Status tables sortable
--  `#2068 <http://redmine.pfsense.org/issues/2068>`__ Fix multiple keys
+-  `#2068 <https://redmine.pfsense.org/issues/2068>`__ Fix multiple keys
    in a file for RFC2136 dyndns updates.
 -  Check to see if the pid file exists before trying to kill a process
--  `#2144 <http://redmine.pfsense.org/issues/2144>`__ Be smarter about
+-  `#2144 <https://redmine.pfsense.org/issues/2144>`__ Be smarter about
    how to split a Namecheap hostname into host/domain.
 -  Add a small script to disable APM on ATA drives if they claim to
    support it. Leaving this on will kill drives long-term, especially
    laptop drives, by generating excessive Load Cycles. The APM bit set
    will persist until the drive is power cycled, so it's necessary to
    run on each boot to be sure.
--  `#2158 <http://redmine.pfsense.org/issues/2158>`__ Change SNMP
+-  `#2158 <https://redmine.pfsense.org/issues/2158>`__ Change SNMP
    binding option to work on any eligible interface/VIP. If the old
    bindlan option is there, assume the lan interface for binding.
 -  Fix reference to PPTP secondary RADIUS server shared secret.
 -  PPTP upgrade fixes.
--  `#2147 <http://redmine.pfsense.org/issues/2147>`__ Add button to
+-  `#2147 <https://redmine.pfsense.org/issues/2147>`__ Add button to
    download a .p12 of a cert+key.
--  `#2233 <http://redmine.pfsense.org/issues/2233>`__ Carry over the key
+-  `#2233 <https://redmine.pfsense.org/issues/2233>`__ Carry over the key
    length on input errors when creating a certificate signing request.
--  `#2207 <http://redmine.pfsense.org/issues/2207>`__ Use PHP's built-in
+-  `#2207 <https://redmine.pfsense.org/issues/2207>`__ Use PHP's built-in
    RFC 2822 date format, rather than trying to make our own.
 -  Allow specifying the branch name after the repository URL for gitsync
    command-line arguments and remove an unnecessary use of the backtick
@@ -242,7 +242,7 @@ Other Misc. Fixes
 -  Fix Layer 7 pattern upload, button text check was incorrect.
 -  Correct building of traffic shaping queue to not depend on parent
    mask
--  `#2239 <http://redmine.pfsense.org/issues/2239>`__ Add alias support
+-  `#2239 <https://redmine.pfsense.org/issues/2239>`__ Add alias support
    to static routes
 -  Use !empty instead of isset to prevent accidental deletion of the
    last used repository URL when firmware update gitsync settings have
@@ -253,11 +253,11 @@ Other Misc. Fixes
    trying to restart it.
 -  Use a better default update url
 -  Fix missing description in rowhelper for packages.
--  `#2402 <http://redmine.pfsense.org/issues/2402>`__,
-   `#1564 <http://redmine.pfsense.org/issues/1564>`__ Move the
+-  `#2402 <https://redmine.pfsense.org/issues/2402>`__,
+   `#1564 <https://redmine.pfsense.org/issues/1564>`__ Move the
    stop_packages code to a function, and call the function from the
    shell script, and call the function directly for a reboot.
--  `#1917 <http://redmine.pfsense.org/issues/1917>`__ Fix DHCP domain
+-  `#1917 <https://redmine.pfsense.org/issues/1917>`__ Fix DHCP domain
    search list
 -  Update Time Zone zoneinfo database using latest zones from FreeBSD
 -  Handle HTTPOnly and Secure flags on cookies
@@ -265,7 +265,7 @@ Other Misc. Fixes
 -  Removed an invalid declaration that considered 99.0.0.0/8 a private
    address.
 -  Fixed redirect request for IE8/9
--  `#1049 <http://redmine.pfsense.org/issues/1049>`__ Fix crashes on
+-  `#1049 <https://redmine.pfsense.org/issues/1049>`__ Fix crashes on
    NanoBSD during package removal/reinstall. Could result in the GUI
    being inaccessible after a firmware update.
 -  Fix some issues with upgrading NanoBSD+VGA and NanoBSD+VGA Image

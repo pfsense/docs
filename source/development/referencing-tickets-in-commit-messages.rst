@@ -4,7 +4,7 @@ Referencing Tickets in Commit Messages
 ======================================
 
 By placing a special keyword in a commit message, the bug tracking
-system (Currently `Redmine <http://redmine.pfsense.org>`__) can
+system (Currently `Redmine <https://redmine.pfsense.org>`__) can
 associate a commit with a specific ticket automatically, creating a link
 in the ticket to the relevant commits.
 

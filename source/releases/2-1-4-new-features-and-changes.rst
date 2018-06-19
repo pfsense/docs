@@ -33,22 +33,22 @@ Other Fixes
 
 -  Patch for Captive Portal pipeno leaking issue which leads to the
    'Maximum login reached' on Captive Portal.
-   `#3062 <http://redmine.pfsense.org/issues/3062>`__
+   `#3062 <https://redmine.pfsense.org/issues/3062>`__
 -  Remove text not relevant to Allowed IPs on the Captive Portal.
-   `#3594 <http://redmine.pfsense.org/issues/3594>`__
+   `#3594 <https://redmine.pfsense.org/issues/3594>`__
 -  Remove units from burst as it is always specified in bytes. (Per
    ipfw(8)).
 -  Add column for internal port on UPnP status page.
 -  Make listening on interface rather than IP optional for UPnP.
 -  Fix highlighting of selected rules.
-   `#3646 <http://redmine.pfsense.org/issues/3646>`__
+   `#3646 <https://redmine.pfsense.org/issues/3646>`__
 -  Add guiconfig to widgets not including it.
-   `#3498 <http://redmine.pfsense.org/issues/3498>`__
+   `#3498 <https://redmine.pfsense.org/issues/3498>`__
 -  /etc/version_kernel and /etc/version_base no longer exist, use
    php_uname to get the version for XMLRPC check instead.
--  Fix variable typo. `#3669 <http://redmine.pfsense.org/issues/3669>`__
+-  Fix variable typo. `#3669 <https://redmine.pfsense.org/issues/3669>`__
 -  Delete all IP Aliases when an interface is disabled.
-   `#3650 <http://redmine.pfsense.org/issues/3650>`__
+   `#3650 <https://redmine.pfsense.org/issues/3650>`__
 -  Properly handle RRD archive rename during upgrade and squelch errors
    if it fails.
 -  Convert protocol ssl:// to https:// when creating HTTP headers for
@@ -56,22 +56,22 @@ Other Fixes
 -  Show disabled interfaces when they were already part of an interface
    group. This avoids showing a random interface instead and letting the
    user add it by mistake.
-   `#3680 <http://redmine.pfsense.org/issues/3680>`__
+   `#3680 <https://redmine.pfsense.org/issues/3680>`__
 -  The client-config-dir directive for OpenVPN is also useful when using
    OpenVPN's internal DHCP while bridging, so add it in that case also.
 -  Use curl instead of fetch to download update files.
-   `#3691 <http://redmine.pfsense.org/issues/3691>`__
+   `#3691 <https://redmine.pfsense.org/issues/3691>`__
 -  Escape variable before passing to shell from stop_service().
 -  Add some protection to parameters that come through _GET in service
    management.
 -  Escape argument on call to is_process_running, also remove some
    unecessary mwexec() calls.
 -  Do not allow interface group name to be bigger than 15 chars.
-   `#3208 <http://redmine.pfsense.org/issues/3208>`__
+   `#3208 <https://redmine.pfsense.org/issues/3208>`__
 -  Be more precise to match members of a bridge interface, it should fix
-   `#3637 <http://redmine.pfsense.org/issues/3637>`__
+   `#3637 <https://redmine.pfsense.org/issues/3637>`__
 -  Do not expire already disabled users, it fixes
-   `#3644 <http://redmine.pfsense.org/issues/3644>`__
+   `#3644 <https://redmine.pfsense.org/issues/3644>`__
 -  Validate starttime and stoptime format on
    firewall_schedule_edit.php
 -  Be more careful with host parameter on diag_dns.php and make sure
@@ -109,6 +109,6 @@ Other Fixes
    exec.php
 -  Add missing NAT protocols on firewall_nat_edit.php
 -  Remove extra data after space in DSCP and fix pf rule syntax.
-   `#3688 <http://redmine.pfsense.org/issues/3688>`__
+   `#3688 <https://redmine.pfsense.org/issues/3688>`__
 -  Only include a scheduled rule if it is strictly before the end time.
-   `#3558 <http://redmine.pfsense.org/issues/3558>`__
+   `#3558 <https://redmine.pfsense.org/issues/3558>`__
