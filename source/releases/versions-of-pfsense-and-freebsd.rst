@@ -6,21 +6,6 @@ Versions of pfSense and FreeBSD
 The tables in this document contain detailed information on pfSense software
 releases.
 
-These tables include:
-
-:pfSense Version: The pfSense software version number, and when possible, the
-  version number links to the release notes detailing what was changed in that
-  particular release.
-:Support, Branch: The support status is indicated alongside a link to the
-  pfSense software source code branch used to build a specific release.
-:Released: The date a specific version of pfSense was released to the public.
-:Config Rev: The internal ``config.xml`` revision number, which indicates
-  changes to the configuration format that may make a configuration file
-  incompatible with older versions.
-:FreeBSD Version: Each version of pfSense is based on a specific -RELEASE
-  version of FreeBSD. The underlying FreeBSD version is listed for each
-  corresponding version of pfSense.
-
 The versions are grouped up by major/minor changes so they are easier to locate,
 and the most recent versions are listed first.
 
@@ -117,10 +102,21 @@ pfSense Version                                       Support, Branch           
 Legend
 ------
 
-* |fa-check| = Current supported release
-* |fa-times| = Previous unsupported release
-* |fa-clock-o| = Future release
-* **TBD** = To Be Determined, not yet known.
-* **Branch** column links to Github to view a specific pfSense branch
-* **FreeBSD Version** column links to version-specific Hardware notes from
-  FreeBSD
+:pfSense Version: The pfSense software version number, and when possible, the
+  version number links to the release notes detailing what was changed in that
+  particular release.
+:Support, Branch: The support status is indicated alongside a link to the
+  pfSense software source code branch used to build a specific release.
+
+  :|fa-check|: Current supported release
+  :|fa-times|: Previous unsupported release
+  :|fa-clock-o|: Future release
+  :TBD: To Be Determined, not yet known.
+:Released: The date a specific version of pfSense was released to the public.
+:Config Rev: The internal ``config.xml`` revision number, which indicates
+  changes to the configuration format that may make a configuration file
+  incompatible with older versions.
+:FreeBSD Version: Each version of pfSense is based on a specific -RELEASE
+  version of FreeBSD. The underlying FreeBSD version is listed for each
+  corresponding version of pfSense.
+
