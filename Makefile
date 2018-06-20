@@ -10,7 +10,7 @@ help:
 	@echo "  linkcheck  to verify external links"
 
 grammar:
-	write-good `find ./source -name '*.rst'` --passive --so --no-illusion --thereIs --cliches > build/grammar.txt
+	write-good `find ./source -name '*.rst'` --passive --so --no-illusion --cliches > build/grammar.txt
 	@echo
 	@echo "Grammar check finished. The report is in build/grammar.txt."
 
