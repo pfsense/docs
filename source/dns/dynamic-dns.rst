@@ -9,9 +9,9 @@ firewall. This keeps a constant DNS hostname, even if the IP address
 changes periodically. Whenever an interface changes in some way, DHCP
 lease renew, PPPoE logout/login, etc, the IP will be updated.
 
-There are many free DynDNS services out there, and pfSense supports more
-than 15 different providers. In addition to the normal public services,
-pfSense also supports RFC 2136 DNS updates to DNS servers.
+pfSense supports more than 15 different DynDNS providers. In addition to the
+normal public services, pfSense also supports RFC 2136 DNS updates to DNS
+servers.
 
 In currently supported versions of pfSense, the DynDNS client supports
 using multiple DynDNS and RFC 2136 clients. These can be used to update
@@ -185,4 +185,3 @@ see: :doc:`RFC2136 Dynamic DNS </dns/rfc2136-dynamic-dns>`.
 
 RFC 2136 also supports IPv6 updates, which other web-based providers may
 not yet support.
-
