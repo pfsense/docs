@@ -16,7 +16,7 @@ The ACME Package for pfSense interfaces with Let's Encrypt to handle the
 certificate generation, validation, and renewal processes.
 
 Certificates from Let's Encrypt are domain validated, and this validation
-ensures that the system requesting the certificate has authority over the server
+ensures that the system requesting the certificate has authority over the domain
 in question. This validation can be performed in a number of ways, such as by
 proving ownership of the domain's DNS records or hosting a file on a web server
 for the domain.
