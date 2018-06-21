@@ -225,7 +225,7 @@ repository:
    and security issues only). Zabbix LTS version release will result in
    change of the first version number.
 
-**DISCLAIMER**: Packages availability might change, check System >
-Package Manager > Available Packages for always up-to-date list of
-packages.
+.. warning:: Packages availability might change, check **System >
+   Package Manager > Available Packages** for an always up-to-date list of
+   packages.
 
