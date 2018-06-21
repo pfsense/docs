@@ -1,0 +1,128 @@
+cache-proxy/squid-package-tuning.rst:63: [redirected with Found] http://wiki.squid-cache.org/SquidFaq/SquidLogs#swap.state to https://wiki.squid-cache.org/SquidFaq/SquidLogs#swap.state
+cache-proxy/squid-package-tuning.rst:19: [broken] http://ivoras.sharanet.org/blog/tree/2010-11-19.ufs-read-ahead.html: 500 Server Error: Internal Server Error for url: http://ivoras.sharanet.org/blog/tree/2010-11-19.ufs-read-ahead.html
+captiveportal/using-captive-portal-with-freeradius.rst:288: [redirected with Found] https://forum.netgate.com/post/51520 to https://forum.netgate.com/topic/51520/how-to-captive-portal-self-registration-using-free-radius-mysql-tutorial/1
+captiveportal/using-captive-portal-with-freeradius.rst:293: [redirected with Found] http://pheriko.blogspot.mx/2013/01/pfsense-2-captive-portalfreeradius2.html to http://pheriko.blogspot.com/2013/01/pfsense-2-captive-portalfreeradius2.html
+certificates/acme-package.rst:277: [redirected with Found] https://forum.netgate.com/post/677786 to https://forum.netgate.com/topic/90643/let-s-encypt-support/31
+development/bug-reporting.rst:26: [redirected permanently] http://www.chiark.greenend.org.uk/~sgtatham/bugs.html to https://www.chiark.greenend.org.uk/~sgtatham/bugs.html
+development/converting-packages-to-bootstrap.rst:6: [redirected with Found] https://forum.netgate.com/post/90525 to https://forum.netgate.com/topic/90525/bootstrap-conversion-notes/1
+development/developer-style-guide.rst:76: [redirected permanently] http://www.w3schools.com/charsets/ref_html_entities_4.asp to https://www.w3schools.com/charsets/ref_html_entities_4.asp
+development/getting-started-with-pfsense-development.rst:30: [broken] https://github.com/pfsense/pfSense-tools: 404 Client Error: Not Found for url: https://github.com/pfsense/pfSense-tools
+development/package-port-list.rst:23: [broken] https://github.com/pfsense/FreeBSD-ports/tree/devel/net/pfSense-pkg-freeradius2: 404 Client Error: Not Found for url: https://github.com/pfsense/FreeBSD-ports/tree/devel/net/pfSense-pkg-freeradius2
+development/system-patches.rst:39: [broken] https://github.com/pfsense/pfsense/pull/XXXX.diff: 404 Client Error: Not Found for url: https://github.com/pfsense/pfsense/pull/XXXX.diff
+dhcp/dhcp-search-domains-on-windows-dhcp-clients.rst:26: [redirected permanently] http://serverfault.com/questions/37417/which-dhcp-client-os-support-dhcp-option-119-domain-suffix-search to https://serverfault.com/questions/37417/which-dhcp-client-os-support-dhcp-option-119-domain-suffix-search
+dhcp/dhcp-search-domains-on-windows-dhcp-clients.rst:24: [redirected permanently] http://technet.microsoft.com/en-us/library/dd572752%28v=office.13%29.aspx to https://docs.microsoft.com/en-us/previous-versions/office/communications-server/dd572752(v=office.13)
+dhcp/dhcp-search-domains-on-windows-dhcp-clients.rst:22: [redirected permanently] http://social.technet.microsoft.com/Forums/en-US/winserverNIS/thread/9ba77f86-4708-42ca-a193-2a01b813ec27/ to https://social.technet.microsoft.com/Forums/windowsserver/en-US/9ba77f86-4708-42ca-a193-2a01b813ec27/is-dhcp-option-119-supported-by-microsoft-clients?forum=winserverNIS
+dhcp/dhcp-search-domains-on-windows-dhcp-clients.rst:23: [redirected permanently] http://social.technet.microsoft.com/Forums/en-US/winserverNIS/thread/7ba59619-3484-43fa-8585-a2d69ccd00df/ to https://social.technet.microsoft.com/Forums/windowsserver/en-US/7ba59619-3484-43fa-8585-a2d69ccd00df/how-to-request-domainsearch-option-from-dhcp-server-?forum=winserverNIS
+dns/dns-lookup.rst:13: [redirected permanently] http://dnsstuff.com to https://www.dnsstuff.com/
+dns/dynamic-dns.rst:54: [redirected permanently] http://www.opendns.com to https://www.opendns.com:443/
+dns/dynamic-dns.rst:144: [redirected permanently] http://www.dnsmadeeasy.com/integration/dynamicdns/ to https://dnsmadeeasy.com/technology/dynamic-dns/
+dns/dynamic-dns.rst:157: [redirected with Found] http://www.dyndns.com/ to https://dyn.com/dns/
+dns/dynamic-dns.rst:171: [redirected permanently] http://www.easydns.com to https://easydns.com/
+dns/unbound-dns-resolver.rst:98: [redirected with Found] http://www.iana.org/assignments/dns-parameters to http://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml
+firewall/firewall-rule-troubleshooting.rst:113: [local] TCP:A
+firewall/firewall-rule-troubleshooting.rst:113: [local] TCP:SA
+firewall/firewall-rule-troubleshooting.rst:113: [local] TCP:RA
+firewall/online-gaming-with-pfsense.rst:28: [redirected with Found] http://en-americas-support.nintendo.com/app/answers/detail/a_id/13216/~/nat-related-troubleshooting-on-wii-u to https://en-americas-support.nintendo.com/app/error/error_id/1/session/L2F2LzEvdGltZS8xNTI5NTM2NTMzL3NpZC9mVSU3RXo0aERhUnJQMElTbkFVd3dyeVZSeDBjb3o2REljbFBJTldtbGMlN0VvWHVlQ2dpTzA5dkcwUHE0ZjVOS1hXRUxyYmdIUzlLQkNwSVlqSzRvTHU4U3k5QmZRNE90czNtZjR5TU1UZ1I3M1VveWQlN0VWT1JaeGJMRlElMjElMjE=
+hardware/connecting-to-the-serial-console.rst:91: [redirected permanently] http://www.chiark.greenend.org.uk/~sgtatham/putty/ to https://www.chiark.greenend.org.uk/~sgtatham/putty/
+hardware/console-types.rst:39: [redirected permanently] http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html to https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+hardware/cryptographic-accelerator-support.rst:161: [broken] http://www.netgate.com/product_info.php?products_id=791: 404 Client Error: Not Found for url: https://www.netgate.com:443/product_info.php?products_id=791
+hardware/dma-and-lba-errors.rst:37: [redirected with Found] https://forum.netgate.com/post/37576 to https://forum.netgate.com/topic/37576/ad0-errors-with-compactflash-sandisk-cards-and-soekris-net5501/1
+hardware/intel-e1000-power-save.rst:24: [redirected permanently] https://sourceforge.net/tracker/index.php?func=detail&aid=1463045&group_id=42302&atid=447449 to https://sourceforge.net/p/e1000/bugs/249/
+hardware/intel-e1000-power-save.rst:15: [broken] http://www.zaurus.org.uk/download/scripts/fixeep-82573-dspd.sh: 404 Client Error: Not Found for url: http://www.zaurus.org.uk/download/scripts/fixeep-82573-dspd.sh
+hardware/what-kind-of-flash-should-i-use.rst:6: [broken] http://thread.gmane.org/gmane.comp.security.firewalls.pfsense.user/3189: 523 Server Error: Origin Unreachable for url: http://thread.gmane.org/gmane.comp.security.firewalls.pfsense.user/3189
+hardware/writing-disk-images.rst:100: [redirected permanently] http://www.7-zip.org/ to https://www.7-zip.org/
+highavailability/troubleshooting-high-availability-clusters.rst:169: [redirected with Found] https://forum.netgate.com/post/43928 to https://forum.netgate.com/topic/43928/carp-failover-setup-using-virtualbox-vms/1
+highavailability/troubleshooting-high-availability-clusters.rst:15: [redirected permanently] https://docs.google.com/spreadsheet/ccc?key=0AojFUXcbH0ROdHB0Q1ZxalJiVFdFRjdfSkpsMkNwT2c&usp=sharing to https://docs.google.com/spreadsheets/d/17CqR6iAAXHXfU0h4uatzuY0w7k0ijy22dES6joLdTL0/edit?usp=sharing
+highavailability/troubleshooting-high-availability-clusters.rst:141: [redirected permanently] http://www.vmware.com/support/vsphere4/doc/vsp_esx40_u2_rel_notes.html to https://www.vmware.com/support/vsphere4/doc/vsp_esx40_u2_rel_notes.html
+highavailability/troubleshooting-high-availability-clusters.rst:151: [redirected permanently] http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=287 to https://kb.vmware.com/s/article/287
+ids-ips/setup-snort-package.rst:22: [redirected permanently] http://www.snort.org to https://www.snort.org/
+install/installation-troubleshooting.rst:92: [redirected permanently] http://aruljohn.com/mac.pl to https://aruljohn.com/mac.pl
+install/installing-pfsense.rst:282: [broken] https://192.168.1.1/: HTTPSConnectionPool(host='192.168.1.1', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10f77de80>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+install/verify-downloaded-files.rst:42: [broken] http://implbits.com/Products/HashTab.aspx: 404 Client Error: Not Found for url: http://implbits.com/Products/HashTab.aspx
+install/verify-downloaded-files.rst:15: [broken] http://implbits.com/Products/HashTab.aspx: 404 Client Error: Not Found for url: http://implbits.com/Products/HashTab.aspx
+install/writing-iso-images.rst:12: [redirected permanently] http://www.7-zip.org/ to https://www.7-zip.org/
+install/writing-iso-images.rst:47: [redirected permanently] http://www.cdburnerxp.se/ to https://cdburnerxp.se/
+interfaces/multi-link-ppp-mp-mlppp.rst:51: [redirected with Found] https://forum.netgate.com/post/38740 to https://forum.netgate.com/topic/38740/pppoe-packet-loss-problem-mtu/1
+interfaces/tuning-network-memory-buffers-mbufs.rst:20: [broken] http://bmilekic.unixdaemons.com/netbuf_bmilekic.pdf: 404 Client Error: Not Found for url: http://bmilekic.unixdaemons.com/netbuf_bmilekic.pdf
+interfaces/using-ipv6-with-a-tunnel-broker.rst:35: [redirected permanently] http://www.tunnelbroker.net to https://www.tunnelbroker.net/
+interfaces/vlan-trunking.rst:27: [redirected permanently] http://computer.howstuffworks.com/lan-switch17.htm to https://computer.howstuffworks.com/lan-switch17.htm
+monitoring/copying-logs-to-a-remote-host-with-syslog.rst:72: [broken] https://en.wikipedia.org/wiki/Syslog#Implementations: Anchor 'Implementations' not found
+monitoring/copying-logs-to-a-remote-host-with-syslog.rst:80: [redirected permanently] http://www.kiwisyslog.com/downloads.aspx to https://www.kiwisyslog.com/downloads
+monitoring/monitoring-bandwidth-usage.rst:80: [broken] http://www.ntop.org/overview.html: 404 Client Error: Not Found for url: https://www.ntop.org/overview.html
+nat/troubleshooting-1-1-nat.rst:6: [redirected permanently] http://www.ipchicken.com to https://www.ipchicken.com/
+packages/avahi-package.rst:28: [redirected permanently] http://icci.com to https://icci.com/
+packages/haproxy-package.rst:37: [redirected with Found] https://forum.netgate.com/post/42309 to https://forum.netgate.com/topic/42309/haproxy-package-overwrite/1
+packages/haproxy-package.rst:134: [redirected permanently] http://haproxy.1wt.eu/knownbugs-1.3.html to http://www.haproxy.org/knownbugs-1.3.html
+packages/installing-freebsd-packages.rst:224: [broken] http://ftpmirror.your.org/pub/FreeBSD-Unofficial-Packages/83i386-mini-nox11/Latest/: 404 Client Error: Not Found for url: http://ftpmirror.your.org/pub/FreeBSD-Unofficial-Packages/83i386-mini-nox11/Latest/
+packages/installing-freebsd-packages.rst:221: [broken] http://ftpmirror.your.org/pub/FreeBSD-Unofficial-Packages/83amd64-mini-nox11/Latest/: 404 Client Error: Not Found for url: http://ftpmirror.your.org/pub/FreeBSD-Unofficial-Packages/83amd64-mini-nox11/Latest/
+packages/iperf-package.rst:47: [redirected permanently] http://www.enterprisenetworkingplanet.com/netos/article.php/3657236 to http://www.enterprisenetworkingplanet.com/netos/article.php/3657236/Measure-Network-Performance-with-iperf.htm
+packages/nmap-package.rst:23: [redirected permanently] http://tinyurl.com/9s5kw2 to https://www.amazon.com/gp/product/0979958717?ie=UTF8&tag=pfsense-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0979958717
+packages/nut-package.rst:6: [redirected permanently] http://www.networkupstools.org/ to https://networkupstools.org/
+packages/open-vm-tools-package.rst:6: [redirected permanently] http://www.freshports.org/emulators/open-vm-tools-nox11/ to https://www.freshports.org/emulators/open-vm-tools-nox11/
+packages/openbgpd-package.rst:12: [redirected with See Other] http://www.openbsd.org/cgi-bin/man.cgi?query=bgpd.conf to http://man.openbsd.org/bgpd.conf
+packages/pfblocker.rst:93: [redirected permanently] http://www.iblocklist.com/lists.php to https://www.iblocklist.com/lists.php
+packages/vnstat.rst:51: [redirected with Found] https://forum.netgate.com/post/13356 to https://forum.netgate.com/topic/13356/vnstat-added-to-package-tree/1
+packages/vnstat.rst:49: [redirected permanently] http://humdi.net/vnstat/ to https://humdi.net/vnstat/
+references/formatting-guide.rst:15: [redirected with Found] http://sphinx-doc.org/rest.html to http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+releases/2-0-2-new-features-and-changes.rst:42: [broken] https://www.cloudcracker.com/blog/2012/07/29/cracking-ms-chap-v2/: HTTPSConnectionPool(host='www.cloudcracker.com', port=443): Max retries exceeded with url: /blog/2012/07/29/cracking-ms-chap-v2/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10f3447b8>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+releases/2-0-3-new-features-and-changes.rst:109: [redirected with Found] https://forum.netgate.com/post/51581 to https://forum.netgate.com/topic/51581/truncated-etc-gettytab/1
+releases/2-0-3-new-features-and-changes.rst:161: [redirected with Found] https://redmine.pfsense.org/issues/2723 to https://redmine.pfsense.org/login?back_url=https%3A%2F%2Fredmine.pfsense.org%2Fissues%2F2723
+releases/2-0-3-new-features-and-changes.rst:131: [redirected permanently] http://github.com/pfsense/pfsense/ to https://github.com/pfsense/pfsense/
+releases/2-0-new-features-and-changes.rst:187: [redirected permanently] https://docs.google.com/spreadsheet/ccc?key=0AojFUXcbH0ROdHgwYkFHbkRUdV9hVWljVWl5SXkxbFE&hl=en_US to https://docs.google.com/spreadsheets/d/11cF4UoNL68Me5ZC6qhjFPmzdW7mib56dBIAKz30Qpug/edit?hl=en_US&hl=en_US
+releases/2-1-2-new-features-and-changes.rst:19: [redirected permanently] http://security.freebsd.org/advisories/FreeBSD-SA-14:06.openssl.asc to https://www.freebsd.org/security/advisories/FreeBSD-SA-14:06.openssl.asc
+releases/2-1-5-new-features-and-changes.rst:15: [redirected with Found] http://www.openssl.org/news/secadv_20140806.txt to https://www.openssl.org/news/secadv/20140806.txt
+releases/2-2-2-new-features-and-changes.rst:25: [redirected with Found] https://forum.netgate.com/post/82238 to https://forum.netgate.com/topic/82238/pfsense-dropping-traffic-on-169-254-0-0-16-network/1
+releases/2-2-3-new-features-and-changes.rst:82: [redirected with unknown code] https://wiki.strongSwan.org/issues/951 to https://wiki.strongswan.org/issues/951
+releases/2-2-3-new-features-and-changes.rst:206: [redirected with Found] https://redmine.pfsense.org/issues/4600 to https://redmine.pfsense.org/login?back_url=https%3A%2F%2Fredmine.pfsense.org%2Fissues%2F4600
+releases/2-2-new-features-and-changes.rst:21: [redirected permanently] http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8104 to https://nvd.nist.gov/vuln/detail/CVE-2014-8104
+releases/2-3-4-new-features-and-changes.rst:47: [broken] https://www.chromium.org/administrators/policy-list-3#EnableCommonNameFallbackForLocalAnchors: Anchor 'EnableCommonNameFallbackForLocalAnchors' not found
+releases/2-4-3-new-features-and-changes.rst:9: [redirected permanently] https://security.freebsd.org/advisories/FreeBSD-SA-18:01.ipsec.asc to https://www.freebsd.org/security/advisories/FreeBSD-SA-18:01.ipsec.asc
+services/snmp-daemon.rst:33: [redirected permanently] http://www.cacti.net/ to https://www.cacti.net/
+trafficshaper/traffic-shaping-guide.rst:201: [redirected permanently] http://prefetch.net/articles/monitoringpf.html to https://prefetch.net/articles/monitoringpf.html
+usermanager/configuring-additional-logging-for-freeradius.rst:34: [broken] http://freeradius.org/radiusd/doc/variables.txt: 404 Client Error: Not Found for url: http://freeradius.org/radiusd/doc/variables.txt
+usermanager/freeradius-2-x-package.rst:70: [redirected with Found] https://forum.netgate.com/post/39727 to https://forum.netgate.com/topic/39727/new-package-freeradius-2-x/1
+usermanager/freeradius-2-x-package.rst:131: [redirected with Found] https://forum.netgate.com/post/39727 to https://forum.netgate.com/topic/39727/new-package-freeradius-2-x/1
+usermanager/freeradius-2-x-package.rst:228: [redirected with Found] https://forum.netgate.com/post/39727 to https://forum.netgate.com/topic/39727/new-package-freeradius-2-x/1
+usermanager/freeradius-2-x-package.rst:188: [broken] http://wiki.freeradius.org/Status#Asking+with+radclient: Anchor 'Asking+with+radclient' not found
+usermanager/freeradius-2-x-package.rst:233: [redirected with Found] https://forum.netgate.com/post/41146 to https://forum.netgate.com/topic/41146/radius-pfsense-kullan%C4%B1c%C4%B1-kota-ve-s%C3%BCre-s%C4%B1n%C4%B1r%C4%B1-belirleme-video/1
+usermanager/freeradius-2-x-package.rst:240: [redirected permanently] http://www.freeradius.org to http://freeradius.org/
+usermanager/locked-out-of-the-webgui.rst:66: [broken] https://www.pfsensebox:80: HTTPSConnectionPool(host='www.pfsensebox', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10c21a278>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+usermanager/locked-out-of-the-webgui.rst:65: [broken] http://pfsensebox:443: HTTPConnectionPool(host='pfsensebox', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10d10eb00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+usermanager/plain-mac-authentication-with-freeradius.rst:24: [broken] http://wiki.freeradius.org/Mac-Auth: 403 Client Error: Forbidden for url: http://wiki.freeradius.org/create/Mac-Auth
+usermanager/sudo-package.rst:6: [redirected permanently] http://www.sudo.ws/ to https://www.sudo.ws/
+usermanager/sudo-package.rst:13: [redirected permanently] http://www.sudo.ws/sudoers.man.html to https://www.sudo.ws/man/sudoers.man.html
+usermanager/testing-freeradius.rst:88: [redirected with Found] http://coova.org/JRadius to https://coova.github.io/
+usermanager/testing-freeradius.rst:73: [redirected with Found] http://coova.org/JRadius to https://coova.github.io/
+usermanager/using-eap-and-peap-with-freeradius.rst:96: [redirected permanently] http://www.freeradius.org to http://freeradius.org/
+usermanager/using-eap-and-peap-with-freeradius.rst:96: [broken] http://wiki.freeradius.org/WPA_HOWTO#HOWTO+Do+It%3A+An+Outline: Anchor 'HOWTO+Do+It%3A+An+Outline' not found
+usermanager/using-eap-and-peap-with-freeradius.rst:127: [broken] http://www.wpi.edu/academics/CCC/Netops/Wireless/Setup/xp-imgs/WPA-0006.jpg: 404 Client Error: Not Found for url: https://web.wpi.edu/academics/CCC/Netops/Wireless/Setup/xp-imgs/WPA-0006.jpg
+usermanager/using-eap-and-peap-with-freeradius.rst:94: [redirected permanently] http://www.administrator.de/index.php?content=142241 to https://www.administrator.de/wissen/sichere-wlan-benutzer-authentisierung-radius-142241.html
+usermanager/using-mysql-with-freeradius.rst:11: [redirected permanently] http://freeradius.org/testimonials.html to http://freeradius.org/about/#usage_statistics
+usermanager/using-mysql-with-freeradius.rst:22: [broken] http://wiki.freeradius.org/Rlm_sqlcounter: 403 Client Error: Forbidden for url: http://wiki.freeradius.org/create/Rlm_sqlcounter
+vpn/android-vpn-compatibility.rst:60: [broken] https://www.cloudcracker.com/blog/2012/07/29/cracking-ms-chap-v2/: HTTPSConnectionPool(host='www.cloudcracker.com', port=443): Max retries exceeded with url: /blog/2012/07/29/cracking-ms-chap-v2/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10f3447b8>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+vpn/android-vpn-compatibility.rst:176: [broken] http://www.featvpn.com/: HTTPConnectionPool(host='www.featvpn.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10cfa7a58>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+vpn/android-vpn-compatibility.rst:176: [broken] http://www.featvpn.com/: HTTPConnectionPool(host='www.featvpn.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10cfa7a58>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+vpn/android-vpn-compatibility.rst:167: [broken] https://play.google.com/store/apps/details?id=com.featvpn.app.comm: 404 Client Error: Not Found for url: https://play.google.com/store/apps/details?id=com.featvpn.app.comm
+vpn/android-vpn-compatibility.rst:74: [redirected with Found] https://forum.netgate.com/post/31657 to https://forum.netgate.com/topic/31657/android-pptp/1
+vpn/ipsec/ipsec-for-road-warriors-in-pfsense-2-0-1-with-psk-in-stead-of-xauth.rst:6: [redirected permanently] http://shrew.net to https://www.shrew.net/
+vpn/ipsec/ipsec-for-road-warriors-in-pfsense-2-0-1-with-psk-in-stead-of-xauth.rst:372: [redirected with unknown code] https://redmine.pfSense.org/issues/1351 to https://redmine.pfsense.org/issues/1351
+vpn/ipsec/ipsec-troubleshooting.rst:395: [redirected permanently] https://www.freebsd.org/cgi/query-pr.cgi?pr=166508 to https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=166508
+vpn/ipsec/routing-internet-traffic-through-a-site-to-site-ipsec-vpn.rst:54: [redirected permanently] http://www.not-implemented.com/comparing-hash-algorithms-md5-sha1-sha2/ to http://www.not-implemented.com
+vpn/openvpn/authenticating-openvpn-users-with-freeradius.rst:131: [broken] http://www.fusionnetwork.us/index.php/component/content/article/15-general-tutorials/23-pfsense-openvpn-freeradius: HTTPConnectionPool(host='www.fusionnetwork.us', port=80): Max retries exceeded with url: /index.php/component/content/article/15-general-tutorials/23-pfsense-openvpn-freeradius (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10c9dbc88>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+vpn/openvpn/authenticating-openvpn-users-with-radius-via-active-directory.rst:574: [broken] http://openvpn.se/install.txt: 404 Client Error: Not Found for url: http://openvpn.se/install.txt
+vpn/openvpn/connecting-pfsense-to-an-openvpn-access-server.rst:80: [redirected with Found] https://forum.netgate.com/post/67545 to https://forum.netgate.com/topic/67545/connect-to-openvpn-access-server/1
+vpn/openvpn/index.rst:7: [redirected permanently] https://www.openvpn.net to https://openvpn.net/
+vpn/openvpn/openvpn-adapter-address-icmp-behavior.rst:12: [redirected permanently] http://www.openvpn.net/index.php/documentation/faq.html to https://community.openvpn.net/openvpn/wiki/FAQ
+vpn/openvpn/openvpn-settings.rst:6: [redirected permanently] http://openvpn.net/ to https://openvpn.net/
+vpn/openvpn/troubleshooting-openvpn-internal-routing-iroute.rst:47: [redirected with Found] http://www.secure-computing.net/wiki/index.php/OpenVPN/Routing to https://secure-computing.net/wiki/index.php/OpenVPN/Routing
+vpn/openvpn/troubleshooting-windows-openvpn-client-connectivity.rst:6: [redirected permanently] http://openvpn.net/index.php/open-source/downloads.html to https://openvpn.net/index.php/open-source/downloads.html
+vpn/openvpn/troubleshooting-windows-openvpn-client-connectivity.rst:25: [redirected permanently] http://openvpn.net/index.php/open-source/documentation/howto.html#install to https://openvpn.net/index.php/open-source/documentation/howto.html#install
+vpn/openvpn/using-the-openvpn-client-export-package.rst:240: [redirected permanently] http://openvpn.net/index.php/open-source/downloads.html to https://openvpn.net/index.php/open-source/downloads.html
+vpn/openvpn/using-the-openvpn-client-export-package.rst:247: [broken] http://www.featvpn.com/: HTTPConnectionPool(host='www.featvpn.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10cfa7a58>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+vpn/openvpn/using-the-openvpn-client-export-package.rst:217: [redirected permanently] http://code.google.com/p/tunnelblick/ to https://code.google.com/archive/p/tunnelblick
+vpn/openvpn/using-the-openvpn-client-export-package.rst:256: [redirected permanently] http://code.google.com/p/tunnelblick/ to https://code.google.com/archive/p/tunnelblick
+vpn/pptp-troubleshooting.rst:15: [broken] https://www.cloudcracker.com/blog/2012/07/29/cracking-ms-chap-v2/: HTTPSConnectionPool(host='www.cloudcracker.com', port=443): Max retries exceeded with url: /blog/2012/07/29/cracking-ms-chap-v2/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10f3447b8>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+wireless/supported-wireless-cards.rst:45: [redirected permanently] https://spreadsheets.google.com/ccc?key=0AojFUXcbH0ROdHgwYkFHbkRUdV9hVWljVWl5SXkxbFE&hl=en to https://docs.google.com/spreadsheets/d/11cF4UoNL68Me5ZC6qhjFPmzdW7mib56dBIAKz30Qpug/edit?hl=en&hl=en
+wireless/what-is-the-best-wireless-card-to-use.rst:16: [redirected permanently] https://docs.google.com/spreadsheet/ccc?key=0AojFUXcbH0ROdHgwYkFHbkRUdV9hVWljVWl5SXkxbFE&usp=sharing to https://docs.google.com/spreadsheets/d/11cF4UoNL68Me5ZC6qhjFPmzdW7mib56dBIAKz30Qpug/edit?usp=sharing
+wireless/what-is-the-best-wireless-card-to-use.rst:6: [redirected permanently] http://store.netgate.com/WLE200NX-80211nabg-miniPCIe-Card-P1763.aspx to https://store.netgate.com/WLE200NX-80211nabg-miniPCIe-Card-P1763.aspx
+wireless/wireless-interfaces.rst:20: [redirected permanently] https://spreadsheets.google.com/ccc?key=0AojFUXcbH0ROdHgwYkFHbkRUdV9hVWljVWl5SXkxbFE&hl=en to https://docs.google.com/spreadsheets/d/11cF4UoNL68Me5ZC6qhjFPmzdW7mib56dBIAKz30Qpug/edit?hl=en&hl=en
