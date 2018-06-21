@@ -30,6 +30,28 @@
   margin-top: 5px;
 }
 
+/* versions dropdown */
+.select-style {
+  border: 1px solid #616161;
+  border-radius: 3px;
+  margin: 7px 2px;
+  overflow: hidden;
+  background: #424242 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#eeeeee' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'>%3C/polyline%3E%3C/svg%3E") no-repeat 90% 50%;
+}
+
+.select-style select {
+  padding: 5px 8px;
+  width: 100%;
+  color: #ffffff;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
 /* code styles */
 pre.literal-block {
     font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
