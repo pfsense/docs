@@ -158,7 +158,5 @@ performance when using the accelerated ciphers with *glxsb*.
 
 .. image:: /_static/hardware/alix2d3_vpn_throughput.png
 
-The `Hifn
-accelerator <http://www.netgate.com/product_info.php?products_id=791>`__
-is a much better performer, increasing maximum throughput on an ALIX to
-around 34 Mbps.
+The Hifn accelerator is a much better performer, increasing maximum
+throughput on an ALIX to around 34 Mbps.
