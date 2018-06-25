@@ -90,25 +90,7 @@ html_theme = 'sphinx_rtd_theme'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {
-    'software': [
-        ("pfSense", "/docs/pfsense/"),
-        ("TNSR", "/docs/tnsr/"),
-    ],
-    'pfsense_products': [
-        ("All Products", "/docs/pfsense/solutions/"),
-        ("Amazon AWS", "/docs/pfsense/solutions/aws-vpn-appliance"),
-        ("Microsoft Azure", "/docs/pfsense/solutions/azure-appliance"),
-        ("SG-1000", "/docs/pfsense/solutions/sg-1000"),
-        ("SG-3100", "/docs/pfsense/solutions/sg-3100"),
-        ("XG-1537", "/docs/pfsense/solutions/xg-1537"),
-        ("XG-1541", "/docs/pfsense/solutions/xg-1541"),
-        ("XG-7100", "/docs/pfsense/solutions/xg-7100")
-    ],
-    'tnsr_products': [
-        ("Amazon AWS", "/docs/tnsr/aws")
-    ]
-}
+#html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ["../_themes", ]
