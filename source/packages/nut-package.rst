@@ -10,25 +10,23 @@ tools) <http://www.networkupstools.org/>`__.
 
 After installation, the package may be configured at **Services > NUT**.
 
-Example
--------
+.. figure:: /_static/packages/nut-status-example.png
+   :figclass: align-center
 
-The following is an example of the NUT status screen:
-
-.. image:: /_static/packages/nut-status-example.png
+   An example of the NUT status screen
 
 Troubleshooting
 ---------------
 
 The package does not have a lot of input validation in the GUI. If NUT
 will not start after configuration, check the System log (**Status >
-System Logs**) for log entries from *nut*. The culprit is likely
+System Logs**) for log entries starting with ``nut:``. The culprit is likely
 explained there, such as selecting a cable for a driver type that does
 not need (nor permit) the cable selection.
 
 If the system log doesn't offer adequate information, such as simply
-logging "nut: Service failed to start: check configuration", log in via
-SSH and choose option *8*, then run the following command::
+logging "*nut: Service failed to start: check configuration*", log in via
+SSH and choose option ``8``, then run the following command::
 
   /usr/local/etc/rc.d/nut.sh start
 
