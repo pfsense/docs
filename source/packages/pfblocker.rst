@@ -14,7 +14,7 @@ What it allows:
   functionality, and more, in one package.
 * Uses native functions of pfSense instead of file hacks and table manipulation.
 
-Current version is 1.0.1 and includes:
+Features include:
 
 * Country_Block features
 * IP_Blocklist features
@@ -25,18 +25,21 @@ Current version is 1.0.1 and includes:
 * Many new options to choose what to block and how to block.
 * Network lists may be used for custom rules.
 
-How to
-------
+General Setup
+-------------
 
-**General** Set the interfaces to be monitored by pfBlocker (both
-inbound and outbound). The inbound is the Internet connection. To
-prevent devices or users from accessing sites in the countries/IP
-addresses selected later, select local interfaces under outbound and
-access will be blocked.
+Set the interfaces to be monitored by pfBlocker-NG (both inbound and
+outbound), where the inbound is the Internet connection.
 
-**Lists** This is the IPBlocklist feature, enter IP addresses here to
-specifically block. It must be in the file format or CIDR. Create a list
-for each type of action to be taken by pfBlocker.
+To prevent devices or users from accessing sites in the selected
+countries/IP addresses, select local interfaces under **outbound**.
+
+Setting up Lists
+----------------
+
+This is the IPBlocklist feature, enter IP addresses here to
+specifically block. It must be in the file format or CIDR. Create a
+list for each type of action to be taken by pfBlocker.
 
 Options are:
 
@@ -72,16 +75,16 @@ Available lists
 
 **Spamhaus** - DROP and EDROP.
 
-http://www.spamhaus.org/drop/drop.txt
-http://www.spamhaus.org/drop/edrop.txt
+* http://www.spamhaus.org/drop/drop.txt
+* http://www.spamhaus.org/drop/edrop.txt
 
 **DShield** - Most Active Attacking IPs.
 
-http://feeds.dshield.org/top10-2.txt
+* http://feeds.dshield.org/top10-2.txt
 
 **iblocklist.com** - A number of lists are available.
 
-http://www.iblocklist.com/lists.php
+* http://www.iblocklist.com/lists.php
 
 FAQ
 ---
