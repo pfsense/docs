@@ -3,10 +3,11 @@
 Using the OpenVPN Client Export Package
 =======================================
 
-The OpenVPN Client Export add-on package, located at **VPN > OpenVPN**
-on the **Client Export** tab, automatically creates a Windows installer
-to download, or it can generate configuration files for OSX (Viscosity),
-Android and iOS clients, SNOM and Yealink handsets, and others.
+The OpenVPN Client Export :doc:`add-on package </packages/index>`,
+located at **VPN > OpenVPN** on the **Client Export** tab, automatically
+creates a Windows installer to download, or it can generate configuration
+files for OSX (Viscosity), Android and iOS clients, SNOM and Yealink
+handsets, and others.
 
 Choose from any existing remote access server definitions, and then pick
 from a list of client certificates which are present under the
