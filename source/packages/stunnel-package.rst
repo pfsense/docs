@@ -3,51 +3,46 @@
 Stunnel package
 ===============
 
-Overview
---------
-
-The stunnel program is designed to work as an SSL encryption wrapper
+The `stunnel`_ program is designed to work as an SSL encryption wrapper
 between remote client and local (inetd-startable) or remote servers. It
 can be used to add SSL functionality to commonly used inetd daemons like
 POP2, POP3, and IMAP servers without any changes in the program's code.
-It will negotiate an SSL connection using the OpenSSL or SSLeay
+
+It will negotiate an SSL connection using the **OpenSSL** or **SSLeay**
 libraries. It calls the underlying crypto libraries, allowing stunnel to
 support whatever cryptographic algorithms were compiled into the crypto
 package.
 
-pfSense package
----------------
-
-The pfSense package implements only a subset of the configuration
-options available in stunnel. For more advanced configurations, please
-consider configuring stunnel manually on the pfSense host, or run it in
-a dedicated jail or on a different system.
+.. note:: The pfSense package implements only a subset of the configuration
+   options available in stunnel. For more advanced configurations, please
+   consider configuring stunnel manually on the pfSense host, run it in
+   a dedicated jail, or on a different system.
 
 The package has two configuration screens (tabs):
 
--  Tunnel definitions
--  Certificates
+* Tunnel definitions
+* Certificates
 
 Tunnels
-~~~~~~~
+-------
 
 For each tunnel, the following options are available:
 
--  Listening socket IP address and port
--  Certificate to use for the listening socket
--  Target IP address and port
--  IP address to bind to when connecting to the target
+* Listening socket IP address and port.
+* Certificate to use for the listening socket.
+* Target IP address and port.
+* IP address to bind to when connecting to the target.
 
 If no certificate is specified for a tunnel, the default certificate
 will be used. This is a self-signed certificate which is generated upon
 package (re)installation, and is not suited for production use.
 
 Certificates
-~~~~~~~~~~~~
+------------
 
 Certificates are managed in the simplest possible way, by requiring the
 user to provide RSA key and certificates/chains in PEM format. The
-*Certificates* tab will list the configured certificates along with
+**Certificates** tab will list the configured certificates along with
 status information, indicating whether the certificate is valid, will
 expire soon, or is already expired. A sanity check is also performed to
 make sure the key and certificate matches.
@@ -62,11 +57,8 @@ chain should be built in the following way:
    certificate
 #. Server certificate
 
-See stunnel documentation for more information on how to format a
-certificate chain.
+.. seealso:: Refer to the `stunnel documentation`_ for more information on how to format a
+   certificate chain.
 
-Documentation
--------------
-
-`stunnel web site <http://www.stunnel.org/>`__
-
+.. _stunnel: https://en.wikipedia.org/wiki/Stunnel
+.. _stunnel documentation: https://www.stunnel.org/docs.html
