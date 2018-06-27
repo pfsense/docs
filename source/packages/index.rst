@@ -39,6 +39,7 @@ Documented Packages
    nut-package
    open-vm-tools-package
    openbgpd-package
+   OpenVPN Client Export </vpn/openvpn/using-the-openvpn-client-export-package>
    pfblocker
    routing-information-protocol-rip
    siproxd-package
