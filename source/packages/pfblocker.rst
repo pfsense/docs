@@ -3,7 +3,7 @@
 pfBlocker-NG Package
 ====================
 
-pfBlocker introduces an Enhanced Aliastable Feature to pfSense.
+pfBlocker introduces an Enhanced Alias Table Feature to pfSense.
 
 What it allows:
 
