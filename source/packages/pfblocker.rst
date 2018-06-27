@@ -3,36 +3,27 @@
 pfBlocker-NG Package
 ====================
 
-pfBlocker introduces an Enhanced Alias Table Feature to pfSense.
+**pfBlocker-NG** introduces an Enhanced Alias Table Feature to pfSense.
 
 What it allows:
 
--  Assigning many IP address URL lists from sites like I-blocklist to a
-   single alias and then choose a rule action.
--  Blocking countries and IP ranges.
-
-Replaces Countryblock and IPblocklist (provides same functionality of
-both in one package and more)
-
-This package only uses native functions of pfSense instead of file hacks
-and table manipulation as was done in Countryblock and IPblocklist.
+* Assigning many IP address URL lists from sites like I-blocklist to a
+  single alias and then choose a rule action.
+* Blocking countries and IP ranges.
+* Replacment of both **Countryblock** and **IPblocklist** by providing the same
+  functionality, and more, in one package.
+* Uses native functions of pfSense instead of file hacks and table manipulation.
 
 Current version is 1.0.1 and includes:
 
-Country_Block features
-
-IP_Blocklist features
-
-Dashboard widget
-
-XMLRPC Sync
-
-Dashboard widget with aliases applied and package hit
-
-Lists update frequency
-
-Many new options to choose what to block and how to block. Network lists
-may be used in to custom rules.
+* Country_Block features
+* IP_Blocklist features
+* Dashboard widget
+* XMLRPC Sync
+* Dashboard widget with aliases applied and package hit
+* Lists update frequency
+* Many new options to choose what to block and how to block.
+* Network lists may be used for custom rules.
 
 How to
 ------
@@ -49,23 +40,23 @@ for each type of action to be taken by pfBlocker.
 
 Options are:
 
-'Deny Both' - Will deny access on Both directions.
+``Deny Both`` - Will deny access on Both directions.
 
-'Deny Inbound' - Will deny access from selected lists to the local
+``Deny Inbound`` - Will deny access from selected lists to the local
 network.
 
-'Deny Outbound' - Will deny access from local users to IP address lists
+``Deny Outbound`` - Will deny access from local users to IP address lists
 selected to block.
 
-'Permit Inbound' - Will allow access from selected lists to the local
+``Permit Inbound`` - Will allow access from selected lists to the local
 network.
 
-'Permit Outbound' - Will allow access from local users to IP address
+``Permit Outbound`` - Will allow access from local users to IP address
 lists selected to block.
 
-'Disabled' - Will just keep selection and do nothing to selected Lists.
+``Disabled`` - Will just keep selection and do nothing to selected Lists.
 
-'Alias Only' - Will create an alias with selected Lists to help custom
+``Alias Only`` - Will create an alias with selected Lists to help custom
 rule assignments.
 
 The rest of the tabs (except sync) specify the other lists included with
@@ -74,21 +65,21 @@ spammer list which contains countries from around the globe that are
 known to harbor spammers.
 
 Sync tab configures pfBlocker to sync its configuration to other pfSense
-devices
+devices.
 
 Available lists
 ---------------
 
-Spamhaus DROP and EDROP
+**Spamhaus** - DROP and EDROP.
 
 http://www.spamhaus.org/drop/drop.txt
 http://www.spamhaus.org/drop/edrop.txt
 
-DShield Most Active Attacking IPs
+**DShield** - Most Active Attacking IPs.
 
 http://feeds.dshield.org/top10-2.txt
 
-iblocklist.com has a number of lists available.
+**iblocklist.com** - A number of lists are available.
 
 http://www.iblocklist.com/lists.php
 
@@ -109,11 +100,10 @@ FAQ
 Known issues
 ------------
 
-Some users with 256 MB RAM or less reported boot errors while pfSense
-startup is done before GUI is available.
-
-Very large lists need PHP memory increase by doing some file hacks on
-pfSense.
+* Some users with 256 MB RAM or less reported boot errors while pfSense
+  startup is done before GUI is available.
+* Very large lists need PHP memory increase by doing some file hacks on
+  pfSense.
 
 Screen shots
 ------------
