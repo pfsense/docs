@@ -3,15 +3,14 @@
 HAProxy package
 ===============
 
-`HAProxy <http://www.haproxy.org/>`__ is a free, very fast and reliable
-solution offering high availability, load balancing, and proxying for
-TCP, HTTP and HTTPS-based applications. It is particularly suited for
-web sites struggling under very high loads while needing persistence or
-Layer7 processing. Supporting tens of thousands of connections is
-clearly realistic with todays hardware. Its mode of operation makes its
-integration into existing architectures very easy and riskless, while
-still offering the possibility not to expose fragile web servers to the
-Net.
+`HAProxy`_ is a free, very fast and reliable solution offering high
+availability, load balancing, and proxying for TCP, HTTP and HTTPS-based
+applications. It is particularly suited for web sites struggling under
+very high loads while needing persistence or Layer7 processing. Supporting
+tens of thousands of connections is clearly realistic with todays hardware.
+Its mode of operation makes its integration into existing architectures very
+easy and riskless, while still offering the possibility not to expose
+fragile web servers to the Net.
 
 For info about HAProxy 1.6 and 1.7 see:
 https://github.com/PiBa-NL/pfsense-haproxy-package-doc/wiki
@@ -21,23 +20,12 @@ Package Variants
 
 On recent pfSense versions 2 haproxy packages are available:
 
--  HAProxy package tracks the stable FreeBSD port currently using
-   HAProxy 1.6.x
--  HAProxy-devel package uses haproxy-devel from FreeBSD ports and
-   loosely tracks HAProxy 1.7dev new features in the pfSense package are
-   also first included in the HAProxy-devel then later copied over the
-   HAProxy package.
-
-On 2.1 and before: Some of these may not appear on all platforms.
-
--  HAproxy-devel - Development version with new features and a newer
-   HAproxy binary release. Recommended for testing, and if new features
-   are required, deployment after testing.
--  HAproxy-full - The current recommended package for general use.
--  HAproxy - A version based on HAproxy-full's predecessor that does not
-   include the changes in HAproxy-full. See `this forum
-   thread <https://forum.netgate.com/post/42309>`__ for
-   details.
+* **HAProxy** package tracks the stable FreeBSD port currently using
+  HAProxy 1.6.x.
+* **HAProxy-devel** package uses haproxy-devel from FreeBSD ports and
+  loosely tracks HAProxy 1.7dev new features in the pfSense package are
+  also first included in the HAProxy-devel then later copied over the
+  HAProxy package.
 
 Recent Changes
 --------------
@@ -104,11 +92,6 @@ Older Releases:
 -  0.15 - Configuration synchronization added for CARP clusters
 -  0.01 - Converted to a pfSense package
 
-Status
-------
-
-Stable
-
 Known issues
 ------------
 
@@ -131,9 +114,7 @@ Known issues
 -  Some unexpected behavior for those who are used to HAProxy
    configuration alone (see the differences section).
 
-A matrix of haproxy application known bugs are located
-`here <http://haproxy.1wt.eu/knownbugs-1.3.html>`__. This is out-of-date
-but there is no newer version as of this writing.
+HAProxy has their own list of `known bugs by branch and by version`_.
 
 Things that could be improved
 -----------------------------
@@ -221,8 +202,10 @@ an HAProxy configuration where a single server directive has no ports
 and effectively handles multiple (due to inheriting from the frontend)
 it will only show up in the stats once.
 
-Package Support Status
-----------------------
+Package Support
+---------------
 
-This package is currently supported by |support_link|.
+This package is currently supported by |support_link| to those with an active support subscription.
 
+.. _HAProxy: http://www.haproxy.org
+.. _known bugs by branch and by version: http://www.haproxy.org/bugs/index.html
