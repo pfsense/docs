@@ -43,5 +43,6 @@ Documented Packages
    pfblocker
    routing-information-protocol-rip
    siproxd-package
+   SquidGuard package </cache-proxy/squidguard-package>
    stunnel-package
    vnstat
