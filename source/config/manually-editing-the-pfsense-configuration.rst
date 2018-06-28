@@ -3,14 +3,19 @@
 Manually Editing the pfSense Configuration
 ==========================================
 
-There isn't one single way to reload the entirety of *config.xml* short
-of rebooting the firewall. To apply changes updating a specific section
-of *config.xml*, run:
+After editing the configuration, you will need to reload the entirety of
+**config.xml**. There are a few ways of doing this:
 
--  rm /tmp/config.cache
--  On a page relevant to the config area changed, press the **Save**
-   button.
+#. Reboot the firewall.
 
-The command *viconfig* will bring up the *config.xml* in *vi*, and upon
-exiting *vi*, removes the configuration cache file automatically.
+#. Delete the configuration cache file::
 
+     rm /tmp/config.cache
+  
+   Then, on a page, or pages, relevant to the config area(s) that changed, click
+   the **Save** button.
+
+#. Run the ``viconfig`` command to bring up **config.xml** in `vi`_. Upon
+   exiting vi, the configuration cache file will automatically be removed.
+
+.. _vi: https://en.wikipedia.org/wiki/Vi
