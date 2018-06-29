@@ -63,7 +63,5 @@ that refer to LAN or a specific interface. If that interface IP address
 or subnet changes in the future, the rules will be rebuilt correctly and
 they will not need manually adjusted.
 
-See also:
-
--  :doc:`Firewall Rule Troubleshooting </firewall/firewall-rule-troubleshooting>`
+.. seealso:: For fixing issues with firewall rules, see :doc:`Firewall Rule Troubleshooting </firewall/firewall-rule-troubleshooting>`.
 
