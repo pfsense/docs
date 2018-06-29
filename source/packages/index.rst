@@ -43,6 +43,7 @@ Documented Packages
    pfblocker
    routing-information-protocol-rip
    siproxd-package
+   Snort package </ids-ips/setup-snort-package>
    SquidGuard package </cache-proxy/squidguard-package>
    stunnel-package
    vnstat
