@@ -13,7 +13,7 @@ To oversimplify, "mbufs" are network memory buffers; portions of RAM set
 aside for use by networking for moving data around.
 
 The count of active mbufs is shown on the dashboard and is tracked by a
-graph under **Status > RRD Graphs**.
+graph under **Status > Monitoring**.
 
 If the mbuf usage is at or near the maximum, or a crash happened with a
 report that referenced mbufs/uma/memory allocation, then increasing the

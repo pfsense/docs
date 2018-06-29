@@ -6,7 +6,7 @@ Monitoring Graphs
 pfSense has many built-in graphs that monitor different aspects of the
 system, and they work out-of-the-box with no intervention.
 
-These are located under **Status > RRD Graphs**. Several graphs are
+These are located under **Status > Monitoring**. Several graphs are
 presented for each monitored item, with varying time intervals and
 averages.
 

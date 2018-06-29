@@ -18,7 +18,7 @@ Make a backup!
 
 First, as always before any major change to the firewall, make sure there is a
 good, up-to-date backup. Visit **Diagnostics > Backup/Restore** and download a
-backup of the firewall configuration (``config.xml``). Those with a
+backup of the firewall configuration (**config.xml**). Those with a
 |premium_content_link| may also use the :doc:`AutoConfigBackup
 </backup/autoconfigbackup>` package to make a manual backup noting the reason as
 "before upgrade". Keeping a local and remote copy of the backup *config.xml* is
@@ -82,7 +82,7 @@ Performing the Update
 ---------------------
 
 The specifics of performing the actual firmware update (Automatic or
-manual) are covered in :doc:`Firmware Updates </install/upgrading-pfsense-software-installations>`.
+manual) are covered in :doc:`/install/upgrading-pfsense-software-installations`.
 
 Changing architecture (32-bit to 64-bit or vice versa) during upgrade
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -390,8 +390,8 @@ required at this time.
 vmxnet3 (VMware/ESX) users
 """"""""""""""""""""""""""
 
-Users who manually installed :doc:`VMware Tools </virtualization/installing-vmware-guest-tools>` to use
-vmxnet3 may encounter an issue with interface name changes when
+Users who manually installed :doc:`VMware Tools </virtualization/installing-vmware-guest-tools>`
+to use vmxnet3 may encounter an issue with interface name changes when
 upgrading to pfSense 2.2, similar to those with Xen mentioned above. In
 pfSense 2.1.x the vmxnet3 interfaces were named starting with "vmx3f"
 and on pfSense 2.2.x they are simply "vmx" using the built-in support.
@@ -550,13 +550,12 @@ tunable as follows:
       this note or a similar note.
    -  **Value**: *1*
 
--  Click Save
+-  Click **Save**
 
 pfSense 2.3 Upgrade Guide
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See :doc:`the 2.3 release notes </releases/2-3-new-features-and-changes>` for a
-larger list of changes
+See :doc:`/releases/2-3-new-features-and-changes` for a larger list of changes.
 
 -  Due to the GUI overhaul, older themes have been removed. All
    previously chosen themes are reset on upgrade to the default
@@ -623,7 +622,8 @@ Package System
    upgrading for safety.
 -  Packages require significant conversion for use on 2.3, currently
    only the most popular and supported packages are present on 2.3, so
-   be aware that some packages are not available. See :doc:`Package Port List </development/package-port-list>` for a list of packages currently
+   be aware that some packages are not available. See
+   :doc:`/development/package-port-list` for a list of packages currently
    available on 2.3.
 
 Removed features that are disabled on upgrade
@@ -762,8 +762,8 @@ to MASTER status after rebooting for the upgrade.
    switching the new version to master status. This is true when upgrading
    to 1.2.3 from any prior release.
 
-NOTE for 2.0 upgrades: Refer to :doc:`Redundant Firewalls Upgrade Guide </highavailability/redundant-firewalls-upgrade-guide>`
-for specifics for upgrading to 2.0 with HA/CARP.
+.. seealso:: Refer to :doc:`/highavailability/redundant-firewalls-upgrade-guide`
+   for specifics on upgrading with HA/CARP.
 
 Cosmetic Problems Post-Upgrade
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

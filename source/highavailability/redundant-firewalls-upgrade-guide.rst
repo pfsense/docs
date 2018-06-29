@@ -4,13 +4,9 @@ Upgrading High Availability Clusters
 ====================================
 
 This page provides guidance on upgrading redundant firewalls (CARP,
-pfsync, config sync) across major versions of pfSense
-
-General Procedure
------------------
-
-Upgrading from one version to another generally follows the this
-procedure, exceptions are noted later in the page.
+pfsync, config sync) across major versions of pfSense. Upgrading from one
+version to another generally follows the this procedure, exceptions are noted
+later in the page.
 
 -  Review changelog/blog/upgrade guide
 -  Take a backup from both nodes. **Do not skip this step!**
@@ -28,7 +24,7 @@ procedure, exceptions are noted later in the page.
 -  Test again
 
 XMLRPC Config Sync Considerations Upgrading from an Older 1.2 or 2.x Release (Before 2.2.5)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------------------------
 
 These older versions do not properly check the version of the opposing
 node being synced, so they will overwrite pieces of a newer
@@ -48,7 +44,7 @@ this is under **System > High Avail Sync**. After the upgrade procedure
 is complete on **both** nodes, replace these settings.
 
 pfsync considerations
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 The underlying pfsync protocol often changes between FreeBSD versions,
 for example FreeBSD 7.2 (1.2.3) and 8.3 (2.1) and 10.1 (2.2) and 10.3
@@ -71,14 +67,14 @@ secondary contains em0, but the states are on lagg0 for both so sync
 will function.
 
 CARP considerations
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 CARP is generally the same between versions and will fail over and back
 just fine. Just keep in mind the above considerations with pfsync and
 the configuration synchronization.
 
 Performing the upgrade
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 After choosing the system to upgrade, and disabling config sync if
 upgrading the secondary first, proceed with a normal upgrade as
