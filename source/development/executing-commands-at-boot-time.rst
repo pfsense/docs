@@ -27,7 +27,7 @@ add a line such as the following::
 
   <shellcmd>mycommand -a -b -c 123</shellcmd>
 
-Where "mycommand -a -b -c 123" is the command to run. Multiple lines may
+Where ``mycommand -a -b -c 123`` is the command to run. Multiple lines may
 be added to execute multiple commands. Save the changes and restore the
 modified configuration.
 
@@ -51,9 +51,9 @@ changes and restore the modified configuration.
 Shell script option
 -------------------
 
-Any shell script can be placed in the */usr/local/etc/rc.d/* directory.
-The filename must end in *.sh* and it must be marked as executable
-(*chmod +x myscript.sh*). Every shell script ending in *.sh* in this
+Any shell script can be placed in the **/usr/local/etc/rc.d/** directory.
+The filename must end in **.sh** and it must be marked as executable
+(``chmod +x myscript.sh``). Every shell script ending in **.sh** in this
 directory will be executed at boot time.
 
 The first two options are preferable as they are retained in the config
