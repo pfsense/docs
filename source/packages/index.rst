@@ -30,6 +30,7 @@ Documented Packages
    :maxdepth: 1
 
    arping-package
+   AutoConfigBackup </backup/autoconfigbackup>
    avahi-package
    haproxy-package
    troubleshooting-the-haproxy-package
