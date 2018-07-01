@@ -29,6 +29,7 @@ Documented Packages
 .. toctree::
    :maxdepth: 1
 
+   /certificates/acme-package
    arping-package
    AutoConfigBackup </backup/autoconfigbackup>
    avahi-package
