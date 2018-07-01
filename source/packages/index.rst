@@ -46,4 +46,5 @@ Documented Packages
    Snort package </ids-ips/setup-snort-package>
    SquidGuard package </cache-proxy/squidguard-package>
    stunnel-package
+   /development/system-patches
    vnstat
