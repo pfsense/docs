@@ -151,8 +151,9 @@ General rules
 
 - Should be written as::
 
-    if ($bool1 && $bool2 && $bool3)
+    if ($bool1 && $bool2 && $bool3) {
        do_it();
+    }
     whatever();
 
 - Do not set unnecessary variables::
@@ -201,9 +202,9 @@ Indent style
        something();
     }
 
-  Not so good:::
+  Not good::
 
-    if ($foo)
+    if($foo)
        something();
 
 - If a conditional statement must span multiple lines, indent using
