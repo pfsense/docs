@@ -46,6 +46,7 @@ Documented Packages
    routing-information-protocol-rip
    siproxd-package
    Snort package </ids-ips/setup-snort-package>
+   softflowd </monitoring/exporting-netflow-with-softflowd>
    SquidGuard package </cache-proxy/squidguard-package>
    stunnel-package
    /development/system-patches
