@@ -49,5 +49,6 @@ Documented Packages
    softflowd </monitoring/exporting-netflow-with-softflowd>
    SquidGuard package </cache-proxy/squidguard-package>
    stunnel-package
+   /usermanager/sudo-package
    /development/system-patches
    vnstat
