@@ -21,6 +21,7 @@ local networks or to allow remote access clients to reach local resources.
    ikev2-with-eap-tls
    configuring-an-ipsec-remote-access-mobile-vpn-using-ikev1-xauth
    ipsec-tunnels
+   ipsec-routed
    ipsec-mobile-clients
    advanced-ipsec-settings
    ipsec-logs
