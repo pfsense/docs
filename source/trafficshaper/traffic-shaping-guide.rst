@@ -146,12 +146,6 @@ Limiters
 
 For information on Limiters, see: :doc:`/trafficshaper/limiters`.
 
-Layer 7
--------
-
-Layer 7 inspection, also knows as Deep Packet Inspection or DPI, may be
-used to match traffic and apply a queue.
-
 ACK Queue Sizing
 ----------------
 
