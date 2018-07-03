@@ -3,19 +3,18 @@
 Using Limiters to Restrict Bandwidth Usage
 ==========================================
 
-The **Limiters** feature sets up `dummynet(4)
-<https://www.freebsd.org/cgi/man.cgi?format=html&query=dummynet%284%29>`__
-pipes. Dummynet was designed to simulate any kind of network connection. Various
-types of connections can be simulated such as Dialup, T1, a T1 run through a
-microwave oven, or a satellite connection to the Moon. A side effect of being
-able to simulate any type of network connection is that they can also be used to
-limit the amount of bandwidth a host or group of hosts have access to.
+The **Limiters** feature sets up `dummynet(4)`_ pipes. Dummynet was designed to
+simulate any kind of network connection. Various types of connections can be
+simulated such as Dialup, T1, a T1 run through a microwave oven, or a satellite
+connection to the Moon. A side effect of being able to simulate any type of
+network connection is that they can also be used to limit the amount of
+bandwidth a host or group of hosts have access to.
 
 Both the packet shaper and limiters can be used at the same time so traffic can
 be shaped as a whole, and also limit certain traffic to a certain amount of
 bandwidth.
 
-There are 2 basic steps to setting up a limiter to control bandwidth.
+There are 2 basic steps to setting up a limiter to control bandwidth:
 
 #. Setup the limiters
 #. Assign traffic to those limiters
@@ -62,7 +61,7 @@ LAN interface, **out** is download (traffic from the LAN NIC out to the LAN) and
 Creating the limiters does not do anything on its own, they **must** be assigned
 on a firewall rule.
 
-Limiter status
+Limiter Status
 --------------
 
 Bandwidth usage and other limiter information is available under **Diagnostics >
@@ -85,10 +84,10 @@ an upper limit, make four limiters as follows:
 #. Total bandwidth upload (less guaranteed above)
 #. Total bandwidth download (less guaranteed above)
 
-The Mask must be *none* for these to work properly, otherwise it
+The Mask must be **none** for these to work properly, otherwise it
 cannot enforce a total limit.
 
-If the WAN has 8Mb down and 2Mb up, to guarantee 512Kb/s for service X
+If the WAN has 8Mb down and 2Mb up, to guarantee 512 Kb/s for service X
 create queues sized like so:
 
 #. 512 Kb/s
@@ -112,7 +111,7 @@ Known limitations
 -  On pfSense 2.2 and 2.3, limiters cannot be used on firewall rules residing on
    interfaces where NAT applies. This limits their use to LAN-type interfaces
    only, and not WANs, in most circumstances. This has been fixed on pfSense
-   2.4. `Bug #4326 <https://redmine.pfsense.org/issues/4326>`__
+   2.4. `Bug #4326`_.
 
 Troubleshooting
 ---------------
@@ -128,8 +127,10 @@ of::
 Which lists all of the pipes currently configured on the system, and related
 information about their status.
 
-Dummynet Documentation
-----------------------
+.. seealso:: **Additional Resources:**
+   
+   * `Dummy Net documentation`_
 
-Dummy Net documentation: http://info.iet.unipi.it/~luigi/dummynet/
-
+.. _Bug #4326: https://redmine.pfsense.org/issues/4326
+.. _dummynet(4): https://www.freebsd.org/cgi/man.cgi?format=html&query=dummynet%284%29
+.. _Dummy Net documentation: http://info.iet.unipi.it/~luigi/dummynet
