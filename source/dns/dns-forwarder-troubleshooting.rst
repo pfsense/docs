@@ -42,7 +42,7 @@ A cached negative response::
   Dec  3 08:56:49 dnsmasq[1068]: cached wpad.example.com is NXDOMAIN-IPv4
 
 A query where the reply cannot be sent because of an improper client IP
-(subnet ID, invalid IP):
+(subnet ID, invalid IP)::
 
   Dec  3 08:49:21 dnsmasq[1068]: query[A] teredo.ipv6.microsoft.com from 192.0.2.0
   Dec  3 08:49:21 dnsmasq[1068]: forwarded teredo.ipv6.microsoft.com to 8.8.8.8
