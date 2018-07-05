@@ -128,7 +128,7 @@ RFCs
   Rules for their Specification
 * `RFC 3140`_ — Per Hop Behavior Identification Codes (replaces `RFC 2836`_)
 * `RFC 3246`_ — An Expedited Forwarding PHB (Per-Hop Behavior) (obsoletes
-* `RFC 2598`_)
+  `RFC 2598`_)
 * `RFC 3247`_ — Supplemental Information for the New Definition of the EF PHB
   (Expedited Forwarding Per-Hop Behavior)
 * `RFC 3260`_ — New Terminology and Clarifications for Diffserv (updates
