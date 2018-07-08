@@ -1,5 +1,8 @@
 .. include:: /substitutions.rsti
 
+2.3 Removed Packages
+====================
+
 The available package list in pfSense 2.3 has been trimmed down
 significantly, mostly removing packages that have been deprecated
 upstream, no longer have an active maintainer, or were never stable to
@@ -9,10 +12,7 @@ return if converted. The following lists packages no longer available in
 
 Systems with one of these packages installed can be upgraded, but the
 package will no longer be there post-upgrade. We recommend uninstalling
-these packages before upgrading to 2.3.
-
-Removed Package List
-~~~~~~~~~~~~~~~~~~~~
+these packages before upgrading to 2.3:
 
 -  Apache with mod_security-dev / Proxy Server with mod_security -
    neither ever worked well, no active maintainer.
