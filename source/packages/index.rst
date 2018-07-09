@@ -33,6 +33,7 @@ Documented Packages
    arping-package
    AutoConfigBackup </backup/autoconfigbackup>
    avahi-package
+   /usermanager/freeradius-2-x-package
    haproxy-package
    troubleshooting-the-haproxy-package
    iperf-package
