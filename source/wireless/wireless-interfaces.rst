@@ -20,7 +20,7 @@ driver to driver and even chip to chip on the same driver.
 On most supported Atheros cards, this is limited to 4 access points.
 Some other cards are also supported. Check our `list of supported
 cards <https://spreadsheets.google.com/ccc?key=0AojFUXcbH0ROdHgwYkFHbkRUdV9hVWljVWl5SXkxbFE&hl=en>`__
-and look for the "YM" in the **hostap** column.
+and look for "Multi" in the **hostap** column.
 
 Some care is needed when testing your hardware to see if this feature is
 supported. Some chips will simply fail to add the additional interface,
