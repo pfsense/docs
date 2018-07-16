@@ -21,7 +21,7 @@ means running it with the ``-a <subnet>`` or similar flag.
 FreeBSD
 ^^^^^^^
 
-On FreeBSD, edit **/etc/rc.conf** and add this line::
+On FreeBSD, edit ``/etc/rc.conf`` and add this line::
 
   syslogd_flags=" -a 192.168.1.1 "
 
@@ -35,7 +35,7 @@ Using that parameter, syslog will accept from any IP address in the
 10.0.10.0 subnet (mask 255.255.255.0) and the messages may come from any
 UDP port.
 
-Now, edit **/etc/syslog.conf** and add a block at the bottom::
+Now, edit ``/etc/syslog.conf`` and add a block at the bottom::
 
   !*
   +*
@@ -44,8 +44,8 @@ Now, edit **/etc/syslog.conf** and add a block at the bottom::
   *.*                /var/log/pfsense.log
 
 Where *pfSense* is the hostname of the pfSense firewall. An entry may also
-need to be added in **/etc/hosts** for that system, depending on the DNS
-setup. Logs may be split separate files. Use the **/etc/syslog.conf** file
+need to be added in ``/etc/hosts`` for that system, depending on the DNS
+setup. Logs may be split separate files. Use the ``/etc/syslog.conf`` file
 on the pfSense firewall for more details on which logging facilities are
 used for specific items.
 
@@ -69,7 +69,7 @@ The configuration for OpenBSD is similar to FreeBSD, with the following notes:
 
     rcctl set syslogd flags -u
 
-#. To restart the syslogd service, use *rcctl(8)* too::
+#. To restart the syslogd service::
 
     rcctl restart syslogd
 
