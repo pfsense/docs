@@ -7,7 +7,7 @@ Users with a |premium_content_link| have access to our Automatic Configuration
 Backup Service, AutoConfigBackup.
 
 Functionality and Benefits
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 When a change is made to the configuration on a firewall, it is
 automatically encrypted with the passphrase entered in the
@@ -16,20 +16,20 @@ encrypted configurations are retained on our server. This gives instant,
 secure offsite backups of a firewall with no user intervention.
 
 pfSense Version Compatibility
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
-This package will work with all currently supported versions of pfSense.
+This package will work with currently supported pfSense versions, released prior
+to 2.4.4.
 
 Backup Limits
-~~~~~~~~~~~~~
+-------------
 
 The most recent 100 configurations for each host are retained.
 
-Users with a |premium_content_link| can backup a maximum of 10 systems. If more
-systems are required, contact us for pricing information.
+Users with a |premium_content_link| can backup a maximum of 10 systems.
 
 Installation and Configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
 Installing the AutoConfigBackup Package
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -65,7 +65,7 @@ restore a configuration the hard drive in the firewall fails. We retain only
 **encrypted** configurations, which are useless without the encryption key.
 
 Testing Backup Functionality
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 Make a change to force a configuration backup, such as editing and
 saving a firewall or NAT rule, then click **Apply Changes**. Visit
@@ -74,7 +74,7 @@ available backups along with the page that made the change (where
 available).
 
 Manually Backing Up
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 At times, it may be desirable to force a backup of a firewall
 configuration. This can be done on the **Restore** tab of the
@@ -90,7 +90,7 @@ upgrading to a new pfSense release, and name the backup so it's clear
 that is the reason the backup was made.
 
 Restoring a Configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 To restore a configuration, click |fa-plus| to the right of the configuration
 as shown on the **Diagnostics > AutoConfigBackup** screen on the
@@ -104,24 +104,22 @@ offering to reboot. If the restored configuration changes anything other
 than NAT and firewall rules, choose **Yes**.
 
 Bare Metal Restoration
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
-If the hard drive is lost, as of now the following procedure is
-necessary to recover on a new installation.
+If the hard drive is lost, the following procedure is necessary to recover the
+state of the new firewall installation to the last configuration change:
 
-1. Install pfSense on the new hard drive 2. Bring up LAN and WAN, and
-assign the hostname and domain **exactly the same as it was previously**
-configured. 3. Install the AutoConfigBackup package 4. Configure the
-AutoConfigBackup package as described above, using the portal account
-and the same encryption password as used previously. 5. Visit the
-Restore tab and choose the configuration to restore. 6. When prompted to
-reboot after the restoration, do so.
-
-To the state of the firewall is now restored to the last configuration
-change.
+#. Install pfSense on the new hard drive.
+#. Bring up LAN and WAN, and assign the hostname and domain **exactly the same
+   as it was previously** configured.
+#. Install the AutoConfigBackup package.
+#. Configure the AutoConfigBackup package as described above, using the portal
+   account and the same encryption password as used previously.
+#. Visit the Restore tab and choose the configuration to restore.
+#. After the restoration is done, reboot when prompted.
 
 FAQ
-~~~
+---
 
 How do I know my backup was successful?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
