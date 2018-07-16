@@ -14,11 +14,11 @@ pfSense, no package required.
 
 When a change is made to the configuration on a firewall, it is automatically
 encrypted with the passphrase entered in the AutoConfigBackup settings and
-uploaded over HTTPS to our servers. This gives instant, secure offsite backups of
-a firewall with no user intervention.
+uploaded over HTTPS to our servers. This gives instant, secure offsite backups
+of a firewall with no user intervention.
 
-Only the most recent 100 encrypted configurations for each host/device are
-retained on our servers.
+Only the most recent 100 encrypted configurations for each device are retained
+on our servers.
 
 Configuration
 -------------
