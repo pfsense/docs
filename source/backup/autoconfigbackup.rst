@@ -14,11 +14,11 @@ pfSense, no package required.
 
 When a change is made to the configuration on a firewall, it is automatically
 encrypted with the passphrase entered in the AutoConfigBackup settings and
-uploaded over HTTPS to our server. This gives instant, secure offsite backups of
+uploaded over HTTPS to our servers. This gives instant, secure offsite backups of
 a firewall with no user intervention.
 
 Only the most recent 100 encrypted configurations for each host/device are
-retained on our server.
+retained on our servers.
 
 Configuration
 -------------
@@ -56,7 +56,7 @@ Device ID
 ---------
 
 To uniquely identify your firewall, some unique identifier is required when you
-save or restore a backup configuration. ACB uses an AES256 hash of your
+save or restore a backup configuration. ACB uses an SHA256 hash of your
 firewall’s SSH public key for this purpose.
 
 If your SSH key should change because you needed to re-install pfSense on a
@@ -170,7 +170,7 @@ Restoring a Configuration
 To restore a configuration, click |fa-plus| to the right of the configuration
 as shown on the **Diagnostics > AutoConfigBackup** screen on the
 **Restore** tab. It will download the configuration specified from our
-server, decrypt it with the configured encryption password, and restore
+servers, decrypt it with the configured encryption password, and restore
 it. By default, the firewall will not reboot. Depending on the
 configuration items restored, a reboot may not be necessary. For
 example, firewall and NAT rules are automatically reloaded after
