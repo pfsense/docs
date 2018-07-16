@@ -31,7 +31,6 @@ Documented Packages
 
    /certificates/acme-package
    arping-package
-   AutoConfigBackup </backup/autoconfigbackup>
    avahi-package
    /usermanager/freeradius-2-x-package
    haproxy-package
