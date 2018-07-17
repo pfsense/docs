@@ -16,12 +16,12 @@ Setup Syslog on the Logging Host
 --------------------------------
 
 First, configure the syslog server to accept remote connections which
-means running it with the ``-a <subnet>`` flag.
+means running it with the ``-a <subnet>`` or similar flag.
 
 FreeBSD
 ^^^^^^^
 
-On FreeBSD, edit /etc/rc.conf and add this line::
+On FreeBSD, edit ``/etc/rc.conf`` and add this line::
 
   syslogd_flags=" -a 192.168.1.1 "
 
@@ -35,7 +35,7 @@ Using that parameter, syslog will accept from any IP address in the
 10.0.10.0 subnet (mask 255.255.255.0) and the messages may come from any
 UDP port.
 
-Now, edit **/etc/syslog.conf** and add a block at the bottom::
+Now, edit ``/etc/syslog.conf`` and add a block at the bottom::
 
   !*
   +*
@@ -43,9 +43,9 @@ Now, edit **/etc/syslog.conf** and add a block at the bottom::
   +pfSense
   *.*                /var/log/pfsense.log
 
-Where pfSense is the hostname of the pfSense firewall. An entry may also
-need to be added in **/etc/hosts** for that system, depending on the DNS
-setup. Logs may be split separate files. Use the /etc/syslog.conf file
+Where *pfSense* is the hostname of the pfSense firewall. An entry may also
+need to be added in ``/etc/hosts`` for that system, depending on the DNS
+setup. Logs may be split separate files. Use the ``/etc/syslog.conf`` file
 on the pfSense firewall for more details on which logging facilities are
 used for specific items.
 
@@ -59,12 +59,27 @@ Now restart syslog::
 
   /etc/rc.d/syslogd restart
 
+OpenBSD
+^^^^^^^
+
+The configuration for OpenBSD is similar to FreeBSD, with the following notes:
+
+#. The option to accept remote syslog events is ``-u``.
+#. This option may be enabled using *rcctl(8)*::
+
+    rcctl set syslogd flags -u
+
+#. To restart the syslogd service::
+
+    rcctl restart syslogd
+
 Linux
 ^^^^^
 
-Depends on the distribution. Consult the distribution's documentation on
-how to change the behavior of syslogd. It should be similar to the
-alterations in the FreeBSD section.
+Configuration of the system logger on Linux depends on the distribution.
+Consult the distribution's documentation on how to change the behavior of
+syslogd. It should be similar in many cases to the alterations in the
+FreeBSD section.
 
 Windows
 ^^^^^^^
