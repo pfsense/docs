@@ -24,7 +24,7 @@ Configuration
 -------------
 
 To adjust the settings manually, or to use ACB when no prior package was
-installed, select the **Settings -> Auto Config Backup** menu item, then the
+installed, select the **Settings > Auto Config Backup** menu item, then the
 **Settings** tab.
 
 #. Specify an :ref:`encryption-password`.
@@ -40,7 +40,7 @@ Encryption Password
 -------------------
 
 Before you configuration is transmitted to the Netgate data center, it is
-encrypted using the AES256 algorithm and a password that you create. This
+encrypted using the SHA256 algorithm and a password that you create. This
 password never leaves the firewall and is never shared.
 
 When you wish to restore a backup from the list of available backups, the backup
