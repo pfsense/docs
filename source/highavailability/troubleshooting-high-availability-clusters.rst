@@ -50,8 +50,8 @@ settings may be present on Hyper-V, VirtualBox, and other similar
 hypervisors.
 
 #. Enable promiscuous mode on the vSwitch
-#. Enable "MAC Address changes"
-#. Enable "Forged transmits"
+#. Enable **MAC Address changes**
+#. Enable **Forged transmits**
 #. If multiple physical ports exist on the same vswitch, the
    Net.ReversePathFwdCheckPromisc option must be enabled to work around
    a vswitch bug where multicast traffic will loop back to the host,
@@ -109,34 +109,34 @@ Login VMware vSphere Client
 
 For each VMWare host
 
--  Click on host to configure and select Configuration Tab
--  Click Software Advanced Settings in left pane
--  Click on Net and scroll down to Net.ReversePathFwdCheckPromisc and
-   set to 1
--  Click OK
+* Click on host to configure and select **Configuration** Tab
+* Click **Software Advanced Settings** in left pane
+* Click on **Net** and scroll down to **Net.ReversePathFwdCheckPromisc** and
+  set to `1`
+* Click **OK**
 
 Promiscuous Mode interfaces need to be set now or twiddled off and then
 back on. This is done per host by clicking Networking in the Hardware
 section
 
--  For each vSwitch and/or Virtual Machine Port Group.
+* For each vSwitch and/or Virtual Machine Port Group.
 
-   -  NOTE: If Promiscuous is already enabled it must be disabled, saved
-      and then re-enabled, saved.
-   -  Click on Properties of vSwtich
-   -  By Default Promiscuous Mode is Reject.
-   -  To Change click edit->Security Tab
-   -  Select Accept from drop down
-   -  Click OK.
+  * NOTE: If Promiscuous is already enabled it must be disabled, saved
+    and then re-enabled, saved.
+  * Click on **Properties** of vSwtich
+  * By Default Promiscuous Mode is **Reject**.
+  * To Change click **Edit > Security** Tab
+  * Select **Accept** from drop down
+  * Click **OK**.
 
--  However, this setting is usually applied per Virtual Machine Port
-   Group (More Secure) where the VSwitch is left at default to Reject.
+* However, this setting is usually applied per Virtual Machine Port
+  Group (More Secure) where the VSwitch is left at default to Reject.
 
-   -  Edit->Security->Policy Exceptions
-   -  Uncheck Promiscuous Mode
-   -  Click OK
-   -  Edit->Security->Policy Exceptions
-   -  Check Promiscuous Mode and select Accept.
+  * **Edit > Security > Policy Exceptions**
+  * Uncheck Promiscuous Mode
+  * Click **OK**
+  * **Edit > Security > Policy Exceptions**
+  * Check Promiscuous Mode and select **Accept**.
 
 `More information available from
 VMware <http://www.vmware.com/support/vsphere4/doc/vsp_esx40_u2_rel_notes.html>`__
@@ -153,8 +153,8 @@ running VMware workstation is allowed to modify the ``/dev/vmnet*``
 devices. See `the VMware KB for
 details <http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=287>`__.
 
-To make the change permanent, edit */etc/init.d/vmware*, and in function
-*vmwareStartVmnet()*, add commands to *chgrp* and *chown* the vmnet
+To make the change permanent, edit **/etc/init.d/vmware**, and in function
+**vmwareStartVmnet()**, add commands to **chgrp** and **chown** the vmnet
 devices to a group which contains user running VMware Workstation.
 
 KVM+QEMU Issues
@@ -168,9 +168,9 @@ VirtualBox Issues
 
 From `this thread <https://forum.netgate.com/post/43928>`__:
 
--  Setting "Promiscuous mode: Allow All" on the relevant interfaces of
-   the VM allows CARP to function on any interface type (Bridged,
-   Host-Only, Internal)
+* Setting **Promiscuous mode: Allow All** on the relevant interfaces of
+  the VM allows CARP to function on any interface type (Bridged,
+  Host-Only, Internal)
 
 Switch/Layer 2 Issues
 ---------------------
@@ -192,3 +192,8 @@ Switch/Layer 2 Issues
 
      ip igmp snooping
      no ip igmp snooping
+
+.. seealso:: For assistance in solving problems, post on the `HA/CARP/VIPs
+   category of Netgate Forum`_.
+
+.. _HA/CARP/VIPs category of Netgate Forum: https://forum.netgate.com/category/32/ha-carp-vips

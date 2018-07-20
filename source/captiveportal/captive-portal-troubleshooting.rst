@@ -45,19 +45,19 @@ Show all tables::
 
   # ipfw table all list
 
-The ``<name>_auth_up`` table holds authenticated/allowed clients for a zone.
+The **<name>_auth_up** table holds authenticated/allowed clients for a zone.
 This table allow traffic from clients to enter the interface. For
 example, a zone called "myzone" would contain this table::
 
   # ipfw table myzone_auth_up list
 
-The ``<name>_auth_down`` table holds authenticated/allowed clients for a zone.
+The **<name>_auth_down** table holds authenticated/allowed clients for a zone.
 This table allow traffic to clients to exit the interface. For example, a
 zone called "myzone" would contain this table::
 
   # ipfw table myzone_auth_down list
 
-See ``captiveportal.inc`` for information on other tables, these include tables
+See **captiveportal.inc** for information on other tables, these include tables
 for host/MAC bypass entries and other necessary controls.
 
 Pipe/flowset Errors
@@ -69,5 +69,10 @@ If an error such as the following appears::
   headers already sent by (output started at /etc/inc/captiveportal.inc:1928) in
   /etc/inc/captiveportal.inc on line 1686
 
-The pipe allocation file, ``/var/db/captiveportaldn.rules``, may have become
+The pipe allocation file, **/var/db/captiveportaldn.rules**, may have become
 corrupt or otherwise broken. Remove that file and restart Captive Portal.
+
+.. seealso:: For assistance in solving problems, post on the `Captive Portal
+   category of Netgate Forum`_.
+
+.. _Captive Portal category of Netgate Forum: https://forum.netgate.com/category/3/captive-portal

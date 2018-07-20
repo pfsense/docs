@@ -12,7 +12,7 @@ clients from hardcoding or altering DNS responses to evade access
 controls. The side effect of this, however, is that sites which employ
 round-robin DNS or other DNS optimizations can cause squid to block or
 drop connections those sites unintentionally. The squid access log will
-have a 409 (Conflict) error code when a connection is dropped for this
+have a **409 (Conflict)** error code when a connection is dropped for this
 reason.
 
 This happens with sites such as Google or Facebook when the client and
@@ -30,9 +30,7 @@ Clear Cache
 
 Resetting the cache in squid can often clear up issues without
 performing a more complicated procedure. Before performing a full reset,
-try clearing and resetting the cache.
-
-.. code::
+try clearing and resetting the cache::
 
   mv /var/squid/cache /var/squid/cache.old
   squid -z
@@ -49,26 +47,26 @@ Complete Reset
 When troubleshooting squid/squidGuard there are some procedures that may
 be followed to ensure things are completely reset.
 
-1. Remove the packages from **System > Packages** on the **Installed
-Packages** tab in the proper order: Lightsquid, SquidGuard, then Squid
+#. Remove the packages from **System > Packages** on the **Installed
+   Packages** tab in the proper order: Lightsquid, SquidGuard, then Squid
 
-2. Remove the contents of the squid directory and cache::
+#. Remove the contents of the squid directory and cache::
 
      rm -rf /var/squid
 
-3. Remove the Squid and related package include files::
+#. Remove the Squid and related package include files::
 
      rm /usr/local/pkg/*squid*
      rm -rf /usr/local/etc/squid/
 
-4. Ensure any leftover PBI symlinks are removed::
+#. Ensure any leftover PBI symlinks are removed::
 
      find / -type l -lname '/usr/pbi/*' -delete
 
-5. [Optional] Remove the settings from inside config.xml using one of
-the following methods:
+#. [Optional] Remove the settings from inside **config.xml** using one of
+   the following methods:
 
-   - From **Diagnostics > Command** in the **PHP Execute** box::
+   * From **Diagnostics > Command Prompt** in the **PHP Execute** box::
 
        $squid_sections = array("squid", "squidnac", "squidcache", "squidauth", "squidextauth", "squidtraffic", "squidupstream", "squidusers");
        foreach ($squid_sections as $sec) {
@@ -77,8 +75,8 @@ the following methods:
        }
        write_config("Removed Squid");
 
-   - Or to remove squid, squidguard, lightsquid, and anything else with
-     'squid' in its package name from **Diagnostics > Command** in the
+   * Or to remove squid, squidguard, lightsquid, and anything else with
+     'squid' in its package name from **Diagnostics > Command Prompt** in the
      **PHP Execute** box::
 
        foreach (array_keys($config['installedpackages']) as $sec) {
@@ -87,8 +85,16 @@ the following methods:
        }
        write_config("Removed all squid-related settings");
 
-   - Or backup config.xml, edit the settings out, then restore.
+   * Or backup **config.xml**, edit the settings out, then restore.
 
-6. Reinstall the packages in the proper order from **System > Packages**
-on the **Available Packages** tab: Squid, then squidGuard, and then
-Lightsquid
+#. Navigate to **System > Packages** and on the **Available Packages** tab,
+   reinstall the following packages in order:
+
+   #. Squid
+   #. squidGuard
+   #. Lightsquid
+
+.. seealso:: For assistance in solving problems, post on the `Cache/Proxy
+   category of Netgate Forum`_.
+
+.. _Cache/Proxy category of Netgate Forum: https://forum.netgate.com/category/52/cache-proxy
