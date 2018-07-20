@@ -59,6 +59,11 @@ What to Avoid
     interfaces are being referenced (``ovpncX`` is OK, "Use OVPN instead" is
     not.)
 
+:Avoid using "here" for links: Do not make links for "here", "click here", or
+  similar phrasing. They provide no context for the link, cause redundancy in
+  phrasing, and cause problems for users that require accessibility functions
+  such as screen readers. See recommendations from `W3C Tips`_ and
+  `uxmovement`_.
 :Avoid awkward possessive references:
   For example: "firewall's", "pfSense's".
 :Avoid gender-specific pronouns:
@@ -120,7 +125,9 @@ High Availability / CARP References
   interface as a "CARP interface"**.
 
 .. _common substitutions file: https://github.com/pfsense/docs/blob/master/source/substitutions.rsti
-.. _source of this documentation: https://github.com/pfsense/docs/tree/master/source
+.. _RFC 1918: https://tools.ietf.org/html/rfc1918
 .. _RFC 2606: https://tools.ietf.org/html/rfc2606
 .. _RFC 6890: https://tools.ietf.org/html/rfc6890
-.. _RFC 1918: https://tools.ietf.org/html/rfc1918
+.. _source of this documentation: https://github.com/pfsense/docs/tree/master/source
+.. _uxmovement: http://uxmovement.com/content/why-your-links-should-never-say-click-here/
+.. _W3C Tips: https://www.w3.org/QA/Tips/noClickHere
