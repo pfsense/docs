@@ -78,8 +78,8 @@ against the following ruleset:
 * A ``<ul />`` tag does not have a name attribute
 * A ``<li />`` tag does not have a name attribute
 * Checkbox checked attributes must be coded as ``checked="checked"``
-* HTML field disabled attributes must be coded as ``disabled="disabled"``
-* HTML field readonly attributes must be coded as ``readonly="readonly"``
+* HTML field ``disabled`` attributes must be coded as ``disabled="disabled"``
+* HTML field ``readonly`` attributes must be coded as ``readonly="readonly"``
 * Any HTML ``<input />`` field has a type attribute (e.g. ``type="text"``)
 * Opening ``<p>``, ``<b>`` tags must have a matching closing tag (e.g. ``</p>``)
 * ``<table />`` tags do not contain a ``<form />`` tag
@@ -243,6 +243,24 @@ Configuration Manipulation
 
     unset($config['system']['enablesshd']);
 
+JavaScript Specific Rules
+-------------------------
+
+* pfSense does not support outdated browsers, so do not take special measures to
+  use code required by old/obsolete browsers or rendering engines
+* pfSense includes, among other JavaScript resources, Bootstrap and jQuery.
+  While native JavaScript is best for simple tasks, if a developer can
+  accomplish a goal easily using an included library, they can use it instead
+* pfSense does not currently utilize ``transpiler`` or similar utilities
+* Take special care with user input or statements/variables that can be
+  populated with user input to avoid creating a vulnerability vector such as
+  XSS. User fields must be encoded or otherwise sanitized
+
+  * For example, be extremely cautions of values inserted into JavaScript via
+    PHP variables. ``json_encode()`` can help avoid a situation where a
+    user-supplied string could include text such as quotes or semicolons that
+    leads to execution of arbitrary JavaScript
+
 Shell Script Specific Rules
 ---------------------------
 
@@ -278,7 +296,7 @@ Other Guidelines:
   changes will not propagate to the pkg servers to be picked up by clients
 
   * For very minor changes, add or increase the ``PORTREVISION`` line
-    immediately beneath ``PORTVERSION`` in the makefile, starting at 1, for
+    immediately beneath ``PORTVERSION`` in the ``Makefile``, starting at 1, for
     example: A second revision would be ``PORTREVISION=2``
   * For more significant changes, increase ``PORTVERSION``
 
