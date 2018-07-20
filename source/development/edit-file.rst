@@ -15,7 +15,7 @@ Edit or create the text, then press **Save** when finished. For existing
 files, the contents will be saved. For new files, the file will be
 created.
 
-.. note:: Be careful when choosing a file to edit! It is very easy to edit
+.. warning:: Be careful when choosing a file to edit! It is very easy to edit
    the wrong file, or break a piece of code, and render the system
    unusable. Use of this tool is not recommended except under guidance of
    support or when there is sufficient knowledge to use it without causing
