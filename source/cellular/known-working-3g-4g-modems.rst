@@ -55,8 +55,9 @@ pfSense 2.0
 
 -  Huawei E3372h LTE USB-stick
 
-   -  Requires manual firmware changes, see
-      `here <http://www.0xf8.org/2017/01/flashing-a-huawei-e3372h-4g-lte-stick-from-hilink-to-stick-mode/>`__
+   - As an Ethernet device: see `Modems reported to work as Ethernet devices`_
+   - As a modem device: requires manual firmware changes, see
+      `this article <http://www.0xf8.org/2017/01/flashing-a-huawei-e3372h-4g-lte-stick-from-hilink-to-stick-mode/>`__
 
 -  Huawei K3563
 -  Huawei E5372
@@ -130,7 +131,16 @@ Modems reported to work as Ethernet devices
   system does not have an overlapping network.
 - ZTE MF915 LTE modem (T-Mobile)
 - ZTE MF975S
+- Huawei E3372h - Command to switch to the correct mode:::
+
+    usb_modeswitch -v 12d1 -p 1f01 -c /usr/local/share/usb_modeswitch/12d1:1f01
+
+  The command has to be executed every time it's detached and reattached,
+  the interface has to be disabled and then enabled again.
+
 - Huawei E8372h
+
+See `Mode Switching`_
 
 Modem variations reported to NOT work
 -------------------------------------
@@ -163,3 +173,12 @@ If that does switch the modem to the proper mode, it may be added as a
 :doc:`/development/executing-commands-at-boot-time` using the full path::
 
   /sbin/camcontrol eject cd0
+
+``usb_modeswitch`` is required in order to make certain devices switch to the correct mode.
+
+It's not available in the pfSense repository, but there's an `open issue <https://redmine.pfsense.org/issues/6226>`__
+which requests to add it and explains how to install the package from the FreeBSD repository.
+
+The issue also contains detailed instructions on how to get the E8372h to work.
+
+It's not recommended to use this method on a production firewall, as the method has not been tested officially.
