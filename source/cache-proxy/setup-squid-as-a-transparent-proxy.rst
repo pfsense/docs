@@ -11,9 +11,11 @@ Install the Package
 
 First, install the Squid package.
 
-#. Click **System > Packages**
-#. Scroll down until the "squid" package listing is visible
-#. Click |fa-plus| located to the right of the squid package description
+#. Click **System > Package Manager**
+#. Click Available Packages 
+#. Enter "squid" in the search bar and click search or scroll down until the "squid" package listing is visible
+#. Click the install button on the far right
+#. Click Confirm when prompted ("Confirmation Required to install package pfSense-pkg-squid")
 #. Wait for the installer to download, install, and do post-install
    tasks for squid, such as creating the cache directories.
 
