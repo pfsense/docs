@@ -25,10 +25,10 @@ Configure the Squid Package
 After the installation has finished, the Squid proxy server may be
 configured.
 
-#. Click on **Services > Proxy Server**
-#. Set the options on the **General Settings** tab as desired.
+#. Click on **Services > Squid Proxy Server**
+#. Set the options on the **General** tab as desired.
 
-   #. Proxy Interface: Select which interface the proxy will **listen**
+   #. Proxy Interface(s): Select which interface(s) the proxy will **listen**
       on. *LAN* is probably the desired setting.
    #. Allow users on interface: If this is checked, the subnets for the
       interfaces selected in the last step will automatically have
@@ -47,9 +47,9 @@ configured.
       is operational and tested.
    #. Click Save
 
-#. Click on the **Cache Management** tab.
+#. Click on the **Local Cache** tab.
 
-   #. Hard disk cache size: Set this as needed, but keep it a reasonable
+   #. Hard disk cache size (in MB): Set this as needed, but keep it a reasonable
       size. 3000 (3GB) may be a good place to start.
    #. Hard disk cache location: Should be */var/squid/cache* but may be
       moved if needed
@@ -57,6 +57,8 @@ configured.
       caching. Use as much as can be spared, as this is much faster than
       caching to disk. It should not exceed 50% of the installed RAM,
       however.
+   #. Hard disk cache location: The directory where the cache will be stored.
+      If using a non-default location (for example, if you have added a separate drive for caching), enter it here.
    #. Minimum object size: Can be left at 0 to cache everything, but may
       be raised if small objects are not desired in the cache.
    #. Maximum object size: Objects larger than this setting will not be
@@ -66,7 +68,7 @@ configured.
       This may also be left blank.
    #. Click Save
 
-#. Click on the **Access Control** tab *(optional for most)*
+#. Click on the **ACLs** tab *(optional for most)*
 
    #. If any other subnets will pass through the proxy aside from the
       subnet for the interface squid is using, enter them here.
