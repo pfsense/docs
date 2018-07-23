@@ -39,8 +39,8 @@ configuration change is made, or when triggered from the **Backup Now** tab.
 Encryption Password
 -------------------
 
-Before you configuration is transmitted to the Netgate data center, it is
-encrypted using the SHA256 algorithm and a password that you create. This
+Before the firewall configuration is transmitted to the Netgate data center, it is
+encrypted using the AES-256-CBC algorithm and a password that you create. This
 password never leaves the firewall and is never shared.
 
 When you wish to restore a backup from the list of available backups, the backup
