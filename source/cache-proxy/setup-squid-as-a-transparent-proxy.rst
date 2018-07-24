@@ -29,7 +29,7 @@ configured.
 
    #. Hard disk cache size (in MB): Set this as needed, but keep it a reasonable
       size. 3000 (3GB) may be a good place to start.
-   #. Hard disk cache location: Should be */var/squid/cache* but may be
+   #. Hard disk cache location: Should be ``/var/squid/cache`` but may be
       moved if needed
    #. Memory cache size: The amount of RAM that squid should claim for
       caching. Use as much as can be spared, as this is much faster than
