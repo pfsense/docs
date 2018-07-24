@@ -59,7 +59,7 @@ configured.
       redirect outbound HTTP (tcp/80) traffic through the proxy.
    #. Enabled logging: Check this if logging is needed, be sure to put a
       path in the following box
-   #. Log Store Directory: Should be */var/squid/log* unless another
+   #. Log Store Directory: Should be ``/var/squid/log`` unless another
       location is absolutely necessary.
    #. Proxy Port: **Leave this as 3128**. There is no need to change the
       port number for the transparent proxy to work.
