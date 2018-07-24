@@ -3,6 +3,12 @@
 Troubleshooting the Squid Package
 =================================
 
+Disk Usage Issues
+-----------------
+
+The *swap.state* from Squid file can grow large and consume all available drive
+space. See :doc:`/cache-proxy/squid-package-tuning` for more details.
+
 Sites not loading with splice / Error 409 in access log
 -------------------------------------------------------
 
