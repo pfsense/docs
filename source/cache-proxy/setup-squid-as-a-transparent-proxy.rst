@@ -79,7 +79,7 @@ can be checked by clicking **Status > Services**.
 
 Also available are:
 
--  **lightsquid** package to view web access reports from the squid log.
--  **SquidGuard** package for who wish to have more fine-grained control
+-  **Lightsquid** package to view web access reports from the squid log.
+-  **squidGuard** package for who wish to have more fine-grained control
    over what web resources may be viewed by clients.
 -  :doc:`Squid Package Tuning </cache-proxy/squid-package-tuning>`
