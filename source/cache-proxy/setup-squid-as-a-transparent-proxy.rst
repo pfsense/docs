@@ -12,10 +12,10 @@ Install the Package
 First, install the Squid package.
 
 #. Click **System > Package Manager**
-#. Click Available Packages 
-#. Enter "squid" in the search bar and click search or scroll down until the "squid" package listing is visible
-#. Click the install button on the far right
-#. Click Confirm when prompted ("Confirmation Required to install package pfSense-pkg-squid")
+#. Click **Available Packages** 
+#. Enter ``squid`` in the search bar and click search or scroll down until the **squid** package listing is visible
+#. Click the **install** button on the far right
+#. Click **Confirm** when prompted ("Confirmation Required to install package pfSense-pkg-squid")
 #. Wait for the installer to download, install, and do post-install
    tasks for squid, such as creating the cache directories.
 
@@ -24,6 +24,27 @@ Configure the Squid Package
 
 After the installation has finished, the Squid proxy server may be
 configured.
+
+#. Click on the **Local Cache** tab.
+
+   #. Hard disk cache size (in MB): Set this as needed, but keep it a reasonable
+      size. 3000 (3GB) may be a good place to start.
+   #. Hard disk cache location: Should be */var/squid/cache* but may be
+      moved if needed
+   #. Memory cache size: The amount of RAM that squid should claim for
+      caching. Use as much as can be spared, as this is much faster than
+      caching to disk. It should not exceed 50% of the installed RAM,
+      however.
+   #. Hard disk cache location: The directory where the cache will be stored.
+      If using a non-default location enter it here. 
+   #. Minimum object size: Can be left at 0 to cache everything, but may
+      be raised if small objects are not desired in the cache.
+   #. Maximum object size: Objects larger than this setting will not be
+      saved on disk. If speed is more desirable than saving bandwidth,
+      this should be set to a low value.
+   #. Do Not Cache: Set a list of domains that should never be cached.
+      This may also be left blank.
+   #. Click Save
 
 #. Click on **Services > Squid Proxy Server**
 #. Set the options on the **General** tab as desired.
@@ -47,27 +68,6 @@ configured.
       is operational and tested.
    #. Click Save
 
-#. Click on the **Local Cache** tab.
-
-   #. Hard disk cache size (in MB): Set this as needed, but keep it a reasonable
-      size. 3000 (3GB) may be a good place to start.
-   #. Hard disk cache location: Should be */var/squid/cache* but may be
-      moved if needed
-   #. Memory cache size: The amount of RAM that squid should claim for
-      caching. Use as much as can be spared, as this is much faster than
-      caching to disk. It should not exceed 50% of the installed RAM,
-      however.
-   #. Hard disk cache location: The directory where the cache will be stored.
-      If using a non-default location (for example, if you have added a separate drive for caching), enter it here.
-   #. Minimum object size: Can be left at 0 to cache everything, but may
-      be raised if small objects are not desired in the cache.
-   #. Maximum object size: Objects larger than this setting will not be
-      saved on disk. If speed is more desirable than saving bandwidth,
-      this should be set to a low value.
-   #. Do Not Cache: Set a list of domains that should never be cached.
-      This may also be left blank.
-   #. Click Save
-
 #. Click on the **ACLs** tab *(optional for most)*
 
    #. If any other subnets will pass through the proxy aside from the
@@ -79,7 +79,7 @@ can be checked by clicking **Status > Services**.
 
 Also available are:
 
--  lightsquid package to view web access reports from the squid log.
--  SquidGuard package for who wish to have more fine-grained control
+-  **lightsquid** package to view web access reports from the squid log.
+-  **SquidGuard** package for who wish to have more fine-grained control
    over what web resources may be viewed by clients.
 -  :doc:`Squid Package Tuning </cache-proxy/squid-package-tuning>`
