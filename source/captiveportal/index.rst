@@ -20,5 +20,4 @@ corporate and even home environments.
    captive-portal-authentication-logs
    using-captive-portal-with-freeradius
    configuring-a-pre-authentication-redirect-for-captive-portal-users
-   troubleshooting-captive-portal-issues-with-apple-ios-clients
    captive-portal-troubleshooting

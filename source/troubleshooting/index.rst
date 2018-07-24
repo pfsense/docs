@@ -13,9 +13,7 @@ other areas of the documentation.
    ftp-troubleshooting
    troubleshooting-a-full-filesystem-or-inode-errors
    /cache-proxy/squid-troubleshooting
-   /cache-proxy/troubleshooting-squid-package-disk-usage
    /captiveportal/captive-portal-troubleshooting
-   /captiveportal/troubleshooting-captive-portal-issues-with-apple-ios-clients
    /config/troubleshooting-time-zone-configuration
    /dhcp/troubleshooting-offline-dhcp-leases
    /dns/dns-forwarder-troubleshooting
