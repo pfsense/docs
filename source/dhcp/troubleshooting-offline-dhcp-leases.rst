@@ -14,8 +14,8 @@ the system does not respond to ping, that action will cause the system
 to appear in the ARP table if it is on the network, and would thus show
 online in the DHCP Leases list.
 
-The *arping* package may also be of interest. It is available under
-**System > Packages**. The nmap package can also be used to perform an
+The :doc:`/packages/arping-package` may also be of interest. It is available under
+**System > Packages**. The :doc:`/packages/nmap-package` can also be used to perform an
 ARP-based subnet scan to locate online hosts even if they don't respond
 to ICMP.
 
