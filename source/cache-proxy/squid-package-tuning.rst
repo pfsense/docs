@@ -9,12 +9,12 @@ Performance Tweaks
 Some users have reported that `making the following change`_ has greatly
 increased performance:
 
--  Edit /boot/loader.conf.local
--  Change kern.ipc.nmbclusters="0" to kern.ipc.nmbclusters="32768"
--  Reboot the pfSense router
+#. Edit **/boot/loader.conf.local**
+#. Change ``kern.ipc.nmbclusters="0"`` to ``kern.ipc.nmbclusters="32768"``
+#. Reboot the pfSense router
 
-See :doc:`Tuning and Troubleshooting Network Cards </hardware/tuning-and-troubleshooting-network-cards>`
-for more information on that setting.
+See :doc:`/hardware/tuning-and-troubleshooting-network-cards` for more information
+on that setting.
 
 Some people have also seen better performance by using the *ufs* cache
 filesystem setting. When using *ufs* filesystem, **vfs.read_max=32**
@@ -25,8 +25,8 @@ may be increased to **vfs.read_max=128** in **System > Advanced**,
 Compact swap.state
 ------------------
 
-Squid keeps a cache index journal called *swap.state* in the top level
-of the squid cache folder, typically */var/squid/cache/swap.sate*.
+Squid keeps a cache index journal called **swap.state** in the top level
+of the squid cache folder, typically **/var/squid/cache/swap.sate**.
 **This file can grow very large and consume all hard drive space**. To
 ensure this does not happen, set a **Log Rotate** value in the squid
 configuration.
@@ -49,10 +49,10 @@ tell squid to perform a clean shutdown with::
 
   squid -k shutdown
 
-This will also write the *swap.state* file out again, but squid will
+This will also write the **swap.state** file out again, but squid will
 stop after this and must be restarted, so it is a less desirable option.
 
-If the *swap.state* file is removed while squid is *not* running, it
+If the **swap.state** file is removed while squid is *not* running, it
 will have to completely rescan the cache folder to rebuild it once squid
 is restart. This can be a lengthy and time consuming process. It may be
 better to remove the contents of the existing cache folder, and rebuild
@@ -60,8 +60,7 @@ the structure again by running::
 
   squid -z
 
-See the `Squid FAQ entry <http://wiki.squid-cache.org/SquidFaq/SquidLogs#swap.state>`__ for
-more details.
+See the `Squid FAQ entry`_ for more details.
 
 Random Tips/Tricks
 ------------------
@@ -160,3 +159,4 @@ parent proxy installed package HAVP need to add the line *cache_peer
 address *127.0.0.1* port *3121*).
 
 .. _making the following change: https://forum.netgate.com/topic/13819/squid-kern-ipc-nmbclusters-32768-seemed-to-be-large-improvement-here
+.. _Squid FAQ entry: https://wiki.squid-cache.org/SquidFaq/SquidLogs#swap.state
