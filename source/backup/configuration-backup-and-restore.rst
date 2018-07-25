@@ -5,12 +5,12 @@ Backing Up and Restoring a pfSense Configuration File
 
 pfSense keeps its configuration in one convenient XML document. A backup
 of this document can be saved by going to **Diagnostics >
-Backup/Restore**, and clicking **Download Configuration**.
+Backup & Restore**, and clicking **Download Configuration as XML**.
 
 Before downloading, review the options available such as only backing up
 certain areas, or excluding the RRD data from the backup file.
 
-Restoring a configuration is just as easy, click **Browse**, locate the
+Restoring a configuration is just as easy, click **Choose File**, locate the
 backup configuration file, then click **Restore Configuration**.
 
 Configuration files can always be restored to any newer or equal pfSense
