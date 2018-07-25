@@ -44,7 +44,7 @@ configured.
       this should be set to a low value.
    #. Do Not Cache: Set a list of domains that should never be cached.
       This may also be left blank.
-   #. Click Save
+   #. Click **Save**.
 
 #. Click on **Services > Squid Proxy Server**
 #. Set the options on the **General** tab as desired.
@@ -66,13 +66,13 @@ configured.
    #. The remaining settings may be left at their defaults, or changed
       if desired. It is likely best to leave them alone until the proxy
       is operational and tested.
-   #. Click Save
+   #. Click **Save**.
 
 #. Click on the **ACLs** tab *(optional for most)*
 
    #. If any other subnets will pass through the proxy aside from the
       subnet for the interface squid is using, enter them here.
-   #. Click Save
+   #. Click **Save**.
 
 That's it! Squid should be up and running. The status of the squid proxy
 can be checked by clicking **Status > Services**.
