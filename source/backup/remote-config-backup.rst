@@ -72,22 +72,6 @@ multiple steps with wget, including CSRF handling:
       --post-data "Submit=download&donotbackuprrd=yes&__csrf_magic=$(head -n 1 csrf2.txt)" \
       https://192.168.1.1/diag_backup.php -O config-router-`date +%Y%m%d%H%M%S`.xml
 
-2.0.x through 2.2.5
-^^^^^^^^^^^^^^^^^^^
-
-Some older releases did not need CSRF handling for this action and could
-use a different script::
-
-  # wget -qO/dev/null --keep-session-cookies --save-cookies cookies.txt \
-  --post-data 'login=Login&usernamefld=admin&passwordfld=pfsense' \
-  --no-check-certificate https://192.168.1.1/diag_backup.php
-  # wget --keep-session-cookies --load-cookies cookies.txt \
-  --post-data 'Submit=download&donotbackuprrd=yes' https://192.168.1.1/diag_backup.php \
-  --no-check-certificate -O config-router-`date +%Y%m%d%H%M%S`.xml
-
-The first line authenticates, and the second line grabs the
-configuration. CURL may also be used.
-
 Backing up RRD
 ^^^^^^^^^^^^^^
 
