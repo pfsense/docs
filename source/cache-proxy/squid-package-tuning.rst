@@ -19,8 +19,7 @@ on that setting.
 Some people have also seen better performance by using the *ufs* cache
 filesystem setting. When using *ufs* filesystem, **vfs.read_max=32**
 may be increased to **vfs.read_max=128** in **System > Advanced**,
-**Sytem Tunables** tab. Read
-`more <http://ivoras.sharanet.org/blog/tree/2010-11-19.ufs-read-ahead.html>`__.
+**Sytem Tunables** tab.
 
 Compact swap.state
 ------------------
