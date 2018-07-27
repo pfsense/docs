@@ -21,7 +21,7 @@ means running it with the ``-a <subnet>`` or similar flag.
 FreeBSD
 ^^^^^^^
 
-On FreeBSD, edit ``/etc/rc.conf`` and add this line::
+On FreeBSD, edit **/etc/rc.conf** and add this line::
 
   syslogd_flags=" -a 192.168.1.1 "
 
@@ -43,9 +43,9 @@ Now, edit ``/etc/syslog.conf`` and add a block at the bottom::
   +pfSense
   *.*                /var/log/pfsense.log
 
-Where *pfSense* is the hostname of the pfSense firewall. An entry may also
-need to be added in ``/etc/hosts`` for that system, depending on the DNS
-setup. Logs may be split separate files. Use the ``/etc/syslog.conf`` file
+Where ``pfSense`` is the hostname of the pfSense firewall. An entry may also
+need to be added in **/etc/hosts** for that system, depending on the DNS
+setup. Logs may be split separate files. Use the **/etc/syslog.conf** file
 on the pfSense firewall for more details on which logging facilities are
 used for specific items.
 
@@ -106,13 +106,12 @@ fairly simple to setup as it would be for any other syslog system.
 Setup pfSense for Remote Logging
 --------------------------------
 
--  Click **Status > System Logs**
--  Click the **Settings** tab
--  Check *Enable syslog'ing to remote syslog server*
--  Type the IP of the logging server in the box next to *Remote syslog
-   server*
--  Check the boxes for the log entries to forward
--  Click Save
+* Click **Status > System Logs**
+* Click the **Settings** tab
+* Check **Enable syslog'ing to remote syslog server**
+* Type the IP of the logging server in the box next to **Remote syslog
+  server**
+* Check the boxes for the log entries to forward
+* Click **Save**
 
 Log messages will begin flowing to the target system.
-
