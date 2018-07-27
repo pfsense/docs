@@ -86,8 +86,7 @@ Windows
 
 Setting this up on Windows entirely depends on which syslog server is
 being used. Consult the documentation for more information on
-configuration. There is a list of syslog software for Windows available
-on `Wikipedia <https://en.wikipedia.org/wiki/Syslog#Implementations>`__
+configuration.
 
 There is a free multi-purpose utility that can act as a syslog server,
 which can be found here: http://tftpd32.jounin.net/
