@@ -3,7 +3,7 @@
 Tuning Network Memory Buffers (mbufs)
 =====================================
 
-From the FreeBSD man page:
+From the FreeBSD `MBUF(9) man page`_:
 
     An mbuf is a basic unit of memory management in the kernel IPC
     subsystem. Network packets and socket buffers are stored in mbufs. A
@@ -14,10 +14,11 @@ From the FreeBSD man page:
     An mbuf consists of a variable-sized header and a small internal
     buffer for data.
 
-| For more detail, there is a paper published on the subject:
-| `Network Buffer Allocation in the FreeBSD Operating System (May 2004)
-  Bosko Milekic
-  <bmilekic@FreeBSD.org> <http://bmilekic.unixdaemons.com/netbuf_bmilekic.pdf>`__
+For more details, read `Network Buffer Allocation in the FreeBSD Operating
+System [May 2004]`_.
 
 If there are concerns about mbuf usage on a firewall, see
-:doc:`Tuning and Troubleshooting Network Cards </hardware/tuning-and-troubleshooting-network-cards>`.
+:doc:`/hardware/tuning-and-troubleshooting-network-cards`.
+
+.. _MBUF(9) man page: https://www.freebsd.org/cgi/man.cgi?query=mbuf&sektion=9&manpath=FreeBSD+6.0-stable
+.. _Network Buffer Allocation in the FreeBSD Operating System [May 2004]: https://www.bsdcan.org/2004/papers/NetworkBufferAllocation.pdf
