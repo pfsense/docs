@@ -107,7 +107,7 @@ Changing Net.ReversePathFwdCheckPromisc
 
 Login VMware vSphere Client
 
-For each VMWare host
+For each VMware host
 
 * Click on host to configure and select **Configuration** Tab
 * Click **Software Advanced Settings** in left pane

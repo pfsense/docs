@@ -9,7 +9,7 @@ virtualiztion environments, such as VMware (vSphere, Fusion or Workstation),
 Proxmox, VirtualBox, Xen, KVM, Hyper-V and so on.
 
 .. warning:: We recommend using Type-1 hypervisors for production use. Type-2
-   hypervisors such as VirtualBox or VMWare Workstation work fine for testing,
+   hypervisors such as VirtualBox or VMware Workstation work fine for testing,
    but avoid using them for production roles where possible.
 
 Set up and install is straightforward and similar to set up on a physical

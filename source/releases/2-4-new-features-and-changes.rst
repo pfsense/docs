@@ -80,7 +80,7 @@ Known Issues
    example, due to UEFI compatibility changes. These are primarily BIOS
    issues and not issues with the installer images. Upgrading from 2.3.x
    should still work on affected hardware.
--  Users with ESXi or VMWare Workstation may experience a `boot-time
+-  Users with ESXi or VMware Workstation may experience a `boot-time
    crash during hardware
    detection <https://redmine.pfsense.org/issues/7925>`__, due to `a
    race condition in the FreeBSD VT console
