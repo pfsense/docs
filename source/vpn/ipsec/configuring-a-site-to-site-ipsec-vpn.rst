@@ -18,6 +18,12 @@ party IPsec-compliant devices.
    a short submission containing configuration details, preferably with
    screenshots where applicable.
 
+.. warning:: This document makes security recommendations based on current best
+   practices. Failing to adhere to these recommendations will weaken security
+   and may lead to a compromise of the VPN and its contents. For additional
+   IPsec security recommendations and links to more sources, read the
+   `strongSwan Security Recommendations`_.
+
 What is IPsec
 -------------
 
@@ -405,9 +411,9 @@ Securely Generating a Pre-Shared Key
 ------------------------------------
 
 We strongly recommend using a password generator or other means of generating
-randomness. SHA224 was invented for exactly this purpose of generating shorter
-hash strings, and it can be used to generate strong random strings for use as
-Pre-Shared Keys.
+randomness. `SHA224`_ was invented for exactly this purpose of generating
+shorter hash strings, and it can be used to generate strong random strings for
+use as Pre-Shared Keys.
 
 The following example will feed random data through SHA 224::
 
@@ -419,3 +425,6 @@ Key** field.
 For a shorter key, take a smaller chunk of the output::
 
 $ dd status=none if=/dev/random bs=4096 count=1 | openssl sha224 | cut -f2 -d' ' | cut -c1-16
+
+.. _SHA224: https://tools.ietf.org/html/rfc3874
+.. _strongSwan Security Recommendations: https://wiki.strongswan.org/projects/strongswan/wiki/SecurityRecommendations
