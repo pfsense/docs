@@ -4,21 +4,22 @@ Using the AutoConfigBackup Service
 ==================================
 
 Automatic Configuration Backup (ACB) has been available as a pfSense package for
-some years. In pfSense version 2.4.4 it will be available as a core part of
+many years. In pfSense version 2.4.4 it is available as a core component of
 pfSense, no package required.
 
-.. note:: For the purposes of this documentation, the old
-   pfSense package (used prior to 2.4.4) will be referred to as the
-   :ref:`legacy-acb-package`. Read that section if you are using the legacy
-   package.
+.. note:: For the purposes of this documentation, the old AutoConfigBackup
+  package used prior to pfSense 2.4.4-RELEASE will be referred to as the
+  :ref:`legacy-acb-package`. Read that section for information about the legacy
+  package.
 
-When a change is made to the configuration on a firewall, it is automatically
-encrypted with the passphrase entered in the AutoConfigBackup settings and
-uploaded over HTTPS to our servers. This gives instant, secure offsite backups
-of a firewall with no user intervention.
+When a change is made to the configuration on a firewall, AutoConfigBackup
+automatically encrypts the contents with the passphrase entered in the
+AutoConfigBackup settings and then uploads the backup over HTTPS to Netgate
+servers. This gives instant, secure offsite backups of a firewall with no user
+intervention.
 
 Only the most recent 100 encrypted configurations for each device are retained
-on our servers.
+on Netgate servers.
 
 Configuration
 -------------
@@ -27,66 +28,86 @@ To adjust the settings manually, or to use ACB when no prior package was
 installed, select the **Services > Auto Config Backup** menu item, then the
 **Settings** tab.
 
-#. Specify an :ref:`encryption-password`.
-#. Click the **Enable** checkbox.
-#. Save the settings.
+* Check **Enable ACB**
+* Specify an :ref:`encryption-password` and repeat it in the **Confirm** box
+* Enter a **Hint** which will be stored in plain text alongside the encrypted
+  backup file. Avoid using sensitive information in this field.
+* Click **Save**
 
-Your firewall will now automatically backup the configuration whenever a
-configuration change is made, or when triggered from the **Backup Now** tab.
+The firewall will now automatically create a backup of the configuration
+whenever a configuration change is made, or when triggered from the **Backup
+Now** tab.
 
 .. _encryption-password:
 
 Encryption Password
 -------------------
 
-Before the firewall configuration is transmitted to the Netgate data center, it is
-encrypted using the AES-256-CBC algorithm and a password that you create. This
-password never leaves the firewall and is never shared.
+Before the configuration is transmitted to Netgate servers, the firewall
+encrypts the backup using the AES-256-CBC algorithm and a password that created
+by the firewall administrator. This password never leaves the firewall and is
+never shared.
 
-When you wish to restore a backup from the list of available backups, the backup
-is downloaded and then decrypted with your encryption password.
+When restoring a backup from the list of available remote backups, the contents
+are downloaded and then decrypted with the configured encryption password.
 
-If you lose your password, you will not be able to view or restore backups, and
-since your password is private, neither Netgate nor anyone else will ever be
-able to help you access your backups.
+.. warning:: **Keep a careful record of the encryption password!**
 
-.. tip:: Keep a careful record of your encryption password!
+   If the password is lost, the backup contents **cannot be recovered**. The
+   password is private and only known to the local firewall. Neither Netgate nor
+   anyone else will be able to assist in reading the encrypted backups without
+   the password.
 
-Device ID
----------
+.. _device-key:
 
-To uniquely identify your firewall, some unique identifier is required when you
-save or restore a backup configuration. ACB uses an SHA256 hash of your
-firewall's SSH public key for this purpose.
+Device Key
+----------
 
-If your SSH key should change because you needed to re-install pfSense on a
-clean system, you can restore the backup from your previous system as long as
-you have a record of its **Device ID**, and you know the **encryption
-password** that was used when the backups were made. Paste the Device ID
-into the text box provided on the **Restore** tab and click the **Submit**
-button.
+To identify a specific firewall, an unique identifier is required to save or
+restore a backup configuration. ACB uses an SHA256 hash of the SSH public key on
+the firewall for this purpose.
 
-Clicking **Restore** will restore the native ID for your firewall.
+.. warning:: **Keep a careful record of this Device Key**!
 
-.. tip:: If you have lost the Device ID of your firewall, all may not be lost.
-   The settings page allows the entry of a "hint" which is stored in the data
-   store with your encrypted backups. If the hint you entered is distinct, the
-   Netgate support team *may* be able to use it to recover your ID. Don't count
-   on this though!
+   If the **Device Key** of a firewall is lost, there is a chance it can be
+   recovered. The **Settings** page allows the entry of a **Hint** which is
+   stored in the data store alongside the encrypted backup entries. If the hint
+   is distinct, the Netgate support team *may* be able to use it to recover the
+   device key. Do not count on this though!
+
+
+Restoring Backups from Another Firewall or a Previous Installation
+------------------------------------------------------------------
+
+If the SSH key changes due to a re-installation of pfSense, the ACB package can
+restore a backup from the previous installation as long as the :ref:`device-key`
+and the :ref:`encryption-password` of the previous installation are both known.
+
+* Navigate to the the **Settings** tab
+* Set the **Encryption Password** to match the previous installation
+* Navigate to the **Restore** tab
+* Paste the old device key into the **Device Key** field
+* Click the **Submit** button
+
+This temporarily allows ACB to display a list of backups for an alternate
+**Device Key**.
+
+Click |fa-refresh| **Reset** to restore the native ID for this firewall.
 
 Accessing Legacy Backups
 ------------------------
 
-If you were a pfSense Gold Subscriber and had configured the legacy ACB package
-on your firewall, the settings used by the package are preserved and you may
-still access your legacy backups by clicking the **Legacy** button on the ACB
-page.
+pfSense Gold Subscribers who used the legacy ACB package can still access the
+backups from the legacy ACB server. The settings used by the old package are preserved.
 
-.. note:: You may only restore or view backups from the legacy system, you can
-  not make new backups. Also, since the legacy system used a username, password
-  and hostname to identify the firewall, that information is still used when
-  legacy mode is selected. You will be asked to accept this use of your personal
-  information.
+Click **Use Legacy "Gold" Repository** on the **Restore** tab to access the
+legacy server.
+
+.. note:: Backups on the legacy servers may only be restored or viewed. The ACB
+   service cannot create new backups on the legacy server. Also, since the
+   legacy server required a username, password, and hostname to identify the
+   firewall, ACB must transmit that information in legacy mode. ACB will prompt
+   to accept this use of personal information.
 
 .. image:: /_static/backup/acb-service.jpg
 
@@ -95,11 +116,11 @@ page.
 Legacy AutoConfigBackup Package
 -------------------------------
 
-Users with an active |premium_content_link| have access to our Automatic
+Users with an active |premium_content_link| have access to the Automatic
 Configuration Backup Service, AutoConfigBackup and can backup a maximum of 10
-systems.
+firewalls.
 
-This package will work with currently supported pfSense versions, released prior
+This package will work with currently supported pfSense versions released prior
 to 2.4.4.
 
 .. note:: When upgrading to version 2.4.4, if the legacy AutoConfigBackup
@@ -122,8 +143,7 @@ Setting the Hostname
 **Make sure each firewall has a unique hostname and domain set on System
 > General Setup.** The configurations are stored by FQDN (hostname +
 domain), so ensure each firewall using the backup service has a unique
-FQDN, otherwise the system cannot differentiate between multiple
-installations.
+FQDN, otherwise ACB cannot differentiate between multiple installations.
 
 Configuring AutoConfigBackup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
