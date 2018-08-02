@@ -24,7 +24,7 @@ Configuration
 -------------
 
 To adjust the settings manually, or to use ACB when no prior package was
-installed, select the **Settings > Auto Config Backup** menu item, then the
+installed, select the **Services > Auto Config Backup** menu item, then the
 **Settings** tab.
 
 #. Specify an :ref:`encryption-password`.
@@ -57,7 +57,7 @@ Device ID
 
 To uniquely identify your firewall, some unique identifier is required when you
 save or restore a backup configuration. ACB uses an SHA256 hash of your
-firewall’s SSH public key for this purpose.
+firewall's SSH public key for this purpose.
 
 If your SSH key should change because you needed to re-install pfSense on a
 clean system, you can restore the backup from your previous system as long as
@@ -71,7 +71,7 @@ Clicking **Restore** will restore the native ID for your firewall.
 .. tip:: If you have lost the Device ID of your firewall, all may not be lost.
    The settings page allows the entry of a "hint" which is stored in the data
    store with your encrypted backups. If the hint you entered is distinct, the
-   Netgate support team *may* be able to use it to recover your ID. Don’t count
+   Netgate support team *may* be able to use it to recover your ID. Don't count
    on this though!
 
 Accessing Legacy Backups
