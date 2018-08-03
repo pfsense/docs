@@ -5,7 +5,7 @@ Configuring an OpenVPN Remote Access Server
 
 Using OpenVPN for a remote access VPN is easy and secure. Clients are
 available for many different operating systems, including Windows, Mac,
-Linux, Android, iOS, and even ChromeOS. This document will walk through
+Linux, Android, iOS, and even ChromeOS. This document will walk you through
 the basics of a remote access OpenVPN configuration.
 
 This How-To is designed to quickly show how to setup an OpenVPN remote
@@ -40,7 +40,7 @@ Choose the desired Authentication Settings. Most commonly this is set to
 *Local User Access*.
 
 -  With *Local User Access*, users defined under **System > User
-   Manager**
+   Manager** are given access
 -  RADIUS and LDAP are possible, with appropriately defined settings,
    as covered here: :doc:`/vpn/openvpn/authenticating-openvpn-users-with-radius-via-active-directory`.
 
@@ -52,15 +52,15 @@ Certificate Authority
 Fill in the fields to **Create a new Certificate Authority**
 
 -  **Descriptive Name** - Used as the Common Name (CN) for the CA. Do
-   not spaces, punctuation or special characters (ex: *ExampleCoVPNCA*)
+   not use spaces, punctuation or special characters (ex: *ExampleCoVPNCA*)
 -  **Key Length** - Default is OK, the higher the better but will use
    more CPU.
 -  **Lifetime** - Default is OK, but can be lowered if it must be
    changed out more often.
 -  **Country Code**, **State/Province**, **City**, **Organization** -
    Enter values for this location/company.
--  **E-mail** - Used as a reference on the certificate, does not receive
-   any mail from the system.
+-  **E-mail** - Used as a reference on the certificate. (Does not receive
+   any mail from the system).
 
 Click **Add New CA**
 
@@ -71,7 +71,7 @@ Server Certificate
 
 Fill in the fields to create a new **Server Certificate**. Similar
 Fields as CA entry, most of the fields carry over and do not need
-changed.
+to be changed.
 
 Click **Create new Certificate**
 
@@ -82,7 +82,7 @@ OpenVPN Server Configuration
 
 Now for the biggest part: Enter the configuration for the VPN server.
 
-There are many options here, most explained on the page, but the key
+There are many options here, mostly explained on the page, but the key
 items to enter are:
 
 -  **TLS Authentication** -- Leave this checked, along with the box
@@ -106,8 +106,9 @@ Click **Next**
 Firewall Rules
 ~~~~~~~~~~~~~~
 
-The next screen offers the choice to add firewall rules automatically.
-For convenience, check both unless the rules will be managed manually.
+The next screen offers the choice to add firewall rules automatically 
+in order to allow VPN access. For convenience, check both. If not 
+checked, you will need to manage the rules manually.
 
 Click **Next**
 
@@ -134,7 +135,7 @@ Look at firewall rules (**WAN** and **OpenVPN** tabs)
 Adjustments
 -----------
 
-Some settings are not presented in the wizard but might be a better fit
+Some settings are not present in the wizard but might be a better fit
 for some situations than the defaults chosen by the wizard.
 
 Server Mode
