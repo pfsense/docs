@@ -88,7 +88,8 @@ override DNS responses for other hosts.
 specific remote server. For example, if all records for
 mysite.example.com exist on a private DNS server at 192.0.2.5, then a
 domain override can be set to forward all queries for that domain to
-that server.
+that server. If there are multiple DNS servers available for a domain
+then make a separate entry for each, using the same domain name.
 
 Advanced Settings Tab
 ---------------------
