@@ -25,5 +25,5 @@ be disabled on the hypervisor system in addition to the pfSense VM.
 
 .. _FreeBSD Bug 165059: https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=165059
 .. _FreeBSD Bugzilla – Bug 223835: https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=223835
-.. _Bug #8407:https://redmine.pfsense.org/issues/8407
-.. _Bug #7969:https://redmine.pfsense.org/issues/7969
+.. _Bug #8407: https://redmine.pfsense.org/issues/8407
+.. _Bug #7969: https://redmine.pfsense.org/issues/7969
