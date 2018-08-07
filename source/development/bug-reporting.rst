@@ -34,7 +34,7 @@ can be discussed and the specifics required to replicate the issue can be
 identified.
 
 After discussion and confirmation of a specific, legitimate bug report
-on the forum or mailing list, please open a ticket in the |issue_tracker|.
+on the forum or pfSense subreddit, please open a ticket in the |issue_tracker|.
 
 .. attention:: The |issue_tracker| site is not a discussion platform and is
    never to be used for support issues.
