@@ -21,6 +21,7 @@ Current/Upcoming Supported Releases
 .. toctree::
    :maxdepth: 1
 
+   2-4-4-new-features-and-changes
    2-4-3-p1-new-features-and-changes
    2-3-5-p2-new-features-and-changes
 
