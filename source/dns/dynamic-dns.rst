@@ -116,6 +116,11 @@ Amazon Route 53
 SelfHost
 ~~~~~~~~
 
+Syndicat.com
+======================
+Free DynDNS service (gnudip, HTTP, HTTPS) with any registered domain. Commercial DDNS hosting services for larger scale setups available too. (german / english)
+<https://www.syndicat.com/kundenbereich/tools/dyndns/>
+
 ZoneEdit
 ~~~~~~~~
 
