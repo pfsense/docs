@@ -7,26 +7,44 @@
 Significant Changes
 -------------------
 
-* Base Operating System upgraded to FreeBSD 11.2-RELEASE
-
-  * As a part of moving to FreeBSD 11.2, new hardware support is included for C3000-based systems
-
-* PHP Upgraded to 7.2, which required numerous fixes to syntax throughout the source code and packages
-* Routed IPsec is now possible using using FreeBSD ``if_ipsec(4)`` Virtual Tunnel Interfaces (VTI) `#8544 <https://redmine.pfsense.org/issues/8544>`__ (See also: :doc:`/vpn/ipsec/ipsec-routed`)
-* The default gateway may now be configured using a Gateway Group setup for failover (each gateway on a different tier), which replaces Default Gateway Switching #3781 `#8187 <https://redmine.pfsense.org/issues/8187>`__
-* Limiters now include support for several AQM and scheduler configurations such as FQ_CODEL `#6620 <https://redmine.pfsense.org/issues/6620>`__ (See also: `pfSense PR #3941 <https://github.com/pfsense/pfsense/pull/3941>`__ )
-* The Certificate Manager and OpenVPN wizard now only require the **Common Name** to be set, and all other fields are optional `#8381 <https://redmine.pfsense.org/issues/8381>`__
-* AutoConfigBackup now integrated and `free for all to use <https://www.netgate.com/blog/pfsense-gold-free-starting-with-2-4-4.html>`__ (See also: :doc:`/backup/autoconfigbackup`)
-* The installer memstick is now a **Hybrid** format which can be used as both an **ISO Image** and a **Memstick**
-
-  * To use the file as an ISO image, decompress it and rename it with an ``.iso`` extension.
-
-* The DNS Resolver now includes support for DNS over TLS as both a client and a server, including for domain overrides `#8388 <https://redmine.pfsense.org/issues/8388>`__ `#8030 <https://redmine.pfsense.org/issues/8030>`__ `#8431 <https://redmine.pfsense.org/issues/8431>`__
-
+:OS Upgrade: Base Operating System upgraded to FreeBSD 11.2-RELEASE-p1. As a
+  part of moving to FreeBSD 11.2, new hardware support is included for
+  C3000-based hardware.
+:PHP 7.2: PHP upgraded to 7.2, which required numerous changes to syntax
+  throughout the source code and packages.
+:Routed IPsec (VTI): Routed IPsec is now possible using using FreeBSD
+  ``if_ipsec(4)`` Virtual Tunnel Interfaces (VTI).
+  `#8544 <https://redmine.pfsense.org/issues/8544>`__
+  (See also: :doc:`/vpn/ipsec/ipsec-routed`)
+:Default Gateway Group: The default gateway may now be configured using a
+  Gateway Group setup for failover (each gateway on a different tier), which
+  replaces Default Gateway Switching.
+  `#8187 <https://redmine.pfsense.org/issues/8187>`__
+:Limiter AQM/Queue Schedulers: Limiters now include support for several Active
+  Queue Management (AQM) methods and Queue Scheduler configurations such as
+  FQ_CODEL.
+  `#6620 <https://redmine.pfsense.org/issues/6620>`__
+  (See also: `pfSense PR #3941 <https://github.com/pfsense/pfsense/pull/3941>`__)
+:Certificate Subject Requirements: The Certificate Manager and OpenVPN wizard
+  now only require the **Common Name** to be set, and all other fields are
+  optional.
+  `#8381 <https://redmine.pfsense.org/issues/8381>`__
+:AutoConfigBackup is free!: AutoConfigBackup now integrated and `free for all to
+  use <https://www.netgate.com/blog/pfsense-gold-free-starting-with-2-4-4.html>`__.
+  (See also: :doc:`/backup/autoconfigbackup`)
+:Hybrid Installer Image: The installer memstick is now a **Hybrid** format which
+  can be used as both an **ISO Image** and a **Memstick**. To use the file as an
+  ISO image, decompress it and rename it with an ``.iso`` extension.
+:DNS over TLS: The DNS Resolver now includes support for DNS over TLS as both a
+  client and a server, including for domain overrides.
+  `#8388 <https://redmine.pfsense.org/issues/8388>`__
+  `#8030 <https://redmine.pfsense.org/issues/8030>`__
+  `#8431 <https://redmine.pfsense.org/issues/8431>`__
 
 Security
 --------
 
+* FreeBSD SA for CVE-2018-6922: Resource exhaustion in TCP reassembly `FreeBSD-SA-18:08.tcp <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:08.tcp.asc>`__
 * Fixed a potential XSS via custom GUI/dashboard settings `#8726 <https://redmine.pfsense.org/issues/8726>`__
 * Fixed a potential XSS vulnerability via GUI rule separators `#8654 <https://redmine.pfsense.org/issues/8654>`__
 * Upgraded strongSwan to 5.6.3 to address a buffer underflow leading to denial of service (CVE-2018-5388) `#8746 <https://redmine.pfsense.org/issues/8746>`__
