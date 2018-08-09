@@ -4,6 +4,14 @@
 Welcome to the pfSense Documentation site
 *****************************************
 
+Our documentation, `maintained with the help of the community`_, offers
+instructions on how to install, configure, and use pfSense software to protect
+your network. Whether you are new to firewalls, or a seasoned veteran, our docs
+offer something for everyone.
+
+.. tip:: For continually updated advice, from the core developers themselves, on
+  how to best operate pfSense software, check out `The pfSense Book`_.
+
 .. toctree::
    :maxdepth: 2
 
@@ -38,7 +46,7 @@ Welcome to the pfSense Documentation site
    development/index
 
 .. toctree::
-   :maxdepth: 2 
+   :maxdepth: 2
    :caption: References
 
    references/index
@@ -66,3 +74,6 @@ Commercial Resources
   |premium_content_link|
 * |support_link| and |pse_link|
 * |training_link|
+
+.. _maintained with the help of the community: https://github.com/pfsense/docs
+.. _The pfSense Book: /docs/pfsense/book
