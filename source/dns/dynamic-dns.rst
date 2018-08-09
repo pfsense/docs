@@ -116,6 +116,10 @@ Amazon Route 53
 SelfHost
 ~~~~~~~~
 
+Syndicat
+~~~~~~~~
+`Syndicat <http://www.syndicat.com/>`__ offers free DynDNS service (GnuDIP, HTTP, HTTPS, static URL, by hand) with any registered domain or subdomain (German / English).
+
 ZoneEdit
 ~~~~~~~~
 
