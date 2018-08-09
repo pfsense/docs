@@ -6,8 +6,8 @@ Security / Errata
 
 * FreeBSD SA for CVE-2018-8897 `FreeBSD-SA-18:06.debugreg <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:06.debugreg.asc>`__
 * FreeBSD EN for CVE-2018-6920 and CVE-2018-6921 `FreeBSD-EN-18:05.mem <https://www.freebsd.org/security/advisories/FreeBSD-EN-18:05.mem.asc>`__
-* Fixed a potential LFI in pkg_mgr_install.php `pfSense-SA-18_04.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_04.webgui>`__ `#8485 <https://redmine.pfsense.org/issues/8485>`__
-* Fixed a potential XSS in pkg_mgr_install.php `pfSense-SA-18_05.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_05.webgui>`__ `#8486 <https://redmine.pfsense.org/issues/8486>`__
+* Fixed a potential LFI in pkg_mgr_install.php `pfSense-SA-18_04.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_04.webgui.asc>`__ `#8485 <https://redmine.pfsense.org/issues/8485>`__
+* Fixed a potential XSS in pkg_mgr_install.php `pfSense-SA-18_05.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_05.webgui.asc>`__ `#8486 <https://redmine.pfsense.org/issues/8486>`__
 
 Misc
 ----
