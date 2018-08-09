@@ -45,8 +45,8 @@ Security
 --------
 
 * FreeBSD SA for CVE-2018-6922: Resource exhaustion in TCP reassembly `FreeBSD-SA-18:08.tcp <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:08.tcp.asc>`__
-* Fixed a potential XSS via custom GUI/dashboard settings `#8726 <https://redmine.pfsense.org/issues/8726>`__
-* Fixed a potential XSS vulnerability via GUI rule separators `#8654 <https://redmine.pfsense.org/issues/8654>`__
+* Fixed a potential XSS vulnerability via GUI rule separators `pfSense-SA-18_06.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_06.webgui.asc>`__ `#8654 <https://redmine.pfsense.org/issues/8654>`__
+* Fixed a potential XSS via custom GUI/dashboard settings `pfSense-SA-18_07.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_07.webgui.asc>`__ `#8726 <https://redmine.pfsense.org/issues/8726>`__
 * Upgraded strongSwan to 5.6.3 to address a buffer underflow leading to denial of service (CVE-2018-5388) `#8746 <https://redmine.pfsense.org/issues/8746>`__
 * Updated default cryptographic settings for OpenVPN, IPsec, and Certificates `#8594 <https://redmine.pfsense.org/issues/8594>`__
 * Changed the included DH groups to those defined in RFC 7919 `#8582 <https://redmine.pfsense.org/issues/8582>`__
