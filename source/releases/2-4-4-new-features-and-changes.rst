@@ -101,9 +101,10 @@ DNS
 Dynamic DNS
 -----------
 
-* Added DynDNS client for DigitalOcean DNS `#8478 <https://redmine.pfsense.org/issues/8478>`__
+* Added Dynamic DNS client for DigitalOcean DNS `#8478 <https://redmine.pfsense.org/issues/8478>`__
 * Fixed Dynamic DNS clients usage of custom check IP services `#8664 <https://redmine.pfsense.org/issues/8664>`__
-* Added DynDNS client for Azure `#7769 <https://redmine.pfsense.org/issues/7769>`__
+* Added Dynamic DNS client for Azure `#7769 <https://redmine.pfsense.org/issues/7769>`__
+* Updated DNSimple Dynamic DNS client to use DNSimple API v2 `#8071 <https://redmine.pfsense.org/issues/8071>`__
 
 Routing/Gateways
 ----------------
@@ -128,6 +129,7 @@ IPsec
 * Fixed handling of per-user IPsec rules from an authentication server `#8765 <https://redmine.pfsense.org/issues/8765>`__
 * Added warnings and hints to IPsec encryption and hash choices about potentially insecure selections `#8766 <https://redmine.pfsense.org/issues/8766>`__
 * Fixed an issue with handling IP Alias VIPs with CARP parent after an interface up/down event `#8768 <https://redmine.pfsense.org/issues/8768>`__
+* Added a GUI option to the IPsec **Advanced Settings** tab for Asynchronous Cryptography `#8772 <https://redmine.pfsense.org/issues/8772>`__
 
 OpenVPN
 -------
@@ -200,6 +202,7 @@ Firewall Rules / NAT / Shaping
 * Fixed an issue with default field selection when editing Firewall Rules `#8597 <https://redmine.pfsense.org/issues/8597>`__
 * Added code to prevent nested alias loops `#8101 <https://redmine.pfsense.org/issues/8101>`__
 * Added interface groups support for NAT rules `#1933 <https://redmine.pfsense.org/issues/1933>`__
+* Fixed a case where invalid IPv6 NAT rules could be generated `#8437 <https://redmine.pfsense.org/issues/8437>`__
 
 Miscellaneous
 -------------
