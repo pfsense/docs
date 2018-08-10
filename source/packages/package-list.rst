@@ -12,10 +12,6 @@ repository:
 -  **arping** - Broadcasts a who-has ARP packet on the network and
    prints answers.
 
--  **AutoConfigBackup** - Automatically backs up your pfSense
-   configuration. All contents are encrypted before being sent to the
-   server. Requires |premium_content_link|.
-
 -  **apcupsd** - Package can be used for controlling all APC UPS models
    It can monitor and log the current power and battery status, perform
    automatic shutdown, and can run in network mode in order to power

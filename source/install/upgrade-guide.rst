@@ -18,11 +18,10 @@ Make a backup!
 
 First, as always before any major change to the firewall, make sure there is a
 good, up-to-date backup. Visit **Diagnostics > Backup/Restore** and download a
-backup of the firewall configuration (**config.xml**). Those with a
-|premium_content_link| may also use the :doc:`AutoConfigBackup
-</backup/autoconfigbackup>` package to make a manual backup noting the reason as
-"before upgrade". Keeping a local and remote copy of the backup *config.xml* is
-strongly advised.
+backup of the firewall configuration (``config.xml``). The
+:doc:`AutoConfigBackup </backup/autoconfigbackup>` package can also be used to
+make a manual backup before upgrading. We strongly advise keeping a local and
+remote copy of the backup ``config.xml``.
 
 Prepare a fall back plan
 ^^^^^^^^^^^^^^^^^^^^^^^^

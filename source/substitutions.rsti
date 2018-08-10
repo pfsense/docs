@@ -16,13 +16,11 @@
 .. |premium_content_link| replace:: `pfSense Gold Subscription`_
 .. _pfSense Gold Subscription: https://www.netgate.com/our-services/gold-membership.html
 .. |book_link| replace:: `pfSense Book`_
-.. _pfSense Book: https://www.netgate.com/our-services/gold-membership.html
-.. |hangout_link| replace:: `pfSense Hangouts`_
-.. _pfSense Hangouts: https://www.netgate.com/our-services/gold-membership.html
+.. _pfSense Book: https://www.netgate.com/docs/pfsense/book/
+.. |hangout_link| replace:: `pfSense Hangouts on Youtube`_
+.. _pfSense Hangouts on Youtube: https://www.youtube.com/playlist?list=PLUUWWK9vTyPZPQvUcHXhQgjXyYJ9EPn25
 .. |video_link| replace:: `Netgate Youtube Channel`_
 .. _Netgate Youtube Channel: https://www.youtube.com/c/NetgateOfficial
-.. |hangout_public_link| replace:: `pfSense Hangouts on Youtube`_
-.. _pfSense Hangouts on Youtube: https://www.youtube.com/playlist?list=PLUUWWK9vTyPZPQvUcHXhQgjXyYJ9EPn25
 .. |forum_link| replace:: `Netgate Forum`_
 .. _Netgate Forum: https://forum.netgate.com/
 .. |subreddit| replace:: `pfSense subreddit`_

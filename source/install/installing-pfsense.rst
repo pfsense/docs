@@ -296,7 +296,5 @@ Additional Information
 ----------------------
 
 For additional information on Installing pfSense, see the :doc:`/install/index`
-section. Sign up for a |premium_content_link|, which gives access to the
-|book_link| and |hangout_link| that cover a variety of topics as well as our
-Auto Config Backup service, a secure place to store and retrieve off-site
-backups.
+section. The |book_link| and |hangout_link| also cover a variety of relevant
+topics.

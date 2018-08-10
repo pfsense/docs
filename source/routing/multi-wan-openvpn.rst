@@ -12,7 +12,7 @@ pfSense for remote access or site to site VPNs. Many of these were
 covered during the September 2014 |hangout_link|.
 
 .. seealso:: The "Advanced OpenVPN Concepts" presentation is available through
-  |hangout_public_link|.
+  |hangout_link|.
 
 OpenVPN Configuration
 ---------------------
