@@ -67,12 +67,10 @@ Additional Support Resources
 
 For a full list, visit https://www.netgate.com/support/
 
-Commercial Resources
+Commercial Resources:
 
-* The pfSense Book and monthly pfSense Hangouts include tutorials for
-  configuring various aspects of pfSense, both available via
-  |premium_content_link|
-* |support_link| and |pse_link|
+* |support_link|
+* |pse_link|
 * |training_link|
 
 .. _maintained with the help of the community: https://github.com/pfsense/docs
