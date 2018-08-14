@@ -40,6 +40,11 @@ Significant Changes
   `#8388 <https://redmine.pfsense.org/issues/8388>`__
   `#8030 <https://redmine.pfsense.org/issues/8030>`__
   `#8431 <https://redmine.pfsense.org/issues/8431>`__
+:Captive Portal Authentication: Captive Portal authentication is now integrated
+  with the User Manager system. Captive Portal instances may now use RADIUS,
+  LDAP, or Local Authentication like other integrated services. The firewall
+  will migrate existing Captive Portal RADIUS settings to the User Manager
+  automatically on upgrade.
 
 Security
 --------
@@ -178,8 +183,13 @@ User Management / Authentication
 Captive Portal
 --------------
 
+* Integrated Captive Portal authentication into the User Manager to enable support for LDAP `#5112 <https://redmine.pfsense.org/issues/5112>`__
 * Fixed deleting **Allowed Hostnames** and **Allowed IP Addresses** entries in Captive Portal when a zone is disabled `#8530 <https://redmine.pfsense.org/issues/8530>`__
 * Added support for setting Captive Portal traffic quotas `#8202 <https://redmine.pfsense.org/issues/8202>`__
+* Added display of a custom username when Captive Portal is set to *None* for the authentication type `#8361 <https://redmine.pfsense.org/issues/8361>`__
+* Changed handling of Called-Station-Id/Calling-Station ID to send a MAC address instead of IP address when using RADIUS authentication `#4294 <https://redmine.pfsense.org/issues/4294>`__
+* Changed to a standardized NAS-Identifier when using RADIUS authentication `#3686 <https://redmine.pfsense.org/issues/3686>`__
+* Corrected accounting updates not being sent when expected `#8655 <https://redmine.pfsense.org/issues/8655>`__
 
 WebGUI / Dashboard
 ------------------
