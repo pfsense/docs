@@ -140,11 +140,15 @@ The three Snort VRT IPS Policies are: (1) Connectivity, (2) Balanced and
 resist the temptation to immediately jump to the most secure *Security*
 policy if Snort is unfamiliar. False positives can frequently occur with
 the more secure policies, and careful tuning by an experienced
-administrator may be required. So if Snort is unfamiliar, then using the
-less restrictive *Connectivity* policy in non-blocking mode is
-recommended as a starting point. Once experience with Snort has been
-gained in this network environment, blocking mode may be enabled and
-then move up to more restrictive IPS policies.
+administrator may be required.
+
+.. tip:: If Snort is unfamiliar, then using the less restrictive
+   *Connectivity* policy in non-blocking mode (the default setting) is
+   recommended as a starting point so that you can whitelist false
+   positives. Once experience with Snort has been gained in this network
+   environment, blocking mode may be enabled (via the **Block Offenders**
+   option in the **Snort Interface Settings** tab) and a more restrictive
+   IPS policy may be chosen.
 
 .. image:: /_static/ids-ips/snortchooseipspolicy.png
 
