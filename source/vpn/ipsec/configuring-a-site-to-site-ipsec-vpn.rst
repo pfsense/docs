@@ -426,5 +426,8 @@ For a shorter key, take a smaller chunk of the output::
 
 $ dd status=none if=/dev/random bs=4096 count=1 | openssl sha224 | cut -f2 -d' ' | cut -c1-16
 
+pfSense 2.4.4-RELEASE and later include a button to automatically generate a
+secure Pre-Shared Key using this technique.
+
 .. _SHA224: https://tools.ietf.org/html/rfc3874
 .. _strongSwan Security Recommendations: https://wiki.strongswan.org/projects/strongswan/wiki/SecurityRecommendations
