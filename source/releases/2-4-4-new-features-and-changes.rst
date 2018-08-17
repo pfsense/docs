@@ -7,7 +7,7 @@
 Significant Changes
 -------------------
 
-:OS Upgrade: Base Operating System upgraded to FreeBSD 11.2-RELEASE-p1. As a
+:OS Upgrade: Base Operating System upgraded to FreeBSD 11.2-RELEASE-p2. As a
   part of moving to FreeBSD 11.2, new hardware support is included for
   C3000-based hardware.
 :PHP 7.2: PHP upgraded to 7.2, which required numerous changes to syntax
@@ -45,6 +45,11 @@ Significant Changes
   LDAP, or Local Authentication like other integrated services. The firewall
   will migrate existing Captive Portal RADIUS settings to the User Manager
   automatically on upgrade.
+:Captive Portal HTML Design and Usability: The default Captive Portal page has
+  been redesigned. Controls have also been added which allow for the logo and
+  background images and Terms of Service text to be customized without editing
+  and uploading custom HTML code.
+  `#8793 <https://redmine.pfsense.org/issues/8793>`__
 
 Security
 --------
@@ -56,6 +61,7 @@ Security
 * Updated default cryptographic settings for OpenVPN, IPsec, and Certificates `#8594 <https://redmine.pfsense.org/issues/8594>`__
 * Changed the included DH groups to those defined in RFC 7919 `#8582 <https://redmine.pfsense.org/issues/8582>`__
 * Added stronger IPsec Pre-Shared Key usage warnings, and a button to generate a secure PSK `#8667 <https://redmine.pfsense.org/issues/8667>`__
+* Disabled OpenVPN compression by default on new instances for security reasons due to `VORACLE`_ -- Users should strongly consider disabling compression on OpenVPN instances if they pass unencrypted data such as HTTP to arbitrary Internet sites `#8788 <https://redmine.pfsense.org/issues/8788>`__
 
 Errata
 ------
@@ -110,6 +116,7 @@ Dynamic DNS
 * Fixed Dynamic DNS clients usage of custom check IP services `#8664 <https://redmine.pfsense.org/issues/8664>`__
 * Added Dynamic DNS client for Azure `#7769 <https://redmine.pfsense.org/issues/7769>`__
 * Updated DNSimple Dynamic DNS client to use DNSimple API v2 `#8071 <https://redmine.pfsense.org/issues/8071>`__
+* Fixed handling of username and password fields for custom Dynamic DNS entries `#8782 <https://redmine.pfsense.org/issues/8782>`__
 
 Routing/Gateways
 ----------------
@@ -126,6 +133,7 @@ IPsec
 -----
 
 * Added routed IPsec using FreeBSD if_ipsec(4) VTI `#8544 <https://redmine.pfsense.org/issues/8544>`__
+* Added a GUI option to the IPsec **Advanced Settings** tab for Asynchronous Cryptography which can dramatically improve IPsec crypto operation performance on multi-core hardware `#8772 <https://redmine.pfsense.org/issues/8772>`__
 * Added IPsec identifiers to **Status > IPsec** `#8598 <https://redmine.pfsense.org/issues/8598>`__
 * Fixed a JavaScript variable issue in IPsec IKE Phase 1 causing the Key Length field to be blank in some browsers such as IE `#8543 <https://redmine.pfsense.org/issues/8543>`__
 * Added IPsec mobile client options to allow different (virtual) IP addresses per user `#8292 <https://redmine.pfsense.org/issues/8292>`__
@@ -134,15 +142,16 @@ IPsec
 * Fixed handling of per-user IPsec rules from an authentication server `#8765 <https://redmine.pfsense.org/issues/8765>`__
 * Added warnings and hints to IPsec encryption and hash choices about potentially insecure selections `#8766 <https://redmine.pfsense.org/issues/8766>`__
 * Fixed an issue with handling IP Alias VIPs with CARP parent after an interface up/down event `#8768 <https://redmine.pfsense.org/issues/8768>`__
-* Added a GUI option to the IPsec **Advanced Settings** tab for Asynchronous Cryptography `#8772 <https://redmine.pfsense.org/issues/8772>`__
 
 OpenVPN
 -------
 
+* Disabled compression by default for new OpenVPN client and server instances for security reasons `#8788 <https://redmine.pfsense.org/issues/8788>`__
 * Changed OpenVPN Authentication to use an asynchronous authentication plugin which avoids stalling server traffic during the authentication process, especially noticeable on down/broken authentication servers `#7905 <https://redmine.pfsense.org/issues/7905>`__
 * Fixed display of **Bridge Route Gateway** options on OpenVPN tap bridge servers `#8658 <https://redmine.pfsense.org/issues/8658>`__
 * Fixed handling of LDAP fields in the OpenVPN wizard and brought the options in line with current LDAP server options `#8605 <https://redmine.pfsense.org/issues/8605>`__
 * Updated default cryptographic settings for OpenVPN `#8594 <https://redmine.pfsense.org/issues/8594>`__
+* Added missing OpenVPN compression options (``stub-v2`` and plain ``compress``) `#8788 <https://redmine.pfsense.org/issues/8788>`__
 
 DHCP Server
 -----------
@@ -164,6 +173,7 @@ Interfaces / VIPs
 * Fixed radvd/IPv6 when using a LAN bridge `#8429 <https://redmine.pfsense.org/issues/8429>`__
 * Fixed deleting IP Alias VIPs outside an interface subnet where a gateway exists in the same subnet `#4438 <https://redmine.pfsense.org/issues/4438>`__
 * Fixed handling of IP Alias and CARP VIP subnet mask/prefix autodetection `#8741 <https://redmine.pfsense.org/issues/8741>`__
+* Fixed a panic in IPv6 fragment logging `#8499 <https://redmine.pfsense.org/issues/8499>`__
 
 User Management / Authentication
 --------------------------------
@@ -184,6 +194,7 @@ Captive Portal
 --------------
 
 * Integrated Captive Portal authentication into the User Manager to enable support for LDAP `#5112 <https://redmine.pfsense.org/issues/5112>`__
+* Updated Captive Portal HTML/CSS to a modern design and added controls to customize images and ToS without uploading custom HTML `#8793 <https://redmine.pfsense.org/issues/8793>`__
 * Fixed deleting **Allowed Hostnames** and **Allowed IP Addresses** entries in Captive Portal when a zone is disabled `#8530 <https://redmine.pfsense.org/issues/8530>`__
 * Added support for setting Captive Portal traffic quotas `#8202 <https://redmine.pfsense.org/issues/8202>`__
 * Added display of a custom username when Captive Portal is set to *None* for the authentication type `#8361 <https://redmine.pfsense.org/issues/8361>`__
@@ -213,6 +224,7 @@ Firewall Rules / NAT / Shaping
 * Added code to prevent nested alias loops `#8101 <https://redmine.pfsense.org/issues/8101>`__
 * Added interface groups support for NAT rules `#1933 <https://redmine.pfsense.org/issues/1933>`__
 * Fixed a case where invalid IPv6 NAT rules could be generated `#8437 <https://redmine.pfsense.org/issues/8437>`__
+* Fixed a case where IPv6 Neighbor Discovery and other similar valid messages sent from the unspecified address (``::``) were not allowed by default `#8791 <https://redmine.pfsense.org/issues/8791>`__
 
 Miscellaneous
 -------------
@@ -225,4 +237,6 @@ Miscellaneous
 * Fixed handling of sample bounds with custom timer periods on **Status > Monitoring** `#6477 <https://redmine.pfsense.org/issues/6477>`__
 * Changed the crash reporter so that users can download the reports locally rather than submitting to a server `#8764 <https://redmine.pfsense.org/issues/8764>`__
 * Fixed situation where the firewall would get stuck attempting to reinstall packages after restoring a configuration when there is no Internet connection `#7604 <https://redmine.pfsense.org/issues/7604>`__
+* Fixed an SNMP error on hardware with integrated switches `#8600 <https://redmine.pfsense.org/issues/8600>`__
 
+.. _VORACLE: https://media.defcon.org/DEF%20CON%2026/DEF%20CON%2026%20presentations/Nafeez/
