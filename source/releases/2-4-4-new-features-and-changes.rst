@@ -55,6 +55,9 @@ Security
 --------
 
 * FreeBSD SA for CVE-2018-6922: Resource exhaustion in TCP reassembly `FreeBSD-SA-18:08.tcp <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:08.tcp.asc>`__
+* FreeBSD SA for CVE-2018-3620, CVE-2018-3646: L1 Terminal Fault (L1TF) Kernel Information Disclosure `FreeBSD-SA-18:09.l1tf <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:09.l1tf.asc>`__
+* FreeBSD SA for CVE-2018-6923: Resource exhaustion in IP fragment reassembly `FreeBSD-SA-18:10.ip <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:10.ip.asc>`__
+* FreeBSD SA for CVE-2018-14526: Unauthenticated EAPOL-Key Decryption Vulnerability `FreeBSD-SA-18:11.hostapd <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:11.hostapd.asc>`__
 * Fixed a potential XSS vulnerability via GUI rule separators `pfSense-SA-18_06.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_06.webgui.asc>`__ `#8654 <https://redmine.pfsense.org/issues/8654>`__
 * Fixed a potential XSS via custom GUI/dashboard settings `pfSense-SA-18_07.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_07.webgui.asc>`__ `#8726 <https://redmine.pfsense.org/issues/8726>`__
 * Upgraded strongSwan to 5.6.3 to address a buffer underflow leading to denial of service (CVE-2018-5388) `#8746 <https://redmine.pfsense.org/issues/8746>`__
@@ -62,6 +65,7 @@ Security
 * Changed the included DH groups to those defined in RFC 7919 `#8582 <https://redmine.pfsense.org/issues/8582>`__
 * Added stronger IPsec Pre-Shared Key usage warnings, and a button to generate a secure PSK `#8667 <https://redmine.pfsense.org/issues/8667>`__
 * Disabled OpenVPN compression by default on new instances for security reasons due to `VORACLE`_ -- Users should strongly consider disabling compression on OpenVPN instances if they pass unencrypted data such as HTTP to arbitrary Internet sites `#8788 <https://redmine.pfsense.org/issues/8788>`__
+* Patched OpenSSH for `CVE-2018-15473 <https://isc.sans.edu/forums/diary/OpenSSH+user+enumeration+CVE201815473/24004/>`__, username enumeration/disclosure through malformed packets.
 
 Errata
 ------
@@ -94,6 +98,7 @@ Certificates
 * Updated default cryptographic settings Certificates `#8594 <https://redmine.pfsense.org/issues/8594>`__
 * Added support for OCSP Must-Staple certificates in the GUI (and ACME package) `#8418 <https://redmine.pfsense.org/issues/8418>`__
 * Changed CRL support from using an abandoned PHP OpenSSL module patch to a pure PHP implementation compatible with PHP 7.2 `#8762 <https://redmine.pfsense.org/issues/8762>`__
+* Fixed issues with several areas not properly parsing CA fields properly when they were not in the expected order `#8801 <https://redmine.pfsense.org/issues/8801>`__
 
 DNS
 ---
@@ -132,7 +137,7 @@ Routing/Gateways
 IPsec
 -----
 
-* Added routed IPsec using FreeBSD if_ipsec(4) VTI `#8544 <https://redmine.pfsense.org/issues/8544>`__
+* Added routed IPsec using FreeBSD ``if_ipsec(4)`` VTI `#8544 <https://redmine.pfsense.org/issues/8544>`__
 * Added a GUI option to the IPsec **Advanced Settings** tab for Asynchronous Cryptography which can dramatically improve IPsec crypto operation performance on multi-core hardware `#8772 <https://redmine.pfsense.org/issues/8772>`__
 * Added IPsec identifiers to **Status > IPsec** `#8598 <https://redmine.pfsense.org/issues/8598>`__
 * Fixed a JavaScript variable issue in IPsec IKE Phase 1 causing the Key Length field to be blank in some browsers such as IE `#8543 <https://redmine.pfsense.org/issues/8543>`__
@@ -166,6 +171,7 @@ Interfaces / VIPs
 * Added Switch Status to status.php for platforms with a switch `#8525 <https://redmine.pfsense.org/issues/8525>`__
 * Fixed an issue switching between Port VLAN and 802.1q VLAN mode on integrated switches `#8422 <https://redmine.pfsense.org/issues/8422>`__
 * Fixed an HTTP_REFERER issue when changing the LAN IP address in the Setup Wizard `#8524 <https://redmine.pfsense.org/issues/8524>`__
+* Fixed an HTTP_REFERER issue when changing an interface IP address while accessing the GUI from the same interface `#8822 <https://redmine.pfsense.org/issues/8822>`__
 * Fixed handling of the FreeBSD 11.2-BETA dhclient MTU value `#8507 <https://redmine.pfsense.org/issues/8507>`__
 * Added PPPoE multi-link over single link to allow users with a supported provider to have a larger MTU `#8737 <https://redmine.pfsense.org/issues/8737>`__
 * Fixed a PPPoE MTU issue with ORANGE FR `#8595 <https://redmine.pfsense.org/issues/8595>`__
@@ -174,6 +180,8 @@ Interfaces / VIPs
 * Fixed deleting IP Alias VIPs outside an interface subnet where a gateway exists in the same subnet `#4438 <https://redmine.pfsense.org/issues/4438>`__
 * Fixed handling of IP Alias and CARP VIP subnet mask/prefix autodetection `#8741 <https://redmine.pfsense.org/issues/8741>`__
 * Fixed a panic in IPv6 fragment logging `#8499 <https://redmine.pfsense.org/issues/8499>`__
+* Fixed SG-1000 autonegotiation for 10baseT speed and duplex `#7532 <https://redmine.pfsense.org/issues/7532>`__
+* Fixed handling of DHCP option 77 in the DHCP client `#7425 <https://redmine.pfsense.org/issues/7425>`__
 
 User Management / Authentication
 --------------------------------
@@ -189,6 +197,8 @@ User Management / Authentication
 * Added SSH configuration option to require **both** Key **and** Username+Password authentication at the same time `#8402 <https://redmine.pfsense.org/issues/8402>`__
 * Replaced ``radius.inc`` by pear-Auth_RADIUS `#7024 <https://redmine.pfsense.org/issues/7024>`__
 * Fixed synchronization of User Manager group scope and operating system groups `#7013 <https://redmine.pfsense.org/issues/7013>`__
+* Fixed logging and display of GUI user authentication source IP address when the user logs in through a proxy `#8813 <https://redmine.pfsense.org/issues/8813>`__
+* Fixed logging and display of GUI user authentication sources to show what source authorized the login (e.g. LDAP, RADIUS, Local, Fallback) `#8816 <https://redmine.pfsense.org/issues/8816>`__
 
 Captive Portal
 --------------
@@ -211,6 +221,8 @@ WebGUI / Dashboard
 * Updated text in the Setup Wizard `#8753 <https://redmine.pfsense.org/issues/8753>`__
 * Moved the simplepie RSS reader code to a FreeBSD port for easier updates `#6998 <https://redmine.pfsense.org/issues/6998>`__
 * Fixed handling of the **Inverse** option in the Traffic Graphs Dashboard Widget `#8367 <https://redmine.pfsense.org/issues/8367>`__
+* Fixed issues with the GUI following upgrade progress `#8519 <https://redmine.pfsense.org/issues/8519>`__
+* Added a line to display the current GUI user viewing the Dashboard in the System Information Widget `#8817 <https://redmine.pfsense.org/issues/8817>`__
 
 Firewall Rules / NAT / Shaping
 ------------------------------
@@ -225,6 +237,7 @@ Firewall Rules / NAT / Shaping
 * Added interface groups support for NAT rules `#1933 <https://redmine.pfsense.org/issues/1933>`__
 * Fixed a case where invalid IPv6 NAT rules could be generated `#8437 <https://redmine.pfsense.org/issues/8437>`__
 * Fixed a case where IPv6 Neighbor Discovery and other similar valid messages sent from the unspecified address (``::``) were not allowed by default `#8791 <https://redmine.pfsense.org/issues/8791>`__
+* Added **Select All** functionality to firewall and NAT rules `#8812 <https://redmine.pfsense.org/issues/8812>`__
 
 Miscellaneous
 -------------
@@ -238,5 +251,7 @@ Miscellaneous
 * Changed the crash reporter so that users can download the reports locally rather than submitting to a server `#8764 <https://redmine.pfsense.org/issues/8764>`__
 * Fixed situation where the firewall would get stuck attempting to reinstall packages after restoring a configuration when there is no Internet connection `#7604 <https://redmine.pfsense.org/issues/7604>`__
 * Fixed an SNMP error on hardware with integrated switches `#8600 <https://redmine.pfsense.org/issues/8600>`__
+* Added more redacted XML tags to status.php `#8819 <https://redmine.pfsense.org/issues/8819>`__
+* Fixed an issue with ARM hardware not fully halting when shut down
 
 .. _VORACLE: https://media.defcon.org/DEF%20CON%2026/DEF%20CON%2026%20presentations/Nafeez/
