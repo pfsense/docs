@@ -141,7 +141,8 @@ IPsec
 * Added a GUI option to the IPsec **Advanced Settings** tab for Asynchronous Cryptography which can dramatically improve IPsec crypto operation performance on multi-core hardware `#8772 <https://redmine.pfsense.org/issues/8772>`__
 * Added IPsec identifiers to **Status > IPsec** `#8598 <https://redmine.pfsense.org/issues/8598>`__
 * Fixed a JavaScript variable issue in IPsec IKE Phase 1 causing the Key Length field to be blank in some browsers such as IE `#8543 <https://redmine.pfsense.org/issues/8543>`__
-* Added IPsec mobile client options to allow different (virtual) IP addresses per user `#8292 <https://redmine.pfsense.org/issues/8292>`__
+* Added IPsec mobile client options to configure different (virtual) IP addresses per user `#8292 <https://redmine.pfsense.org/issues/8292>`__
+* Added IPsec mobile client options to configure different DNS servers per user `#8644 <https://redmine.pfsense.org/issues/8644>`__
 * Updated default cryptographic settings for IPsec `#8594 <https://redmine.pfsense.org/issues/8594>`__
 * Changed the default behavior of an IPsec Phase 1 to rekey as needed `#8540 <https://redmine.pfsense.org/issues/8540>`__
 * Fixed handling of per-user IPsec rules from an authentication server `#8765 <https://redmine.pfsense.org/issues/8765>`__
@@ -168,8 +169,6 @@ Interfaces / VIPs
 -----------------
 
 * Removed IPv4 and IPv6 settings from the Interface configuration for assigned OpenVPN/GIF/GRE/Routed IPsec instances, since the IP addresses are managed by the parent config not interfaces.php `#8687 <https://redmine.pfsense.org/issues/8687>`__
-* Added Switch Status to status.php for platforms with a switch `#8525 <https://redmine.pfsense.org/issues/8525>`__
-* Fixed an issue switching between Port VLAN and 802.1q VLAN mode on integrated switches `#8422 <https://redmine.pfsense.org/issues/8422>`__
 * Fixed an HTTP_REFERER issue when changing the LAN IP address in the Setup Wizard `#8524 <https://redmine.pfsense.org/issues/8524>`__
 * Fixed an HTTP_REFERER issue when changing an interface IP address while accessing the GUI from the same interface `#8822 <https://redmine.pfsense.org/issues/8822>`__
 * Fixed handling of the FreeBSD 11.2-BETA dhclient MTU value `#8507 <https://redmine.pfsense.org/issues/8507>`__
@@ -180,8 +179,26 @@ Interfaces / VIPs
 * Fixed deleting IP Alias VIPs outside an interface subnet where a gateway exists in the same subnet `#4438 <https://redmine.pfsense.org/issues/4438>`__
 * Fixed handling of IP Alias and CARP VIP subnet mask/prefix autodetection `#8741 <https://redmine.pfsense.org/issues/8741>`__
 * Fixed a panic in IPv6 fragment logging `#8499 <https://redmine.pfsense.org/issues/8499>`__
-* Fixed SG-1000 autonegotiation for 10baseT speed and duplex `#7532 <https://redmine.pfsense.org/issues/7532>`__
 * Fixed handling of DHCP option 77 in the DHCP client `#7425 <https://redmine.pfsense.org/issues/7425>`__
+* Fixed deleting Interface Group members which are disabled `#8800 <https://redmine.pfsense.org/issues/8800>`__
+
+Integrated Switches
+-------------------
+
+* Added GUI controls to configure LAGG on integrated switch ports (Load Balance mode only)
+* Added GUI controls to configure Speed/Duplex for switch ports on integrated switches
+* Added the ability to tie the status of an assigned VLAN interface to a switch port for integrated switches
+* Added Switch Status to status.php for platforms with a switch `#8525 <https://redmine.pfsense.org/issues/8525>`__
+* Fixed an issue switching between Port VLAN and 802.1q VLAN mode on integrated switches `#8422 <https://redmine.pfsense.org/issues/8422>`__
+* Fixed an SNMP error on hardware with integrated switches `#8600 <https://redmine.pfsense.org/issues/8600>`__
+* Added **Preserve Switch Configuration** option when restoring ``config.xml`` to keep the current active switch settings instead of those from the imported configuration to help with hardware transitions
+
+Hardware/Platform
+-----------------
+
+* Fixed an issue with ARM hardware not completely halting when shut down (SG-3100 and SG-1000)
+* Fixed HDMI hotplug issues on `Minnowboard Turbot hardware`_ (MBT-2220 and MBT-4220)
+* Fixed SG-1000 autonegotiation for 10baseT speed and duplex `#7532 <https://redmine.pfsense.org/issues/7532>`__
 
 User Management / Authentication
 --------------------------------
@@ -250,8 +267,7 @@ Miscellaneous
 * Fixed handling of sample bounds with custom timer periods on **Status > Monitoring** `#6477 <https://redmine.pfsense.org/issues/6477>`__
 * Changed the crash reporter so that users can download the reports locally rather than submitting to a server `#8764 <https://redmine.pfsense.org/issues/8764>`__
 * Fixed situation where the firewall would get stuck attempting to reinstall packages after restoring a configuration when there is no Internet connection `#7604 <https://redmine.pfsense.org/issues/7604>`__
-* Fixed an SNMP error on hardware with integrated switches `#8600 <https://redmine.pfsense.org/issues/8600>`__
 * Added more redacted XML tags to status.php `#8819 <https://redmine.pfsense.org/issues/8819>`__
-* Fixed an issue with ARM hardware not fully halting when shut down
 
+.. _Minnowboard Turbot hardware: https://www.netgate.com/docs/platforms/minnowboard/pfsense-dual-ethernet.html
 .. _VORACLE: https://media.defcon.org/DEF%20CON%2026/DEF%20CON%2026%20presentations/Nafeez/
