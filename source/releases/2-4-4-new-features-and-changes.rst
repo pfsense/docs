@@ -16,6 +16,9 @@ Significant Changes
   ``if_ipsec(4)`` Virtual Tunnel Interfaces (VTI).
   `#8544 <https://redmine.pfsense.org/issues/8544>`__
   (See also: :doc:`/vpn/ipsec/ipsec-routed`)
+:IPsec Speed Improvements: The new **Asynchronous Cryptography** option under
+  the IPsec **Advanced Settings** tab can dramatically improve IPsec performance
+  on multi-core hardware `#8772 <https://redmine.pfsense.org/issues/8772>`__
 :Default Gateway Group: The default gateway may now be configured using a
   Gateway Group setup for failover (each gateway on a different tier), which
   replaces Default Gateway Switching.
@@ -60,6 +63,7 @@ Security
 * FreeBSD SA for CVE-2018-14526: Unauthenticated EAPOL-Key Decryption Vulnerability `FreeBSD-SA-18:11.hostapd <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:11.hostapd.asc>`__
 * Fixed a potential XSS vulnerability via GUI rule separators `pfSense-SA-18_06.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_06.webgui.asc>`__ `#8654 <https://redmine.pfsense.org/issues/8654>`__
 * Fixed a potential XSS via custom GUI/dashboard settings `pfSense-SA-18_07.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_07.webgui.asc>`__ `#8726 <https://redmine.pfsense.org/issues/8726>`__
+* Fixed a potential authenticated ACE vulnerability `pfSense-SA-18_08.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_08.webgui.asc>`__ `#8843 <https://redmine.pfsense.org/issues/8843>`__
 * Upgraded strongSwan to 5.6.3 to address a buffer underflow leading to denial of service (CVE-2018-5388) `#8746 <https://redmine.pfsense.org/issues/8746>`__
 * Updated default cryptographic settings for OpenVPN, IPsec, and Certificates `#8594 <https://redmine.pfsense.org/issues/8594>`__
 * Changed the included DH groups to those defined in RFC 7919 `#8582 <https://redmine.pfsense.org/issues/8582>`__
@@ -69,8 +73,6 @@ Security
 
 Errata
 ------
-
-* Removed options for the deprecated FEC LAGG Protocol `#8734 <https://redmine.pfsense.org/issues/8734>`__
 
 .. warning:: Third party packages from **alternate repositories** are causing
    problems for users with the upgrade process and also with post-upgrade
@@ -90,6 +92,8 @@ Errata
 
    **This change does not affect packages installed from the official pfSense
    package repository.**
+
+* Removed options for the deprecated FEC LAGG Protocol `#8734 <https://redmine.pfsense.org/issues/8734>`__
 
 Certificates
 ------------
@@ -181,6 +185,7 @@ Interfaces / VIPs
 * Fixed a panic in IPv6 fragment logging `#8499 <https://redmine.pfsense.org/issues/8499>`__
 * Fixed handling of DHCP option 77 in the DHCP client `#7425 <https://redmine.pfsense.org/issues/7425>`__
 * Fixed deleting Interface Group members which are disabled `#8800 <https://redmine.pfsense.org/issues/8800>`__
+* Fixed MAC address spoofing for bridge interfaces `#8138 <https://redmine.pfsense.org/issues/8138>`__
 
 Integrated Switches
 -------------------
@@ -255,6 +260,7 @@ Firewall Rules / NAT / Shaping
 * Fixed a case where invalid IPv6 NAT rules could be generated `#8437 <https://redmine.pfsense.org/issues/8437>`__
 * Fixed a case where IPv6 Neighbor Discovery and other similar valid messages sent from the unspecified address (``::``) were not allowed by default `#8791 <https://redmine.pfsense.org/issues/8791>`__
 * Added **Select All** functionality to firewall and NAT rules `#8812 <https://redmine.pfsense.org/issues/8812>`__
+* Fixed IPv6 address form field format tooltip `#8834 <https://redmine.pfsense.org/issues/8834>`__
 
 Miscellaneous
 -------------
