@@ -76,18 +76,17 @@ need to set this up manually. Take a look at Captive Portal page to set this up.
 Using Limiters for Bandwidth Guarantees
 ---------------------------------------
 
-To guarantee a certain amount of bandwidth using Limiters instead of enforcing
-an upper limit, make four limiters as follows:
+If instead of capping bandwidth usage, you wish to guarantee a certain amount of minimum bandwidth be available, use limiters to cap the "Remaining" bandwidth usage below your Total available bandwidth:
 
-#. Bandwidth to guarantee upload
-#. Bandwidth to guarantee download
-#. Total bandwidth upload (less guaranteed above)
-#. Total bandwidth download (less guaranteed above)
+#. Guaranteed Tier Upload Bandwidth
+#. Guaranteed Tier Download Bandwidth
+#. Remaining Tier Upload Bandwidth (Total minus Guaranteed)
+#. Remaining Tier Download Bandwidth (Total minus Guaranteed)
 
 The Mask must be **none** for these to work properly, otherwise it
 cannot enforce a total limit.
 
-If the WAN has 8Mb down and 2Mb up, to guarantee 512 Kb/s for service X
+For example, if the WAN has 8Mb down and 2Mb up, to guarantee 512 Kb/s for service X
 create queues sized like so:
 
 #. 512 Kb/s
@@ -96,7 +95,7 @@ create queues sized like so:
 #. 7680 Kb/s
 
 Then direct the guaranteed service traffic into the first two limiters,
-and everything else into the "total" limiters.
+and everything else into the "Remaining" limiters.
 
 Limiters on Bridges
 -------------------
