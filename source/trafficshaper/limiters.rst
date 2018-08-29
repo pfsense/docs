@@ -76,7 +76,7 @@ need to set this up manually. Take a look at Captive Portal page to set this up.
 Using Limiters for Bandwidth Guarantees
 ---------------------------------------
 
-If instead of capping bandwidth usage, you wish to guarantee a certain amount of minimum bandwidth be available, use limiters to cap the "Remaining" bandwidth usage below your Total available bandwidth:
+To guarantee a certain amount of minimum bandwidth be available to a pipe, rather than capping bandwidth, use limiters to cap the other "Remaining" bandwidth usage below the total available. Then set aside that bandwidth for a "Guaranteed" Tier. 
 
 #. Guaranteed Tier Upload Bandwidth
 #. Guaranteed Tier Download Bandwidth
