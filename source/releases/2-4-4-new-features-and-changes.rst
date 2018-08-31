@@ -70,6 +70,7 @@ Security
 * Added stronger IPsec Pre-Shared Key usage warnings, and a button to generate a secure PSK `#8667 <https://redmine.pfsense.org/issues/8667>`__
 * Disabled OpenVPN compression by default on new instances for security reasons due to `VORACLE`_ -- Users should strongly consider disabling compression on OpenVPN instances if they pass unencrypted data such as HTTP to arbitrary Internet sites `#8788 <https://redmine.pfsense.org/issues/8788>`__
 * Patched OpenSSH for `CVE-2018-15473 <https://isc.sans.edu/forums/diary/OpenSSH+user+enumeration+CVE201815473/24004/>`__, username enumeration/disclosure through malformed packets.
+* Changed from ``sshlockout_pf`` to ``sshguard`` for monitoring failed logins and locking out offenders, this allows the lockout to work on IPv4 and IPv6 and also terminates states when adding offenders to the block list `#7694 <https://redmine.pfsense.org/issues/7694>`__ `#7695 <https://redmine.pfsense.org/issues/7695>`__
 
 Errata
 ------
@@ -103,6 +104,7 @@ Certificates
 * Added support for OCSP Must-Staple certificates in the GUI (and ACME package) `#8418 <https://redmine.pfsense.org/issues/8418>`__
 * Changed CRL support from using an abandoned PHP OpenSSL module patch to a pure PHP implementation compatible with PHP 7.2 `#8762 <https://redmine.pfsense.org/issues/8762>`__
 * Fixed issues with several areas not properly parsing CA fields properly when they were not in the expected order `#8801 <https://redmine.pfsense.org/issues/8801>`__
+* Changed the default CA and Certificate create action from "Import..." to "Create an internal..." `#8851 <https://redmine.pfsense.org/issues/8851>`__
 
 DNS
 ---
@@ -186,6 +188,7 @@ Interfaces / VIPs
 * Fixed handling of DHCP option 77 in the DHCP client `#7425 <https://redmine.pfsense.org/issues/7425>`__
 * Fixed deleting Interface Group members which are disabled `#8800 <https://redmine.pfsense.org/issues/8800>`__
 * Fixed MAC address spoofing for bridge interfaces `#8138 <https://redmine.pfsense.org/issues/8138>`__
+* Fixed an issue with string termination when creating interfaces through the pfSense PHP module `#8683 <https://redmine.pfsense.org/issues/8683>`__
 
 Integrated Switches
 -------------------
@@ -262,18 +265,24 @@ Firewall Rules / NAT / Shaping
 * Added **Select All** functionality to firewall and NAT rules `#8812 <https://redmine.pfsense.org/issues/8812>`__
 * Fixed IPv6 address form field format tooltip `#8834 <https://redmine.pfsense.org/issues/8834>`__
 
+Packages
+--------
+* Fixed situation where the firewall would get stuck attempting to reinstall packages after restoring a configuration when there is no Internet connection `#7604 <https://redmine.pfsense.org/issues/7604>`__
+* Added a new tag for package services, ``<starts_on_sync/>``, to allow packages to declare that they start themselves during the sync process, which lets packages opt out of a (second) forced start at boot and during interface events `#8850 <https://redmine.pfsense.org/issues/8850>`__
+
+  See also: `#8620 <https://redmine.pfsense.org/issues/8620>`__
+
 Miscellaneous
 -------------
 
-* Fixed an issue with **Guided UFS** mode in the installer not booting `#8638 <https://redmine.pfsense.org/issues/8638>`__
 * Fixed display of stored Load Balancer custom settings `#8704 <https://redmine.pfsense.org/issues/8704>`__
 * Fixed handling of ``loader.conf`` and ``loader.conf.local`` so it will not removed customized options that override defaults `#8571 <https://redmine.pfsense.org/issues/8571>`__
 * Fixed the restoration process for a ``config.xml`` from USB during install to remove RRD data so that the data does not indefinitely stay in ``config.xml`` `#7634 <https://redmine.pfsense.org/issues/7634>`__
 * Fixed handling of special characters in L2TP user passwords `#7623 <https://redmine.pfsense.org/issues/7623>`__
 * Fixed handling of sample bounds with custom timer periods on **Status > Monitoring** `#6477 <https://redmine.pfsense.org/issues/6477>`__
 * Changed the crash reporter so that users can download the reports locally rather than submitting to a server `#8764 <https://redmine.pfsense.org/issues/8764>`__
-* Fixed situation where the firewall would get stuck attempting to reinstall packages after restoring a configuration when there is no Internet connection `#7604 <https://redmine.pfsense.org/issues/7604>`__
 * Added more redacted XML tags to status.php `#8819 <https://redmine.pfsense.org/issues/8819>`__
+* Changed status.php to use ``ifconfig -va`` to show more detail, including attached SFP devices with certain network interface drivers `#8860 <https://redmine.pfsense.org/issues/8860>`__
 
 .. _Minnowboard Turbot hardware: https://www.netgate.com/docs/platforms/minnowboard/pfsense-dual-ethernet.html
 .. _VORACLE: https://media.defcon.org/DEF%20CON%2026/DEF%20CON%2026%20presentations/Nafeez/
