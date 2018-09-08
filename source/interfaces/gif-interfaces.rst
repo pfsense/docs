@@ -58,7 +58,7 @@ Site A:
 Site B:
 
 -  **Parent interface** - *WAN*
--  **GIF Remote address** - *1.1.1.1* (Public IP of Site B)
+-  **GIF Remote address** - *1.1.1.1* (Public IP of Site A)
 -  **GIF Tunnel local address** - *192.0.2.65*
 -  **GIF Tunnel remote address** - *192.0.2.66/30*
 
