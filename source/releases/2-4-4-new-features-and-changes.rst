@@ -35,9 +35,6 @@ Significant Changes
 :AutoConfigBackup is free!: AutoConfigBackup now integrated and `free for all to
   use <https://www.netgate.com/blog/pfsense-gold-free-starting-with-2-4-4.html>`__.
   (See also: :doc:`/backup/autoconfigbackup`)
-:Hybrid Installer Image: The installer memstick is now a **Hybrid** format which
-  can be used as both an **ISO Image** and a **Memstick**. To use the file as an
-  ISO image, decompress it and rename it with an ``.iso`` extension.
 :DNS over TLS: The DNS Resolver now includes support for DNS over TLS as both a
   client and a server, including for domain overrides.
   `#8388 <https://redmine.pfsense.org/issues/8388>`__
@@ -170,6 +167,7 @@ DHCP Server
 
 * Fixed validation of custom DHCP options `#8534 <https://redmine.pfsense.org/issues/8534>`__
 * Fixed a situation where DHCPv6 was configured for LAN when the LAN interface was not assigned `#8048 <https://redmine.pfsense.org/issues/8048>`__
+* Fixed an issue with XMLRPC synchronization of DHCP static mappings `#8721 <https://redmine.pfsense.org/issues/8721>`__
 
 Interfaces / VIPs
 -----------------
@@ -189,6 +187,7 @@ Interfaces / VIPs
 * Fixed deleting Interface Group members which are disabled `#8800 <https://redmine.pfsense.org/issues/8800>`__
 * Fixed MAC address spoofing for bridge interfaces `#8138 <https://redmine.pfsense.org/issues/8138>`__
 * Fixed an issue with string termination when creating interfaces through the pfSense PHP module `#8683 <https://redmine.pfsense.org/issues/8683>`__
+* Fixed an issue where changing a LAGG could cause a VLAN using that LAGG as a parent interface to lose its association with the LAGG `#8527 <https://redmine.pfsense.org/issues/8527>`__
 
 Integrated Switches
 -------------------
@@ -236,6 +235,7 @@ Captive Portal
 * Changed handling of Called-Station-Id/Calling-Station ID to send a MAC address instead of IP address when using RADIUS authentication `#4294 <https://redmine.pfsense.org/issues/4294>`__
 * Changed to a standardized NAS-Identifier when using RADIUS authentication `#3686 <https://redmine.pfsense.org/issues/3686>`__
 * Corrected accounting updates not being sent when expected `#8655 <https://redmine.pfsense.org/issues/8655>`__
+* Fixed an issue with XMLRPC synchronization of Captive Portal settings `#8806 <https://redmine.pfsense.org/issues/8806>`__
 
 WebGUI / Dashboard
 ------------------
