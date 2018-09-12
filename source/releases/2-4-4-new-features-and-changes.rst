@@ -7,7 +7,7 @@
 Significant Changes
 -------------------
 
-:OS Upgrade: Base Operating System upgraded to FreeBSD 11.2-RELEASE-p2. As a
+:OS Upgrade: Base Operating System upgraded to FreeBSD 11.2-RELEASE-p3. As a
   part of moving to FreeBSD 11.2, new hardware support is included for
   C3000-based hardware.
 :PHP 7.2: PHP upgraded to 7.2, which required numerous changes to syntax
@@ -50,6 +50,11 @@ Significant Changes
   background images and Terms of Service text to be customized without editing
   and uploading custom HTML code.
   `#8793 <https://redmine.pfsense.org/issues/8793>`__
+:Integrated Switch Improvements: Netgate devices with integrated switches such
+  as the SG-3100 and XG-7100 can now configure per-port speed and duplex
+  settings, discrete port configuration interfaces can now be tied to switch
+  ports for up/down status, and LAGG support is also now available (Failover
+  mode only)
 
 Security
 --------
@@ -58,6 +63,8 @@ Security
 * FreeBSD SA for CVE-2018-3620, CVE-2018-3646: L1 Terminal Fault (L1TF) Kernel Information Disclosure `FreeBSD-SA-18:09.l1tf <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:09.l1tf.asc>`__
 * FreeBSD SA for CVE-2018-6923: Resource exhaustion in IP fragment reassembly `FreeBSD-SA-18:10.ip <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:10.ip.asc>`__
 * FreeBSD SA for CVE-2018-14526: Unauthenticated EAPOL-Key Decryption Vulnerability `FreeBSD-SA-18:11.hostapd <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:11.hostapd.asc>`__
+* FreeBSD SA for CVE-2018-6924: Improper ELF header parsing `FreeBSD-SA-18:12.elf <https://www.freebsd.org/security/advisories/FreeBSD-SA-18:12.elf.asc>`__
+* FreeBSD errata notice for LazyFPU remediation causing potential data corruption `FreeBSD-EN-18:08.lazyfpu <https://www.freebsd.org/security/advisories/FreeBSD-EN-18:08.lazyfpu.asc>`__
 * Fixed a potential XSS vulnerability via GUI rule separators `pfSense-SA-18_06.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_06.webgui.asc>`__ `#8654 <https://redmine.pfsense.org/issues/8654>`__
 * Fixed a potential XSS via custom GUI/dashboard settings `pfSense-SA-18_07.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_07.webgui.asc>`__ `#8726 <https://redmine.pfsense.org/issues/8726>`__
 * Fixed a potential authenticated ACE vulnerability `pfSense-SA-18_08.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-18_08.webgui.asc>`__ `#8843 <https://redmine.pfsense.org/issues/8843>`__
@@ -203,6 +210,7 @@ Integrated Switches
 Hardware/Platform
 -----------------
 
+* Added support for the new SG-5100
 * Fixed an issue with ARM hardware not completely halting when shut down (SG-3100 and SG-1000)
 * Fixed HDMI hotplug issues on `Minnowboard Turbot hardware`_ (MBT-2220 and MBT-4220)
 * Fixed SG-1000 autonegotiation for 10baseT speed and duplex `#7532 <https://redmine.pfsense.org/issues/7532>`__
