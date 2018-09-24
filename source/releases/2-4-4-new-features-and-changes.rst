@@ -1,9 +1,6 @@
 2.4.4 New Features and Changes
 ==============================
 
-.. danger:: This release is not yet published. This list is tentative and may
-   change at any time.
-
 Significant Changes
 -------------------
 
