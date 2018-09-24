@@ -178,6 +178,19 @@ Upgrading from versions older than pfSense 2.4.4
   could lead to behavior changes in certain cases. Read the release notes and
   associated bug reports for more details. Note any problems on the |forum_link|
   or the |subreddit|.
+* A crash report containing no data (empty) may appear after the upgrade
+  completes. See `#8915 <https://redmine.pfsense.org/issues/8915>`__
+* Intel Atom systems containing HD Graphics chipsets similar to the Z3700 may
+  experience console problems after the update. Affected systems will boot
+  successfully, but fail to display console output after the boot menu. To fix
+  the problem, add the following lines to ``/boot/loader.conf.local``::
+
+    i915kms_load="YES"
+    drm.i915.enable_unsupported=1
+
+  * Systems with similar console problems not containing a graphics chip
+    supported by the i915 driver may need to reinstall 2.4.4 to use a UEFI
+    console.
 
 Upgrading from versions older than pfSense 2.4.0
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
