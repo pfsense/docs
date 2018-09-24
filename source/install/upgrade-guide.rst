@@ -89,8 +89,10 @@ necessary packages.
 Performing the Update
 ---------------------
 
-The specifics of performing the actual firmware update are covered in
-:doc:`/install/upgrading-pfsense-software-installations`.
+See :doc:`/install/upgrading-pfsense-software-installations` for instructions
+that cover performing the upgrade process.
+
+For help in resolving upgrade problems, see :doc:`upgrade-troubleshooting`.
 
 32-bit / i386 Deprecated
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -155,6 +157,13 @@ Upgrading from versions older than pfSense 2.4.4
   in further errors. Note any problems on the |forum_link| or the |subreddit|,
   and if possible, try to include relevant portions of ``config.xml`` with
   personal data removed.
+* Due to the significant nature of the changes in this version of pfSense
+  software, warnings and error messages, particularly from PHP and package
+  updates, are likely to occur during the upgrade process. These errors are
+  primarily seen on the console as the upgrade is applied, but may appear in a
+  crash report once the upgrade completes. In nearly all cases these errors are
+  a harmless side effect of the changes between FreeBSD 11.1 and 11.2 and
+  between PHP 5.6 and PHP 7.2.
 * Gateway handling changes in 2.4.4 may result in different default gateway
   behavior than previous releases. Nearly all cases should behave properly, but
   be aware that it may be necessary to re-select the default gateway after

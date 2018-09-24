@@ -14,6 +14,9 @@ resolved as needed.
 
 .. note:: Before performing an upgrade, read through the :doc:`upgrade-guide`.
 
+If any problems occur during the upgrade process, consult
+:doc:`upgrade-troubleshooting` for assistance.
+
 .. contents:: Upgrading pfSense Software
    :depth: 2
    :local:
@@ -66,29 +69,6 @@ update.
 
 Additionally, from the command line, the ``pfSense-upgrade`` command will
 upgrade the firewall.
-
-Upgrade Troubleshooting
-~~~~~~~~~~~~~~~~~~~~~~~
-
-If the update system does not offer an upgrade to the most recent version, or
-the upgrade will not proceed, take the following steps:
-
-* Navigate to **System > Updates**
-* Set **Branch** to *Latest stable version*
-* Refresh the repository configuration and upgrade script by running the
-  following commands from the console or shell::
-
-    pkg-static clean -ay; pkg-static install -fy pkg pfSense-repo pfSense-upgrade
-
-In some cases the repository information may need to be rewritten:
-
-* Navigate to **System > Updates**
-* Set the **Branch** to *Latest Development Snapshots*
-* Wait for the page to refresh
-* Set the **Branch** to *Latest stable version*
-
-If the update still does not appear, run the commands above from the console or
-shell.
 
 Version 2.2.x and earlier
 -------------------------

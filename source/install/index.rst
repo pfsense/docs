@@ -39,5 +39,6 @@ Topics related to upgrading an existing installation to a current release.
 
    upgrade-guide
    upgrading-pfsense-software-installations
+   upgrade-troubleshooting
    /highavailability/redundant-firewalls-upgrade-guide
    upgrading-64-bit-nanobsd-2-3-to-2-4
