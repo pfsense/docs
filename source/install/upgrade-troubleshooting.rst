@@ -8,6 +8,10 @@ Upgrade Troubleshooting
 This document describes methods of troubleshooting problems firewalls may
 encounter when attempting to run an upgrade.
 
+.. contents:: Upgrade Troubleshooting
+   :depth: 2
+   :local:
+
 .. _upgrade-troubleshooting-log:
 
 Upgrade Log
@@ -162,13 +166,13 @@ manually::
 
 .. _upgrade-troubleshooting-nuclear:
 
-Nuclear Upgrade Option
-^^^^^^^^^^^^^^^^^^^^^^
+Forced pkg Reinstall
+--------------------
 
-If all else fails, forcing a reinstallation of all packages may resolve problems
-that otherwise may require a full reinstall. This is not ideal, as a clean
-install is more likely to have a positive result, but that is not always an
-option in every situation (e.g. remote install with no console access).
+Forcing a reinstallation of all packages may resolve problems that otherwise may
+require a full reinstall. This is not ideal, as a clean install is more likely
+to have a positive result, but that is not always an option in every situation
+(e.g. remote install with no console access).
 
 To forcefully reinstall all packages, take the following steps:
 
@@ -182,3 +186,16 @@ To forcefully reinstall all packages, take the following steps:
     pkg-static upgrade -f
 * Review the list of changes and enter ``y`` to proceed
 * Manually reboot the firewall
+
+Last Resort
+-----------
+
+If nothing else works then a reinstall will eliminate any possibility of
+problems related to the upgrade itself.
+
+pfSense supports multiple options to easily restore the configuration. The
+fastest method is **Recover config.xml** as discussed in
+:doc:`../backup/automatically-restore-during-install`. Using that method,
+pfSense can pick up the existing configuration from the existing install and use
+it, eliminating the need for any manual restore process. The firewall will boot
+up after installation with the old settings and reinstall packages as needed.
