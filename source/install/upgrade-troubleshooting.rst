@@ -77,6 +77,10 @@ a few potential errors include:
 :No route to host: The firewall cannot reach the update server because it cannot
   find a route there. Most likely, the firewall is missing its default route or
   the WAN with the default route is down.
+:Operation timed out: The firewall was unable to download a file in a timely
+  manner. This is most likely due to degraded connectivity between the firewall
+  and the update servers. It could also be a routing issue, or a problem with
+  IPv6 on the firewall (See :ref:`upgrade-ipv6`).
 :Authentication error: There is a proxy between the firewall and the update
   servers and it requires authentication. Move the firewall so it is not behind
   a proxy, or configure the proxy under **System > Advanced**, **Miscellaneous**
@@ -134,6 +138,27 @@ Accessing the hosts using their real hostnames will work with a browser::
    "https://files00.netgate.com/pfSense_v2_3_4_amd64-core/meta.txz"
   $ echo $?
   0
+
+.. _upgrade-ipv6:
+
+IPv6 Connectivity Problems
+--------------------------
+
+If IPv6 is configured on the firewall, pfSense will prefer to use it when
+performing an update. There are cases when a firewall may have broken IPv6
+connectivity, however, that contribute to problems updating. This could manifest
+as a timeout or routing error when upgrading.
+
+Typically the operating system will attempt to fall back to IPv4, but the extra
+time this takes could also lead to a timeout.
+
+The firewall can be configured to prefer IPv4 to eliminate this as a potential
+cause. See :doc:`../interfaces/controlling-ipv6-or-ipv4-preference` for details.
+
+Alternately, from ssh or a console shell, force the upgrade to use IPv4
+manually::
+
+  pfSense-upgrade -4
 
 .. _upgrade-troubleshooting-nuclear:
 
