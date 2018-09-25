@@ -281,7 +281,7 @@ Miscellaneous
 -------------
 
 * Fixed display of stored Load Balancer custom settings `#8704 <https://redmine.pfsense.org/issues/8704>`__
-* Fixed handling of ``loader.conf`` and ``loader.conf.local`` so it will not removed customized options that override defaults `#8571 <https://redmine.pfsense.org/issues/8571>`__
+* Fixed handling of ``loader.conf`` and ``loader.conf.local`` so it will not remove customized options that override defaults `#8571 <https://redmine.pfsense.org/issues/8571>`__
 * Fixed the restoration process for a ``config.xml`` from USB during install to remove RRD data so that the data does not indefinitely stay in ``config.xml`` `#7634 <https://redmine.pfsense.org/issues/7634>`__
 * Fixed handling of special characters in L2TP user passwords `#7623 <https://redmine.pfsense.org/issues/7623>`__
 * Fixed handling of sample bounds with custom timer periods on **Status > Monitoring** `#6477 <https://redmine.pfsense.org/issues/6477>`__
