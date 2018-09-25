@@ -80,6 +80,9 @@ state if the VM encounters a problem.
 Packages
 ^^^^^^^^
 
+.. warning:: **Do not upgrade packages before upgrading pfSense**. Either remove
+   all packages or leave the packages alone before running the update.
+
 The safest practice is to remove **all** packages before upgrading pfSense to a
 new release. The upgrade process will reinstall packages afterward, but packages
 are frequently a source of problems. To ensure a smooth upgrade, note the
