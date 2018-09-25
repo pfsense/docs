@@ -50,7 +50,7 @@ Significant Changes
 :Integrated Switch Improvements: Netgate devices with integrated switches such
   as the SG-3100 and XG-7100 can now configure per-port speed and duplex
   settings, discrete port configuration interfaces can now be tied to switch
-  ports for up/down status, and LAGG support is also now available (Failover
+  ports for up/down status, and LAGG support is also now available (Load Balance
   mode only)
 
 Security
