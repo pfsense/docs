@@ -194,6 +194,10 @@ Upgrading from versions older than pfSense 2.4.4
   * Systems with similar console problems not containing a graphics chip
     supported by the i915 driver may need to reinstall 2.4.4 to use a UEFI
     console.
+  * Alternately, try using the syscons console instead of VT in
+    ``/boot/loader.conf.local``::
+
+      kern.vty=sc
 
 Upgrading from versions older than pfSense 2.4.0
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
