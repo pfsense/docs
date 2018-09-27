@@ -77,6 +77,19 @@ state if the VM encounters a problem.
    update the VM Guest operating system to match the upgraded OS, such as
    *Other/FreeBSD 11 (64-bit)*
 
+Pre-Upgrade Reboot
+^^^^^^^^^^^^^^^^^^
+
+This step is optional but we strongly recommend rebooting the firewall before
+applying an update. If the hardware has a problem, such as a disk issue, then
+performing a reboot before the upgrade will allow that to be identified early.
+Otherwise, a hardware issue could be confused with an issue that occurred as a
+result of the upgrade process.
+
+There is still a chance that the upgrade could draw out a hardware issue, such
+as a disk failing from the writes that happen in the upgrade process, but that
+is much less common to see in practice.
+
 Packages
 ^^^^^^^^
 
