@@ -196,21 +196,26 @@ Upgrading from versions older than pfSense 2.4.4
   or the |subreddit|.
 * A crash report containing no data (empty) may appear after the upgrade
   completes. See `#8915 <https://redmine.pfsense.org/issues/8915>`__
-* Intel Atom systems containing HD Graphics chipsets similar to the Z3700 may
-  experience console problems after the update. Affected systems will boot
-  successfully, but fail to display console output after the boot menu. To fix
-  the problem, add the following lines to ``/boot/loader.conf.local``::
+* Intel Atom systems containing HD Graphics chipsets may experience console
+  problems after the update. Affected systems will boot successfully, but fail
+  to display console output after the boot menu. To fix the problem, add the
+  following line to ``/boot/loader.conf.local`` to use the ``syscons`` console
+  type::
 
-    i915kms_load="YES"
-    drm.i915.enable_unsupported=1
+    kern.vty=sc
 
+  * Alternately, try using i915 driver with the standard VT console using these
+    lines in ``/boot/loader.conf.local``::
+
+      i915kms_load="YES"
+      drm.i915.enable_unsupported=1
+
+    .. warning:: This driver will consume extra bus resources and may cause
+       resource hungry add-on hardware to fail, such as multi-port network
+       adapters.
   * Systems with similar console problems not containing a graphics chip
     supported by the i915 driver may need to reinstall 2.4.4 to use a UEFI
     console.
-  * Alternately, try using the syscons console instead of VT in
-    ``/boot/loader.conf.local``::
-
-      kern.vty=sc
 
 Upgrading from versions older than pfSense 2.4.0
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
