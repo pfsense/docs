@@ -216,6 +216,16 @@ Upgrading from versions older than pfSense 2.4.4
   * Systems with similar console problems not containing a graphics chip
     supported by the i915 driver may need to reinstall 2.4.4 to use a UEFI
     console.
+* An ISP that supplies a bogus interface MTU via DHCP may cause interface
+  problems with certain network interface types when **Advanced Configuration**
+  options are present on DHCP interfaces, such as a DHCP WAN. The typical
+  default case is handled automatically, but advanced options override the
+  corrected default behavior. To fix the problem, apply the patch from #8507 or
+  add ``supersede interface-mtu 0`` to the **Option modifiers** box in the WAN
+  interface advanced DHCP options. If a custom ``dhclient.conf`` is in use, add
+  ``supersede interface-mtu 0`` on a line inside the ``interface`` block. See
+  `#8507 <https://redmine.pfsense.org/issues/8507>`__. The **Advanced
+  Configuration** case has been corrected for the next release.
 
 Upgrading from versions older than pfSense 2.4.0
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
