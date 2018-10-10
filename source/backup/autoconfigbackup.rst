@@ -67,6 +67,9 @@ To identify a specific firewall, an unique identifier is required to save or
 restore a backup configuration. ACB uses an SHA256 hash of the SSH public key on
 the firewall for this purpose.
 
+The device key is located on the **Services > Auto Config Backup** menu item, 
+under the **Restore** and **Backup now** tabs.
+
 .. warning:: **Keep a careful record of this Device Key**!
 
    If the **Device Key** of a firewall is lost, there is a chance it can be
