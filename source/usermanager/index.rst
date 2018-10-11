@@ -25,6 +25,7 @@ LDAP authentication sources.
    user-authentication-servers
    ldap-troubleshooting
    radius-errors
+   google-gsuite-auth-source
 
 FreeRADIUS
 ''''''''''
