@@ -204,8 +204,8 @@ IP packet headers for more information.
   <other-unreachable> ::= "unreach" | "timexceed" | "paramprob" | "redirect" | "maskreply"
   <echo-data> ::= <icmp-id>,<icmp-sequence>
   
-  <echo-id> ::= <integer> -- ID of the echo request/reply
-  <echo-sequence> ::= <integer> -- Sequence number of the echo request/reply
+  <icmp-id> ::= <integer> -- ID of the echo request/reply
+  <icmp-sequence> ::= <integer> -- Sequence number of the echo request/reply
   <unreachproto-data> ::= <icmp-destination-ip-address>,<unreachable-protocol-id>
   
   <icmp-destination-ip-address> ::= <ip-address> -- Original destination address of the connection that caused this notification
