@@ -15,18 +15,18 @@ certificate to make a secure LDAP connection.
 * Firewalls running pfSense CE or pfSense factory software version 2.4.4-RELEASE
   require the stunnel package to make a secure LDAP connection.
 
-Configuring a firewall running pfSense software to use GSuite LDAP
+Configuring a firewall running pfSense software to use G Suite LDAP
 authentication requires a number of steps, all of which are covered in this
 document.
 
-.. contents:: Configuring GSuite LDAP
+.. contents:: Configuring G Suite LDAP
    :depth: 1
    :local:
 
-Configure the LDAP Application on the GSuite admin portal
----------------------------------------------------------
+Configure the LDAP Application on the G Suite admin portal
+----------------------------------------------------------
 
-Follow the instructions from Google for `configuring and enabling the GSuite
+Follow the instructions from Google for `configuring and enabling the G Suite
 LDAP application`_.
 
 .. warning:: **Follow these directions exactly**. No special provisions are
@@ -36,7 +36,7 @@ LDAP application`_.
 Download the certificate, key, username and password
 ----------------------------------------------------
 
-Download the certificate, key, username and password from GSuite to a local
+Download the certificate, key, username and password from G Suite to a local
 directory on a workstation.
 
 Import the certificate and key
@@ -47,12 +47,12 @@ From the web interface of a firewall running pfSense:
 * Navigate to **System > Cert manager**, **Certificates** tab
 * Click |fa-plus| **Add/Sign** to display the certificate import interface
 * Change **Method** to *Import an existing certificate*
-* Enter a **Descriptive name**, such as ``GSuite LDAP``
+* Enter a **Descriptive name**, such as ``G Suite LDAP``
 * Copy and paste the contents of the downloaded certificate into the
   **Certificate data** box
 * Copy and paste the contents of the downloaded key into the **Private Key
   data** box
-* Click "Save"
+* Click **Save**
 
 The certificate is now available for use by the firewall.
 
@@ -97,12 +97,12 @@ From the web interface on pfSense:
 
 * Navigate to **Services > STunnel**
 * Click |fa-plus| **Add** to create a new profile
-* Enter a ***Description** for this connection, such as ``GSuite``
+* Enter a **Description** for this connection, such as ``G Suite``
 * Check **Client Mode**
 * Set **Listen on IP** to ``127.0.0.1``
 * Set **Listen on port** to ``1636``
-* Set the **Certificate** to the entry imported previously, in this case *GSuite
-  LDAP*
+* Set the **Certificate** to the entry imported previously, in this case *G
+  Suite LDAP*
 * Set **Redirects to IP** to ``ldap.google.com``
 * Set **Redirects to port** to ``636``
 * Click **Save**
@@ -116,7 +116,7 @@ From the web interface on pfSense:
 
 * Select **System > User manager**, **Authentication servers** tab
 * Click |fa-plus| **Add** to create a new entry
-* Enter a **Descriptive name** for this LDAP server, such as ``GSuite``
+* Enter a **Descriptive name** for this LDAP server, such as ``G Suite``
 * Set **Type** to *LDAP*
 * The server settings depend on the pfSense software version installed on the
   firewall:
@@ -128,7 +128,7 @@ From the web interface on pfSense:
     * Set **Transport** to *SSL - Encrypted*
     * Set **Peer Certificate Authority** to *Global Root CA List*
     * Set *Client Certificate* to the entry imported previously, in this case
-      *GSuite LDAP*
+      *G Suite LDAP*
 
   * For pfSense CE or factory version 2.4.4-RELEASE using stunnel:
 
@@ -150,7 +150,7 @@ that is ``example.com``.
 * Set **Authentication containers** to the **Base DN** prepended by the
   ``Users`` organizational unit, for example: ``ou=Users,dc=example,dc=com``
 * **Uncheck** the **Bind anonymous** box to show the **Bind Credentials** fields
-* Set **Bind credentials** to the GSuite LDAP username and password that were
+* Set **Bind credentials** to the G Suite LDAP username and password that were
   created with the certificate and key
 
 The remaining attributes are not specific to the domain, or are defaults
@@ -166,11 +166,11 @@ Using a remote authentication server to manage administrative logins to services
 on pfSense requires a matching group to be present on both the authentication
 source server and on the firewall. The existing ``admins`` group could be used,
 but since the name is so general it may conflict with other desired permissions
-in GSuite.
+in G Suite.
 
 This example uses a new group called ``fwadmins``.
 
-First, create the ``fwadmins`` group in GSuite and assign users to the group.
+First, create the ``fwadmins`` group in G Suite and assign users to the group.
 The exact details will vary based on the domain and its organization.
 
 Next, create a group on the firewall running pfSense software. This does not
@@ -200,17 +200,17 @@ Now the group needs privileges:
 
 * Click **Save** to store the privileges
 
-Test GSuite Authentication
---------------------------
+Test G Suite Authentication
+---------------------------
 
 With the complete configuration described above, it is now possible to
-authenticate against Google GSuite LDAP. First, test the authentication to
+authenticate against Google G Suite LDAP. First, test the authentication to
 ensure it is working properly.
 
 * Navigate to **Diagnostics > Authentication**
 * Set the **Authentication server** to the name used for the LDAP Server entry,
-  such as *GSuite*
-* Enter a known username and password on the domain that GSuite controls
+  such as *G Suite*
+* Enter a known username and password on the domain that G Suite controls
 
   .. note:: By default only the username part of the login is checked against
      the configured LDAP base DN. If a username is submitted with a domain part,
@@ -219,7 +219,7 @@ ensure it is working properly.
 * Click |fa-wrench| **Test**
 
 The user should show as authenticating successfully, and if the user entered is
-a member of the ``fwadmins`` group in GSuite, that should also be reflected in
+a member of the ``fwadmins`` group in G Suite, that should also be reflected in
 the test output.
 
 If the test succeeds, the service is ready for use. pfSense can use it as an
@@ -228,17 +228,17 @@ authentication servers work.
 
 If the test fails, check the main system log for error messages from LDAP.
 Start from the beginning of this document and compare all settings between this
-document, GSuite, and pfSense. Most common problems are with parameters being
+document, G Suite, and pfSense. Most common problems are with parameters being
 input incorrectly, such as selecting the wrong certificate, using an incorrect
 LDAP attribute name, or not using correct bind credentials.
 
-Use GSuite for pfSense Administrative Logins
---------------------------------------------
+Use G Suite for pfSense Administrative Logins
+---------------------------------------------
 
 If all is well and the user authenticated as expected:
 
 * Navigate to **System > User manager**, **Settings**
-* Set the **Authentication server** to *GSuite*
+* Set the **Authentication server** to *G Suite*
 * Click **Save**
 
 After saving, firewall users will be authenticated against Google Cloud
@@ -248,5 +248,5 @@ Identity.
    cannot authenticate using the chosen LDAP server.
 
 
-.. _configuring and enabling the GSuite LDAP application: https://support.google.com/cloudidentity/answer/9048516
+.. _configuring and enabling the G Suite LDAP application: https://support.google.com/cloudidentity/answer/9048516
 .. _Google Cloud Identity LDAP service: https://cloud.google.com/blog/products/identity-security/simplifying-identity-and-access-management-for-more-businesses
