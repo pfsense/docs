@@ -39,6 +39,10 @@ target drive.
 
 * First, make sure to have a ``config.xml`` backup from the old firewall
 * On a DOS/FAT formatted USB drive, make a directory called ``conf``
+
+  .. note:: For this feature to work correctly, the USB drive must contain a
+     partition table and it must not be formatted as a raw device.
+
 * Copy a backup configuration file to the ``conf`` directory
 * Rename the backup to ``config.xml``
 
