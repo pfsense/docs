@@ -124,10 +124,34 @@ To use this method:
     ``/.well-known/acme-challenge`` at the end
 
     .. warning:: Make sure the specified user has write permissions to the
-       directory!
+       directory! 
+       Also see note below.
+       
+  :Note:
+    The simplest way to achive that the specified user has write permissions to the directory whitout the security concerns
+    is to create a user in the server that can act on behaf of all the sites. All the **full path** fields should be set to this users directory
+
+    #. In this config you wolud have a user on the server, lets say **acme**. 
+    #. In the home directory of the designated user create the folder structure **~/.well-known/acme-challenge**
+    #. In webserver configuration create an alias for the path **/.well-known/acme-challenge** for all sites.
+      * In Apache2 it would be somthing like this::
+        
+          #Acme config for apache (/etc/acpache2/conf-avalable/acme.conf)
+          #Add to conf-available
+          #Enable with a2enconf
+
+          Alias /.well-known/acme-challenge /home/acme/.well-known/acme-challenge
+          <Directory /home/acme/.well-known/acme-challenge>
+              AllowOverride None
+              Require all granted
+          </Directory>
 
 * Click **Save**
 * Click **Issue/Renew**
+
+
+  
+
 
 .. _acme-validation-localfolder:
 
