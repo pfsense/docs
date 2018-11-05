@@ -3,11 +3,6 @@
 Routed IPsec (VTI)
 ==================
 
-.. warning:: This feature will be present in pfSense 2.4.4 which is not yet
-   released. It is under active testing and development, is potentially
-   unstable, and is still subject to change. Post on the `IPsec category of the
-   forum`_ for assistance with problems or potential bugs.
-
 Route-based IPsec is an alternative method of managing IPsec traffic. It uses
 ``if_ipsec(4)`` from FreeBSD 11.1+ for Virtual Tunnel Interfaces (VTI) and
 traffic is directed using the operating system routing table. It does not rely
@@ -24,6 +19,9 @@ provides policy routing and gateway group capabilities.
 
 .. note:: Routed IPsec is not replacing traditional tunneled IPsec, both may be
    used. The choice is up to the user when creating an IPsec Phase 2 entry.
+
+.. note:: Routed IPsec is available on firewalls running pfSense software
+   version 2.4.4-RELEASE or later.
 
 Prerequisites
 -------------
