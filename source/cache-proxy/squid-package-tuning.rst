@@ -77,10 +77,14 @@ If there are a bunch of local PCs that need Windows Updates, but a WSUS
 server is not an option, squid can cache them.
 
 - On the **General Settings** tab of the squid configuration
-  (**Services > Proxy Server**), place the following in the **Custom
-  Options** box at the bottom::
+  (**Services > Proxy Server**), place the following `patterns recommended by
+  Squid`_ in the **Custom Options** box at the bottom::
 
-    refresh_pattern ([^.]+.|)(download|(windows|)update|).(microsoft.|)com/.*\.(cab|exe|msi|msp) 4320 100% 43200 reload-into-ims;
+    refresh_pattern -i windowsupdate.com/.*\.(cab|exe|ms[i|u|f|p]|[ap]sf|wm[v|a]|dat|zip|psf) 43200 80% 129600 reload-into-ims
+    refresh_pattern -i microsoft.com/.*\.(cab|exe|ms[i|u|f|p]|[ap]sf|wm[v|a]|dat|zip|psf) 43200 80% 129600 reload-into-ims
+    refresh_pattern -i windows.com/.*\.(cab|exe|ms[i|u|f|p]|[ap]sf|wm[v|a]|dat|zip|psf) 43200 80% 129600 reload-into-ims
+    refresh_pattern -i microsoft.com.akadns.net/.*\.(cab|exe|ms[i|u|f|p]|[ap]sf|wm[v|a]|dat|zip|psf) 43200 80% 129600 reload-into-ims
+    refresh_pattern -i deploy.akamaitechnologies.com/.*\.(cab|exe|ms[i|u|f|p]|[ap]sf|wm[v|a]|dat|zip|psf) 43200 80% 129600 reload-into-ims
     range_offset_limit -1;
 
 - Click **Save**
@@ -93,10 +97,6 @@ server is not an option, squid can cache them.
     larger than that size are released.
 
 - Click **Save**
-
-If that refresh pattern does not work, try::
-
-  refresh_pattern ([^.]+\.)?(download|(windows)?update)\.(microsoft\.)?com/.*\.(cab|exe|msi|msp|psf) 4320 100% 43200 reload-into-ims; range_offset_limit -1;
 
 Caching Mac Updates
 ~~~~~~~~~~~~~~~~~~~
@@ -159,3 +159,5 @@ address *127.0.0.1* port *3121*).
 
 .. _making the following change: https://forum.netgate.com/topic/13819/squid-kern-ipc-nmbclusters-32768-seemed-to-be-large-improvement-here
 .. _Squid FAQ entry: https://wiki.squid-cache.org/SquidFaq/SquidLogs#swap.state
+
+.. _patterns recommended by Squid: https://wiki.squid-cache.org/ConfigExamples/Caching/WindowsUpdates
