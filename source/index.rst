@@ -1,8 +1,8 @@
 .. include:: /substitutions.rsti
 
-*****************************************
-Welcome to the pfSense Documentation site
-*****************************************
+*********************
+pfSense Documentation
+*********************
 
 Our documentation, `maintained with the help of the community`_, offers
 instructions on how to install, configure, and use pfSense software to protect
