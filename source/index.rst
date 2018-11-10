@@ -18,6 +18,7 @@ offer something for everyone.
    general/index
    releases/index
    install/index
+   Product Manuals <https://www.netgate.com/docs/pfsense/solutions>
    hardware/index
    config/index
    backup/index
