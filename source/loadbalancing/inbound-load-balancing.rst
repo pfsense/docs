@@ -56,7 +56,7 @@ Server* (**Services > Load balancer**, **Virtual Servers** tab, click
 |fa-plus|). Enter a **Name** and **Description**, and enter the WAN IP address
 clients will use for the **IP address**. If this IP address is a
 different address than the WAN IP address, it may need a
-:doc:`/firewall/virtual-ip-address-feature-comparison` configured.
+:doc:`Virtual IP Address </firewall/virtual-ip-address-feature-comparison>`.
 
 The **Port** is the TCP port that clients will connect to on the WAN
 interface. This can be different from the port used by the servers in
