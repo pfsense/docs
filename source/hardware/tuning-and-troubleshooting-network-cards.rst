@@ -4,7 +4,7 @@ Tuning and Troubleshooting Network Cards
 ========================================
 
 General Issues
-==============
+##############
 
 mbuf / nmbclusters
 ------------------
@@ -56,6 +56,29 @@ line::
   kern.ipc.nmbclusters="131072"
 
 The new value will not take effect until after a reboot.
+
+PPPoE with Multi-Queue NICs
+---------------------------
+
+Network cards which support multiple queues rely on hashing to assign traffic to
+a particular queue. This works well with IPv4/IPv6 TCP and UDP traffic, for
+example, but fails with other protocols such as those used for PPPoE.
+
+This can lead to a network card under performing with the default network
+settings on pfSense, as noted on `#4821`_ and `FreeBSD PR 203856`_.
+
+Adding a **System Tunable** or ``loader.conf.local`` entry for
+``net.isr.dispatch=deferred`` can lead to performance gains on such systems.
+
+Additionally, tuning the values of ``net.isr.maxthreads`` and
+``net.isr.numthreads`` may yield additional performance gains. Generally these
+are best left at default values matching the number of CPU cores, but depending
+on the workload may work better at lower values.
+
+.. warning:: In the past, ``deferred`` mode has led to issues on 32-bit
+   platforms, such as crashes/panics, especially with ALTQ. There have been no
+   recent reports, however, so it should be safe on recent versions of pfSense.
+
 
 TSO/LRO
 -------
@@ -118,7 +141,7 @@ Afterwards, add an entry under **System > Advanced**, **System Tunables** tab to
 set ``net.inet.ip.intr_queue_maxlen`` to ``3000``
 
 Card-Specific Issues
-====================
+####################
 
 Broadcom bce(4) Cards
 ---------------------
@@ -243,3 +266,6 @@ For ix and others, the flow control value can be further tuned:
 -  1: Receive Pause
 -  2: Transmit Pause
 -  3: Full Flow Control, Default
+
+.. _#4821: https://redmine.pfsense.org/issues/4821
+.. _FreeBSD PR 203856: https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=203856#c11
