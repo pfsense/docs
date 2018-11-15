@@ -16,18 +16,19 @@ and the most recent versions are listed first.
 2.4.x
 -----
 
-====================================================  =====================================================================================  ============  ==========  ==========================================================================
-pfSense Version                                       Support, Branch                                                                        Released      Config Rev  FreeBSD Version
-====================================================  =====================================================================================  ============  ==========  ==========================================================================
-2.4.5                                                 |fa-clock-o| `master <https://github.com/pfsense/pfsense/commits/master>`__            TBD           >=18.8      `11.2-RELEASE-p3 <https://www.freebsd.org/releases/11.2R/hardware.html>`_
-:doc:`2.4.4    <2-4-4-new-features-and-changes>`      |fa-check| `RELENG_2_4_4 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_4>`__  2018-09-24    18.8        `11.2-RELEASE-p3 <https://www.freebsd.org/releases/11.2R/hardware.html>`_
-:doc:`2.4.3-p1 <2-4-3-p1-new-features-and-changes>`   |fa-times| `RELENG_2_4_3 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_3>`__  2018-05-14    18.0        `11.1-RELEASE-p10 <https://www.freebsd.org/releases/11.1R/hardware.html>`_
-:doc:`2.4.3    <2-4-3-new-features-and-changes>`      |fa-times| `RELENG_2_4_3 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_3>`__  2018-03-29    17.9        `11.1-RELEASE-p7 <https://www.freebsd.org/releases/11.1R/hardware.html>`_
-:doc:`2.4.2-p1 <2-4-2-p1-new-features-and-changes>`   |fa-times| `RELENG_2_4_2 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_2>`__  2017-12-14    17.3        `11.1-RELEASE-p6 <https://www.freebsd.org/releases/11.1R/hardware.html>`_
-:doc:`2.4.2    <2-4-2-new-features-and-changes>`      |fa-times| `RELENG_2_4_2 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_2>`__  2017-11-20    17.3        `11.1-RELEASE-p4 <https://www.freebsd.org/releases/11.1R/hardware.html>`_
-:doc:`2.4.1    <2-4-1-new-features-and-changes>`      |fa-times| `RELENG_2_4_1 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_1>`__  2017-10-24    17.3        `11.1-RELEASE-p2 <https://www.freebsd.org/releases/11.1R/hardware.html>`_
-:doc:`2.4      <2-4-new-features-and-changes>`        |fa-times| `RELENG_2_4_0 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_0>`__  2017-10-12    17.0        `11.1-RELEASE-p1 <https://www.freebsd.org/releases/11.1R/hardware.html>`_
-====================================================  =====================================================================================  ============  ==========  ==========================================================================
+====================================================  =======================================================================================  ============  ==========  ==========================================================================
+pfSense Version                                       Support, Branch                                                                          Released      Config Rev  FreeBSD Version
+====================================================  =======================================================================================  ============  ==========  ==========================================================================
+2.4.5                                                 |fa-clock-o| `master <https://github.com/pfsense/pfsense/commits/master>`__              TBD           >=18.9      `11.2-RELEASE-p4 <https://www.freebsd.org/releases/11.2R/hardware.html>`_
+:doc:`2.4.4-p1 <2-4-4-p1-new-features-and-changes>`   |fa-clock-o| `RELENG_2_4_4 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_4>`__  TBD           18.9        `11.2-RELEASE-p4 <https://www.freebsd.org/releases/11.2R/hardware.html>`_
+:doc:`2.4.4    <2-4-4-new-features-and-changes>`      |fa-check| `RELENG_2_4_4 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_4>`__    2018-09-24    18.8        `11.2-RELEASE-p3 <https://www.freebsd.org/releases/11.2R/hardware.html>`_
+:doc:`2.4.3-p1 <2-4-3-p1-new-features-and-changes>`   |fa-times| `RELENG_2_4_3 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_3>`__    2018-05-14    18.0        `11.1-RELEASE-p10 <https://www.freebsd.org/releases/11.1R/hardware.html>`_
+:doc:`2.4.3    <2-4-3-new-features-and-changes>`      |fa-times| `RELENG_2_4_3 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_3>`__    2018-03-29    17.9        `11.1-RELEASE-p7 <https://www.freebsd.org/releases/11.1R/hardware.html>`_
+:doc:`2.4.2-p1 <2-4-2-p1-new-features-and-changes>`   |fa-times| `RELENG_2_4_2 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_2>`__    2017-12-14    17.3        `11.1-RELEASE-p6 <https://www.freebsd.org/releases/11.1R/hardware.html>`_
+:doc:`2.4.2    <2-4-2-new-features-and-changes>`      |fa-times| `RELENG_2_4_2 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_2>`__    2017-11-20    17.3        `11.1-RELEASE-p4 <https://www.freebsd.org/releases/11.1R/hardware.html>`_
+:doc:`2.4.1    <2-4-1-new-features-and-changes>`      |fa-times| `RELENG_2_4_1 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_1>`__    2017-10-24    17.3        `11.1-RELEASE-p2 <https://www.freebsd.org/releases/11.1R/hardware.html>`_
+:doc:`2.4      <2-4-new-features-and-changes>`        |fa-times| `RELENG_2_4_0 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_0>`__    2017-10-12    17.0        `11.1-RELEASE-p1 <https://www.freebsd.org/releases/11.1R/hardware.html>`_
+====================================================  =======================================================================================  ============  ==========  ==========================================================================
 
 2.3.x
 -----
@@ -35,7 +36,7 @@ pfSense Version                                       Support, Branch           
 ====================================================  =====================================================================================  ============  ==========  ==========================================================================
 pfSense Version                                       Support, Branch                                                                        Released      Config Rev  FreeBSD Version
 ====================================================  =====================================================================================  ============  ==========  ==========================================================================
-:doc:`2.3.5-p2 <2-3-5-p2-new-features-and-changes>`   |fa-check| `RELENG_2_3_5 <https://github.com/pfsense/pfsense/commits/RELENG_2_3_5>`__  2018-05-14    15.8        `10.3-RELEASE-p26 <https://www.freebsd.org/releases/10.3R/hardware.html>`_
+:doc:`2.3.5-p2 <2-3-5-p2-new-features-and-changes>`   |fa-times| `RELENG_2_3_5 <https://github.com/pfsense/pfsense/commits/RELENG_2_3_5>`__  2018-05-14    15.8        `10.3-RELEASE-p26 <https://www.freebsd.org/releases/10.3R/hardware.html>`_
 :doc:`2.3.5-p1 <2-3-5-p1-new-features-and-changes>`   |fa-times| `RELENG_2_3_5 <https://github.com/pfsense/pfsense/commits/RELENG_2_3_5>`__  2017-12-14    15.8        `10.3-RELEASE-p26 <https://www.freebsd.org/releases/10.3R/hardware.html>`_
 :doc:`2.3.5    <2-3-5-new-features-and-changes>`      |fa-times| `RELENG_2_3_5 <https://github.com/pfsense/pfsense/commits/RELENG_2_3_5>`__  2017-10-31    15.8        `10.3-RELEASE-p20 <https://www.freebsd.org/releases/10.3R/hardware.html>`_
 :doc:`2.3.4-p1 <2-3-4-p1-new-features-and-changes>`   |fa-times| `RELENG_2_3_4 <https://github.com/pfsense/pfsense/commits/RELENG_2_3_4>`__  2017-07-20    15.8        `10.3-RELEASE-p19 <https://www.freebsd.org/releases/10.3R/hardware.html>`_
