@@ -36,3 +36,8 @@ Snort
    snort-updates
    snort-xmlrpc-synchronization
    troubelshooting-snort-rule-updates
+   
+ .. tip:: For more information or to get help, check out the
+    `IDS/IPS category on the Netgate forum`_.
+
+.. _IDS/IPS category on the Netgate forum: https://forum.netgate.com/category/53/ids-ips
