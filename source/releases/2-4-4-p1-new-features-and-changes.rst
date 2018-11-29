@@ -1,9 +1,6 @@
 2.4.4-p1 New Features and Changes
 =================================
 
-.. warning:: This version has not yet been released. This list is subject to
-   change at any time.
-
 pfSense software version 2.4.4-p1 corrects issues found with 2.4.4-RELEASE.
 
 Security / Errata
@@ -54,6 +51,7 @@ Routing/Gateways
 * Fixed an issue with ``dpinger`` PID files causing it to get stuck in Pending status `#8921 <https://redmine.pfsense.org/issues/8921>`__
 * Fixed display of a configured gateway monitor IP address when gateway monitoring is disabled `#8953 <https://redmine.pfsense.org/issues/8953>`__
 * Fixed issues with double quotes in gateway descriptions causing a blank gateway drop-down on firewall rules `#8962 <https://redmine.pfsense.org/issues/8962>`__
+* Fixed an issue where the default gateway was lost in certain cases with HA after a CARP VIP status transition `#8465 <https://redmine.pfsense.org/issues/8465>`__
 
 IPsec
 -----
@@ -63,6 +61,7 @@ IPsec
 * Fixed boot-time handling of IPsec VTI static routes `#9116 <https://redmine.pfsense.org/issues/9116>`__
 * Fixed IKEv2 EAP Identity/Client ID matching so that it is strictly performed, to avoid users getting incorrect per-user settings `#9055 <https://redmine.pfsense.org/issues/9055>`__
 * Fixed handling of RADIUS server names containing a ``.`` in the IPsec configuration with strongSwan 5.7.1 `#9106 <https://redmine.pfsense.org/issues/9106>`__
+* Updated AWS IPsec wizard to use EC2 instance profiles and security groups, and switched the wizard from OpenBGPD to FRR
 
 Interfaces/VIPs
 ---------------
@@ -75,11 +74,28 @@ Interfaces/VIPs
 * Updated mpd to 5.8_8 to address issues with Orange MTU `#8995 <https://redmine.pfsense.org/issues/8995>`__
 * Fixed PPPoE service name checks to allow ``:`` and other alphanumeric characters `#9002 <https://redmine.pfsense.org/issues/9002>`__
 * Fixed PHP errors when creating QinQ entries `#9109 <https://redmine.pfsense.org/issues/9109>`__
+* Fixed the MAC address shown when editing a LAGG entry to always show the hardware MAC for each NIC and not the currently active address, which is no longer accurate for LAGG members `#8937 <https://redmine.pfsense.org/issues/8937>`__
+* Fixed a PHP error when setting an interface address to act as a DHCP server from the console, when no other DHCP servers are already configured `#9144 <https://redmine.pfsense.org/issues/9144>`__
+* Fixed a situation where editing a VLAN interface caused all other VLAN interfaces with the same parent to be reconfigured, which led to several other issues `#9115 <https://redmine.pfsense.org/issues/9115>`__
+
+  .. warning:: Editing a VLAN parent interface can still cause problems. If this
+     becomes an issue on a firewall, consider moving from using the untagged
+     parent to having that traffic be tagged so that the parent interface is not
+     assigned or in use. `#9154 <https://redmine.pfsense.org/issues/9154>`__
+
+     Known issues include:
+
+     * PPPoE instances on VLANs will not reconnect after the interface is reconfigured `#9148 <https://redmine.pfsense.org/issues/9148>`__
+     * VLAN interfaces that use IPv6 tracking may lose their addresses `#9136 <https://redmine.pfsense.org/issues/9136>`__
 
 Hardware/Platform
 -----------------
 
 * Fixed handling of EFI console when a device boots from UEFI, where ``vidconsole`` is not valid `#8978 <https://redmine.pfsense.org/issues/8978>`__
+* Fixed PHP errors in switch configuration on platforms including integrated switches
+* Added support for SG-5100 hardware watchdog
+
+  .. note:: Enable the Watchdog daemon under **System > Advanced** on the **Miscellaneous** tab, and then reboot and enable it in the BIOS with a timeout longer than the timeout configured in the GUI.
 
 User Management / Authentication
 --------------------------------
@@ -93,6 +109,7 @@ User Management / Authentication
 * Fixed inconsistencies with ssh settings in the configuration `#8974 <https://redmine.pfsense.org/issues/8974>`__
 * Fixed PHP errors with ssh settings `#8606 <https://redmine.pfsense.org/issues/8606>`__
 * Added support for LDAP client certificates on authentication servers (Factory only) `#9007 <https://redmine.pfsense.org/issues/9007>`__
+* Fixed an issue with **Local Database** authentication when using non-English languages in certain cases, such as with Captive Portal `#9086 <https://redmine.pfsense.org/issues/9086>`__
 
 Captive Portal
 --------------
@@ -101,6 +118,8 @@ Captive Portal
 * Restored the ability to set a custom NAS Identifier on Captive Portal RADIUS settings `#8998 <https://redmine.pfsense.org/issues/8998>`__
 * Fixed issues with Captive Portal logout popup `#9010 <https://redmine.pfsense.org/issues/9010>`__
 * Fixed handling of the login page displayed when RADIUS MAC Authentication fails `#9032 <https://redmine.pfsense.org/issues/9032>`__
+* Fixed username sent in RADIUS accounting with MAC-based authentication `#9131 <https://redmine.pfsense.org/issues/9131>`__
+* Fixed an issue with the blocked MAC address redirect URL `#9114 <https://redmine.pfsense.org/issues/9114>`__
 
 WebGUI / Dashboard
 ------------------
@@ -124,11 +143,14 @@ Firewall Rules / Aliases / NAT
 * Fixed PHP errors when creating schedules `#9009 <https://redmine.pfsense.org/issues/9009>`__
 * Fixed PHP errors when creating entries on NAT pages `#9080 <https://redmine.pfsense.org/issues/9080>`__
 * Fixed PHP errors from ``easyrule`` when no aliases are present `#9119 <https://redmine.pfsense.org/issues/9119>`__
+* Fixed "Drag to reorder" description in rule list when rule drag-and-drop is disabled `#9128 <https://redmine.pfsense.org/issues/9128>`__
 
 Traffic Shaping (ALTQ/Limiters)
 -------------------------------
 
 * Fixed issues with Limiter queue display on upgraded configurations `#8956 <https://redmine.pfsense.org/issues/8956>`__
+* Fixed the default limiter scheduler to match previous version (WF2Q+) `#8973 <https://redmine.pfsense.org/issues/8973>`__
+* Added scheduler information to the limiter information page `#8973 <https://redmine.pfsense.org/issues/8973>`__
 
 Packages
 --------
