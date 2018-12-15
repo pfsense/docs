@@ -25,8 +25,7 @@ tab for each active VPN type (IPsec, OpenVPN, PPTP), and a tab for
 :doc:`Floating Rules </firewall/floating-rules>` which contains more
 advanced rules that apply to multiple interfaces and directions.
 
-When editing a rule many of the options are explained in detail on the
-rule editor screen. Be mindful of the default settings on the rule
+Rule options are explained in detail on the rule editor screen. Be mindful of the default settings on the rule
 editor, especially the protocol. New rules default to *TCP* only.
 
 When entering addresses into firewall rules, the following choices are
