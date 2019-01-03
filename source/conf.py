@@ -51,7 +51,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'pfSense'
-copyright = '2002 - 2018 Rubicon Communications LLC'
+copyright = '2002 - 2019 Rubicon Communications LLC'
 author = u'Netgate'
 
 # The version info for the project you're documenting, acts as replacement for
