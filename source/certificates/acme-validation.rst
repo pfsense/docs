@@ -82,6 +82,61 @@ To use this method:
 * Wait approximately 2 minutes, or longer, for DNS to propagate
 * Click **Renew**
 
+.. _acme-validation-dns-namecheap:
+
+Namecheap API
+^^^^^^^^^^^^^
+
+For certain accounts with Namecheap, API access may be obtained that allows
+remote manipulation of DNS records. This can be used with the ACME package to
+validate certificates for domains with DNS hosted at Namecheap using their
+BasicDNS servers. This requires ACME package version 0.5.1 or later.
+
+.. warning:: The Namecheap DNS API requires that the client read all records and
+   then write them all back when making any change. This is potentially
+   dangerous. Take a backup of all DNS records on the domain before attempting
+   to use the API.
+
+The first step is to request API access:
+
+* Login to a Namecheap account
+* Navigate to **Profile > Tools** under the account
+* Look for **Namecheap API Access** under **Business & Dev Tools**
+* If the status does not say **On**, then click **Manage** and change the slider to **On**.
+
+  .. note:: API access must be approved by Namecheap. There are qualifications
+     to meet, such as a specific number of domains or a balance on the account.
+     Check the Namecheap API documentation for more information. The process is
+     documented as taking 2 days, but may take longer. If API access is not
+     enabled after several days, contact Namecheap support.
+
+Once the API is enabled, then perform the following steps:
+
+* Login to a Namecheap account
+* Navigate to **Profile > Tools** under the account
+* Look for **Namecheap API Access** under **Business & Dev Tools**
+* Click **Manage**
+* Note the API key for use in the ACME package
+* Click **Edit** and add whitelisted IP addresses that can contact the API using
+  this API key.
+
+Now setup the account in the ACME package:
+
+* Add an entry to the **Domain SAN list**
+* **Mode**: Enabled
+* Enter domain name (e.g. ``myhost.example.com``)
+* Set **Method** to *DNS-Namecheap*
+* Click + to expand the method-specific settings
+* Fill in the info
+
+  :API Key: The API Key displayed in the Namecheap API Access manager, as
+    described previously.
+  :Username: The Namecheap account username associated with the API Key.
+
+* Ensure the other options are set properly, per :ref:`acme-create-certificate`.
+* Click **Save**
+* Click **Issue/Renew**
+
 .. _acme-validation-dns-other:
 
 Other DNS Methods
