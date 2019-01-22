@@ -40,8 +40,8 @@ pfSense 2.0
 -  Huawei E392
 -  Huawei E397u-53
 
-   -  Link interface: /dev/cuaU0.0
-   -  Init string: &F
+   -  Link interface: ``/dev/cuaU0.0``
+   -  Init string: ``&F``
    
 -  Huawei E398 (E398u-1)
 -  Huawei E960
