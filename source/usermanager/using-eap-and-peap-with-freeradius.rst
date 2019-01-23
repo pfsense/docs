@@ -15,7 +15,7 @@ Tunneled Reply** to *yes*:
 
 To make the use of certificates more secure, check the **Common Name**
 of the client certificate against the username entered in **FreeRADIUS >
-USers**. For this set **Check Client Certificate CN** to *yes*:
+Users**. For this set **Check Client Certificate CN** to *yes*:
 
 Another option to increase security with certificates is to check the
 issuer of the client certificate against the CA certificate. This can be
