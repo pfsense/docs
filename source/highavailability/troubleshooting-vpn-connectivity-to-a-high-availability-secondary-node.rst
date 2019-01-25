@@ -32,3 +32,9 @@ over the VPN the traffic will appear to originate from the node to which
 the VPN is currently connected and the return traffic will go back as
 expected.
 
+E.g.
+
+Rules:
+
+NATed source:ANY, destination:backup firewall LAN, NAT address: LAN CARP
+NATed source:ANY, destination:master firewall LAN, NAT address: LAN CARP
