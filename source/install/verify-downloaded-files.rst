@@ -13,7 +13,7 @@ Hash verification on Windows
 ----------------------------
 
 Windows users may install
-`HashTab <http://implbits.com/Products/HashTab.aspx>`__ or a similar
+`HashTab <http://implbits.com/products/hashtab/>`__ or a similar
 program to view file hashes. With HashTab installed, right click on the
 downloaded file and a **File Hashes** tab is available containing the
 SHA256 hash, among others. The generated SHA256 hash can be compared
@@ -41,4 +41,4 @@ Hash verification on OS X
 
 OS X includes the *shasum* command, which can calculate sha256 using *shasum
 -a 256 <filename>*, but there are also GUI applications available such as
-`HashTab <http://implbits.com/Products/HashTab.aspx>`_.
+`HashTab <http://implbits.com/products/hashtab/>`_.
