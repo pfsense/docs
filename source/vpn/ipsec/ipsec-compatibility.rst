@@ -26,6 +26,7 @@ IPsec is in active use somewhere.
 * Palo Alto Networks
 * Sonicwall
 * StoneGate Firewall/VPN
+* Ubiquiti Unifi Security Gateway
 * Watchguard
 * Zyxel firewalls
 
