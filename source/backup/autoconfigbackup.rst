@@ -44,7 +44,7 @@ Encryption Password
 -------------------
 
 Before the configuration is transmitted to Netgate servers, the firewall
-encrypts the backup using the AES-256-CBC algorithm and a password that created
+encrypts the backup using the AES-256-CBC algorithm and a password that is created
 by the firewall administrator. This password never leaves the firewall and is
 never shared.
 
