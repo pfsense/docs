@@ -75,4 +75,4 @@ Commercial Resources:
 * |training_link|
 
 .. _maintained with the help of the community: https://github.com/pfsense/docs
-.. _The pfSense Book: /pfsense/en/latest/book
+.. _The pfSense Book: https://docs.netgate.com/pfsense/en/latest/book/index.html
