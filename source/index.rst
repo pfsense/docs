@@ -18,7 +18,7 @@ offer something for everyone.
    general/index
    releases/index
    install/index
-   Product Manuals <https://www.netgate.com/docs/pfsense/solutions>
+   Product Manuals <https://docs.netgate.com/pfsense/en/latest/solutions>
    hardware/index
    config/index
    backup/index
@@ -75,4 +75,4 @@ Commercial Resources:
 * |training_link|
 
 .. _maintained with the help of the community: https://github.com/pfsense/docs
-.. _The pfSense Book: /docs/pfsense/book
+.. _The pfSense Book: /pfsense/en/latest/book
