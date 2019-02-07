@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Accessing the Firewall Filesystem with SCP
 ==========================================
 

@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using a Large Number of Interfaces
 ==================================
 

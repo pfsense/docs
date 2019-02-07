@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Writing ISO Images
 ==================
 

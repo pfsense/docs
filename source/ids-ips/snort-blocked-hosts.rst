@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Snort Blocked Hosts
 ===================
 

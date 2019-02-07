@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using Static Port with Outbound NAT
 ===================================
 

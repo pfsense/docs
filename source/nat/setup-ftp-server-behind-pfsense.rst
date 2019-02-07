@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Setup ftp server behind pfSense
 ===============================
 

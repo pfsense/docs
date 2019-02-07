@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Traffic Shaping with Differentiated Services (DiffServ) Identifiers
 ===================================================================
 

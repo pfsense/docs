@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Traffic Shaping UPnP Connections
 ================================
 

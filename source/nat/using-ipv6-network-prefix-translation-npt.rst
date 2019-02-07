@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using IPv6 Network Prefix Translation (NPt)
 ===========================================
 

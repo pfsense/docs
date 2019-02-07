@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Virusprot Firewall Table
 ========================
 

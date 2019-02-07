@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using VPNs with IPv6
 ====================
 

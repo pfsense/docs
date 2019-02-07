@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Intel e1000 power save
 ======================
 

@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Logging Out of the WebGUI
 =========================
 

@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using EasyRSA Certificates in 2.x
 =================================
 

@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Recovering Access when Locked Out of the WebGUI
 ===============================================
 

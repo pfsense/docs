@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting Blocked Log Entries due to Asymmetric Routing
 =============================================================
 

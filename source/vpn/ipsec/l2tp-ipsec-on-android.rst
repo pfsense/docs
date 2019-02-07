@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 L2TP/IPsec on Android
 =====================
 

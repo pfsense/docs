@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Configuring a Pre-authentication Redirect for Captive Portal Users
 ==================================================================
 

@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Copying Logs to a Remote Host with Syslog
 =========================================
 

@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Configuring IPv6 Router Advertisements
 ======================================
 

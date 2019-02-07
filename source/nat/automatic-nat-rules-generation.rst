@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Automatic NAT Rules Generation
 ==============================
 

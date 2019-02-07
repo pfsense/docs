@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Authenticating Squid Package Users with FreeRADIUS
 ==================================================
 

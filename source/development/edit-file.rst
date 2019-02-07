@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Editing Files on the Firewall
 =============================
 

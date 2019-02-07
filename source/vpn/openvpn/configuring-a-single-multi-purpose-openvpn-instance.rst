@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Configuring a Single Multi-Purpose OpenVPN Instance
 ===================================================
 

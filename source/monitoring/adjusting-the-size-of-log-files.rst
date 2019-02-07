@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Adjusting the Size of Log Files
 ===============================
 

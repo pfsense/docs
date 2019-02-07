@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Viewing DHCPv6 Leases
 =====================
 

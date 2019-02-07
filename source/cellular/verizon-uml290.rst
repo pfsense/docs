@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Verizon UML290 Cellular Modem
 =============================
 

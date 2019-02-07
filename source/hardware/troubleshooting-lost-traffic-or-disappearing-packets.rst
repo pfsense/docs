@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting Lost Traffic or Disappearing Packets
 ====================================================
 

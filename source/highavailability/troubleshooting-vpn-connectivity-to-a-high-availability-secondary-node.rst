@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting VPN Connectivity to a High Availability Secondary Node
 ======================================================================
 

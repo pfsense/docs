@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Comparison to Commercial Alternatives
 =====================================
 

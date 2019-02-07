@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting CARP and Bridge Interfaces
 ==========================================
 

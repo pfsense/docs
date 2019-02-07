@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Configuring a Site-to-Site Static Key OpenVPN Instance
 ======================================================
 

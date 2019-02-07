@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Directing Traffic with Policy Routing
 =====================================
 

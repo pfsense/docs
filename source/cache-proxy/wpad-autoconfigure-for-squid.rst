@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Setting up WPAD Autoconfigure for the Squid Package
 ===================================================
 

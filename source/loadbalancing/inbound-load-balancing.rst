@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Configuring Inbound Load Balancing
 ==================================
 

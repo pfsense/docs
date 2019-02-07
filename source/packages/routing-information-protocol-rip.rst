@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Routing Information Protocol (RIP)
 ==================================
 

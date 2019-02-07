@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Upgrading from versions older than pfSense 2.3
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

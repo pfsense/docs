@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Routing internet traffic through a site-to-site OpenVPN-connection in PfSense 2.1
 =================================================================================
 

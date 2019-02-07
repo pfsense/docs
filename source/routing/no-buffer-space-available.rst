@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting "No buffer space available" Errors
 ==================================================
 

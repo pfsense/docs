@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Wireless Interface Configuration Details
 ========================================
 

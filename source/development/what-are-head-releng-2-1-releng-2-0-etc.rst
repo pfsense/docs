@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 What are HEAD, RELENG 2 1, RELENG 2 0, etc
 ==========================================
 

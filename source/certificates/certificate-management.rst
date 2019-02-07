@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Managing Certificates on pfSense
 ================================
 

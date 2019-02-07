@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Controlling IPv6 or IPv4 Preference
 ===================================
 

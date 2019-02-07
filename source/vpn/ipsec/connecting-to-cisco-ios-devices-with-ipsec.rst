@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Connecting to Cisco IOS Devices with IPsec
 ==========================================
 

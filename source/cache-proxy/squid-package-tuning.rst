@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Tuning the Squid Package
 ========================
 

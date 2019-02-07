@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Connecting pfSense to an OpenVPN Access Server
 ==============================================
 

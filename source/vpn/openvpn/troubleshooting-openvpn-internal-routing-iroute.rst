@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting OpenVPN Internal Routing (iroute)
 =================================================
 

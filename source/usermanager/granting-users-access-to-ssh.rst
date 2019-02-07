@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Granting Users Access to SSH
 ============================
 

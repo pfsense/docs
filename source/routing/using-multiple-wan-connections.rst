@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using Multiple WAN Connections
 ==============================
 

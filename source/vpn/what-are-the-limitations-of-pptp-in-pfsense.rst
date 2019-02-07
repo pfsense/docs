@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 What are the limitations of PPTP in pfSense
 ===========================================
 

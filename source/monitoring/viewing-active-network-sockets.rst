@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Viewing Active Network Sockets
 ==============================
 

@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using the pfSense PHP Shell
 ===========================
 

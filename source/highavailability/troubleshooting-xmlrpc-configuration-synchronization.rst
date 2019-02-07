@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting XMLRPC Configuration Synchronization
 ====================================================
 

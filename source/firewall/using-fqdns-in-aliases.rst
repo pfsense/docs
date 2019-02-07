@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using FQDNs in Aliases
 ======================
 

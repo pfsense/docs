@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Versions of pfSense and FreeBSD
 ===============================
 

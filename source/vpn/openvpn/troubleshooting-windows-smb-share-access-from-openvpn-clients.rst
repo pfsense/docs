@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting Windows/SMB Share Access from OpenVPN Clients
 =============================================================
 

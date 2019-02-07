@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Sharing a Port between OpenVPN and a Web Server
 ===============================================
 

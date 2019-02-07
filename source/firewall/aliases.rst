@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using Aliases to Simplify Firewall Rules
 ========================================
 

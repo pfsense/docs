@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 VirtIO Driver Support
 =====================
 

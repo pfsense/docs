@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting DHCPv6 Client XID Mismatches
 ============================================
 

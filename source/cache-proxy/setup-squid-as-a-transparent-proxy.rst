@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Configuring the Squid Package as a Transparent HTTP Proxy
 =========================================================
 

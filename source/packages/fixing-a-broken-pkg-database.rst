@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Fixing a Broken pkg Database
 ============================
 

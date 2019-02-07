@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Packet Filter Information
 =========================
 

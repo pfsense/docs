@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Accessing Firewall Services over IPsec VPNs
 ===========================================
 

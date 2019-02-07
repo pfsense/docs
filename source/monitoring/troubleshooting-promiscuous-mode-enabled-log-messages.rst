@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting "promiscuous mode enabled" Log Messages
 =======================================================
 

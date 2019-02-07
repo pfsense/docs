@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Getting Started with pfSense Software Development
 =================================================
 

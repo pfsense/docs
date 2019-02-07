@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using Existing Wireless Routers with pfSense
 ============================================
 

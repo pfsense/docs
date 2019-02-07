@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubelshooting Snort Rule Updates
 ==================================
 

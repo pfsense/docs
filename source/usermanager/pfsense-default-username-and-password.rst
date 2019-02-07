@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 pfSense Default Username and Password
 =====================================
 

@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using an Alternate Monitor IP Address for Gateway Monitoring
 ============================================================
 

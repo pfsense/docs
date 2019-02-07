@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using OpenVPN with Multi-WAN
 ============================
 

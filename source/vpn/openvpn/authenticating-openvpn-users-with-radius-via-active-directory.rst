@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Authenticating OpenVPN Users with RADIUS via Active Directory
 =============================================================
 

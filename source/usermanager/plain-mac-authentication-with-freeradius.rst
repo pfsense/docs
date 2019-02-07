@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Plain MAC Authentication with FreeRADIUS
 ========================================
 

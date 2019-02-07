@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Submitting a Pull Request via Github
 ====================================
 

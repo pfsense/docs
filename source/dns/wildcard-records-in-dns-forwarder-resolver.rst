@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Creating Wildcard Records in DNS Forwarder/Resolver
 ===================================================
 

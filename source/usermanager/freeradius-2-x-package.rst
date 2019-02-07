@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 FreeRADIUS 2.x package
 ======================
 

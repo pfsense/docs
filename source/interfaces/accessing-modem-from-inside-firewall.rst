@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Accessing modem from inside firewall
 ====================================
 

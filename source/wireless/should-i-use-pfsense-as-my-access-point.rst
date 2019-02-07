@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Should I use pfSense as my access point
 =======================================
 

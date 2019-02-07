@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 2.4.2-p1 New Features and Changes
 =================================
 

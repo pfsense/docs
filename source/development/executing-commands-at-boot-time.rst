@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Executing Commands at Boot
 ==========================
 

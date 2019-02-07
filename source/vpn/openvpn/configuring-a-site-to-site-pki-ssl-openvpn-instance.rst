@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Configuring a Site-to-Site PKI (SSL) OpenVPN Instance
 =====================================================
 

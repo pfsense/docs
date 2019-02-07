@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Creating Dashboard Widgets
 ==========================
 

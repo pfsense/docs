@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Authenticating Captive Portal Users with FreeRADIUS
 ===================================================
 

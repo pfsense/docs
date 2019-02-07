@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Network Interface Drivers with ALTQ Traffic Shaping Support
 ===========================================================
 

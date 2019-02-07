@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 IPsec for road warriors in PfSense 2.0.1 with PSK in stead of xauth
 ===================================================================
 

@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Executing Command Line Programs Using the Web Interface
 =======================================================
 

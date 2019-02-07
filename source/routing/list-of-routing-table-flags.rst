@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 List of Routing Table Flags
 ===========================
 

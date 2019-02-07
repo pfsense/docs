@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Connecting from Apple iOS Devices with OpenVPN
 ==============================================
 

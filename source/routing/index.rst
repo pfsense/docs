@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 *********************
 Routing and Multi-WAN
 *********************

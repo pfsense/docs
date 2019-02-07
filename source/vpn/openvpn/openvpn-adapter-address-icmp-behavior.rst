@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 OpenVPN Adapter Address ICMP Behavior
 =====================================
 

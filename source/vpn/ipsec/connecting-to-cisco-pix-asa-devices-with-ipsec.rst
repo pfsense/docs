@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Connecting to Cisco PIX/ASA Devices with IPsec
 ==============================================
 

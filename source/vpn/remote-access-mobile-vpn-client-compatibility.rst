@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Remote Access Mobile VPN Client Compatibility
 =============================================
 

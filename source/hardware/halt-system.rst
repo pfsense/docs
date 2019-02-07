@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Halting and Powering Off the Firewall
 =====================================
 

@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Forcing Interface Speed or Duplex Settings
 ==========================================
 

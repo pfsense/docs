@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Restricting Access to the WebGUI
 ================================
 

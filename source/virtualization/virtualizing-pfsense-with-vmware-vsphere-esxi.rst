@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Virtualizing pfSense with VMware vSphere / ESXi
 ===============================================
 

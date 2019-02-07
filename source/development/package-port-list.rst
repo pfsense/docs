@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 FreeBSD Ports Used for Packages
 ===============================
 

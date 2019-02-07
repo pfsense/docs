@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using Limiters to Restrict Bandwidth Usage
 ==========================================
 

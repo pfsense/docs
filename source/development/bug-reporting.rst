@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Reporting Issues with pfSense Software
 ======================================
 

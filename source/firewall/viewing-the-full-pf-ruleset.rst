@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Viewing the Full pf Ruleset
 ===========================
 

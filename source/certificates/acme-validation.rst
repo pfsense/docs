@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 .. _acme-validation-methods:
 
 Validation Methods

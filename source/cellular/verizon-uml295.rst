@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Configuring a Verizon UML295 USB Modem
 ======================================
 

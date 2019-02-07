@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using 1:1 NAT on a WAN IP Address
 =================================
 

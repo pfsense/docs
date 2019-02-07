@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Removing the F1 Boot Prompt
 ===========================
 

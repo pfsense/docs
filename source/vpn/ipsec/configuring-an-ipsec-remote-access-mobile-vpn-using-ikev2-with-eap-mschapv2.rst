@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Configuring an IPsec Remote Access Mobile VPN using IKEv2 with EAP-MSCHAPv2
 ===========================================================================
 

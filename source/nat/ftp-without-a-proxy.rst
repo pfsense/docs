@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using NAT and FTP without a Proxy
 =================================
 

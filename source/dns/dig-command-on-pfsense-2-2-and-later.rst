@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Dig command on pfSense 2.2 and later
 ====================================
 

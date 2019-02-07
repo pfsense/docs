@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Allowing Remote Access to the WebGUI
 ====================================
 

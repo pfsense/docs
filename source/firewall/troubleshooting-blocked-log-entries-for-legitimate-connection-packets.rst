@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting Blocked Log Entries for Legitimate Connection Packets
 =====================================================================
 

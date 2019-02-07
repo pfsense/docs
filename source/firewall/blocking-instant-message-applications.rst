@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Blocking Instant Message Applications
 =====================================
 

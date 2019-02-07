@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using DHCP Search Domains on Windows DHCP Clients
 =================================================
 

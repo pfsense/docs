@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Upgrading 64-bit NanoBSD 2.3 to 2.4
 ===================================
 

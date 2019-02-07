@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Load Balancing Uneven Multi-WAN Connections
 ===========================================
 

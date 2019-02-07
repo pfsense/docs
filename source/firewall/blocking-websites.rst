@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Blocking Access to Websites
 ===========================
 

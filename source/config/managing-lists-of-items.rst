@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Managing Lists of Items in the GUI
 ==================================
 

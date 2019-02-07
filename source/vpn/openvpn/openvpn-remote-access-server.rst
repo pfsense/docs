@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Configuring an OpenVPN Remote Access Server
 ===========================================
 

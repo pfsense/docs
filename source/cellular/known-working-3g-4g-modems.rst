@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Known Working 3G-4G Modems
 ==========================
 

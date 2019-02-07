@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Restoring a pfSense Configuration to a Different Version
 ========================================================
 

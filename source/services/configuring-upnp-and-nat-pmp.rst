@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Configuring UPnP and NAT-PMP
 ============================
 

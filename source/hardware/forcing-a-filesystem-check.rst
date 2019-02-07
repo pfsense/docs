@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Forcing a Filesystem Check
 ==========================
 

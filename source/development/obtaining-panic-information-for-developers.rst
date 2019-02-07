@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Obtaining Panic Information for Developers
 ==========================================
 

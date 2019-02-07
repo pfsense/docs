@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Configuring Google Cloud Identity as an Authentication Source
 =============================================================
 

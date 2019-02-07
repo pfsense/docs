@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Checking the Uptime of a PPPoE WAN Connection
 =============================================
 

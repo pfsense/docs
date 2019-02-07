@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Filter Reload Status
 ====================
 

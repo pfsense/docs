@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Upgrading pfSense Software Installations
 ========================================
 

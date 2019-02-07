@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 .. _upgrade-troubleshooting:
 
 Upgrade Troubleshooting

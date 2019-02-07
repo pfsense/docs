@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Password Storage Security Policies
 ==================================
 

@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Requesting New pfSense Features
 ===============================
 

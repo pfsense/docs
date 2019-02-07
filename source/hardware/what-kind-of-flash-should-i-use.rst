@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 What kind of flash should I use
 ===============================
 

@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Configuring IP Address Check Services for Dynamic DNS
 =====================================================
 

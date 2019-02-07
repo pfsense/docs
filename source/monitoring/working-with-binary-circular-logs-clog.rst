@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Working with Binary Circular Logs (clog)
 ========================================
 

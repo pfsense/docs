@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Connecting OpenVPN Sites with Conflicting IP Subnets
 ====================================================
 

@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Managing Snort IP Address Lists
 ===============================
 

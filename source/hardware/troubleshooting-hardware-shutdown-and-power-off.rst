@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting Hardware Shutdown and Power Off
 ===============================================
 

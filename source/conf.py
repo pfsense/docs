@@ -80,6 +80,10 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
 
+# A list of substitutions prepended to the beginning of every file
+rst_prolog = """
+.. include:: /substitutions.rsti
+"""
 
 # -- Options for HTML output ----------------------------------------------
 

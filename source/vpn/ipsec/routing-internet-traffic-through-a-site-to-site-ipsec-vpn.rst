@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Routing Internet Traffic Through a Site-to-Site IPsec VPN
 =========================================================
 

@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting Thread Errors with Hostnames in Aliases
 =======================================================
 

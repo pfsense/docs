@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Migrating an Assigned LAN to LAGG
 =================================
 

@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting "login on console as root" Log Messages
 =======================================================
 

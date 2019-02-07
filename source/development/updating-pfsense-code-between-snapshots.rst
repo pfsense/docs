@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using gitsync to Update pfSense Between Snapshots
 =================================================
 

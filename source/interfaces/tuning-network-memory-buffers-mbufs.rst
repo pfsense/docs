@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Tuning Network Memory Buffers (mbufs)
 =====================================
 

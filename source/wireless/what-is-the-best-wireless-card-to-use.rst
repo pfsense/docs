@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 What is the best wireless card to use
 =====================================
 

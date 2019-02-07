@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Preventing RFC1918 Traffic from Exiting a WAN Interface
 =======================================================
 

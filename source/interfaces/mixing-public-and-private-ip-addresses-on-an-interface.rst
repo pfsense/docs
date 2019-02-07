@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Mixing Public and Private IP Addresses on an Interface
 ======================================================
 

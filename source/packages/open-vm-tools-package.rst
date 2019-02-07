@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Open VM Tools package
 =====================
 

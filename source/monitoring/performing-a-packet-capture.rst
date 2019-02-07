@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Performing a Packet Capture
 ===========================
 

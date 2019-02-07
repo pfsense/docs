@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 NAT with IPsec Phase 2 Networks
 ===============================
 

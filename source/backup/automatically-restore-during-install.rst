@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Automatically Restore a pfSense Configuration During Installation
 =================================================================
 

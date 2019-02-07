@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Performing a Remote Backup of a pfSense Configuration
 =====================================================
 

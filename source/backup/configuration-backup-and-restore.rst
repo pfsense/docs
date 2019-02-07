@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Backing Up and Restoring a pfSense Configuration File
 =====================================================
 

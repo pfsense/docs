@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Filter Log Format for pfSense 2.2
 =================================
 

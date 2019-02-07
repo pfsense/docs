@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using MySQL with the FreeRADIUS Package
 =======================================
 

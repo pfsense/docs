@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using Mobile One-Time Passwords with FreeRADIUS
 ===============================================
 

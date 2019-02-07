@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 RFC2136 Dynamic DNS
 ===================
 

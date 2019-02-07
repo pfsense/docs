@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Clearing the DNS Forwarder Cache
 ================================
 

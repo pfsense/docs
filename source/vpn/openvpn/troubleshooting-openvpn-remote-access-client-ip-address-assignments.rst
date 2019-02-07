@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting OpenVPN Remote Access Client IP Address Assignments
 ===================================================================
 

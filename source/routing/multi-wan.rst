@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using Multiple IPv4 WAN Connections
 ===================================
 

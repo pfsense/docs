@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using EAP and PEAP with FreeRADIUS
 ==================================
 

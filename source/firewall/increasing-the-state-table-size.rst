@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Increasing the State Table Size
 ===============================
 

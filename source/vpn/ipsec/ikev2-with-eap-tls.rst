@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 IKEv2 with EAP-TLS
 ==================
 

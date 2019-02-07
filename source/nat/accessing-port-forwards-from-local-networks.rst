@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Accessing Port Forwards from Local Networks
 ===========================================
 

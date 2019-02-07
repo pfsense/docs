@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 802.11n Wireless Support
 ========================
 

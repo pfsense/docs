@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Troubleshooting NAT Devices Reaching Bridged Interface Devices
 ==============================================================
 

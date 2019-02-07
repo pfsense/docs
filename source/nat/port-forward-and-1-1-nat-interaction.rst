@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Port Forward and 1:1 NAT Interaction
 ====================================
 

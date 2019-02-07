@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Redirecting all DNS Requests to pfSense
 =======================================
 

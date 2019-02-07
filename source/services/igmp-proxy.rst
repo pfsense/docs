@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Configuring the IGMP Proxy Daemon
 =================================
 

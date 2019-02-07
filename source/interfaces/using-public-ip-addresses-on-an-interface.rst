@@ -1,5 +1,3 @@
-.. include:: /substitutions.rsti
-
 Using Public IP Addresses on an Interface
 =========================================
 
