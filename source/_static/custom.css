@@ -1,3 +1,36 @@
+/* sidenav promotion */
+.promotion-sidebar {
+  display: block !important;
+  padding: 0.5em;
+  margin: 1em 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #0a0a0a;
+  font-size: 14px;
+  line-height: 20px;
+}
+.promotion-sidebar a,
+.promotion-sidebar a:visited,
+.promotion-sidebar a:hover,
+.promotion-sidebar a:active {
+  color: #efefef;
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+}
+.promotion-sidebar {
+  text-align: center;
+}
+.wy-nav-side .promotion-rtd {
+  width: 300px;
+  padding: 0 1em;
+}
+.promotion-rtd .promotion-sidebar {
+  color: #b3b3b3;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 /* feedback form */
 .rst-content .feedback {
   background-color: #e3e3e3;
