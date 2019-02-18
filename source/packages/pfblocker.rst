@@ -98,24 +98,7 @@ FAQ
 :How can I apply pfBlocker lists in floating rules?:
   Aliases are used for customized filter entries and float rules.
 
-Known issues
-------------
+.. seealso:: You can find a list of known issues with the pfBlocker-NG package
+   on the `pfSense bug tracker`_.
 
-* Some users with 256 MB RAM or less reported boot errors while pfSense
-  startup is done before GUI is available.
-* Very large lists need PHP memory increase by doing some file hacks on
-  pfSense.
-
-Screen shots
-------------
-
-.. image:: /_static/packages/country.jpg
-
-.. image:: /_static/packages/general.jpg
-
-.. image:: /_static/packages/pfb_lists.jpg
-
-.. image:: /_static/packages/pfb_spammers.jpg
-
-.. image:: /_static/packages/pfb_sync.jpg
-
+.. _pfSense bug tracker: https://redmine.pfsense.org/projects/pfsense-packages/issues?utf8=%E2%9C%93&set_filter=1&sort=id%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=o&f%5B%5D=category_id&op%5Bcategory_id%5D=%3D&v%5Bcategory_id%5D%5B%5D=97&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=status&c%5B%5D=priority&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=updated_on&group_by=&t%5B%5D=
