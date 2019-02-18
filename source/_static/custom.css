@@ -1,3 +1,8 @@
+/* breadcrumb buttons */
+.wy-breadcrumbs li a:first-child {
+  padding-left: 5px;
+}
+
 /* sidenav promotion */
 .promotion-sidebar {
   display: block !important;
