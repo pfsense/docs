@@ -108,25 +108,12 @@ Disable NAT
 -----------
 
 To completely disable NAT to have a routing-only firewall, do the
-following.
-
-pfSense 2.2 And Later
-^^^^^^^^^^^^^^^^^^^^^
+following:
 
 #. Navigate to **Firewall > NAT** on the **Outbound** tab
-#. Select *Disable Outbound NAT rule generation (No Outbound NAT rules)*
-#. Click Save
+#. Select **Disable Outbound NAT rule generation (No Outbound NAT rules)**
+#. Click **Save**
 #. Apply changes
-
-Prior Versions
-^^^^^^^^^^^^^^
-
-#. Navigate to **Firewall > NAT** on the **Outbound** tab
-#. Select *Manual Outbound NAT rule generation (Advanced Outbound NAT
-   (AON))*
-#. Click Save
-#. Delete all rules from the list on the page
-#. Click Apply changes
 
 NAT may be performed on some interfaces and not others by configuring
 Outbound NAT rules accordingly.
@@ -140,9 +127,9 @@ To completely disable NAT **and all firewall functions from all
 interfaces**, do the following. Note that the previous section ("Disable
 NAT") is skipped when taking this approach.
 
-#. Navigate to **System > Advanced**, **Firewall / NAT** tab
+#. Navigate to **System > Advanced** on the **Firewall / NAT** tab
 #. Check **Disable Firewall / Disable all packet filtering**
-#. Click Save
+#. Click **Save**
 
 See also:
 
