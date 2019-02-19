@@ -114,6 +114,10 @@ Known issues
 
 HAProxy has their own list of `known bugs by branch and by version`_.
 
+.. seealso:: You can find a list of known issues with the HAProxy package
+   on the `pfSense bug tracker`_.
+
+
 Things that could be improved
 -----------------------------
 
@@ -140,11 +144,11 @@ Differences between this package and HAProxy used directly
 
 HAProxy defines five main sections in its configuration.
 
--  global
--  defaults
--  frontend
--  backend
--  listen
+- global
+- defaults
+- frontend
+- backend
+- listen
 
 **global** defines options that process-wide and often OS-specific.
 
@@ -203,7 +207,9 @@ it will only show up in the stats once.
 Package Support
 ---------------
 
-This package is currently supported by |support_link| to those with an active support subscription.
+This package is currently supported by |support_link| to those with an active
+support subscription.
 
 .. _HAProxy: http://www.haproxy.org
 .. _known bugs by branch and by version: http://www.haproxy.org/bugs/index.html
+.. _pfSense bug tracker: https://redmine.pfsense.org/projects/pfsense-packages/issues?utf8=%E2%9C%93&set_filter=1&sort=id%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=o&f%5B%5D=category_id&op%5Bcategory_id%5D=%3D&v%5Bcategory_id%5D%5B%5D=104&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=status&c%5B%5D=priority&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=updated_on&group_by=&t%5B%5D=
