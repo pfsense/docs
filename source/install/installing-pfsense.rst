@@ -4,8 +4,7 @@ Installing pfSense
 This article will guide through selecting an appropriate version of
 pfSense, the initial pfSense installation, and related tasks.
 
-Official pfSense appliances may be purchased directly from the `pfSense
-Store <https://www.pfsense.org/products/>`__.
+.. tip:: `Official pfSense appliances`_ may be purchased directly from Netgate.
 
 Choose Installation Type
 ------------------------
@@ -265,7 +264,26 @@ console with a number of options. pfSense now is ready to be accessed
 via the network, either on the LAN interface (if one is assigned), or on
 the WAN interface in a single interface deployment.
 
-.. image:: /_static/install/installer_08_consolemenu.png
+.. code-block:: console
+
+  VMware Virtual Machine - Netgate Device ID: c2c5a7c0a44a40341b8a
+
+  *** Welcome to pfSense 2.4.4-RELEASE (amd64) on pfSense ***
+
+   WAN (wan)       -> em0        -> v4/DHCP4: 172.21.16.38/24
+   WAN (wan)       -> em1        -> v4: 192.168.1.1/24
+
+   0) Logout (SSH only)                  9) pfTop
+   1) Assign Interfaces                 10) Filter Logs
+   2) Set interface(s) IP address       11) Restart webConfigurator
+   3) Reset webConfigurator password    12) PHP shell + pfSense tools
+   4) Reset to factory defaults         13) Update from console
+   5) Reboot system                     14) Disable Secure Shell (sshd)
+   6) Halt system                       15) Restore recent configuration
+   7) Ping host                         16) Restart PHP-FPM
+   8) Shell
+
+  Enter an option:
 
 Connect to the GUI
 ~~~~~~~~~~~~~~~~~~
@@ -296,3 +314,5 @@ Additional Information
 For additional information on Installing pfSense, see the :doc:`/install/index`
 section. The |book_link| and |hangout_link| also cover a variety of relevant
 topics.
+
+.. _Official pfSense appliances: https://www.netgate.com/products/appliances/
