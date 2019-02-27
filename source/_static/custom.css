@@ -3,6 +3,12 @@
   padding-left: 5px;
 }
 
+/* adds scrollbar to sidenav */
+.wy-side-scroll {
+  width: auto;
+  overflow-y: auto;
+}
+
 /* sidenav promotion */
 .promotion-sidebar {
   display: block !important;
