@@ -30,7 +30,7 @@ monitor IP with the respective interface selected. The monitoring
 system is simply doing a ping as well, so this will confirm its
 issues.
 
-Try restarting the **apinger** service from **Status > Services**.
+Try restarting the **dpinger** service from **Status > Services**.
 
 If the gateway does not respond to ping but is known to be functional,
 use a different monitor IP address.
