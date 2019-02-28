@@ -25,7 +25,7 @@ When editing a gateway, the following settings may be defined:
    the default gateway for this **Address Family**. Only one gateway may
    be the default for either IPv4 or IPv6.
 -  **Disable Gateway Monitoring**: A checkbox to prevent this gateway
-   from being monitored by the **apinger** daemon. Useful for local
+   from being monitored by the **dpinger** daemon. Useful for local
    gateways or WANs that do not need to be monitored.
 -  **Alternative Monitor IP**: An address to ping via this gateway
    instead of the gateway itself. If the gateway is local, such as one
