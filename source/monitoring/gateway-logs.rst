@@ -4,7 +4,7 @@ Gateway Logs
 The gateway logs can be found under **Status > System Logs** on the
 **System**/**Gateways** sub-tab.
 
-This log contains entries from the gateway monitoring daemon, *apinger*,
+This log contains entries from the gateway monitoring daemon, *dpinger*,
 which can generate a significant amount of logging with many gateways to
 monitor.
 
