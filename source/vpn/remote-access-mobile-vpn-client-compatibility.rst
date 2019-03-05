@@ -34,7 +34,7 @@ common remote access VPN configurations available on pfSense.
 | SNOM/Yealink        | Yes                                                               | No        | No        | No                                                                                            | No         | No                                                                                                        | No                                               |
 +---------------------+-------------------------------------------------------------------+-----------+-----------+-----------------------------------------------------------------------------------------------+------------+-----------------------------------------------------------------------------------------------------------+--------------------------------------------------+
 
-Table: pfSense 2.2.x+ Mobile/Remote Access VPN Client Availability
+Table: Mobile/Remote Access VPN Client Availability
 
 -  Yes = OS Native Client Available
 -  3PA = Third Party Client Required
