@@ -52,11 +52,11 @@ Issues
 ------
 
 For those who do not feel comfortable writing documentation, another avenue to
-is to open an `Issue`_ on Github to request changes.
+is to open an `Issue`_ on Redmine to request changes.
 
 When creating an issue, please be specific and reference documents by filename
 where appropriate.
 
 .. _fork: https://help.github.com/articles/about-forks/
 .. _Github documentation on pull requests: https://help.github.com/articles/creating-a-pull-request/
-.. _Issue: https://github.com/pfsense/docs/issues
+.. _Issue: https://redmine.pfsense.org/projects/pfsense-docs
