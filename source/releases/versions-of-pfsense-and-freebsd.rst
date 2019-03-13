@@ -11,13 +11,21 @@ and the most recent versions are listed first.
    :depth: 2
    :local:
 
+2.5.x
+-----
+
+====================================================  =======================================================================================  ============  ==========  ==========================================================================
+pfSense Version                                       Support, Branch                                                                          Released      Config Rev  FreeBSD Version
+====================================================  =======================================================================================  ============  ==========  ==========================================================================
+2.5.0                                                 |fa-clock-o| `master <https://github.com/pfsense/pfsense/commits/master>`__              TBD           >=19.1      `12.0-RELEASE-p3 <https://www.freebsd.org/releases/12.0R/hardware.html>`_
+====================================================  =======================================================================================  ============  ==========  ==========================================================================
+
 2.4.x
 -----
 
 ====================================================  =======================================================================================  ============  ==========  ==========================================================================
 pfSense Version                                       Support, Branch                                                                          Released      Config Rev  FreeBSD Version
 ====================================================  =======================================================================================  ============  ==========  ==========================================================================
-2.4.5                                                 |fa-clock-o| `master <https://github.com/pfsense/pfsense/commits/master>`__              TBD           >=18.9      `11.2-RELEASE-p4 <https://www.freebsd.org/releases/11.2R/hardware.html>`_
 :doc:`2.4.4-p2 <2-4-4-p2-new-features-and-changes>`   |fa-check| `RELENG_2_4_4 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_4>`__    2019-01-07    18.9        `11.2-RELEASE-p4 <https://www.freebsd.org/releases/11.2R/hardware.html>`_
 :doc:`2.4.4-p1 <2-4-4-p1-new-features-and-changes>`   |fa-check| `RELENG_2_4_4 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_4>`__    2018-12-03    18.9        `11.2-RELEASE-p4 <https://www.freebsd.org/releases/11.2R/hardware.html>`_
 :doc:`2.4.4    <2-4-4-new-features-and-changes>`      |fa-times| `RELENG_2_4_4 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_4>`__    2018-09-24    18.8        `11.2-RELEASE-p3 <https://www.freebsd.org/releases/11.2R/hardware.html>`_

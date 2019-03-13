@@ -142,6 +142,35 @@ the amount of disk writes performed by the firewall.
 Version-Specific Notes
 ----------------------
 
+Upgrading from versions older than pfSense 2.5.0
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* The built-in ``relayd`` load balancer has been deprecated and removed as it
+  does not compile or run on pfSense 2.5.0. A copy of the load balancer
+  configuration will be left in ``/conf/deprecated_load_balancer.xml`` for
+  reference when converting to an alternate solution, such as HAProxy.
+* PHP was migrated from PHP 7.2 to PHP 7.3. A number of PHP errors were fixed
+  along the way but certain combinations of configuration parameters may result
+  in further errors. Note any problems on the |forum_link| or the |subreddit|,
+  and if possible, try to include relevant portions of ``config.xml`` with
+  personal data removed.
+* Due to the significant nature of the changes in this version of pfSense
+  software, warnings and error messages, particularly from PHP and package
+  updates, are likely to occur during the upgrade process. These errors are
+  primarily seen on the console as the upgrade is applied, but may appear in a
+  crash report once the upgrade completes. In nearly all cases these errors are
+  a harmless side effect of the changes between FreeBSD 11.2 and 12.0 and
+  between PHP 7.2 and PHP 7.3.
+* See the `FreeBSD 12.0 Release Notes <https://www.freebsd.org/releases/12.0R/relnotes.html#drivers-network>`_
+  for information on deprecated hardware drivers that may impact firewalls
+  upgrading to pfSense version 2.5.0. Some of these were renamed or folded into
+  other drivers, others have been removed, and more are slated for removal in
+  FreeBSD 13 in the future.
+* OpenSSL was upgraded to 1.1.1a as a part of upgrading to FreeBSD 12.0, this
+  will impact all packages which depend on OpenSSL, especially those not
+  obtained from Netgate. Be aware that this will require obtaining new versions
+  of such packages after the upgrade.
+
 Upgrading from versions older than pfSense 2.4.4
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
