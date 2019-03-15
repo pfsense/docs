@@ -130,6 +130,13 @@ independent; A backup taken on a 32-bit pfSense 2.3.x installation can be
 restored to a firewall running pfSense 2.4.x on 64-bit/amd64 or even an ARM
 device.
 
+If currently you are running pfSense on a 32 bit virtual machine, a good strategy is to 
+(1) back up the existing installation, 
+(2) create a new 64 bit VM for FreeBSD 64, 
+(3) perform a clean install of pfSense there, and then 
+(4) restore the 32 bit backup to the 64 bit VM.  
+(5) Then power off 32 bit pfSense VM, and retain it until you are certain all is working well.
+
 Live CD / Embedded / NanoBSD
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
