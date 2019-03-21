@@ -146,7 +146,7 @@ root, omit **sudo**.
 
 .. code::
 
-  $ gzip -dc pfSense-memstick-2.2.3-RELEASE-amd64.img.gz | sudo dd of=/dev/sdz bs=1M
+  $ gzip -dc pfSense-memstick-2.4.4-RELEASE-p1-amd64.img.gz | sudo dd of=/dev/sdz bs=1M
   [sudo] password for user:
   0+7416 records in
   0+7416 records out
@@ -169,7 +169,7 @@ target disk.
 
 .. code::
 
-  $ gzip -dc pfSense-memstick-2.2.3-RELEASE-amd64.img.gz | sudo dd of=/dev/da9 obs=64k
+  $ gzip -dc pfSense-memstick-2.4.4-RELEASE-p1-amd64.img.gz | sudo dd of=/dev/da9 obs=64k
 
 If a warning is printed about "trailing garbage" is may be safely
 ignored, as it is from the file's digital signature.
@@ -192,5 +192,5 @@ located first (e.g. /dev/rdisk3).
 
 - Decompress and write the image::
 
-    $ gzcat pfSense-memstick-2.2.3-RELEASE-amd64.img.gz | sudo dd of=/dev/rdisk3 bs=1m
+    $ gzcat pfSense-memstick-2.4.4-RELEASE-p1-amd64.img.gz | sudo dd of=/dev/rdisk3 bs=1m
 

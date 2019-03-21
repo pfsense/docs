@@ -75,7 +75,7 @@ ID/LUN (Logical Unit Number) with the following command::
 Burn the image as in the following example, replacing **<max speed>** with the
 speed of the burner and *lun* with the SCSI ID/LUN of the recorder::
 
-  # cdrecord --dev=lun --speed=<max speed> pfSense-CE-2.3-RELEASE-amd64.iso
+  # cdrecord --dev=lun --speed=<max speed> pfSense-CE-2.4.4-RELEASE-p1-amd64.iso
 
 Burning in FreeBSD
 ------------------
@@ -83,7 +83,7 @@ Burning in FreeBSD
 FreeBSD includes the *burncd* program in its base system which can be
 used to burn ISO images::
 
-  # burncd -s max -e data pfSense-CE-2.3-RELEASE-amd64.iso fixate
+  # burncd -s max -e data pfSense-CE-2.4.4-RELEASE-p1-amd64.iso fixate
 
 For more information on creating CDs in FreeBSD, please see the entry
 for CD burning in the FreeBSD Handbook at

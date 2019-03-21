@@ -11,24 +11,23 @@ the "help" command in the PHP shell.
 
 Follow each line or group of lines to run with "exec;"::
 
-  *** Welcome to pfSense 2.3-RELEASE-pfSense (amd64) on pfs23 ***
-  
-   WAN (wan)       -> vmx0       -> v4/DHCP4: 198.51.100.6/24
-                                    v6/DHCP6: 2001:db8::20c:29ff:fe78:6e4e/64
-   LAN (lan)       -> vmx1       -> v4: 10.6.0.1/24
-                                    v6/t6: 2001:db8:1:ee80:20c:29ff:fe78:6e58/64
-  
+  *** Welcome to pfSense 2.4.4-RELEASE-p2 (amd64) on rose ***
+
+   WAN (wan)       -> vmx0       -> v4/DHCP4: 198.51.100.3/24
+                                    v6/DHCP6: 2001:db8::ffff:22d6/128
+   LAN (lan)       -> vmx1       -> v4: 10.3.0.1/24
+                                    v6/t6: 2001:db8:1:eee0:20c:29ff:fe45:260/60
+
    0) Logout (SSH only)                  9) pfTop
    1) Assign Interfaces                 10) Filter Logs
    2) Set interface(s) IP address       11) Restart webConfigurator
-   3) Reset webConfigurator password    12) pfSense Developer Shell
+   3) Reset webConfigurator password    12) PHP shell + pfSense tools
    4) Reset to factory defaults         13) Update from console
    5) Reboot system                     14) Disable Secure Shell (sshd)
    6) Halt system                       15) Restore recent configuration
    7) Ping host                         16) Restart PHP-FPM
    8) Shell
-    
-  
+
   Enter an option: 12
   
   
