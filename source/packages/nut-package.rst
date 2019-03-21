@@ -8,7 +8,7 @@ Nut package
 The NUT package provides a way to monitor an `Uninterruptable Power Supply`_
 (UPS) using `Network UPS Tools`_ (NUT).
 
-After installation, the package may be configured at **Services > NUT**.
+After installation, the package may be configured at **Services > UPS**.
 
 Troubleshooting
 ---------------
