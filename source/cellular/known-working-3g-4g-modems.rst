@@ -46,6 +46,7 @@ pfSense 2.0
 -  Huawei E1550
 -  Huawei E1552
 -  Huawei E1556
+-  Huawei E1612
 -  Huawei E1692
 -  Huawei E1750
 -  Huawei E1756
