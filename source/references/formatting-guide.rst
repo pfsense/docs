@@ -113,14 +113,14 @@ Definition lists are created as follows::
    next term
       Description.
 
+.. note:: The term itself cannot have more than one line of text.
+
 Field lists are perfect for lists of options::
 
    :Option Name: What it does.
    :Option 2: Another option. This is a long description that wraps
      to the next line, with two spaces indentation.
    :Third Option: Something else.
-
-.. note:: The term itself cannot have more than one line of text.
 
 Hyperlinks
 ----------
