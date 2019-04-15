@@ -15,6 +15,8 @@ Troubleshooting DHCP Failover
    and secondary nodes match.
 #. Stop and restart the DHCP daemon from **Status > Services** on both
    nodes and check the status after a few moments
+#. Check the nodes VIP status. The master node should have a value below
+   20 for advskew, the slave should have an advskew value above 20. 
 #. Both nodes must be running the same version of pfSense. Update both
    nodes to the newest available release if they do not match. Older
    versions may have problems with various aspects of DHCP failover that
