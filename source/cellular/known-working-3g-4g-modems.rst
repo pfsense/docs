@@ -61,7 +61,7 @@ pfSense 2.0
 
    - As an Ethernet device: see `Modems reported to work as Ethernet devices`_
    - As a modem device: requires manual firmware changes, see
-      `this article <http://www.0xf8.org/2017/01/flashing-a-huawei-e3372h-4g-lte-stick-from-hilink-to-stick-mode/>`__
+     `this article <http://www.0xf8.org/2017/01/flashing-a-huawei-e3372h-4g-lte-stick-from-hilink-to-stick-mode/>`__
 
 -  Huawei K3563
 -  Huawei E5372
@@ -142,9 +142,9 @@ Modems reported to work as Ethernet devices
   The command has to be executed every time it's detached and reattached,
   the interface has to be disabled and then enabled again.
 
-- Huawei E8372h
+- Huawei E8372h -- See :ref:`cellular-mode-switching` and `#6226
+  <https://redmine.pfsense.org/issues/6226#note-2>`_
 
-See `Mode Switching`_
 
 Modem variations reported to NOT work
 -------------------------------------
@@ -165,6 +165,8 @@ and may not be supported.
 
 - mPCIe: Sierra Wireless Gobi2000
 
+.. _cellular-mode-switching:
+
 Mode Switching
 --------------
 
@@ -178,11 +180,12 @@ If that does switch the modem to the proper mode, it may be added as a
 
   /sbin/camcontrol eject cd0
 
-``usb_modeswitch`` is required in order to make certain devices switch to the correct mode.
+``usb_modeswitch`` is required in order to make certain devices switch to the
+correct mode.
 
-It's not available in the pfSense repository, but there's an `open issue <https://redmine.pfsense.org/issues/6226>`__
-which requests to add it and explains how to install the package from the FreeBSD repository.
+This package is available in the pfSense repository, but cannot be installed
+using the GUI package manager. It can be installed from a shell prompt using
+``pkg install usb_modeswitch``.
 
-The issue also contains detailed instructions on how to get the E8372h to work.
-
-It's not recommended to use this method on a production firewall, as the method has not been tested officially.
+It's not recommended to use this method on a production firewall, as the method
+has not been tested officially.
