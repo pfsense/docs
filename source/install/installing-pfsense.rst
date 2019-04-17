@@ -19,7 +19,6 @@ When selecting hardware for a new build, carefully consider current and
 future hardware requirements. These include:
 
 -  64-bit Intel or AMD CPU (x86-64, amd64) on pfSense 2.4 and later
--  CPUs must have AES-NI support on pfSense 2.5 and later
 -  Must be able to boot from USB or optical drive and run the installer
    on pfSense 2.4 and later
 
