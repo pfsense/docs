@@ -1,15 +1,17 @@
 Rate Limits
 -----------
 
-Let's Encrypt enforces rate limitations when using the production validation
+Let's Encrypt `enforces rate limitations`_ when using the production validation
 system, such as:
 
+* Five validation failures per account, per hostname, per hour
 * Each certificate may have at most 100 SAN entries
 * Only 20 certificates may be created per domain per week
 
 A testing validation system exists for those who are programming clients or
-testing their procedures. The test system does not have rate limits, but also
-does not produce certificates which are trusted publicly.
+testing their procedures. The test system `has higher limits`_, which is better
+for testing and development, but also does not produce certificates which are
+trusted publicly.
 
 Security Limitations
 --------------------
@@ -45,3 +47,6 @@ file from the web server at ``.well-known/acme-challenge/`` underneath the
 webroot directory. This file contains the authorization value. This proves that
 the person or system requesting the certificate controls web server for the
 domain name.
+
+.. _enforces rate limitations: https://letsencrypt.org/docs/rate-limits/
+.. _has higher limits: https://letsencrypt.org/docs/staging-environment/
