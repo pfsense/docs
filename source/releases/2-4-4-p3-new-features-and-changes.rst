@@ -9,6 +9,14 @@ pfSense software version 2.4.4-p3 addresses security and other issues found in
    <https://www.netgate.com/blog/category.html#releases>`__ to read all
    important information and warnings before proceeding.
 
+.. warning:: The upcoming pfSense release version 2.5.0 deprecates the built-in
+   load balancer, and all related code has been removed as it is not compatible
+   with FreeBSD 12. Plan migrations to alternate solutions such as the HAProxy
+   package now.
+
+   See the :doc:`2.5.0 release notes <2-5-0-new-features-and-changes>`
+   for more information.
+
 Security / Errata
 -----------------
 
