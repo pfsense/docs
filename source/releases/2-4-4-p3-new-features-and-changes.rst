@@ -20,26 +20,26 @@ pfSense software version 2.4.4-p3 addresses security and other issues found in
 Security / Errata
 -----------------
 
-* Changed ``sshguard`` to block both ssh and the GUI using a single table, and removed the unnecessary manual scheduled table expiration `#9223 <https://redmine.pfsense.org/issues/9223>`__
-* Added DNS over TLS host verification `#8602 <https://redmine.pfsense.org/issues/8602>`__
-
-  * Configure hostnames for DNS over TLS servers under **System > General**
+* Changed ``sshguard`` to block both ssh and the GUI using a single table, and removed the unnecessary manual scheduled table expiration `pfSense-SA-19_02.sshguard <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_02.sshguard.asc>`__ `#9223 <https://redmine.pfsense.org/issues/9223>`__
 * Fixed potential XSS vectors
 
-  * `#9294 <https://redmine.pfsense.org/issues/9294>`__
-  * `#9499 <https://redmine.pfsense.org/issues/9499>`__
-  * `#9507 <https://redmine.pfsense.org/issues/9507>`__
-  * `#9508 <https://redmine.pfsense.org/issues/9508>`__
+  * `pfSense-SA-19_01.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_01.webgui.asc>`__ `#9294 <https://redmine.pfsense.org/issues/9294>`__
+  * `pfSense-SA-19_03.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_03.webgui.asc>`__ `#9499 <https://redmine.pfsense.org/issues/9499>`__
+  * `pfSense-SA-19_04.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_04.webgui.asc>`__ `#9507 <https://redmine.pfsense.org/issues/9507>`__
+  * `pfSense-SA-19_05.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_05.webgui.asc>`__ `#9508 <https://redmine.pfsense.org/issues/9508>`__
 
 * Fixed privilege issues
 
-  * `#9511 <https://redmine.pfsense.org/issues/9511>`__
-  * `#9512 <https://redmine.pfsense.org/issues/9512>`__
-  * `#9513 <https://redmine.pfsense.org/issues/9513>`__
+  * `pfSense-SA-19_06.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_06.webgui.asc>`__ `#9511 <https://redmine.pfsense.org/issues/9511>`__
+  * `pfSense-SA-19_07.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_07.webgui.asc>`__ `#9512 <https://redmine.pfsense.org/issues/9512>`__
+  * `pfSense-SA-19_08.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_08.webgui.asc>`__ `#9513 <https://redmine.pfsense.org/issues/9513>`__
   * Added privileges for Auto Config Backup pages `#9519 <https://redmine.pfsense.org/issues/9519>`__
   * Updated privileges: Added misc missing pages, removed obsolete pages
 
 * Changed LDAP authentication to use ``LDAP_OPT_X_TLS_*`` options instead of LDAP environment variables, which corrects a variety of LDAP-related login issues reported by users `#9417 <https://redmine.pfsense.org/issues/9417>`__
+* Added DNS over TLS host verification `#8602 <https://redmine.pfsense.org/issues/8602>`__
+
+  * Configure hostnames for DNS over TLS servers under **System > General**
 * sqlite updates `#9205 <https://redmine.pfsense.org/issues/9205>`__
 
 Backup / Restore
