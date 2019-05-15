@@ -39,6 +39,8 @@ Security / Errata
    other drivers, others have been removed, and more are slated for removal in
    FreeBSD 13 in the future.
 
+* Changed LDAP authentication to use ``LDAP_OPT_X_TLS_*`` options instead of LDAP environment variables, which corrects a variety of LDAP-related login issues reported by users `#9417 <https://redmine.pfsense.org/issues/9417>`__
+
 Known Issues
 ------------
 

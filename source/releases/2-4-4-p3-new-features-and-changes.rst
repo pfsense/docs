@@ -45,7 +45,6 @@ Security / Errata
   * `FreeBSD-SA-19:07.mds <https://www.freebsd.org/security/advisories/FreeBSD-SA-19:07.mds.asc>`__
   * `FreeBSD-EN-19:08.tzdata <https://www.freebsd.org/security/advisories/FreeBSD-EN-19:08.tzdata.asc>`__
 
-* Changed LDAP authentication to use ``LDAP_OPT_X_TLS_*`` options instead of LDAP environment variables, which corrects a variety of LDAP-related login issues reported by users `#9417 <https://redmine.pfsense.org/issues/9417>`__
 * Added DNS over TLS host verification `#8602 <https://redmine.pfsense.org/issues/8602>`__
 
   * Configure hostnames for DNS over TLS servers under **System > General**
