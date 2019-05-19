@@ -77,7 +77,7 @@ Firewall Rules / NAT / Aliases
 * Fixed reserved pf keyword matching when creating and editing aliases `#9231 <https://redmine.pfsense.org/issues/9231>`__
 * Fixed duplicate entries showing on diag_tables.php from lockout tables `#9359 <https://redmine.pfsense.org/issues/9359>`__
 * Fixed a PHP error deleting an imported NAT rule with no firewall rules present `#9193 <https://redmine.pfsense.org/issues/9193>`__
-* Do now show scheduler icon when scheduler tag is empty
+* Do not show scheduler icon when scheduler tag is empty
 
 Gateways / Routing
 ------------------
@@ -87,7 +87,7 @@ Gateways / Routing
 Interfaces
 ----------
 
-* Fix PHP error from interface groups when editing QinQ entries
+* Fixed PHP error from interface groups when editing QinQ entries
 
 IPsec
 -----
@@ -115,7 +115,7 @@ WebGUI
 * Improved handling of large captures on diag_packet_capture.php and disabled viewing of captures larger than 50MiB. `#9239 <https://redmine.pfsense.org/issues/9239>`__
 * Added hostname to login page title if the user has enabled **Show hostname on login banner** `#9096 <https://redmine.pfsense.org/issues/9096>`__
 * Centralized the list of country codes used by multiple areas `#9308 <https://redmine.pfsense.org/issues/9308>`__
-* Update translation files
+* Updated translation files
 
 XMLRPC
 ------
