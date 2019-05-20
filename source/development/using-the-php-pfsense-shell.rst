@@ -11,7 +11,7 @@ the "help" command in the PHP shell.
 
 Follow each line or group of lines to run with "exec;"::
 
-  *** Welcome to pfSense 2.4.4-RELEASE-p2 (amd64) on rose ***
+  *** Welcome to pfSense 2.4.4-RELEASE-p3 (amd64) on rose ***
 
    WAN (wan)       -> vmx0       -> v4/DHCP4: 198.51.100.3/24
                                     v6/DHCP6: 2001:db8::ffff:22d6/128
