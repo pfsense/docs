@@ -23,16 +23,16 @@ Security / Errata
 * Changed ``sshguard`` to block both ssh and the GUI using a single table, and removed the unnecessary manual scheduled table expiration `pfSense-SA-19_02.sshguard <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_02.sshguard.asc>`__ `#9223 <https://redmine.pfsense.org/issues/9223>`__
 * Fixed potential XSS vectors
 
-  * `pfSense-SA-19_01.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_01.webgui.asc>`__ `#9294 <https://redmine.pfsense.org/issues/9294>`__
-  * `pfSense-SA-19_03.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_03.webgui.asc>`__ `#9499 <https://redmine.pfsense.org/issues/9499>`__
-  * `pfSense-SA-19_04.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_04.webgui.asc>`__ `#9507 <https://redmine.pfsense.org/issues/9507>`__
-  * `pfSense-SA-19_05.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_05.webgui.asc>`__ `#9508 <https://redmine.pfsense.org/issues/9508>`__
+  * `pfSense-SA-19_01.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_01.webgui.asc>`__ : Fixed potential XSS vectors in system_advanced_admin.php, interfaces_assign.php, firewall_rules_edit.php, firewall_shaper.php, services_igmpproxy_edit.php, services_ntpd_gps.php and diag_traceroute.php `#9294 <https://redmine.pfsense.org/issues/9294>`__
+  * `pfSense-SA-19_03.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_03.webgui.asc>`__ : Fixed potential XSS vector in status_filter_reload.php `#9499 <https://redmine.pfsense.org/issues/9499>`__
+  * `pfSense-SA-19_04.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_04.webgui.asc>`__ : Fixed potential XSS vector in the WOL widget `#9507 <https://redmine.pfsense.org/issues/9507>`__
+  * `pfSense-SA-19_05.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_05.webgui.asc>`__ : Fixed potential XSS vector in services_acb.php `#9508 <https://redmine.pfsense.org/issues/9508>`__
 
 * Fixed privilege issues
 
-  * `pfSense-SA-19_06.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_06.webgui.asc>`__ `#9511 <https://redmine.pfsense.org/issues/9511>`__
-  * `pfSense-SA-19_07.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_07.webgui.asc>`__ `#9512 <https://redmine.pfsense.org/issues/9512>`__
-  * `pfSense-SA-19_08.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_08.webgui.asc>`__ `#9513 <https://redmine.pfsense.org/issues/9513>`__
+  * `pfSense-SA-19_06.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_06.webgui.asc>`__ : Restrict edit access to OpenVPN-related advanced settings, and added new privilege to delegate edit permissions `#9511 <https://redmine.pfsense.org/issues/9511>`__
+  * `pfSense-SA-19_07.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_07.webgui.asc>`__ : Strengthen widget privilege matching to avoid a potential privilege bypass for users granted access to widgets `#9512 <https://redmine.pfsense.org/issues/9512>`__
+  * `pfSense-SA-19_08.webgui <https://www.netgate.com/assets/downloads/advisories/pfSense-SA-19_08.webgui.asc>`__ : Strengthen path privilege check to avoid a potential directory-traversal-like bypass method `#9513 <https://redmine.pfsense.org/issues/9513>`__
   * Added privileges for Auto Config Backup pages `#9519 <https://redmine.pfsense.org/issues/9519>`__
   * Updated privileges: Added misc missing pages, removed obsolete pages
 
