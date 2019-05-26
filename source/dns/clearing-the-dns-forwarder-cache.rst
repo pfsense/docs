@@ -1,11 +1,11 @@
 Clearing the DNS Forwarder Cache
 ================================
 
-To clear the DNS Forwarder cache, restart the *dnsmasq* daemon as
+To clear the DNS Forwarder cache, restart the *unbound* daemon as
 follows:
 
 -  Click **Status > Services**
--  Find **dnsmasq** in the list
+-  Find **unbound** in the list
 -  Click |fa-repeat|, or stop the service using |fa-stop-circle| then start
    again with |fa-play-circle|.
 
