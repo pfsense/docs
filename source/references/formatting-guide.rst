@@ -47,17 +47,21 @@ These can be applied to text in various ways within the documentation:
 * Commands names inline with other text use backquotes, "The ``sudo`` command
   ...".
 * Shell commands being demonstrated or directed use code blocks. Lead the line
-  with two spaces then "#" to simulate a command prompt::
+  with two spaces then "#" to simulate a command prompt:
 
-  # ls -l /root
+  .. code:: console
+
+     # ls -l /root
 
 * Program output also uses code blocks, blank lines in output can either be
-  blank or preceded by two spaces::
+  blank or preceded by two spaces:
 
-    # someprogram
-    Output:
+  .. code:: console
 
-    Foo
+     # someprogram
+     Output:
+
+     Foo
 
 * For long pages with several sections that may only be relevant to some users,
   split the page into several smaller documents.
@@ -82,7 +86,9 @@ Lists
 
 List markup is natural: place an asterisk at the start of a paragraph and indent
 properly. The same goes for numbered lists; they can also be auto-numbered using
-a ``#`` sign::
+a ``#`` sign:
+
+.. code:: console
 
    * This is a bulleted list.
    * It has two items, the second
@@ -93,7 +99,9 @@ a ``#`` sign::
 
 
 Nested lists are possible, but be aware that they must be separated from the
-parent list items by blank lines::
+parent list items by blank lines:
+
+.. code:: console
 
    * this is
    * a list
@@ -103,7 +111,9 @@ parent list items by blank lines::
 
    * and here the parent list continues
 
-Definition lists are created as follows::
+Definition lists are created as follows:
+
+.. code:: console
 
    term (up to a line of text)
       Definition of the term, which must be indented
@@ -115,7 +125,9 @@ Definition lists are created as follows::
 
 .. note:: The term itself cannot have more than one line of text.
 
-Field lists are perfect for lists of options::
+Field lists are perfect for lists of options:
+
+.. code:: console
 
    :Option Name: What it does.
    :Option 2: Another option. This is a long description that wraps
@@ -125,11 +137,13 @@ Field lists are perfect for lists of options::
 Hyperlinks
 ----------
 
-Separate the link and the target definition, like this::
+Separate the link and the target definition, like this:
+
+.. code:: console
 
   This is a paragraph that contains `a link`_.
 
-.. code::
+.. code:: console
 
   .. _a link: http://example.com/
 
@@ -140,7 +154,7 @@ and place the target definition at the bottom of the page in alphabetical order.
 
      See `Link\: Stuff`_.
 
-   .. code::
+   .. code:: console
 
        .. _Link\: Stuff: http://example.com/stuff
 
@@ -148,23 +162,29 @@ Cross References
 ----------------
 
 To make a cross reference to another document, first you must create a label
-immediately before the section title::
+immediately before the section title:
+
+.. code:: console
 
    .. _label-some-section:
 
    Some Section
    ------------
 
-And then in the other document, reference it using ``:ref:`` and the given label::
+And then in the other document, reference it using ``:ref:`` and the given label:
+
+.. code:: console
 
    See :ref:`label-some-section` for more information
 
 If a cross-reference will instead reference an entire document rather than a
 specific section, figure, or similar label, use the ``:doc:`` method instead.
 For example, to reference this entire document, ``/references/style-guide.rst``,
-use the following text, omitting the file extension::
+use the following text, omitting the file extension:
 
-  :doc:`/references/style-guide`
+.. code:: console
+
+   :doc:`/references/style-guide`
 
 Figures
 -------
@@ -172,42 +192,47 @@ Figures
 Figures need a unique label and a caption for proper in-text references, and are
 preferred over images.
 
-.. code::
+.. code:: console
 
-    .. _figure-my-stuff:
-    .. figure:: /_static/stuff.png
-       :figclass: align-center
+   .. _figure-my-stuff:
+   .. figure:: /_static/stuff.png
 
-       This is the caption
+      This is the caption
 
-Which can be referred to using the following::
+Which can be referred to using the following:
+
+.. code:: console
 
    An example is shown in Figure :ref:`figure-my-stuff`.
 
-.. note::  The alignment is significant! The caption *must* be aligned properly
+.. note::  The indention is important! The caption *must* be aligned properly
    with the other attributes!
 
 Images
 ------
 
-.. code::
+.. code:: console
 
-    .. image:: /_static/<filename>.png
-       :align: center
-       :alt: <alternative_text_that_describes_the_image>
+   .. image:: /_static/<filename>.png
+      :align: center
+      :alt: <alternative_text_that_describes_the_image>
 
 Inline Images
 -------------
 
 For an inline image (no breaks above or below, aka inline with the text) a
 substitution must be used. Many common icon substitutions are available in a
-`common substitutions file`_ usable as follows::
+`common substitutions file`_ usable as follows:
 
-  .. include:: substitutions.rst
-  <lots of other text>
-  To add a blah, click |image_icon_plus|.
+.. code:: console
 
-To do this in a one-off fashion, use a substitution within the same file::
+   .. include:: substitutions.rst
+   <lots of other text>
+   To add a blah, click |image_icon_plus|.
+
+To do this in a one-off fashion, use a substitution within the same file:
+
+.. code:: console
 
    Click |image_icon_edit| to edit the entry
    <rest of page>
@@ -217,7 +242,9 @@ Tables
 ------
 
 For *grid tables*, the grid must be "painted" in the document source. They look
-like this example::
+like this example:
+
+.. code:: console
 
    +------------------------+------------+----------+----------+
    | Header row, column 1   | Header 2   | Header 3 | Header 4 |
@@ -230,7 +257,9 @@ like this example::
 
 *Simple tables* are easier to write, but limited: they must contain more than
 one row, and the first column cells cannot contain multiple lines.  They look
-like this::
+like this:
+
+.. code:: console
 
    =====  =====  =======
    A      B      A and B
@@ -244,7 +273,9 @@ like this::
 Table of Contents
 -----------------
 
-For a group of files, reference filenames without their ``.rst`` extension::
+For a group of files, reference filenames without their ``.rst`` extension:
+
+.. code:: console
 
   .. toctree::
      :maxdepth: 2
@@ -252,7 +283,9 @@ For a group of files, reference filenames without their ``.rst`` extension::
      filename1
      filename2
 
-Local to a file::
+Local to a file:
+
+.. code:: console
 
    .. contents:: :depth: 2
 
@@ -260,9 +293,11 @@ Admonitions
 -----------
 
 Admonitions are text, distinguished in friendly boxes, that bring attention to
-important items. The most common example is a "Note" box::
+important items. The most common example is a "Note" box:
 
-  .. note:: This is a note, it will be surrounded by a note box when it is built.
+.. code:: console
+
+   .. note:: This is a note, it will be surrounded by a note box when it is built.
 
 Which renders as:
 
@@ -276,11 +311,15 @@ Substitutions
 
 reST supports "substitutions", which are pieces of text and/or markup referred
 to in the text by ``|name|``.  They are defined like footnotes with explicit
-markup blocks, like this::
+markup blocks, like this:
+
+.. code:: console
 
    .. |name| replace:: replacement *text*
 
-or this::
+or this:
+
+.. code:: console
 
    .. |caution| image:: warning.png
                 :alt: Warning!
@@ -317,12 +356,14 @@ Blank spaces may be used between lines of code, they do not need to contain
 spaces.
 
 For more complex examples, syntax highlighting can be used for source code using
-the ``code-block`` directive::
+the ``code-block`` directive:
 
-  .. code-block:: html
-     :linenos:
+.. code:: console
 
-     <b>some html</b>
+   .. code-block:: html
+      :linenos:
+
+      <b>some html</b>
 
 Which renders as:
 
