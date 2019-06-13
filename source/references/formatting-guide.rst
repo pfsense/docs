@@ -214,8 +214,10 @@ Images
 .. code:: console
 
    .. image:: /_static/<filename>.png
-      :align: center
       :alt: <alternative_text_that_describes_the_image>
+      :target: /_static/<filename>.png
+
+.. note:: `:target:` is optional and only necessary if it is a large image.
 
 Inline Images
 -------------
