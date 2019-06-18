@@ -1,17 +1,24 @@
 Formatting Guide
 ================
 
-.. contents:: :depth: 2
-
 The pfSense documentation is built using Sphinx/reStructuredText. The formatting
 is similar in some ways to Markdown, but has significant differences. To get a
 feel for the formatting, look at the `source of this documentation`_ and read
 through this document.
 
+.. contents:: :depth: 2
+
 External resources:
 
 * `A primer on reStructuredText`_
 * `reST/Sphinx cheat sheet`_
+
+Filenames
+---------
+
+When adding new pages or images use all lowercase letters and hyphens instead of
+spaces for the filename. This is commonly referred to as a slug, or a slugified
+version of the text. For example, this file is named ``formatting-guide.rst``.
 
 Text
 ----
