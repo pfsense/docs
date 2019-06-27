@@ -5,7 +5,7 @@ To restrict client DNS to only the specific servers configured on a
 firewall, a port forward may be used to capture all DNS requests sent to
 other servers.
 
-Before adding this rule, ensure the DNS Forwarder or DNS Resovler is
+Before adding this rule, ensure the DNS Forwarder or DNS Resolver is
 configured to bind and answer queries on *Localhost*, or *All*
 interfaces.
 
