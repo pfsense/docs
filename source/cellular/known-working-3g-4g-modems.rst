@@ -2,7 +2,7 @@ Known Working 3G-4G Modems
 ==========================
 
 This page lists 3G and 4G modem devices which are known to work with
-pfSense 2.0
+pfSense software.
 
 -  4G Systems XS Stick P14
 -  Alcatel Onetouch 4G L850V
