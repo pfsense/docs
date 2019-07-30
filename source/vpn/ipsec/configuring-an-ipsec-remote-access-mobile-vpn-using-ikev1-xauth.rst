@@ -1,7 +1,7 @@
 Configuring an IPsec Remote Access Mobile VPN using IKEv1 Xauth
 ===============================================================
 
-Many types of devices may be connected to pfSense using IPsec, most
+Many types of devices may be connected to pfSense® using IPsec, most
 notably Android (Phones and Tablets) and iOS (iPhone, iPad, iPod Touch,
 etc) devices but anything that is capable of IPsec will typically work.
 Clients also exist for Windows, OSX, and so on.
