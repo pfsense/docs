@@ -2,7 +2,7 @@
 pfSense Documentation
 *********************
 
-Our documentation, `maintained with the help of the community`_, offers
+The documentation, `maintained with the help of the community`_, offers
 instructions on how to install, configure, and use pfSense® software to protect
 your network. Whether you are new to firewalls, or a seasoned veteran, our docs
 offer something for everyone.
