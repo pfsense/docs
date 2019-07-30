@@ -1,7 +1,7 @@
 Can I sell pfSense
 ==================
 
-Many consulting companies offer pfSense solutions to their customers. A business
+Many consulting companies offer pfSense® solutions to their customers. A business
 or individual can load pfSense for themselves, friends, relatives, employers,
 and, yes, even customers, so long as the Trademark Guidelines and |license|
 requirements as detailed on the website are obeyed by all parties involved.
