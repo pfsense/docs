@@ -1,7 +1,7 @@
 Can pfSense meet regulatory requirements
 ========================================
 
-Prospective pfSense users commonly inquire about the ability to meet
+Prospective pfSense® users commonly inquire about the ability to meet
 security requirements applicable to their specific environments. Some of
 those include PCI, SOX, GLBA, HIPAA, amongst numerous other similar
 regulations for publicly traded companies, financial institutions,
