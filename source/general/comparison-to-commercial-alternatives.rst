@@ -15,7 +15,7 @@ Commercial firewall companies' marketing departments have done a fine job
 ingraining the myth of "hardware firewalls" into some people's minds. The
 reality is there is no such thing as a "hardware firewall." All firewalls are
 hardware that runs software. Most commercial firewalls are based on BSD (same as
-pfSense) or Linux. Numerous commercial firewalls run many of the same underlying
+pfSense®) or Linux. Numerous commercial firewalls run many of the same underlying
 software programs that pfSense uses. Many commercial alternatives run on x86
 hardware that's no different from what people use for pfSense. In fact many
 people have loaded pfSense on hardware that used to run their commercial
