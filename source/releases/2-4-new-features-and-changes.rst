@@ -63,7 +63,7 @@ Firmware Branch Behavior / Upgrading From Snapshots
       development snapshots
    -  *Next major version* will upgrade the firewall to 2.4-RC
 
--  For users tracking pfSense 2.4 snapshots:
+-  For users tracking pfSense® software version 2.4 snapshots:
 
    -  *Stable*, which is the default behavior, will upgrade the firewall
       to 2.4-RC and eventually 2.4-RELEASE
