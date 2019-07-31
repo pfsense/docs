@@ -2,7 +2,7 @@ VLAN Trunking
 =============
 
 This article will give a brief overview on VLANs and VLAN trunking to be
-used in pfSense.
+used in pfSense® software.
 
 There is a **lot** more detail on VLANs, security issues with VLANs, pfSense
 VLAN configuration, VLAN switch configuration, and more in the |book_link|.
