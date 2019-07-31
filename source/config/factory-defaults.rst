@@ -2,7 +2,7 @@ Resetting to Factory Defaults
 =============================
 
 The firewall configuration can be reset back to the one that shipped
-with the currently installed pfSense distribution by visiting
+with the currently installed pfSense® distribution by visiting
 **Diagnostics > Factory Defaults**. A reminder of some of the defaults
 is printed on the **Factory Defaults** page.
 
