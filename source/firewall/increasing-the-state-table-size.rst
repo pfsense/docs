@@ -1,9 +1,9 @@
 Increasing the State Table Size
 ===============================
 
-The state table size may be set in the WebGUI at **System > Advanced**
-on the **Firewall/NAT** tab. Enter a new value in the **Firewall Maximum
-States** box and then click **Save**.
+The state table size may be set in the pfSense® webGUI at **System >
+Advanced** on the **Firewall/NAT** tab. Enter a new value in the
+**Firewall Maximum States** box and then click **Save**.
 
 The default size of the state table is set to use 10% of the system RAM.
 Each state consumes approximately 1KB of RAM. So for 1,000,000 states,
