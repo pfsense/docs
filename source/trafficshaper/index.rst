@@ -2,9 +2,9 @@
 Traffic Shaper
 **************
 
-pfSense supports multiple methods of `traffic shaping`_ / Quality of Service (QoS).
-The two supported methods for configuring traffic shaping are ALTQ and Limiters,
-both of which are described in this section.
+pfSense® software supports multiple methods of `traffic shaping`_ / Quality of
+Service (QoS). The two supported methods for configuring traffic shaping are
+ALTQ and Limiters, both of which are described in this section.
 
 In either case, connections are classified based on matching firewall rules.
 
