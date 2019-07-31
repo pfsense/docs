@@ -2,10 +2,12 @@ Accessing Firewall Services over IPsec VPNs
 ===========================================
 
 With an out of the box configuration, it is not possible to query SNMP
-on the LAN interface of a remote pfSense over an IPsec VPN connection.
+on the LAN interface of a remote pfSense® instance over an IPsec VPN
+connection.
 
 Fred Wright explained in a post to the m0n0wall mailing list on
-September 12, 2004 why this is, and it's the same reason in pfSense.
+September 12, 2004 why this is, and it's the same reason in pfSense
+software.
 
 .. pull-quote::
 
@@ -29,7 +31,7 @@ using the "closest" address to the client as seen from the perspective
 of the system routing table. Without a route present, that ends up being
 the IP address of the default gateway on WAN.
 
-To add this route to pfSense, perform the following configuration:
+To add this route in the pfSense webGUI, perform the following configuration:
 
 - Navigate to **System > Routing** on the **Gateways** tab
 - Click **+** to add a gateway
