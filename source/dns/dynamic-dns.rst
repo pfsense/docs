@@ -7,11 +7,11 @@ firewall. This keeps a constant DNS hostname, even if the IP address
 changes periodically. Whenever an interface changes in some way, DHCP
 lease renew, PPPoE logout/login, etc, the IP will be updated.
 
-pfSense supports more than 15 different DynDNS providers. In addition to the
-normal public services, pfSense also supports RFC 2136 DNS updates to DNS
+pfSense® software supports more than 15 different DynDNS providers. In addition to the
+normal public services, pfSense software also supports RFC 2136 DNS updates to DNS
 servers.
 
-In currently supported versions of pfSense, the DynDNS client supports
+In currently supported versions of pfSense software, the DynDNS client supports
 using multiple DynDNS and RFC 2136 clients. These can be used to update
 multiple services on the same interface, or multiple interfaces.
 
