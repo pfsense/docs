@@ -1,18 +1,18 @@
 Traffic Shaping with Differentiated Services (DiffServ) Identifiers
 ===================================================================
 
-pfSense supports **Differentiated services** (**DiffServ**) for traffic
+pfSense® software supports **Differentiated services** (**DiffServ**) for traffic
 filtering or queue assignments. DiffServ takes the place of the outdated **Type
 of service** (**TOS**). DiffServ uses the upper six bits of the TOS field in the
 IP header (the six bits being called the *DiffServ Code Point field*), while the
 lower two bits are reserved for Explicit Congestion Notification (ECN).
 
-Unless appropriately configured, pfSense ignores the content of the DiffServ
-Code Point (DSCP) field. To prioritize traffic, the :doc:`traffic-shaping-guide`
-needs to be set up accordingly.
+Unless appropriately configured, pfSense software ignores the content of the
+DiffServ Code Point (DSCP) field. To prioritize traffic, the
+:doc:`traffic-shaping-guide` needs to be set up accordingly.
 
-.. warning:: pfSense *does not* support the setting or changing of DiffServ
-   values, only matching.
+.. warning:: pfSense software *does not* support the setting or changing of
+   DiffServ values, only matching.
 
 Supported DiffServ Code Point Values
 ------------------------------------
