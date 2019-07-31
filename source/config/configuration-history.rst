@@ -1,7 +1,7 @@
 Viewing the Configuration History
 =================================
 
-pfSense automatically keeps a backup when a change is made to the
+pfSense® software automatically keeps a backup when a change is made to the
 configuration. This makes it easy to revert after an undesirable
 settings change, but should not be relied upon as a sole means of
 backup. There are numerous reasons why having an off-system backup is a
