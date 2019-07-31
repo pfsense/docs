@@ -92,13 +92,13 @@ To regain access, login successfully from another IP address and then
 manually remove the entry as follows:
 
 - Navigate to **Diagnostics > Tables**
-- Select *webConfiguratorlockout*
+- Select *sshguard*
 - Click |fa-trash| by the entry or entries for workstations to allow again.
 
 The lockout table may also be cleared by the console or ssh in the
 shell::
 
-  pfctl -T flush -t webConfiguratorlockout
+  pfctl -T flush -t sshguard
 
 Remotely Circumvent Firewall Lockout by Temporarily Changing the Firewall Rules
 -------------------------------------------------------------------------------
