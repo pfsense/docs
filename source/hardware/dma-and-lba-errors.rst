@@ -37,7 +37,7 @@ Summarized from `this forum post <https://forum.netgate.com/post/37576>`__.
 SETFEATURES Error
 ~~~~~~~~~~~~~~~~~
 
-Newer snapshots and releases of pfSense (after 2.0.1) also attempt to
+Newer snapshots and releases of pfSense® software (after 2.0.1) also attempt to
 setup APM for an ATA hard drive at boot. Sometimes the detection yields
 a non-fatal error when trying to find if the value is supported, or when
 the drive claims it's supported but can't set it. That error is::
