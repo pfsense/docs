@@ -1,7 +1,7 @@
 Online Gaming with pfSense
 ==========================
 
-This page provides information on using pfSense with online games.
+This page provides information on using pfSense® software with online games.
 
 First, many games will require the use of :doc:`Static Port </nat/static-port>`
 or :doc:`UPnP/NAT-PMP </services/configuring-upnp-and-nat-pmp>`.
