@@ -1,9 +1,9 @@
 PPP Interfaces
 ==============
 
-PPP type interfaces may also be used in pfSense. These are not to be
-confused with PPPoE or PPTP interfaces, as these are traditional PPP on
-serial devices.
+PPP type interfaces may also be used in pfSense® software. These are not
+to be confused with PPPoE or PPTP interfaces, as these are traditional
+PPP on serial devices.
 
 This will commonly be used to drive 3G modems for wireless WAN access,
 but could also be used for controlling dialup modems.
