@@ -1,7 +1,7 @@
 Directing Traffic with Policy Routing
 =====================================
 
-Policy routing in pfSense refers to the capability of routing traffic by
+Policy routing in pfSense® software refers to the capability of routing traffic by
 matching it to specific firewall rules. Each firewall rule allows selection of a
 gateway. If none is selected, traffic goes out the default gatway or follows the
 routing table. If additional WAN interfaces or gateway groups are defined, these
