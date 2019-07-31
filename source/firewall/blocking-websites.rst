@@ -1,8 +1,8 @@
 Blocking Access to Websites
 ===========================
 
-There are several options for blocking websites with pfSense, some of
-which are described on this article.
+There are several options for blocking websites with pfSense® software,
+some of which are described on this article.
 
 Using DNS
 ---------
