@@ -1,7 +1,7 @@
-Allowing Remote Access to the WebGUI
+Allowing Remote Access to the webGUI
 ====================================
 
-Several ways exist to remotely administer a pfSense firewall that come
+Several ways exist to remotely administer a pfSense® firewall that come
 with varying levels of recommendation. They all work, but their use may
 vary for any number of reasons (Client restrictions, corporate policies,
 etc.)
@@ -21,7 +21,7 @@ details will vary depending on the VPN configuration.
 Restricted Firewall Access
 --------------------------
 
-If the WebGUI port must be to the Internet, restrict it by IP
+If the webGUI port must be to the Internet, restrict it by IP
 address/range as much as possible. Ideally, if there is a static IP
 address at the location to manage from, allow traffic from that IP or
 subnet and nowhere else. Aliases are good to use, and they may include
@@ -31,17 +31,17 @@ have a dynamic DNS address, add it to a management alias.
 Use HTTPS
 ---------
 
-HTTPS should always be used to encrypt access to the WebGUI port. Modern
+HTTPS should always be used to encrypt access to the webGUI port. Modern
 browsers may complain about the certificate, but an exception can
 usually be stored so it will only complain the first time. To use HTTPS
 then it will be necessary to enable it under **System > Advanced**,
 **Admin Access** tab, using the *Protocol* option in the
 **webConfigurator** section.
 
-Move the WebGUI to an Alternate port
+Move the webGUI to an Alternate port
 ------------------------------------
 
-Is is also a good idea to move the WebGUI to a non-standard, random
+Is is also a good idea to move the webGUI to a non-standard, random
 port. Just make sure to remember what it is! This does not improve the
 actual security of the GUI itself, but can potentially reduce the number
 of brute force attempts against it. It can still be found by scanners
