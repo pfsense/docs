@@ -2,7 +2,7 @@ Upgrading High Availability Clusters
 ====================================
 
 This page provides guidance on upgrading redundant firewalls (CARP, pfsync,
-XMLRPC config sync) across major versions of pfSense. Upgrading from one version
+XMLRPC config sync) across major versions of pfSense® software. Upgrading from one version
 to another generally follows the this procedure, exceptions are noted later in
 the page.
 
