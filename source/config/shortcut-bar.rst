@@ -1,7 +1,7 @@
 Shortcut Bar
 ============
 
-The **Shortcut Bar** offers quick navigation to pages related to the one being
+The pfSense® **Shortcut Bar** offers quick navigation to pages related to the one being
 viewed, to save having to hunt down pages in various menus when performing
 configuration or troubleshooting.
 
