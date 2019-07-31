@@ -12,6 +12,6 @@ when forwarding packets, so the router does not appear as a hop.
 This may also happen with IPsec due to the way IPsec traffic is handled
 in the kernel. The traffic is not "routed" in a traditional sense.
 
-This behavior may change in future versions of pfSense, see here:
+This behavior may change in future versions of pfSense® software, see here:
 https://redmine.pfsense.org/issues/932
 
