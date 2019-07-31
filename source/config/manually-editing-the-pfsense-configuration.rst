@@ -1,7 +1,7 @@
 Manually Editing the pfSense Configuration
 ==========================================
 
-After editing the configuration, you will need to reload the entirety of
+After editing the pfSense® configuration, you will need to reload the entirety of
 **config.xml**. There are a few ways of doing this:
 
 #. Reboot the firewall.
