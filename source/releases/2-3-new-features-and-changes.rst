@@ -15,7 +15,7 @@ Security/Errata
    -  `FreeBSD-SA-16:12.openssl <https://www.freebsd.org/security/advisories/FreeBSD-SA-16%3A12.openssl.asc>`__
    -  `FreeBSD-SA-16:15.sysarch <https://www.freebsd.org/security/advisories/FreeBSD-SA-16%3A15.sysarch.asc>`__
 
--  pfSense Security Advisories:
+-  pfSense® Security Advisories:
 
    -  `pfSense-SA-16_01.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-16_01.webgui.asc>`__
    -  `pfSense-SA-16_02.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-16_02.webgui.asc>`__
