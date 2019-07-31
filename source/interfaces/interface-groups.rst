@@ -6,7 +6,7 @@ once. Rules applied to groups only affect current group members, so when
 an interface is removed from a group, rules for that group no longer
 apply.
 
-Interface groups can be managed
+In pfSense® software, interface groups can be managed
 from the list view at **Interfaces > (assign)**, on the **Interface
 Groups** tab.
 
