@@ -1,7 +1,7 @@
 GIF Interfaces
 ==============
 
-GIF tunneling interfaces are added from **Interfaces > (assign)** on the
+In pfSense® software, GIF tunneling interfaces are added from **Interfaces > (assign)** on the
 **GIF** tab.
 
 GIF is a generic tunneling mechanism that can be used for IPv4 and IPv6
