@@ -1,7 +1,7 @@
 2.3.3-p1 New Features and Changes
 =================================
 
-The 2.3.3-p1 errata release is a minor release after
+The pfSense® software version 2.3.3-p1 errata release is a minor release after
 :doc:`2.3.3 </releases/2-3-3-new-features-and-changes>` and contains beneficial
 security and bug fixes.
 
