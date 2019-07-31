@@ -57,7 +57,8 @@ support booting from GPT or they are particular about the layout or
 other attributes.
 
 In these cases, the memstick can be modified using another firewall
-running pfSense 2.3 or later, or with a FreeBSD 10.x or later system.
+running pfSense® software version 2.3 or later, or with a FreeBSD 10.x
+or later system.
 
 Insert the memstick into the pfSense or FreeBSD device and check the
 system log or dmesg output to find the device name, such as **da1**.
