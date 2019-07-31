@@ -2,7 +2,7 @@
 Packages
 ********
 
-Packages extend the functionality of pfSense software. They provide additional
+Packages extend the functionality of pfSense® software. They provide additional
 services and utilities not found in the base installation. These are all
 completely optional and are not necessary for most deployments.
 
