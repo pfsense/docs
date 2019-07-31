@@ -1,8 +1,9 @@
 Configuring 3G modems
 =====================
 
-To configure a 3G modem on pfSense on a current supported release, plug
-in a :doc:`known-working-3g-4g-modems` and log into the web
+To configure a 3G modem in pfSense® software on a current
+supported release, plug in a 
+:doc:`known-working-3g-4g-modems` and log into the web
 interface to begin configuration.
 
 Configuring PPP
@@ -16,8 +17,8 @@ In the **Link Type** drop down, select *PPP*.
 In the **Link interface(s)** box, the list will be populated with serial
 ports on the system. Select the port for the modem. A modem may list
 several serial ports. Typically it is the last one, but may require some
-trial and error. Future versions of pfSense may properly auto-detect
-modems but that has historically been a source of problems.
+trial and error. Future versions of pfSense software may properly
+auto-detect modems but that has historically been a source of problems.
 
 Optionally fill in a **Description**, which will be used to reference
 this PPP configuration in other parts of the web interface.
