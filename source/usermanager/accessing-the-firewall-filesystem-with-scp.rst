@@ -1,9 +1,10 @@
 Accessing the Firewall Filesystem with SCP
 ==========================================
 
-Files may be transferred to and from a pfSense firewall with *scp*,
+Files may be transferred to and from a pfSense® firewall with *scp*,
 which is part of the functionality that comes with having ssh access
-enabled (See :doc:`HOWTO enable SSH access </usermanager/granting-users-access-to-ssh>`).
+enabled (See 
+:doc:`HOWTO enable SSH access </usermanager/granting-users-access-to-ssh>`).
 
 When connecting with an *scp* client such as from a FreeBSD/Linux
 command line, with WinSCP, FileZilla, or even a *fish* URL in Konquerer,
