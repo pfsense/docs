@@ -2,8 +2,8 @@ RFC2136 Dynamic DNS
 ===================
 
 If the DNS for a domain is directly controlled, RFC2136 Dynamic DNS
-support may be setup so pfSense can act as a client to it. This How-To
-will show how to setup BIND to support this feature.
+support may be setup so pfSense® software can act as a client to it.
+This How-To will show how to setup BIND to support this feature.
 
 On the server in named.conf::
 
@@ -92,7 +92,7 @@ To use the script::
   # ./make-ddns-host.sh mynewhost.dyn.example.com
   # rndc reload
 
-To add a DynDNS entry in the pfSense GUI
+To add a DynDNS entry in the pfSense webGUI
 
 -  Navigate to **Services > Dynamic DNS**, **RFC 2136** tab
 -  Click |fa-plus| to create a new entry with the following settings:
