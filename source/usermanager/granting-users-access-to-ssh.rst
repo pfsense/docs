@@ -1,15 +1,15 @@
 Granting Users Access to SSH
 ============================
 
-This article explains how to enable SSH access on a pfSense firewall.
+This article explains how to enable SSH access on a pfSense® firewall.
 SSH is typically used for debugging and troubleshooting, but has many
 other useful purposes. The SSH daemon is not required, so it is disabled
 by default.
 
-Enable SSH via WebGUI
+Enable SSH via webGUI
 ---------------------
 
-- Navigate to **System > Advanced** in the WebGUI. This will show the **Admin
+- Navigate to **System > Advanced** in the webGUI. This will show the **Admin
   Access** tab.
 - Check **Enable Secure Shell**
 
