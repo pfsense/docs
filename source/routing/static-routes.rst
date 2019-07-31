@@ -1,7 +1,7 @@
 Static Routes
 =============
 
-**Static Routes** on pfSense are managed at **System >
+**Static Routes** in pfSense® software are managed at **System >
 Routing**, on the **Routes** tab. A route may be added to any defined
 :doc:`gateway </routing/gateway-settings>`. Ensure the gateway is present before
 attempting to add a route.
