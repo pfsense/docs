@@ -1,10 +1,10 @@
 TCP Flag Definitions
 ====================
 
-References to `TCP`_ flags may be found in various places on pfSense,
-primarily in the firewall logs. These are control bits that indicate
-different connection states or information about how a packet should be
-handled.
+References to `TCP`_ flags may be found in various places in pfSense®
+software, primarily in the firewall logs. These are control bits that
+indicate different connection states or information about how a packet
+should be handled.
 
 .. note:: The flags may also be abbreviated even more to their first letter.
 
