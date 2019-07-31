@@ -1,10 +1,10 @@
 Using Easyrule to Add Firewall Rules
 ====================================
 
-The EasyRule function found in the GUI and on the command line can be
+The EasyRule function found in the webGUI and on the command line can be
 used to add firewall rules quickly.
 
-In the GUI, this function is available in the Firewall Log view
+In the pfSense® webGUI, this function is available in the Firewall Log view
 (**Status > System Logs**, **Firewall** tab). There is an icon next to
 the *source*, which will add the source to a **blocking** rule in an
 alias. There is an icon next to the *destination* to add a **pass** rule
