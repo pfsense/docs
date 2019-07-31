@@ -1,8 +1,8 @@
 Multi-Link PPP (MP/MLPPP)
 =========================
 
-Multilink PPP (MP or MLPPP) is included in pfSense and is known to work
-with a number of providers.
+Multilink PPP (MP or MLPPP) is included in pfSense® software and
+is known to work with a number of providers.
 
 A simple MLPPP connection requires only two tasks:
 
