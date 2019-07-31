@@ -10,9 +10,9 @@ such as servers using their hostnames or fully qualified domain names.
 DNS Resolver/Forwarder
 ''''''''''''''''''''''
 
-These topics cover using pfSense as a caching DNS resolver or forwarder, which
+These topics cover using pfSense® software as a caching DNS resolver or forwarder, which
 handles DNS requests from local clients. When acting as a resolver or forwarder,
-pfSense will performs DNS resolution or hand off queries to an upstream DNS
+pfSense software will performs DNS resolution or hand off queries to an upstream DNS
 forwarding server.
 
 .. toctree::
