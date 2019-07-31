@@ -1,7 +1,7 @@
 pfSense Upgrade Guide
 =====================
 
-The supported methods to upgrade from one pfSense release to another depend on
+The supported methods to upgrade from one pfSense® release to another depend on
 the platform being used. Any version of pfSense can be reliably upgraded to any
 *newer* version while retaining the existing configuration. This includes RC,
 Beta, and other releases. So long as the upgrade is moving from an older version
