@@ -1,6 +1,9 @@
 Setup ftp server behind pfSense
 ===============================
 
+These instructions will allow you to set up an FTP server behind a
+pfSense® firewall.
+
 Simple Port Forward to FTP Server
 ---------------------------------
 
@@ -11,7 +14,7 @@ Simple Port Forward to FTP Server
    tweaking. Exactly how to do this will vary based on the FTP server
    software.
 #. Set the passive IP response to respond with the PUBLIC IP address
-   forwarded in **pfSense®**. Again how to do this will vary based on FTP
+   forwarded in **pfSense**. Again how to do this will vary based on FTP
    server and some do not have the capability.
 #. Create port forward rules to forward **BOTH** port 21 and the passive
    range specified on the FTP server to the local LAN IP of the FTP
