@@ -1,7 +1,7 @@
 2.0.2 New Features and Changes
 ==============================
 
-pfSense 2.0.2 is a maintenance release with some bug and security fixes
+pfSense® software 2.0.2 is a maintenance release with some bug and security fixes
 since 2.0.1 release. It is possible to upgrade from any previous release
 to 2.0.2.
 
