@@ -1,8 +1,8 @@
 Troubleshooting Disk Check Errors (fsck)
 ========================================
 
-In some cases, pfSense may detect a filesystem issue and print an error on the
-console at boot time::
+In some cases, pfSense® software may detect a filesystem issue and print
+an error on the console at boot time::
 
   Disk is dirty, running fsck -y
 
