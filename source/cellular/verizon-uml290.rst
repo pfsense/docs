@@ -11,7 +11,7 @@ Windows PC to ensure it was activated but I'm not sure if that is
 necessary.
 
 Follow the instructions here for how to configure the interface in
-pfSense: :doc:`/cellular/configuring-3g-modems`.
+pfSense® software: :doc:`/cellular/configuring-3g-modems`.
 
 Some setups may need to modify the instructions because ``#777`` may not
 work. Instead try ``*99***3#``. Also for **username** try
