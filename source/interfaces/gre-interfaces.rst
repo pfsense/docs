@@ -1,8 +1,8 @@
 GRE Interfaces
 ==============
 
-GRE tunnels are configured under **Interfaces > (assign)** on the
-**GRE** tab.
+In pfSense® software, GRE tunnels are configured under 
+**Interfaces > (assign)** on the **GRE** tab.
 
 GRE (Generic Route Encapsulation) is defined in RFC 2784. It is
 supported by many vendors, and is a standards-compliant means to tunnel
