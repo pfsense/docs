@@ -5,7 +5,7 @@ Security/Errata Notices
 -----------------------
 
 -  `pfSense-SA-15_05.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_05.webgui.asc>`__:
-   Multiple XSS Vulnerabilities in the pfSense WebGUI
+   Multiple XSS Vulnerabilities in the pfSense® WebGUI
 
 -  `FreeBSD-SA-15:09.ipv6 <https://www.freebsd.org/security/advisories/FreeBSD-SA-15:09.ipv6.asc>`__:
    Denial of Service with IPv6 Router Advertisements. Where a system is
