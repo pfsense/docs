@@ -1,8 +1,9 @@
 Using NAT and FTP without a Proxy
 =================================
 
-pfSense 2.2-RELEASE does not include an FTP Proxy. What does this mean
-for clients and servers? Not as much as one might think.
+pfSense® software version 2.2-RELEASE does not include an FTP Proxy.
+What does this mean for clients and servers? Not as much as one 
+might think.
 
 Use of FTP is strongly discouraged. It is a very old protocol that
 transmits credentials and other data openly without encryption which is
