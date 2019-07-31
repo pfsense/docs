@@ -6,8 +6,8 @@ are ideal for storing large groups of addresses as the time required to
 lookup an address is only slightly more than a table containing a small
 amount of addresses.
 
-The current contents of tables on pfSense may be viewed at **Diagnostics
-> Tables**.
+The current contents of tables may be viewed from the pfSense® webGUI at
+**Diagnostics > Tables**.
 
 The following tables have been automatically pre-defined:
 
