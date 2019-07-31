@@ -1,7 +1,7 @@
 2.0.3 New Features and Changes
 ==============================
 
-pfSense 2.0.3 is a maintenance release with some bug fixes since 2.0.2
+pfSense® software 2.0.3 is a maintenance release with some bug fixes since 2.0.2
 release. It is possible to upgrade from any previous release to 2.0.3.
 
 Because this release shortly followed after 2.0.2, review the
