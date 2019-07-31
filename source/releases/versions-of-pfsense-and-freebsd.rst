@@ -1,7 +1,7 @@
 Versions of pfSense and FreeBSD
 ===============================
 
-The tables in this document contain detailed information on pfSense software
+The tables in this document contain detailed information on pfSense® software
 releases.
 
 The versions are grouped up by major/minor changes so they are easier to locate,
