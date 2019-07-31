@@ -1,11 +1,11 @@
 Forwarding Ports with pfSense
 =============================
 
-Forwarding ports on pfSense is a fairly simple process. When adding a
-port forward, a firewall rule must also be added to allow traffic in to
-the *internal IP address* designated by the port forward. There is an
-option to automatically add this rule when creating a port forward
-definition, and it is enabled by default.
+Forwarding ports in pfSense® software is a fairly simple process. 
+When adding a port forward, a firewall rule must also be added to
+allow traffic in to the *internal IP address* designated by the
+port forward. There is an option to automatically add this rule
+when creating a port forward definition, and it is enabled by default.
 
 Port forwarding in current versions has been extended to allow for much
 more flexible and powerful configurations, but users not accustomed to
