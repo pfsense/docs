@@ -1,7 +1,7 @@
 Accessing Port Forwards from Local Networks
 ===========================================
 
-By default, pfSense does not redirect internally connected devices to
+By default, pfSense® software does not redirect internally connected devices to
 reach forwarded ports and 1:1 NAT on WAN interfaces. If a client is
 trying to reach a service on port 80 or 443 (or the port a web interface
 is using if it has been changed), the connection will hit the web
@@ -32,9 +32,9 @@ TCP, UDP, and other protocols.
 
 *NAT+Proxy* mode for port forward reflection sets up a proxy daemon and
 rules to receive and reflect only TCP connections. This method the only
-available means of reflection in earlier versions of pfSense. It can
-work in certain rare circumstances where Pure NAT mode does not. This
-will only work with single port forwards or ranges of less than 500
+available means of reflection in earlier versions of pfSense software.
+It can work in certain rare circumstances where Pure NAT mode does not.
+This will only work with single port forwards or ranges of less than 500
 ports. It does not work with UDP or other protocols.
 
 .. image:: /_static/nat/natreflection.png
@@ -52,8 +52,8 @@ of the actual server, and not the WAN IP as others outside the network
 would see.
 
 In order for this to work using the DNS Forwarder or Resolver in
-pfSense, clients will need to have the IP Address of the pfSense router
-as their primary DNS server.
+pfSense software, clients will need to have the IP Address of the pfSense
+router as their primary DNS server.
 
 Example:
 
