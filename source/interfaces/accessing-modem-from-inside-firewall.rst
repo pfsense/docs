@@ -27,10 +27,10 @@ assign it to the physical network card that is on WAN. For example, if
 the WAN on the assignment page is "*PPPOE0(re2)*", choose *re2*, and
 **Save** the changes.
 
-Go to **Interfaces > (new OPT interface)**, and **Enable** the
-interface. Give it an IP address in the same subnet as the modem, such
-as 192.168.1.5/24. Do not set a gateway. Rename the interface to
-*ModemAccess* or a similar useful name.
+In the pfSense® webGUI, go to **Interfaces > (new OPT interface)**, and
+**Enable** the interface. Give it an IP address in the same subnet as
+the modem, such as 192.168.1.5/24. Do not set a gateway. Rename the
+interface to *ModemAccess* or a similar useful name.
 
 Configure NAT
 -------------
