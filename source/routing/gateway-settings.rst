@@ -1,10 +1,11 @@
 Gateway Settings
 ================
 
-A gateway is a system through which pfSense can reach the Internet or
-another network, so if multiple WANs are in use, or multiple paths to
-the Internet via different gateways, the associated gateways must be
-defined. Gateways must also be defined for networks reachable via
+A gateway is a system through which pfSense® software can reach the
+Internet or another network, so if multiple WANs are in use, or
+multiple paths to the Internet via different gateways, the 
+associated gateways must be defined. Gateways must also be defined
+for networks reachable via 
 :doc:`Static Routes </routing/static-routes>`.
 
 Gateways are located at **System > Routing**, on the **Gateways** tab,
