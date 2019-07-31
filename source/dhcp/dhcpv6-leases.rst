@@ -2,12 +2,14 @@ Viewing DHCPv6 Leases
 =====================
 
 A list of active and inactive **DHCPv6 Leases** (DHCP leases for IPv6
-hosts) and delegated prefixes can be viewed in pfSense by navigating to
-**Status > DHCPv6 Leases**.
+hosts) and delegated prefixes can be viewed in pfSense® software by 
+navigating to **Status > DHCPv6 Leases**.
 
 All active leases are shown, along with the IPv6 address, IAID, DUID,
 MAC address, hostname, lease start and end times, lease type, and
-whether or not the system is online. (As with the :doc:`NDP Table </monitoring/ndp-table>`, this is not always a reliable indicator)
+whether or not the system is online. (As with the 
+:doc:`NDP Table </monitoring/ndp-table>`,
+this is not always a reliable indicator)
 
 IPv6 hosts are identified by a combination of the Interface Association
 Identifier (IAID) and the DHCP Unique Identifier (DUID). The DUID is
