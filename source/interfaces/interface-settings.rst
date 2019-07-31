@@ -2,11 +2,11 @@ Interface Settings
 ==================
 
 The interface settings screen will differ based on the type of interface
-being dealt with. In pfSense the real distinction between "WAN", "LAN"
-and "OPT" interfaces is blurred as they are all capable of handling any
-role. For historical and ease-of-use purposes, the first two interfaces
-are WAN and LAN. Additional interfaces start at OPT1 and are numbered
-from there (OPT2, OPT3, ... OPTn)
+being dealt with. In pfSense® software, the real distinction between
+"WAN", "LAN" and "OPT" interfaces is blurred as they are all capable of
+handling any role. For historical and ease-of-use purposes, the first two
+interfaces are WAN and LAN. Additional interfaces start at OPT1 and are
+numbered from there (OPT2, OPT3, ... OPTn)
 
 Interfaces can have their descriptive names changed, MAC address
 spoofed, and MTU adjusted. Any interface can be set for Static IP, DHCP,
