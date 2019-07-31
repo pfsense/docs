@@ -1,14 +1,15 @@
 Using Multiple IPv4 WAN Connections
 ===================================
 
-The setup described in this guide enables pfSense to load balance or
-fail over traffic from a LAN to multiple Internet connections (WANs).
-With load balancing, traffic from the LAN is shared out on a
-connection-based round robin basis across the available WANs. With
-failover, traffic will go out the highest priority WAN until it goes
-down, then the next is used. pfSense monitors each WAN connection, using
-either the gateway IP or an alternate monitor IP address, and if the
-monitor fails it will remove that WAN from use.
+The setup described in this guide enables pfSense® software to load
+balance or fail over traffic from a LAN to multiple Internet
+connections (WANs). With load balancing, traffic from the LAN is
+shared out on a connection-based round robin basis across the
+available WANs. With failover, traffic will go out the highest
+priority WAN until it goes down, then the next is used. pfSense
+monitors each WAN connection, using either the gateway IP or an
+alternate monitor IP address, and if the monitor fails it will
+remove that WAN from use.
 
 In most setups, there are only three parts that need to be done
 
@@ -48,13 +49,13 @@ the quality of their WAN.
 Monitor IP
 ^^^^^^^^^^
 
-By default pfSense will ping the gateway to determine the quality of the
-WAN. In some cases, that is not an accurate measure. For instance, if
-the WAN gateway is actually a device that is local and not on the other
-side of the ISP circuit, then the actual WAN link could be down and
-pinging the gateway would never show it. Also, if the ISP gateway is up
-but the ISP experiences upstream failures, those cannot be detected by
-pinging only the gateway.
+By default, pfSense softwarewill ping the gateway to determine the
+quality of the WAN. In some cases, that is not an accurate measure.
+For instance, if the WAN gateway is actually a device that is local
+and not on the other side of the ISP circuit, then the actual WAN link
+could be down and pinging the gateway would never show it. Also, if the
+ISP gateway is up but the ISP experiences upstream failures, those
+cannot be detected by pinging only the gateway.
 
 A custom IP address can be entered to monitor here that will be used to
 determine the WAN quality. A public website, Google public DNS, or any
