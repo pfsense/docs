@@ -34,8 +34,8 @@ Table: VIP Features
     2: "Other" type VIPs are for routed subnets, and CARP is irrelevant,
     so they work (See below)
     3: CARP type VIPs must be in the same subnet as other interface VIPs
-    on pfSense <=2.1.x, on >= 2.2 they may be in other subnets, but see
-    below for caveats.
+    on pfSense® software version <=2.1.x, on >= 2.2 they may be in other
+    subnets, but see below for caveats.
 
 Virtual IP Feature Details
 --------------------------
@@ -53,12 +53,13 @@ CARP
 -  Can be used for clustering (master firewall and standby failover
    firewall.)
 -  Must be in the **same subnet** as an IP address on the interface
-   (real interface IP or IP alias.) on pfSense 2.1.x and previous
-   versions.
+   (real interface IP or IP alias.) on pfSense software version 
+   2.1.x and previous versions.
 
-   -  CARP VIPs may be in other subnets on pfSense 2.2-RELEASE and
-      later, but we still recommend using the old method where possible
-      for better connectivity and less potential issues.
+   -  CARP VIPs may be in other subnets on pfSense software version 
+      2.2-RELEASE and later, but we still recommend using the old
+      method where possible for better connectivity and less
+      potential issues.
 
 -  **Will** respond to ICMP ping if allowed by firewall rules.
 -  Must be added individually.
