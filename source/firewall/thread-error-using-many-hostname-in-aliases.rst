@@ -12,7 +12,7 @@ of concurrent threads it could launch in order to resolve and monitor the
 hostnames properly.
 
 The cure for this is to raise the number of allowed threads per process. This
-can be done by navigating to **System > Advanced** on the **System Tunables**
+can be done by navigating from the pfSense® webGUI to **System > Advanced** on the **System Tunables**
 tab. There, create an entry for ``kern.threads.max_threads_per_proc`` and set it
 to ``4096``.
 
