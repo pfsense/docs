@@ -77,7 +77,7 @@ MTU Issues
 ----------
 
 Issues with upload speed frequently end up being issues with the MTU. If the MTU
-on pfSense (default 1500), is higher than the MTU of the upstream link, it can
+on pfSense® software (default 1500), is higher than the MTU of the upstream link, it can
 result in packets being fragmented, lost, or otherwise mishandled. Setting MSS
 clamping on the WANs or changing the MTU of the interface may help.
 
