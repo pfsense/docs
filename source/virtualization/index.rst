@@ -2,9 +2,9 @@
 Virtualization
 **************
 
-pfSense supports a variety of Type-1 (bare metal/native) and Type-2 (hosted)
-virtualiztion environments, such as VMware (vSphere, Fusion or Workstation),
-Proxmox, VirtualBox, Xen, KVM, Hyper-V and so on.
+pfSense® software supports a variety of Type-1 (bare metal/native) and
+Type-2 (hosted) virtualiztion environments, such as VMware (vSphere,
+Fusion or Workstation), Proxmox, VirtualBox, Xen, KVM, Hyper-V and so on.
 
 .. warning:: We recommend using Type-1 hypervisors for production use. Type-2
    hypervisors such as VirtualBox or VMware Workstation work fine for testing,
