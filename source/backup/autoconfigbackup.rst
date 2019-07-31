@@ -1,9 +1,9 @@
 Using the AutoConfigBackup Service
 ==================================
 
-Automatic Configuration Backup (ACB) has been available as a pfSense package for
-many years. In pfSense version 2.4.4 it is available as a core component of
-pfSense, no package required.
+Automatic Configuration Backup (ACB) has been available as a pfSense® package
+for many years. In pfSense version 2.4.4 it is available as a core component of
+pfSense software, no package required.
 
 .. note:: For the purposes of this documentation, the old AutoConfigBackup
   package used prior to pfSense 2.4.4-RELEASE will be referred to as the
@@ -80,9 +80,10 @@ under the **Restore** and **Backup now** tabs.
 Restoring Backups from Another Firewall or a Previous Installation
 ------------------------------------------------------------------
 
-If the SSH key changes due to a re-installation of pfSense, the ACB package can
-restore a backup from the previous installation as long as the :ref:`device-key`
-and the :ref:`encryption-password` of the previous installation are both known.
+If the SSH key changes due to a re-installation of pfSense software, the ACB
+package can restore a backup from the previous installation as long as the
+:ref:`device-key` and the :ref:`encryption-password` of the previous
+installation are both known.
 
 * Navigate to the the **Settings** tab
 * Set the **Encryption Password** to match the previous installation
@@ -99,7 +100,8 @@ Accessing Legacy Backups
 ------------------------
 
 pfSense Gold Subscribers who used the legacy ACB package can still access the
-backups from the legacy ACB server. The settings used by the old package are preserved.
+backups from the legacy ACB server. The settings used by the old package are
+preserved.
 
 Click **Use Legacy "Gold" Repository** on the **Restore** tab to access the
 legacy server.
