@@ -7,9 +7,10 @@ Basic testing of a load balancing setup
 It's all set up and it looks like its working, but is it really
 happening?
 
-**Check that both connections are available**. First check that all WAN
-connections are marked as available under **Status > Gateways** both on the
-**Gateways** and **Gateway Groups** tabs.
+**Check that both connections are available**. From the pfSense® webGUI,
+first check that all WAN connections are marked as available under
+**Status > Gateways** both on the **Gateways** and **Gateway Groups**
+tabs.
 
 If a problem is found here check the gateway monitoring settings and
 gateway group settings. Make sure that the monitor IP addresses actually
