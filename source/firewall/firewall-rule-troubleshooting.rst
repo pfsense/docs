@@ -84,15 +84,16 @@ that will be originating the traffic.
 Unfilterable Traffic
 --------------------
 
-Certain traffic cannot be filtered. Not because pfSense isn't capable, but
-because they actually do not touch the firewall at all. A prime example of this
-is trying to keep one device on the LAN from accessing another device on the
-same LAN. This is not possible if both clients are on the same subnet and
-switch; In that case, the routing of packets is handled at the switch level
-(layer 2), and the firewall has no knowledge of the traffic. If there is a need
-to control access in this way, the devices in question must be on separate
-firewall interfaces. When on different "legs" of the network, their traffic will
-route through the firewall, the firewall will have full control of the flow.
+Certain traffic cannot be filtered. Not because the pfSense® software isn't
+capable, but because they actually do not touch the firewall at all. A prime
+example of this is trying to keep one device on the LAN from accessing
+another device on the same LAN. This is not possible if both clients are on
+the same subnet and switch; In that case, the routing of packets is handled
+at the switch level (layer 2), and the firewall has no knowledge of the
+traffic. If there is a need to control access in this way, the devices in
+question must be on separate firewall interfaces. When on different "legs"
+of the network, their traffic will route through the firewall, the firewall
+will have full control of the flow.
 
 Port Forward *pass* action
 --------------------------
