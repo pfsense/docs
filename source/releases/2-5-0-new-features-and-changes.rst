@@ -1,7 +1,7 @@
 2.5.0 New Features and Changes
 ==============================
 
-pfSense software version 2.5.0 brings a major OS version upgrade, OpenSSL
+pfSense® software version 2.5.0 brings a major OS version upgrade, OpenSSL
 upgrades, PHP and Python upgrades, and numerous bug fixes.
 
 .. warning:: The original plan was to include a RESTCONF API in pfSense version
