@@ -5,18 +5,19 @@ Configuring the DNS Resolver
 caching DNS resolver. It provides various modules so that DNSSEC (secure
 DNS) validation and stub-resolvers are possible.
 
-On pfSense 2.2, Unbound has been integrated into the base system.
-Unbound is also the default DNS Resolver for new installations.
+On pfSense® software version 2.2, Unbound has been integrated into the 
+base system. Unbound is also the default DNS Resolver for new installations.
 
-This page covers usage of Unbound in the base system of pfSense 2.2 and
-later.
+This page covers usage of Unbound in the base system of pfSense software
+version 2.2 and later.
 
 Configuration
 -------------
 
-To configure Unbound on pfSense 2.2, visit **Services > DNS Resolver**.
-By default the service is enabled for new installations. Systems
-upgraded from earlier versions of pfSense would have upgraded with the
+To configure Unbound on pfSense software version 2.2, visit 
+**Services > DNS Resolver**. By default the service is enabled for new 
+installations. Systems upgraded from earlier versions of pfSense software 
+would have upgraded with the
 :doc:`DNS Forwarder </dns/dns-forwarder>` enabled.
 
 Unbound requires that the :doc:`DNS Forwarder </dns/dns-forwarder>` be disabled
@@ -50,9 +51,9 @@ services.
   enabled.
 - **Register DHCP leases in the DNS Resolver**: DHCP static mappings
   can be registered in Unbound which enables the resolving of hostnames
-  that have been assigned addresses by the DHCP server in pfSense. This
-  should only be enabled on networks where the client hostnames can be
-  trusted or controlled.
+  that have been assigned addresses by the DHCP server in pfSense 
+  software. This should only be enabled on networks where the client
+  hostnames can be trusted or controlled.
 - **Register DHCP static mappings in the DNS Resolver**: As above, but
   for static mappings.
 - **TXT Comment support**: Provides the ability to view comments
