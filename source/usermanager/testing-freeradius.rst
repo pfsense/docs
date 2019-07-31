@@ -2,7 +2,7 @@ Testing the FreeRADIUS Package
 ==============================
 
 Testing the :doc:`FreeRADIUS 2.x Package </usermanager/freeradius-2-x-package>` on
-pfSense
+a pfSense® firewall.
 
 Test the FreeRADIUS configuration
 ---------------------------------
