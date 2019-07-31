@@ -1,10 +1,10 @@
 Configuring the DHCPv6 Server
 =============================
 
-The DHCPv6 server in pfSense will hand out addresses to DHCPv6 clients
-and automatically configure them for network access. By default, the
-DHCPv6 server is enabled on the LAN interface and set to use a prefix
-obtained by tracking WAN's DHCPv6 delegation.
+The DHCPv6 server in pfSense® software will hand out addresses to
+DHCPv6 clients and automatically configure them for network access.
+By default, the DHCPv6 server is enabled on the LAN interface and
+set to use a prefix obtained by tracking WAN's DHCPv6 delegation.
 
 The DHCPv6 server page, found under **Services > DHCPv6 Server**, has a
 tab for each available interface. The DHCPv6 daemon can only run and be
