@@ -4,9 +4,9 @@ Firewall Rule Schedules
 Firewall rules can be scheduled so that they are only active at certain
 times of day or on certain specific days or days of the week.
 
-Before a schedule can be applied to a rule, it must be created under
-**Firewall > Schedules**. Then, when creating a rule, pick the defined
-schedule from the list.
+Before a schedule can be applied to a rule, it must be created in the
+pfSense® webGUI under **Firewall > Schedules**. Then, when creating
+a rule, pick the defined schedule from the list.
 
 Scheduled rules will act as though they do not exist when the scheduled
 time is not active.
