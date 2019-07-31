@@ -1,7 +1,7 @@
 Restoring a pfSense Configuration to a Different Version
 ========================================================
 
-Configurations are specific to a given pfSense version. The version of
+Configurations are specific to a given pfSense® version. The version of
 FreeBSD used is not relevant. The platform being used (full installation
 or NanoBSD) is also not relevant, the configuration is the same on all
 platforms and architectures using the same pfSense version.
