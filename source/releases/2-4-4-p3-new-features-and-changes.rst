@@ -1,7 +1,7 @@
 2.4.4-p3 New Features and Changes
 =================================
 
-pfSense software version 2.4.4-p3 addresses security and other issues found in
+pfSense® software version 2.4.4-p3 addresses security and other issues found in
 :doc:`2.4.4-p2 <2-4-4-p2-new-features-and-changes>`.
 
 .. tip:: For those who have not yet updated to 2.4.4-p2 or 2.4.4, consult
