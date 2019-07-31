@@ -20,7 +20,6 @@ environments.
    /hardware/writing-disk-images
    writing-iso-images
    /hardware/connecting-to-the-serial-console
-   installing-on-embedded-platforms
    installing-pfsense-over-an-existing-freebsd-installation
    installation-troubleshooting
 
