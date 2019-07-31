@@ -1,8 +1,8 @@
-Recovering Access when Locked Out of the WebGUI
+Recovering Access when Locked Out of the webGUI
 ===============================================
 
-There are a few tricks that can be used to get back into the WebGUI
-should access be lost.
+There are a few tricks that can be used to get back into the pfSense®
+webGUI, should access be lost.
 
 Forgot Password
 ---------------
@@ -10,7 +10,7 @@ Forgot Password
 If the password for the system has been forgotten it can be reset easily
 with console access. Get to the physical console (Keyboard/Monitor, or
 :doc:`Serial </hardware/connecting-to-the-serial-console>`) and use option **3)** to
-reset the WebGUI password.
+reset the webGUI password.
 
 Forgotten Password with Locked Console
 --------------------------------------
@@ -55,7 +55,7 @@ HTTP vs HTTPS confusion
 -----------------------
 
 Ensure that the proper protocol is in use, either HTTP or HTTPS. The
-default WebGUI protocol is HTTPS.
+default webGUI protocol is HTTPS.
 
 If one doesn't work, try the other. It may also be necessary to force
 the "wrong" protocol on a port, like so:
@@ -64,15 +64,15 @@ the "wrong" protocol on a port, like so:
 - https://www.pfsensebox:80
 
 The GUI protocol may be reset from the console. Choose to reset the LAN
-IP, enter the same IP, and it will prompt to reset the WebGUI back to
+IP, enter the same IP, and it will prompt to reset the webGUI back to
 HTTP.
 
 Blocked access with firewall rules
 ----------------------------------
 
-If access to the WebGUI is denied remotely with a firewall rule, there
+If access to the webGUI is denied remotely with a firewall rule, there
 may still be hope. This shouldn't happen from the LAN as there is an
-anti-lockout rule that maintains access to the WebGUI from that
+anti-lockout rule that maintains access to the webGUI from that
 interface.
 
 Having to walk someone on-site through fixing the rule is better than
@@ -143,28 +143,28 @@ port 443. Adjust as needed.
 Remotely Circumvent Firewall Lockout With SSH Tunneling
 -------------------------------------------------------
 
-If access to the WebGUI has been completely blocked remotely (which is
+If access to the webGUI has been completely blocked remotely (which is
 smart to do!) but SSH access is still available, then there is a
 relatively easy way to get in: SSH Tunneling.
 
-If the WebGUI is on port 80, set the ssh client to forward local port 80
+If the webGUI is on port 80, set the ssh client to forward local port 80
 (or 8080, or whatever) to remote port "localhost:80", then point a
 browser to http://127.0.0.1:80 (or whichever local port was chosen.) If
-the WebGUI is on another port, use that instead. Obviously, if https was
-used, use https on the URL to access the WebGUI this way.
+the webGUI is on another port, use that instead. Obviously, if https was
+used, use https on the URL to access the webGUI this way.
 
 Here is how to setup a port 80 tunnel in PuTTY:
 
 .. image:: /_static/usermanager/puttytunnel.jpg
 
 Fill out the options as shown, then click add. Once connected and
-authenticated, the WebGUI may be accessed using the redirected local
+authenticated, the webGUI may be accessed using the redirected local
 port.
 
 Squid Took Over My HTTP Port!
 -----------------------------
 
-If squid was accidentally configured to use the same port as the WebGUI,
+If squid was accidentally configured to use the same port as the webGUI,
 and then the GUI cannot be reached to fix the configuration, it may need
 to be fixed as follows:
 
