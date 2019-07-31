@@ -4,7 +4,7 @@ Upgrade Troubleshooting
 =======================
 
 This document describes methods of troubleshooting problems firewalls may
-encounter when attempting to run an upgrade.
+encounter when attempting to run a pfSense® upgrade.
 
 .. contents:: Upgrade Troubleshooting
    :depth: 2
@@ -146,7 +146,7 @@ Accessing the hosts using their real hostnames will work with a browser::
 IPv6 Connectivity Problems
 --------------------------
 
-If IPv6 is configured on the firewall, pfSense will prefer to use it when
+If IPv6 is configured on the firewall, the pfSense software will prefer to use it when
 performing an update. There are cases when a firewall may have broken IPv6
 connectivity, however, that contribute to problems updating. This could manifest
 as a timeout or routing error when upgrading.
@@ -191,9 +191,10 @@ Last Resort
 If nothing else works then a reinstall will eliminate any possibility of
 problems related to the upgrade itself.
 
-pfSense supports multiple options to easily restore the configuration. The
+pfSense software supports multiple options to easily restore the configuration. The
 fastest method is **Recover config.xml** as discussed in
 :doc:`../backup/automatically-restore-during-install`. Using that method,
-pfSense can pick up the existing configuration from the existing install and use
-it, eliminating the need for any manual restore process. The firewall will boot
-up after installation with the old settings and reinstall packages as needed.
+the pfSense installation can pick up the existing configuration from the existing
+install and use it, eliminating the need for any manual restore process. The
+firewall will boot up after installation with the old settings and reinstall
+packages as needed.
