@@ -1,8 +1,9 @@
 Viewing Routes
 ==============
 
-The routing table on the firewall can be viewed at **Diagnostics >
-Routes**. IPv4 and IPv6 routes are displayed.
+From the pfSense® webGUI, the routing table on the firewall can be
+viewed at **Diagnostics > Routes**. IPv4 and IPv6 routes are
+displayed.
 
 Each line shows the destination network, gateway by which it can be
 reached, routing flags, number of references and times the route has
