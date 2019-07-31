@@ -1,7 +1,7 @@
 2.1.4 New Features and Changes
 ==============================
 
-2.1.4 follows very shortly after
+pfSense® software version 2.1.4 follows very shortly after
 :doc:`2.1.3 </releases/2-1-3-new-features-and-changes>` and is primarily a security
 release. Refer to the :doc:`2.1.1 release notes </releases/2-1-1-new-features-and-changes>`,
 :doc:`2.1.2 release notes </releases/2-1-2-new-features-and-changes>`, and
