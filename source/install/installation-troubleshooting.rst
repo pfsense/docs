@@ -39,12 +39,13 @@ Boot from hard drive after CD installation fails
 ------------------------------------------------
 
 After the CD installation completes and the system restarts, there are
-some conditions which may prevent pfSense from fully booting. The most
-common reasons are typically BIOS or hard drive controller related. Some
-of these may be worked around by choosing different options for the boot
-loader during the installation process, enabling/disabling Packet Mode,
-or by installing a third party boot loader such as GRUB. Upgrading the
-BIOS to the latest version available may also help in this case.
+some conditions which may prevent pfSense® software from fully booting.
+The most common reasons are typically BIOS or hard drive controller
+related. Some of these may be worked around by choosing different
+options for the boot loader during the installation process, 
+enabling/disabling Packet Mode, or by installing a third party boot
+loader such as GRUB. Upgrading the BIOS to the latest version available
+may also help in this case.
 
 Altering the SATA options in the BIOS has improved booting in some
 situations as well. If a SATA hard drive is being used, experiment with
