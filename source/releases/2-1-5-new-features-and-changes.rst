@@ -1,7 +1,7 @@
 2.1.5 New Features and Changes
 ==============================
 
-The 2.1.5 release follows shortly after
+The pfSense® software version 2.1.5 release follows shortly after
 :doc:`2.1.4 </releases/2-1-4-new-features-and-changes>` and is primarily a security
 release.
 
