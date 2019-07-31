@@ -1,9 +1,9 @@
 Using Wireless Interfaces
 =========================
 
-Starting with pfSense 2.4, wireless interfaces **must** be created on
-the **Wireless** tab under **Interfaces > (assign)** before they can be
-assigned.
+Starting with pfSense® software version 2.4, wireless interfaces
+**must** be created on the **Wireless** tab under **Interfaces >
+(assign)** before they can be assigned.
 
 Certain supported cards and chipsets can have **Virtual Access Points**
 (VAPs). This allows multiple access points to be run on a single
