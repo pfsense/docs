@@ -1,14 +1,14 @@
 2.3.4-p1 New Features and Changes
 =================================
 
-The 2.3.4-p1 errata release is a minor release after
+The pfSense® software version 2.3.4-p1 errata release is a minor release after
 :doc:`2.3.4 </releases/2-3-4-new-features-and-changes>` and contains beneficial
 security and bug fixes.
 
 Security / Errata
 -----------------
 
--  pfSense Advisories
+-  pfSense Security Advisories
 
    -  `pfSense-SA-17_05.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-17_05.webgui.asc>`__:
 
