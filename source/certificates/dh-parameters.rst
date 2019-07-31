@@ -8,9 +8,9 @@ DH parameters are not specific to a given setup in the way that
 certificates or keys are. There is no need to import an existing set of
 DH parameters because generating new parameters is a better practice.
 
-pfSense ships with a default set of DH parameter files so that new
-firewalls do not have to spend significant CPU resources to build them
-when they are needed. These pre-generated parameters are stored in
+pfSense® software ships with a default set of DH parameter files so that
+new firewalls do not have to spend significant CPU resources to build
+them when they are needed. These pre-generated parameters are stored in
 */etc/dh-parameters.*. Selecting a specific length in the GUI will use
 the DH parameter set from the corresponding file. These DH parameters
 are not stored in config.xml.
@@ -27,7 +27,7 @@ length. For example, generating 1024-bit DH parameters only takes about
 7 seconds on a C2758 CPU, but generating 2048-bit parameters takes 4
 minutes, and generating 4096-bit parameters takes 10 minutes.
 
-The pfSense GUI will allow longer DH parameter to be selected if they
+The pfSense webGUI will allow longer DH parameter to be selected if they
 exist in /etc/ in the format specified above.
 
 Supported lengths are: 1024, 2048, 3072, 4096, 7680, 8192, 15360, and
