@@ -79,7 +79,7 @@ hostname.
 Use the Correct Port
 ~~~~~~~~~~~~~~~~~~~~
 
-When using LDAP, pfSense will use an **ldaps** URL which defaults to
+When using LDAP, pfSense® software will use an **ldaps** URL which defaults to
 port **636**. It will **NOT** do starttls on port **389**. Ensure the
 LDAP server is listening properly on port **636**.
 
