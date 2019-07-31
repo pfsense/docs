@@ -3,7 +3,7 @@ Floating Rules
 
 Floating Rules are advanced Firewall Rules which can apply in any
 direction and to any or multiple interfaces. Floating Rules are defined
-under **Firewall > Rules** on the **Floating** tab.
+in the pfSense® webGUI under **Firewall > Rules** on the **Floating** tab.
 
 Many firewalls do not need any Floating Rules, or may only have them for
 the traffic shaper. For those choosing to use them, they can make some
@@ -27,8 +27,7 @@ Floating Rules can:
 
 Floating Rules are parsed before rules on other interfaces. Thus, if a
 packet matches a floating rule and the Quick option is active on that
-rule, pfSense will not attempt to filter that packet against any rule on
+rule, pfSense software will not attempt to filter that packet against any rule on
 any other group or interface tab.
 
 Rules using the *Queue* action do not work with **quick** checked.
-
