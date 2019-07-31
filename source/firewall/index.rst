@@ -2,8 +2,8 @@
 Firewall
 ********
 
-One of the primary purposes of pfSense is to act as a firewall, deciding which
-traffic to pass or block between networks.
+One of the primary purposes of pfSense® software is to act as a firewall,
+deciding which traffic to pass or block between networks.
 
 Managing Firewall Rules
 '''''''''''''''''''''''
