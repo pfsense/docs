@@ -4,8 +4,9 @@ Performing a Remote Backup of a pfSense Configuration
 Use the Auto Config Backup Package
 ----------------------------------
 
-The easiest choice. Utilize the free :doc:`/backup/autoconfigbackup` package,
-rest easy knowing it's being taken care of without needing to worry. Sit back,
+The easiest choice to backup pfSense® software. Utilize the free
+:doc:`/backup/autoconfigbackup` package, rest easy knowing it's
+being taken care of without needing to worry. Sit back,
 have a cup of coffee, and read on for alternate techniques.
 
 Pull it
