@@ -1,7 +1,7 @@
 2.4.4-p2 New Features and Changes
 =================================
 
-pfSense software version 2.4.4-p2 adds support for new Netgate hardware and
+pfSense® software version 2.4.4-p2 adds support for new Netgate hardware and
 corrects issues found with :doc:`2.4.4-p1 <2-4-4-p1-new-features-and-changes>`.
 
 .. warning:: For those who have not yet updated to 2.4.4-p1 or 2.4.4, consult
