@@ -4,7 +4,7 @@
 Security Fixes
 --------------
 
-Three FreeBSD security advisories are applicable to prior pfSense
+Three FreeBSD security advisories are applicable to prior pfSense® software
 releases. These aren't remotely exploitable in and of themselves, but
 anyone who can execute arbitrary code on the firewall could use one or
 more of these to escalate privileges.
