@@ -29,7 +29,8 @@ Migrate LAN to a LAGG
 #. Ensure the second NIC for the LAGG is not assigned (e.g. *re0* mapped
    to *OPT1*)
 
-   #. Check **Interfaces > (assign)** and remove its entry if present
+   #. In the pfSense® webGUI, check **Interfaces > (assign)** and remove
+      its entry if present
 
 #. Create a new LAGG including only the second NIC
 
