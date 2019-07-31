@@ -6,8 +6,8 @@ OpenVPN clients. This document covers only a remote access OpenVPN
 server, but a similar process could be applied for site to site VPNs.
 
 There are many different ways to configure multiple WANs with OpenVPN on
-pfSense for remote access or site to site VPNs. Many of these were
-covered during the September 2014 |hangout_link|.
+pfSense® software for remote access or site to site VPNs. Many of these
+were covered during the September 2014 |hangout_link|.
 
 .. seealso:: The "Advanced OpenVPN Concepts" presentation is available through
   |hangout_link|.
