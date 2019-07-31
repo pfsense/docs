@@ -19,7 +19,7 @@ Security/Errata
    -  `OpenVPN 2.3.11 Change
       Log <https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn23>`__
 
--  pfSense Advisories
+-  pfSense® Software Advisories
 
    -  `pfSense-SA-16_03.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-16_03.webgui.asc>`__
    -  `pfSense-SA-16_04.filterlog <https://www.pfsense.org/security/advisories/pfSense-SA-16_04.filterlog.asc>`__
