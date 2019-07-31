@@ -10,8 +10,8 @@ web servers. `Most browsers`_ trust certificates from Let's Encrypt. These
 certificates can be used for web servers (HTTPS), SMTP servers, IMAP/POP3
 servers, and other similar roles which utilize the same type of certificates.
 
-The ACME Package for pfSense interfaces with Let's Encrypt to handle the
-certificate generation, validation, and renewal processes.
+The ACME Package for pfSense® software interfaces with Let's Encrypt to handle
+the certificate generation, validation, and renewal processes.
 
 Certificates from Let's Encrypt are domain validated, and this validation
 ensures that the system requesting the certificate has authority over the domain
