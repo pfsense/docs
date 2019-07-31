@@ -11,10 +11,11 @@ attempt to resolve queries using all currently available configured DNS
 servers. This way, it is not necessary to configure public DNS servers
 directly on client systems.
 
-If the DNS forwarder is enabled, the internal interface IP for pfSense
-will be handed out to :doc:`DHCP clients </dhcp/dhcp-server>` as a DNS server. If
-the DNS forwarder is disabled, the DNS servers configured on pfSense
-will be handed out instead.
+If the DNS forwarder is enabled, the internal interface IP for the 
+pfSense® software will be handed out to 
+:doc:`DHCP clients </dhcp/dhcp-server>` as a DNS server. If
+the DNS forwarder is disabled, the DNS servers configured on the pfSense
+device will be handed out instead.
 
 Optionally, the DNS forwarder can register hostnames from DHCP leases so
 that local hostnames can be resolved via DNS. The same can be done with
@@ -26,10 +27,10 @@ place of the responses that would have otherwise come from the upstream
 DNS servers. This can be used for Split DNS, or making undesirable
 domains (e.g. myspace.com) resolve to a non-existent IP address.
 
-On pfSense 2.1 and later, Host Overrides work for both IPv4 and IPv6
+On pfSense software version 2.1 and later, Host Overrides work for both IPv4 and IPv6
 addresses.
 
-On pfSense 2.2, The DNS Forwarder is not active by default. It has been
+On pfSense software version 2.2, The DNS Forwarder is not active by default. It has been
 replaced by :doc:`Unbound </dns/unbound-dns-resolver>` as a DNS Resolver. It may
 still be used, and is still active on upgraded configurations. To use
 the DNS Forwarder (dnsmasq) on 2.2, first disable Unbound and then
