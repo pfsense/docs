@@ -1,8 +1,8 @@
 Basic Firewall Configuration Example
 ====================================
 
-This article is designed to describe how pfSense performs rule matching
-and a basic strict set of rules.
+This article is designed to describe how pfSense® software performs
+rule matching and a basic strict set of rules.
 
 Caveats
 -------
