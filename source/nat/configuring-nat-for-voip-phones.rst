@@ -14,7 +14,7 @@ ideas.
 Disable source port rewriting
 -----------------------------
 
-By default pfSense rewrites the source port on all outbound traffic.
+By default pfSense® software rewrites the source port on all outbound traffic.
 This is necessary for proper NAT in some circumstances such as having
 multiple SIP phones behind a single public IP registering to a single
 external PBX. With a minority of providers, rewriting the source port of
