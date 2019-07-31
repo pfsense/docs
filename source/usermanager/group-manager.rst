@@ -3,7 +3,8 @@ Managing Groups
 
 Users can be a member of groups, which can have different access rights.
 
-Groups are managed from the **Groups** tab on **System > User Manager**.
+In the pfSense® webGUI, groups are managed from the **Groups** tab on 
+**System > User Manager**.
 
 By default, there are two groups, **All Users**, and **Admins**. Members
 of the **Admins** group have full access to the WebGUI. The **All
