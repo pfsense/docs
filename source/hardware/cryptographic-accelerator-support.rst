@@ -21,8 +21,8 @@ image. It will not work on i386 and will fail with a message similar to::
 
   Dec  4 14:45:05 pfSense kernel: link_elf: symbol AES_GCM_encrypt undefined
 
-Reload pfSense on that hardware using an amd64 pfSense image and it will
-work.
+Reload pfSense software on that hardware using an amd64 pfSense image and it
+will work.
 
 Activating the Hardware
 -----------------------
