@@ -1,7 +1,7 @@
 Assign Interfaces
 =================
 
-The **Interface Assignments** screen at **Interfaces > (assign)** lists
+In pfSense® software, the **Interface Assignments** screen at **Interfaces > (assign)** lists
 the current system interfaces such as WAN and LAN, and a drop-down box
 next to each with a list of all available network interfaces on the
 system (real and virtual).
