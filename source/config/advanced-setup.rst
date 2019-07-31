@@ -1,8 +1,8 @@
 Advanced pfSense Settings
 =========================
 
-The advanced settings available under **System > Advanced** do not
-normally need adjusting on a typical setup. There are there for
+The advanced pfSense® settings available under **System > Advanced**
+do not normally need adjusting on a typical setup. There are there for
 additional tweaking or for those who need the functionality given.
 
 The options available are all described in detail on their individual
