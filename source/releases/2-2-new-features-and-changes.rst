@@ -20,7 +20,7 @@ Security Fixes
    `CVE-2014-8104 <http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8104>`__
 -  NTP update
    `FreeBSD-SA-14:31.ntp <https://www.freebsd.org/security/advisories/FreeBSD-SA-14:31.ntp.asc>`__
-   though these circumstances `don't seem to impact pfSense`_.
+   though these circumstances `don't seem to impact pfSense® software`_.
 
 Default Configuration Changes
 -----------------------------
@@ -591,4 +591,4 @@ The NIC device change issue has no workaround. Manual reassignment is
 required at this time. Note there have been performance issues reported
 in Xen with this NIC device change.
 
-.. _don't seem to impact pfSense: https://www.netgate.com/blog/ntp-project-security-vulnerabilities.html
+.. _don't seem to impact pfSense® software: https://www.netgate.com/blog/ntp-project-security-vulnerabilities.html
