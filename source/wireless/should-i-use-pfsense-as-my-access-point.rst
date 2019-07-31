@@ -1,5 +1,5 @@
-Should I use pfSense as my access point
-=======================================
+Should I use a pfSense appliance as my access point
+===================================================
 
 Historically, the access point functionality in FreeBSD has suffered
 from serious compatibility or performance problems with some wireless
