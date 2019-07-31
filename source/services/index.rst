@@ -2,7 +2,7 @@
 Services
 ********
 
-pfSense can provide clients with a variety of **Services** to enhance their
+pfSense® software can provide clients with a variety of **Services** to enhance their
 experience in various ways. Several of these are complex and warrant their own
 sections of the docuementation, while others are simpler to configure.
 
@@ -20,7 +20,7 @@ Complex Services
 Simple Services
 '''''''''''''''
 
-pfSense also offers several services not covered in their own sections of the
+pfSense software also offers several services not covered in their own sections of the
 documentation.
 
 .. toctree::
