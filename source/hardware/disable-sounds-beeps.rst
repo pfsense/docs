@@ -41,8 +41,8 @@ As an alternative, the system bell may be disabled globally:
 
 - Click **Save**
 
-Disable All Sounds pfSense 2.4.1
---------------------------------
+Disable All Sounds in pfSense® Software version 2.4.1
+-----------------------------------------------------
 
 As an alternative, the system bell may be disabled globally:
 
