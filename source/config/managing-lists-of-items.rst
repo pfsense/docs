@@ -1,7 +1,7 @@
 Managing Lists of Items in the GUI
 ==================================
 
-The WebGUI has a common set of icons which are used for managing lists
+The pfSense® WebGUI has a common set of icons which are used for managing lists
 and collections of objects throughout the firewall. Not every icon is used in
 every page, but their meanings are consistent based on the context in which they
 are seen. Examples of such lists include firewall rules, NAT rules, IPsec,
