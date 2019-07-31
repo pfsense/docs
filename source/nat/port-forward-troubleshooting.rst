@@ -1,8 +1,8 @@
 Troubleshooting Port Forwards
 =============================
 
-If problems are encountered while attempting a port forward, try the
-following.
+If problems are encountered while attempting a port forward using
+pfSense® software, try the following.
 
 #. If the :doc:`/nat/forwarding-ports-with-pfsense` guide was not
    followed exactly, delete anything that has been tried and start from
