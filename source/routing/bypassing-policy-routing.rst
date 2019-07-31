@@ -1,11 +1,12 @@
 Bypassing Policy Routing
 ========================
 
-The Multi-WAN capability of pfSense uses the *route-to* functionality in
-pf to direct traffic out via specific gateways. Rules that match traffic
-to send connections out a specific WAN can cause local or VPN traffic
-destinations to exit the firewall WAN rather than following local
-routing, which is likely not the intended effect.
+The Multi-WAN capability of pfSense® software uses the *route-to*
+functionality in pf to direct traffic out via specific gateways.
+Rules that match traffic to send connections out a specific WAN
+can cause local or VPN traffic destinations to exit the firewall
+WAN rather than following local routing, which is likely not the
+intended effect.
 
 To ensure proper delivery of local or VPN routed traffic, or other
 external traffic that must obey the system routing table, rules must be
