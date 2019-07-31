@@ -1,7 +1,7 @@
 Blocking Instant Message Applications
 =====================================
 
-pfSense is a firewall that works on layer 3 and layer 4, so it can
+pfSense® software is a firewall that works on layer 3 and layer 4, so it can
 handle IP addresses and port numbers well. Instant Message (IM) vendors
 actively try to bypass firewalls so they change server IP addresses
 frequently, use many IP addresses, and disguise traffic as HTTP. This
