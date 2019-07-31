@@ -1,7 +1,8 @@
 Connecting to the Serial Console
 ================================
 
-Connecting to a Serial Console on pfSense requires a few things:
+Connecting to a Serial Console with pfSense® software requires
+a few things:
 
 -  A serial port on the client system, either built-in or a
    USB-to-serial adapter.
