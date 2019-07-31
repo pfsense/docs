@@ -1,7 +1,8 @@
 Filter Reload Status
 ====================
 
-The current status of a filter reload may be viewed at **Status > Filter
+The current status of a filter reload may be viewed in the pfSense® 
+webGUI at **Status > Filter
 Reload**. A link to this page is available any time a filter change is
 made. The progress of the reload is displayed automatically, and it is
 updated automatically.
