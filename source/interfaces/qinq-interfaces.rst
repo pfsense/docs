@@ -1,8 +1,9 @@
 QinQ Interfaces
 ===============
 
-QinQ interfaces may be created that have nested 802.11q VLAN tags. These
-are managed at **Interfaces > (assign)** on the **QinQs** tab.
+QinQ interfaces may be created that have nested 802.11q VLAN tags. In
+pfSense® software, these are managed at **Interfaces > (assign)** on
+the **QinQs** tab.
 
 The NIC in use must properly support 802.11q VLANs, or the reduced MTU
 from using such an interface may be problematic.
