@@ -1,8 +1,8 @@
 PPPoE Server Settings
 =====================
 
-The **PPPoE server** (**Services > PPPoE Server**) allows pfSense to
-terminal connections from PPPoE clients. This can be used as a means to
+The **PPPoE server** (**Services > PPPoE Server**) allows pfSense® software
+to terminal connections from PPPoE clients. This can be used as a means to
 restrict network access on a given interface, either wired or wireless. The
 setup is very similar to the PPTP Server.
 
