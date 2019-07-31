@@ -2,7 +2,7 @@
 Hardware
 ********
 
-Various topics about pfSense and its interaction with hardware.
+Various topics about pfSense® software and its interaction with hardware.
 
 .. toctree::
    :maxdepth: 1
