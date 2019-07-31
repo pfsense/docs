@@ -3,7 +3,7 @@ Troubleshooting 1:1 NAT
 
 If 1:1 NAT (or even Outbound NAT) is properly configured, but the system
 still appears to access sites like https://www.netgate.com/ip and
-http://www.ipchicken.com from main WAN IP Address on the pfSense
+http://www.ipchicken.com from main WAN IP Address on the pfSense®
 firewall, then squid or another web proxy is likely being used.
 
 Even though 1:1 NAT is in place, the web requests are still proxied
