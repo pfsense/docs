@@ -1,7 +1,7 @@
 Outbound NAT
 ============
 
-Outbound NAT determines how traffic leaving a pfSense system will be
+Outbound NAT determines how traffic leaving a pfSense® system will be
 translated.
 
 Outbound NAT **does not** control which interface traffic will leave,
