@@ -1,18 +1,18 @@
 Supported Wireless Cards
 ========================
 
-pfSense includes built in wireless capabilities that turn a pfSense
-firewall into a wireless access point, use a wireless 802.11 connection
-as a WAN connection, or both.
+pfSense® software includes built in wireless capabilities that turn a
+pfSense firewall into a wireless access point, use a wireless 802.11
+connection as a WAN connection, or both.
 
 Recommended Wireless Cards
 --------------------------
 
 There are a variety of wireless cards supported in FreeBSD, and pfSense
-includes support for every card supported by FreeBSD. Some are supported
-better than others. Most pfSense developers work with Atheros hardware,
-so it tends to be the most recommended hardware. Many have success with
-other cards as well.
+software includes support for every card supported by FreeBSD. Some are
+supported better than others. Most pfSense developers work with Atheros
+hardware, so it tends to be the most recommended hardware. Many have
+success with other cards as well.
 
 Wireless cards from big name vendors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
