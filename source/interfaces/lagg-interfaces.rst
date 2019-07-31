@@ -58,7 +58,7 @@ LAGG Bandwidth
 Using a LAGG does not necessarily guarantee full throughput equal to the sum of
 all interfaces. In particular, a single flow will not exceed the throughput of a
 LAGG member interface. Traffic on a LAGG is hashed in such a way that flows
-between two hosts, such as pfSense and an upstream gateway, would only use a
+between two hosts, such as pfSense® software and an upstream gateway, would only use a
 single link since the flow is between a single MAC address on each side.
 
 In networks where there are many hosts communicating with different MAC
