@@ -63,7 +63,7 @@ a particular queue. This works well with IPv4/IPv6 TCP and UDP traffic, for
 example, but fails with other protocols such as those used for PPPoE.
 
 This can lead to a network card under performing with the default network
-settings on pfSense, as noted on `#4821`_ and `FreeBSD PR 203856`_.
+settings on pfSense® software, as noted on `#4821`_ and `FreeBSD PR 203856`_.
 
 Adding a **System Tunable** or ``loader.conf.local`` entry for
 ``net.isr.dispatch=deferred`` can lead to performance gains on such systems.
