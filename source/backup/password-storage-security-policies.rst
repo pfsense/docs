@@ -13,7 +13,7 @@ encryption on those passwords, but that would only create a false sense of
 security. Since we cannot prompt the user for a password each time a PPP
 session is established or the DynDNS name needs to be updated, etc. any
 encryption we apply to the passwords can be reversed by anyone with access
-to the pfSense sources - i.e. everybody. Hashes like MD5 cannot be used where
+to the pfSense® sources - i.e. everybody. Hashes like MD5 cannot be used where
 the plaintext password is needed at a later stage, unlike for the system
 password, which is only stored as a hash.
 
