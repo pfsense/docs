@@ -1,10 +1,10 @@
 Console Types
 =============
 
-There are two console types available in pfSense, VGA and Serial. The
-active default console depends on the image/installer used and
-configuration settings. The difference between the two console types is
-explained in more detail below.
+There are two console types available with pfSense® software, VGA
+and Serial. The active default console depends on the image/installer
+used and configuration settings. The difference between the two 
+console types is explained in more detail below.
 
 VGA Console
 -----------
