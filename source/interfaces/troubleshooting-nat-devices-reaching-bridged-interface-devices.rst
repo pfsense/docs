@@ -3,7 +3,7 @@ Troubleshooting NAT Devices Reaching Bridged Interface Devices
 
 Yes. This is a common question because it is not possible in m0n0wall
 due to issues in IPFilter's ipnat when working with bridging. This is
-not an issue with pf, and hence not pfSense.
+not an issue with pf, and hence not pfSense® software.
 
 For hosts behind the NAT/routed segment, NAT must occur as traffic exits
 toward the bridged systems so that the return traffic will come back to
