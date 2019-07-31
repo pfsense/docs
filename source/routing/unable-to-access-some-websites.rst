@@ -9,7 +9,7 @@ possible causes.
 #. Ensure the subnet mask on the WAN interface of the firewall is
    correct
 #. Ensure the subnet mask on the client stations and on every interface
-   (and VPN) on pfSense is correct
+   (and VPN) in the pfSense® configuration is correct
 #. Ensure the WAN MTU is properly set (See
    `here <http://www.dslreports.com/faq/695>`__ to determine the MTU),
    use MSS to lower the MTU if necessary
