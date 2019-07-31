@@ -38,8 +38,8 @@ are enabled.
 -  **Network** - Select this and enter a network and mask
    (*10.99.0.0/16*, *aa:bb:cc:dd::0/64*)
 -  **LAN net** - The subnet configured on the LAN interface under
-   **Interfaces > LAN**. On pfSense 2.2+, this also includes IP alias
-   networks on that interface.
+   **Interfaces > LAN**. On pfSense® software version 2.2+, this also
+   includes IP alias networks on that interface.
 -  **LAN address** - The IP address configured on the LAN interface
    under **Interfaces > LAN**
 -  **zzz Net** / **zzz address** - Works the same as LAN above but for
@@ -53,7 +53,7 @@ are enabled.
 -  **L2TP clients** - Automatically locate and use the addresses of L2TP
    clients
 -  **This Firewall (self)** - Any IP address assigned to any interface
-   on this firewall (pfSense 2.2+)
+   on this firewall (pfSense software version 2.2+)
 
 These macros are handy because they allow generic rules to be created
 that refer to LAN or a specific interface. If that interface IP address
