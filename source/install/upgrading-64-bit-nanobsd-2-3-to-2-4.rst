@@ -1,11 +1,12 @@
 Upgrading 64-bit NanoBSD 2.3 to 2.4
 ===================================
 
-NanoBSD has been completely removed from pfSense 2.4, so an existing
-64-bit installation of pfSense 2.3 using NanoBSD must be changed to a
-full installation. The best way to accomplish this task is by
-reinstalling pfSense on the firewall device, but in some cases that may
-be impossible or impractical.
+NanoBSD has been completely removed from pfSense® software version
+2.4, so an existing 64-bit installation of pfSense version 2.3
+using NanoBSD must be changed to a full installation. The best way
+to accomplish this task is by reinstalling pfSense software on the
+firewall device, but in some cases that may be impossible or
+impractical.
 
 The procedure on this article converts an existing 64-bit NanoBSD
 installation to a full installation in-place without reinstalling,
