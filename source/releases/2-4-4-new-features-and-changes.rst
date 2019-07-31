@@ -92,7 +92,7 @@ Errata
    not appear in the **Installed Packages** list in the GUI, and must be
    entirely managed in the command line.
 
-   **This change does not affect packages installed from the official pfSense
+   **This change does not affect packages installed from the official pfSense®
    package repository.**
 
 * Removed options for the deprecated FEC LAGG Protocol `#8734 <https://redmine.pfsense.org/issues/8734>`__
