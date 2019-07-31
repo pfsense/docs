@@ -6,7 +6,7 @@ This article shows how ACPI can effectively be disabled. This method is
 the firewall is upgraded.
 
 There is typically no need to disable ACPI on current versions of
-pfSense with reasonably recent hardware. There may still be some edge
+pfSense® software with reasonably recent hardware. There may still be some edge
 cases that require it to be disabled, however.
 
 There have been 2 main reports floating around the forums, mailing list,
@@ -35,7 +35,8 @@ Long Boot
 This issue came by way of the mailing list. The admin reported that on
 an IBM X335 with Intel Xeon 2.8ghz and 2.5 GB of RAM), it would take the
 system upwards of 6 minutes to get fully booted with an older version of
-pfSense. The majority of the time was spent at the following message::
+pfSense software. The majority of the time was spent at the following
+message::
 
   smp: AP CPU #1 Launched!
 
