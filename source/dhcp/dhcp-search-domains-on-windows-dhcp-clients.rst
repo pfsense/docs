@@ -2,9 +2,9 @@ Using DHCP Search Domains on Windows DHCP Clients
 =================================================
 
 The DNS Search Domain functionality present in the DHCP Server settings
-on pfSense is only supported by some DHCP clients; pfSense uses the
-standard DHCP option 119 mechanism to deliver the search domains to
-clients which request them.
+in pfSense® software is only supported by some DHCP clients; pfSense
+software uses the standard DHCP option 119 mechanism to deliver the
+search domains to clients which request them.
 
 Unfortunately, The Microsoft Windows DHCP client **does not support**
 requesting option 119, so no matter which DHCP server is used, clients
