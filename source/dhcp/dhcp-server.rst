@@ -1,9 +1,9 @@
 Configuring the DHCP Server
 ===========================
 
-The DHCP server in pfSense will hand out addresses to DHCP clients and
-automatically configure them for network access. By default, the DHCP
-server is enabled on the LAN interface.
+The DHCP server in pfSense® software will hand out addresses to DHCP
+clients and automatically configure them for network access. By
+default, the DHCP server is enabled on the LAN interface.
 
 The DHCP server page, found under **Services > DHCP Server**, has a tab
 for each available interface. The DHCP daemon can only run on interfaces
