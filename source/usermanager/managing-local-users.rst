@@ -1,10 +1,10 @@
 Managing Local Users
 ====================
 
-In pfSense, user management has been centralized under **System > User
-Manager**. This takes the place of the individual user management and
-access server settings that used to be available under various
-subsystems.
+In pfSense® software, user management has been centralized under 
+**System > User Manager**. This takes the place of the individual
+user management and access server settings that used to be available
+under various subsystems.
 
 Users are managed at the list view on the **Users** tab. The admin user cannot
 be deleted and its username may not be changed
