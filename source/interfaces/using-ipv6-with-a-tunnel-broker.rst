@@ -4,18 +4,18 @@ Using IPv6 with a Tunnel Broker
 These instructions are adapted from the original document,
 http://iserv.nl/files/pfsense/ipv6/
 
-Hello, welcome to the page detailing the process of getting IPv6 support
-with a Tunnel Broker in pfSense 2.3.3 or above working. This guide can
-also work on older versions, but there may be minor differences in
-option locations or names.
+This page details the process of getting IPv6 support
+with a Tunnel Broker in pfSense® software version 2.3.3 or above
+working. This guide can also work on older versions, but there
+may be minor differences in option locations or names.
 
 Pitfalls
 --------
 
-If the installation of pfSense was upgraded from 2.0.x or before to 2.1
-or above, IPv6 support must be enabled by navigating to **System >
-Advanced** on the **Networking** tab, and checking **Allow IPv6**. New
-2.1 or above installs have this option enabled by default.
+If the installation of pfSense software was upgraded from 2.0.x or
+before to 2.1 or above, IPv6 support must be enabled by navigating to
+**System > Advanced** on the **Networking** tab, and checking **Allow
+IPv6**. New 2.1 or above installs have this option enabled by default.
 
 ICMP is required for IPv6 to work. If a firewall is in place on clients,
 make sure that ICMP over IPv6 is allowed.
@@ -33,7 +33,8 @@ Sign Up
 This article assumes that an account has already been registered with
 `Hurricane Electric <http://www.tunnelbroker.net>`__ or some other
 broker. After registering an account and getting the first /64 or /48
-IPv6 block assigned, the gif tunnel may be configured on pfSense.
+IPv6 block assigned, the gif tunnel may be configured on pfSense
+software.
 
 Enable ICMP
 ~~~~~~~~~~~
@@ -41,7 +42,7 @@ Enable ICMP
 Don't forget to enable ICMP on the WAN interface, if ICMP is blocked the
 tunnelbroker will not allow a tunnel to be configured. The source IP
 address on this rule could be limited to the remote endpoint IP of the
-gif tunnel, or *any*. It could allow for all icmp or just echoreq
+gif tunnel, or *any*. It could allow for all icmp or just echoreq.
 
 .. image:: /_static/interfaces/ipv6_howto_wan_icmp.png
 
