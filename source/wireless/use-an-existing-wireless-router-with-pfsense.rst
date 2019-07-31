@@ -2,7 +2,7 @@ Using Existing Wireless Routers with pfSense
 ============================================
 
 An existing wireless router, such as a Linksys WRT54G, may be used with
-pfSense in the following way.
+a pfSense® appliance in the following way.
 
 -  Give the Wireless Router a **LAN IP Address** in the **same subnet**
    as the pfSense interface it will be plugged into (Likely LAN, maybe
@@ -24,4 +24,3 @@ pfSense in the following way.
 
 Wireless clients should be able to associate with the AP, and then
 obtain their IP address/gateway/etc from the pfSense router.
-
