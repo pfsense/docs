@@ -3,7 +3,7 @@ Cryptographic Accelerator Support
 
 Cryptographic acceleration is available on some platforms, typically on
 hardware that has it available in the CPU like AES-NI, or built into the
-board such as like the one used on ALIX systems. Add on cards such as
+board such as the one used on ALIX systems. Add on cards such as
 those from Hifn are also supported. Any crypto accelerator supported by
 FreeBSD will work.
 
@@ -16,7 +16,7 @@ in dmesg as the glxsb device::
 Ensure that the VPN technology to be used is configured for the cipher
 shown in demsg, likely AES-128-CBC.
 
-AES-NI support via the kernel module requires running an amd64 pfSense
+AES-NI support via the kernel module requires running an amd64 pfSense®
 image. It will not work on i386 and will fail with a message similar to::
 
   Dec  4 14:45:05 pfSense kernel: link_elf: symbol AES_GCM_encrypt undefined
