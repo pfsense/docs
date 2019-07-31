@@ -2,10 +2,10 @@
 DHCP
 ****
 
-Dynamic Host Configuration Protocol (DHCP), allows a device such as pfSense to
-dynamically allocate IP addresses to clients from a predefined pool of
-addresses. DHCP also sends configuration information to clients such as a
-gateway, DNS servers, domain name, and other useful settings.
+Dynamic Host Configuration Protocol (DHCP), allows a device such as pfSense®
+software to dynamically allocate IP addresses to clients from a predefined
+pool of addresses. DHCP also sends configuration information to clients such
+as a gateway, DNS servers, domain name, and other useful settings.
 
 .. toctree::
    :maxdepth: 1
