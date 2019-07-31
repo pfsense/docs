@@ -11,8 +11,9 @@ To allow traffic in from the Internet, a firewall rule must be added on
 the associated WAN interface allowing the desired traffic, using the
 destination IP of the internal private IP.
 
-All of the 1:1 NAT mappings are listed under **Firewall > NAT**, on the
-**1:1** tab and they are managed from the list on that page.
+All of the 1:1 NAT mappings are listed in the pfSense® webGUI under 
+**Firewall > NAT**, on the **1:1** tab and they are managed from the
+list on that page.
 
 When adding or editing a 1:1 NAT entry, pick an **Interface** where the
 NAT should happen, specify an **External subnet IP** which is typically
