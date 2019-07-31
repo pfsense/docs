@@ -1,9 +1,9 @@
 Configuring Traffic Shaping
 ===========================
 
-Traffic Shaping and queuing in pfSense can be accomplished in several
-ways. The easiest to implement is ALTQ-based shaping with the Traffic
-Shaping Wizard.
+Traffic Shaping and queuing in pfSense® software can be accomplished
+in several ways. The easiest to implement is ALTQ-based shaping with
+the Traffic Shaping Wizard.
 
 Traffic Shaping configuration is based at **Firewall > Traffic Shaping**.
 
@@ -32,10 +32,10 @@ P2P traffic, which normally slows a connection down. Other generic
 traffic, like web pages (HTTP), email, IM, VOIP etc will go into other
 queues.
 
-On current versions of pfSense, queue sizes and bandwidths are sized
-appropriately for most configurations by the wizard, unlike older
-versions. In some cases they may need to be manually adjusted, but for
-the majority of cases it is unnecessary.
+On current versions of pfSense software, queue sizes and bandwidths
+are sized appropriately for most configurations by the wizard, unlike
+older versions. In some cases they may need to be manually adjusted,
+but for the majority of cases it is unnecessary.
 
 Multiple Lan/Wan
 ~~~~~~~~~~~~~~~~
@@ -61,7 +61,7 @@ Other wizards may be used, if their descriptions suit the environment in
 which they are intended to be used. Due to a large amount of unnecessary
 redundancy between the various wizards, use of the **Multiple Lan/Wan**
 wizard is recommended instead as it is the only similar option available
-on pfSense 2.2 and later.
+on pfSense software version 2.2 and later.
 
 Queuing Schedulers
 ------------------
@@ -95,9 +95,9 @@ Hierarchical Fair Service Curve (HFSC)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Hierarchical Fair Service Curve (HFSC) is the most complex of the ALTQ
-shaper types. In older versions of pfSense, it was the only option
-available. It has a heirarchy of queues and is capable of real-time
-traffic guarantees.
+shaper types. In older versions of pfSense software, it was the only
+option available. It has a heirarchy of queues and is capable of
+real-time traffic guarantees.
 
 It can be very effective for VoIP on links that degrade quickly, such as
 3G/4G, but it can be complex to configure and tweak for proper
