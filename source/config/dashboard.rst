@@ -1,7 +1,7 @@
 Using the pfSense Dashboard
 ===========================
 
-The pfSense dashboard is the main page of the firewall, and it makes
+The pfSense® dashboard is the main page of the firewall, and it makes
 monitoring various aspects of the system easy. Returning to the
 dashboard can be accomplished by clicking the logo in the upper left, or
 by navigating to **Status > Dashboard**.
