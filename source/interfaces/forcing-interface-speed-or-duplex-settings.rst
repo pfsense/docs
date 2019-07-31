@@ -2,10 +2,10 @@ Forcing Interface Speed or Duplex Settings
 ==========================================
 
 Forcing the speed and duplex settings for a network interface is
-supported in the GUI on pfSense 2.1 and later. Earlier versions did not
-support setting the speed in the GUI and required manually editing the
-configuration. If a speed and duplex must be set, upgrade to the most
-current firmware.
+supported in the GUI on pfSense® software version 2.1 and later.
+Earlier versions did not support setting the speed in the GUI and
+required manually editing the configuration. If a speed and duplex
+must be set, upgrade to the most current firmware.
 
 When forcing a speed and/or duplex option, both sides must match. The
 speed cannot be forced to an unmanaged switch. Having a speed/duplex
