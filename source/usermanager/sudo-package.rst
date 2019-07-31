@@ -5,7 +5,7 @@ The `sudo <http://www.sudo.ws/>`__ package configures basic rules for allowing
 unprivileged shell users (read: anyone but root/admin) to run commands as root
 or another user/group.
 
-Once the package is installed, navigate to **System > sudo**, and define
+Once the package is installed, use the pfSense® webGUI to navigate to **System > sudo**, and define
 commands and who may run them.
 
 More information on the full command options may be found in the `sudoers manual
