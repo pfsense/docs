@@ -1,21 +1,21 @@
-Restricting Access to the WebGUI
+Restricting Access to the webGUI
 ================================
 
 To enhance the security of a network, in many environments access to the
-management of a pfSense firewall will be limited with the use of
+management of a pfSense® firewall will be limited with the use of
 firewall rules. Restricting access to management interface is strongly
 recommended, for reasons as to why, see the blog post `Securely Managing
 Web-administered
 Devices <https://www.netgate.com/blog/securely-managing-web-administered-devices.html>`__.
 
-The default configuration of pfSense allows management access from any
+The default configuration of pfSense software allows management access from any
 machine on the LAN and denies it to anything outside of the local
 network. There is also an anti-lockout rule enabled by default that
 prevents firewall rules from being configured in a way that will lock
 the user out of the web interface.
 
 To restrict management access first ensure the LAN rules allow access to
-the port used for the WebGUI. This depicts the default LAN rule, which
+the port used for the webGUI. This depicts the default LAN rule, which
 allows access to the web interface.
 
 .. image:: /_static/firewall/default-lan-rule.png
