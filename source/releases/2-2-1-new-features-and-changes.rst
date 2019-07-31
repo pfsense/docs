@@ -8,7 +8,7 @@ Security/Errata Notices
    Integer overflow in IGMP protocol
    (`FreeBSD-SA-15:04.igmp <https://www.freebsd.org/security/advisories/FreeBSD-SA-15%3A04.igmp.asc>`__)
 -  `pfSense-SA-15_03.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_03.webgui.asc>`__:
-   Multiple XSS Vulnerabilities in the pfSense WebGUI
+   Multiple XSS Vulnerabilities in the pfSense® WebGUI
 -  `pfSense-SA-15_04.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_04.webgui.asc>`__:
    Arbitrary file deletion vulnerability in the pfSense WebGUI
 
@@ -21,7 +21,7 @@ Potentially Relevant
 ~~~~~~~~~~~~~~~~~~~~
 
 The following updates are included from upstream in FreeBSD, but are not
-directly relevant. Neither pfSense nor its packages include SCTP
+directly relevant. Neither pfSense software nor its packages include SCTP
 services, but such services may have been manually added by the user.
 
 -  `FreeBSD-SA-15:02.kmem <https://www.freebsd.org/security/advisories/FreeBSD-SA-15%3A02.kmem.asc>`__:
