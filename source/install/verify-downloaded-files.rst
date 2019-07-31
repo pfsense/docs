@@ -1,7 +1,7 @@
 Verifying Downloaded Files
 ==========================
 
-When downloading files from the pfSense web site, SHA256 checksum files
+When downloading files from the pfSense® web site, SHA256 checksum files
 are available.
 
 These SHA256 files can be used to verify the download completed
