@@ -10,7 +10,7 @@ Upgrading from versions older than pfSense 2.1
    configuration is automatically retained.
 
 See the HA section at the end of this document for a High Availability-specific
-pfsync note about 2.1 upgrades.
+pfsync note about pfSense® software version 2.1 upgrades.
 
 The **State Killing on Gateway Failure** feature (**System > Advanced**,
 **Miscellaneous tab**) now kills ALL states when a gateway has been detected as
