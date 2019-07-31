@@ -1,7 +1,7 @@
 Rebooting the Firewall
 ======================
 
-A pfSense firewall can be rebooted safely and returned to an operational
+A pfSense® firewall can be rebooted safely and returned to an operational
 state using the page at **Diagnostics > Reboot System**.
 
 From that page, click **Yes** to reboot the system.
