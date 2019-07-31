@@ -15,7 +15,7 @@ Security / Errata
    -  Updated libevent to 2.1.8 ( CVE-2016-10197, CVE-2016-10196,
       CVE-2016-10195 )
 
--  pfSense Advisories
+-  pfSense® Software Advisories
 
    -  Fixed encoding of displayed values from DHCP leases to prevent a
       badly formatted DHCP lease hostname from causing a potential XSS
