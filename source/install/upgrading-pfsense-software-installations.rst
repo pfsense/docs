@@ -1,10 +1,10 @@
 Upgrading pfSense Software Installations
 ========================================
 
-A firewall running pfSense can be updated by visiting **System > Update**.
-Updating to the most recent version of pfSense software is important so that
-security fixes, bug fixes, and other enhancements are obtained when they are
-available.
+A firewall running pfSense® software can be updated by visiting 
+**System > Update**. Updating to the most recent version of pfSense
+software is important so that security fixes, bug fixes, and other
+enhancements are obtained when they are available.
 
 Only the most recent stable release of pfSense is officially supported, so
 updating is also important to ensure that any problems encountered may be
