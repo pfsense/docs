@@ -36,7 +36,7 @@ If using Windows XP, 2003, or Vista, the freely available `ISO
 Recorder <http://isorecorder.alexfeinman.com>`__ tool may be used.
 Download and install the appropriate version of ISO Recorder for the
 operating system being used, then browse to the folder on the drive
-containing the pfSense ISO, right click the file, and click **Copy image
+containing the pfSense® ISO, right click the file, and click **Copy image
 to CD**.
 
 Other Free Burning Software
