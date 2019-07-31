@@ -12,13 +12,14 @@ Upgrading from versions older than pfSense 2.2
 Limiters
 ++++++++
 
-* On pfSense 2.2 and 2.3, limiters cannot be used on firewall rules residing on
-  interfaces where NAT applies. This limits their use to LAN-type interfaces
-  only, and not WANs, in most circumstances. This has been fixed on pfSense 2.4.
-  `Bug #4326 <https://redmine.pfsense.org/issues/4326>`__
+* On pfSense® software versions 2.2 and 2.3, limiters cannot be used on firewall
+  rules residing on interfaces where NAT applies. This limits their use to
+  LAN-type interfaces only, and not WANs, in most circumstances. This has been
+  fixed on pfSense 2.4.  `Bug #4326 <https://redmine.pfsense.org/issues/4326>`__
 
-* On pfSense 2.2 and 2.3, limiters cannot be used where pfsync is enabled. This
-  has been fixed on pfSense 2.4.3. `Bug #4310 <https://redmine.pfsense.org/issues/4310>`__
+* On pfSense software versions 2.2 and 2.3, limiters cannot be used where pfsync is
+  enabled. This has been fixed on pfSense 2.4.3.
+  `Bug #4310 <https://redmine.pfsense.org/issues/4310>`__
 
 IPsec Changes
 +++++++++++++
