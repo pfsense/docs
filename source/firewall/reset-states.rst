@@ -1,8 +1,8 @@
 Resetting Connection States
 ===========================
 
-To clear all active connection states, visit **Diagnostics > States**,
-then go to **Reset States** tab.
+To clear all active connection states from the pfSense® webGUI, visit
+**Diagnostics > States**, then go to **Reset States** tab.
 
 The **Firewall state table** box must be checked as a safety precaution,
 then click the **Reset** button.
