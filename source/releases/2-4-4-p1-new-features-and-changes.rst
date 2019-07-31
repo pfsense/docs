@@ -1,7 +1,7 @@
 2.4.4-p1 New Features and Changes
 =================================
 
-pfSense software version 2.4.4-p1 corrects issues found with 2.4.4-RELEASE.
+pfSense® software version 2.4.4-p1 corrects issues found with 2.4.4-RELEASE.
 
 Security / Errata
 -----------------
