@@ -17,7 +17,7 @@ has 192.168.0.25 is ever offline another device could be assigned
 to get 192.168.0.25 because it is currently in use.
 
 As such, it is best to only make assignments outside the range/pool, and
-the pfSense WebGUI enforces this practice.
+the pfSense® webGUI enforces this practice.
 
 If assignments absolutely must be made inside the pool, and the risks
 involved are worth taking and want to do so anyway, the input validation
