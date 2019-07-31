@@ -24,7 +24,7 @@ First Configuration
    accept packets.
 -  Add the **user(s)** who should have access.
 
-After this, have a look at the pfSense syslog. There should be the
+After this, have a look at the pfSense® syslog. There should be the
 following::
 
   radiusd[16634]: Ready to process requests.
@@ -42,7 +42,7 @@ General Information
 KNOWN BUGS and FORUM
 ^^^^^^^^^^^^^^^^^^^^
 
---- Partly solved on pfSense 2.0.2 and 2.1 ---
+--- Partly solved on pfSense software versions 2.0.2 and 2.1 ---
 
 -  When using "stop/start accounting" on CP then "Amount of Time" isn't
    working correctly.
@@ -70,7 +70,7 @@ forum links on the ticket it explain how it can be fixed.
 Features
 ^^^^^^^^
 
-The features below were tested on pfSense 2.x
+The features below were tested on pfSense software version 2.x
 
 - Authentication with Captive-Portal
 - Pre-defined user attributes and custom check-items and reply-items
@@ -195,8 +195,8 @@ this - that the system which is running freeradius1 on production -
 doesn't have to go down to long. This can be done:
 
 -  Backup pfSense config from the machine running freeradius1
--  Install pfSense in a virtual machine. VMware Player works fine and is
-   free.
+-  Install pfSense software in a virtual machine. VMware Player works
+   fine and is free.
 -  Both systems should communicate with each other over network
 -  Install freeradius2 package on the virtual machine
 -  Setup all Users, MACs and Clients/NAS on this virtual machine
