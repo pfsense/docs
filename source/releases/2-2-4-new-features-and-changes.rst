@@ -5,7 +5,7 @@ Security/Errata Notices
 -----------------------
 
 -  `pfSense-SA-15_07.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_07.webgui.asc>`__:
-   Multiple Stored XSS Vulnerabilities in the pfSense WebGUI
+   Multiple Stored XSS Vulnerabilities in the pfSense® WebGUI
 
    -  The complete list of affected pages and fields is listed in the
       linked SA.
