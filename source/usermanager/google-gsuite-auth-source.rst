@@ -2,7 +2,7 @@ Configuring Google Cloud Identity as an Authentication Source
 =============================================================
 
 `Google Cloud Identity LDAP service`_ can be used to authenticate users on
-pfSense software installations.
+pfSense® software installations.
 
 The method varies depending on the version of pfSense software installed on the
 firewall. This is due to the fact that Google Cloud Identity requires a client
