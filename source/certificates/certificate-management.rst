@@ -1,14 +1,14 @@
 Managing Certificates on pfSense
 ================================
 
-pfSense includes a central **Certificate Manager** under **System > Cert
-Manager**.
+pfSense® software includes a central **Certificate Manager** unde
+**System > Cert Manager**.
 
 This central Certificate Management takes the place of several other
-locations inside pfSense which used to require certificates be entered
-directly into their configurations, such as for HTTPS SSL access to the
-WebGUI, OpenVPN PKI Certificate Management, and IPsec Certificate
-management.
+locations inside pfSense software, which used to require certificates
+be entered directly into their configurations, such as for HTTPS SSL
+access to the webGUI, OpenVPN PKI Certificate Management, and IPsec
+Certificate management.
 
 Certificate Authority
 ---------------------
