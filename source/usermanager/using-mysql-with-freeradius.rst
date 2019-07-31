@@ -28,8 +28,8 @@ it is necessary to fill in the usernames and passwords in the MySQL
 database. Of course this can be done with some tools like phpMyAdmin but
 knowledge about those is also required.
 
-My suggestion is to use the pfSense/FreeRADIUS GUI. Many features are
-supported there with an easy to use GUI. If problems are encountered,
+My suggestion is to use the pfSense®/FreeRADIUS webGUI. Many features are
+supported there with an easy to use webGUI. If problems are encountered,
 dropping access-requests then first check with status server updates
 what the problem is.
 
