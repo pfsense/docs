@@ -11,18 +11,18 @@ Common Scenario
 
 What happens in most cases is this:
 
-*  Client sends a TCP SYN packet, which arrives at pfSense and gets a
-   state table entry
-*  pfSense sends back an ICMP redirect letting the client know to reach
-   the target server via the alternate gateway
+*  Client sends a TCP SYN packet, which arrives to pfSense® software
+   and gets a state table entry
+*  pfSense softwaresends back an ICMP redirect letting the client
+   know to reach the target server via the alternate gateway
 *  Server sends back a TCP SYN+ACK packet by some other path that
-   pfSense doesn't see
+   pfSense software doesn't see
 *  Client sends its ACK and further responses back by its other gateway
-   that are not seen by pfSense
-*  After 30 seconds, pfSense removes its state table entry as the
-   connection was never completed as observed by pfSense
+   that are not seen by pfSense software
+*  After 30 seconds, pfSense software removes its state table entry
+   as the connection was never completed as observed by pfSense software
 *  Some time later, the client's ICMP redirect learned route expires and
-   the client sends another packet back to pfSense
+   the client sends another packet back to pfSense software
 *  Since this packet is not starting a new connection, the packet is
    dropped, and the client gets disconnected since it now has no way to
    reach the destination.
