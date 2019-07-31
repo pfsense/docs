@@ -1,9 +1,10 @@
 NTP Server
 ==========
 
-The NTP Daemon (ntpd), configured at **Services > NTP**, allows pfSense
-to act as a Network Time Protocol server for a network, and also keeps
-the clock in sync against remote NTP servers as an NTP client itself.
+The NTP Daemon (ntpd), configured at **Services > NTP**, allows pfSense®
+software to act as a Network Time Protocol server for a network, and 
+also keeps the clock in sync against remote NTP servers as an NTP client
+itself.
 
 Before enabling this service, ensure that the router's clock keeps
 fairly accurate time.
