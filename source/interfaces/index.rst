@@ -2,9 +2,9 @@
 Interfaces
 **********
 
-Interfaces allow pfSense to communicate with networks. There are numerous types
-of interfaces that employ different protocols or connections methods to obtain
-connectivity between the firewall and other networks
+Interfaces allow pfSense® software to communicate with networks. There are
+numerous types of interfaces that employ different protocols or connections
+methods to obtain connectivity between the firewall and other networks.
 
 Managing Interfaces
 '''''''''''''''''''
