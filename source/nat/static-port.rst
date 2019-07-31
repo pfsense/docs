@@ -1,7 +1,7 @@
 Using Static Port with Outbound NAT
 ===================================
 
-By default, pfSense rewrites the source port on all outgoing packets.
+By default, pfSense® software rewrites the source port on all outgoing packets.
 Many operating systems do a poor job of source port randomization, if
 they do it at all. This makes IP spoofing easier, and makes it possible
 to fingerprint hosts behind the firewall from their outbound traffic.
@@ -15,9 +15,9 @@ require the source port to remain unmodified. Notably, there are a
 handful of protocols, including IPsec and some games, which suffer from
 this limitation.
 
-Automatic Outbound NAT rules on pfSense will retain the source port for
-UDP 500 (ISAKMP for IPsec VPN traffic) by default because this traffic
-will almost always be broken by rewriting the source port.
+Automatic Outbound NAT rules on the pfSense firewall will retain the
+source port for UDP 500 (ISAKMP for IPsec VPN traffic) by default because
+this traffic will almost always be broken by rewriting the source port.
 
 Setting Static Port using Hybrid Outbound NAT
 ---------------------------------------------
