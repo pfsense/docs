@@ -43,7 +43,7 @@ Security/Errata Notices
       result in unintended termination of the connection.
 
 -  `pfSense-SA-15_08.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_08.webgui.asc>`__:
-   Multiple Stored XSS Vulnerabilities in the pfSense WebGUI
+   Multiple Stored XSS Vulnerabilities in the pfSense® WebGUI
 
    -  The complete list of affected pages and fields is listed in the
       linked SA.
