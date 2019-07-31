@@ -1,14 +1,12 @@
 Writing Disk Images
 ===================
 
-The pfSense® NanoBSD and memstick images are meant to be written directly
+The pfSense® memstick images are meant to be written directly
 to a disk for use. This document covers how to write these image files
 to a target disk.
 
 For the memstick images, this will be a USB thumb drive or similar to be
-used as an installer disk. For NanoBSD, this will be the actual target
-media (typically CF or SD card) and not an installer.
-
+used as an installer disk.
 
 .. warning:: By choosing the wrong destination one of the system hard disks
    could be erased! Check and recheck the disk selection before writing an
