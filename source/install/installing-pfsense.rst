@@ -2,7 +2,7 @@ Installing pfSense
 ==================
 
 This article will guide through selecting an appropriate version of
-pfSense, the initial pfSense installation, and related tasks.
+pfSense® software, the initial pfSense installation, and related tasks.
 
 .. tip:: `Official pfSense appliances`_ may be purchased directly from Netgate.
 
