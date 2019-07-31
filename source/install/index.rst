@@ -2,9 +2,9 @@
 Installing and Upgrading
 ************************
 
-pfSense must be installed on hardware (real or virtual) before it will function.
-Once installed, keeping the firewall up-to-date is critical for ensuring the
-highest level of security and stability.
+pfSense® software must be installed on hardware (real or virtual) before it
+will function. Once installed, keeping the firewall up-to-date is critical
+for ensuring the highest level of security and stability.
 
 Installing
 ''''''''''
