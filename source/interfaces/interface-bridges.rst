@@ -4,7 +4,7 @@ Interface Bridges
 A **Bridge** joins two or more interfaces to the same layer 2
 (broadcast/collision domain), as if they were joined to the same switch.
 
-Bridges between interfaces are listed and
+In pfSense® software, bridges between interfaces are listed and
 managed at **Interfaces > (assign)** on the **Bridges** tab.
 
 When editing a bridge, Ctrl-Click to select the **Member interfaces**
