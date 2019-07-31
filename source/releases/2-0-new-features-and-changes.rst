@@ -2,7 +2,7 @@
 ============================
 
 This is a partial list of the new features and major changes in the
-pfSense 2.0 release.
+pfSense® software 2.0 release.
 
 Operating System
 ~~~~~~~~~~~~~~~~
