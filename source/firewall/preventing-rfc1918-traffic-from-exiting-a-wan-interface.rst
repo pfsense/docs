@@ -4,7 +4,7 @@ Preventing RFC1918 Traffic from Exiting a WAN Interface
 RFC1918 addresses are blocks of network IP addresses reserved for
 private use that are commonly used behind firewalls to allow a single
 public IP address to be shared with multiple devices using NAT. The
-default pfSense installation assigns the 192.168.1.0/24 address space to
+default pfSense® installation assigns the 192.168.1.0/24 address space to
 the LAN interface, but RFC1918 also defines other CIDR ranges for
 private use:
 
@@ -21,7 +21,7 @@ network behind the firewall.
 An example where this rule might be helpful is if a machine on the local
 LAN (e.g. 192.168.1.5) is configured to access private LAN addresses
 that are routed across a VPN tunnel (e.g. 192.168.100.0/24). If the VPN
-link were to go down, pfSense would no longer have an active route for
+link were to go down, pfSense software would no longer have an active route for
 192.168.100.0/24, and a packet intended for 192.168.100.0/24 will be
 routed out the WAN interface using the default route. This could
 potentially provide information about the private LAN to someone with
@@ -39,7 +39,7 @@ preventing RFC1918 traffic from being routed out of the WAN interface.
 Scenarios where RFC1918 addresses should NOT be blocked on the WAN interface
 ----------------------------------------------------------------------------
 
-In its default configuration, pfSense is not configured to block RFC1918
+In its default configuration, pfSense software is not configured to block RFC1918
 addresses from being routed from the LAN subnet to the outside WAN,
 because there are two common scenarios where blocking this traffic is
 not desirable:
@@ -116,6 +116,6 @@ to a device like this is required.
 
 On the edit interfaces screen (**Interfaces > WAN**, for example) there
 is an option to *Block private networks*. This is a rule blocking
-inbound traffic, not outbound like the rule described here. As long as
-pfSense is not behind a WAN that uses private addressing, both rules are
+inbound traffic, not outbound like the rule described here. As long as the
+pfSense instance is not behind a WAN that uses private addressing, both rules are
 desirable and should be enabled.
