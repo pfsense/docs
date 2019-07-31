@@ -4,17 +4,17 @@ Network Address Translation
 
 `Network Address Translation`_ (NAT) refers to the process of modifying network
 address information contained in datagram packet headers while they are in
-transit, generally across a device or system similar to pfSense, in order to map
+transit, generally across a pfSense® device or similar system, in order to map
 an address on one subnet to an address on another.
 
 In practice the most common use of NAT is to allow a private LAN to communicate
 with the public Internet (outbound NAT) and to allow access to servers on the
 private LAN from the Internet (port forwards).
 
-The NAT settings in pfSense are accessed via the **Firewall > NAT** menu
-in the WebGUI.
+The NAT settings in pfSense software are accessed via the **Firewall > NAT** menu
+in the webGUI.
 
-Configuration of NAT in pfSense is categorized into four areas: Port Forwards,
+Configuration of NAT in pfSense software is categorized into four areas: Port Forwards,
 1:1 (One to One) NAT, Outbound NAT, and NPt (Network Prefix Translation) for
 IPv6
 
