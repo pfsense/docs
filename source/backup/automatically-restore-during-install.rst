@@ -12,7 +12,7 @@ immediately without needing intermediate steps.
 Recover config.xml
 ------------------
 
-The installer pfSense version 2.4 has a **Recover config.xml** option which
+The installer for pfSense® version 2.4 has a **Recover config.xml** option which
 reads a configuration from an existing installation being overwritten. This
 makes it useful for upgrades, filesystem changes, or any other situation where a
 reinstallation is required on the same hardware.
