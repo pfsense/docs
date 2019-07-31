@@ -4,7 +4,7 @@ Using Aliases to Simplify Firewall Rules
 What are Aliases?
 -----------------
 
-From the pfSense WebGUI: Aliases act as placeholders for real hosts,
+From the pfSense® webGUI: Aliases act as placeholders for real hosts,
 networks or ports. They can be used to minimize the number of changes
 that have to be made if a host, network or port changes. The name of an
 alias can be entered instead of the IP address, network or port in all
