@@ -1,5 +1,5 @@
-Upgrading from versions older than pfSense 2.0
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Upgrading from versions older than pfSense® 2.0
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. seealso:: For information about upgrading to current versions, see
    :doc:`upgrade-guide`.
@@ -14,9 +14,9 @@ Note for users of the OpenVPN Status Package
 
 If a manual ``management`` directive was entered into the **Advanced
 Configuration** of an OpenVPN client or server, it must be removed. The OpenVPN
-status code is built into pfSense 2.x and later, and it is handled internally.
-The management directive must be removed or the status of the VPN instance will
-not be properly reported.
+status code is built into pfSense® software version 2.x and later, and it is
+handled internally. The management directive must be removed or the status of
+the VPN instance will not be properly reported.
 
 Note for Captive Portal RADIUS WISPr Bandwidth Users
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -36,11 +36,11 @@ International characters, such as åäö and so on, were not supported on pfSens
 and less strict XML parsing. These characters causes invalid XML when they are
 stored directly, and as such if pfSense 1.2.x did not crash and toss out the
 configuration with such characters, it will not upgrade to any current version
-of pfSense.
+of pfSense software.
 
-pfSense 2.0 and later will reset and toss out the config.xml on every reboot if
-it contains these characters bare, leaving the firewall at an "assign
-interfaces" prompt since it does not have a valid configuration.
+pfSense software version 2.0 and later will reset and toss out the config.xml
+on every reboot if it contains these characters bare, leaving the firewall at
+an "assign interfaces" prompt since it does not have a valid configuration.
 
 The *config.xml* file can be run through an XML parser such as ``xmllint`` and
 the parser will show where problems exist, if any. Fix the errors, and then the
