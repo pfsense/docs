@@ -6,7 +6,7 @@
 
 -  `FreeBSD-SA-16:26.openssl <https://www.freebsd.org/security/advisories/FreeBSD-SA-16:26.openssl.asc>`__
    - Multiple vulnerabilities in OpenSSL. The only significant impact on
-   pfSense is OCSP for HAproxy and FreeRADIUS.
+   pfSense® software is OCSP for HAproxy and FreeRADIUS.
 -  Several HyperV-related Errata in FreeBSD 10.3, FreeBSD-EN-16:10
    through 16:16. See
    https://www.freebsd.org/relnotes/10-STABLE/errata/errata.html for
