@@ -21,7 +21,7 @@ Road Warriors. Most of them use an state of the art mobile phone and a
 notebook to connect to the company VPN. For more take a look at the
 chapter below: *Miscellaneous configuration and hints*
 
-pfSense configuration:
+pfSense® software configuration:
 
 -  Enable Mobile-One-Time-Password in **FreeRADIUS > Settings**
 
