@@ -1,9 +1,10 @@
 Using Multiple IPv6 WAN Connections
 ===================================
 
-With pfSense 2.1 and later Multi-WAN with IPv6 is possible provided that
-multiple ISPs or tunnels are setup and working. See :doc:`Using IPv6 with a Tunnel Broker </interfaces/using-ipv6-with-a-tunnel-broker>` if help is needed
-setting up a tunnel.
+With pfSense® software version 2.1 and later Multi-WAN with IPv6 is
+possible provided that multiple ISPs or tunnels are setup and working.
+See :doc:`Using IPv6 with a Tunnel Broker </interfaces/using-ipv6-with-a-tunnel-broker>`
+if help is needed setting up a tunnel.
 
 Throughout this document "Second WAN" refers to the second or additional
 interface with IPv6 connectivity. It might be the "real" interface if
