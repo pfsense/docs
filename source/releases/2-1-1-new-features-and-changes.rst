@@ -15,7 +15,7 @@ Security Fixes
     include that version of OpenSSL from ports.
 
 -  The following FreeBSD Security Advisories were not relevant to
-   pfSense:
+   pfSense® software:
 
    -  `FreeBSD-SA-13:14.openssh <https://www.freebsd.org/security/advisories/FreeBSD-SA-13:14.openssh.asc>`__
    -  `FreeBSD-SA-14:04.bind <https://www.freebsd.org/security/advisories/FreeBSD-SA-14:04.bind.asc>`__
