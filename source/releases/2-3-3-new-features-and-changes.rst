@@ -22,7 +22,7 @@ Security / Errata
       -  `FreeBSD-EN-16:17.vm <https://www.freebsd.org/security/advisories/FreeBSD-EN-16:17.vm.asc>`__
       -  `FreeBSD-EN-16:18.loader <https://www.freebsd.org/security/advisories/FreeBSD-EN-16:18.loader.asc>`__
 
--  pfSense Advisories
+-  pfSense® Software Advisories
 
    -  `pfSense-SA-17_01.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-17_01.webgui.asc>`__
 
