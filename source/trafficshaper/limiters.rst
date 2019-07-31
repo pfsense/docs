@@ -39,9 +39,9 @@ Dynamic queue creation
 Dummynet pipes have a feature called dynamic queue creation which allows unique
 queues based on the uniqueness of a connections source protocol, IP address,
 source port, destination address or destination port. They can also be used in
-combination. pfSense currently only allows setting the source address or the
-destination address as the mask. This means each host behind the firewall, or
-subnet, will have its own set of pipes so that each node is restricted to using
+combination. pfSense® software currently only allows setting the source address
+or the destination address as the mask. This means each host behind the firewall,
+or subnet, will have its own set of pipes so that each node is restricted to using
 a certain amount of bandwidth. To do this, give the *In* pipe a **Source
 Address** mask, so that each host sending packets gets it's own dynamic pipe for
 uploading. Give the *Out* pipe a destination address mask, so that each host
