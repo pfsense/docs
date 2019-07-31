@@ -16,7 +16,7 @@ Security/Errata Notices
       in the eap-mschapv2 plugin.
 
 -  `pfSense-SA-15_09.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_09.webgui.asc>`__:
-   Local File Inclusion Vulnerability in the pfSense WebGUI
+   Local File Inclusion Vulnerability in the pfSense® WebGUI
 -  `pfSense-SA-15_10.captiveportal <https://www.pfsense.org/security/advisories/pfSense-SA-15_10.captiveportal.asc>`__:
    SQL Injection Vulnerability in the pfSense captive portal logout
 -  `pfSense-SA-15_11.webgui <https://www.pfsense.org/security/advisories/pfSense-SA-15_11.webgui.asc>`__:
