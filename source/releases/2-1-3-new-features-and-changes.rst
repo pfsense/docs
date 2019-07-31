@@ -1,7 +1,7 @@
 2.1.3 New Features and Changes
 ==============================
 
-2.1.3 follows very shortly after
+pfSense® software version 2.1.3 follows very shortly after
 :doc:`2.1.2 </releases/2-1-2-new-features-and-changes>` and is primarily a security
 release. Refer to the :doc:`2.1.1 release notes </releases/2-1-1-new-features-and-changes>` for changes from 2.1 to 2.1.1
 and :doc:`2.1.2 release notes </releases/2-1-2-new-features-and-changes>` for changes
