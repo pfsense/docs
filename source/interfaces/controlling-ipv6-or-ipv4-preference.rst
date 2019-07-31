@@ -8,12 +8,12 @@ in order to run a firmware upgrade or manage packages if for some reason
 the IPv6 routing is not functional but the system believes it is up and
 working.
 
-In pfSense 2.2 this is controlled under **System > Advanced** on the
-**Networking** tab. Check **Prefer IPv4 over IPv6**, then click
-**Save**.
+In pfSense® software version 2.2, this is controlled under **System >
+Advanced** on the **Networking** tab. Check **Prefer IPv4 over IPv6**,
+then click **Save**.
 
-On pfSense 2.1.x, there is no option in the GUI. It can still be changed
-at the shell (or with a shellcmd tag.)
+On pfSense software version2.1.x, there is no option in the GUI. It can
+still be changed at the shell (or with a shellcmd tag.)
 
 To prefer IPv4::
 
