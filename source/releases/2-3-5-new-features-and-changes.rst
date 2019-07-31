@@ -1,7 +1,7 @@
 2.3.5 New Features and Changes
 ==============================
 
-2.3.x is a Security and Errata maintenance release. 2.4.x is the primary
+The pfSense® software version 2.3.x release is a Security and Errata maintenance release. 2.4.x is the primary
 stable supported branch. If the firewall hardware is capable of running
 2.4.x, consider upgrading to that release instead.
 
