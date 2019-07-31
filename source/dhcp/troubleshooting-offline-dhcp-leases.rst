@@ -2,7 +2,7 @@ Troubleshooting Offline DHCP Leases
 ===================================
 
 The **Status > DHCP Leases** page only reports systems as "online" if
-the MAC address for a given system appears in the pfSense firewall's ARP
+the MAC address for a given system appears in the pfSense® firewall's ARP
 table. This can be verified by checking **Diagnostics > ARP Table**.
 Systems that have not communicated with or via the firewall in the past
 few minutes will appear as offline.
