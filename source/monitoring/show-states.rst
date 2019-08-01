@@ -9,7 +9,7 @@ protocol, IP information, and state info.
 
 The IP address information is printed showing the IP addresses involved
 in a connection and the direction the connection was initiated. If only
-two IP addresses are shown, it is a state to or from the pfSense box
+two IP addresses are shown, it is a state to or from the pfSense® box
 itself. If three are shown, then NAT has been applied.
 
 Each connection through the firewall will have two states: One entering
