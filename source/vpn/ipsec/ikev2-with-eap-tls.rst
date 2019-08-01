@@ -3,8 +3,9 @@ IKEv2 with EAP-TLS
 
 Under construction. Needs testing.
 
-IKEv2 is supported starting with pfSense 2.2 and one way to make it work
-is by using EAP-TLS, which is covered in this article.
+IKEv2 is supported starting with pfSense® software version 2.2 and one
+way to make it work is by using EAP-TLS, which is covered in this
+article.
 
 Setup Certificates
 ------------------
@@ -18,7 +19,7 @@ Create a Certificate Authority
 If one is not already available, then the first task is to create a
 Certificate Authority.
 
-*  Navigate to **System > Cert Manager** on pfSense
+*  Navigate to **System > Cert Manager** in the pfSense webGUI
 *  Click |fa-plus| to create a new certificate authority
 *  Select *Create an internal Certificate Authority* for the **Method**
 *  Fill in the rest of the fields as desired with company or
@@ -28,8 +29,8 @@ Certificate Authority.
 Create a Server Certificate
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*  Navigate to **System > Cert Manager**, **Certificates** tab on
-   pfSense
+*  Navigate to **System > Cert Manager**, **Certificates** tab in
+   the pfSense webGUI
 *  Click |fa-plus| to create a new certificate
 *  Select *Create an internal certificate* for the **Method**
 *  Enter a **Descriptive Name** such as *IKEv2 Server*
@@ -58,8 +59,8 @@ Create a Server Certificate
 Create Client Certificates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*  Navigate to **System > Cert Manager**, **Certificates** tab on
-   pfSense
+*  Navigate to **System > Cert Manager**, **Certificates** tab in
+   the pfSense webGUI
 *  Click |fa-plus| to create a new certificate
 *  Select *Create an internal certificate* for the **Method**
 *  Enter a **Descriptive Name** such as *client1*
@@ -89,7 +90,8 @@ additional combinations found to work or not work on the forum.
 Mobile Clients
 ~~~~~~~~~~~~~~
 
-*  Navigate to **VPN > IPsec**, **Mobile Clients** tab on pfSense
+*  Navigate to **VPN > IPsec**, **Mobile Clients** tab in the pfSense
+   webGUI
 *  Check **Enable IPsec Mobile Client Support**
 *  Set **User Authentication** to *Local Database*
 *  Check **Provide a virtual IP address to clients**
@@ -167,10 +169,10 @@ Import the CA to the Client PC
 The server setup is complete, the following tasks will configure the
 client side.
 
-*  Export CA Cert from pfSense and download it to the client PC
+*  Export CA Cert from the pfSense router and download it to the client PC
 
    *  Navigate to **System > Cert Manager**, **Certificate Authorities**
-      tab on pfSense
+      tab in the pfSense webGUI
    *  Click |fa-certificate| by the CA to download *only* the certificate
 
 *  Locate the downloaded file on the client PC (e.g. *MyCA.crt*)
@@ -191,11 +193,11 @@ client side.
 Import the Client Certificate to the Client PC
 ----------------------------------------------
 
-*  Export client certificate from pfSense and download it to the client
-   PC
+*  Export client certificate from the pfSense router and download it
+   to the client PC
 
-   *  Navigate to **System > Cert Manager**, **Certificates** tab on
-      pfSense
+   *  Navigate to **System > Cert Manager**, **Certificates** tab in
+      the pfSense webGUI
    *  Click |fa-archive| by the certificate to download a ``.p12`` file
       containing the client certificate and key
 
