@@ -6,14 +6,14 @@ available for many different operating systems, including Windows, Mac,
 Linux, Android, iOS, and even ChromeOS. This document will walk through
 the basics of a remote access OpenVPN configuration.
 
-This How-To is designed to quickly show how to setup an OpenVPN remote
-access VPN on pfSense, and is not meant to be complete. It should only
-be used to give a general idea of the functionality and what is
-possible. OpenVPN is much more advanced than the setup being
+This How-To article is designed to quickly show how to setup an OpenVPN
+remote access VPN on the pfSense® router, and is not meant to be complete.
+It should only be used to give a general idea of the functionality and
+what is possible. OpenVPN is much more advanced than the setup being
 demonstrated.
 
 .. warning:: This guide is brief, and omits important considerations.
-   Consult the OpenVPN chapter in the pfSense book rather than relying on
+   Consult the OpenVPN chapter in the |book_link| rather than relying on
    this entirely.
 
 If a Site-To-Site OpenVPN connection is desired instead, see one of the
@@ -92,14 +92,15 @@ items to enter are:
 -  **Local Network** -- The network here on the server that the clients
    will need to reach, for example 192.168.1.0/24
 
-Note: On pfSense 2.3 the Topology choice is also present in the Wizard
-and it defaults to *Subnet*. Read the associated text on the page in the
-unlikely case this option is not desirable for a given deployment.
+.. note:: On pfSense software version 2.3, the Topology choice is also
+   present in the Wizard and it defaults to *Subnet*. Read the
+   associated text on the page in the unlikely case this option is not
+   desirable for a given deployment.
 
 Other values can be set as desired and are a matter of preference.
 Settings such as compression, DNS, NetBIOS, and so on.
 
-Click **Next**
+Click **Next**.
 
 Firewall Rules
 ~~~~~~~~~~~~~~
