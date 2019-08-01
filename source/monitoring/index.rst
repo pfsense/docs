@@ -2,15 +2,16 @@
 System Monitoring
 *****************
 
-pfSense provides a wealth of information about the state of the firewall, its
-services, traffic flowing through the firewall, and log data.
+pfSense® software provides a wealth of information about the state of the
+firewall, its services, traffic flowing through the firewall, and log data.
 
 Logs
 ''''
 
-Logs on pfSense contain recent events and messages from daemons. These messages
-can be stored locally on a limited basis, or forwarded to a central logging
-server for long-term storage, better reporting, alerting, and so on.
+Logs in pfSense software contain recent events and messages from daemons.
+These messages can be stored locally on a limited basis, or forwarded to a
+central logging server for long-term storage, better reporting, alerting,
+and so on.
 
 .. toctree::
    :maxdepth: 1
