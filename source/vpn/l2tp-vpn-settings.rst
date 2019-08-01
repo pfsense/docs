@@ -14,7 +14,8 @@ above.
 Setup
 -----
 
-The L2TP server settings can be found under **VPN > L2TP**.
+The L2TP server settings can be found in the pfSense® webGUI under
+**VPN > L2TP**.
 
 Options specific to L2TP are available to set: **Interface**, **Server
 Address**, **Subnet Mask**, and other items. These are all explained on
@@ -29,17 +30,16 @@ L2TP/IPsec
 L2TP/IPsec is a way to secure L2TP traffic by sending it through an
 encrypted IPsec tunnel.
 
-2.1.x and earlier
-~~~~~~~~~~~~~~~~~
+pfSense software version 2.1.x and earlier
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-pfSense 2.1.x and earlier do **not** support L2TP+IPsec; they only
-support for plain L2TP tunneling. See `Ticket
+pfSense software version 2.1.x and earlier do **not** support L2TP+IPsec;
+they only support for plain L2TP tunneling. See `Ticket
 #475 <https://redmine.pfsense.org/issues/475>`__
 
-2.2 and up
-~~~~~~~~~~
+pfSense software version 2.2 and up
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-pfSense 2.2 and later this may be used in combination with a mobile
-IPsec setup to configure L2TP+IPsec; see :doc:`L2TP/IPsec </vpn/ipsec/l2tp-ipsec>` for
-details.
-
+pfSense software version 2.2 and later this may be used in combination
+with a mobile IPsec setup to configure L2TP+IPsec; see 
+:doc:`L2TP/IPsec </vpn/ipsec/l2tp-ipsec>` for details.
