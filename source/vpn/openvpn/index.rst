@@ -3,14 +3,14 @@ OpenVPN
 *******
 
 `OpenVPN`_ is an Open Source VPN server and client that is supported on a
-variety of platforms, including pfSense. It can be used for Site-to-Site or
-Remote Access VPN configurations.
+variety of platforms, including pfSense® software. It can be used for 
+Site-to-Site or Remote Access VPN configurations.
 
 OpenVPN can work with shared keys or with a PKI setup for SSL/TLS. Remote Access
 VPNs may be authenticated locally, or using an external authentication source
 such as RADIUS or LDAP.
 
-There are many possible ways to configure OpenVPN in pfSense, for more
+There are many possible ways to configure OpenVPN in pfSense software, for more
 information see the resources below:
 
 .. toctree::
