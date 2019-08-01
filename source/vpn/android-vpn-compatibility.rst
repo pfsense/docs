@@ -2,12 +2,12 @@ Android VPN Compatibility
 =========================
 
 VPN connections may easily be established between an Android device and
-pfSense in multiple ways.
+pfSense® software in multiple ways.
 
 This is a *summary* of the following information only. Please keep
 reading for more details!
 
-Table: pfSense 2.2+
+Table: pfSense software version 2.2+
 
 +----------------------------+------------+------------+-----------+-------------+------------------------------+--------------+----------------------+-----------------+-----------------+
 | Android Version            | Protocol   |            |           |             |                              |              |                      |                 |                 |
@@ -38,8 +38,6 @@ Table: pfSense 2.2+
 +----------------------------+------------+------------+-----------+-------------+------------------------------+--------------+----------------------+-----------------+-----------------+
 | 5.0 (Lollipop)             | ?          | ?          | ?         | ?           | Yes                          | ?            | Yes                  | Yes             | Yes             |
 +----------------------------+------------+------------+-----------+-------------+------------------------------+--------------+----------------------+-----------------+-----------------+
-
-
 
 Notes
 -----
@@ -98,9 +96,9 @@ The VPN choices on these versions are:
 The choices that use main mode (anything that isn't labeled
 "aggressive") likely won't work as the IP of the phone is used as the
 identifier, no matter what is entered in the phone's GUI, so it would
-require anonymous PSKs which are only available on pfSense 2.2 and
-later. Some Android IPsec GUIs may have an option to manually set an
-identifier. If that is present, it can work.
+require anonymous PSKs which are only available on pfSense software version
+2.2 and later. Some Android IPsec GUIs may have an option to manually
+set an identifier. If that is present, it can work.
 
 PSK v1 (AES, xauth, aggressive) works against a 2.0 server when properly
 configured. This combination is reported to work well - see
