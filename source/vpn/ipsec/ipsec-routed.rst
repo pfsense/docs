@@ -18,7 +18,7 @@ provides policy routing and gateway group capabilities.
 .. note:: Routed IPsec is not replacing traditional tunneled IPsec, both may be
    used. The choice is up to the user when creating an IPsec Phase 2 entry.
 
-.. note:: Routed IPsec is available on firewalls running pfSense software
+.. note:: Routed IPsec is available on firewalls running pfSense® software
    version 2.4.4-RELEASE or later.
 
 Prerequisites
@@ -63,7 +63,7 @@ routing, and so on.
 
 At this point the interface is available for use like any other interface. It
 can be used for packet captures, traffic graphs, binding daemons, routing
-protocols, and other tasks never before possible with IPsec on pfSense!
+protocols, and other tasks never before possible with IPsec on pfSense software!
 
 Routing
 -------
