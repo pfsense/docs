@@ -1,13 +1,13 @@
 Connecting pfSense to an OpenVPN Access Server
 ==============================================
 
-This guide will be a step by step walk through of how to get a pfSense
+This guide will be a step by step walk through of how to get a pfSense®
 client connecting to OpenVPN AS (Access Server). The *.ovpn* file it
 generates is a bit odd so we will walk through how to extract the parts
-needed and where to put them in pfSense.
+needed and where to put them into the pfSense software.
 
-The guide will mainly focus on the pfSense side of it, but will touch on
-some basics of installing OpenVPN AS package.
+The guide will mainly focus on the pfSense router side of it, but will
+touch on some basics of installing OpenVPN AS package.
 
 OpenVPN AS vs Community OpenVPN
 -------------------------------
@@ -47,7 +47,7 @@ Go to the OpenVPN URL it lists
 
 First go to the admin URL it provides - we are going set the profile to
 autologin and then grab the *.ovpn* file to extra info to put in to
-pfSense. You can validate that the VPN works with either a normal
+pfSense router. You can validate that the VPN works with either a normal
 OpenVPN client or the connect client that is available to download when
 you hit the given URL and login for *admin*.
 
@@ -69,8 +69,8 @@ client downloaded at the same URL.
 It is now possible to connect and go to a site that reports the client
 IP address, such as http://checkip.dyndns.org/, which should show the IP
 address of the VPN server to confirm that the client traffic is using
-the VPN. Once that is working, pfSense may be configured to use the info
-in the *.ovpn* file
+the VPN. Once that is working, the pfSense router may be configured to
+use the info in the *.ovpn* file
 
 Credits
 -------
