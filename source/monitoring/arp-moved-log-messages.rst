@@ -1,8 +1,8 @@
 Troubleshooting ARP Move Log Messages
 =====================================
 
-Log entries may appear in the system log showing something similar to the
-following::
+pfSense® log entries may appear in the system log showing something similar
+to the following::
 
   pfsense kernel: arp: 192.168.1.50 moved from c4:0c:5c:69:6c:05 to 62:1e:3e:43:04:0c on em1
 
