@@ -1,8 +1,8 @@
 Monitoring Bandwidth Usage
 ==========================
 
-There are several methods for monitoring bandwidth usage, with different
-levels of granularity.
+With pfSense® software, there are several methods for monitoring
+bandwidth usage, with different levels of granularity.
 
 Be aware that some of these packages require full disk write access and
 thus are not available on NanoBSD installations (typically found on CF
@@ -16,7 +16,7 @@ console (physical access or ssh) and watch the traffic flow with pftop
 (Option 9).
 
 The output can be changed to show several views (press 0-8 or 'v' to
-cycle) and may be sorted in various ways. Press "?" for a list of
+cycle) and may be sorted in various ways. Press `?` for a list of
 available command keys while running pftop.
 
 iftop
@@ -52,8 +52,8 @@ Built-in Graphs
 ---------------
 
 If overall per-interface usage is all that is required, there are
-built-in RRD graphs on pfSense, which can be found under **Status > RRD
-Graphs**.
+built-in RRD graphs in pfSense software, which can be found under
+**Status > RRD Graphs**.
 
 BandwidthD
 ----------
@@ -100,8 +100,9 @@ Netflow
 Netflow is another option for bandwidth usage analysis. Netflow is a
 standard means of traffic accounting supported by many routers and
 firewalls. Netflow collector running on a host inside the network is
-required to collect the data. pfSense can export Netflow data to the
-collector using the :doc:`softflowd </monitoring/exporting-netflow-with-softflowd>`
+required to collect the data. pfSense software can export Netflow
+data to the collector using the 
+:doc:`softflowd </monitoring/exporting-netflow-with-softflowd>`
 package or the pfflowd package.
 
 vnstat
