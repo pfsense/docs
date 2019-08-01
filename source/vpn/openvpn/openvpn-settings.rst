@@ -8,9 +8,10 @@ possible. There are clients for multiple platforms (Windows, OS X, BSD,
 Linux, Android, iOS, etc), and it allows much more flexibility in
 routing than IPsec.
 
-OpenVPN configuration is performed under **VPN > OpenVPN**. For more
-details and How-To articles, see :doc:`/vpn/openvpn/index` or for the most
-thorough and easy-to-follow documentation, see the |book_link|.
+OpenVPN configuration is performed in the pfSense® webGUI under
+**VPN > OpenVPN**. For more details and How-To articles, see 
+:doc:`/vpn/openvpn/index` or for the most thorough and easy-to-follow
+documentation, see the |book_link|.
 
 OpenVPN requires the use of a PKI CA/certificate structure setup for
 configurations using SSL/TLS. The certificates for a PKI setup can be
@@ -31,8 +32,9 @@ The **Server** tab is where OpenVPN server processes are
 managed. These are processes
 that will listen for incoming connections from a remote peer.
 
-With a remote access (road warrior) setup, pfSense is the server. A
-remote access setup can use SSL/TLS, user authentication, or both.
+With a remote access (road warrior) setup, teh pfSense router is the
+server. A remote access setup can use SSL/TLS, user authentication, or
+both.
 
 With a peer-to-peer setup, one site is a server and the other site is a
 client, it does not matter much which is which, though if one site has a
