@@ -1,12 +1,12 @@
 Troubleshooting FTP Connections
 ===============================
 
-In pfSense 2.0.x and 2.1.x, the FTP proxy is in-kernel. The only options
-to control its behavior are an on/off switch and a list of ports to be
-used by the proxy.
+In pfSense® software versions 2.0.x and 2.1.x, the FTP proxy is in
+-kernel. The only options to control its behavior are an on/off
+switch and a list of ports to be used by the proxy.
 
-In pfSense 2.2.x and newer, there is no built-in FTP proxy. See
-:doc:`/nat/ftp-without-a-proxy`.
+In pfSense software version 2.2.x and newer, there is no built-in
+FTP proxy. See :doc:`/nat/ftp-without-a-proxy`.
 
 Disabling the FTP Proxy
 -----------------------
