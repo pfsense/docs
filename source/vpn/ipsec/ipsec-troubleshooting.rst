@@ -15,15 +15,15 @@ tunnel:
 -  On the IPsec Phase 2 settings, enter an **Automaitcally Ping Host**
    in the remote Phase 2 subnet.
 
-Common Errors (strongSwan, pfSense >= 2.2.x)
---------------------------------------------
+Common Errors (strongSwan, pfSense software versions >= 2.2.x)
+--------------------------------------------------------------
 
 The following examples have logs edited for brevity but significant
 messages remain.
 
 Logging for IPsec is configured at **VPN > IPsec**, **Advanced
 Settings** tab. The most useful logging settings for diagnosing tunnel
-issues with strongSwan on pfSense 2.2.x are:
+issues with strongSwan on pfSense® software version 2.2.x are:
 
 -  **IKE SA**, **IKE Child SA**, and **Configuration Backend** on *Diag*
 -  All others on *Control*
@@ -295,8 +295,8 @@ Removing */cf/conf/use_xmlreader* will return the system to the default
 parser immediately, which will correct the display of the IPsec status
 page.
 
-Common Errors (racoon, pfSense <= 2.1.x)
-----------------------------------------
+Common Errors (racoon, pfSense software versions <= 2.1.x)
+----------------------------------------------------------
 
 Mismatched Local/Remote Subnets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -451,17 +451,18 @@ states.
 IPsec Debugging
 ---------------
 
-On pfSense 2.2, the logging options for the IPsec daemon are located
-under **VPN > IPsec** on the **Advanced Settings** tab and may be
-adjusted live without affecting the operation of IPsec tunnels. As
-mentioned above, the recommended setting for most common debugging is to
-set **IKE SA**, **IKE Child SA**, and **Configuration Backend** on
-*Diag* and set all others on *Control*.
+On pfSense software version 2.2, the logging options for the IPsec
+daemon are located under **VPN > IPsec** on the **Advanced Settings** 
+tab and may be adjusted live without affecting the operation of IPsec
+tunnels. As mentioned above, the recommended setting for most common
+debugging is to set **IKE SA**, **IKE Child SA**, and 
+**Configuration Backend** on *Diag* and set all others on *Control*.
 
-Debug mode for racoon on pfSense 2.1.x and before may be enabled by
-checking the option for it under **System > Advanced** on the
-**Miscellaneous** tab on pfSense 2.1.x and earlier. This change is
-disruptive in that racoon is restarted and all tunnels are reset.
+Debug mode for racoon on pfSense software version 2.1.x and before may
+be enabled by checking the option for it under **System > Advanced** on
+the **Miscellaneous** tab on pfSense software version 2.1.x and earlier.
+This change is disruptive in that racoon is restarted and all tunnels
+are reset.
 
 Shrew Soft VPN Client Debugging
 -------------------------------
@@ -482,21 +483,22 @@ of a size which can be transmitted whole. A good starting point would be
 point is located, then back off a little from there.
 
 MSS clamping is configured under **System > Advanced** on the
-**Miscellaneous** tab on pfSense 2.1.x and before. On pfSense 2.2, it is
-under **VPN > IPsec** on the **Advanced Settings** tab. Check the box to
-enable MSS Clamping for VPNs, and fill in the appropriate value.
+**Miscellaneous** tab on pfSense software version 2.1.x and before. On 
+pfSense software version 2.2, it is under **VPN > IPsec** on the 
+**Advanced Settings** tab. Check the box to enable MSS Clamping for VPNs,
+and fill in the appropriate value.
 
 Some Hosts Work, Others Do Not
 ------------------------------
 
 If some hosts can communicate across a VPN tunnel and others cannot, it
 typically means that for some reason the packets from that client system
-are not being routed to pfSense. This could happen for a number of
-reasons, but the two most common are:
+are not being routed to the pfSense system. This could happen for a
+number of reasons, but the two most common are:
 
--  Incorrect gateway on client system: pfSense needs to be the gateway,
-   or the gateway must have a static route for tunnel traffic which
-   forwards those packets to pfSense
+-  Incorrect gateway on client system: the pfSense router needs to be
+   the gateway, or the gateway must have a static route for tunnel traffic
+   which forwards those packets to the pfSense router.
 -  Incorrect subnet mask on the client system: If the VPN subnets are
    close, say 192.168.0.x and 192.168.1.x, ensure that the subnet mask
    is 255.255.255.0 on the client systems. If one of them has an
