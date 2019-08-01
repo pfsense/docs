@@ -1,8 +1,8 @@
 Log Settings
 ============
 
-The **Settings** tab under **Status > System Logs** controls how the
-logging system behaves.
+In the pfSense®webGUI, the **Settings** tab under 
+**Status > System Logs** controls how the logging system behaves.
 
 **Forward/Reverse Display**: Controls whether the logs are displayed in
 forward or reverse order. Forward order has the newest messages at the
@@ -58,10 +58,10 @@ choice of which types of events to send.
 Be sure that the receiving syslog server is configured to allow logging
 from this pfSense firewall.
 
-**Source Address**: Chooses which interface on pfSense to use for
-initiating log messages. If the target syslog server is across an IPsec
-tunnel, this should be a local interface address inside of a Phase 2
-definition for the IPsec tunnel.
+**Source Address**: Chooses which interface on the pfSense system to use
+for initiating log messages. If the target syslog server is across an
+IPsec tunnel, this should be a local interface address inside of a 
+Phase 2 definition for the IPsec tunnel.
 
 **IP Protocol**: Selects IPv4 or IPv6 to be used for sending log
 messages when multiple possibilities exist.
