@@ -5,22 +5,24 @@ This how-to covers how to setup OpenVPN using Site-to-Site PKI (SSL).
 For users who want to make a hub-and-spoke multi-site setup, as opposed
 to a mesh, this method may be a good fit.
 
-One pfSense router is the server and the others are clients. The
+One pfSense® router is the server and the others are clients. The
 primary/main office is typically the server, but whichever site has the
 most bandwidth and fastest firewall may be the best choice.
 
 Generate keys/Certificates
 --------------------------
 
-This how-to will be using pfSense for the PKI infrastructure. If there
-is already an existing infrastructure or do not wish to use pfSense for
-this task, existing certificates may be used or generated elsewhere.
-CAs/Certificates generated outside pfSense must be :doc:`imported into pfSense </certificates/certificate-management>`.
+This how-to article will be using pfSense software for the PKI
+infrastructure. If there is already an existing infrastructure or
+do not wish to use pfSense software for this task, existing
+certificates may be used or generated elsewhere. 
+CAs/Certificates generated outside of pfSense software must be 
+:doc:`imported into pfSense </certificates/certificate-management>`.
 
 The CA and Certificates :doc:`may be created </certificates/certificate-management>`
-under **System > Cert Manager** on pfSense, or use certificates made
-with the OpenVPN wizard. The certificates are stored in config.xml, so a
-normal configuration backup will keep them safe.
+under **System > Cert Manager** from the pfSense webGUI, or use
+certificates made with the OpenVPN wizard. The certificates are
+stored in config.xml, so a normal configuration backup will keep them safe.
 
 Ensure there is one CA, one *Server* Certificate, and one *User*
 certificate for each client site. For the **Common Name** of each
@@ -74,10 +76,10 @@ Add an entry for each client, and on each one:
 
 - Set the **Common Name** field to the name of the certificate for the
   site
-- On pfSense 2.2, use the **IPv4 Remote Network/s** here on the Client
-  Specific Override to add *iroute* networks.
-- On older versions of pfSense, in the custom options/advanced box, add
-  an **iroute** statement for the client network::
+- On pfSense software version 2.2, use the **IPv4 Remote Network/s**
+  here on the Client Specific Override to add *iroute* networks.
+- On older versions of pfSense software, in the custom options/advanced
+  box, add an **iroute** statement for the client network::
 
     iroute a.a.a.a b.b.b.b;
 
