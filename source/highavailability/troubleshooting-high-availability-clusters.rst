@@ -12,12 +12,12 @@ Conflicting VHIDs
 
 The `VHID determines the virtual MAC address used by that CARP
 IP <https://docs.google.com/spreadsheet/ccc?key=0AojFUXcbH0ROdHB0Q1ZxalJiVFdFRjdfSkpsMkNwT2c&usp=sharing>`__.
-The input validation in pfSense will not permit using conflicting VHIDs
-on a single pair of systems, however if there are multiple systems on
-the same broadcast domain running CARP, it's possible to create a
-conflict. VRRP also uses the same virtual MAC address scheme, so a VRRP
-IP using the same VRID as a CARP IP VHID will also generate the same MAC
-address conflict.
+The input validation in pfSense® software will not permit using
+conflicting VHIDs on a single pair of systems, however if there are
+multiple systems on the same broadcast domain running CARP, it's possible
+to create a conflict. VRRP also uses the same virtual MAC address scheme,
+so a VRRP IP using the same VRID as a CARP IP VHID will also generate the
+same MAC address conflict.
 
 When using CARP on the WAN interface, this also means VRRP or CARP used
 by the ISP can also conflict. Be sure to use VHIDs that are not in use
