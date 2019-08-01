@@ -1,7 +1,7 @@
 Adjusting the Size of Log Files
 ===============================
 
-pfSense stores its logs in :doc:`binary circular log
+pfSense® software stores its logs in :doc:`binary circular log
 files </monitoring/working-with-binary-circular-logs-clog>`
 that never grow in size. These are known as "clog" files. The fixed size
 prevents the logs from filling up available storage space and eliminates
@@ -10,10 +10,10 @@ once full, losing older messages in the process. These log files are
 held in */var/log* which is in a RAM disk on NanoBSD (optional on a full
 install), and on the SSD/HDD for a full install by default.
 
-Starting with pfSense 2.2, the **Log File Size (Bytes)** field in the
-:doc:`Log Settings </monitoring/log-settings>` at **Status > System Logs**,
-**Settings** tab, allows the user to specify the amount of storage to
-allocate per log file.
+Starting with pfSense software version 2.2, the **Log File Size (Bytes)**
+field in the :doc:`Log Settings </monitoring/log-settings>` at 
+**Status > System Logs**, **Settings** tab, allows the user to specify the
+amount of storage to allocate per log file.
 
 Short Version
 -------------
