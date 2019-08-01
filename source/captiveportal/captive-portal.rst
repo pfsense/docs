@@ -1,11 +1,11 @@
 Captive Portal
 ==============
 
-The **Captive Portal** function in pfSense allows securing a network by
-requiring a username and password (or only a click through), entered on
-a portal page.
+The **Captive Portal** function in pfSense® software allows securing a
+network by requiring a username and password (or only a click through),
+entered on a portal page.
 
-If authentication is used, this can be performed using pfSense's
+If authentication is used, this can be performed using the pfSense
 built-in user management, or an external authentication server such as a
 RADIUS server.
 
