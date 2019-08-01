@@ -4,12 +4,12 @@ L2TP/IPsec
 L2TP/IPsec is a common VPN type that wraps L2TP, an insecure tunneling
 protocol, inside a secure channel built using transport mode IPsec.
 
-L2TP/IPsec is supported starting with pfSense 2.2-RELEASE. This article
-will explain how to configure the service and setup clients.
+L2TP/IPsec is supported starting with pfSense® software version 2.2-RELEASE.
+This article will explain how to configure the service and setup clients.
 
- .. warning:: Users have reported issues with Windows L2TP/IPsec clients behind
-    NAT. If the clients will be behind NAT, Windows clients will most likely not
-    function. Consider an IKEv2 implementation instead.
+.. warning:: Users have reported issues with Windows L2TP/IPsec clients behind
+   NAT. If the clients will be behind NAT, Windows clients will most likely not
+   function. Consider an IKEv2 implementation instead.
 
 Setup L2TP
 ----------
@@ -41,7 +41,7 @@ Configure L2TP Server
 Add L2TP Users
 ^^^^^^^^^^^^^^
 
-If RADIUS is not being used, add L2TP users to pfSense.
+If RADIUS is not being used, add L2TP users to the pfSense configuration.
 
 *  Navigate to **VPN > L2TP**, **Users** tab
 *  Click |fa-plus| To add a new user
@@ -63,13 +63,13 @@ combinations found to work or not work on the forum.
 Mobile Clients Tab
 ^^^^^^^^^^^^^^^^^^
 
-*  Navigate to **VPN > IPsec**, **Mobile Clients** tab on pfSense
+*  Navigate to **VPN > IPsec**, **Mobile Clients** tab in the pfSense
+   webGUI
 *  Check **Enable IPsec Mobile Client Support**
 *  Set **User Authentication** to *Local Database* (Not used, but the
    option must have something selected)
 *  Uncheck **Provide a virtual IP address to clients**
-*  Uncheck **Provide a list of accessible networks to
-   clients**
+*  Uncheck **Provide a list of accessible networks to clients**
 *  Click **Save**
 
 Phase 1
@@ -125,13 +125,15 @@ Pre-Shared Key
 With the IPsec tunnel itself ready, now the pre-shared key must be
 configured in a special way, which is common for all clients.
 
-*  Navigate to **VPN > IPsec**, **Pre-Shared Keys** tab on pfSense
+*  Navigate to **VPN > IPsec**, **Pre-Shared Keys** tab in the pfSense
+   webGUI
 *  Click |fa-plus| to add a new PSK
 *  Set the **Identifier** to *allusers*
 
-   .. note:: The "allusers" name is a special keyword used by pfSense to
-      configure a wildcard PSK, which is necessary for L2TP/IPsec to
-      function. Do not use any other **Identifier** for this PSK!
+   .. note:: The "allusers" name is a special keyword used by pfSense 
+      software to configure a wildcard PSK, which is necessary for
+      L2TP/IPsec to function. Do not use any other **Identifier** for
+      this PSK!
 
 *  Set **Secret Type** to *PSK*
 *  Enter a **Pre-Shared Key**, such as *aaabbbccc* -- ideally one a lot
