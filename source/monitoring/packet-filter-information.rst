@@ -1,8 +1,9 @@
 Packet Filter Information
 =========================
 
-The **Diagnostics > pfInfo** page displays a large amount of data about
-how the packet filter is operating. The information includes:
+From the pfSense® webGUI, the **Diagnostics > pfInfo** page
+displays a large amount of data about how the packet filter
+is operating. The information includes:
 
 -  Interface statistics
 -  State table statistics
