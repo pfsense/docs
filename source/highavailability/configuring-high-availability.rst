@@ -7,8 +7,8 @@ high availability cluster utilizing CARP.
 
 .. image:: /_static/highavailability/carp_setup.png
 
-Overview of a pfSense High Availability Setup
----------------------------------------------
+Overview of a pfSense® High Availability Setup
+----------------------------------------------
 
 One real IP address is required for every CARP cluster node. To have 2
 cluster nodes, 2 IP addresses are needed for the real interfaces and
@@ -30,7 +30,7 @@ address on a given interface. The lowest skew states that the node
 should be the CARP master for that VIP. The XMLRPC process will
 automatically add +100 to each skew when synchronizing the VIPs to the
 secondary node. We recommend setting the skew to 0 or 1 on the primary
-node CARP virtual IPs. pfSense will handle the rest.
+node CARP virtual IPs. pfSense software will handle the rest.
 
 Setup a Dedicated Sync Interface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
