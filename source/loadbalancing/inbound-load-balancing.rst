@@ -83,7 +83,8 @@ options to tweak how relayd monitors and provides services.
    increased in certain cases.
 -  **Prefork**: The number of processes spawned by relayd to handle
    requests. This **only** applies to **DNS** mode, as that is the only
-   mode on pfSense where relayd acts as a proxy instead of a relay.
+   mode on pfSense® software where relayd acts as a proxy instead of a
+   relay.
 
 Firewall Rules
 --------------
@@ -117,11 +118,12 @@ The relayd daemon on pfSense monitors all the servers in the pool (every
 immediately stops sending traffic to that server. It continues trying to
 connect, and when it detects it back online, it resumes sending traffic.
 If it sends a client request to a server that is down (e.g. before
-pfSense detects that it is down), that client request will time out.
+pfSense software detects that it is down), that client request will time
+out.
 
-If all servers go down, pfSense will send traffic to servers in the the
-**Fall Back Pool**. Once a pool server is back up, it will again start
-to send traffic to the preferred pool server(s), but note that some
+If all servers go down, pfSense software will send traffic to servers in
+the the **Fall Back Pool**. Once a pool server is back up, it will again
+start to send traffic to the preferred pool server(s), but note that some
 traffic may still go to the **Fall Back Pool** for a short period of
 time, especially if **Sticky connections** is turned on. Because of
 this, if the **Fall Back Pool** is serving the same content as the pool
