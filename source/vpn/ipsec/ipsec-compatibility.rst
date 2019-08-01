@@ -1,10 +1,10 @@
 IPsec Third-Party Compatibility
 ===============================
 
-Any device supporting standard IPsec can be connected with pfSense. This
-page lists some that are known to be in active use, though it shouldn't
-be considered complete. Most every device in existence that supports
-IPsec is in active use somewhere.
+Any device supporting standard IPsec can be connected with pfSense®
+software. This page lists some that are known to be in active use,
+though it shouldn't be considered complete. Most every device in
+existence that supports IPsec is in active use somewhere.
 
 * Adtran
 * Cisco routers
@@ -30,5 +30,5 @@ IPsec is in active use somewhere.
 
 ... and we know there are many more.
 
-If a device is not listed and is known to work with pfSense for IPsec, please
-|doc_updates|.
+If a device is not listed and is known to work with pfSense software
+for IPsec, please |doc_updates|.
