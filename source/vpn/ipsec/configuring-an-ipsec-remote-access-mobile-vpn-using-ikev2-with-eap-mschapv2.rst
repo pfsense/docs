@@ -1,13 +1,13 @@
 Configuring an IPsec Remote Access Mobile VPN using IKEv2 with EAP-MSCHAPv2
 ===========================================================================
 
-IKEv2 is supported in current pfSense versions, and one way to make it work is
-by using EAP-MSCHAPv2, which is covered in this article.
+IKEv2 is supported in current pfSense® software versions, and one way to
+make it work is by using EAP-MSCHAPv2, which is covered in this article.
 
-.. warning:: Server certificates generated before pfSense 2.2.4-RELEASE did not
-   have an **Extended Key Usage** flag set that Windows typically expects. A new
-   server certificate must be generated after upgrading to a current pfSense
-   release.
+.. warning:: Server certificates generated before pfSense software version 
+   2.2.4-RELEASE did not have an **Extended Key Usage** flag set that
+   Windows typically expects. A new server certificate must be generated
+   after upgrading to a current pfSense software release.
 
 Setup Certificates
 ------------------
@@ -21,7 +21,7 @@ Create a Certificate Authority
 If one is not already available, then the first task is to create a Certificate
 Authority.
 
-*  Navigate to **System > Cert Manager** on pfSense
+*  Navigate through the pfSense webGUI to **System > Cert Manager**
 *  Click |fa-plus| **Add** to create a new certificate authority
 *  Select *Create an internal Certificate Authority* for the **Method**
 *  Fill in the rest of the fields as desired with company or site-specific
@@ -174,10 +174,10 @@ Import the CA to the Client PC
 
 The server setup is complete, the following tasks configure the client.
 
-*  Export the CA Cert from pfSense and download it to the client PC
+*  Export the CA Cert from the pfSense router and download it to the client PC
 
-   *  Navigate to **System > Cert Manager**, **Certificate Authorities** tab on
-      pfSense
+   *  Navigate through the pfSense webGUI to **System > Cert Manager**,
+      **Certificate Authorities** tab
    *  Click |fa-certificate| by the CA to download *only* the certificate
 
 *  Locate the downloaded file on the client PC (e.g. ``MyCA.crt``)
