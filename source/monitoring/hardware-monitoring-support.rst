@@ -1,10 +1,10 @@
 Hardware Monitoring Support
 ===========================
 
-FreeBSD, and thus pfSense, supports hardware monitoring on a few
-chipsets. Unfortunately, support for this is limited but growing as
-hardware is replaced by newer Intel and AMD CPUs that include better
-monitoring. Where supported, it can be handy.
+FreeBSD, and thus pfSense® software, supports hardware monitoring
+on a few chipsets. Unfortunately, support for this is limited but
+growing as hardware is replaced by newer Intel and AMD CPUs that
+include better monitoring. Where supported, it can be handy.
 
 An Intel or AMD temperature monitor module may be selected under
 **System > Advanced** on the **Miscellaneous** tab. These work with
