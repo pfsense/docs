@@ -1,14 +1,14 @@
 Virtualizing pfSense with VMware vSphere / ESXi
 ===============================================
 
-This article is about building a pfSense virtual machine on vSphere /
-ESXi. Article explains how to install any major pfSense version on
-VMware vSphere versions 5.x and 6.x. Article does not cover how to
-install vSphere or how to configure pfSense to do any of the many
-amazing things it can. A basic, working, pfSense virtual machine will
-exist by the end of this document.
+This article is about building a pfSense® virtual machine on vSphere /
+ESXi. Article explains how to install any major pfSense software
+version on VMware vSphere versions 5.x and 6.x. The article does not
+cover how to install vSphere or how to configure pfSense software to
+do any of the many amazing things it can. A basic, working, pfSense 
+virtual machine will exist by the end of this document.
 
-.. note:: If pfSense will be running as a perimeter
+.. note:: If the pfSense firewall will be running as a perimeter
    firewall for an organization and the "attack surface" should be
    minimized, many will say it is preferable to run it unvirtualized on
    stand-alone hardware. That is a decision for the user and/or
@@ -28,12 +28,12 @@ Assumptions
 -  The reader has an understanding of network addressing
 -  You have already uploaded pfSense installation .iso to the datastore.
 
-Installing pfSense on vSphere 6.x using vSphere web client
-==========================================================
+Installing pfSense Software on vSphere 6.x using vSphere web client
+===================================================================
 
 The following steps include the necessary vSphere web client
 configuration required to get pfSense VM running. After getting to the
-pfSense setup step, switch to the guide for vSphere client bellow.
+pfSense setup step, switch to the guide for vSphere client below.
 
 Basic vSphere web client networking setup
 -----------------------------------------
@@ -96,8 +96,8 @@ On the final wizard screen confirm the settings and click finish.
 
 .. image:: /_static/virtualization/vsphereweb5.png
 
-pfSense installation
---------------------
+pfSense software installation
+-----------------------------
 
 Once the pfSense virtual machine is created, under vSphere web client
 navigator click on "Virtual Machines" and select your newly created VM.
@@ -112,8 +112,8 @@ On the next screen, press "I" to invoke installer mode.
 
 .. image:: /_static/virtualization/selectvirtual.png.png
 
-After pfSense boots you will be greeted by the setup wizard. Select
-"Accept these settings"
+After the pfSense installer boots you will be greeted by the setup
+wizard. Select "Accept these settings"
 
 .. image:: /_static/virtualization/pfsensetup.png
 
@@ -126,15 +126,15 @@ When prompted, select "Standard Kernel".
 
 .. image:: /_static/virtualization/screen_shot_2017-07-25_at_17.50.11.png
 
-After that installation completes and pfSense boots up for the first
-time.
+After that installation completes and pfSense software boots up for the
+first time.
 
 .. image:: /_static/virtualization/screen_shot_2017-07-25_at_17.57.04.png
 
 Installing Open-VM-Tools
 ------------------------
 
-Once pfSense installation is complete, upon first boot install the
+Once the pfSense installation is complete, upon first boot install the
 Open-VM-Tools. Reboot is not necessary afterwards, however make sure the
 Open-VM-Tools service is running under Status > Services.
 
@@ -143,8 +143,8 @@ Open-VM-Tools service is running under Status > Services.
 Congratulations, you have successfully completed pfSense installation
 on ESXi!
 
-Installing pfSense on vSphere 5.x using vSphere client
-======================================================
+Installing pfSense Software on vSphere 5.x using vSphere client
+===============================================================
 
 Basic vSphere Networking
 ------------------------
@@ -186,11 +186,11 @@ Creating the LAN
 ~~~~~~~~~~~~~~~~
 
 In a small network it is quite common to use the Virtual Machine Port
-Group on vSwitch0 to provide the LAN interface for pfSense. That allows
-access to the LAN side of the pfSense virtual machine and to manage the
-ESXi host with the vSphere client from a single PC. Of course, the
-virtual machine (e.g., pfSense) and the ESXi management interface must
-have different IP addresses.
+Group on vSwitch0 to provide the LAN interface for the pfSense firewall.
+That allows access to the LAN side of the pfSense virtual machine and to
+manage the ESXi host with the vSphere client from a single PC. Of course,
+the virtual machine (e.g., the pfSense firewall) and the ESXi management
+interface must have different IP addresses.
 
 *COMMENT: I must say here that I always separate the ESXi Management
 network from other networks. I won't go into the detail but there are
@@ -217,7 +217,7 @@ Change the **Network label** to "LAN" and click OK then Close.
 .. image:: /_static/virtualization/esxi_pfs_2_2a.png
 
 This makes life a little easier when we assign virtual network
-interfaces to pfSense.
+interfaces to the pfSense instance.
 
 Creating the WAN
 ~~~~~~~~~~~~~~~~
@@ -263,8 +263,8 @@ The networking diagram should now look like this:
 
 .. image:: /_static/virtualization/esxi_pfs_2_6a.png
 
-Now we can configure a new virtual machine on which pfSense will be
-installed.
+Now we can configure a new virtual machine on which pfSense software
+will be installed.
 
 Configuring the Virtual Machine
 -------------------------------
@@ -296,28 +296,28 @@ Storage
 
 Now we need to decide where disk storage will be allocated to hold the
 configuration and operating files for the virtual machine. (This is
-not necessarily the same location as the file system for pfSense, as
-shown later. ) There are two datastores on this server – a small 80GB
-drive on which ESXi is installed and a 500GB disc which is for virtual
-machine storage. Highlight a datastore from the list and click
-**Next**.
+not necessarily the same location as the file system for pfSense
+software, as shown later.) There are two datastores on this server – a 
+small 80GB drive on which ESXi is installed and a 500GB disc which is
+for virtual machine storage. Highlight a datastore from the list and
+click **Next**.
 
 Virtual Machine Version
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-4a.png
 
-Here is where the virtual machine version to use for pfSense is
-configured in ESXi. Note the warning above. Select version 8 and Click
-**Next**.
+Here is where the virtual machine version to use for the pfSense
+installation is configured in ESXi. Note the warning above. Select
+version 8 and click **Next**.
 
 Guest operating System
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-5a.png
 
-pfSense is built on the FreeBSD operating system, not Linux. Select
-**Other** and chose **FreeBSD (32-bit)** or **FreeBSD (64-bit)**.
+pfSense software is built on the FreeBSD operating system, not Linux.
+Select **Other** and chose **FreeBSD (32-bit)** or **FreeBSD (64-bit)**.
 
 Make sure the hardware is capable of running 64-bit virtual machines, which it
 must be to run ESXi, and download the pfSense ISO image for installation,
@@ -340,11 +340,11 @@ Memory
 .. image:: /_static/virtualization/esxi_pfs_3-7a.png
 
 Depending on the number and type of packages that will be installed on
-pfSense, a basic pfSense VM should run comfortably in 512MB of RAM. A
-lot of simple, non-virtual installations run on old PCs with 256MB and
-less, so long as swap space is available on the disk. Given the low
-cost of RAM these days, allocating less than 512MB would not be
-advised.
+the pfSense software, a basic pfSense VM should run comfortably in
+512MB of RAM. A lot of simple, non-virtual installations run on old PCs
+with 256MB and less, so long as swap space is available on the disk.
+Given the low cost of RAM these days, allocating less than 512MB would
+not be advised.
 
 If physical RAM on the ESX host is limited - perhaps because lots of
 other virtual machines will be running - the allocation on the pfSense
@@ -362,14 +362,14 @@ Network
 Remember that the two virtual networks were renamed to LAN and WAN.
 This is where we attach those networks to the pfSense virtual machine.
 
-Select the number of virtual NICs for use by pfSense. In this case it
+Select the number of virtual NICs for use by the pfSense VM. In this case it
 will be *2*. Now, using the drop-down lists assign **NIC 1** on the
 virtual machine to the WAN network. Assign NIC 2 to LAN. (This is why
 the virtual machine port groups were given these names – they are much
 easier to recognize.)
 
-.. note:: On pfSense 2.2 and later, the choices in the default
-   configuration are *em0* for WAN and *em1* for LAN, so WAN should be
+.. note:: On pfSense software version 2.2 and later, the choices in the
+   default configuration are *em0* for WAN and *em1* for LAN, so WAN should be
    assigned to NIC 1. This may differ from the screenshots shown here.
    The interface assignment prompt will no longer appear for hosts
    using *em* NICs, so be careful not to attach a LAN to *em0*!
@@ -432,8 +432,8 @@ machine is displayed.
 
 Before finishing, check the box **Edit virtual machine settings before
 completion**. The label on the **Finish** button will change to
-**Continue**. This will allow the boot CD from which pfSense will be
-installed to be configured. Click **Continue.**
+**Continue**. This will allow the boot CD from which the pfSense 
+softwware will be installed to be configured. Click **Continue.**
 
 Editing the Virtual Machine's Properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -467,8 +467,8 @@ re-use.
 
 Click **Finish**.
 
-Installing pfSense
-------------------
+Installing pfSense Software
+---------------------------
 
 Booting the VM from CD/DVD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -488,7 +488,7 @@ Booting the VM from CD/DVD
         Now click the **Console** tab and the virtual machine will begin
         booting from the CD.
 
-        Skip to **Installing pfSense.**
+        Skip to **Installing pfSense Software.**
 
 **Option 2: Installing from the CD/DVD drive on the client**
 
@@ -526,10 +526,11 @@ Booting the VM from CD/DVD
         client and select **Guest > Send Ctl+Alt+Del**. This will reboot
         the virtual machine without disconnecting the CD/DVD drive.
 
-        In the Console tab, pfSense can now be seen booting from the CD.
+        In the Console tab, the pfSense installer can now be seen booting
+        from the CD.
 
-Installing pfSense
-~~~~~~~~~~~~~~~~~~
+Installing pfSense Software
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If everything has gone well the pfSense boot menu be shown.
 
@@ -542,7 +543,7 @@ However, it's included here to save jumping around between documents.**
 
 .. image:: /_static/virtualization/esxi_pfs_4-1a.png
 
-Allow the timer to expire and boot pfSense from the "Live CD".
+Allow the timer to expire and boot the pfSense software from the "Live CD".
 
 When the following console message is seen:
 
@@ -574,44 +575,45 @@ Next up, the pfSense boot menu returns.
 
 .. image:: /_static/virtualization/esxi_pfs_4-2a.png
 
-As pfSense is already installed on the virtual disk, allow the timer
-to expire.
+As the pfSense software is already installed on the virtual disk,
+allow the timer to expire.
 
 .. image:: /_static/virtualization/esxi_pfs_4_9a.png
 
-Once pfSense has booted the message: **Network interface mismatch –
-Running interface assignment option** is shown. This means that
-pfSense has not yet been told which virtual network interface is LAN
-and which is WAN.
+Once the pfSense software has booted the message: **Network interface
+mismatch – Running interface assignment option** is shown. This 
+means that the pfSense instance has not yet been told which virtual
+network interface is LAN and which is WAN.
 
-.. note:: As mentioned previously, on pfSense 2.2 and later, the choices
-   in the default configuration are *em0* for WAN and *em1* for LAN, so
-   WAN should be assigned to NIC 1. This may differ from the
-   screenshots shown here. The interface assignment prompt will no
-   longer appear for hosts using *em* NICs, so be careful not to attach
-   a LAN to *em0*!
+.. note:: As mentioned previously, on pfSense software version 2.2 and
+   later, the choices in the default configuration are *em0* for WAN
+   and *em1* for LAN, so WAN should be assigned to NIC 1. This may
+   differ from the screenshots shown here. The interface assignment
+   prompt will no longer appear for hosts using *em* NICs, so be
+   careful not to attach a LAN to *em0*!
 
 First of all, though, as VLANs are not needed, type *n* and press
 **return**.
 
 .. image:: /_static/virtualization/esxi_pfs_4_10a.png
 
-The order that the virtual NICs were assigned to pfSense when the
-virtual machine was setup is important here. Generally, ESXi presents
-those network interfaces to pfSense in sequence. That is, the pfSense
-virtual machine sees NIC 1 (WAN) as em0, NIC 2 (LAN) as em1, etc.
+The order that the virtual NICs were assigned to the pfSense instance 
+when the virtual machine was setup is important here. Generally, ESXi
+presents those network interfaces to the pfSense instance in sequence.
+That is, the pfSense virtual machine sees NIC 1 (WAN) as em0, NIC 2
+(LAN) as em1, etc.
 
-Note that the MAC addresses assigned to the virtual NICs and seen by
-pfSense are also virtual. They are not the MAC addresses of the physical
-NICs.
+.. note:: The MAC addresses assigned to the virtual NICs and seen by the
+   pfSense VM are also virtual. They are not the MAC addresses of the
+   physical NICs.
 
 To double check which virtual NIC is which, right-click the virtual
 machine in the left-hand pane of the vSphere client and choose **Edit
 Settings**. Selecting each of the network adapters (WAN, LAN, etc) will
 show the virtual MAC address assigned to that interface. Make a note of
-these to help get the correct virtual interface assigned in pfSense.
-Only the last two characters of the vMAC are generally needed to match
-them against those shown in the pfSense console. For example:
+these to help get the correct virtual interface assigned in the pfSense
+software. Only the last two characters of the vMAC are generally needed
+to match them against those shown in the pfSense console. For example:
 
 WAN = ee LAN = f8
 
@@ -634,15 +636,15 @@ and press return.
 
 .. image:: /_static/virtualization/esxi_pfs_4_14a.png
 
-After a short interval pfSense will reconfigure itself, restart and
-present the main pfSense screen, above.
+After a short interval, the pfSense VM will reconfigure itself,
+restart and present the main pfSense screen, above.
 
 If the modem (in this example a simple cable modem) is connected to the
 physical WAN port of the ESXi host, the WAN interface should have
 received a public IP address from the ISP via DHCP. ADSL and other
-modems may need to be set up to pass the public IP through to pfSense.
-Other types of WAN connections and configurations are beyond the scope
-of this article.
+modems may need to be set up to pass the public IP through to the 
+pfSense VM. Other types of WAN connections and configurations are
+beyond the scope of this article.
 
 The LAN interface has its installation default IP address of
 192.168.1.1. If another network address and/or subnet is desired, it may
@@ -664,15 +666,15 @@ Another interesting aspect of virtualization is that it is not necessary
 to stop at one DMZ. Because the DMZ network can be completely virtual,
 additional physical NICs are not required. For example, a virtual mail
 server could be put in one DMZ and a virtual web server in another.
-Then, by connecting them through pfSense with virtual NICs, all access
-between the DMZs may be controlled. In addition, if one server is
+Then, by connecting them through the pfSense VM with virtual NICs, all
+access between the DMZs may be controlled. In addition, if one server is
 compromised, access to any of the others will be more difficult.
 
 That's not to say that a DMZ can't also be connected to a real physical
 network as well. It may be desirable to connect a game console or
-video/music server behind pfSense but not have it directly connected to
-the LAN. To accomplish that, connect a physical NIC to the ESX system
-and attach it as a DMZ.
+video/music server behind the pfSense VM but not have it directly
+connected to the LAN. To accomplish that, connect a physical NIC to the
+ESX system and attach it as a DMZ.
 
 Creating the DMZ network
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -714,7 +716,7 @@ attached.
 
 .. image:: /_static/virtualization/esxi_pfs_5_5b.png
 
-The next step is to connect the pfSense to this new DMZ network.
+The next step is to connect the pfSense VM to this new DMZ network.
 Right-click the pfSense virtual machine and select **Edit Settings**.
 Click the **Add** button.
 
@@ -732,9 +734,9 @@ networks and choose **Connect at power on**. Click **Next**.
 
 Now the network diagram should look like the above.
 
-Note that all of this may be done while the pfSense virtual machine is
-still running. To make pfSense aware of the changes, though, it will
-need to be restarted and then the interface must be assigned.
+.. note:: all of this may be done while the pfSense virtual machine is
+   still running. To make the pfSense VM aware of the changes, though,
+   it will need to be restarted and then the interface must be assigned.
 
 Now additional virtual machines may be attached to the DMZ network.
 
@@ -752,7 +754,7 @@ exhaust the UPS battery ... but that's another story.
 The VMware Tools have been made available as a pfSense package, which
 makes the install very quick and easy.
 
-Log in to the pfSense Web GUI and click **System > Packages**.
+Log in to the pfSense webGUI and click **System > Packages**.
 
 From the **Available Packages** tab list, look for the **Open-VM-Tools**
 package and click |fa-plus| on the right to install the package. Confirm the
