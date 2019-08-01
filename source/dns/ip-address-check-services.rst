@@ -1,7 +1,7 @@
 Configuring IP Address Check Services for Dynamic DNS
 =====================================================
 
-pfSense software version 2.3.3 and later support custom IP address check
+pfSense® software version 2.3.3 and later support custom IP address check
 services. These services are used by Dynamic DNS clients to determine
 the public IP address of the firewall when a WAN interface is behind an
 upstream NAT device.
