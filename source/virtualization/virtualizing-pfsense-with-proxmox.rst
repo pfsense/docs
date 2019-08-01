@@ -1,7 +1,7 @@
 Virtualizing pfSense with Proxmox
 =================================
 
-This following article is about building and running a pfSense virtual
+This following article is about building and running a pfSense® virtual
 machine under Proxmox 4.4. The guide applies to any newer Proxmox
 version. Article covers Proxmox networking setup and pfSense virtual
 machine setup process. The guide does not cover how to install Proxmox.
@@ -18,10 +18,11 @@ Assumptions
 Basic Proxmox networking
 ------------------------
 
-In order to virtualize pfSense we first need to create two Linux Bridges
+In order to virtualize pfSense software, first create two Linux Bridges
 on Proxmox, which will be used for LAN and WAN. Select your host from
 the server view, navigate to System > Network. We will be using eth1 and
-eth2 interfaces for pfSense, while eth0 is for Proxmox management.
+eth2 interfaces for the pfSense firewall, while eth0 is for Proxmox
+management.
 
 .. image:: /_static/virtualization/screen_shot_2017-06-17_at_23.19.20.png
 
@@ -99,12 +100,12 @@ Starting and configuring the pfSense virtual machine
 
 After creating a new virtual machine and adding network interfaces, it's
 time to start the virtual machine. If everything was done correctly, you
-can see pfSense booting up from the **Console** window
+can see pfSense software booting up from the **Console** window.
 
 .. image:: /_static/virtualization/screen_shot_2017-06-17_at_23.30.32.png
 
-pfSense will prompt you to select boot mode, press **I** to **launch the
-installer**.
+The pfSense installer will prompt you to select boot mode, press **I** to
+**launch the installer**.
 
 .. image:: /_static/virtualization/screen_shot_2017-06-17_at_23.31.06.png
 
@@ -127,18 +128,19 @@ purpose of this guide, we have assigned vtnet0 to WAN and vtnet1 to LAN.
 
 .. image:: /_static/virtualization/screen_shot_2017-06-17_at_23.44.18.png
 
-After interfaces have been assigned, pfSense will complete the boot.
+After interfaces have been assigned, the pfSense firewall will complete the
+boot process.
 
 .. image:: /_static/virtualization/screen_shot_2017-06-18_at_00.01.41.png
 
-Configuring pfSense to work with Proxmox VirtIO
------------------------------------------------
+Configuring pfSense Software to work with Proxmox VirtIO
+--------------------------------------------------------
 
 After the pfSense installation and interfaces assignment is complete,
 connect to the assigned LAN port from another computer.
 
-**WARNING:** because the hardware checksum offload is not yet disabled,
-accessing pfSense WebGUI might be sluggish. This is **NORMAL** and is
+.. warning:: Because the hardware checksum offload is not yet disabled,
+accessing pfSense webGUI might be sluggish. This is **NORMAL** and is
 fixed in the following step.
 
 To disable hardware checksum offload, navigate under **System >
