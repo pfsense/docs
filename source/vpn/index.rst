@@ -3,7 +3,7 @@ VPN
 ***
 
 Virtual Private Networks, on VPNs, encrypt and authenticate traffic across
-untrusted networks.
+untrusted networks. VPN functionality is built into pfSense® software.
 
 A VPN can link together two remote networks as if they were directly connected,
 or it can allow remote clients to securely reach local resources. They can also
