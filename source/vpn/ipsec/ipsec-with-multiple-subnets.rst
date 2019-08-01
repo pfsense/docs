@@ -1,9 +1,9 @@
 Using IPsec with Multiple Subnets
 =================================
 
-On current versions of pfSense, additional subnets are handled by adding
-an additional Phase 2 entry to cover the path to pass through the
-tunnel.
+On current versions of pfSense® software, additional subnets are
+handled by adding an additional Phase 2 entry to cover the path
+to pass through the tunnel.
 
 For example, for 172.16.0.0/24 and 172.16.1.0/24 at Site A, and
 10.0.0.0/24 at Site B, define two Phase 2 entries on both sides:
