@@ -1,7 +1,7 @@
 Configuring a Single Multi-Purpose OpenVPN Instance
 ===================================================
 
-This Howto details one way to make a single OpenVPN server go a long
+This How-to article details one way to make a single OpenVPN server go a long
 way. Using this method access can be provided to a large pool of
 addresses for general access and then make use of some of the less
 intuitive features of OpenVPN to provide properly locked down access for
@@ -53,7 +53,7 @@ OpenVPN Client specific overrides
 For each client create a **Client specific override**.
 
 The tunnel networks will be **/30s** (i.e. One address for the network,
-one for the pfSense OpenVPN server, one for the client and one for
+one for the pfSense® OpenVPN server, one for the client and one for
 broadcast). So the first one will be *10.33.127.0/30* and the second one
 will be *10.33.127.4/30* and so on.
 
