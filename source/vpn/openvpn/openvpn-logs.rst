@@ -1,7 +1,8 @@
 OpenVPN Logs
 ============
 
-The OpenVPN logs (**Status > System Logs**, **OpenVPN** tab) show output
+The OpenVPN logs found through the pfSense® webGUI at 
+**Status > System Logs** and the **OpenVPN** tab show output
 from the OpenVPN daemon(s) in use, both clients and servers. Messages
 are shown in the logs for successful connections as well as failures and
 errors.
