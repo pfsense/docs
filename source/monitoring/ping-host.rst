@@ -1,8 +1,8 @@
 Ping Host
 =========
 
-From **Diagnostics > Ping**, an ICMP echo request (aka ping) may be sent
-to a given **Host**.
+In the pfSense® webGUI, from **Diagnostics > Ping**, an ICMP echo
+request (aka ping) may be sent to a given **Host**.
 
 -  **Host**: A hostname or IP address to which the ping will be sent.
 -  **IP Protocol**: The address type to ping when a hostname is entered
@@ -17,4 +17,3 @@ to a given **Host**.
 Click **Ping** to start the process. The result will be displayed
 automatically once complete. Do not nagivate away from the page while
 the ping is running.
-
