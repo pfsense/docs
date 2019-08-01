@@ -4,7 +4,7 @@ Traceroute
 The traceroute page, located at **Diagnostics > Traceroute**, works like
 the *traceroute* command found on many platforms. It sends special
 packets which, as the name implies, trace a route across the network
-from the pfSense host to a remote host. A list of hops between hosts
+from the pfSense® host to a remote host. A list of hops between hosts
 will be displayed, along with response times, as long as the intervening
 hosts support (or don't filter) traffic required for traceroute to work.
 
