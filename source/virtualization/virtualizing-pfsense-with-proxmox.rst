@@ -140,8 +140,8 @@ After the pfSense installation and interfaces assignment is complete,
 connect to the assigned LAN port from another computer.
 
 .. warning:: Because the hardware checksum offload is not yet disabled,
-accessing pfSense webGUI might be sluggish. This is **NORMAL** and is
-fixed in the following step.
+   accessing pfSense webGUI might be sluggish. This is **NORMAL** and is
+   fixed in the following step.
 
 To disable hardware checksum offload, navigate under **System >
 Advanced** and select **Networking** tab. Under **Networking
