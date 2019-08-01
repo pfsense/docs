@@ -1,9 +1,10 @@
 Routing Internet Traffic Through a Site-to-Site IPsec VPN
 =========================================================
 
-It is possible to use IPsec to send Internet traffic from Site A such
-that it would appear to be coming from Site B. This may be needed if a
-vendor requires that connections originate from a specific address at Site B.
+It is possible to use IPsec on a pfSense® router to send Internet
+traffic from Site A such that it would appear to be coming from Site
+B. This may be needed if a vendor requires that connections
+originate from a specific address at Site B.
 
 .. image:: /_static/vpn/ipsec/ipsec-s2s-vork-00.png
 
