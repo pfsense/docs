@@ -1,9 +1,9 @@
 Authenticating OpenVPN Users with RADIUS via Active Directory
 =============================================================
 
-This how-to will show how to set up OpenVPN on pfSense for Windows
-clients, using certificates with user authentication via RADIUS in
-Active Directory.
+This how-to article will show how to set up OpenVPN on pfSense®
+software for Windows clients, using certificates with user
+authentication via RADIUS in Active Directory.
 
 This how-to is intended for small businesses that want to roll out
 secure VPN connectivity for their users using free software. Due to the
@@ -13,7 +13,7 @@ inefficient for larger businesses.
 Versions
 ^^^^^^^^
 
--  pfSense 2.x
+-  pfSense software version 2.x
 -  Active Directory on Windows Server 2008 R2 - I'm using a Forest
    Functional Level of 2008 R2 but I don't think that's really a
    prerequisite. If it doesn't work, user account passwords may need to
@@ -161,8 +161,8 @@ On the pfSense firewall
 Set up the Authentication Server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In pfSense, go to **System > User Manager**, on the **Servers** tab.
-Click |fa-plus| on the right.
+In the pfSense webGUI, go to **System > User Manager**, on the 
+**Servers** tab. Click |fa-plus| on the right.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_022.jpg
 
@@ -578,7 +578,7 @@ Troubleshooting
 If something doesn't work, here are some pointers for troubleshooting:
 
 -  The username may be case sensitive.
--  Use pfSense's fine logging system under **Status** > **System logs**
+-  Use the fine pfSense logging system under **Status** > **System logs**
    > **OpenVPN**.
 -  Ask questions in the pfSense forum.
 -  Windows 7 sometimes adds a *Microsoft Virtual WiFi Miniport Adapter*.
