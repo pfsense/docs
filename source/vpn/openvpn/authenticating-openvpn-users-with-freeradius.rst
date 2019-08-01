@@ -65,7 +65,7 @@ Add Users
 Configure a pfSense Authentication Server
 -----------------------------------------
 
--  Navigate to **System > User Manager**
+-  In the pfSense® webGUI, navigate to **System > User Manager**
 -  Select the **Servers** tab
 -  Click + to add a new entry
 -  Enter a **Descriptive name** such as ``FreeRADIUS``
