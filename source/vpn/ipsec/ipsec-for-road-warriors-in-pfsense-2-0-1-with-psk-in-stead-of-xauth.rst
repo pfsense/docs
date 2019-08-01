@@ -1,13 +1,14 @@
-IPsec for road warriors in PfSense 2.0.1 with PSK in stead of xauth
-===================================================================
+IPsec for road warriors in PfSense software version 2.0.1 with PSK instead of xauth
+===================================================================================
 
-This article describes how to set up Mobile IPsec in pfSense 2.x with a
-Pre-Shared Key instead of xauth and how to configure the Shrew Soft VPN
-Client to match. The Shrew Soft VPN client is freely available for
-Windows, Linux and BSD at http://shrew.net.
+This article describes how to set up Mobile IPsec in pfSense® software 
+version 2.x with a Pre-Shared Key instead of xauth and how to configure
+the Shrew Soft VPN Client to match. The Shrew Soft VPN client is freely
+available for Windows, Linux and BSD at http://shrew.net.
 
 For information on using xauth and connecting mobile devices like
-Android phones or iPhones, see :doc:`IPsec Road Warrior/Mobile Client How-To </vpn/ipsec/configuring-an-ipsec-remote-access-mobile-vpn-using-ikev1-xauth>`.
+Android phones or iPhones, see 
+:doc:`IPsec Road Warrior/Mobile Client How-To </vpn/ipsec/configuring-an-ipsec-remote-access-mobile-vpn-using-ikev1-xauth>`.
 
 **Before we start:**
 
@@ -248,9 +249,9 @@ an established tunnel may not let any traffic through.
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_026.jpg
 
 Don't change anything on the **Name Resolution** tab; these settings are
-all automatically set by pfSense. Relevant information could be entered
-here but if the settings were configured on the firewall, they need not
-be set here.
+all automatically set by the pfSense software. Relevant information
+could be entered here but if the settings were configured on the firewall,
+they need not be set here.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_028.jpg
 
@@ -276,9 +277,9 @@ the e-mail address.
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_033.jpg
 
 Now scroll over to the **Phase 1** tab. Set the **Cipher Algorithm** to
-**aes** or whatever was entered on the Phase 1 page in pfSense. **Cipher
-Key Length** to **256** (or whatever etc.) and **Hash Algorithm** to
-**sha1**. Set the **Key Life Time limit** to **3600**.
+**aes** or whatever was entered on the Phase 1 page in the pfSense software.
+**Cipher Key Length** to **256** (or whatever etc.) and **Hash Algorithm**
+to **sha1**. Set the **Key Life Time limit** to **3600**.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_034.jpg
 
@@ -345,19 +346,19 @@ going to **File** > **Export**. Restoring works by choosing **Import**.
 Troubleshooting
 ---------------
 
-I've been using pfSense in combination with Shrew Soft VPN for a long
-time and in my experience it is a very stable combination. However
+I've been using pfSense software in combination with Shrew Soft VPN for
+a long time and in my experience it is a very stable combination. However
 things can always go wrong. If it doesn't work, here are some hints to
 help troubleshoot.
 
 -  Check the router and the client settings.
 -  Check the router and the client settings again.
--  In pfSense, go to **Status > System Logs** and there to the **IPsec**
-   tab. Hit the **Clear log** button, have the client try and start the
-   connection and click the **IPsec** tab again to refresh the page.
-   This is usually very inspiring.
--  In pfSense, go to **Status > Services** and reset the racoon service.
-   This sometimes helps.
+-  In the pfSense webGUI, go to **Status > System Logs** and there to
+   the **IPsec** tab. Hit the **Clear log** button, have the client try
+   and start the connection and click the **IPsec** tab again to
+   refresh the page. This is usually very inspiring.
+-  In the pfSense webGUI, go to **Status > Services** and reset the
+   racoon service. This sometimes helps.
 -  Reboot the client machine.
 -  Reboot the pfSense machine. Should not be necessary but if all other
    attempts fail, it may be tried.
@@ -367,8 +368,8 @@ help troubleshoot.
    and password, it's almost always because the user has either no
    Internet connection or no dns service. Or they are on a guest network
    and need to open their browser for identification or something.
--  Roy Blüthgen wrote in to say: I am running a pfSense 2.0.2
-   installation and followed the guide to set up IPsec server/client.
+-  Roy Blüthgen wrote in to say: I am running a pfSense software version
+   2.0.2 installation and followed the guide to set up IPsec server/client.
    Afterwards when testing I was running into this issue:
    https://redmine.pfSense.org/issues/1351. I tried the pfSense config
    suggested in note 30 (by Jim) and that fixed my problem: **System >
