@@ -2,10 +2,10 @@
 High Availability
 *****************
 
-pfSense is capable of having multiple nodes act as a cluster for **High
-Availability**. This article is a brief overview. The **Hardware Redundancy**
-chapter in the |book_link| should be consulted before configuring a high
-availability cluster utilizing CARP.
+pfSense® software is capable of having multiple nodes act as a cluster for
+**High Availability**. This article is a brief overview. The **Hardware
+Redundancy** chapter in the |book_link| should be consulted before
+configuring a high availability cluster utilizing CARP.
 
 Settings for High Availability are found under **System > High Avail. Sync**,
 and sometimes on other areas that have special handling (Vouchers, packages,
@@ -43,9 +43,10 @@ Configuration Synchronization
 -----------------------------
 
 Configuration Synchronization is handled by **XMLRPC Sync** which is a
-mechanism of pfSense that allows transmitting certain configuration
-information and commands between nodes. Typically the primary node will
-synchronize its configuration areas to a secondary node.
+mechanism of pfSense software that allows transmitting certain
+configuration information and commands between nodes. Typically the
+primary node will synchronize its configuration areas to a secondary
+node.
 
 Common Requirements
 -------------------
@@ -54,7 +55,7 @@ For a cluster to function, a few things are required, such as:
 
 -  Minimum of three IP addresses per subnet (one for primary, one for
    secondary, one or more for CARP VIPs) -- This can be avoided on
-   pfSense 2.2, but is still recommended.
+   pfSense software version 2.2, but is still recommended.
 -  A dedicated interface for state and configuration synchronization.
    For security reasons it is best to keep this isolated, though it
    could be run on a local network interface it is not advised.
@@ -65,7 +66,7 @@ For a cluster to function, a few things are required, such as:
 Bringing it All Together
 ------------------------
 
-pfSense makes it easy to set these areas up to create a High
+pfSense software makes it easy to set these areas up to create a High
 Availability cluster. The full details are available in the book linked
 above. A brief run-through of a basic CARP configuration may be found
 at: :doc:`Configuring pfSense Hardware Redundancy (CARP)
