@@ -1,16 +1,16 @@
 Virtualizing pfSense with Hyper-V
 =================================
 
-This article is about building and running a pfSense virtual machine
+This article is about building and running a pfSense® virtual machine
 under Microsoft Hyper-V. The guide applies to any Hyper-V version,
 desktop or server (this includes the standalone Hyper-V Server). The
-guide explains how to install any major pfSense version under Hyper-V.
-Article covers the Hyper-V networking setup and pfSense virtual machine
-setup process. The guide does not cover how to install Hyper-V or
-Windows Server. A basic, working, pfSense virtual machine will exist by
-the end of this article.
+guide explains how to install any major pfSense software version under
+Hyper-V. Article covers the Hyper-V networking setup and pfSense software
+virtual machine setup process. The guide does not cover how to install
+Hyper-V or Windows Server. A basic, working, pfSense virtual machine will
+exist by the end of this article.
 
-.. note:: If pfSense will be running as a perimeter firewall for an
+.. note:: If pfSense software will be used as a perimeter firewall for an
    organization and the "attack surface" should be minimized, many will say
    it is preferable to run it non-virtualized on stand-alone hardware. That
    is a decision for the user and/or organization to make, however. Now
@@ -32,7 +32,7 @@ Assumptions
 Basic Hyper-V Networking
 ------------------------
 
-In order to virtualize pfSense we first need to create two **Virtual
+To virtualize pfSense software, first create two **Virtual
 Switches** via Hyper-V Manager. In the Hyper-V Manager open **Virtual
 Switch Manager** from the **Actions** menu. Select **Internal** type of
 virtual switch and click **Create Virtual Switch**
@@ -60,8 +60,9 @@ creation. Start the new virtual machine wizard add a name.
 |Virtual machine config 1|
 
 After clicking next select the appropriate virtual machine Generation.
-If you're installing pfSense 2.3 select **Generation 1**. If you are
-installing pfSense 2.4 select **Generation 2**.
+If you're installing pfSense software version 2.3.x, select 
+**Generation 1**. If you are installing pfSense software version 2.4.x,
+select **Generation 2**.
 
 |Virtual machine config 2|
 
@@ -77,8 +78,8 @@ Next step is to **Configure Networking**, select WAN from
 |Virtual machine config 4|
 
 On the next step select **Create a virtual hard disk** and assign
-10-20GB to pfSense. Larger disk size is required if you plan on
-running Squid caching.
+10-20GB to the pfSense firewall. Larger disk size is required if you
+plan on running Squid caching.
 
 |Virtual machine config 5|
 
@@ -102,8 +103,8 @@ selected under network adapters
 
 |Virtual machine config 9|
 
-Installing pfSense
-------------------
+Installing pfSense Software
+---------------------------
 
 After successfully creating and configuring the pfSense virtual machine,
 it's time to start it.
@@ -132,8 +133,8 @@ After installation is complete, select reboot and eject the ISO.
 First boot and interfaces assignment
 ------------------------------------
 
-pfSense virtual machine should boot up quickly and welcome you with
-Interfaces assignments. Select **N** to not set up VLAN's now.
+The pfSense virtual machine should boot up quickly and welcome you
+with Interfaces assignments. Select **N** to not set up VLAN's now.
 
 |Interfaces 1|
 
@@ -143,13 +144,13 @@ virtual machine settings.
 
 |Interfaces 2|
 
-After assigning interfaces pfSense will finish the boot-up. Verify
-both interfaces have the correct IP addresses.
+After assigning interfaces, pfSense software will finish the boot-up.
+Verify both interfaces have the correct IP addresses.
 
 |Interfaces 3|
 
-Congratulations! You now have pfSense runing as a virtual machine on
-Microsoft Hyper-V.
+Congratulations! You now have a pfSense firewall runing as a virtual
+machine on Microsoft Hyper-V.
 
 **Guide under construction, may have minor errors**
 
