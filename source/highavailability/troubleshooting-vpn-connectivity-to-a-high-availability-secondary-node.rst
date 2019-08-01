@@ -17,8 +17,8 @@ node's IP, and vice versa. that way it appears to originate from the
 opposing firewall and not the VPN, so the traffic returns as expected.
 Manual Outbound NAT is likely already set since is is typically a
 requirement of CARP. If not, Manual Outbound NAT must be enabled for
-this to work, or Hybrid Outbound NAT may be used on pfSense 2.2 and
-later.
+this to work, or Hybrid Outbound NAT may be used on pfSense® software
+version 2.2 and later.
 
 For example, add a manual outbound NAT rule on the LAN interface, source
 being the VPN subnet, destination being an alias that contains both the
