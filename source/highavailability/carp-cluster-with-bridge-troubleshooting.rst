@@ -31,7 +31,7 @@ Configuration example for a Cisco Switch::
 
 See also `this forum thread`_.
 
-The bridge settings on pfSense may also need to have their spanning tree
-options changed in a similar manner.
+The bridge settings in pfSense® software may also need to have their
+spanning tree options changed in a similar manner.
 
 .. _this forum thread: https://forum.netgate.com/topic/4691/getting-pfsense-to-failover-with-a-bridge-using-the-cd-rom-platform
