@@ -2,17 +2,18 @@ L2TP/IPsec on Android
 =====================
 
 The L2TP/IPsec client on Android has the ability to set a custom
-identifier, which allows L2TP/IPsec to function with pfSense's server
-using Pre-Shared Keys. Clients on other operating systems do not allow
-for this, which makes them incompatible with current versions of
-pfSense.
+identifier, which allows L2TP/IPsec to function with the pfSense®
+server using Pre-Shared Keys. Clients on other operating systems
+do not allow for this, which makes them incompatible with current
+versions of pfSense software.
 
 IPsec Setup
 -----------
 
-The setup is similar to a standard :doc:`IPsec Road Warrior/Mobile Client How-To </vpn/ipsec/configuring-an-ipsec-remote-access-mobile-vpn-using-ikev1-xauth>` setup except that
-xauth is not used, but rather "**Mutual PSK**", and Phase 2 uses
-**Transport** mode rather than Tunnel.
+The setup is similar to a standard
+:doc:`IPsec Road Warrior/Mobile Client How-To </vpn/ipsec/configuring-an-ipsec-remote-access-mobile-vpn-using-ikev1-xauth>`
+setup except that xauth is not used, but rather "**Mutual PSK**",
+and Phase 2 uses **Transport** mode rather than Tunnel.
 
 Pre-Shared Keys
 ~~~~~~~~~~~~~~~
@@ -58,8 +59,8 @@ On the phone/tablet/device:
 -  Tap **Add VPN Profile**
 -  Enter a name
 -  For **Type**, tap *L2TP/IPsec PSK*
--  **Server Address**: The WAN IP of pfSense (or the IP of the interface
-   chosen for IPsec and L2TP)
+-  **Server Address**: The WAN IP of the pfSense router (or the IP of
+   the interface chosen for IPsec and L2TP)
 -  **L2TP Secret**: **Left blank**
 -  **IPsec Identifier**: Enter the identifier for the PSK entered above,
    either a per-user or common identifier
