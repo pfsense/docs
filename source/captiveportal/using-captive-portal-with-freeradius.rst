@@ -95,7 +95,7 @@ all. To use this, configure the following:
          monthly is a better choice as maximum and set an expiration
          date for the account.
 
--  pfSense Captive Portal configuration:
+-  Captive Portal configuration in pfSense® software:
 
    -  Enable **Services > Captive Portal**
    -  Enable **RADIUS Authentication** and configure for
@@ -124,8 +124,8 @@ Portal is the same as for *Amount of Time* from above.
 
 - This counter is running with *accounting-stop* or *interim-updates*.
   Both types of updates supported by CaptivePortal have a bug. They do
-  not reset as they should (pfSense 2.0.1. FIXED on pfSense 2.0.2 and
-  2.1).
+  not reset as they should (pfSense software version 2.0.1. FIXED on 
+  pfSense software versions 2.0.2 and 2.1).
 - *Time Period* is not working as described above. This counter isn't
   using a pre-defined script which comes with FreeRADIUS default
   configuration but uses some small shell scripts. Changing the GUI
