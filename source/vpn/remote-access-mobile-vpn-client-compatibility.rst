@@ -1,10 +1,11 @@
 Remote Access Mobile VPN Client Compatibility
 =============================================
 
-pfSense supports a variety of remote access ("mobile") VPN configuration
-styles to accommodate nearly any potential client. The table below shows
-which operating systems have compatible clients with some of the most
-common remote access VPN configurations available on pfSense.
+pfSense® software supports a variety of remote access ("mobile") VPN
+configuration styles to accommodate nearly any potential client. The
+table below shows which operating systems have compatible clients
+with some of the most common remote access VPN configurations available
+on pfSense software.
 
 +---------------------+-------------------------------------------------------------------+-----------+-----------+-----------------------------------------------------------------------------------------------+------------+-----------------------------------------------------------------------------------------------------------+--------------------------------------------------+
 | Operating System    | Protocol                                                          |           |           |                                                                                               |            |                                                                                                           |                                                  |
