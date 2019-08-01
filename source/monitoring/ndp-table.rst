@@ -1,10 +1,10 @@
 NDP Table
 =========
 
-The **NDP Table**, found under the **Diagnostics** menu, shows the IPv6
-Neighbor Discovery Protocol list. This list contains all of the current
-IPv6 peers, and is roughly analogous to the :doc:`ARP Table </monitoring/arp-table>`
-for IPv4.
+The **NDP Table**, found under the **Diagnostics** menu in the
+pfSense® webGUI, shows the IPv6 Neighbor Discovery Protocol list.
+This list contains all of the current IPv6 peers, and is roughly 
+analogous to the :doc:`ARP Table </monitoring/arp-table>` for IPv4.
 
 The NDP table shows the peer's IPv6 address, its MAC address, the
 Hostname (if known), and the interface upon which that peer IP address
