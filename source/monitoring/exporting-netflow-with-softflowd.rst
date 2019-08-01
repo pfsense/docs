@@ -1,7 +1,7 @@
 Exporting NetFlow with softflowd
 ================================
 
-softflowd is a NetFlow collector that can be deployed on pfSense.
+softflowd is a NetFlow collector that can be deployed on pfSense® software.
 
 Installing softflowd
 --------------------
