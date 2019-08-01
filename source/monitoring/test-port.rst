@@ -1,11 +1,12 @@
 Test Port
 =========
 
-The **Test Port** function, found under the **Diagnostics** menu,
-conducts a simple TCP connection test to determine if a **Host** is up
-and accepting connections on a given **Port**. This test does not
-function for UDP since there is no way to reliably determine if a UDP
-port accepts connections in this manner. This test does not function as
+The **Test Port** function, found under the **Diagnostics** menu in the
+pfSense® webGUI, conducts a simple TCP connection test to determine if
+a **Host** is up and accepting connections on a given **Port**. This
+test does not function for UDP since there is no way to reliably
+determine if a UDP port accepts connections in this manner. This test
+does not function as
 a NAT test, only as a direct connection to an IP address and port with a
 listening daemon.
 
