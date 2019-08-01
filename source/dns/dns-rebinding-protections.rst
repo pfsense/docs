@@ -1,7 +1,7 @@
 DNS Rebinding Protections
 =========================
 
-pfSense includes some built in methods of protection against `DNS
+pfSense® software includes some built in methods of protection against `DNS
 rebinding attacks <https://en.wikipedia.org/wiki/DNS_rebinding>`__. These
 measures are described below.
 
