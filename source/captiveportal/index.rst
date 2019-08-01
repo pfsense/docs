@@ -2,7 +2,7 @@
 Captive Portal
 **************
 
-Captive Portal in pfSense forces users on an interface to authenticate before
+Captive Portal in pfSense® software forces users on an interface to authenticate before
 granting access to the Internet. Where possible, the firewall automatically
 presents a login web page which the user must use to enter credentials such as a
 username/password or a voucher code. This feature is commonly used throughout
