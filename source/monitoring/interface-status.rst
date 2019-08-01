@@ -1,8 +1,8 @@
 Interface Status
 ================
 
-**Status > Interfaces** shows each interface, along with various
-statistics about them.
+In the pfSense®webGUI, **Status > Interfaces** shows each interface,
+along with various statistics about them.
 
 For each interface, this screen will show the status (Such as up/no
 carrier), MAC address, IP address, Subnet mask, Gateway (if relevant),
