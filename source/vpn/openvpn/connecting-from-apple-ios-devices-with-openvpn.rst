@@ -8,11 +8,12 @@ and is available in the App Store.
 
 The app must have the OpenVPN configuration file and certificates
 configured outside of the iOS device and then imported to it. The most
-recent version of the :doc:`OpenVPN Client Export Package </vpn/openvpn/using-the-openvpn-client-export-package>` on pfSense may be used to
-export an Inline Configuration, and then transfer the resulting *.ovpn*
-file to the target device. Then use iTunes to transfer the files into
-the app or e-mail it to the device. Another option is to use a cloud
-sync tool, dropbox for example.
+recent version of the
+:doc:`OpenVPN Client Export Package </vpn/openvpn/using-the-openvpn-client-export-package>`
+on the pfSense® router may be used to export an Inline Configuration,
+and then transfer the resulting *.ovpn* file to the target device. Then
+use iTunes to transfer the files into the app or e-mail it to the device.
+Another option is to use a cloud sync tool, dropbox for example.
 
 Getting The Configuration Onto the Device
 -----------------------------------------
@@ -27,7 +28,9 @@ file.
 Using iTunes to transfer the configuration to the iOS device is rather
 simple.
 
--  Make sure the most recent version of the :doc:`OpenVPN Client Export Package </vpn/openvpn/using-the-openvpn-client-export-package>` is loaded on pfSense
+-  Make sure the most recent version of the
+   :doc:`OpenVPN Client Export Package </vpn/openvpn/using-the-openvpn-client-export-package>`
+   is loaded on the pfSense router
 -  Export the Inline Configuration file for the VPN
 -  Connect the iOS device to a computer and open iTunes
 -  Find and install the OpenVPN Connect app
