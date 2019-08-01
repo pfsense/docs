@@ -1,10 +1,10 @@
 Connecting to Cisco PIX/ASA Devices with IPsec
 ==============================================
 
-Using IPsec to create a VPN tunnel between pfSense and a Cisco PIX
-should work OK. As always with IPsec, be sure that the Phase 1 and Phase
-2 settings match up on both sides. If an acceptable transform set and
-policy are already in place, they may be used.
+Using IPsec to create a VPN tunnel between pfSense® router and a Cisco
+PIX should work OK. As always with IPsec, be sure that the Phase 1 and
+Phase 2 settings match up on both sides. If an acceptable transform set
+and policy are already in place, they may be used.
 
 Example PIX IPsec Configuration
 -------------------------------
