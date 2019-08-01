@@ -1,7 +1,8 @@
 Using VPNs with IPv6
 ====================
 
-This page will cover issues with using VPNs on IPv6 on pfSense
+This page will cover issues with using VPNs on IPv6 on pfSense® 
+software.
 
 General Issues
 --------------
