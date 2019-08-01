@@ -1,12 +1,12 @@
 2.3 Removed Packages
 ====================
 
-The available package list in pfSense 2.3 has been trimmed down
-significantly, mostly removing packages that have been deprecated
-upstream, no longer have an active maintainer, or were never stable to
-begin with. Some just haven't been converted for Bootstrap and may
-return if converted. The following lists packages no longer available in
-2.3 that were in the package list in 2.2.6.
+The available package list in pfSense® software version 2.3 has been
+trimmed down significantly, mostly removing packages that have been
+deprecated upstream, no longer have an active maintainer, or were never
+stable to begin with. Some just haven't been converted for Bootstrap
+and may return if converted. The following lists packages no longer
+available in 2.3 that were in the package list in 2.2.6.
 
 Systems with one of these packages installed can be upgraded, but the
 package will no longer be there post-upgrade. We recommend uninstalling
