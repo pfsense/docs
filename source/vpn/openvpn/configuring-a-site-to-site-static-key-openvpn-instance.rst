@@ -1,13 +1,13 @@
 Configuring a Site-to-Site Static Key OpenVPN Instance
 ======================================================
 
-Connecting two sites using OpenVPN is very simple. One side is
-configured as a client, and the other as a server. OpenVPN in shared key
-mode is the recommend method for site to site connections, unless there
-are a half dozen or more sites. For PKI and advanced
-options/configurations see
-:doc:`/vpn/openvpn/configuring-a-site-to-site-pki-ssl-openvpn-instance` and the
-|book_link|.
+Using pfSense® software, connecting two sites using OpenVPN is very
+simple. One side is configured as a client, and the other as a server.
+OpenVPN in shared key mode is the recommend method for site to site
+connections, unless there are a half dozen or more sites. For PKI and
+advanced options/configurations see
+:doc:`/vpn/openvpn/configuring-a-site-to-site-pki-ssl-openvpn-instance`
+and the |book_link|.
 
 The instructions below are for basic site to site connectivity. For
 other modes such as SSL/TLS, or remote access, look in the
