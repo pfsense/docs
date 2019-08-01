@@ -3,7 +3,7 @@ Copying Logs to a Remote Host with Syslog
 
 To retain logs for any significant period of time, remote syslog must be
 enabled and a syslog server must be configured to accept log messages
-from pfSense.
+from pfSense® software.
 
 There are several different syslog server software packages. Most
 BSD/Linux systems will have one built in, and there are some free
@@ -97,11 +97,11 @@ Other Logging Servers
 
 Other log systems such as Splunk, ELSA, or ELK may also be used but the
 methods for implementing them are beyond the scope of this document. If
-such a system is syslog-compatible, then the pfSense side should be
-fairly simple to setup as it would be for any other syslog system.
+such a system is syslog-compatible, then the pfSense software side should
+be fairly simple to setup as it would be for any other syslog system.
 
-Setup pfSense for Remote Logging
---------------------------------
+Setup pfSense Software for Remote Logging
+-----------------------------------------
 
 * Click **Status > System Logs**
 * Click the **Settings** tab
