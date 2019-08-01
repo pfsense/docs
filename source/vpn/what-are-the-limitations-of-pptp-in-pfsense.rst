@@ -5,8 +5,8 @@ What are the limitations of PPTP in pfSense
    standpoint. It should not be used no matter how strongly a client pushes to
    have it enabled.
 
-There are limitations of PPTP *in pfSense*, due to limitations in the NAT
-capabilities of ``pf``.
+There are limitations of PPTP *in pfSense® software*, due to limitations in
+the NAT capabilities of ``pf``.
 
 Only one client can connect to a given PPTP server on the Internet
 simultaneously. 10 clients can connect to 10 different servers, but only a
