@@ -1,8 +1,8 @@
 Connecting to Cisco IOS Devices with IPsec
 ==========================================
 
-This page describes how to configure IPsec to connect pfSense and a
-Cisco IOS router with IPsec capabilities.
+This page describes how to configure IPsec to connect pfSense® router
+and a Cisco IOS router with IPsec capabilities.
 
 Example Network
 ---------------
@@ -46,7 +46,7 @@ be referred to later.
   crypto ipsec transform-set 3DES-SHA esp-3des esp-sha-hmac
 
 Now configure an access list that will match the local and remote
-subnets on the pfSense end. This is configured as *access-list 100*,
+subnets on the pfSense router. This is configured as *access-list 100*,
 which will be used in the next step. Remember this uses wildcard masks,
 so a /24 network (255.255.255.0 mask) is represented as *0.0.0.255*.
 
@@ -71,8 +71,8 @@ VPN will terminate (the one with the public IP), assign the crypto map::
 
 The configuration is then finished on the Cisco side.
 
-Configuring pfSense
--------------------
+Configuring pfSense Software
+----------------------------
 
 This screenshot shows the pfSense configuration matching the above Cisco
 configuration.
@@ -110,7 +110,7 @@ Phase 2:
 Testing the connection
 ----------------------
 
-To test the connection, from pfSense, do the following:
+To test the connection, from the pfSense router, do the following:
 
 -  Navigate to **Diagnostics > Ping**
 -  Enter an IP address on the remote network
@@ -128,12 +128,12 @@ Troubleshooting
 
 If the connection doesn't come up, there is a mismatch somewhere in the
 configuration. Depending on specifics, more useful information may be
-obtained from pfSense or the Cisco. Checking logs on both ends is
-recommended. For pfSense, browse to **Status > System Logs** on the
-**IPsec** tab. For Cisco, run **debug crypto isakmp** and **term mon**
-(if not connected via serial console) to make the debug messages appear
-in a session. The output can be verbose, but will usually tell
-specifically what was mismatched.
+obtained from pfSense router or the Cisco router. Checking logs on both
+ends is recommended. For pfSense software, browse to 
+**Status > System Logs** on the **IPsec** tab. For Cisco, run 
+**debug crypto isakmp** and **term mon** (if not connected via serial 
+console) to make the debug messages appear in a session. The output
+can be verbose, but will usually tell specifically what was mismatched.
 
 "No NAT" List on Cisco IOS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
