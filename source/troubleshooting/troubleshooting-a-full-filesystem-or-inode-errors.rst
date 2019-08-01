@@ -27,9 +27,9 @@ from the console or ssh, and run the following command::
 
 The output shows disk space usage for both capacity and inodes, using
 human-readable numbers. The **System Information** widget on the
-Dashboard on pfSense 2.2 shows the usage for all mounted partitions.
-Earlier versions only showed usage for the root (/) slice. The
-following output is from an ALIX system running NanoBSD::
+Dashboard on pfSense® software version 2.2 shows the usage for all
+mounted partitions. Earlier versions only showed usage for the root (/)
+slice. The following output is from an ALIX system running NanoBSD::
 
   Filesystem           Size    Used   Avail Capacity iused ifree %iused  Mounted on
   /dev/ufs/pfsense1    442M    167M    239M    41%    6.3k   52k   11%   /
@@ -39,8 +39,8 @@ following output is from an ALIX system running NanoBSD::
   /dev/md1              77M     16M     54M    24%     133   10k    1%   /var
   devfs                1.0k    1.0k      0B   100%       0     0  100%   /var/dhcpd/dev
 
-Note that the devfs lines do NOT indicate an actual problem; The devfs
-filesystem is virtual and used for housing device nodes not for files.
+.. note:: The devfs lines do NOT indicate an actual problem; The devfs
+   filesystem is virtual and used for housing device nodes not for files.
 
 Of special concern on NanoBSD is the space on */var* and */tmp*, since
 they are RAM disks. Some things, such as an abnormally large DHCP leases
