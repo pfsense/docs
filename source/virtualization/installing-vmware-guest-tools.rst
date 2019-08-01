@@ -1,7 +1,7 @@
 Installing VMware Guest Tools
 =============================
 
-The drivers for VMXNET2/3 interfaces are built into the pfSense kernel, and
+The drivers for VMXNET2/3 interfaces are built into the pfSense® kernel, and
 the guest tools are not necessary to use these interfaces.
 
 The :doc:`Open VM Tools package </packages/open-vm-tools-package>` package
