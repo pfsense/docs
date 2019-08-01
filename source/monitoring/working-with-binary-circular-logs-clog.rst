@@ -1,8 +1,8 @@
 Working with Binary Circular Logs (clog)
 ========================================
 
-pfSense uses a Circular Log format known as *clog* to maintain a
-constant log size.
+pfSense® software uses a Circular Log format known as *clog* to
+maintain a constant log size.
 
 There are multiple benefits to this method. The primary advantage is
 that the log files cannot grow and fill up filesystems. The downside is
