@@ -4,7 +4,7 @@ VPN Capability Overview
 Overview
 --------
 
-pfSense contains multiple VPN technologies, all of which work well.
+pfSense® software contains multiple VPN technologies, all of which work well.
 
 * :doc:`OpenVPN </vpn/openvpn/index>`
 * :doc:`IPsec </vpn/ipsec/index>`
@@ -14,4 +14,3 @@ pfSense contains multiple VPN technologies, all of which work well.
 
 The best choice for a given network depends on a number of factors. These are
 discussed in the VPN chapter of the |book_link|.
-
