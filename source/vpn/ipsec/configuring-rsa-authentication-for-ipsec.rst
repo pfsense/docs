@@ -5,10 +5,12 @@ Using certificate-based RSA authentication for identification of VPN
 tunnel peers is much stronger than using a simple Pre-Shared Key.
 
 To utilize RSA authentication, first a PKI structure must be made. This
-can be performed in the pfSense GUI using the :doc:`Certificate Management </certificates/certificate-management>`
+can be performed in the pfSense® webGUI using the 
+:doc:`Certificate Management </certificates/certificate-management>`
 feature. Refer to the
-:doc:`Certificate Management </certificates/certificate-management>` article for
-specifics on creating certificate authorities and certificates.
+:doc:`Certificate Management </certificates/certificate-management>`
+article for specifics on creating certificate authorities and
+certificates.
 
 First, designate one firewalls to hold the CA/Certificate structure. For
 this document, it will be called Firewall A. The other firewall will be
