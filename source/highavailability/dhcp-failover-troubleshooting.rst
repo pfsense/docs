@@ -15,10 +15,10 @@ Troubleshooting DHCP Failover
    and secondary nodes match.
 #. Stop and restart the DHCP daemon from **Status > Services** on both
    nodes and check the status after a few moments
-#. Both nodes must be running the same version of pfSense. Update both
-   nodes to the newest available release if they do not match. Older
-   versions may have problems with various aspects of DHCP failover that
-   have already been corrected.
+#. Both nodes must be running the same version of pfSense® software. 
+   Update both nodes to the newest available release if they do not
+   match. Older versions may have problems with various aspects of DHCP
+   failover that have already been corrected.
 #. If all else fails, stop the DHCP daemon on both nodes, remove the
    DHCP lease database from ``/var/dhcpd/var/db/dhcpd.leases*``, then
    start the daemons again.
