@@ -5,16 +5,16 @@ Summary
 -------
 
 This article covers configuring a site to site VPN link between two firewalls
-using IPsec. This document primarily concerns firewalls running pfSense
+using IPsec. This document primarily concerns firewalls running pfSense®
 software, but also discusses how to configure site to site links with third
 party IPsec-compliant devices.
 
 .. seealso:: The :doc:`IPsec section </vpn/ipsec/index>` contains example VPN
    Configurations that cover site to site IPsec configuration with some third
-   party IPsec devices. If pfSense is known to work in a site to site IPsec
-   configuration with a third party IPsec device not listed, we would appreciate
-   a short submission containing configuration details, preferably with
-   screenshots where applicable.
+   party IPsec devices. If pfSense softwarae is known to work in a site to site
+   IPsec configuration with a third party IPsec device not listed, we would
+   appreciate a short submission containing configuration details, preferably
+   with screenshots where applicable.
 
 .. warning:: This document makes security recommendations based on current best
    practices. Failing to adhere to these recommendations will weaken security
@@ -27,10 +27,10 @@ What is IPsec
 
 IPsec (IP security) is a standard for providing security to IP packets via
 encryption and/or authentication, typically employing both. Its use in pfSense
-is for Virtual Private Networks (VPNs).
+software is for Virtual Private Networks (VPNs).
 
-There are two types of IPsec VPN capabilities in pfSense, site to site and
-remote access (mobile).
+There are two types of IPsec VPN capabilities in pfSense software, site to site
+and remote access (mobile).
 
 Site to Site VPN Explained
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -65,11 +65,11 @@ ms latency and one with 80+ ms latency.
 Remote Access IPsec VPN
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-pfSense provides several means of remote access VPN, including IPsec, OpenVPN,
-and PPTP, and L2TP. Mobile IPsec functionality on pfSense has some limitations
-that could hinder its practicality for some deployments. pfSense supports NAT-
-Traversal which helps if any of the client machines are behind NAT, which is the
-typical case.
+pfSense software provides several means of remote access VPN, including IPsec,
+OpenVPN, and PPTP, and L2TP. Mobile IPsec functionality on pfSense has some
+limitations that could hinder its practicality for some deployments. pfSense 
+software supports NAT-Traversal which helps if any of the client machines are
+behind NAT, which is the typical case.
 
 One good use of the pfSense IPsec client VPN capabilities is to secure all
 traffic sent by hosts on a wireless network or other untrusted network. This
@@ -89,10 +89,10 @@ Before getting started, the following items must be complete.
 * Both locations must be using *non-overlapping* LAN IP subnets.
 
   For example, if both sites are using ``192.168.1.0/24`` on the LAN, no site to
-  site VPN will work. This is not a limitation in pfSense, but of basic IP
-  routing. When any host on either of the networks tries to communicate with
-  ``192.168.1.0/24``, it will consider that host to be on its local LAN and the
-  packets will never reach the firewall to be passed over the VPN connection.
+  site VPN will work. This is not a limitation in the pfSense software, but of
+  basic IP routing. When any host on either of the networks tries to communicate
+  with ``192.168.1.0/24``, it will consider that host to be on its local LAN and 
+  the packets will never reach the firewall to be passed over the VPN connection.
   Similarly, if one site is using ``192.168.0.0/16`` and one using
   ``192.168.1.0/24``, these subnets are also overlapping and a site to site VPN
   will not work. Keep in mind the more networks that are linked together the
@@ -104,13 +104,13 @@ Before getting started, the following items must be complete.
   a requirement depending on what kind of functionality is required across the
   VPN.
 
-* If the firewall running pfSense is not the default gateway on the LAN where it
+* If the pfSense firewall is not the default gateway on the LAN where it
   is installed, static routes must be added to the default gateway, pointing the
   remote VPN subnet to an IP address on pfSense in a subnet shared between
   pfSense and the default gateway. Less desirable, but also functional, would be
   to add static/persistent routes to the client PCs who need access to the VPN.
 * Control of the other end of the VPN, or contact with the person who controls
-  the other end of the VPN. If it is another firewall running pfSense, then
+  the other end of the VPN. If it is another pfSense firewall, then
   share this document with the other administrator. If it is not, then have them
   consult the documentation for the IPsec device in use at the other site.
 * Host and application level security become more important when connecting
@@ -132,7 +132,7 @@ Before getting started, the following items must be complete.
 Configuring the VPN Tunnel
 --------------------------
 
-First, log into the firewall running pfSense for the local network and click
+First, log into the pfSense firewall for the local network and click
 **VPN > IPsec**
 
 IPsec tunnels have two components: A Phase 1 area that defines the remote peer
@@ -384,8 +384,8 @@ firewall logs (**Status > System Logs**, **Firewall** tab), and if blocked
 packets from the peer appear in the log, add appropriate rules to allow that
 traffic.
 
-What if pfSense is not the main Internet Firewall?
---------------------------------------------------
+What if the pfSense router is not the main Internet Firewall?
+-------------------------------------------------------------
 
 In some cases there is a different firewall or router sitting between this
 firewall and the Internet. If this is the case it is necessary to add a port
@@ -395,13 +395,13 @@ modem's "DMZ" mode or 1:1 NAT may also help here. In this case, **NAT
 Traversal** will be needed, but the default *Auto* setting should be sufficient.
 
 This may introduce routing difficulties on the internal network. More details
-can be found on this in the pfSense book.
+can be found on this in the |book_link|.
 
 IPsec/L2TP
 ----------
 
-pfSense versions 2.2 and up support IPsec+L2TP as well. See :doc:`L2TP/IPsec
-</vpn/ipsec/l2tp-ipsec>` for implementation details.
+pfSense software versions 2.2 and up support IPsec+L2TP as well. See
+:doc:`L2TP/IPsec </vpn/ipsec/l2tp-ipsec>` for implementation details.
 
 .. _ipsec-generate-psk:
 
@@ -424,7 +424,7 @@ For a shorter key, take a smaller chunk of the output::
 
 $ dd status=none if=/dev/random bs=4096 count=1 | openssl sha224 | cut -f2 -d' ' | cut -c1-16
 
-pfSense 2.4.4-RELEASE and later include a button to automatically generate a
+pfSense software version 2.4.4-RELEASE and later include a button to automatically generate a
 secure Pre-Shared Key using this technique.
 
 .. _SHA224: https://tools.ietf.org/html/rfc3874
