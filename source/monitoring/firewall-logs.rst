@@ -1,7 +1,8 @@
 Firewall Logs
 =============
 
-The Firewall logs at **Status > System Logs** on the **Firewall** tab
+The Firewall logs are located through the pfSense® webGUI at
+**Status > System Logs** on the **Firewall** tab. The logs
 show all events logged by the firewall. By default, this includes
 connections blocked by the default deny rule.
 
