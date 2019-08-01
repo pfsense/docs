@@ -1,8 +1,8 @@
 Gateway Status
 ==============
 
-**Status > Gateways** displays the current status of all configured
-gateways.
+In the pfSense® webGUI, **Status > Gateways** displays the current
+status of all configured gateways.
 
 The status output includes the gateway name, gateway IP, Monitor IP,
 status and description. The status field will show Online, Offline, or
