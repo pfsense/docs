@@ -2,7 +2,7 @@ Editing Files on the Firewall
 =============================
 
 **Diagnostics > Edit File** contains a file editor that allows editing
-and creating files on the pfSense filesystem.
+and creating files on the pfSense® filesystem.
 
 Enter the filename to edit or create in **Save / Load from path**, or
 click **Browse** and locate the file. Once the path is filled in, press
