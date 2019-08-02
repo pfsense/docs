@@ -1,8 +1,8 @@
 Installing FreeBSD Packages
 ===========================
 
-.. warning:: These packages are not supported by the pfSense development team.
-   They may break the firewall, be careful!
+.. warning:: These packages are not supported by the pfSense®
+   development team. They may break the firewall, be careful!
 
 In addition to the packages available in the pfSense package system,
 thousands of additional FreeBSD packages are available. If strong
@@ -25,12 +25,12 @@ Alternatively if it's something that can be started with a single
 command then it can easily be added as a :doc:`\<shellcmd\> in config.xml
 </development/executing-commands-at-boot-time>`.
 
-pfSense 2.3
------------
+pfSense software version 2.3
+----------------------------
 
-pfSense 2.3 is based on pkg for the base system and pfSense packages, so
-the pkg repository from pfSense is used and the standard FreeBSD package
-repository is not available. Installing packages from FreeBSD is
+pfSense software version 2.3 is based on pkg for the base system and pfSense
+packages, so the pfSense pkg repository is used and the standard FreeBSD
+package repository is not available. Installing packages from FreeBSD is
 technically possible, but not recommended due to potential dependency
 problems. Passing the full URL to a package using ``pkg add <url>`` will work,
 but care is needed to avoid future problems.
@@ -61,7 +61,7 @@ Then after trying to send a mail with::
 
   /usr/local/bin/sendEmail -f from@gmail.com -t to@gmail.com -u "Mail Subject" -m "Mail body write your content here." -s smtp.gmail.com:587 -xu <USERNAME> -xp <PASSWORD> -o tls=yes -a attachment.txt ;
 
-  sendEmail[80603]: ERROR => No TLS support!  SendEmail can't load required libraries. (try installing Net::SSLeay and IO::Socket::SSL)
+  sendEmail[80603]: ERROR => No TLS support! SendEmail can't load required libraries. (try installing Net::SSLeay and IO::Socket::SSL)
 
 The error tells it needs 2 additional libraries which in turn need
 additional dependencies. So there is another set of packages which then
@@ -73,10 +73,10 @@ needs to be installed::
   pkg add http://pkg.freebsd.org/freebsd:10:x86:64/latest/All/p5-Socket-2.024.txz
   pkg add http://pkg.freebsd.org/freebsd:10:x86:64/latest/All/p5-IO-Socket-SSL-2.044.txz
 
-pfSense 2.2
------------
+pfSense software version 2.2
+----------------------------
 
-pfSense 2.2 is based on FreeBSD 10.1 and it uses the *pkg* command to
+pfSense software version 2.2 is based on FreeBSD 10.1 and it uses the *pkg* command to
 manually manage FreeBSD packages.
 
 Bootstrapping *pkg*
@@ -147,8 +147,8 @@ Now the program may be executed::
 
   # iftop -nNpPi (interface)
 
-pfSense 2.1.x
--------------
+pfSense software version 2.1.x
+------------------------------
 
 These examples use the *amd64* architecture. If the firewall is using
 i386 instead, replace *amd64* with *i386* in the URLs.
@@ -156,10 +156,10 @@ i386 instead, replace *amd64* with *i386* in the URLs.
 Caveats
 ~~~~~~~
 
-The *pkg_add* command used by pfSense 2.1.x will not properly download
-packages because the locations have changed on FreeBSD's servers since
-FreeBSD 8.3 is no longer supported upstream. By using the current
-location of archived packages from FreeBSD's servers,
+The *pkg_add* command used by pfSense software version 2.1.x will not
+properly download packages because the locations have changed on
+FreeBSD's servers since FreeBSD 8.3 is no longer supported upstream.
+By using the current location of archived packages from FreeBSD's servers,
 ``ftp://ftp-archive.freebsd.org/pub/FreeBSD-Archive/ports/<arch>/packages-8.3-release/Latest/``,
 packages can be added.
 
@@ -209,12 +209,12 @@ Alternate Package Sites
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 The FTP archive site above contains official FreeBSD packages for
-FreeBSD 8.3, upon which pfSense 2.1.x is based. These files are
-potentially several years old now, and some may have security issues.
-There is an unofficial site that contains more up-to-date FreeBSD binary
-packages for FreeBSD 8.3 that can be used if a more current version is
-needed and the site is deemed trustworthy (by the user, not us). The
-packages can be found here:
+FreeBSD 8.3, upon which pfSense software version 2.1.x is based. These
+files are potentially several years old now, and some may have security
+issues. There is an unofficial site that contains more up-to-date
+FreeBSD binary packages for FreeBSD 8.3 that can be used if a more
+current version is needed and the site is deemed trustworthy (by the
+user, not us). The packages can be found here:
 
 amd64:
 http://ftpmirror.your.org/pub/FreeBSD-Unofficial-Packages/83amd64-mini-nox11/Latest/
