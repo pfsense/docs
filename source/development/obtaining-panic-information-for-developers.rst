@@ -2,8 +2,9 @@ Obtaining Panic Information for Developers
 ==========================================
 
 Crash dump functionality is built into every kernel on current versions
-of pfSense. Crash dumps are automatically saved on Full installs with
-swap space, or printed to the serial console on other platforms.
+of pfSense® software. Crash dumps are automatically saved on Full
+installs with swap space, or printed to the serial console on other
+platforms.
 
 Viewing and Submitting a Crash Dump
 -----------------------------------
