@@ -11,15 +11,15 @@ iperf is a tool used for network throughput testing.
 Usage
 -----
 
-iperf running on pfSense is NOT a suitable way of testing firewall
-throughput, as there is a significant difference between performance of
-traffic initiated or *terminated on the firewall* and traffic
-*traversing the firewall*. There are many suitable uses for iperf
-running on pfSense, but testing the throughput capabilities of the
-firewall is not one of them.
+iperf running on pfSense® software is NOT a suitable way of testing
+firewall throughput, as there is a significant difference between
+performance of traffic initiated or *terminated on the firewall*
+and traffic *traversing the firewall*. There are many suitable uses
+for iperf running on pfSense software, but testing the throughput
+capabilities of the firewall is not one of them.
 
-Uses for iperf on pfSense
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Uses for iperf on pfSense software
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  Measuring throughput from the internal network to the inside of the
    firewall
