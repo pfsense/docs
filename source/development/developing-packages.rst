@@ -2,30 +2,32 @@ Developing Packages
 ===================
 
 .. note:: This document is undergoing work to align it with current
-   information for pfSense 2.3 and later. Older revisions of the page may
-   be viewed to see relevant information for older/deprecated versions.
+   information for pfSense® software version 2.3 and later. Older
+   revisions of the page may be viewed to see relevant information
+   for older/deprecated versions.
 
 When developing packages, always target the latest development version
-of pfSense first. At the time of this writing, that is pfSense 2.3.
+of pfSense software first. At the time of this writing, that is pfSense
+software version 2.3.
 
 pfSense Package System
 ----------------------
 
-On pfSense 2.3, every pfSense package is also a FreeBSD port. These are
-installed and managed via pkg, even when using the pfSense GUI to add or
-remove packages. Binary packages from FreeBSD are added as dependencies
-of the pfSense package, so they are installed automatically as well,
-along with any any of their required dependencies.
+On pfSense software version 2.3, every pfSense package is also a FreeBSD
+port. These are installed and managed via pkg, even when using the
+pfSense webGUI to add or remove packages. Binary packages from FreeBSD
+are added as dependencies of the pfSense package, so they are installed
+automatically as well, along with any any of their required dependencies.
 
 The basic idea behind the pfSense packaging system on 2.3 and later is
 to make our packages similar to FreeBSD packages, but with our own
 customizations. One way this is achieved is by adding metadata about
 packages to the firewall configuration when it is installed, and also
 creating the configuration screen of an application using XML. pfSense
-provides an optional framework to create the web interface and to store
-it in the XML configuration file of the firewall. The package writer is
-expected to convert the data from XML to the native format of the
-application.
+software provides an optional framework to create the web interface and
+to store it in the XML configuration file of the firewall. The package
+writer is expected to convert the data from XML to the native format of
+the application.
 
 For help converting older style packages to the new Bootstrap GUI, see
 :doc:`Converting Packages to Bootstrap </development/converting-packages-to-bootstrap>`.
@@ -219,7 +221,7 @@ The format is::
       <size>10</size> (optional)
     </field>
 
-for pfsense 2.1 and above:
+For pfsense software version 2.1 and above:
 
 - info - just an info text without any options to select::
 
@@ -243,7 +245,7 @@ for pfsense 2.1 and above:
     if (($_POST['Submit'] == 'Save') {...}
     if (($_POST['Submit'] == 'Reload') || !isset($_POST['Submit'])){..}
 
-**Field groups (any pfsense version):**
+**Field groups (any pfsense software version):**
 
 - rowhelper - used in pkg_edit.php to add multiple config lines like a
   table on package gui. Inside rowhelper, add any field type described
