@@ -1,10 +1,11 @@
 FreeBSD Issue Policy
 ====================
 
-The pfSense team relies on the work provided by the FreeBSD project, as
-the base operating system of pfSense. On occasion, pfSense users will
-run into problems with FreeBSD that are beyond our ability to help with.
-This page provides some basic guidance on what to do in these scenarios.
+The pfSense® team relies on the work provided by the FreeBSD project,
+as the base operating system of pfSense software. On occasion, pfSense
+users will run into problems with FreeBSD that are beyond our ability
+to help with. This page provides some basic guidance on what to do in
+these scenarios.
 
 Most frequently these issues are driver or hardware-specific bugs. We do
 not have any developers who work on drivers in FreeBSD, and cannot
@@ -25,4 +26,3 @@ number of pfSense users. Examples of this could be problems with PF,
 CARP, IPsec, or any number of other components. We will track and work
 to resolve issues of this nature, but cannot possibly coordinate testing
 and fixes for one off issues encountered by users.
-
