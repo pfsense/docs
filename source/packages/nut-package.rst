@@ -13,11 +13,11 @@ After installation, the package may be configured at **Services > UPS**.
 Troubleshooting
 ---------------
 
-The package does not have a lot of input validation in the GUI. If NUT
-will not start after configuration, check the System log (**Status >
-System Logs**) for log entries starting with ``nut:``. The culprit is likely
-explained there, such as selecting a cable for a driver type that does
-not need (nor permit) the cable selection.
+The package does not have a lot of input validation in the webGUI. If NUT
+will not start after configuration, check the System log from the pfSense®
+webGUI from **Status > System Logs**) for log entries starting with 
+``nut:``. The culprit is likely explained there, such as selecting a cable
+for a driver type that does not need (nor permit) the cable selection.
 
 If the system log doesn't offer adequate information, such as simply logging::
 
