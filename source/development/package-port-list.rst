@@ -1,7 +1,7 @@
 FreeBSD Ports Used for Packages
 ===============================
 
-The current list of packages in the `pfSense copy of
+The current list of packages in the `pfSense® copy of
 FreeBSD-ports <https://github.com/pfsense/FreeBSD-ports/>`__ is:
 
 -  `arping
