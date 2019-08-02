@@ -1,7 +1,7 @@
 List of Available Packages
 ==========================
 
-The following packages are available from the pfSense package
+The following packages are available from the pfSense® package
 repository:
 
 -  **ACME** - Automated Certificate Management Environment, for
@@ -26,12 +26,12 @@ repository:
 
 -  **Backup** - Tool to Backup and Restore files and directories
 
--  **BIND** - pfSense GUI for BIND DNS server
+-  **BIND** - pfSense webGUI for BIND DNS server
 
 -  **blinkled** - Allows you to use LEDs for monitoring network activity
    on supported platforms (ALIX, WRAP, Soekris, etc.)
 
--  **cellular** - pfSense GUI for Cellular Cards Currently it supports
+-  **cellular** - pfSense webGUI for Cellular Cards Currently it supports
    certain Huawei models.
 
 -  **Cron** - The cron utility is used to manage commands on a schedule.
@@ -88,7 +88,7 @@ repository:
 
 -  **Notes** - Track things you want to note for this system
 
--  **NRPE** - pfSense GUI for Nagios NRPE nrpe is used to execute Nagios
+-  **NRPE** - pfSense webGUI for Nagios NRPE nrpe is used to execute Nagios
    plugins on remote hosts and report the results to the main Nagios
    server. From the Nagios homepage: Allows you to execute "local"
    plugins (like check_disk, check_procs, etc.) on remote hosts. The
@@ -112,7 +112,7 @@ repository:
 
 -  **OpenVPN Client Export** - Allows a pre-configured OpenVPN Windows
    Client or Mac OS X's Viscosity configuration bundle to be exported
-   directly from pfSense.
+   directly from pfSense software.
 
 -  **Open-VM-Tools** - VMware Tools is a suite of utilities that
    enhances the performance of the virtual machine's guest operating
