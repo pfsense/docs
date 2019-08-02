@@ -4,10 +4,10 @@ Configuring the Snort Package
 Snort is an intrusion detection and prevention system. It can be configured to
 simply log detected network events to both log and block them. Thanks to
 OpenAppID detectors and rules, Snort package enables application
-detection and filtering. The package is available to install from
-**System > Package Manager**. Snort operates using detection signatures
-called rules. Snort rules can be custom created by the user, or any of
-several pre-packaged rule sets can be enabled and downloaded.
+detection and filtering. The package is available to install in the pfSense®
+webGUI from **System > Package Manager**. Snort operates using detection
+signatures called rules. Snort rules can be custom created by the user, or any
+of several pre-packaged rule sets can be enabled and downloaded.
 
 The Snort package currently offers support for these pre-packaged rules:
 
@@ -36,7 +36,7 @@ Launching Snort configuration GUI
 ---------------------------------
 
 To launch the Snort configuration application, navigate to **Services >
-Snort** from the menu in pfSense.
+Snort** from the menu in the pfSense webGUI.
 
 .. image:: /_static/ids-ips/launchsnortgui.png
 
