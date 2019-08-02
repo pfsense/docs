@@ -1,7 +1,7 @@
 Package Port Directory Structure
 ================================
 
-The directory structure of a pfSense package is similar to that of a
+The directory structure of a pfSense® package is similar to that of a
 traditional FreeBSD port.
 
 For more information on working with FreeBSD Ports, see and
