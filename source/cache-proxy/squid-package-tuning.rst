@@ -9,7 +9,7 @@ increased performance:
 
 #. Edit **/boot/loader.conf.local**
 #. Change ``kern.ipc.nmbclusters="0"`` to ``kern.ipc.nmbclusters="32768"``
-#. Reboot the pfSense router
+#. Reboot the pfSense® router
 
 See :doc:`/hardware/tuning-and-troubleshooting-network-cards` for more information
 on that setting.
