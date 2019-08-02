@@ -2,7 +2,7 @@ Configuring the Squid Package as a Transparent HTTP Proxy
 =========================================================
 
 This How-To describes how to install and configure Squid as a
-transparent proxy on pfSense.
+transparent proxy on pfSense® software.
 
 Install the Package
 ~~~~~~~~~~~~~~~~~~~
@@ -53,7 +53,7 @@ configured.
       interfaces selected in the last step will automatically have
       access. There will be no need to add them on the Access Control
       tab.
-   #. Transparent Proxy: Check this to have pfSense automatically
+   #. Transparent Proxy: Check this to have pfSense software automatically
       redirect outbound HTTP (tcp/80) traffic through the proxy.
    #. Enabled logging: Check this if logging is needed, be sure to put a
       path in the following box
