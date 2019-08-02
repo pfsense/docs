@@ -21,7 +21,7 @@ this package is not needed.
 Install siproxid
 ----------------
 
-Under **System > Packages**
+In the pfSense® webGUI, navigate to **System > Packages**:
 
 - Find the **siproxd** package
 - Click |fa-plus| to install, and confirm installation
@@ -30,7 +30,7 @@ Under **System > Packages**
 Configure siproxd
 -----------------
 
-Under **Services > siproxd**
+Under **Services > siproxd**:
 
 - **Inbound interface** will generally be *LAN*
 - **Outbound interface** will generally by *WAN*
