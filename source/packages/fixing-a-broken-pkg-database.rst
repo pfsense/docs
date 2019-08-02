@@ -16,7 +16,7 @@ usually be corrected by running a few commands to re-create the database.
 
      /usr/sbin/pkg-static update -f
 
-#. Force a reinstall of the pfSense base package and kernel::
+#. Force a reinstall of the pfSense® base package and kernel::
 
      /usr/sbin/pkg-static install -yf pkg pfSense pfSense-kernel-pfSense
 
