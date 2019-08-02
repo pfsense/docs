@@ -1,9 +1,9 @@
 Execute Command
 ===============
 
-The GUI Command Prompt, available under **Diagnostics > Command
-Prompt**, will execute shell commands, PHP code, and download or upload
-whole files.
+The pfSense® webGUI Command Prompt, available under **Diagnostics > 
+Command Prompt**, will execute shell commands, PHP code, and
+download or upload whole files.
 
 Exercise caution using any of these utilities. Executing commands and
 PHP code improperly can render a system unusable. Use of this tool is
