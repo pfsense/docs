@@ -10,7 +10,7 @@ in many changes.
 Installing the package
 ----------------------
 
-As with any other pfSense package, it's available via the package
+As with any other pfSense® package, it's available via the package
 repository.
 
 - Navigate to **System > Packages**, **Available Packages** tab
