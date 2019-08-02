@@ -1,12 +1,13 @@
-Using LLDP on pfSense
-=====================
+Using LLDP on pfSense software
+==============================
 
-.. note:: Use the **ladvd** package available through the pfSense GUI.
+.. note:: Use the **ladvd** package available through the
+   pfSense® webGUI.
 
 lldpd
 -----
 
-`lldpd`_ allows `LLDP`_ to be enabled on pfSense.
+`lldpd`_ allows `LLDP`_ to be enabled on pfSense software.
 
 Install
 ^^^^^^^
