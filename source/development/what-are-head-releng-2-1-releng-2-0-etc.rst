@@ -2,14 +2,14 @@ What are HEAD, RELENG 2 1, RELENG 2 0, etc
 ==========================================
 
 This is the terminology used to refer to a specific git branch of
-pfSense source code.
+pfSense® source code.
 
 HEAD (master)
 -------------
 
 HEAD, also known as -HEAD or "master", refers to the development version
-of pfSense, where all new features are first added. When a release
-nears, HEAD is branched to a RELENG (Release Engineering) branch. This
+of pfSense software, where all new features are first added. When a
+release nears, HEAD is branched to a RELENG (Release Engineering) branch. This
 follows the FreeBSD project's development model.
 
 RELENG_2_3
