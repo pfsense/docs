@@ -1,12 +1,12 @@
 Reporting Issues with pfSense Software
 ======================================
 
-This page serves as a guide for providing legitimate bug reports. Most
-of the bug reports from outside users are not bugs at all, simply
-misconfigurations. Or alternatively, do not contain nearly enough
-information for a developer to replicate the problem. If a bug report
-does not contain the appropriate information to verify a legitimate bug,
-it will be rejected.
+This page serves as a guide for providing legitimate bug reports with
+pfSense® software. Most of the bug reports from outside users are not
+bugs at all, simply misconfigurations. Or alternatively, do not contain
+nearly enough information for a developer to replicate the problem. If
+a bug report does not contain the appropriate information to verify a
+legitimate bug, it will be rejected.
 
 .. attention:: The |issue_tracker| site is not a discussion platform and is
    never to be used for support issues.
