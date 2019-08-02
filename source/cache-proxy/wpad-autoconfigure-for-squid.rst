@@ -1,11 +1,12 @@
 Setting up WPAD Autoconfigure for the Squid Package
 ===================================================
 
-pfSense can be configured to serve up automatic proxy configuration data
-to clients to point users to squid running either on pfSense or another
-local system, assuming their systems settings are configured for this
-behavior. Though the data can be served from the firewall, the task is
-better suited for another local web server if one is available.
+pfSense® software can be configured to serve up automatic proxy
+configuration data to clients to point users to squid running either
+on the pfSense system or another local system, assuming their systems
+settings are configured for this behavior. Though the data can be served
+from the firewall, the task is better suited for another local web server
+if one is available.
 
 .. note:: To use the web server on the firewall to serve this data, the
    GUI must run in HTTP mode, or the vhosts package may be used to
@@ -66,9 +67,9 @@ The contents of the example *wpad.dat* file are::
 The function in that file tells the browser to look for a proxy on
 *192.168.1.1* at port *3128*.
 
-Now upload that file to pfSense or another locally accessible web server
-with scp, or create it using the built-in file editor. The file must go
-in */usr/local/www/*.
+Now upload that file to the pfSense system or another locally accessible
+web server with scp, or create it using the built-in file editor. The
+file must go in */usr/local/www/*.
 
 Due to the different ways that various browser versions try to access
 the file, this same code should exist in at least three different
@@ -87,12 +88,12 @@ server, but typically must be served from both the default *VirtualHost*
 as well as one named *wpad*, due to differences in how browsers request
 the file.
 
-To make this work using pfSense to serve the file, local IP addresses
-will need to be able to access the local interface IP address of the
-pfSense router. They do not need to access the WebGUI with a password,
-this file will be served without authentication. The GUI must also be
-run in HTTP mode, which is less secure. If the GUI is set to use HTTP,
-never open up access to the GUI over the WAN.
+To make this work using the pfSense router to serve the file, local IP
+addresses will need to be able to access the local interface IP address
+of the pfSense router. They do not need to access the WebGUI with a
+password, this file will be served without authentication. The GUI must
+also be run in HTTP mode, which is less secure. If the GUI is set to use
+HTTP, never open up access to the GUI over the WAN.
 
 Configure DNS
 -------------
@@ -100,15 +101,15 @@ Configure DNS
 Now to setup the DNS portion. WPAD will take the domain name given to
 the machine, likely assigned by DHCP, and prepend *wpad.*. If the domain
 is *example.com*, it will look for *wpad.example.com*. This task may be
-accomplished with the DNS Forwarder/DNS Resolver in pfSense or with
-another internal DNS server used by client PCs.
+accomplished with the DNS Forwarder/DNS Resolver on the pfSense router or
+with another internal DNS server used by client PCs.
 
 A client browser will ultimately try to access
 *http://wpad.example.com/wpad.dat* - among others. More details on the
 hostnames tried by WPAD are available in the `WPAD article on
 Wikipedia <https://en.wikipedia.org/wiki/Wpad>`__.
 
-To add the entry using the DNS forwarder on pfSense, navigate to
+To add the entry using the DNS forwarder on the pfSense router, navigate to
 **Services > DNS Forwarder**. Click |fa-plus| to add a new **Host Override**.
 
 Enter the following (Replace the domain and IP address with their actual
@@ -136,7 +137,7 @@ interface) that blocks anything from **<internal subnet>** to * on port 80.
 Test Clients
 ------------
 
-Fire up a browser on a client behind the pfSense firewall, and see what
+Start a browser on a client behind the pfSense firewall, and see what
 happens. If squid is configured for authentication, the client will be
 greeted with a login prompt. Otherwise, check squid's logs to ensure
 traffic is going through the proxy. A proxy test site such as
