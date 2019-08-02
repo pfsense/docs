@@ -2,7 +2,7 @@ Using the Package Manager
 =========================
 
 The **Package Manager** is used to install and maintain packages on a
-pfSense firewall.
+pfSense® firewall.
 
 Packages are listed with a **Name**, **Category**, **Version**, and a
 **Description** of what the package is or does.
@@ -22,10 +22,10 @@ Installing New Packages
 -----------------------
 
 The **Available Packages** tab displays only those packages which are available
-to install on a given platform and pfSense version. For example, a full install
-has all packages available, while a NanoBSD/embedded install only has packages
-which have been tested and known to work on that platform. Categories are
-displayed as additional sub-tabs to make browsing specific types of packages
+to install on a given platform and pfSense software version. For example, a full
+install has all packages available, while a NanoBSD/embedded install only has
+packages which have been tested and known to work on that platform. Categories
+are displayed as additional sub-tabs to make browsing specific types of packages
 simpler.
 
 To install a package, find it in the list and click |fa-plus| **Install** at the
