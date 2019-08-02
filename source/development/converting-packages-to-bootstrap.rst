@@ -7,8 +7,8 @@ see
 and `Bootstrap Conversion Notes <https://forum.netgate.com/post/90525>`__ for
 general Bootstrap help and information.
 
-Packages for pfSense 2.3 are built from files in the pfSense copy of the
-`FreeBSD ports <https://github.com/pfsense/FreeBSD-ports/>`__
+Packages for pfSense® software version 2.3 are built from files in the pfSense
+copy of the `FreeBSD ports <https://github.com/pfsense/FreeBSD-ports/>`__
 repository, not from the older pfSense-packages repository.
 
 pfSense packages contain the files needed for the package to operate and
