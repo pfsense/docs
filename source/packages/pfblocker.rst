@@ -1,7 +1,8 @@
 pfBlocker-NG Package
 ====================
 
-**pfBlocker-NG** introduces an Enhanced Alias Table Feature to pfSense.
+**pfBlocker-NG** introduces an Enhanced Alias Table Feature to pfSense®
+software.
 
 What it allows:
 
@@ -10,7 +11,8 @@ What it allows:
 * Blocking countries and IP ranges.
 * Replacment of both **Countryblock** and **IPblocklist** by providing the same
   functionality, and more, in one package.
-* Uses native functions of pfSense instead of file hacks and table manipulation.
+* Uses native functions of pfSense software instead of file hacks and table
+  manipulation.
 
 Features include:
 
