@@ -15,8 +15,9 @@ Notes
 -----
 
 Every NIC is added on install. So if a NIC is added (or removed) on the
-pfSense box, remove the package and install again. If pfSense has data
-for a NIC vnStat will report the data even if the NIC has been removed.
+pfSense® box, remove the package and install again. If the pfSense
+router has data for a NIC vnStat will report the data even if the NIC
+has been removed.
 
 To clear database for a NIC, delete it from */conf/vnstat*
 
@@ -48,4 +49,5 @@ Resources
 
 `Forum <https://forum.netgate.com/post/13356>`__
 
-Similar tools available for pfSense :doc:`How can I monitor bandwidth usage </monitoring/monitoring-bandwidth-usage>`
+Similar tools available for pfSense article 
+:doc:`How can I monitor bandwidth usage </monitoring/monitoring-bandwidth-usage>`
