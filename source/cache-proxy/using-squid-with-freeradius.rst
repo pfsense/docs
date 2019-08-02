@@ -21,7 +21,7 @@ only if squid is running in non-transparent mode.
    -  Configure an interface in **FreeRADIUS > Interfaces**
    -  Configure a user in **FreeRADIUS > Users**
    -  Configure a NAS/Client in **FreeRADIUS > NAS/Clients**. In this
-      case pfSense itself is the NAS/Client. So enter the pfSense
+      case pfSense® software is the NAS/Client. So enter the pfSense
       IP-Address.
 
 For squid in non-transparent mode the IP address and the squid port must
