@@ -21,11 +21,11 @@ License.
 -  Have different access rules based on time of day, day of the week,
    date etc.
 
-Installation Squid2/3 + squidGuard on pfSense 2.1.x
----------------------------------------------------
+Installation Squid2/3 + squidGuard on pfSense software version 2.1.x
+--------------------------------------------------------------------
 
-#. Open Packages list: click **System > Packages**, **Available
-   Packages** tab
+#. From the pfSense® webGUI, navigate to **System > Packages**, 
+   **Available Packages** tab
 #. Install the Squid package if it is not already installed.
 #. Install the squidGuard package
 #. Configure Squid package.
