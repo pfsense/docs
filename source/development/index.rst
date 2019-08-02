@@ -2,7 +2,7 @@
 Development
 ***********
 
-These articles cover advanced topics related to developing on or with pfSense
+These articles cover advanced topics related to developing on or with pfSense®
 software.
 
 General Development Information
