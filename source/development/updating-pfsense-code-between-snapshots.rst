@@ -2,8 +2,8 @@ Using gitsync to Update pfSense Between Snapshots
 =================================================
 
 Most often, upgrading to a new snapshot is the best way to get updated
-code when tracking a prerelease version of pfSense (alpha, beta, RC,
-etc).
+code when tracking a prerelease version of pfSense® software (alpha,
+beta, RC, etc).
 
 However, since it does take some time to generate new snapshots, one can
 often get by with pulling new code from the pfSense git repository
