@@ -2,7 +2,7 @@ Developer Style Guide
 =====================
 
 This page covers rules and styles to be used when submitting code for
-inclusion in pfSense.
+inclusion in pfSense® software.
 
 Developer Rules
 ---------------
@@ -24,8 +24,8 @@ Developer Rules
   :doc:`pull request </development/submitting-a-pull-request-via-github>` for
   this workflow is acceptable, and is how every change from those outside the
   development team is handled.
-* Pre-commit authorization is not used in pfSense except in the case of major
-  changes. For external/community developers, :doc:`pull requests
+* Pre-commit authorization is not used in pfSense software except in the case
+  of major changes. For external/community developers, :doc:`pull requests
   </development/submitting-a-pull-request-via-github>` serve this function.
 * Mention relevant ticket numbers in commit messages so that Redmine can
   associate the changes. See :doc:`Referencing Tickets in Commit Messages
@@ -59,8 +59,8 @@ HTML Specific Rules
    code, but this does not mean that the code is not broken. The broken code
    must be fixed by the person who committed the invalid code.
 
-pfSense uses the XHTML doctype in its webGUI code. The doctype enforces code
-against the following ruleset:
+pfSense softare uses the XHTML doctype in its webGUI code. The doctype enforces
+code against the following ruleset:
 
 * Use lower case tag names and not a mix of uppercase and lowercase tag names
 * Breaks must be closed (``<br />``)
@@ -160,7 +160,7 @@ General rules
 * Loop variables are ``$i``, ``$j``, ``$k``, ...
 
   * Do **NOT** use ``$g`` for a loop variable, as it conflicts with the
-    global ``$g`` used by pfSense
+    global ``$g`` used by pfSense software
 
 * All ``switch`` statements must have a ``default``
 * In classes, use ``private``, ``protected`` and ``public``, not ``var`` for
@@ -244,12 +244,15 @@ Configuration Manipulation
 JavaScript Specific Rules
 -------------------------
 
-* pfSense does not support outdated browsers, so do not take special measures to
-  use code required by old/obsolete browsers or rendering engines
-* pfSense includes, among other JavaScript resources, Bootstrap and jQuery.
-  While native JavaScript is best for simple tasks, if a developer can
-  accomplish a goal easily using an included library, they can use it instead
-* pfSense does not currently utilize ``transpiler`` or similar utilities
+* pfSense software does not support outdated browsers, so do not take
+  special measures to use code required by old/obsolete browsers or
+  rendering engines
+* pfSense software includes, among other JavaScript resources, Bootstrap and
+  jQuery. While native JavaScript is best for simple tasks, if a developer
+  can accomplish a goal easily using an included library, they can use it
+  instead 
+* pfSense software does not currently utilize ``transpiler`` or similar
+  utilities
 * Take special care with user input or statements/variables that can be
   populated with user input to avoid creating a vulnerability vector such as
   XSS. User fields must be encoded or otherwise sanitized
