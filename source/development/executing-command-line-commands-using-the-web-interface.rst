@@ -2,13 +2,13 @@ Executing Command Line Programs Using the Web Interface
 =======================================================
 
 This article explains how shell command commands may be run directly
-from the pfSense WebGUI. Note that this functionality is not officially
+from the pfSense® webGUI. Note that this functionality is not officially
 supported, ***use at your own risk!***
 
 Description
 -----------
 
-- Navigate to **Diagnostics > Command** in the WebGUI
+- Navigate to **Diagnostics > Command** in the webGUI
 - Enter the command to run in the **Command** field inside the
   **Execute Shell Command** section.
 
