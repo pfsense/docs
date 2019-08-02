@@ -16,7 +16,7 @@ https://github.com/PiBa-NL/pfsense-haproxy-package-doc/wiki
 Package Variants
 ----------------
 
-On recent pfSense versions 2 haproxy packages are available:
+On recent pfSense® versions 2 haproxy packages are available:
 
 * **HAProxy** package tracks the stable FreeBSD port currently using
   HAProxy 1.6.x.
@@ -189,14 +189,15 @@ In a standard HAProxy configuration where the frontend is set to listen
 on both ports and a single server directive is made with no port, it
 will operate the expected way.
 
-In pfSense, two server directives will be generated; one for each port.
-HAProxy will not send connections the expected way. It will loadbalance
-between them, regardless of whether the frontend and server ports match.
+In pfSense software, two server directives will be generated; one for
+each port. HAProxy will not send connections the expected way. It will
+loadbalance between them, regardless of whether the frontend and
+server ports match.
 
-Therefore in pfSense a separate frontend must be created for this, as
-they are essentially different services. Listen on port 25 and 2525, and
-it doesn't matter whether someone connected on one port gets directed to
-the other, then they can be combined.
+Therefore in pfSense software a separate frontend must be created for
+this, as they are essentially different services. Listen on port 25 and
+2525, and it doesn't matter whether someone connected on one port gets
+directed to the other, then they can be combined.
 
 Splitting the servers up by port also means that a separate entry will
 exist for each one in the stats page, but the port will not be shown. In
