@@ -2,7 +2,7 @@ OpenBGPD package
 ================
 
 The OpenBGPD package allows the BGP routing protocol to be used with
-pfSense.
+pfSense® software.
 
 Resources
 ---------
