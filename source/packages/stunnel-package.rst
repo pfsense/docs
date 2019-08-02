@@ -11,7 +11,7 @@ libraries. It calls the underlying crypto libraries, allowing stunnel to
 support whatever cryptographic algorithms were compiled into the crypto
 package.
 
-.. note:: The pfSense package implements only a subset of the configuration
+.. note:: The pfSense® package implements only a subset of the configuration
    options available in stunnel. For more advanced configurations, please
    consider configuring stunnel manually on the pfSense host, run it in
    a dedicated jail, or on a different system.
