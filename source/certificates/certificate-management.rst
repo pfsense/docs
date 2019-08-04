@@ -34,12 +34,12 @@ Certificate Authority*, fill out the required information and click
 Certificates
 ------------
 
-**Certificates** are manage on the **Certificates** tab.
+**Certificates** are managed on the **Certificates** tab.
 
 The certificates and keys may also be downloaded from this list view:
 
-:|fa-certificate|: Exports the certificate file
-:|fa-key|: Export the private key for this certificate
+:|fa-certificate|: Exports the certificate file.
+:|fa-key|: Exports the private key for this certificate.
 :|fa-archive|: Generates a PKCS#12 ``.p12`` file with the CA certificate, user
   certificate, and user key contained inside.
 
