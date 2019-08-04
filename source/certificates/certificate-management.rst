@@ -1,7 +1,7 @@
 Managing Certificates on pfSense
 ================================
 
-pfSense® software includes a central **Certificate Manager** unde
+pfSense® software includes a central **Certificate Manager** under
 **System > Cert Manager**.
 
 This central Certificate Management takes the place of several other
