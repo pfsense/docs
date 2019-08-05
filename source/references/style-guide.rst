@@ -11,10 +11,15 @@ guidelines may be edited and corrected at any time.
 See :doc:`quality-guidelines` for information about how entries in the
 documentation should be written and what they should contain.
 
+Trademarks
+----------
+
+The first use of **pfSense®** must have the ® symbol on each and every page.
+
 Capitalization
 --------------
 
-Capitalize terms correctly! Especially **pfSense®**! No other capitalization of
+Capitalize terms correctly! Especially **pfSense**! No other capitalization of
 "pfSense" may be used except in a URL which is acceptable as lowercase (e.g.
 https://www.pfsense.org ). If a sentence begins with "pfSense" the first
 letter must remain lowercase.
