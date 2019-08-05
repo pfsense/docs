@@ -21,7 +21,7 @@ on an interface with captive portal enabled, it's most always one of the
 following causes:
 
 :DNS resolution not functioning: Clients on the captive portal interface must
-   either be using the DNS resolver or forwarder on pfSense software, on the IP address
+   either be using the DNS resolver or forwarder on pfSense® software, on the IP address
    of the interface where the client resides (which is the default
    configuration), or if using another IP address for DNS, it must be in an
    allowed IP address entry. If DNS fails, the browser never issues the HTTP
