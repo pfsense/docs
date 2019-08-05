@@ -3,7 +3,7 @@ Blocking DNS Queries to External Resolvers
 
 This procedure will allow the firewall to block DNS requests to servers
 that are off this network. This can force DNS requests from local
-clients to use the DNS Forwarder or Resolver on pfSense for resolution.
+clients to use the DNS Forwarder or Resolver on pfSense® for resolution.
 When combined with OpenDNS, this allows DNS-based content filtering to
 be enforced on the local network.
 
