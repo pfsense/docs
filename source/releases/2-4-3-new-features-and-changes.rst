@@ -1,6 +1,8 @@
 2.4.3 New Features and Changes
 ==============================
 
+New features and changes for this release of pfSense® software:
+
 Security / Errata
 -----------------
 
