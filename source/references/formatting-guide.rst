@@ -1,7 +1,7 @@
 Formatting Guide
 ================
 
-The pfSense documentation is built using Sphinx/reStructuredText. The formatting
+The pfSense® documentation is built using Sphinx/reStructuredText. The formatting
 is similar in some ways to Markdown, but has significant differences. To get a
 feel for the formatting, look at the `source of this documentation`_ and read
 through this document.
