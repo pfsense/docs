@@ -1,10 +1,11 @@
 Avahi package
 =============
 
-`Avahi`_ is a system which facilitates service discovery on a local
-network. This means that a laptop or computer may be connected into a
-network and instantly be able to view other people to chat with, find
-printers to print to or find files being shared.
+The `Avahi`_ package used in pfSense® software is a system which
+facilitates service discovery on a local network. This means that a
+laptop or computer may be connected into a network and instantly be
+able to view other people to chat with, find printers to print to
+or find files being shared.
 
 This kind of technology is already found in Apple MacOS X (branded
 Rendezvous, Bonjour, and sometimes Zeroconf) and is very convenient.
