@@ -11,7 +11,7 @@ party IPsec-compliant devices.
 
 .. seealso:: The :doc:`IPsec section </vpn/ipsec/index>` contains example VPN
    Configurations that cover site to site IPsec configuration with some third
-   party IPsec devices. If pfSense softwarae is known to work in a site to site
+   party IPsec devices. If pfSense software is known to work in a site to site
    IPsec configuration with a third party IPsec device not listed, we would
    appreciate a short submission containing configuration details, preferably
    with screenshots where applicable.
