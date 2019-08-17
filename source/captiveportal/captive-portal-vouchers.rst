@@ -12,9 +12,7 @@ places.
 Users enter their voucher code in the portal page and are granted access
 for as long as the voucher is valid. Voucher time does not stop counting
 down if a user logs out; the voucher is only valid from the start of the
-session for the duration of the voucher length. Some companies have
-integrated the exported voucher lists into their point of sale
-applications to print a voucher on customer receipts.
+session for the duration of the voucher length.
 
 To use vouchers, a custom portal page must be used that submits the
 voucher as *auth_voucher*.
@@ -35,16 +33,15 @@ generated if desired. The maximum key length supported is 64 Bits. Using
 shorter keys will make the generated vouchers shorter but eventually
 less secure.
 
-Generate Larger Keys
-^^^^^^^^^^^^^^^^^^^^
+It is possible to generate a custom, longer RSA key pair,
+using openssl in a shell or in pfSense console::
 
-To generate a valid RSA key pair using 64 Bits, run the following from
-the shell on console or ssh::
+$ openssl genrsa 64 > key64.private
+$ openssl rsa -pubout < key64.private >key64.public
 
-  $ openssl genrsa 64 > key64.private
-  $ openssl rsa -pubout < key64.private >key64.public
+Once generated, you can paste the contents of the resulting files
+into the pfSense settings.
 
-Then use the contents of the resulting files to paste into those fields.
 
 Character Set
 ~~~~~~~~~~~~~
@@ -107,17 +104,3 @@ Testing
 
 To test the vouchers, go to **Status > Captive Portal**, select the
 zone, and visit the **Test Vouchers** tab. See :doc:`Captive Portal Status </captiveportal/captive-portal-status>`.
-
-Portal Page
------------
-
-The portal page must include the following field to accept the voucher
-code:
-
-Troubleshooting
----------------
-
--  User is online after voucher expires
-
-   -  The session timeout must be enabled in order to allow the voucher
-      session to expire and deactivate.

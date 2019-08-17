@@ -2,7 +2,7 @@ Using EAP and PEAP with FreeRADIUS
 ==================================
 
 Using EAP/PEAP in pfSense® software with the 
-:doc:`FreeRADIUS 2.x package </usermanager/freeradius-2-x-package>`.
+:doc:`FreeRADIUS package </usermanager/freeradius-package>`.
 
 General EAP configuration
 -------------------------

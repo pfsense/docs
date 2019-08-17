@@ -30,7 +30,7 @@ Documented Packages
    /certificates/acme-package
    arping-package
    avahi-package
-   /usermanager/freeradius-2-x-package
+   /usermanager/freeradius-package
    haproxy-package
    troubleshooting-the-haproxy-package
    iperf-package

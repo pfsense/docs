@@ -13,9 +13,8 @@ corporate and even home environments.
    :maxdepth: 1
 
    captive-portal
+   captive-portal-configuration
    captive-portal-status
    captive-portal-vouchers
    captive-portal-authentication-logs
-   using-captive-portal-with-freeradius
-   configuring-a-pre-authentication-redirect-for-captive-portal-users
    captive-portal-troubleshooting

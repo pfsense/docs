@@ -4,15 +4,6 @@ Troubleshooting Captive Portal
 The best source of captive portal troubleshooting information can be found in
 the |book_link|.
 
-Issues with Apple iOS Clients
------------------------------
-
-If problems are encountered while accessing Captive Portal from an iPad
-device, it may be due to an issue with Safari on the iPad which may be
-be solved by disabling Autofill for names and passwords.
-
-See also: https://forum.netgate.com/topic/23829/ipad-and-captive-portal-simply-hangs-on-login
-
 Captive portal not redirecting
 ------------------------------
 
@@ -37,10 +28,14 @@ following causes:
    the portal, this may still work but it depends upon the client browser or
    operating system automatic portal detection to work.
 
-Captive Portal Rule Generation
-------------------------------
+Captive Portal Rules Generation
+-------------------------------
 
-To see the ipfw rules, which includes rules for Captive Portal in
+Captive Portal is using ipfw under the hood. ipfw is a program performing packet
+filtering. If you encounter an issue with the captive portal, you may want to list ipfw
+rules for debugging
+.
+To list all ipfw rules, which includes rules for Captive Portal in
 general as well as zone specific tables, run::
 
   # ipfw show
@@ -67,17 +62,6 @@ zone called "myzone" would contain this table::
 See **captiveportal.inc** for information on other tables, these include tables
 for host/MAC bypass entries and other necessary controls.
 
-Pipe/flowset Errors
--------------------
-
-If an error such as the following appears::
-
-  need a pipe/flowset/sche number Warning: Cannot modify header information -
-  headers already sent by (output started at /etc/inc/captiveportal.inc:1928) in
-  /etc/inc/captiveportal.inc on line 1686
-
-The pipe allocation file, **/var/db/captiveportaldn.rules**, may have become
-corrupt or otherwise broken. Remove that file and restart Captive Portal.
 
 .. seealso:: For assistance in solving problems, post on the `Captive Portal
    category of Netgate Forum`_.

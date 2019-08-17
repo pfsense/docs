@@ -4,10 +4,6 @@ Captive Portal Status
 The **Captive Portal Status** page is available through the pfSense®
 webGUI at **Status > Captive Portal**.
 
-The menu entry is only present when the captive portal service is
-enabled. It is not shown if Captive Portal has not been configured or
-enabled.
-
 Zone Status
 -----------
 

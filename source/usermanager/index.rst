@@ -32,10 +32,9 @@ FreeRADIUS
 .. toctree::
    :maxdepth: 1
 
-   freeradius-2-x-package
+   freeradius-package
    configuring-additional-logging-for-freeradius
    mobile-one-time-passwords-with-freeradius
-   plain-mac-authentication-with-freeradius
    using-eap-and-peap-with-freeradius
    using-mysql-with-freeradius
    testing-freeradius

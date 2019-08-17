@@ -15,7 +15,7 @@ from top to bottom. If the file is very big with many entries than the
 authentication process can be too long. The structure and handling of
 such a number of users can be done much faster on a SQL database. To
 check if the server drops requests or performs bad in some situation
-take a look at this :doc:`how-to </usermanager/freeradius-2-x-package>`.
+take a look at this :doc:`how-to </usermanager/freeradius-package>`.
 
 Using a MySQL database has the advantage that better counters/modules
 may be created because it is possible to do SELECTs on the database and

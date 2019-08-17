@@ -1,5 +1,5 @@
-FreeRADIUS 2.x package
-======================
+FreeRADIUS package
+==================
 
 Basics
 ------
@@ -137,10 +137,9 @@ Related Articles
 Refer to the following articles for more information on the listed topics:
 
 -  :doc:`Testing FreeRADIUS </usermanager/testing-freeradius>`
--  :doc:`Plain MAC Authentication with FreeRADIUS </usermanager/plain-mac-authentication-with-freeradius>`
 -  :doc:`Additional Logging for FreeRADIUS </usermanager/configuring-additional-logging-for-freeradius>`
 -  :doc:`Mobile One-time Passwords with FreeRADIUS </usermanager/mobile-one-time-passwords-with-freeradius>`
--  :doc:`Using Captive Portal with FreeRADIUS </captiveportal/using-captive-portal-with-freeradius>`
+-  :doc:`Using Captive Portal with FreeRADIUS </captiveportal/captive-portal-configuration>`
 -  :doc:`Using EAP and PEAP with FreeRADIUS </usermanager/using-eap-and-peap-with-freeradius>`
 -  :doc:`Using MySQL with FreeRADIUS </usermanager/using-mysql-with-freeradius>`
 -  :doc:`Using OpenVPN With FreeRADIUS </vpn/openvpn/authenticating-openvpn-users-with-freeradius>`

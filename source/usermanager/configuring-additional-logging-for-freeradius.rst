@@ -1,7 +1,7 @@
 Configuring Additional Logging for FreeRADIUS
 =============================================
 
-How to get additional logging detail from the :doc:`FreeRADIUS package </usermanager/freeradius-2-x-package>`.
+How to get additional logging detail from the :doc:`FreeRADIUS package </usermanager/freeradius-package>`.
 
 It is possible to add additional logging information if a user authenticates
 with correct or incorrect credentials. Instead of ``Login: OK`` or ``Login:
