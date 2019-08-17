@@ -73,8 +73,8 @@ The features below were tested on pfSense software version 2.x
 
     radiusd[3206]: Multiple logins (max 1) : [testuser/testpw] (from client testing port 10)
 
-- A certain amount of time per day/week/month/forever (CHECK-ITEM:
-  Max-Daily-Session := 60 ) The user will be disconnected and cannot
+- A certain amount of time per day/week/month/forever (``CHECK-ITEM:
+  Max-Daily-Session := 60``) The user will be disconnected and cannot
   re-login after the amount of time is reached::
 
     radiusd[3206]: Invalid user (rlm_counter: Maximum daily usage time reached): [testuser/<via Auth-Type = EAP>] (from client pfsense port 0 cli 00-04-23-5C-9D-19)
@@ -116,13 +116,13 @@ and much more. To enable status server and request information from the
 server do the following:
 
 - Setup an interface with **Interface-Type**: *status* and a free port.
-  I choose **Port**: ``1818`` in this how-to.
+  The default port for RADIUS accounting is ``1813``.
 - Setup a NAS/Client with **IP-Address**: ``127.0.0.1`` and a password.
-  I choose *testing123* in this how-to.
+  Password *testing123* will be used in this how-to.
 - SSH to the pfSense firewall and enter the following command on the
   command line::
 
-    echo "Message-Authenticator = 0x00, FreeRADIUS-Statistics-Type = All" | \radclient localhost:1818 status testing123
+    echo "Message-Authenticator = 0x00, FreeRADIUS-Statistics-Type = All" | \radclient localhost:1813 status testing123
 
 The output should look like this::
 

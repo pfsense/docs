@@ -51,7 +51,7 @@ PEAP and MSCHAPv2
 
    -  Configure an interface in **FreeRADIUS > Interfaces**
    -  Create a **CA-Certificate** and a **Server-Certificate**. Choose
-      pfSense Cert-Manager or FreeRADIUS Cert-Manager but **never** use
+      pfSense® Cert-Manager or FreeRADIUS Cert-Manager but **never** use
       the default certificates which come with FreeRADIUS after package
       installation!
    -  Select the certificates in **FreeRADIUS > EAP**. If FreeRADIUS as

@@ -5,23 +5,23 @@ The **Captive Portal** function in pfSense® software allows securing a
 network by requiring a username and password (or only a click through),
 entered on a portal page.
 
-If authentication is used, this can be performed using the pfSense
-built-in user management, or an external authentication server such as a
-RADIUS server or an LDAP server.
+Authentication can be performed using pfSense the pfSense built-in user management,
+or an external authentication server such as a RADIUS server or an
+LDAP server.
 
 
 .. tip:: The best source of captive portal information can be found in the |book_link|.
 
 
-Captive Portal can be configured from **Services > Captive Portal**, were you can
-create or update a **Zone**.
+Captive Portal can be configured from **Services > Captive Portal**, where **Zones**
+can be created or updated.
 
 Captive portal **Zone** allow for the creation of separate, independent
 portals that operate on one or more separate interfaces. For example,
 there could be a zone for Wireless and a zone for Wired. Each zone has a
 completely isolated set of pages, configuration, users, etc.
 
-One zone may by used by multiple interfaces, but an interface can be binded to only one
+One zone may be used by multiple interfaces, but an interface can be bound to only one
 zone.
 
 When creating a captive portal zone, several tabs are available for the captive portal setup,

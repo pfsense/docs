@@ -14,6 +14,7 @@ corporate and even home environments.
 
    captive-portal
    captive-portal-configuration
+   captive-portal-redirection
    captive-portal-status
    captive-portal-vouchers
    captive-portal-authentication-logs

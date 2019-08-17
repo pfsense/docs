@@ -31,10 +31,10 @@ following causes:
 Captive Portal Rules Generation
 -------------------------------
 
-Captive Portal is using ipfw under the hood. ipfw is a program performing packet
-filtering. If you encounter an issue with the captive portal, you may want to list ipfw
-rules for debugging
-.
+Captive Portal is using ``ipfw`` under the hood. ``ipfw`` is a program performing packet
+filtering. When having issues with the captive portal, it is possible to list ``ipfw``
+rules for debugging.
+
 To list all ipfw rules, which includes rules for Captive Portal in
 general as well as zone specific tables, run::
 
