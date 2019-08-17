@@ -28,19 +28,10 @@ RSA Keys
 
 Before the program can be used, a public/private RSA key pair must be
 generated. A set is generated automatically the first time the page is
-visited that is 32-bits in length, but a new pair may be manually
+visited. A new pair may be manually
 generated if desired. The maximum key length supported is 64 Bits. Using
 shorter keys will make the generated vouchers shorter but eventually
 less secure.
-
-It is possible to generate a custom, longer RSA key pair,
-using openssl in a shell or in pfSense console::
-
-$ openssl genrsa 64 > key64.private
-$ openssl rsa -pubout < key64.private >key64.public
-
-Once generated, you can paste the contents of the resulting files
-into the pfSense settings.
 
 
 Character Set
