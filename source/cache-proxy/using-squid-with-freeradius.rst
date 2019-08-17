@@ -1,7 +1,7 @@
 Authenticating Squid Package Users with FreeRADIUS
 ==================================================
 
-Using the Squid Proxy package with the :doc:`FreeRADIUS package </usermanager/freeradius-package>`.
+Using the Squid Proxy package with the :doc:`FreeRADIUS package </packages/freeradius-package>`.
 
 SQUID Proxy
 -----------

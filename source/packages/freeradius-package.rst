@@ -8,7 +8,7 @@ Installation
 ^^^^^^^^^^^^
 
 -  Navigate to **System > Packages**, **Available Packages** tab
--  Click |fa-plus| at the end of the row for **freeradius2**
+-  Click |fa-plus| at the end of the row for **freeradius3**
 -  Confirm the installation
 -  Monitor the progress as it installs
 
@@ -30,42 +30,22 @@ following::
   radiusd[16634]: Ready to process requests.
   radiusd[16627]: Loaded virtual server
 
-Testing FreeRADIUS
-^^^^^^^^^^^^^^^^^^
 
-See :doc:`Testing FreeRADIUS </usermanager/testing-freeradius>` to check if the
-installation is functional.
+Troubleshooting RADIUS Authentication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When attempting to authenticate against a RADIUS server, errors may be
+encountered in the logs that prevent it from working properly. Here are some
+errors and how to resolve them::
+
+  mpd: [pt0] RADIUS: RadiusSendRequest: rad_init_send_request failed: -1
+
+* This appears to happen when the RADIUS shared secret contains special
+  characters. Try again with an alphanumeric shared secret.
+
 
 General Information
 -------------------
-
-KNOWN BUGS and FORUM
-^^^^^^^^^^^^^^^^^^^^
-
---- Partly solved on pfSense software versions 2.0.2 and 2.1 ---
-
--  When using "stop/start accounting" on CP then "Amount of Time" isn't
-   working correctly.
-
-`This redmine ticket <https://redmine.pfsense.org/issues/2164>`__ and the
-forum links on the ticket it explain how it can be fixed.
-
--  "Amount of Traffic" isn't working correctly on versions older than
-   2.0.2
-
---- still NOT solved ---
-
--  When using CP + RADIUS + Vouchers and "reauthenticate every minute"
-   is enabled then CP sends the voucher as username to RADIUS. This
-   causes RADIUS to disconnect the "user/voucher" because of an
-   unknown/wrong "username". ( https://redmine.pfsense.org/issues/2155 )
--  When stop/start accounting on CP is enabled then the syslog shows
-   many "wrong order" or "Login found bot no logout detected". This
-   seems to not affect the usage of RADIUS but it is not 100% correct. (
-   https://redmine.pfsense.org/issues/2164 )
--  https://redmine.pfsense.org/issues/2143
-
-`Discuss about FreeRADIUS package in the forum <https://forum.netgate.com/post/39727>`__
 
 Features
 ^^^^^^^^
@@ -106,27 +86,11 @@ The features below were tested on pfSense software version 2.x
     root: FreeRADIUS: Used amount of daily upload and download traffic by testuser is 0 of 100 MB! The user was accepted!!!
     root: FreeRADIUS: Credentials are probably correct but the user testuser has reached the daily amount of upload and download traffic which is 243 of 100 MB! The user was rejected!!!
 
-- Plain MAC Auth
-
-  .. code::
-
-    radiusd[36083]: Login OK: [<no User-Name attribute>] (from client pfsense port 0 cli 22-33-44-55-66-77)
-
 - MySQL
 - LDAP/ActiveDirectory (connecting to MS AD with PAP)
 - User-Auth with SQUID
 - One-Time-Password
 
-Ask Questions? - Give Feedback!
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
--  To say "Thanks"...
--  To give feedback about a (not) working setting/setup...
--  To ask questions about configuration...
--  To participate on development of this package...
--  To help others who have trouble with this package...
-
-...please come to pfSense Forum and talk with us in this `thread <https://forum.netgate.com/post/39727>`__.
 
 FreeRADIUS General Configuration
 --------------------------------
@@ -136,12 +100,10 @@ Related Articles
 
 Refer to the following articles for more information on the listed topics:
 
--  :doc:`Testing FreeRADIUS </usermanager/testing-freeradius>`
--  :doc:`Additional Logging for FreeRADIUS </usermanager/configuring-additional-logging-for-freeradius>`
--  :doc:`Mobile One-time Passwords with FreeRADIUS </usermanager/mobile-one-time-passwords-with-freeradius>`
+-  :doc:`Testing FreeRADIUS </packages/testing-freeradius>`
+-  :doc:`Mobile One-time Passwords with FreeRADIUS </packages/mobile-one-time-passwords-with-freeradius>`
 -  :doc:`Using Captive Portal with FreeRADIUS </captiveportal/captive-portal-configuration>`
--  :doc:`Using EAP and PEAP with FreeRADIUS </usermanager/using-eap-and-peap-with-freeradius>`
--  :doc:`Using MySQL with FreeRADIUS </usermanager/using-mysql-with-freeradius>`
+-  :doc:`Using EAP and PEAP with FreeRADIUS </packages/using-eap-and-peap-with-freeradius>`
 -  :doc:`Using OpenVPN With FreeRADIUS </vpn/openvpn/authenticating-openvpn-users-with-freeradius>`
 -  :doc:`Using Squid with FreeRADIUS </cache-proxy/using-squid-with-freeradius>`
 
@@ -182,65 +144,9 @@ in this path on the pfSense firewall::
 
   /usr/local/share/freeradius/dictionary.freeradius
 
-This is an excerpt from the following
-`page <http://wiki.freeradius.org/Status#Asking+with+radclient>`__.
-
-Porting Users/Clients/Setting from FreeRADIUS v1.x to v2.x
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The configuration of the freeradius1 package is **not** compatible and
-can **not** automatically be upgraded. There is a workaround for doing
-this - that the system which is running freeradius1 on production -
-doesn't have to go down to long. This can be done:
-
--  Backup pfSense config from the machine running freeradius1
--  Install pfSense software in a virtual machine. VMware Player works
-   fine and is free.
--  Both systems should communicate with each other over network
--  Install freeradius2 package on the virtual machine
--  Setup all Users, MACs and Clients/NAS on this virtual machine
--  Deinstall freeradius1 on production system
--  SSH to pfSense and delete all entries depending on freeradius1
-   package from **/config/config.xml**
--  Reboot pfSense, install freeradius2 package and setup interfaces
--  On virtual machine go to **Service > FreeRADIUS**, **XMLRPC Sync**
-   tab
--  Enter the IP and admin password of the pfSense on production
--  Enable sync and click **Save**
-
-Now all Users, MACs and NAS entries will be synced to the production
-system running new freeradius2 package. The freeradius2 service may need
-to be restarted.
-
--  Check system log if freeradius2 is ready to process requests
--  Check users, macs and clients file user **Service > FreeRADIUS**,
-   **View config** tab
-
-Microsoft Active Directory and LDAP
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Thanks very much pszafer for explanation. I will try to write a tutorial here in
-future - or somebody else does :)
-
-* `Link to the forum post <https://forum.netgate.com/post/39727>`__
-
-Video tutorials
-^^^^^^^^^^^^^^^
-
-Forum user Blasterreal made a video tutorial for some FreeRADIUS features. It
-can be found on `youtube.com <https://www.youtube.com/watch?v=B6Hjxd1Af-s>`__ or
-in the `forum <https://forum.netgate.com/post/41146>`__.
 
 Copyrights and Credits
 ^^^^^^^^^^^^^^^^^^^^^^
 
--  The code of FreeRADIUS2 package is based on
+-  The code of FreeRADIUS package is based on
    `freeradius.org <http://www.freeradius.org>`__
--  Many thanks go to Marcello Coutinho who is helping me on compiling
-   packages and php coding! :D
--  Many thanks to pfSense team. They support me on integration of this
-   package to pfSense and pointing me in the right direction when
-   implementing some features ;-)
--  Thanks very much to all other developers, beta-testers and users who
-   give feedback and help to improve this package!
-

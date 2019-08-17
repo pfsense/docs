@@ -6,8 +6,8 @@ under **System > User Manager**, on the **Servers** tab. This central
 location takes the place of the similar settings that used to be
 present in many subsystems but managed separately.
 
-LDAP or Radius servers may be added, and then they will available for
-use in other places in the system such as OpenVPN and IPsec.
+LDAP or RADIUS servers may be added, and then they will available for
+use in other places in the system such as OpenVPN, IPsec, or Captive Portal.
 
 After adding an authentication source, it may be tested by visiting
 **Diagnostics > Authentication**. Select an **Authentication Server**,

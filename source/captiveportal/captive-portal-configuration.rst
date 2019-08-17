@@ -152,7 +152,7 @@ FreeRADIUS Simultaneous-Use and Captive Portal re-authentication
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For obvious reasons, **Simultaneous-Use** is not compatible with "Reauthenticate users" option.
-We recommand not using **Simultaneous-Use** in FreeRADIUS if users re-authentication is enabled.
+We recommand not using **Simultaneous-Use** in your FreeRADIUS config if you wish to use users re-authentication.
 
 
 FreeRADIUS Package

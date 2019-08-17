@@ -1,7 +1,7 @@
 Using Mobile One-Time Passwords with FreeRADIUS
 ===============================================
 
-Using Mobile-One-Time-Password (mOTP) with the :doc:`FreeRADIUS package </usermanager/freeradius-package>`.
+Using Mobile-One-Time-Password (mOTP) with the :doc:`FreeRADIUS package </packages/freeradius-package>`.
 
 Enable Mobile-One-Time-Password (OTP) support
 ---------------------------------------------

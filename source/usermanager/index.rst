@@ -23,18 +23,4 @@ RADIUS and LDAP authentication sources.
    logging-out-of-the-webgui
    user-authentication-servers
    ldap-troubleshooting
-   radius-errors
    google-gsuite-auth-source
-
-FreeRADIUS
-''''''''''
-
-.. toctree::
-   :maxdepth: 1
-
-   freeradius-package
-   configuring-additional-logging-for-freeradius
-   mobile-one-time-passwords-with-freeradius
-   using-eap-and-peap-with-freeradius
-   using-mysql-with-freeradius
-   testing-freeradius

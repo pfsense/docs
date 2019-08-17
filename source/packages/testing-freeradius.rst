@@ -1,7 +1,7 @@
 Testing the FreeRADIUS Package
 ==============================
 
-Testing the :doc:`FreeRADIUS Package </usermanager/freeradius-package>` on
+Testing the :doc:`FreeRADIUS Package </packages/freeradius-package>` on
 a pfSense® firewall.
 
 Test the FreeRADIUS configuration
@@ -144,4 +144,4 @@ users long list or at the top. And there is a difference if there are
 many reply attributes like VLAN ID and so on.
 
 After this performance test check the FreeRADIUS server as described in
-this chapter: :doc:`/usermanager/freeradius-package`
+this chapter: :doc:`/packages/freeradius-package`

@@ -1,7 +1,7 @@
 Authenticating OpenVPN Users with FreeRADIUS
 ============================================
 
-Using OpenVPN with the :doc:`FreeRADIUS package </usermanager/freeradius-package>`.
+Using OpenVPN with the :doc:`FreeRADIUS package </packages/freeradius-package>`.
 
 Purpose
 -------
@@ -15,10 +15,7 @@ Requirements
 ------------
 
 -  A working OpenVPN server. See :doc:`OpenVPN Remote Access Server </vpn/openvpn/openvpn-remote-access-server>` for a How-To.
--  FreeRADIUS Installed: See :doc:`FreeRADIUS package </usermanager/freeradius-package>`
-
-After installing FreeRADIUS, :doc:`perform the initial configuration </usermanager/freeradius-package>`
-to allow access from the firewall as a NAS client.
+-  FreeRADIUS Installed. See :doc:`FreeRADIUS package </packages/freeradius-package>`
 
 Add an interface to FreeRADIUS
 ------------------------------
