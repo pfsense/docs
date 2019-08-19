@@ -17,7 +17,7 @@ Account" as described
 EAP-RADIUS with FreeRADIUS
 --------------------------
 
-The default settings are OK for this, if not, see :doc:`Using EAP and PEAP with FreeRADIUS </usermanager/using-eap-and-peap-with-freeradius>`
+The default settings are OK for this, if not, see :doc:`Using EAP and PEAP with FreeRADIUS </packages/using-eap-and-peap-with-freeradius>`
 
 EAP-RADIUS with Windows Network Policy Server (NPS)
 ---------------------------------------------------

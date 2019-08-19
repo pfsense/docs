@@ -30,7 +30,6 @@ Documented Packages
    /certificates/acme-package
    arping-package
    avahi-package
-   /usermanager/freeradius-2-x-package
    haproxy-package
    troubleshooting-the-haproxy-package
    iperf-package
@@ -50,3 +49,8 @@ Documented Packages
    /usermanager/sudo-package
    /development/system-patches
    vnstat
+   freeradius-package
+   mobile-one-time-passwords-with-freeradius
+   using-eap-and-peap-with-freeradius
+   testing-freeradius
+

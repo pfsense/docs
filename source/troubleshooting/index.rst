@@ -49,7 +49,6 @@ other areas of the documentation.
    /routing/troubleshooting-traceroute-output
    /trafficshaper/troubleshooting-traffic-shaping-graphs
    /usermanager/ldap-troubleshooting
-   /usermanager/radius-errors
    /vpn/ipsec/ipsec-troubleshooting
    /vpn/openvpn/troubleshooting-openvpn-internal-routing-iroute
    /vpn/openvpn/troubleshooting-openvpn-push-routes

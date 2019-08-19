@@ -1,9 +1,6 @@
 Using EAP and PEAP with FreeRADIUS
 ==================================
 
-Using EAP/PEAP in pfSense® software with the 
-:doc:`FreeRADIUS 2.x package </usermanager/freeradius-2-x-package>`.
-
 General EAP configuration
 -------------------------
 
@@ -54,7 +51,7 @@ PEAP and MSCHAPv2
 
    -  Configure an interface in **FreeRADIUS > Interfaces**
    -  Create a **CA-Certificate** and a **Server-Certificate**. Choose
-      pfSense Cert-Manager or FreeRADIUS Cert-Manager but **never** use
+      pfSense® Cert-Manager or FreeRADIUS Cert-Manager but **never** use
       the default certificates which come with FreeRADIUS after package
       installation!
    -  Select the certificates in **FreeRADIUS > EAP**. If FreeRADIUS as
@@ -84,18 +81,11 @@ PEAP and MSCHAPv2
       CA-Certificate will first need to be accepted. This is the
       certificate created on pfSense.
 
-If Authentication isn't working then on some devices (Windows XP) "Check
-server certificate" may be disabled.
-
 The most part of the "command line action" which is done in these
 tutorials can be done from FreeRADIUS GUI.
 
 -  A very good how-to with screenshots in german language can be found
    `here <http://www.administrator.de/index.php?content=142241>`__.
--  There is another good how-to in english language on
-   `freeradius <http://www.freeradius.org>`__ website. The direct link
-   can be found
-   `here <http://wiki.freeradius.org/WPA_HOWTO#HOWTO+Do+It%3A+An+Outline>`__.
 
 EAP-TLS
 -------
@@ -112,31 +102,13 @@ EAP-TLS
       **user**. For this example, use *myuser* as username and *mypass*
       as password.
    -  The EAP default options are working - read
-      :doc:`/usermanager/freeradius-2-x-package`.
+      :doc:`/packages/freeradius-package`.
    -  Using **pfSense Cert-Manager** and selecting the CA and the server
       certificate is recommended.
    -  Leave the password field empty
    -  Download the CA.crt - **not the key** - from **System > Cert
       Manager**, **CAs** tab and Client *.p12* from **System > Cert
       Manager**, **Certificates** tab
-
--  Windows XP configuration:
-
-   -  Import **CA.crt** and **Client.p12**
-   -  Set the authentication type to **smart card or other certificate**
-      `2 <http://www.wpi.edu/academics/CCC/Netops/Wireless/Setup/xp-imgs/WPA-0006.jpg>`__
-   -  Check **Use a certificate on this computer**
-
-      -  Check **Use simple certificate selection**
-
-   -  Check validate server certificate
-   -  Select **Trusted root certificate authorities** which is the CA
-      imported
-      before. `3 <http://i.technet.microsoft.com/dynimg/IC120658.gif>`__
-   -  Check **use a different username for connection** if the Windows
-      logon name is **not** the same as set in **FreeRADIUS > Users** or
-      if **Check cert CN** was set and the Windows logon name does not
-      match the client CN.
 
 -  Client Requires password on .p12
 

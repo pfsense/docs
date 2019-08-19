@@ -5,27 +5,28 @@ The **Captive Portal** function in pfSense® software allows securing a
 network by requiring a username and password (or only a click through),
 entered on a portal page.
 
-If authentication is used, this can be performed using the pfSense
-built-in user management, or an external authentication server such as a
-RADIUS server.
+Authentication can be performed using pfSense the pfSense built-in user management,
+or an external authentication server such as a RADIUS server or an
+LDAP server.
 
-The best source of captive portal information can be found in the |book_link|.
 
-Captive Portal is configured from **Services > Captive Portal**.
+.. tip:: The best source of captive portal information can be found in the |book_link|.
 
-There are several tabs available for the captive portal setup, each
-described below:
 
-Zones
------
+Captive Portal can be configured from **Services > Captive Portal**, where **Zones**
+can be created or updated.
 
-Captive Portal **Zones** allow for the creation of separate, independent
+Captive portal **Zone** allow for the creation of separate, independent
 portals that operate on one or more separate interfaces. For example,
 there could be a zone for Wireless and a zone for Wired. Each zone has a
 completely isolated set of pages, configuration, users, etc.
 
-One zone may by used by multiple interfaces, but only one zone may be
-used per interface.
+One zone may be used by multiple interfaces, but an interface can be bound to only one
+zone.
+
+When creating a captive portal zone, several tabs are available for the captive portal setup,
+each described below:
+
 
 Captive Portal Tab
 ------------------
@@ -39,10 +40,7 @@ Pass-Through MAC Tab
 Allows managing a list of MAC
 addresses which are allowed to bypass the portal.
 
-When specified by MAC address in this way, the client's IP address may
-change and they will still be allowed through. However, the client will
-still be disconnected after the captive portal timeout period has
-elapsed.
+These MAC addresses will bypass the portal authentication.
 
 Allowed IP addresses
 --------------------
