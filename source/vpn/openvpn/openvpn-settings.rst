@@ -32,7 +32,7 @@ The **Server** tab is where OpenVPN server processes are
 managed. These are processes
 that will listen for incoming connections from a remote peer.
 
-With a remote access (road warrior) setup, teh pfSense router is the
+With a remote access (road warrior) setup, the pfSense router is the
 server. A remote access setup can use SSL/TLS, user authentication, or
 both.
 
