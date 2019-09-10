@@ -45,11 +45,11 @@ Adding a patch
       into **Patch Contents** text area.
 
 -  Set the **Path Strip Count**. Github commit IDs and URLs should be
-   count of *1* (fixed automatically on save). Patches from other
+   count of *2* (fixed automatically on save). Patches from other
    sources will need to be set appropriately.
 
-   -  If a path like "a/etc/inc/filter.inc" is in the patch header,
-      strip off the "a/" so a strip count of *1* is needed. If it's
+   -  If a path like "a/src/etc/inc/filter.inc" is in the patch header,
+      strip off the "a/src" so a strip count of *2* is needed. If it's
       deeper, such as *home/me/patches/etc/inc/filter.inc*, strip *3*
       levels in that example.
 
