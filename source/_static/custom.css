@@ -1,3 +1,96 @@
+/* custom top nav */
+svg .st0, svg .st1, svg .st2 {
+  fill: #ffffff;
+}
+
+.custom-top-nav {
+  height: 45px;
+  width: 100%;
+  font-size: 15px;
+  padding: 0px 60px 0px 0px;
+  background: #1475CF;
+  color: #ffffff;
+  position: fixed;
+  z-index: 1000;
+}
+
+.custom-top-nav-container {
+  max-width: 1100px;
+}
+
+.custom-top-nav-home {
+  float: left;
+  padding: 8px 8px 8px 25px;
+}
+
+.custom-top-nav ul {
+  float: right;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 13px;
+}
+
+.custom-top-nav ul li {
+  margin: 0 15px;
+}
+
+.custom-top-nav ul li a {
+  color: #ffffff;
+}
+
+.wy-grid-for-nav {
+  top: 45px;
+}
+
+.wy-nav-side {
+  top: 45px;
+}
+
+/* don't display fixed header on small screens */
+@media screen and (max-width: 768px) {
+  .custom-top-nav {
+    display: none;
+  }
+
+  .wy-grid-for-nav {
+    top: 0;
+  }
+
+  .wy-nav-side {
+    top: 0;
+  }
+}
+
+/* make anchors work with fixed header */
+:target:before {
+  content: "";
+  display: block;
+  height: 55px;
+  margin: -55px 0 0;
+}
+
+.wy-side-scroll .version {
+  width: 100%;
+  text-align: center;
+  padding-top: 1em;
+}
+
+/* custom search form */
+#rtd-search-form input[type=text] {
+  width: 100%;
+  border-radius: 50px;
+  padding: 6px 12px;
+  border-color: #666666;
+}
+
+div[role=search] {
+  padding: 1.5em .5em .5em .5em;
+}
+
+.wy-menu.wy-menu-vertical {
+  padding-bottom: 60px;
+}
+
 /* breadcrumb buttons */
 .wy-breadcrumbs li a:first-child {
   padding-left: 5px;
