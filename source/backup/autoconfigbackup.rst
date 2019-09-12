@@ -19,6 +19,8 @@ intervention.
 Only the most recent 100 encrypted configurations for each device are retained
 on Netgate servers.
 
+.. image:: /_static/backup/acb-service.jpg
+
 Configuration
 -------------
 
@@ -65,7 +67,7 @@ To identify a specific firewall, an unique identifier is required to save or
 restore a backup configuration. ACB uses an SHA256 hash of the SSH public key on
 the firewall for this purpose.
 
-The device key is located on the **Services > Auto Config Backup** menu item, 
+The device key is located on the **Services > Auto Configuration Backup** menu item,
 under the **Restore** and **Backup now** tabs.
 
 .. warning:: **Keep a careful record of this Device Key**!
@@ -76,6 +78,22 @@ under the **Restore** and **Backup now** tabs.
    is distinct, the Netgate support team *may* be able to use it to recover the
    device key. Do not count on this though!
 
+Restoring a Configuration
+-------------------------
+
+To restore a configuration, click |fa-refresh| to the right of the configuration
+as shown on the **Services > Auto Configuration Backup** screen on the
+**Restore** tab. It will download the configuration specified from our
+servers, decrypt it with the configured encryption password, and restore it.
+
+By default, the firewall will not reboot. Depending on the
+configuration items restored, a reboot may not be necessary. For
+example, firewall and NAT rules are automatically reloaded after
+restoring a configuration.
+
+After restoring, a prompt is presented offering to reboot. If the restored
+configuration changes anything other than the NAT and firewall rules, choose
+**Yes**.
 
 Restoring Backups from Another Firewall or a Previous Installation
 ------------------------------------------------------------------
@@ -96,125 +114,48 @@ This temporarily allows ACB to display a list of backups for an alternate
 
 Click |fa-refresh| **Reset** to restore the native ID for this firewall.
 
-Accessing Legacy Backups
-------------------------
+Manually Backing Up
+-------------------
 
-pfSense Gold Subscribers who used the legacy ACB package can still access the
-backups from the legacy ACB server. The settings used by the old package are
-preserved.
+At times, it may be desirable to force a backup of a firewall
+configuration. This can be done on the **Restore** tab of the
+AutoConfigBackup page by clicking **Backup now** at the bottom. This
+will pop up a box where to manually enter a description of the backup.
 
-Click **Use Legacy "Gold" Repository** on the **Restore** tab to access the
-legacy server.
+We recommend doing this before making a series of significant changes,
+as it will provide a backup specifically showing the reason, which then
+makes it easy to revert to that configuration prior to initiating the
+changes if needed. Since each configuration change triggers a backup,
+when a series of changes is made it can be difficult to know where it
+started if a revert is necessary.
 
-.. note:: Backups on the legacy servers may only be restored or viewed. The ACB
-   service cannot create new backups on the legacy server. Also, since the
-   legacy server required a username, password, and hostname to identify the
-   firewall, ACB must transmit that information in legacy mode. ACB will prompt
-   to accept this use of personal information.
+A manual backup is also good prior to upgrading to a new pfSense release, and
+name the backup so it's clear that is the reason the backup was made.
 
-.. image:: /_static/backup/acb-service.jpg
+Testing Backup Functionality
+----------------------------
+
+Make a change to force a configuration backup, such as editing and
+saving a firewall or NAT rule, then click **Apply Changes**. Visit
+**Services > Auto Configuration Backup**, **Restore** tab. This tab lists
+available backups along with the page that made the change (where
+available).
 
 .. _legacy-acb-package:
 
 Legacy AutoConfigBackup Package
 -------------------------------
 
-Users with an active |premium_content_link| have access to the Automatic
-Configuration Backup Service, AutoConfigBackup and can backup a maximum of 10
-firewalls.
+This package is only compatible with currently supported pfSense versions
+released prior to 2.4.4.
 
-This package will work with currently supported pfSense versions released prior
-to 2.4.4.
+.. warning:: Now that all pfSense Gold Subscriptions are expired, access to the
+   legacy backup server has been removed, please upgrade to use the new ACB
+   server.
 
-.. note:: When upgrading to version 2.4.4, if the legacy AutoConfigBackup
+   When upgrading to version 2.4.4 or greater, if the legacy AutoConfigBackup
    package is detected, its settings will be migrated to the new integrated
    service and the old package settings will be deleted.
-
-Installing the AutoConfigBackup Package
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To install the package, visit **System > Packages** and click |fa-plus| next
-to to the AutoConfigBackup package, then confirm the installation. The
-firewall will download and install the package.
-
-After installation, the package may be found at **Diagnostics >
-AutoConfigBackup**.
-
-Setting the Hostname
-^^^^^^^^^^^^^^^^^^^^
-
-**Make sure each firewall has a unique hostname and domain set on System
-> General Setup.** The configurations are stored by FQDN (hostname +
-domain), so ensure each firewall using the backup service has a unique
-FQDN, otherwise ACB cannot differentiate between multiple installations.
-
-Configuring AutoConfigBackup
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The service is configured under **Diagnostics > AutoConfigBackup**,
-**Settings** tab. Fill in the https://portal.pfsense.org username (not
-email) and password, and enter an encryption password.
-
-The username is the login name created with the |premium_content_link|, not the
-e-mail address. Use a long, complex password and encryption key to ensure the
-configuration is secure. **It is very important to store this encryption key
-somewhere outside the firewall** - if it is lost, it will be impossible to
-restore a configuration the hard drive in the firewall fails. We retain only
-**encrypted** configurations, which are useless without the encryption key.
-
-Testing Backup Functionality
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Make a change to force a configuration backup, such as editing and
-saving a firewall or NAT rule, then click **Apply Changes**. Visit
-**Diagnostics > AutoConfigBackup**, **Restore** tab. This tab lists
-available backups along with the page that made the change (where
-available).
-
-Manually Backing Up
-^^^^^^^^^^^^^^^^^^^
-
-At times, it may be desirable to force a backup of a firewall
-configuration. This can be done on the **Restore** tab of the
-AutoConfigBackup page by clicking **Backup now** at the bottom. This
-will pop up a box where to manually enter a description of the backup.
-We recommend doing this before making a series of significant changes,
-as it will provide a backup specifically showing the reason, which then
-makes it easy to revert to that configuration prior to initiating the
-changes if needed. Since each configuration change triggers a backup,
-when a series of changes is made it can be difficult to know where it
-started if a revert is necessary. A manual backup is also good prior to
-upgrading to a new pfSense release, and name the backup so it's clear
-that is the reason the backup was made.
-
-Restoring a Configuration
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To restore a configuration, click |fa-plus| to the right of the configuration
-as shown on the **Diagnostics > AutoConfigBackup** screen on the
-**Restore** tab. It will download the configuration specified from our
-servers, decrypt it with the configured encryption password, and restore
-it. By default, the firewall will not reboot. Depending on the
-configuration items restored, a reboot may not be necessary. For
-example, firewall and NAT rules are automatically reloaded after
-restoring a configuration. After restoring, a prompt is presented
-offering to reboot. If the restored configuration changes anything other
-than NAT and firewall rules, choose **Yes**.
-
-Bare Metal Restoration
-^^^^^^^^^^^^^^^^^^^^^^
-
-If the hard drive is lost, the following procedure is necessary to recover the
-state of the new firewall installation to the last configuration change:
-
-#. Install pfSense on the new hard drive.
-#. Bring up LAN and WAN, and assign the hostname and domain **exactly the same
-   as it was previously** configured.
-#. Install the AutoConfigBackup package.
-#. Configure the AutoConfigBackup package as described above, using the portal
-   account and the same encryption password as used previously.
-#. Visit the Restore tab and choose the configuration to restore.
-#. After the restoration is done, reboot when prompted.
 
 FAQ
 ---
