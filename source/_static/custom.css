@@ -23,6 +23,10 @@ svg .st0, svg .st1, svg .st2 {
   padding: 8px 8px 8px 25px;
 }
 
+.custom-top-nav-home a {
+  color: #ffffff;
+}
+
 .custom-top-nav ul {
   float: right;
   display: flex;
