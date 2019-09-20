@@ -36,7 +36,7 @@ major security holes that many times take weeks to patch while they're being
 exploited in the wild, while open source browsers Firefox, Chrome and others
 have had significantly better security track records.
 
-The `widespread UPnP vulnerabilities announced in 2013`_ affecting over 300
+The widespread UPnP vulnerabilities announced in 2013 affecting over 300
 commercial products is another good example. The vendors of hundreds of
 commercial products made extremely basic security mistakes, shipping with
 absurdly insecure defaults, and shipping outdated software. That's never been an
@@ -49,5 +49,3 @@ Commercial alternatives have better support myth
 With some open source projects, it's true that you're stuck if you need help.
 With pfSense, we have commercial support, |support_link|, that rivals anything
 other commercial vendor offers.
-
-.. _widespread UPnP vulnerabilities announced in 2013: https://www.netgate.com/blog/security-flaws-in-universal-plug-and-play.html
