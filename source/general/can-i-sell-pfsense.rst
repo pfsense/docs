@@ -10,8 +10,7 @@ What can not be offered is a commercial redistribution of pfSense®
 software, for example the guidelines do not permit someone to offer
 "Installation of pfSense® software" as a service or to sell a device
 pre-loaded with pfSense® software to customers without the prior express
-written permission of ESF pursuant to the trademark policy as referenced
-in the `RCL Terms and Conditions`_.
+written permission of ESF pursuant to the `trademark policy`_.
 
 Example 1: A consultant may offer firewall services (e.g. "Fred's
 Firewalls"), without mentioning pfSense® software or using the logo in
@@ -32,7 +31,7 @@ relationship to pfSense is clearly stated.
 
 The |license| only applies to the software and **not** the pfSense name and
 logo, which are trademarks and may not be used without a license. Reading and
-understanding the `RCL Terms and Conditions`_ document is required before one
+understanding the `trademark policy`_ document is required before one
 considers selling pfSense Software.
 
 Contributing Back to the Project
@@ -132,4 +131,4 @@ modified in any way.
    or implied between the two companies, unless we have explicitly
    licensed and agreed to such a statement.
 
-.. _RCL Terms and Conditions: https://www.netgate.com/RCL-Terms-and-Conditions.pdf
+.. _trademark policy: https://www.netgate.com/company/legal/trademarks.html
