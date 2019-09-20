@@ -61,12 +61,8 @@ Recommended guides
 * :doc:`/routing/multi-wan` - learn about configuring WAN failover and load
   balancing with pfSense.
 
-Additional Support Resources
-----------------------------
-
-For a full list, visit https://www.netgate.com/support/
-
-Commercial Resources:
+Additional Commercial Resources
+-------------------------------
 
 * |support_link|
 * |pse_link|
