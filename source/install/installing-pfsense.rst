@@ -4,7 +4,8 @@ Installing pfSense
 This article will guide through selecting an appropriate version of
 pfSense® software, the initial pfSense installation, and related tasks.
 
-.. tip:: `Official pfSense appliances`_ may be purchased directly from Netgate.
+.. tip:: If you purchased an official `Netgate appliance`_, check the reinstall
+   guide in the appropriate `Security Gateway Manual`_.
 
 Choose Installation Type
 ------------------------
@@ -76,7 +77,7 @@ See Also:
 Download pfSense
 ----------------
 
--  Visit https://www.pfsense.org/download/
+-  Visit https://www.pfsense.org/download
 -  Pick the chosen **Version**, **Architecture**, and **Installer type**
 -  Download the SHA256 checksum file to verify the image later
 -  Pick a mirror and click the link on its row to download the image
@@ -314,4 +315,5 @@ For additional information on Installing pfSense, see the :doc:`/install/index`
 section. The |book_link| and |hangout_link| also cover a variety of relevant
 topics.
 
-.. _Official pfSense appliances: https://www.netgate.com/products/appliances/
+.. _Netgate appliance: https://www.netgate.com/products/appliances
+.. _Security Gateway Manual: https://docs.netgate.com/pfsense/en/latest/solutions
