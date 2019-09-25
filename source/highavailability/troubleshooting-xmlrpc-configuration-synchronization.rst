@@ -4,8 +4,9 @@ Troubleshooting XMLRPC Configuration Synchronization
 The following items must be checked to ensure proper XMLRPC
 configuration synchronization between two nodes:
 
-#. The **Username** must be *admin* on all nodes
-#. The **Password** must match on all nodes
+#. The **Username** and **Password** must match on all nodes
+#. If not using the default admin user account, the user sync account must have the **System - HA node sync** privilege.
+   No other privilege assignments are required for syncing to occur.
 #. The webConfigurator must be on the same protocol on each cluster node
    (*HTTP* vs. *HTTPS*)
 #. The webConfigurator must be on the same port on each cluster node
