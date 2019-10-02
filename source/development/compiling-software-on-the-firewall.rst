@@ -11,7 +11,7 @@ and then the compiled binaries/packages/software can be moved over to
 the firewall.
 
 When doing this, install a version of FreeBSD that matches up with the
-version of pfSense softwarecurrently in use. A list can be found here: 
+version of pfSense software currently in use. A list can be found here:
 :doc:`Versions of pfSense and FreeBSD </releases/versions-of-pfsense-and-freebsd>`
 
 Alternately, install pre-compiled FreeBSD packages as described here:

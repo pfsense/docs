@@ -15,5 +15,5 @@ request (aka ping) may be sent to a given **Host**.
    down).
 
 Click **Ping** to start the process. The result will be displayed
-automatically once complete. Do not nagivate away from the page while
+automatically once complete. Do not navigate away from the page while
 the ping is running.

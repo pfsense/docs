@@ -6,7 +6,7 @@ from serious compatibility or performance problems with some wireless
 clients. Over time this has improved significantly. pfSense® access
 points are used in various locations with no trouble. It is used with
 various clients such as MacBook Pro, Apple AirTunes, Mac mini, iPod
-Touch, Adroid devices, Palm, various Windows laptops, Xbox 360, and
+Touch, Android devices, Palm, various Windows laptops, Xbox 360, and
 FreeBSD clients and it works very reliably.
 
 There is the possibility of finding incompatible devices with any access

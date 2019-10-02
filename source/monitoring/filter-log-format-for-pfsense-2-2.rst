@@ -101,7 +101,7 @@ mask reply:
 
 ICMP Need Frag
 
--  ICMP Detination IP
+-  ICMP Destination IP
 -  ICMP MTU
 
 ICMP tstamp

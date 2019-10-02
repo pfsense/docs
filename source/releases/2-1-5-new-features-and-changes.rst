@@ -52,7 +52,7 @@ Other Fixes
    view. It was already removed from 2.2, and it's better not to allow a
    GET action to perform that action
 -  Require click-through POST confirmation when restoring or deleting a
-   configuation from the backup history page
+   configuration from the backup history page
 -  Avoid a "Cannot use string offset as an array" error if the packages
    section of the config is missing
 -  Avoid generating an invalid IPsec (racoon) config if the user

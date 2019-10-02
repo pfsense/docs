@@ -302,7 +302,7 @@ Binaries from FreeBSD
 ~~~~~~~~~~~~~~~~~~~~~
 
 The actual binaries are normal FreeBSD package binaries for that
-particular program. Once listed as a depencency for a pfSense package in
+particular program. Once listed as a dependency for a pfSense package in
 its :doc:`Makefile </development/package-port-directory-structure>`, they are built
 automatically on the pfSense pkg server. There is no need to specify
 these in XML any longer.

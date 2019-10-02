@@ -15,7 +15,7 @@ For the DNS Resolver, add this line::
 
   log-queries: yes
 
-When saved, the DNS Forwarder/Resovler will begin logging the received
+When saved, the DNS Forwarder/Resolver will begin logging the received
 queries and their replies, along with some information about the result
 such as whether it was pulled from the cache.
 

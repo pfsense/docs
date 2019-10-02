@@ -57,7 +57,7 @@ upper limit on the total size of the Snort logging sub-directory in
 the value set, all files are automatically pruned (deleted) and the
 Snort process is signaled to soft-restart and resynchronize logging. The
 default size limit is 20% of the available space on the volume. This may
-be overriden by setting a value in megabytes (MB) in the textbox
+be overridden by setting a value in megabytes (MB) in the textbox
 provided.
 
 **Remove Blocked Hosts Interval:** controls how long Snort-blocked IP

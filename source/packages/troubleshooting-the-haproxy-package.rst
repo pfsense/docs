@@ -40,7 +40,7 @@ firewall on the server itself, or a missing route could all cause these
 kinds of issues. A layer 6 issue indicates a problem with the SSL
 certificates. A layer 7 issue would generally be due to a unexpected or
 no status returned by the webserver, the webserver might take to long to
-present the checked url. Or the webserverdoes not support the configured
+present the checked url. Or the webserver does not support the configured
 check method/options.
 
 For configuring the healthcheck, the following options should be accepted

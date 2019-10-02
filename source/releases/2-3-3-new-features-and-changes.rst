@@ -470,7 +470,7 @@ Graphs / Monitoring
 -  Changed traffic graphs to use d3.js (Dashboard and Status > Traffic
    Graphs)
 -  Moved export button to heading for Status > Monitoring page
--  Moved graph lables so long hostnames do not overlap as easily
+-  Moved graph labels so long hostnames do not overlap as easily
    `#6138 <https://redmine.pfsense.org/issues/6138>`__
 -  Improved error checking in case JSON isn't returned when building
    graphs `#6748 <https://redmine.pfsense.org/issues/6748>`__

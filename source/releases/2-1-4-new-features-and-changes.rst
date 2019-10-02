@@ -63,7 +63,7 @@ Other Fixes
 -  Add some protection to parameters that come through _GET in service
    management.
 -  Escape argument on call to is_process_running, also remove some
-   unecessary mwexec() calls.
+   unnecessary mwexec() calls.
 -  Do not allow interface group name to be bigger than 15 chars.
    `#3208 <https://redmine.pfsense.org/issues/3208>`__
 -  Be more precise to match members of a bridge interface, it should fix

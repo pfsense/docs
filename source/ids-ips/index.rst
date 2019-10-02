@@ -33,7 +33,7 @@ Snort
    snort-suppress-list
    snort-updates
    snort-xmlrpc-synchronization
-   troubelshooting-snort-rule-updates
+   troubleshooting-snort-rule-updates
    
 .. tip:: For more information or to get help, check out the
     `IDS/IPS category on the Netgate forum`_.

@@ -29,7 +29,7 @@ rule**. Click **Save** and the rule will be removed.
 
 Using a network alias for management access is strongly recommended, and
 if both web and SSH administration are used, add an alias for those
-ports. The following are examplees:
+ports. The following are examples:
 
 **1.** Example alias for networks allowed to access management interface
 

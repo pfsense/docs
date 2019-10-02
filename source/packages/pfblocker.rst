@@ -9,7 +9,7 @@ What it allows:
 * Assigning many IP address URL lists from sites like I-blocklist to a
   single alias and then choose a rule action.
 * Blocking countries and IP ranges.
-* Replacment of both **Countryblock** and **IPblocklist** by providing the same
+* Replacement of both **Countryblock** and **IPblocklist** by providing the same
   functionality, and more, in one package.
 * Uses native functions of pfSense software instead of file hacks and table
   manipulation.

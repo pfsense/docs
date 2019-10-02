@@ -48,7 +48,7 @@ Controls the format of the server address in the client configuration's
    address/VIP literally (most common choice)
 -  **Automagic Multi-WAN IPs (port forward targets)**: Locates any port
    forwards with a target of the VPN's binding address and port. Add
-   remote staetments for all of them. Useful for
+   remote statements for all of them. Useful for
    :doc:`Multi-WAN </routing/multi-wan-openvpn>`
    or for multiple ports on the same WAN.
 -  **Automagic Multi-WAN DDNS Hostnames (port forward targets)**: As
@@ -66,7 +66,7 @@ Verify Server CN
 
 Controls how the client will verify the server certificate common name,
 if it is done at all. Some clients do not support this parameter, or
-only support certain syntax with its use. It is always adivsed to run
+only support certain syntax with its use. It is always advised to run
 the newest client software possible to avoid issues, but this can help
 get older clients connected securely.
 
@@ -198,9 +198,9 @@ There are currently four different installers:
 
 -  **x86-xp**: 32-bit installer for use on Windows XP and later.
 -  **x64-xp**: 64-bit installer for use on Windows XP and later.
--  **x86-win6**: 32-bit installer for use on Widnows Vista/7/8/10.
+-  **x86-win6**: 32-bit installer for use on Winnows Vista/7/8/10.
    Includes a newer TAP driver.
--  **x64-win6**: 64-bit installer for use on Widnows Vista/7/8/10.
+-  **x64-win6**: 64-bit installer for use on Windows Vista/7/8/10.
    Includes a newer TAP driver.
 
 When in doubt, the 32-bit XP and later installer will work on pretty

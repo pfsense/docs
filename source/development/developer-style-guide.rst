@@ -59,7 +59,7 @@ HTML Specific Rules
    code, but this does not mean that the code is not broken. The broken code
    must be fixed by the person who committed the invalid code.
 
-pfSense softare uses the XHTML doctype in its webGUI code. The doctype enforces
+pfSense software uses the XHTML doctype in its webGUI code. The doctype enforces
 code against the following ruleset:
 
 * Use lower case tag names and not a mix of uppercase and lowercase tag names

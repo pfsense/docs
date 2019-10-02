@@ -162,7 +162,7 @@ Interesting sysctls from shell that can not be controlled from GUI
 ------------------------------------------------------------------
 
 -  dev.ath.0.tpscale: **0,1,2,3,4** *(size of increment that TPC will
-   use to up/down the power, normally 1 is the best choice, atleast that
+   use to up/down the power, normally 1 is the best choice, at least that
    is my experience)*
 -  dev.ath.0.tpc: **0,1** *(0=disable 1=enable)*
 -  dev.ath.0.tpack: **0 -> 99** *(ack power)*
@@ -175,11 +175,11 @@ Interesting sysctls from shell that can not be controlled from GUI
 -  dev.ath.0.tpscale: *Size of the increment that TPC will use to
    up/down the power, normally 1 is the best choice, atleast that is my
    experience. A higher scale value will most likely make the link drop
-   if the signal is close to what it needs to be and the TPC is trottled
+   if the signal is close to what it needs to be and the TPC is throttled
    down.)*
--  dev.ath.0.tpack: *controll the ack power seperatly (normally the same
+-  dev.ath.0.tpack: *control the ack power separately (normally the same
    as tpcts)*
--  dev.ath.0.tpcts: *controll the cts power seperatly (normally the same
+-  dev.ath.0.tpcts: *control the cts power separately (normally the same
    as tpack)*
 
 Tuning ACK timers manually::

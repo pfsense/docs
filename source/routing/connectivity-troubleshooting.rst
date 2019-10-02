@@ -1,7 +1,7 @@
 Troubleshooting Network Connectivity
 ====================================
 
-The following list covers nearly every cause of outbound connectivty
+The following list covers nearly every cause of outbound connectivity
 failure in common usage scenarios. Each test assumes the items above it
 have been checked.
 
