@@ -3,3 +3,9 @@ draft.sh
 _themes/
 build/
 venv
+# eclipse
+.buildpath
+.project
+.settings/
+# PhpStorm
+.idea
