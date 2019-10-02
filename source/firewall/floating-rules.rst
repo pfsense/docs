@@ -18,7 +18,7 @@ Floating Rules can:
 -  Filter traffic from the firewall itself
 -  Filter traffic in the outbound direction (all other tabs are Inbound
    processing only)
--  Apply rules to multiple interfaces
+-  Apply rules to multiple interfaces (if no interfaces are selected then the rule effectively applies to all interfaces)
 -  Apply filtering in a "last match wins" way rather than "first match
    wins" (**quick**)
 -  Apply traffic shaping to match traffic but not affect it's pass/block
