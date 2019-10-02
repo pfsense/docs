@@ -70,7 +70,7 @@ PEAP and MSCHAPv2
       shared secret according to that what was entered in **FreeRADIUS >
       NAS/Clients**
 
--  WLAN Device (Supplicatnt) Configuration:
+-  WLAN Device (Supplicant) Configuration:
 
    -  Some devices can autoconfigure the Authentication- and
       Encryption-Method. If not choose **PEAP as encryption** and

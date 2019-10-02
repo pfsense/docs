@@ -12,7 +12,7 @@ tunnel:
    Old IPsec SA** (No longer exists on pfSense 2.2.3+)
 -  On the IPsec Phase 1 settings, disable **NAT Traversal** (NAT-T)
 -  On the IPsec Phase 1 settings, enable **DPD**
--  On the IPsec Phase 2 settings, enter an **Automaitcally Ping Host**
+-  On the IPsec Phase 2 settings, enter an **Automatically Ping Host**
    in the remote Phase 2 subnet.
 
 Common Errors (strongSwan, pfSense software versions >= 2.2.x)

@@ -18,7 +18,7 @@ The DHCPv6 server cannot be active on any interface if the :doc:`DHCPv6 Relay </
 DHCP Instance Options
 ---------------------
 
-For each Interface, there are many options to choose from. At a minumum,
+For each Interface, there are many options to choose from. At a minimum,
 the **Enable** box must be checked on the interface tab and an address
 range (starting and ending IPv6 addresses) to use for DHCPv6 clients
 must be defined. For the DHCPv6 server to be active on the network,

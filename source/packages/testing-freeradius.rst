@@ -139,7 +139,7 @@ then think about increasing **FreeRADIUS > Settings**, **Maximum Number
 of Threads**. Do not increase this unlimited. It will help on peaks but
 if there is a high load all the time, think about a faster backend
 (MySQL instead of flat file). There is also a speed difference if the
-testuser in **FreeRADIUS > USers** is listed at the bottom of a 100
+testuser in **FreeRADIUS > Users** is listed at the bottom of a 100
 users long list or at the top. And there is a difference if there are
 many reply attributes like VLAN ID and so on.
 

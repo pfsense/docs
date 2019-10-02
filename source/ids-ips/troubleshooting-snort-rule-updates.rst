@@ -1,4 +1,4 @@
-Troubelshooting Snort Rule Updates
+Troubleshooting Snort Rule Updates
 ==================================
 
 MD5 Signature Mismatch

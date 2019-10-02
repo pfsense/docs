@@ -149,7 +149,7 @@ Verify both interfaces have the correct IP addresses.
 
 |Interfaces 3|
 
-Congratulations! You now have a pfSense firewall runing as a virtual
+Congratulations! You now have a pfSense firewall running as a virtual
 machine on Microsoft Hyper-V.
 
 **Guide under construction, may have minor errors**

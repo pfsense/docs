@@ -4,7 +4,7 @@ Services
 
 pfSense® software can provide clients with a variety of **Services** to enhance their
 experience in various ways. Several of these are complex and warrant their own
-sections of the docuementation, while others are simpler to configure.
+sections of the documentation, while others are simpler to configure.
 
 Complex Services
 ''''''''''''''''

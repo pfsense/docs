@@ -277,7 +277,7 @@ Misc
    `#8257 <https://redmine.pfsense.org/issues/8257>`__
 -  Fixed an issue with the RAM disk warning pop-up appearing when no
    changes were made `#8268 <https://redmine.pfsense.org/issues/8268>`__
--  Fixed an issue with the address familiy selection for remote syslog
+-  Fixed an issue with the address family selection for remote syslog
    servers using IPv6
    `#8323 <https://redmine.pfsense.org/issues/8323>`__
 -  Silenced warnings from sysctl that otherwise went to stderr

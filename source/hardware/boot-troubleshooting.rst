@@ -390,7 +390,7 @@ prompt. At the Loader prompt, enter::
   set hw.ata.wc="1"
   boot
 
-And that will boot successfuly, after which /boot/loader.conf.local may
+And that will boot successfully, after which /boot/loader.conf.local may
 be edited to make the settings permanent.
 
 Conflicting Hardware

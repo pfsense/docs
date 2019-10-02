@@ -61,7 +61,7 @@ address information from Hurricane Electric or other may be entered.
    remote address**
 
 The prefix length should be set to *64*. After pfSense 2.1.1, the prefix
-length choosen for the IPv6 tunnel will be ignored and set to a prefix
+length chosen for the IPv6 tunnel will be ignored and set to a prefix
 length of *128* On the interface assignments the interface will show a
 prefix length of *128*.
 
@@ -160,7 +160,7 @@ Try it out!
 At this point a LAN client should be able to pick up an IPv6 Address and
 find the pfSense firewall as it is now advertising itself on the LAN.
 This can be checked with http://test-ipv6.com if the IPv6 connection is
-succesfully detected.
+successfully detected.
 
 .. image:: /_static/interfaces/ipv6_howto_test.png
 
@@ -182,7 +182,7 @@ To set that up:
 -  Enter **Password** OR **Update Key** from the **Advanced** tab of the
    tunnel's settings on tunnelbroker.net. Older accounts may not have an
    **Update Key** and may use only the password.
--  Enter a **Description** if desides
+-  Enter a **Description** if desired
 -  Click **Save**
 
 More information

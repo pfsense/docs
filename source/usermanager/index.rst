@@ -7,7 +7,7 @@ of access to various functions of the firewall. These can range from access
 to services such as captive portal all the way up to being a full
 administrator account.
 
-Users can be managed locally on the firewall or pfSense softeare can utilize
+Users can be managed locally on the firewall or pfSense software can utilize
 RADIUS and LDAP authentication sources.
 
 .. toctree::

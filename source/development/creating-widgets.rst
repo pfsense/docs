@@ -8,7 +8,7 @@ Creating widgets is simple. First, create the html code to be displayed,
 save it to a file named widget_name.widget.php, and put it into the
 /usr/local/www/widgets/widgets directory on the firewall.
 
-Do not include any **<body>**, **<html>**, or pgtitle defintions, etc. Just the
+Do not include any **<body>**, **<html>**, or pgtitle definitions, etc. Just the
 basic HTML code for what needs to be displayed. See the current widgets for
 examples.
 

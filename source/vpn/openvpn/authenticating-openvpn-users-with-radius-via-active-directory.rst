@@ -228,7 +228,7 @@ Enter these values:
 +-------------------------+------------------------------------+
 | Method                  | Create an internal Certificate     |
 +-------------------------+------------------------------------+
-| Desciptive name         | vpn-testdomain-network             |
+| Descriptive name        | vpn-testdomain-network             |
 +-------------------------+------------------------------------+
 | Certificate Authority   | TestDomain VPN CA                  |
 +-------------------------+------------------------------------+
@@ -376,7 +376,7 @@ Enter these values:
 +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Method                  | Create an internal Certificate                                                                                                                                                   |
 +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Decriptive name         | | [Username of the user that will be using the vpn connection]                                                                                                                   |
+| Descriptive name        | | [Username of the user that will be using the vpn connection]                                                                                                                   |
 |                         | | In some cases this is case sensitive. I tend to stick to all lowercase for that reason. It doesn't really matter but keep it in mind if the connection can't be established.   |
 +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Certificate authority   | TestDomain VPN CA                                                                                                                                                                |
@@ -591,7 +591,7 @@ If something doesn't work, here are some pointers for troubleshooting:
 -  Client getting disconnected? Check the user's wifi connection. No
    wifi=no internet=no vpn.
 -  Check if the domain controller allows UDP ports 1812 and 1813
-   throught the firewall. Adding the *Network Policy and Access
+   throughout the firewall. Adding the *Network Policy and Access
    Services* role and configuring a RADIUS client should automatically
    have entered these rules in the server's firewall. They are called
    *Network Policy Server (RADIUS Accounting - UDP-In)* and *Network

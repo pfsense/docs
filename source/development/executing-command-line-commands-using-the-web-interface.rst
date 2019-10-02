@@ -31,7 +31,7 @@ Warnings
 
 Commands that run indefinitely, such as **ping** without a count or
 **tcpdump** without a limit set will never stop or return output, and
-will be left running indefinitely in the backgound until they are
+will be left running indefinitely in the background until they are
 manually killed.
 
 Interactive commands, such as *vi* will fail similarly, or may exit due

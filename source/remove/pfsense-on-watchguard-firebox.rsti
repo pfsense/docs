@@ -99,7 +99,7 @@ SSH
 '''
 
 When attempting more complex tasks it is often easier to connect to the
-box via SSH or to tranfer files using SCP. You can use (from Windows)
+box via SSH or to transfer files using SCP. You can use (from Windows)
 PuTTY and WinSCP to accomplish those respectively. Many other clients
 are available.
 
@@ -735,7 +735,7 @@ follows:
     fetch -o /boot/modules/if_sk.ko https://sites.google.com/site/pfsensefirebox/home/if_sk.freebsd-8.3.ko
     fetch -o /boot/modules/if_msk.ko https://sites.google.com/site/pfsensefirebox/home/if_msk.freebsd-8.3.ko
 
--  Check the download intergrity using md5
+-  Check the download integrity using md5
 
 ::
 
@@ -816,7 +816,7 @@ Installing pfSense
 Installing pfSense is identical to the procedure for the `X-Core-e
 boxes <PfSense_on_Watchguard_Firebox#Installing_pfSense_3>`__. The only
 difference is that the encryption expansion card should be removed as
-it's not supported and seemed to introduce a huge interupt load on my
+it's not supported and seemed to introduce a huge interrupt load on my
 test box.
 
 XTM 5

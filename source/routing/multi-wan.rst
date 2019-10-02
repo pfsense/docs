@@ -49,7 +49,7 @@ the quality of their WAN.
 Monitor IP
 ^^^^^^^^^^
 
-By default, pfSense softwarewill ping the gateway to determine the
+By default, pfSense software will ping the gateway to determine the
 quality of the WAN. In some cases, that is not an accurate measure.
 For instance, if the WAN gateway is actually a device that is local
 and not on the other side of the ISP circuit, then the actual WAN link

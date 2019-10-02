@@ -18,7 +18,7 @@ Wizards
 
 Use of The **Traffic Shaping Wizard** is recommended to create a default
 set of rules from which to start. The rules created by the wizard cope
-well with VOIP traffic, but may need tweaking to accomodate other
+well with VOIP traffic, but may need tweaking to accommodate other
 traffic not covered by the wizard.
 
 There are several wizards available, the exact choices depend on the
@@ -27,7 +27,7 @@ version in use.
 As an example, look at shaping P2P traffic. Assuming the wizard was
 used, *qP2P* will exist under WAN(s) and LAN(s). When a P2P app is
 launched, traffic will show in these queues if it it was matched by the
-rules creaed by the wizard. These queues are designed to carry the bulk
+rules created by the wizard. These queues are designed to carry the bulk
 P2P traffic, which normally slows a connection down. Other generic
 traffic, like web pages (HTTP), email, IM, VOIP etc will go into other
 queues.
@@ -70,7 +70,7 @@ Priority Queueing (PRIQ)
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Priority queuing is the simplest form of traffic shaping, and often the
-most effective. It performs prioritzation of traffic only, without
+most effective. It performs prioritization of traffic only, without
 regard for bandwidth. A flat hierarchy of priority levels is created,
 all packets at the highest priority level are always processed first.
 
@@ -96,7 +96,7 @@ Hierarchical Fair Service Curve (HFSC)
 
 Hierarchical Fair Service Curve (HFSC) is the most complex of the ALTQ
 shaper types. In older versions of pfSense software, it was the only
-option available. It has a heirarchy of queues and is capable of
+option available. It has a hierarchy of queues and is capable of
 real-time traffic guarantees.
 
 It can be very effective for VoIP on links that degrade quickly, such as

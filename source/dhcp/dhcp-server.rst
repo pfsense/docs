@@ -16,7 +16,7 @@ The DHCP server cannot be active on any interface if the :doc:`DHCP Relay
 DHCP Instance Options
 ---------------------
 
-For each Interface, there are many options to choose from. At a minumum,
+For each Interface, there are many options to choose from. At a minimum,
 the **Enable** box must be checked on the interface tab and an address
 range (starting and ending IP addresses) to use for DHCP clients must be
 defined.

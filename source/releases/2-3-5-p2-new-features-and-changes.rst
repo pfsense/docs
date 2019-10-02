@@ -40,7 +40,7 @@ Misc
 -  Fixed an issue with selecting a gateway when switching a firewall
    rule away from IPv4+IPv6 mode
    `#8447 <https://redmine.pfsense.org/issues/8447>`__
--  Fixed an issue with the address familiy selection for remote syslog
+-  Fixed an issue with the address family selection for remote syslog
    servers using IPv6
    `#8323 <https://redmine.pfsense.org/issues/8323>`__
 -  Fixed a problem when IPsec bypasslan was enabled while the LAN

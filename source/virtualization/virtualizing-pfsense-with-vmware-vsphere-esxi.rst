@@ -433,7 +433,7 @@ machine is displayed.
 Before finishing, check the box **Edit virtual machine settings before
 completion**. The label on the **Finish** button will change to
 **Continue**. This will allow the boot CD from which the pfSense 
-softwware will be installed to be configured. Click **Continue.**
+software will be installed to be configured. Click **Continue.**
 
 Editing the Virtual Machine's Properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

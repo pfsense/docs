@@ -165,7 +165,7 @@ choice and their advantages are:
 
 -  *Remote Access (User Auth)*
 
-   -  Authentiation only, no certificates
+   -  Authentication only, no certificates
    -  Useful if the clients should not have individual certificates
    -  Commonly used for external authentication (RADIUS, LDAP)
    -  All clients can use the same exported client configuration and/or

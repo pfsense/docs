@@ -7,7 +7,7 @@ SQUID Proxy
 -----------
 
 Squid provides the possibility to ask for a username and password for
-users who want to connect the internt through squid proxy. This works
+users who want to connect to the internet through squid proxy. This works
 only if squid is running in non-transparent mode.
 
 -  SQUID configuration:

@@ -45,7 +45,7 @@ Other Fixes
 -  Fix IPsec Phase 1 duplication
 -  Fix 'add rule on top of the list' allowing after param to be -1
 -  Correct Captive Portal redirection URL to unbreak ones passed through
-   Radius attributes and repsect user choices.
+   Radius attributes and respect user choices.
 -  Make miniupnpd listen on interface instead of IP
 -  Don't refuse to delete a bridge in the GUI just because its bridge
    interface doesn't exist, just log that it doesn't exist and don't
