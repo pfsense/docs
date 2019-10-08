@@ -13,7 +13,7 @@ Enable SSH via webGUI
   Access** tab.
 - Check **Enable Secure Shell**
 
-  .. image:: /_static/usermanager/Enable_SSH.jpg
+  .. image:: /_static/usermanager/enable_ssh.jpg
 
 - To allow only SSH key authentication, check **Disable password login
   for Secure Shell (RSA/DSA key only)**

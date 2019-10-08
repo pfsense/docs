@@ -60,7 +60,7 @@ creation. Start the new virtual machine wizard add a name.
 |Virtual machine config 1|
 
 After clicking next select the appropriate virtual machine Generation.
-If you're installing pfSense software version 2.3.x, select 
+If you're installing pfSense software version 2.3.x, select
 **Generation 1**. If you are installing pfSense software version 2.4.x,
 select **Generation 2**.
 
@@ -154,24 +154,24 @@ machine on Microsoft Hyper-V.
 
 **Guide under construction, may have minor errors**
 
-.. |Virtual switch config| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.18.16.png
-.. |Virtual switch config 2| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.18.37.png
-.. |Virtual switch config 3| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.20.22.png
-.. |Virtual machine config 1| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.33.03.png
-.. |Virtual machine config 2| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.33.18.png
-.. |Virtual machine config 3| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.33.24.png
-.. |Virtual machine config 4| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.33.34.png
-.. |Virtual machine config 5| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.33.45.png
-.. |Virtual machine config 6| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.35.51.png
-.. |Virtual machine config 7| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.35.56.png
-.. |Virtual machine config 8| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.36.18.png
-.. |Virtual machine config 9| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_18.02.23.png
-.. |Installing pfSense 1| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.36.46.png
-.. |Installing pfSense 2| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.37.17.png
-.. |Installing pfSense 3| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.39.23.png
-.. |Installing pfSense 4| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.41.56.png
-.. |Installing pfSense 5| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.54.48.png
-.. |Interfaces 1| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.56.20.png
-.. |Interfaces 2| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_16.56.47.png
-.. |Interfaces 3| image:: /_static/virtualization/Screen_Shot_2017-06-14_at_17.10.47.png
+.. |Virtual switch config| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.18.16.png
+.. |Virtual switch config 2| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.18.37.png
+.. |Virtual switch config 3| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.20.22.png
+.. |Virtual machine config 1| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.33.03.png
+.. |Virtual machine config 2| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.33.18.png
+.. |Virtual machine config 3| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.33.24.png
+.. |Virtual machine config 4| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.33.34.png
+.. |Virtual machine config 5| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.33.45.png
+.. |Virtual machine config 6| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.35.51.png
+.. |Virtual machine config 7| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.35.56.png
+.. |Virtual machine config 8| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.36.18.png
+.. |Virtual machine config 9| image:: /_static/virtualization/screen_shot_2017-06-14_at_18.02.23.png
+.. |Installing pfSense 1| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.36.46.png
+.. |Installing pfSense 2| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.37.17.png
+.. |Installing pfSense 3| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.39.23.png
+.. |Installing pfSense 4| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.41.56.png
+.. |Installing pfSense 5| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.54.48.png
+.. |Interfaces 1| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.56.20.png
+.. |Interfaces 2| image:: /_static/virtualization/screen_shot_2017-06-14_at_16.56.47.png
+.. |Interfaces 3| image:: /_static/virtualization/screen_shot_2017-06-14_at_17.10.47.png
 
