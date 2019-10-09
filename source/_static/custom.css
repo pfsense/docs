@@ -139,6 +139,84 @@ div[role=search] {
   line-height: 20px;
 }
 
+/* custom prev/next buttons */
+div.rst-footer-buttons {
+  font-size: .9em;
+}
+div.rst-footer-button-next {
+  width:50%;
+  text-align: right;
+  float: right;
+  white-space: nowrap;
+}
+div.rst-footer-button-text {
+  display: inline-block;
+  white-space: normal;
+  padding: 10px 7px 8px 7px;
+  vertical-align: top;
+}
+a.rst-footer-button-arrow {
+  font-size: 3em;
+  display: inline-block;
+}
+div.rst-footer-button-text a:hover {
+  text-decoration: underline;
+}
+div.rst-footer-button-prev {
+  width:50%;
+  text-align: left;
+  float: left;
+  white-space: nowrap;
+}
+div.rst-footer-buttons hr {
+  clear: both;
+  margin: 0px;
+}
+div.rst-footer-buttons a {
+  color: #2980B9;
+}
+
+/* custom rating */
+#page-rating {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 15px 10px;
+  color:#4e4a4a;
+}
+.rating {
+  border: none;
+  width: 140px;
+  margin: auto;
+}
+.rating > input {
+  display: none;
+}
+.rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { /* hover previous stars in list */
+  color: #FFD700;
+}
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label {
+  color: #FFED85;
+}
+fieldset, label {
+  margin: 0; padding: 0;
+}
+
 /* feedback form */
 .rst-content .feedback {
   background-color: #e3e3e3;
