@@ -1,10 +1,7 @@
 L2TP VPN Settings
 =================
 
-Overview
---------
-
-The L2TP (Layer 2 Tunneling Protocol) VPN protocol allows L2TP-only
+The Layer 2 Tunneling Protocol (L2TP) VPN protocol allows L2TP-only
 clients to connect remotely. It is capable of tunneling Layer 2 Traffic and
 above.
 
@@ -28,18 +25,6 @@ L2TP/IPsec
 ----------
 
 L2TP/IPsec is a way to secure L2TP traffic by sending it through an
-encrypted IPsec tunnel.
-
-pfSense software version 2.1.x and earlier
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-pfSense software version 2.1.x and earlier do **not** support L2TP+IPsec;
-they only support for plain L2TP tunneling. See `Ticket
-#475 <https://redmine.pfsense.org/issues/475>`__
-
-pfSense software version 2.2 and up
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-pfSense software version 2.2 and later this may be used in combination
-with a mobile IPsec setup to configure L2TP+IPsec; see 
-:doc:`L2TP/IPsec </vpn/ipsec/l2tp-ipsec>` for details.
+encrypted IPsec tunnel. This may be used in combination with a mobile
+IPsec setup to configure L2TP+IPsec; see :doc:`/vpn/ipsec/l2tp-ipsec`
+for more details.
