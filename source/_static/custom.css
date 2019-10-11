@@ -168,9 +168,13 @@ div.rst-footer-button-prev {
   float: left;
   white-space: nowrap;
 }
-div.rst-footer-buttons hr {
+div.rst-footer-buttons hr.top {
   clear: both;
-  margin: 0px;
+  margin-bottom: 0px;
+}
+div.rst-footer-buttons hr.bottom {
+  clear: both;
+  margin-top: 0px;
 }
 div.rst-footer-buttons a {
   color: #2980B9;
@@ -180,7 +184,7 @@ div.rst-footer-buttons a {
 #page-rating {
   text-align: center;
   font-size: 1.2em;
-  padding: 15px 10px;
+  padding-bottom: 15px;
   color:#4e4a4a;
 }
 .rating {
