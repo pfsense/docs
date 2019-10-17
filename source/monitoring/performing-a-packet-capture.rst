@@ -27,18 +27,21 @@ viewing locally (or sending to a remote technician.)
 tcpdump
 -------
 
-tcpdump comes installed with pfSense software. It can be used over SSH
+``tcpdump`` comes installed with pfSense software. It can be used over SSH
 or on the console in a shell. In this example a method of capturing
 traffic other than SSH, ARP, DNS and STP is highlighted. The capture
-will be directed to a file called Sniff_output in the current directory.
+will be directed to a file called **Sniff_output** in the current directory.
 
-.. code::
+.. code-block:: none
 
-  tcpdump -i em0 not port 22 and not port 53 and not arp and not stp >> Sniff_output
+   tcpdump -i em0 not port 22 and not port 53 and not arp and not stp >> Sniff_output
 
-The -i is designating traffic from the em0 interface. In this example
+The ``-i`` is designating traffic from the em0 interface. In this example
 traffic from one of the subnets em0 connected to a pfSense instance is
 being grabbed.
+
+.. seealso:: For more information on ``tcdump``, see `Using tcpdump from the
+   command line`_.
 
 iftop
 -----
@@ -48,25 +51,31 @@ in the package repository.
 
 iftop allows designating the interface from which to grab traffic.
 
-In this example em1 is the LAN Interface::
+In this example em1 is the LAN Interface:
 
-  iftop -i em1
+.. code-block:: none
 
-Sample Output::
+   iftop -i em1
 
-  cf-in-f18.google.com              => 192.168.1.245                        0b
-                                    <=                                      0b
-  cf-in-f97.google.com              => 192.168.1.245                        0b
-                                    <=                                      0b
-  cf-in-f103.google.com             => 192.168.1.245                        0b
-                                    <=                                      0b
-  google.navigation.opendns.com     => 192.168.1.245                        0b
-                                    <=                                      0b
+Sample Output:
+
+.. code-block:: none
+
+   cf-in-f18.google.com              => 192.168.1.245                        0b
+                                     <=                                      0b
+   cf-in-f97.google.com              => 192.168.1.245                        0b
+                                     <=                                      0b
+   cf-in-f103.google.com             => 192.168.1.245                        0b
+                                     <=                                      0b
+   google.navigation.opendns.com     => 192.168.1.245                        0b
+                                     <=                                      0b
 
 pftop
 -----
 
 pftop is a tool built into pfSense software that can monitor
-traffic/connections. This tool can be found in the webGUI under 
-**Diagnostics > pftop** or by connecting to the pfSense firewall 
+traffic/connections. This tool can be found in the webGUI under
+**Diagnostics > pftop** or by connecting to the pfSense firewall
 via SSH or the console.
+
+.. _Using tcpdump from the command line: /pfsense/en/latest/book/packetcapture/using-tcpdump-from-the-command-line.html
