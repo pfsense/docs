@@ -1,8 +1,7 @@
 Resetting to Factory Defaults
 =============================
 
-The firewall configuration can be reset back to the one that shipped
-with the currently installed pfSense® distribution by visiting
+The firewall configuration can be reset back to defaults by visiting
 **Diagnostics > Factory Defaults**. A reminder of some of the defaults
 is printed on the **Factory Defaults** page.
 
@@ -23,4 +22,4 @@ configuration.
    changes the configuration. Installed package binaries would be left in
    place.
 
-.. _appliances from Netgate: https://www.netgate.com/products/appliances/
+.. _appliances from Netgate: https://www.netgate.com/products/appliances
