@@ -1,13 +1,12 @@
 Using NAT and FTP without a Proxy
 =================================
 
-pfSense® software version 2.2-RELEASE does not include an FTP Proxy.
-What does this mean for clients and servers? Not as much as one 
-might think.
+`pfSense® firewalls`_ do not include an FTP Proxy, this doesn't affect clients
+and servers as much as one might think.
 
-Use of FTP is strongly discouraged. It is a very old protocol that
-transmits credentials and other data openly without encryption which is
-very insecure.
+.. important:: Use of FTP is strongly discouraged. It is an outdated protocol
+   that transmits credentials and other data openly without encryption which is
+   very insecure.
 
 Client Behind pfSense
 ---------------------
@@ -50,25 +49,31 @@ interface containing the server allow outbound connections, it will
 work.
 
 A server behind pfSense running in Passive mode will function but
-requires a few items to be configured: 1. Port forwards or 1:1 NAT to
-forward not only port 21, but also the passive port range in to the
-server 2. The passive port range must be configured on the server,
-corresponding to the range of ports forwarded in the previous step 3.
-The server may also need to be configured to account for NAT. Some
-clients will ignore private addresses in passive responses so this may
-not be necessary.
+requires a few items to be configured:
+
+#. Port forwards or 1:1 NAT to forward not only port 21, but also the passive
+   port range in to the server
+#. The passive port range must be configured on the server, corresponding to the
+   range of ports forwarded in the previous step.
+#. The server may also need to be configured to account for NAT. Some clients
+   will ignore private addresses in passive responses so this may not be
+   necessary.
 
 Sample Configuration for vsftpd
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In vsftpd.conf::
+In **vsftpd.conf**:
 
-  # Do not allow the client to use PORT
-  port_enable=NO
-  # Use the hostname in the PASV response (DNS must be setup and match!)
-  pasv_addr_resolve=YES
-  # Enable Passive Mode
-  pasv_enable=YES
-  # Set the passive port range (1000 ports)
-  pasv_min_port=20000
-  pasv_max_port=20999
+.. code-block:: none
+
+   # Do not allow the client to use PORT
+   port_enable=NO
+   # Use the hostname in the PASV response (DNS must be setup and match!)
+   pasv_addr_resolve=YES
+   # Enable Passive Mode
+   pasv_enable=YES
+   # Set the passive port range (1000 ports)
+   pasv_min_port=20000
+   pasv_max_port=20999
+
+.. _pfSense® firewalls: https://www.netgate.com/solutions/pfsense
