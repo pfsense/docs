@@ -11,7 +11,7 @@ FreeBSD clients and it works very reliably.
 
 There is the possibility of finding incompatible devices with any access
 point. FreeBSD is no exception and it can be more common with FreeBSD
-than other access points. Using a pfSense device an access point can
+than other access points. Using a pfSense device as an access point can
 work quite well with the right card and configuration.
 
 In general, we still recommend
