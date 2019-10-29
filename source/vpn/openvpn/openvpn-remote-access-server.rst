@@ -256,9 +256,3 @@ Filtering OpenVPN Traffic
 
 Firewall rules to strictly govern the traffic on this VPN may be added
 under **Firewall > Rules** on the **OpenVPN** tab.
-
-OpenVPN Client Bridging
------------------------
-
-Bridging clients directly into the LAN is not recommended, but is
-possible. See :doc:`OpenVPN Bridging </vpn/openvpn/openvpn-bridging>`
