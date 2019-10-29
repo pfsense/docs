@@ -27,7 +27,6 @@ information see the resources below:
    connecting-from-apple-ios-devices-with-openvpn
    connecting-openvpn-sites-with-conflicting-ip-subnets
    connecting-pfsense-to-an-openvpn-access-server
-   openvpn-bridging
    authenticating-openvpn-users-with-freeradius
    authenticating-openvpn-users-with-radius-via-active-directory
    routing-internet-traffic-through-a-site-to-site-openvpn-connection-in-pfsense-2-1
