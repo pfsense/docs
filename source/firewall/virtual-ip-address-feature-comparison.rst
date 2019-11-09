@@ -25,17 +25,17 @@ VIP Features Table
 | IP Alias    | 2.0+      | Yes   | Yes       | Yes      | See Notes    | No          | See Notes     | Yes      | Single         |
 +-------------+-----------+-------+-----------+----------+--------------+-------------+---------------+----------+----------------+
 
-Table: VIP Features
+Notes:
 
-    1: ICMP Column represents responses from the firewall itself without
-    NAT. With 1:1 NAT, any VIP will pass ICMP through to the target
-    device. On 2.1+ ICMP can also be used as a protocol in port forward
-    entries.
-    2: "Other" type VIPs are for routed subnets, and CARP is irrelevant,
-    so they work (See below)
-    3: CARP type VIPs must be in the same subnet as other interface VIPs
-    on pfSense® software version <=2.1.x, on >= 2.2 they may be in other
-    subnets, but see below for caveats.
+#. ICMP Column represents responses from the firewall itself without
+   NAT. With 1:1 NAT, any VIP will pass ICMP through to the target
+   device. On 2.1+ ICMP can also be used as a protocol in port forward
+   entries.
+#. "Other" type VIPs are for routed subnets, and CARP is irrelevant,
+   so they work (See below)
+#. CARP type VIPs must be in the same subnet as other interface VIPs
+   on pfSense® software version <=2.1.x, on >= 2.2 they may be in other
+   subnets, but see below for caveats.
 
 Virtual IP Feature Details
 --------------------------
