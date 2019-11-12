@@ -41,9 +41,10 @@ Security / Errata
 
 * Added encoding to the hostname in services_acb.php `#9584 <https://redmine.pfsense.org/issues/9584>`__
 * Added encoding to error output in services_captiveportal_mac.php `#9609 <https://redmine.pfsense.org/issues/9609>`__
-* Improved Picture Widget input validation `#9610 <https://redmine.pfsense.org/issues/9610>`__ `#9731 <https://redmine.pfsense.org/issues/9731>`__
+* Improved Picture Widget input validation `#9610 <https://redmine.pfsense.org/issues/9610>`__ `#9731 <https://redmine.pfsense.org/issues/9731>`__ `#9804 <https://redmine.pfsense.org/issues/9804>`__
 * Added a ``fsck`` run with ``-z`` for ``UFS`` filesystems on upgrade to address FreeBSD-SA-19:10.ufs `#9612 <https://redmine.pfsense.org/issues/9612>`__
 * Fixed format of XMLRPC auth error to match GUI auth error `#9782 <https://redmine.pfsense.org/issues/9782>`__
+* Added a custom CSRF Error page with warnings and confirmation prompts before resubmitting potentially harmful data `#9799 <https://redmine.pfsense.org/issues/9799>`__
 
 * Addressed FreeBSD Security Advisories & Errata Notices
 
@@ -90,6 +91,7 @@ Authentication
 
 * Set RADIUS NAS Identifier to include ``webConfigurator`` and the firewall hostname when logging in the GUI `#9209 <https://redmine.pfsense.org/issues/9209>`__
 * Added exception handling to authentication attempts `#9150 <https://redmine.pfsense.org/issues/9150>`__
+* Added LDAP extended query for groups in RFC2307 containers `#9527 <https://redmine.pfsense.org/issues/9527>`__
 
 Backup/Restore
 --------------
@@ -100,6 +102,8 @@ Backup/Restore
 * Changed ``crypt_data()`` to use stronger key derivation `#9421 <https://redmine.pfsense.org/issues/9421>`__
 * Updated ``crypt_data()`` syntax for OpenSSL 1.1.x `#9420 <https://redmine.pfsense.org/issues/9420>`__
 * Added CDATA protection to the ``encryption_password`` XML tag, which allows international characters to be used in that field `#7186 <https://redmine.pfsense.org/issues/7186>`__
+* Removed legacy AutoConfigBackup code which was no longer active `#9785 <https://redmine.pfsense.org/issues/9785>`__
+* Disabled AutoConfigBackup manual backups when AutoConfigBackup is disabled `#9785 <https://redmine.pfsense.org/issues/9785>`__
 
 Captive Portal
 --------------
@@ -111,6 +115,7 @@ Captive Portal
 * Fixed Captive Portal session timeout values for RADIUS users who do not have a timeout returned from the server `#9208 <https://redmine.pfsense.org/issues/9208>`__
 * Changed Captive Portal so that users no longer get disconnected when changes are made to Captive Portal settings `#8616 <https://redmine.pfsense.org/issues/8616>`__
 * Added an option so that Captive Portals may choose to remove or retain logins across reboot `#5644 <https://redmine.pfsense.org/issues/5644>`__
+* Changed Captive Portal redirect page selection order `#9819 <https://redmine.pfsense.org/issues/9819>`__
 
 Certificates
 ------------
@@ -118,6 +123,41 @@ Certificates
 * Added sorting and search/filtering to Certificate Authority & Certificate manager `#9412 <https://redmine.pfsense.org/issues/9412>`__
 * Fixed OCSP stapling detection for OpenSSL 1.1.x `#9408 <https://redmine.pfsense.org/issues/9408>`__
 * Corrected wording of CA/Cert CN input validation `#9234 <https://redmine.pfsense.org/issues/9234>`__
+* Fixed certificate Descriptive Name field behavior when adding a user certificate `#9719 <https://redmine.pfsense.org/issues/9719>`__
+* Added an option to globally trust local CA manager entries `#4068 <https://redmine.pfsense.org/issues/4068>`__
+* Added support for randomized certificate serial numbers when creating or signing certificates with local internal CAs `#9883 <https://redmine.pfsense.org/issues/9883>`__
+* Added validation for CA/CRL serial numbers `#9883 <https://redmine.pfsense.org/issues/9883>`__ `#9869 <https://redmine.pfsense.org/issues/9869>`__
+* Added support for importing ECDSA keys in certificates and when completing signing requests `#9745 <https://redmine.pfsense.org/issues/9745>`__
+* Added support for creating and signing certificates using ECDSA keys `#9843 <https://redmine.pfsense.org/issues/9843>`__
+* Added detailed certificate information block to the CA list, using code shared with the Certificate list `#9856 <https://redmine.pfsense.org/issues/9856>`__
+* Added Certificate Lifetime to certificate information block `#7332 <https://redmine.pfsense.org/issues/7332>`__
+* Added CA validity checks when attempting to pre-fill certificate fields from a CA `#3956 <https://redmine.pfsense.org/issues/3956>`__
+* Added ``clientAuth`` EKU to Server type certificates `#9868 <https://redmine.pfsense.org/issues/9868>`__
+* Added a daily certificate expiration check and notice, with settings to control its behavior and notifications (Default: 28 days) `#7332 <https://redmine.pfsense.org/issues/7332>`__
+* Added CA/Certificate renewal functionality `#9842 <https://redmine.pfsense.org/issues/9842>`__
+
+  * This allows a CA or certificate to be renewed using its current settings (or a more secure profile), replacing the entry with a fresh one, and optionally retaining the existing key.
+
+* Added an "Edit" screen for Certificate entries
+    * This view allows editing the Certificate **Descriptive name** field `#7861 <https://redmine.pfsense.org/issues/7861>`__
+    * This view also adds a (not stored) password field and buttons for exporting encrypted private keys and PKCS#12 archives `#1192 <https://redmine.pfsense.org/issues/1192>`__
+
+* Improved default GUI certificate strength and handling of weak values `#9825 <https://redmine.pfsense.org/issues/9825>`__
+    * Reduced the default GUI web server certificate lifetime to 825 days to prevent errors on Apple platforms `#9825 <https://redmine.pfsense.org/issues/9825>`__
+    * Added notes on CA/Cert pages about using potentially insecure parameter choices
+    * Added visible warnings on CA/Cert pages if parameters are known to be insecure or not recommended
+
+* Revamped CRL management to be easier to use and more capable
+    * Added the ability to revoke certificates by serial number `#9869 <https://redmine.pfsense.org/issues/9869>`__
+    * Added the ability to revoke multiple entries at a time `#3258 <https://redmine.pfsense.org/issues/3258>`__
+    * Decluttered the main CRL list screen
+    * Moved to a single CRL create control to the bottom under the list rather than multiple buttons
+
+* Optimized CA/Cert/CRL code in various ways, including:
+    * Actions are now performed by ``refid`` rather than array index, which is more accurate and not as prone to being affected by parallel changes
+    * Improved configuration change descriptions as shown in the GUI and configuration history/backups
+    * Miscellaneous style and code re-use improvements
+    * Changed CA/Cert date calculations to use a more accurate method, which ensures accuracy on ARM past the 2038 date barrier
 
 Dashboard
 ---------
@@ -135,6 +175,8 @@ DHCP
 * Added an option to disable ping check in dhcpd `#9285 <https://redmine.pfsense.org/issues/9285>`__
 * Fixed **Show all configured leases** so it is persistent after deleting a DHCP lease `#9133 <https://redmine.pfsense.org/issues/9133>`__
 * Fixed DHCP leases hostname parsing problems which prevented some hostnames from being displayed in the GUI `#3500 <https://redmine.pfsense.org/issues/3500>`__
+* Added search/filter to DHCP/DHCPv6 leases `#9791 <https://redmine.pfsense.org/issues/9791>`__
+* Added OMAPI settings to the DHCP Server `#7304 <https://redmine.pfsense.org/issues/7304>`__
 
 Diagnostics
 -----------
@@ -142,6 +184,8 @@ Diagnostics
 * Fixed a PHP warning in diag_dump_states.php `#9780 <https://redmine.pfsense.org/issues/9780>`__
 * Fixed reverse lookup of IPv6 addresses on diag_dns.php `#9543 <https://redmine.pfsense.org/issues/9543>`__
 * Fixed diag_system_activity.php to use batch mode for top so it displays process list w/o terminal, and increased amount of output displayed `#9522 <https://redmine.pfsense.org/issues/9522>`__
+* Added search/filter ARP table and NDP status `#9791 <https://redmine.pfsense.org/issues/9791>`__
+* Added Reroot and Reboot with Filesystem Check options to GUI Reboot page `#9771 <https://redmine.pfsense.org/issues/9771>`__
 
 DNS
 ---
@@ -165,6 +209,12 @@ Dynamic DNS
 * Fixed issues with IPv6 on Azure Dynamic DNS `#9248 <https://redmine.pfsense.org/issues/9248>`__
 * Fixed handling of wildcards in Route53 Dynamic DNS `#9053 <https://redmine.pfsense.org/issues/9053>`__
 * Fixed handling of wildcards in Loopia Dynamic DNS `#8014 <https://redmine.pfsense.org/issues/8014>`__
+* Fixed CloudFlare Dynamic DNS processing when ``proxied`` is enabled `#9362 <https://redmine.pfsense.org/issues/9362>`__
+
+Gateways
+--------
+
+* Corrected PHP errors when marking gateways down in certain edge cases `#9851 <https://redmine.pfsense.org/issues/9851>`__
 
 Interfaces
 ----------
@@ -176,6 +226,7 @@ Interfaces
 * Fixed issues with Netgate & hardware model detection which caused problems with default interface mappings `#8051 <https://redmine.pfsense.org/issues/8051>`__
 * Fixed issues with display of previously-entered IP address values on interfaces_ppps_edit.php `#9741 <https://redmine.pfsense.org/issues/9741>`__
 * Fixed issues with PPPoE over a VLAN failing to reconnect `#9148 <https://redmine.pfsense.org/issues/9148>`__
+* Added a PHP shell playback script ``restartallwan`` which restarts all WAN-type interfaces `#9688 <https://redmine.pfsense.org/issues/9688>`__
 
 IPsec
 -----
@@ -191,6 +242,7 @@ IPsec
 * Fixed IPsec VTI MTU boot-time configuration `#9111 <https://redmine.pfsense.org/issues/9111>`__
 * Enabled the strongSwan PKCS#11 plugin `#6775 <https://redmine.pfsense.org/issues/6775>`__
 * Fixed IPsec configuration generation so that encryption options for every P2 on a given P1 are not duplicated on each P2 `#6263 <https://redmine.pfsense.org/issues/6263>`__
+* Escape Windows domain backslash in IPsec widget `#9747 <https://redmine.pfsense.org/issues/9747>`__
 
 Logging
 -------
@@ -218,6 +270,8 @@ Notifications
 
 * Fixed SMTP notification password being unintentionally changed when testing SMTP settings `#9684 <https://redmine.pfsense.org/issues/9684>`__
 * Deprecated & Removed Growl Notifications `#8821 <https://redmine.pfsense.org/issues/8821>`__
+* Reduced frequency of GEOM rebuild notifications `#9256 <https://redmine.pfsense.org/issues/9256>`__
+* Added a daily certificate expiration notification with settings to control its behavior `#7332 <https://redmine.pfsense.org/issues/7332>`__
 
 NTPD
 ----
@@ -234,11 +288,20 @@ OpenVPN
 * Updated OpenVPN local auth to handle changes in fcgicli output `#9460 <https://redmine.pfsense.org/issues/9460>`__
 * Added an option to set the OpenVPN TLS Key Direction `#9030 <https://redmine.pfsense.org/issues/9030>`__
 * Added GUI options to configure OpenVPN keepalive parameters `#3473 <https://redmine.pfsense.org/issues/3473>`__
+* Fixed instances of hidden invalid OpenVPN options affecting save operations `#9674 <https://redmine.pfsense.org/issues/9674>`__
+* Added connection count to OpenVPN status and widget `#9788 <https://redmine.pfsense.org/issues/9788>`__
 
 Operating System
 ----------------
 
 * Fixed serial console terminal size issues `#9569 <https://redmine.pfsense.org/issues/9569>`__
+
+Packet Capture
+--------------
+
+* Fixed Packet Capture to match both IPv4+IPv6 CARP when that protocol is selected `#9867 <https://redmine.pfsense.org/issues/9867>`__
+* Changed Packet Capture GUI to allow multiple TCP/UDP ports to be specified `#9766 <https://redmine.pfsense.org/issues/9766>`__
+* Added start time to Packet Capture display `#9831 <https://redmine.pfsense.org/issues/9831>`__
 
 Routing
 -------
@@ -268,11 +331,13 @@ Translations
 * Added Italian translation `#9716 <https://redmine.pfsense.org/issues/9716>`__
 * Fixed an issue with international characters in configuration descriptions, which led to failures in certain cases, such as failing to set Manual Outbound NAT when the Language was set to pt_BR `#6195 <https://redmine.pfsense.org/issues/6195>`__
 
-Upgrade
--------
+Upgrade / Installation
+----------------------
 
 * Revised update check to provide a more consistent version string in JSON format `#9778 <https://redmine.pfsense.org/issues/9778>`__
 * Fixed issues with checking for updates from the GUI behind a proxy with authentication `#9478 <https://redmine.pfsense.org/issues/9478>`__
+* Disabled serial console on VGA memstick images `#9488 <https://redmine.pfsense.org/issues/9488>`__
+* Fixed a PHP error when upgrading older configurations from revision 14.4 to 14.5 `#9840 <https://redmine.pfsense.org/issues/9840>`__
 
 User Manager / Privileges
 -------------------------
@@ -296,6 +361,7 @@ Web Interface
   `#9728 <https://redmine.pfsense.org/issues/9728>`__
   `#9727 <https://redmine.pfsense.org/issues/9727>`__
   `#9694 <https://redmine.pfsense.org/issues/9694>`__
+  `#9736 <https://redmine.pfsense.org/issues/9736>`__
 * Increased the number of colors available for the login screen `#9706 <https://redmine.pfsense.org/issues/9706>`__
 * Added TLS 1.3 to GUI and Captive Portal web server configuration, and removed older versions (TLS 1.0 removed from Captive Portal, TLS 1.1 removed from GUI) `#9607 <https://redmine.pfsense.org/issues/9607>`__
 * Fixed a potential source of PHP errors when saving per-log settings `#9540 <https://redmine.pfsense.org/issues/9540>`__
@@ -305,8 +371,16 @@ Web Interface
 * Improved validation of FQDNs `#9023 <https://redmine.pfsense.org/issues/9023>`__
 * Fixed wizard.php selection option size attribute handling `#8907 <https://redmine.pfsense.org/issues/8907>`__
 * Fixed platform detection for certain C2558/C2758 systems `#6846 <https://redmine.pfsense.org/issues/6846>`__
+* Set ``autocomplete=new-password`` for forms containing authentication fields to help prevent browser auto-fill from completing irrelevant fields `#9864 <https://redmine.pfsense.org/issues/9864>`__
+* Updated jQuery `#9407 <https://redmine.pfsense.org/issues/9407>`__
 
 Wireless
 --------
 
 * Added support for the ``athp(4)`` wireless interface driver `#9538 <https://redmine.pfsense.org/issues/9538>`__ `#9600 <https://redmine.pfsense.org/issues/9600>`__
+
+Development
+-----------
+
+* Added a "periodic" style framework to allow for daily/weekly/monthly tasks from the base system or packages by way of plugin calls `#7332 <https://redmine.pfsense.org/issues/7332>`__
+* Added a central file download function for internal use throughout the GUI
