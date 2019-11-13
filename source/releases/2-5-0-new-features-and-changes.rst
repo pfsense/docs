@@ -98,11 +98,10 @@ Backup/Restore
 
 * Fixed AutoConfigBackup allowing manual backups when disabled `#9785 <https://redmine.pfsense.org/issues/9785>`__
 * Added a special string (``NoReMoTeBaCkUp``) that when used in ``write_config()`` descriptions will prevent a remote backup `#9693 <https://redmine.pfsense.org/issues/9693>`__
-* Removed legacy AutoConfigBackup options (there were no more active accounts using the retired legacy service) `#9687 <https://redmine.pfsense.org/issues/9687>`__
+* Removed legacy AutoConfigBackup options (there were no more active accounts using the retired legacy service) `#9687 <https://redmine.pfsense.org/issues/9687>`__ `#9785 <https://redmine.pfsense.org/issues/9785>`__
 * Changed ``crypt_data()`` to use stronger key derivation `#9421 <https://redmine.pfsense.org/issues/9421>`__
 * Updated ``crypt_data()`` syntax for OpenSSL 1.1.x `#9420 <https://redmine.pfsense.org/issues/9420>`__
 * Added CDATA protection to the ``encryption_password`` XML tag, which allows international characters to be used in that field `#7186 <https://redmine.pfsense.org/issues/7186>`__
-* Removed legacy AutoConfigBackup code which was no longer active `#9785 <https://redmine.pfsense.org/issues/9785>`__
 * Disabled AutoConfigBackup manual backups when AutoConfigBackup is disabled `#9785 <https://redmine.pfsense.org/issues/9785>`__
 
 Captive Portal
@@ -227,6 +226,7 @@ Interfaces
 * Fixed issues with display of previously-entered IP address values on interfaces_ppps_edit.php `#9741 <https://redmine.pfsense.org/issues/9741>`__
 * Fixed issues with PPPoE over a VLAN failing to reconnect `#9148 <https://redmine.pfsense.org/issues/9148>`__
 * Added a PHP shell playback script ``restartallwan`` which restarts all WAN-type interfaces `#9688 <https://redmine.pfsense.org/issues/9688>`__
+* Added drivers for Mellanox ``mlx4`` and ``mlx5`` network interface cards `#7537 <https://redmine.pfsense.org/issues/7537>`__
 
 IPsec
 -----
@@ -338,6 +338,7 @@ Upgrade / Installation
 * Fixed issues with checking for updates from the GUI behind a proxy with authentication `#9478 <https://redmine.pfsense.org/issues/9478>`__
 * Disabled serial console on VGA memstick images `#9488 <https://redmine.pfsense.org/issues/9488>`__
 * Fixed a PHP error when upgrading older configurations from revision 14.4 to 14.5 `#9840 <https://redmine.pfsense.org/issues/9840>`__
+* Created separate **Auto (UFS) UEFI** and **Auto (UFS) BIOS** installation options to avoid problems on hardware which boots differently on USB and non-USB disks `#8638 <https://redmine.pfsense.org/issues/8638>`__
 
 User Manager / Privileges
 -------------------------
