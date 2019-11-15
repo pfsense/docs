@@ -17,7 +17,6 @@ Snort
 
    setup-snort-package
    snort-alerts
-   snort-barnyard2
    snort-blocked-hosts
    snort-define-servers
    snort-interface-settings
