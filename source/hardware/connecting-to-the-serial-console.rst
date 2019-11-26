@@ -93,6 +93,10 @@ port, start PuTTY and then set the following parameters:
 The session may be saved for later use. Click **Open** to start the
 serial console session.
 
+MINICOM
+~~~~~
+`minicom -D /dev/ttyUSB0 -R 115200`
+
 Screen
 ~~~~~~
 
