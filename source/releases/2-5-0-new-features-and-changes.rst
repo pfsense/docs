@@ -88,7 +88,7 @@ Certificates
 * Added detailed certificate information block to the CA list, using code shared with the Certificate list `#9856 <https://redmine.pfsense.org/issues/9856>`__
 * Added Certificate Lifetime to certificate information block `#7332 <https://redmine.pfsense.org/issues/7332>`__
 * Added CA validity checks when attempting to pre-fill certificate fields from a CA `#3956 <https://redmine.pfsense.org/issues/3956>`__
-* Added a daily certificate expiration check and notice, with settings to control its behavior and notifications (Default: 28 days) `#7332 <https://redmine.pfsense.org/issues/7332>`__
+* Added a daily certificate expiration check and notice, with settings to control its behavior and notifications (Default: 27 days) `#7332 <https://redmine.pfsense.org/issues/7332>`__
 * Added CA/Certificate renewal functionality `#9842 <https://redmine.pfsense.org/issues/9842>`__
 
   * This allows a CA or certificate to be renewed using its current settings (or a more secure profile), replacing the entry with a fresh one, and optionally retaining the existing key.
@@ -159,6 +159,21 @@ IPsec
 * Enabled the strongSwan PKCS#11 plugin `#6775 <https://redmine.pfsense.org/issues/6775>`__
 * Fixed IPsec configuration generation so that encryption options for every P2 on a given P1 are not duplicated on each P2 `#6263 <https://redmine.pfsense.org/issues/6263>`__
 * Renamed IPsec "RSA" options to "Certificate" since both RSA and ECDSA certificates are now supported, and it is also easier for users to recognize `#9903 <https://redmine.pfsense.org/issues/9903>`__
+* Converted IPsec configuration code from ``ipsec.conf`` ``ipsec``/``stroke`` style to ``swanctl.conf`` ``swanctl``/``vici`` style `#9603 <https://redmine.pfsense.org/issues/9603>`__
+
+  * Split up much of the single large IPsec configuration function into multiple functions as appropriate.
+  * Optimized code along the way, including reducing code duplication and finding ways to generalize functions to support future expansion.
+  * For IKEv1 and IKEv2 with Split Connections enabled, P2 settings are properly respected for each individual P2, such as separate encryption algorithms `#6263 <https://redmine.pfsense.org/issues/6263>`__
+
+    * **N.B.:** In rare cases this may expose a previous misconfiguration which allowed a Phase 2 SA to connect with improper settings, for example if a required encryption algorithm was enabled on one P2 but not another.
+
+  * New GUI option under **VPN > IPsec**, **Mobile Clients** tab to enable RADIUS Accounting which was previously on by default. This is now disabled by default as RADIUS accounting data will be sent for every tunnel, not only mobile clients, and if the accounting data fails to reach the RADIUS server, tunnels may be disconnected.
+  * Additional developer & advanced user notes:
+
+    * For those who may have scripts which touched files in ``/var/etc/ipsec``, note that the structure of this directory has changed to the new `swanctl layout <https://wiki.strongswan.org/projects/strongswan/wiki/Swanctldirectory>`__.
+    * Any usage of ``/usr/local/sbin/ipsec`` or the stroke plugin must also be changed to ``/usr/local/sbin/swanctl`` and VICI. Note that some commands have no direct equivalents, but the same or better information is available in other ways.
+    * IPsec start/stop/reload functions now use ``/usr/local/sbin/strongswanrc``
+    * IPsec-related functions were converged into ``ipsec.inc``, removed from ``vpn.inc``, and renamed from ``vpn_ipsec_<name>`` to ``ipsec_<name>``
 
 Logging
 -------

@@ -159,6 +159,8 @@ IPsec
 * Fixed IPsec VTI MTU boot-time configuration `#9111 <https://redmine.pfsense.org/issues/9111>`__
 * Escape Windows domain backslash in IPsec widget `#9747 <https://redmine.pfsense.org/issues/9747>`__
 * Fixed VTI IPv6 address handling `#9801 <https://redmine.pfsense.org/issues/9801>`__
+* Fixed Child SA button JS hide on status_ipsec.php, along with other cosmetic improvements `#8847 <https://redmine.pfsense.org/issues/8847>`__
+* Added **Connect Children** button to status_ipsec.php to connect when IKE (Phase 1) is up but Child SAs (Phase 2 entries) are not `#9954 <https://redmine.pfsense.org/issues/9954>`__
 
 Monitoring
 ----------
@@ -189,6 +191,7 @@ OpenVPN
 * Added a copy action to OpenVPN pages `#5851 <https://redmine.pfsense.org/issues/5851>`__
 * Improved sorting of bytes sent/receives on OpenVPN status page `#7359 <https://redmine.pfsense.org/issues/7359>`__
 * Fixed visibility of the OpenVPN 'interface' option when multihome is selected `#7840 <https://redmine.pfsense.org/issues/7840>`__
+* Reduced the OpenVPN server certificate lifetime to 825 days in the wizard to prevent errors on Apple platforms `#9825 <https://redmine.pfsense.org/issues/9825>`__
 
 Operating System
 ----------------
