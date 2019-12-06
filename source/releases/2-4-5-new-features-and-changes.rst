@@ -144,6 +144,7 @@ Interfaces
 * Fixed issues with Netgate & hardware model detection which caused problems with default interface mappings `#8051 <https://redmine.pfsense.org/issues/8051>`__
 * Fixed issues with display of previously-entered IP address values on interfaces_ppps_edit.php `#9741 <https://redmine.pfsense.org/issues/9741>`__
 * Added a confirmation prompt to disconnect/release actions on status_interfaces.php `#9911 <https://redmine.pfsense.org/issues/9911>`__
+* Added drivers for Mellanox ``mlx4`` and ``mlx5`` network interface cards `#7537 <https://redmine.pfsense.org/issues/7537>`__
 
 IPsec
 -----

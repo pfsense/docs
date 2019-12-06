@@ -150,7 +150,6 @@ Interfaces
 * Fixed issues with PPPoE over a VLAN failing to reconnect `#9148 <https://redmine.pfsense.org/issues/9148>`__
 * Changed the way interface VLAN support is detected so it does not rely on the VLANMTU flag `#9548 <https://redmine.pfsense.org/issues/9548>`__
 * Added a PHP shell playback script ``restartallwan`` which restarts all WAN-type interfaces `#9688 <https://redmine.pfsense.org/issues/9688>`__
-* Added drivers for Mellanox ``mlx4`` and ``mlx5`` network interface cards `#7537 <https://redmine.pfsense.org/issues/7537>`__
 
 IPsec
 -----
