@@ -513,60 +513,60 @@ Booting the VM from CD/DVD
 
 **Option 1: Installing from the CD/DVD drive on the ESXi host**
 
-        If the Host Device option was chosen in the Virtual Machine
-        Properties above, slip the pfSense CD into the drive on the ESXi
-        host.
+If the Host Device option was chosen in the Virtual Machine
+Properties above, slip the pfSense CD into the drive on the ESXi
+host.
 
-        In the left-hand pane of the vSphere client window, right-click
-        the new pfSense virtual machine. A number of actions for VM are
-        displayed, including **Power** > **Power on**. Select that or
-        highlight the virtual machine and click the green arrowhead in
-        the toolbar.
+In the left-hand pane of the vSphere client window, right-click
+the new pfSense virtual machine. A number of actions for VM are
+displayed, including **Power** > **Power on**. Select that or
+highlight the virtual machine and click the green arrowhead in
+the toolbar.
 
-        Now click the **Console** tab and the virtual machine will begin
-        booting from the CD.
+Now click the **Console** tab and the virtual machine will begin
+booting from the CD.
 
-        Skip to **Installing pfSense Software.**
+Skip to **Installing pfSense Software.**
 
 **Option 2: Installing from the CD/DVD drive on the client**
 
-        If the option was chosen to use the drive in the client PC, put
-        the CD into its drive. Remember that **Connect at power on** was
-        not a choice if using the client's CD/DVD drive, so a little bit
-        of extra work is needed to connect it after powering on the
-        virtual machine.
+If the option was chosen to use the drive in the client PC, put
+the CD into its drive. Remember that **Connect at power on** was
+not a choice if using the client's CD/DVD drive, so a little bit
+of extra work is needed to connect it after powering on the
+virtual machine.
 
-        In the left-hand pane of the vSphere client window, right-click
-        the new pfSense virtual machine. A number of actions for VM are
-        displayed, including **Power** > **Power on**. Select that or
-        highlight the virtual machine and click the green arrowhead in
-        the toolbar.
+In the left-hand pane of the vSphere client window, right-click
+the new pfSense virtual machine. A number of actions for VM are
+displayed, including **Power** > **Power on**. Select that or
+highlight the virtual machine and click the green arrowhead in
+the toolbar.
 
-        Now, with the virtual machine highlighted, click the **Console**
-        tab.
+Now, with the virtual machine highlighted, click the **Console**
+tab.
 
-        .. image:: /_static/virtualization/esxi_pfs_4-1a.png
+.. image:: /_static/virtualization/esxi_pfs_4-1a.png
    :align: center
 
-        Because the CD drive is not attached to the virtual machine yet,
-        it may attempt to boot from the network or it may be showing an
-        *Operating system not found* or some other error. Don't worry
-        about this.
+Because the CD drive is not attached to the virtual machine yet,
+it may attempt to boot from the network or it may be showing an
+*Operating system not found* or some other error. Don't worry
+about this.
 
-        At this point (and only after the virtual machine has been
-        powered on) the virtual machine may be attached to the CD/DVD
-        drive on the client PC. Click on the toolbar icon that looks
-        like a CD with a wrench/spanner. **CD/DVD Drive 1** will be
-        offered in the menu and the available choices are displayed.
-        Select Connect to D: (or whatever drive letter represents the
-        CD/DVD drive on the client PC).
+At this point (and only after the virtual machine has been
+powered on) the virtual machine may be attached to the CD/DVD
+drive on the client PC. Click on the toolbar icon that looks
+like a CD with a wrench/spanner. **CD/DVD Drive 1** will be
+offered in the menu and the available choices are displayed.
+Select Connect to D: (or whatever drive letter represents the
+CD/DVD drive on the client PC).
 
-        Right click the virtual machine in the left pane of the vSphere
-        client and select **Guest > Send Ctl+Alt+Del**. This will reboot
-        the virtual machine without disconnecting the CD/DVD drive.
+Right click the virtual machine in the left pane of the vSphere
+client and select **Guest > Send Ctl+Alt+Del**. This will reboot
+the virtual machine without disconnecting the CD/DVD drive.
 
-        In the Console tab, the pfSense installer can now be seen booting
-        from the CD.
+In the Console tab, the pfSense installer can now be seen booting
+from the CD.
 
 Installing pfSense Software
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
