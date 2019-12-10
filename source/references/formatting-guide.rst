@@ -203,6 +203,8 @@ preferred over images.
 
    .. _figure-my-stuff:
    .. figure:: /_static/stuff.png
+      :figclass: align-center
+      :target: /_static/stuff.png
 
       This is the caption
 
