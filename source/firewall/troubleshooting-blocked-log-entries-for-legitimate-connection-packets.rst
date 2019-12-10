@@ -7,6 +7,7 @@ most common example is seeing a connection blocked involving a web
 server.
 
 .. image:: /_static/firewall/blockedwithtcpflags.png
+   :align: center
 
 This is likely due to a TCP FIN packet arriving after the connection's
 state has been removed. This happens because on occasion a packet will

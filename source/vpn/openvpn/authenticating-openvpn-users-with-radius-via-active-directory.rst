@@ -60,10 +60,12 @@ Create a security group in Active Directory Users and Computers called
 granular control over it.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_204.jpg
+   :align: center
 
 Add all accounts that need to use the VPN system to this group.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_205.jpg
+   :align: center
 
 Install and configure RADIUS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -75,33 +77,40 @@ Open **Server Manager** and click the **Roles** node in the tree on the
 left.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_003.jpg
+   :align: center
 
 On the right side, click **Add Roles**.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_003.jpg
+   :align: center
 
 This will open the Add Roles Wizard.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_005.jpg
+   :align: center
 
 Check **Network Policy and Access Services**.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_006.jpg
+   :align: center
 
 Select **Network Policy Server**.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_010.jpg
+   :align: center
 
 If all went well there is now a ***Network Policy and Access Services***
 node in the tree.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_011.jpg
+   :align: center
 
 Expand the **Network Policy and Access Services** node, go to **NPS
 (Local)** > **RADIUS Clients and Servers**, right-click **RADIUS
 Clients** and choose **New**.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_012.jpg
+   :align: center
 
 In the **Friendly name** field, enter **pfSense VPN** or anything deemed
 appropriate. In the **Address (IP or DNS)** field, enter the IP address
@@ -110,44 +119,53 @@ check **Generate** and save the shared secret; It will be needed later
 on.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_123.jpg
+   :align: center
 
 Under **NPS (Local)** > **Policies** right-click **Network Policies**
 and select **New**.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_014.jpg
+   :align: center
 
 In the **Policy name** field, enter **Allow pfSense**. **Type of network
 access server**: **Unspecified**.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_015.jpg
+   :align: center
 
 In the **Specify Conditions** window, click **Add...**
 
 .. image:: /_static/vpn/openvpn/radiusvpn_016.jpg
+   :align: center
 
 Select **Windows Groups** and click **Add...**
 
 .. image:: /_static/vpn/openvpn/radiusvpn_017.jpg
+   :align: center
 
 Click **Add Groups...** and add the group **VPNusers** (or whatever
 group is needed).
 
 .. image:: /_static/vpn/openvpn/radiusvpn_124.jpg
+   :align: center
 
 Back in the **Specify Conditions** window, click **Next** and select
 **Access granted**.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_020.jpg
+   :align: center
 
 Put the new policy before policies preventing the connection. Mind the
 **Processing Order** field. Thanks to Dan for alerting me on this.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_999.jpg
+   :align: center
 
 In the **Configure Authentication Methods** window, check **Unencrypted
 authentication (PAP, SPAP)**.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_021.jpg
+   :align: center
 
 Skip the next wizard window (**Constraints**) or configure it if
 desired. I suggest leaving it as it is until after confirming the VPN
@@ -165,6 +183,7 @@ In the pfSense webGUI, go to **System > User Manager**, on the
 **Servers** tab. Click |fa-plus| on the right.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_022.jpg
+   :align: center
 
 Enter these values:
 
@@ -185,6 +204,7 @@ Enter these values:
 +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. image:: /_static/vpn/openvpn/radiusvpn_023.jpg
+   :align: center
 
 Install a Certificate Authority
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -192,6 +212,7 @@ Install a Certificate Authority
 Go to **System > Cert Manager**, **CAs** tab and click |fa-plus|.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_024.jpg
+   :align: center
 
 Enter these values:
 
@@ -211,10 +232,12 @@ Enter these values:
 +----------------------+--------------------------------------------+
 
 .. image:: /_static/vpn/openvpn/radiusvpn_025.jpg
+   :align: center
 
 Note that now there is an extra CA in the CA list.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_026.jpg
+   :align: center
 
 Create an internal certificate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -222,6 +245,7 @@ Create an internal certificate
 Go to **System > Cert Manager**, **Certificates** tab and click |fa-plus|.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_027.jpg
+   :align: center
 
 Enter these values:
 
@@ -249,6 +273,7 @@ Set up the OpenVPN server
 Go to **VPN > OpenVPN**, **Servers** tab and click |fa-plus|.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_031.jpg
+   :align: center
 
 Enter these values:
 
@@ -320,6 +345,7 @@ Enter these values:
 +------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. image:: /_static/vpn/openvpn/radiusvpn_033.jpg
+   :align: center
 
 Configure the firewall
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -328,6 +354,7 @@ Go to **Firewall > Rules**, **WAN** tab and click |fa-plus| to create a new
 rule.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_207.jpg
+   :align: center
 
 Enter these values:
 
@@ -352,11 +379,13 @@ Enter these values:
 +--------------------------+-----------------------------------+
 
 .. image:: /_static/vpn/openvpn/radiusvpn_202.jpg
+   :align: center
 
 Click **Save** and the rules page will reload. Do not forget to click
 **Apply Changes**.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_203.jpg
+   :align: center
 
 Create a Certificate
 ^^^^^^^^^^^^^^^^^^^^
@@ -370,6 +399,7 @@ Go to **System > Cert Manager** (not User Manager!), **Certificates**
 tab and click |fa-plus|.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_102.jpg
+   :align: center
 
 Enter these values:
 
@@ -394,10 +424,12 @@ Enter these values:
 +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. image:: /_static/vpn/openvpn/radiusvpn_104.jpg
+   :align: center
 
 Note the entry in the Certificate list.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_105.jpg
+   :align: center
 
 Install the OpenVPN Client Export Package
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -405,18 +437,21 @@ Install the OpenVPN Client Export Package
 Go to **System > Packages**, **Available Packages** tab.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_106.jpg
+   :align: center
 
 Scroll down to :doc:`OpenVPN Client Export Package
 </vpn/openvpn/using-the-openvpn-client-export-package>` and click |fa-plus| on
 the right.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_107.jpg
+   :align: center
 
 Confirm the selection and the package will be installed.
 
 When it says **Installation completed** the installation is finished.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_108.jpg
+   :align: center
 
 Prepare the Windows package
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -425,6 +460,7 @@ Go to **VPN > OpenVPN** and note that there is an extra tab called
 **Client Export**. Click it.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_208.jpg
+   :align: center
 
 Enter these values:
 
@@ -451,6 +487,7 @@ user's platform, such as **x64-win6** for a 64-bit installer for Windows
 Vista and later.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_110.jpg
+   :align: center
 
 Get a package for each user.
 
@@ -467,21 +504,25 @@ Run the installer with all defaults. When selecting components, make
 sure they are all checked (they are by default).
 
 .. image:: /_static/vpn/openvpn/radiusvpn_112.jpg
+   :align: center
 
 The OpenVPN Configuration Setup will continue to install the
 certificates.
 
 .. image:: /_static/vpn/openvpn/radiusvpn-113-en.png
+   :align: center
 
 Stick to the defaults. When prompted for a password, enter the password
 used when exporting the Windows Installer from the **Client Export**
 tab.
 
 .. image:: /_static/vpn/openvpn/radiusvpn-114-en.png
+   :align: center
 
 Have the wizard automatically select the archive.
 
 .. image:: /_static/vpn/openvpn/radiusvpn-115-en.png
+   :align: center
 
 Change the cryptoapicert SUBJ
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -508,6 +549,7 @@ Set the Windows Client to :doc:`run as Administrator </vpn/openvpn/troubleshooti
 To use the client, double click the OpenVPN GUI icon on the Desktop.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_116.jpg
+   :align: center
 
 Windows will ask to confirm the execution. Confirm.
 
@@ -515,17 +557,20 @@ OpenVPN will start but that's not enough. Right-click the OpenVPN icon
 in the taskbar and choose **Connect**.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_117.jpg
+   :align: center
 
 The user must now enter their username and password. This is only the
 username part, without the domain. The password is the user's Active
 Directory password.
 
 .. image:: /_static/vpn/openvpn/radiusvpn-118-en.png
+   :align: center
 
 If all is well, OpenVPN will connect to the pfSense router and minimize
 to the system tray.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_119.jpg
+   :align: center
 
 Right-click the system tray icon and choose **Disconnect** or **Close**
 to either disconnect the tunnel or close the OpenVPN program altogether.
@@ -546,6 +591,7 @@ that can be changed to something more appropriate by renaming the
 balloon should show.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_122.jpg
+   :align: center
 
 (*is nu verbonden* is dutch for *is now connected*.)
 
@@ -562,6 +608,7 @@ field:
 ...if *Headquarters.ovpn* is the name of the *.ovpn* file.
 
 .. image:: /_static/vpn/openvpn/radiusvpn_206.jpg
+   :align: center
 
 The user will still need to enter their password but it does save a step
 in the process.

@@ -24,6 +24,7 @@ When complete, there will be two rule entries that look like the following
 picture:
 
 .. image:: /_static/dns/blockdns.png
+   :align: center
 
 Certain local PCs could be allowed to use other DNS servers by placing a
 pass rule for them above the block rule.

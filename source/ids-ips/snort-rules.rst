@@ -18,5 +18,7 @@ icon will change to indicate the state of the rule. At the top of the rule list
 is a legend showing the icons used to indicate the current state of a rule.
 
 .. image:: /_static/ids-ips/snortrulesenabledisable.png
+   :align: center
 
 .. image:: /_static/ids-ips/snortrulesenabledisable2.png
+   :align: center

@@ -120,36 +120,43 @@ As the operating system boots and pfSense starts, a wizard will start
 and prompt to accept the copyright and distribution notice.
 
 .. image:: /_static/install/screen_shot_2017-11-16_at_22.27.33.png
+   :align: center
 
 To start the installation select **OK** while **Install** option is
 selected.
 
 .. image:: /_static/install/screen_shot_2017-11-16_at_22.28.03.png
+   :align: center
 
 Next step is to select filesystem. By default UFS is selected. ZFS
 support is currently experimental. Select **OK** to continue. This
 option automatically configures the hard drive.
 
 .. image:: /_static/install/screen_shot_2017-11-16_at_22.28.11.png
+   :align: center
 
 The following step allows **Keymap Selection**. Standard **US** is
 default. Continue to the next step with **Select**.
 
 .. image:: /_static/install/screen_shot_2017-11-16_at_22.28.08.png
+   :align: center
 
 The install will proceed, wiping the target disk and installing pfSense.
 Copying files may take some time to finish.
 
 .. image:: /_static/install/screen_shot_2017-11-16_at_22.28.13.png
+   :align: center
 
 It usually takes no longer than a couple of minutes.
 
 .. image:: /_static/install/screen_shot_2017-11-16_at_22.28.17.png
+   :align: center
 
 After installation completion manual configuration options are offered,
 select **No** to continue.
 
 .. image:: /_static/install/screen_shot_2017-11-16_at_22.28.35.png
+   :align: center
 
 Now the system must reboot so that pfSense may start from the target
 disk. Select *Reboot* and then press **Enter**. Be sure to remove the
@@ -157,6 +164,7 @@ disc or USB memstick so that the system will not attempt to boot from
 there next time.
 
 .. image:: /_static/install/screen_shot_2017-11-16_at_22.28.42.png
+   :align: center
 
 After the system reboots, pfSense will be running from the target disk.
 The next step is to Assign Interfaces on the Console below.

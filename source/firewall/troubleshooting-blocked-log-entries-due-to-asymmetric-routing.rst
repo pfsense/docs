@@ -50,6 +50,7 @@ The options for **TCP flags** and **State Type** can be found in the
 **Advanced Features** of the rules, under the normal options.
 
 .. image:: /_static/firewall/asym_rule_advanced.png
+   :align: center
 
 Alternate Causes
 ----------------

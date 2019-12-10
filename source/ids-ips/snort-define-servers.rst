@@ -21,3 +21,4 @@ matching entries will appear for selection. Aliases are created under
 **Firewall > Aliases** from the menu.
 
 .. image:: /_static/ids-ips/snortvariables.png
+   :align: center

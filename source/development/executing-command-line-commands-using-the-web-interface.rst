@@ -18,11 +18,13 @@ Description
   below.
 
 .. image:: /_static/development/execute_command_via_exec_php.jpg
+   :align: center
 
 - Click **Execute**
 - The output from the command will be displayed, such as:
 
 .. image:: /_static/development/exec.php_command_output.jpg
+   :align: center
 
 Warnings
 --------

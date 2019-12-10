@@ -13,6 +13,7 @@ private subnets, but functionally equivalent to two hosts across the
 Internet.
 
 .. image:: /_static/vpn/ipsec/ios-to-pfsense-ipsec-diagram.png
+   :align: center
 
 Configuring the router
 ----------------------
@@ -122,6 +123,7 @@ so try it a second time as well. If configured as depicted above, once
 the tunnel connects, the following will be seen:
 
 .. image:: /_static/vpn/ipsec/ios-to-pfsense-ipsec-pingtest.png
+   :align: center
 
 Troubleshooting
 ---------------

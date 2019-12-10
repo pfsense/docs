@@ -19,6 +19,7 @@ the port used for the webGUI. This depicts the default LAN rule, which
 allows access to the web interface.
 
 .. image:: /_static/firewall/default-lan-rule.png
+   :align: center
 
 If a restrictive ruleset is in place on the LAN, make sure it permits
 access to the web interface before continuing.
@@ -34,10 +35,12 @@ ports. The following are examples:
 **1.** Example alias for networks allowed to access management interface
 
 .. image:: /_static/firewall/management-access-alias.png
+   :align: center
 
 **2.** Example alias for ports allowed to access management interface
 
 .. image:: /_static/firewall/management-ports-alias.png
+   :align: center
 
 Now add a firewall rule allowing the sources defined in the management
 alias to the destination of the firewall, with the port used or alias
@@ -48,6 +51,7 @@ internal networks), source to *any*, and destination the same. When
 finished the ruleset should look like the following.
 
 .. image:: /_static/firewall/restricted-management-lan-rules.png
+   :align: center
 
 Click **Apply Changes** and the management interface is now restricted
 to only the defined hosts.

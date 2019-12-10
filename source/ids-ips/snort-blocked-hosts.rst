@@ -13,3 +13,4 @@ The |fa-search| icon performs a reverse DNS lookup on the blocked host IP
 address when clicked.
 
 .. image:: /_static/ids-ips/snortblockedhosts.png
+   :align: center

@@ -6,6 +6,7 @@ and how to route the Internet connection of site A through site B using
 pfSense® software.
 
 .. image:: /_static/vpn/ipsec/ipsec-s2s-vork-00.png
+   :align: center
 
 This is effectively the same as using an IPsec site-to-site connection
 except that we'll be using OpenVPN instead of IPsec. Using OpenVPN as
@@ -29,6 +30,7 @@ From the **VPN** menu choose **OpenVPN**. On the page under the
 **Server** tab, click the **+** button to create a new OpenVPN server.
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-01.png
+   :align: center
 
 Enter these values:
 
@@ -75,6 +77,7 @@ Enter these values:
 +--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-02.png
+   :align: center
 
 Click **Save**.
 
@@ -82,12 +85,14 @@ Note that our Site-to-site OpenVPN server is now shown in the Server
 overview. Click the **edit** button to the right of the server.
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-03.png
+   :align: center
 
 Note that in the **Cryptographic Settings** section, a Shared Key is now
 shown. Copy all text in the **Shared Key** text field, including the
 first lines beginning with # and the last line ending in —–.
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-04.png
+   :align: center
 
 Configure firewall rules at Site B
 ----------------------------------
@@ -97,6 +102,7 @@ unless using a different interface for the VPN connection. Click on the
 **+** button to add a new rule.
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-05.png
+   :align: center
 
 Enter these values:
 
@@ -123,15 +129,18 @@ Enter these values:
 +--------------------------+----------------------------------+
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-06.png
+   :align: center
 
 Click **Save** and on the next page click **Apply changes**.
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-07.png
+   :align: center
 
 Click on the **OpenVPN** tab. We'll now add a rule to allow traffic
 through the OpenVPN connection. Click on the **+** button add a rule.
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-08.png
+   :align: center
 
 Enter these values:
 
@@ -156,10 +165,12 @@ Enter these values:
 +------------------+------------------------------------+----+
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-09.png
+   :align: center
 
 Click **Save** and on the next page **Apply Changes**.
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-16.png
+   :align: center
 
 Set up outbound NAT at Site B
 -----------------------------
@@ -170,11 +181,13 @@ Outbound NAT)** and click **Save**. On the next page, click **Apply
 Changes**.
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-10.png
+   :align: center
 
 A couple of rules are generated automatically but we need to add a NAT
 entry for Site A's subnet. Click on the **+** button.
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-11.png
+   :align: center
 
 Enter these values:
 
@@ -197,10 +210,12 @@ Enter these values:
 +------------------+-------------------------------------------------------------------------+--------------------------------------------------+
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-12.png
+   :align: center
 
 Click **Save** and on the next page click **Apply Changes**.
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-17.png
+   :align: center
 
 Set up the client at site A
 ---------------------------
@@ -209,6 +224,7 @@ From the **VPN** menu choose **OpenVPN** and go to the **Client** tab.
 Click the **+** button to configure a client.
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-13.png
+   :align: center
 
 Enter these values:
 
@@ -261,6 +277,7 @@ Enter these values:
 +--------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-14.png
+   :align: center
 
 Click **Save**.
 
@@ -268,5 +285,6 @@ The tunnel should now work and internet traffic should be routed from
 Site A through the tunnel out site B.
 
 .. image:: /_static/vpn/openvpn/openvpn-s2s-vork-15.png
+   :align: center
 
 *By Vorkbaard, 2013-07-29* - gmail{a}vorkbaard[.]nl

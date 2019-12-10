@@ -21,6 +21,7 @@ suppress it. Disabling the rule will remove it from the list of match
 rules in Snort and therefore makes for less work Snort has to do.
 
 .. image:: /_static/ids-ips/pfsense-2-3-suppress-list.png
+   :align: center
 
 On the Suppress List Edit page, suppress lists may be manually added or
 edited. It is usually easier and faster to add suppress list entries by
@@ -29,8 +30,10 @@ clicking the |fa-plus| icons shown with the alert entries on the
 when manually editing Suppress List entries.
 
 .. image:: /_static/ids-ips/pfsense-2-3-suppress-list-detail.png
+   :align: center
 
 Lists with comments are easier to manipulate and fine tune. Neither
 screen shot shows IP address suffix in a suppress entry.
 
 .. image:: /_static/ids-ips/snortsuppresslistedit.png
+   :align: center

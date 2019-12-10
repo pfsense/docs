@@ -156,6 +156,7 @@ used, use https on the URL to access the webGUI this way.
 Here is how to setup a port 80 tunnel in PuTTY:
 
 .. image:: /_static/usermanager/puttytunnel.jpg
+   :align: center
 
 Fill out the options as shown, then click add. Once connected and
 authenticated, the webGUI may be accessed using the redirected local

@@ -20,6 +20,7 @@ Only the most recent 100 encrypted configurations for each device are retained
 on Netgate servers.
 
 .. image:: /_static/backup/acb-service.jpg
+   :align: center
 
 Configuration
 -------------

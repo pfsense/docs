@@ -33,6 +33,7 @@ Begin by enabling IPsec.
 -  Click **Save**
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_003.jpg
+   :align: center
 
 Now, create a phase 1 entry.
 
@@ -73,10 +74,12 @@ the less clients have to enter manually. Enter the following values.
 +------------------------+---------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_016.jpg
+   :align: center
 
 When finished, click **Save**, then click **Apply Changes**.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_005.jpg
+   :align: center
 
 After saving, a warning will appear **Support for IPsec Mobile clients
 is enabled but a Phase1 definition was not found. Please click Create to
@@ -85,6 +88,7 @@ define one.**
 Click the **Create Phase1** button.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_007.jpg
+   :align: center
 
 Clicking the button will load the appropriate page to create a Phase 1
 for mobile clients.
@@ -125,6 +129,7 @@ following values:
 +-------------------------+------------------+--------------------------------------------------------------+
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_008.jpg
+   :align: center
 
 Click **Save**.
 
@@ -134,6 +139,7 @@ changed. You must apply the changes in order for them to take effect**.
 Click **Apply changes**.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_009.jpg
+   :align: center
 
 The notice for **The changes have been applied successfully.** may be
 ignored. The neurotics among us may click the **Close** button but
@@ -144,11 +150,13 @@ With phase 1 created, we can create a phase 2.
 Click |fa-plus| to list the Phase 2 entries under the newly created Phase 1.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_010.jpg
+   :align: center
 
 Surprise! There aren't any. Create one by clicking |fa-plus| in the Phase 2
 list.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_010.jpg
+   :align: center
 
 This will open the *VPN: IPsec: Edit Phase 2: Mobile Client* page.
 
@@ -180,10 +188,12 @@ values:
 +---------------------------+-----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_013.jpg
+   :align: center
 
 Click **Save**, then click **Apply changes**.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_015.jpg
+   :align: center
 
 We're almost done here. We need to create user accounts so someone can
 actually use the tunnel.
@@ -198,6 +208,7 @@ the scope of this document.
 Click |fa-plus| to create a new Pre-Shared Key.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_018.jpg
+   :align: center
 
 For identifiers, e-mail addresses are commonly used as they are more
 unique than first or last names. Any identifier may be used so long as
@@ -211,11 +222,13 @@ https://www.grc.com/passwords.htm. (Use the string in the middle: 63
 random printable ASCII characters). Offline tools are preferred.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_019.jpg
+   :align: center
 
 Press **Save**, wait for the page to load, note that the key is now in
 the list and press **Apply changes**.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_020.jpg
+   :align: center
 
 Congratulations, the firewall configuration is complete.
 
@@ -232,6 +245,7 @@ Once finished, open ipseca.exe. The VPN Access Manager window is
 presented. (Window title bar is missing in the screenshots)
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_024.jpg
+   :align: center
 
 Press the big round **Add** button to set up a tunnel configuration.
 
@@ -241,12 +255,14 @@ the Shrew Soft VPN client may change so in case of doubt, stick to the
 screenshots.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_025.jpg
+   :align: center
 
 On the **Client** tab, set **NAT Traversal** to **force-rfc** and
 uncheck **Enable Dead Peer Detection**. If these settings are wrong,
 an established tunnel may not let any traffic through.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_026.jpg
+   :align: center
 
 Don't change anything on the **Name Resolution** tab; these settings are
 all automatically set by the pfSense software. Relevant information
@@ -254,10 +270,13 @@ could be entered here but if the settings were configured on the firewall,
 they need not be set here.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_028.jpg
+   :align: center
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_029.jpg
+   :align: center
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_030.jpg
+   :align: center
 
 Go to the **Authentication tab**. Set **Authentication Method** to
 **Mutual PSK**. Under **Local Identity**, choose **Key Identifier** as
@@ -265,16 +284,19 @@ the **Identification Type** and enter the user's e-mail address (or
 whatever was used as an identifier) in the **Key ID String** field.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_031.jpg
+   :align: center
 
 Under **Remote Identity**, set **Identification Type** to **IP Address**
 and check **Use a discovered remote host address**.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_032.jpg
+   :align: center
 
 Finally, under **Credentials**, enter the Pre Shared Key associated with
 the e-mail address.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_033.jpg
+   :align: center
 
 Now scroll over to the **Phase 1** tab. Set the **Cipher Algorithm** to
 **aes** or whatever was entered on the Phase 1 page in the pfSense software.
@@ -282,30 +304,36 @@ Now scroll over to the **Phase 1** tab. Set the **Cipher Algorithm** to
 to **sha1**. Set the **Key Life Time limit** to **3600**.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_034.jpg
+   :align: center
 
 **Phase 2** tab: set **Transform Algorithm** to **esp-3des**, **HMAC
 Algorithm** to **sha1** and **PFS Exchange** to **group 2**.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_035.jpg
+   :align: center
 
 Nearly there! Go to the **Policy** tab and set **Policy Generation
 Level** to **unique**.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_036.jpg
+   :align: center
 
 Click **Save** and give the newly created configuration an appropriate
 name.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_037.jpg
+   :align: center
 
 Double-click the configuration and the tunnel window will pop up. Click
 **Connect** to start the tunnel.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_038.jpg
+   :align: center
 
 Click **Disconnect** to... disconnect the tunnel.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_040.jpg
+   :align: center
 
 That's it! A working IPsec tunneling system is now in place.
 
@@ -319,6 +347,7 @@ improves the user experience.
 In the VPN Access Manager, go to **File** > **Preferences**.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_041.jpg
+   :align: center
 
 For Access Manager and VPN Connect, set **Windows Style** to **Visible
 in System Tray only** and check **Remember when connection succeeds**.
@@ -326,6 +355,7 @@ No need to remember the user name since we're not using user names but
 pre-shared keys.
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_042.jpg
+   :align: center
 
 A shortcut may be created directly to the tunnel: create a shortcut to
 ipsecc.exe (in ``c:\program files`` etc.). Right-click the shortcut and
@@ -336,6 +366,7 @@ tunnel name. If the tunnel was named "Work", write "Work" in stead of
 "MyTunnel".
 
 .. image:: /_static/vpn/ipsec/vb_howto_ipsec_043.jpg
+   :align: center
 
 Now when the shortcut is double clicked, the tunnel is automatically
 started.

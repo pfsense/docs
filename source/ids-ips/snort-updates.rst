@@ -23,4 +23,5 @@ the file download date and time are shown. Also note the last update
 time and result are shown in the center of the page.
 
 .. image:: /_static/ids-ips/snortupdaterulesstatus2.png
+   :align: center
 

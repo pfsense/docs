@@ -29,10 +29,12 @@ Then in the **Plan** drop down, select the plan. This should adequately
 fill in all the PPP details needed for the connection. Click **Save**.
 
 .. image:: /_static/cellular/3g-setup-1.png
+   :align: center
 
 At the PPPs screen, the newly created PPP interface will be listed.
 
 .. image:: /_static/cellular/3g-setup-2.png
+   :align: center
 
 Assigning the PPP Interface
 ---------------------------
@@ -42,6 +44,7 @@ assignments** tab, and click the **+** to add a new interface. Select
 the PPP interface, click **Save**, then **Apply changes**.
 
 .. image:: /_static/cellular/3g-setup-3.png
+   :align: center
 
 Enable the PPP Interface
 ------------------------

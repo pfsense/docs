@@ -19,6 +19,7 @@ respond to pings.
 If all gateways show online, it's OK.
 
 .. image:: /_static/routing/pfstsstatus.png
+   :align: center
 
 If a gateway is down/pending for no apparent reason
 ---------------------------------------------------

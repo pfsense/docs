@@ -38,6 +38,7 @@ This will only work with single port forwards or ranges of less than 500
 ports. It does not work with UDP or other protocols.
 
 .. image:: /_static/nat/natreflection.png
+   :align: center
 
 Method 2: Split DNS
 -------------------
@@ -69,5 +70,7 @@ Example:
 Screenshots that show the above in practice:
 
 .. image:: /_static/nat/splitdns-forwarder-add.png
+   :align: center
 
 .. image:: /_static/nat/splitdns-forwarder-example.png
+   :align: center

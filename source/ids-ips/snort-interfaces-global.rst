@@ -20,6 +20,7 @@ rules. If the Emerging Threats Pro rules are enabled, the Emerging
 Threats Open rules are automatically disabled.
 
 .. image:: /_static/ids-ips/enablesnortrulesdownloads.png
+   :align: center
 
 To use the Snort VRT rules package, check the **Install Snort VRT
 rules** checkbox and then enter the Oinkmaster code in the textbox that
@@ -45,6 +46,7 @@ Snort VRT or Emerging Threats web sites at 3 minutes past midnight and 3
 minutes past noon each day for any posted rule package updates.
 
 .. image:: /_static/ids-ips/snortrulesupdatesettings.png
+   :align: center
 
 General Settings
 ----------------
@@ -79,3 +81,4 @@ package is removed.
 configuration is retained when the Snort package is removed.
 
 .. image:: /_static/ids-ips/snortglobaltabgeneralsettings.png
+   :align: center

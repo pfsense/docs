@@ -29,6 +29,7 @@ needed.
 When complete, the port forward should appear as follows:
 
 .. image:: /_static/dns/redirect_dns_port_forward.png
+   :align: center
 
 If DNS requests to other DNS servers are blocked, such as in the
 :doc:`Blocking DNS queries to external resolvers </dns/blocking-dns-queries-to-external-resolvers>` example,

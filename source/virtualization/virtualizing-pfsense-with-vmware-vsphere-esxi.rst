@@ -48,11 +48,13 @@ click on Virtual switches tab. From there, click on "Add a new standard
 virtual switch".
 
 .. image:: /_static/virtualization/vsphereaddswitch1.png
+   :align: center
 
 Add two Virtual switches, one for WAN and another for LAN. For uplink
 select two separate available ports.
 
 .. image:: /_static/virtualization/vsphereaddswitch2.png
+   :align: center
 
 Creating port groups
 --------------------
@@ -62,6 +64,7 @@ groups tab click on "Add port group". Add WAN and LAN port groups, each
 using WAN and LAN switches respectively.
 
 .. image:: /_static/virtualization/vsphereaddport1.png
+   :align: center
 
 Creating a pfSense VM
 ---------------------
@@ -71,16 +74,19 @@ From the dashboard click on "Create/Register VM". On the first wizard screen
 select "Create a new virtual machine".
 
 .. image:: /_static/virtualization/vsphereweb1.png
+   :align: center
 
 On the second page of the wizard, enter a name for your VM and select
 correct Guest OS version.
 
 .. image:: /_static/virtualization/vsphereweb2.png
+   :align: center
 
 On the third page of the wizard, select the datastore where you want
 to keep your pfSense VM.
 
 .. image:: /_static/virtualization/vsphereweb3.png
+   :align: center
 
 On wizard page four, add another Network Adapter and select the WAN
 and LAN virtual switches for each of the network adapters. Modify
@@ -91,10 +97,12 @@ assign interfaces with the first boot. For the purpose of this guide
 we used E1000 adapter type.
 
 .. image:: /_static/virtualization/vsphereweb4.png
+   :align: center
 
 On the final wizard screen confirm the settings and click finish.
 
 .. image:: /_static/virtualization/vsphereweb5.png
+   :align: center
 
 pfSense software installation
 -----------------------------
@@ -103,33 +111,40 @@ Once the pfSense virtual machine is created, under vSphere web client
 navigator click on "Virtual Machines" and select your newly created VM.
 
 .. image:: /_static/virtualization/prepower.png
+   :align: center
 
 Power on the virtual machine.
 
 .. image:: /_static/virtualization/poweredon.png
+   :align: center
 
 On the next screen, press "I" to invoke installer mode.
 
 .. image:: /_static/virtualization/selectvirtual.png.png
+   :align: center
 
 After the pfSense installer boots you will be greeted by the setup
 wizard. Select "Accept these settings"
 
 .. image:: /_static/virtualization/pfsensetup.png
+   :align: center
 
 On the following screen choose "Quick/Easy Install" after which
 installation starts.
 
 .. image:: /_static/virtualization/screen_shot_2017-07-25_at_17.49.32.png
+   :align: center
 
 When prompted, select "Standard Kernel".
 
 .. image:: /_static/virtualization/screen_shot_2017-07-25_at_17.50.11.png
+   :align: center
 
 After that installation completes and pfSense software boots up for the
 first time.
 
 .. image:: /_static/virtualization/screen_shot_2017-07-25_at_17.57.04.png
+   :align: center
 
 Installing Open-VM-Tools
 ------------------------
@@ -139,6 +154,7 @@ Open-VM-Tools. Reboot is not necessary afterwards, however make sure the
 Open-VM-Tools service is running under Status > Services.
 
 .. image:: /_static/virtualization/screen_shot_2017-07-25_at_18.09.41.png
+   :align: center
 
 Congratulations, you have successfully completed pfSense installation
 on ESXi!
@@ -156,6 +172,7 @@ In the vSphere client the network diagram for an ESXi host may be viewed
 by clicking **Networking** on the **Configuration** tab:
 
 .. image:: /_static/virtualization/esxi_pfs_2_1a.png
+   :align: center
 
 After ESXi was installed, before it was possible to connect to it with
 the vSphere client, a physical network adapter (a "vmnic" in the
@@ -207,14 +224,17 @@ Group from "Virtual Machine Network" to something a bit more meaningful.
 Click the **Properties...** link for vmnic0:
 
 .. image:: /_static/virtualization/esxi_pfs_2_1c.png
+   :align: center
 
 Highlight the Virtual Machine Network and click the Edit button.
 
 .. image:: /_static/virtualization/esxi_pfs_2_1b.png
+   :align: center
 
 Change the **Network label** to "LAN" and click OK then Close.
 
 .. image:: /_static/virtualization/esxi_pfs_2_2a.png
+   :align: center
 
 This makes life a little easier when we assign virtual network
 interfaces to the pfSense instance.
@@ -243,16 +263,19 @@ vSwitch. Click the Add Networking link at the top right of the
 Networking screen and the following dialog will appear.
 
 .. image:: /_static/virtualization/esxi_pfs_2_3a.png
+   :align: center
 
 We are adding a Virtual Machine network so select that option and
 click Next.
 
 .. image:: /_static/virtualization/esxi_pfs_2_4a.png
+   :align: center
 
 We want this NIC to be attached to a new vSwitch so select Create a
 virtual switch and check vmnic1. Click Next.
 
 .. image:: /_static/virtualization/esxi_pfs_2_5a.png
+   :align: center
 
 As we did with the LAN, let's give this VM Port Group a more
 meaningful name of "WAN". Click Next.
@@ -262,6 +285,7 @@ The next dialog simply confirms that everything looks OK. Click Finish.
 The networking diagram should now look like this:
 
 .. image:: /_static/virtualization/esxi_pfs_2_6a.png
+   :align: center
 
 Now we can configure a new virtual machine on which pfSense software
 will be installed.
@@ -276,6 +300,7 @@ Configuration
 ~~~~~~~~~~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-1a.png
+   :align: center
 
 In the **Configuration** window, I always like to take the **Custom**
 option. (I've never really trusted what someone else thinks is
@@ -285,6 +310,7 @@ Name and Location
 ~~~~~~~~~~~~~~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-2a.png
+   :align: center
 
 In the Name and Location window, let's give the virtual machine a
 meaningful name like "pfSense" and click **Next**
@@ -293,6 +319,7 @@ Storage
 ~~~~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-3a.png
+   :align: center
 
 Now we need to decide where disk storage will be allocated to hold the
 configuration and operating files for the virtual machine. (This is
@@ -306,6 +333,7 @@ Virtual Machine Version
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-4a.png
+   :align: center
 
 Here is where the virtual machine version to use for the pfSense
 installation is configured in ESXi. Note the warning above. Select
@@ -315,6 +343,7 @@ Guest operating System
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-5a.png
+   :align: center
 
 pfSense software is built on the FreeBSD operating system, not Linux.
 Select **Other** and chose **FreeBSD (32-bit)** or **FreeBSD (64-bit)**.
@@ -329,6 +358,7 @@ CPUs
 ~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-6a.png
+   :align: center
 
 To get started, a single-socket, single-core configuration will do for
 now. This and other virtual machine settings can always be changed
@@ -338,6 +368,7 @@ Memory
 ~~~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-7a.png
+   :align: center
 
 Depending on the number and type of packages that will be installed on
 the pfSense software, a basic pfSense VM should run comfortably in
@@ -358,6 +389,7 @@ Network
 ~~~~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-8a.png
+   :align: center
 
 Remember that the two virtual networks were renamed to LAN and WAN.
 This is where we attach those networks to the pfSense virtual machine.
@@ -384,6 +416,7 @@ SCSI Controller
 ~~~~~~~~~~~~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-9a.png
+   :align: center
 
 An emulation of an LSI Logic SCSI controller is offered on this system
 and, as far as I know, the recommendation is based on the operating
@@ -394,6 +427,7 @@ Select a Disk
 ~~~~~~~~~~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-10a.png
+   :align: center
 
 This is where the operating system will build its file system.
 
@@ -403,6 +437,7 @@ Create a Disk
 ~~~~~~~~~~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-11a.png
+   :align: center
 
 In this example, the virtual disk was given a capacity of *8GB* but
 there is quite a lot to spare and *8GB* isn't really that much these
@@ -418,6 +453,7 @@ Advanced Options
 ~~~~~~~~~~~~~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-12a.png
+   :align: center
 
 Like it says – these options do not normally need to be changed.
 **Next.**
@@ -426,6 +462,7 @@ Ready to Complete
 ~~~~~~~~~~~~~~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-13a.png
+   :align: center
 
 Now a summary of what has been configured so far for this virtual
 machine is displayed.
@@ -439,6 +476,7 @@ Editing the Virtual Machine's Properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: /_static/virtualization/esxi_pfs_3-14b.png
+   :align: center
 
 In the Virtual Machine Properties dialog select the **Hardware** tab
 and then the line **New CD/DVD (Adding)** line. In the right-hand pane
@@ -508,6 +546,7 @@ Booting the VM from CD/DVD
         tab.
 
         .. image:: /_static/virtualization/esxi_pfs_4-1a.png
+   :align: center
 
         Because the CD drive is not attached to the virtual machine yet,
         it may attempt to boot from the network or it may be showing an
@@ -542,12 +581,14 @@ However, it's included here to save jumping around between documents.**
    press Ctl+Alt.
 
 .. image:: /_static/virtualization/esxi_pfs_4-1a.png
+   :align: center
 
 Allow the timer to expire and boot the pfSense software from the "Live CD".
 
 When the following console message is seen:
 
 .. image:: /_static/virtualization/esxi_pfs_4-3a.png
+   :align: center
 
 Type *i* to launch the pfSense installer.
 
@@ -556,14 +597,19 @@ fairly self explanatory. Take the highlighted choice in each of the
 following screenshots:
 
 .. image:: /_static/virtualization/esxi_pfs_4_4a.png
+   :align: center
 
 .. image:: /_static/virtualization/esxi_pfs_4_5a.png
+   :align: center
 
 .. image:: /_static/virtualization/esxi_pfs_4_6a.png
+   :align: center
 
 .. image:: /_static/virtualization/esxi_pfs_4_7a.png
+   :align: center
 
 .. image:: /_static/virtualization/esxi_pfs_4_8a.png
+   :align: center
 
 At this point the pfSense virtual machine will reboot and **the CD must
 be removed from the drive**.
@@ -574,11 +620,13 @@ Interface Assignment
 Next up, the pfSense boot menu returns.
 
 .. image:: /_static/virtualization/esxi_pfs_4-2a.png
+   :align: center
 
 As the pfSense software is already installed on the virtual disk,
 allow the timer to expire.
 
 .. image:: /_static/virtualization/esxi_pfs_4_9a.png
+   :align: center
 
 Once the pfSense software has booted the message: **Network interface
 mismatch – Running interface assignment option** is shown. This 
@@ -596,6 +644,7 @@ First of all, though, as VLANs are not needed, type *n* and press
 **return**.
 
 .. image:: /_static/virtualization/esxi_pfs_4_10a.png
+   :align: center
 
 The order that the virtual NICs were assigned to the pfSense instance 
 when the virtual machine was setup is important here. Generally, ESXi
@@ -621,20 +670,24 @@ So go ahead and enter the WAN interface name, *em0* in this example, and
 press return.
 
 .. image:: /_static/virtualization/esxi_pfs_4_11a.png
+   :align: center
 
 Now enter the LAN interface name, "em1" in this example, and press
 return.
 
 .. image:: /_static/virtualization/esxi_pfs_4_12a.png
+   :align: center
 
 As there are not any OPT interfaces, yet, press return.
 
 .. image:: /_static/virtualization/esxi_pfs_4_13a.png
+   :align: center
 
 Lastly, check that the interface assignments are correct, enter "y"
 and press return.
 
 .. image:: /_static/virtualization/esxi_pfs_4_14a.png
+   :align: center
 
 After a short interval, the pfSense VM will reconfigure itself,
 restart and present the main pfSense screen, above.
@@ -684,15 +737,18 @@ Configuration tab and the Networking link. The ESXi network diagram is
 displayed.
 
 .. image:: /_static/virtualization/esxi_pfs_5_1.png
+   :align: center
 
 Click the Add Networking link near the top right of the Network pane.
 
 .. image:: /_static/virtualization/esxi_pfs_5_1a.png
+   :align: center
 
 We want to add a new virtual machine network, so select that option
 and click Next.
 
 .. image:: /_static/virtualization/esxi_pfs_5_2a.png
+   :align: center
 
 Choose the option to Create a vSphere standard switch. We aren't going
 to need a physical NIC – it is going to be virtual - so make sure that
@@ -700,37 +756,44 @@ if there are more physical NICs in the ESXi host, none of them are
 selected, then click **Next**
 
 .. image:: /_static/virtualization/esxi_pfs_5_3a.png
+   :align: center
 
 As with the LAN and WAN, give the new network a name. "DMZ" would be
 good. Click **Next**.
 
 .. image:: /_static/virtualization/esxi_pfs_5_4a.png
+   :align: center
 
 Click Finish.
 
 .. image:: /_static/virtualization/esxi_pfs_5_5a.png
+   :align: center
 
 Now the Networking diagram will look like this - just a vSwitch and a
 Virtual Machine Port group called "DMZ" with no physical NICs
 attached.
 
 .. image:: /_static/virtualization/esxi_pfs_5_5b.png
+   :align: center
 
 The next step is to connect the pfSense VM to this new DMZ network.
 Right-click the pfSense virtual machine and select **Edit Settings**.
 Click the **Add** button.
 
 .. image:: /_static/virtualization/esxi_pfs_5_6.png
+   :align: center
 
 Choose **Ethernet adapter** and click Next.
 
 .. image:: /_static/virtualization/esxi_pfs_5_7.png
+   :align: center
 
 As was done for WAN and LAN, choose the **E1000** type of virtual
 network adapter. Select **DMZ** from the drop-down list of available
 networks and choose **Connect at power on**. Click **Next**.
 
 .. image:: /_static/virtualization/esxi_pfs_5_8.png
+   :align: center
 
 Now the network diagram should look like the above.
 

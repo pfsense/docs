@@ -90,6 +90,7 @@ The following formula calculates the adaptive timeout factor at the
 Firewall Maximum States limit:
 
 .. image:: /_static/config/firewall_adaptive_timeouts_solved_for_factor_at_limit.png
+   :align: center
 
 For example, if the limit is 100.000, the first parameter is 60.000 and
 the second parameter is 120.000, timeouts would be reduced to 1/3 (~33%)
@@ -98,6 +99,7 @@ when the state table is full.
 Solving the formula for the second parameter yields:
 
 .. image:: /_static/config/firewall_adaptive_timeouts_solved_for_a2.png
+   :align: center
 
 For example, if the state table limit is set to 100.000, adaptive
 timeouts should start at 60.000 and the desired timeout factor for a

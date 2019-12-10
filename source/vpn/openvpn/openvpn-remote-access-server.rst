@@ -63,6 +63,7 @@ Fill in the fields to **Create a new Certificate Authority**
 Click **Add New CA**
 
 .. image:: /_static/vpn/openvpn/openvpn_ra-ca.png
+   :align: center
 
 Server Certificate
 ~~~~~~~~~~~~~~~~~~
@@ -74,6 +75,7 @@ changed.
 Click **Create new Certificate**
 
 .. image:: /_static/vpn/openvpn/openvpn_ra-cert.png
+   :align: center
 
 OpenVPN Server Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -125,10 +127,12 @@ Look at firewall rules (**WAN** and **OpenVPN** tabs)
    *WAN address*
 
 .. image:: /_static/vpn/openvpn/openvpn_ra-wanrule.png
+   :align: center
 
 -  **OpenVPN** tab rule should allow anything from any/to any
 
 .. image:: /_static/vpn/openvpn/openvpn_ra-ovpnrule.png
+   :align: center
 
 Adjustments
 -----------
@@ -196,6 +200,7 @@ manager.
 -  Fill in the **Descriptive Name** as the *username*
 
 .. image:: /_static/vpn/openvpn/openvpn_ra-usercert.png
+   :align: center
 
 -  Choose the appropriate **Certificate Authority**
 -  Click **Save**
@@ -217,6 +222,7 @@ To Install the OpenVPN Client Export Package
 -  Find **OpenVPN Client Export Package** in the list
 
 .. image:: /_static/vpn/openvpn/openvpn_ra-expinstall.png
+   :align: center
 
 -  Click |fa-plus|
 -  Click **Confirm**
@@ -235,6 +241,7 @@ Exporting a Configuration
    appropriate configuration type to export.
 
 .. image:: /_static/vpn/openvpn/openvpn_ra-expoptions.png
+   :align: center
 
 The Windows Installer choices are the most common. The "Inline"
 configuration choices are best when using a current client that isn't

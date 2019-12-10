@@ -45,6 +45,7 @@ address on this rule could be limited to the remote endpoint IP of the
 gif tunnel, or *any*. It could allow for all icmp or just echoreq.
 
 .. image:: /_static/interfaces/ipv6_howto_wan_icmp.png
+   :align: center
 
 Create GIF Interface
 ~~~~~~~~~~~~~~~~~~~~
@@ -71,6 +72,7 @@ Note: If a tunnel is being attached to a dynamic WAN IP, look at **Keep
 the Tunnel Endpoint Up-To-Date** later in this document.
 
 .. image:: /_static/interfaces/ipv6_howto_gif_config.png
+   :align: center
 
 Assign GIF Interface
 --------------------
@@ -81,6 +83,7 @@ been renamed *HENETv6*. Click **Save** and **Apply Changes** if they
 appear.
 
 .. image:: /_static/interfaces/ipv6_howto_gif_assign.png
+   :align: center
 
 Configure OPT Interface
 -----------------------
@@ -89,6 +92,7 @@ With the OPT interface assigned, the OPT interface may be enabled from
 the **Interfaces** menu. Keep **IPv6 Configuration Type** set to *None*.
 
 .. image:: /_static/interfaces/ipv6_howto_gif_interface.png
+   :align: center
 
 MTU Values
 ~~~~~~~~~~
@@ -100,6 +104,7 @@ account and edit the tunnel. In the **Advanced options**, move the
 **MTU** slider (1) until the **MTU** reads **1452** (2).
 
 .. image:: /_static/interfaces/ipv6_howto_mtu.png
+   :align: center
 
 Set Gateway
 -----------
@@ -109,11 +114,13 @@ Now edit it and set the **Default Gateway** option, keeping the gateway
 field set to *dynamic*.
 
 .. image:: /_static/interfaces/ipv6_howto_gateway_settings.png
+   :align: center
 
 If all of the settings were entered correctly and the tunnel broker is
 working, the gateway will now be listed as online
 
 .. image:: /_static/interfaces/ipv6_howto_gateway_status.png
+   :align: center
 
 Set Up LAN for IPv6
 -------------------
@@ -130,6 +137,7 @@ the routed subnet works.
 -  The **Routed /64 or /48** is the basis for the **IPv6 Address** field
 
 .. image:: /_static/interfaces/ipv6_howto_lan.png
+   :align: center
 
 Set Up DHCPv6 and RA
 --------------------
@@ -145,6 +153,7 @@ address with dhcp for the dns). See :doc:`Router Advertisements </routing/config
 and :doc:`DHCPv6 Server </dhcp/dhcpv6-server>` for more details.
 
 .. image:: /_static/interfaces/ipv6_howto_lan_dhcpv6.png
+   :align: center
 
 Add a rule to let IPv6 out
 --------------------------
@@ -163,6 +172,7 @@ This can be checked with http://test-ipv6.com if the IPv6 connection is
 successfully detected.
 
 .. image:: /_static/interfaces/ipv6_howto_test.png
+   :align: center
 
 Keep the Tunnel Endpoint Up-To-Date
 -----------------------------------

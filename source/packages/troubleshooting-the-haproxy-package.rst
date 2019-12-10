@@ -15,6 +15,7 @@ Stats
 ~~~~~
 
 .. image:: /_static/packages/haproxy-stats.png
+   :align: center
 
 If health checks have been configured on the servers, the backend will
 show what servers are up or down. Layer 7 checks provide the most
@@ -25,14 +26,17 @@ for a second. It will tell what the short error code means in a more
 readable description:
 
 .. image:: /_static/packages/haproxy_check-error-forbidden.png
+   :align: center
 
 There are different error codes that ask for different resolution.
 
 .. image:: /_static/packages/haproxy_check-error-connectionerror.png
+   :align: center
 
 or
 
 .. image:: /_static/packages/haproxy_check-error-timeout.png
+   :align: center
 
 A layer 4 issue might indicate that a wrong server ip or port was filled
 in, or that the server is not running / accepting connections. A

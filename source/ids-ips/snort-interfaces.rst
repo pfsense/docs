@@ -7,12 +7,14 @@ also manually started and stopped. If *Barnyard2* is configured on an
 interface, it can also be started or stopped.
 
 .. image:: /_static/ids-ips/snortinterfacesrunning.png
+   :align: center
 
 The green icon indicates a running Snort process for the interface. To stop a
 running process, click the |fa-check-circle| icon and wait for it to change to
 |fa-times-circle| as shown below.
 
 .. image:: /_static/ids-ips/snortinterfacesstart.png
+   :align: center
 
 To add a new Snort configuration for an interface, click **Add**.
 

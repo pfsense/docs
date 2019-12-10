@@ -10,10 +10,12 @@ of the logged alerts to a local machine. The **CLEAR** button is used to
 erase the current alerts log.
 
 .. image:: /_static/ids-ips/snortalerts.png
+   :align: center
 
 **Alert Details**
 
 .. image:: /_static/ids-ips/snortalertdetails.png
+   :align: center
 
 The **Date** column shows the date and time the alert was generated. The
 remaining columns show data from the rule that generated the alert.

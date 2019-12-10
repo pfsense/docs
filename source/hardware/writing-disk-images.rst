@@ -42,6 +42,7 @@ simplest and most reliable method is to use **diskpart**.
 -  Start a command prompt as Administrator
 
 .. image:: /_static/hardware/ admin_cmd_prompt.png
+   :align: center
 
 -  Run **diskpart**
 -  Type **list disk** to show the disks connected to the system. One of
@@ -53,6 +54,7 @@ simplest and most reliable method is to use **diskpart**.
 The full **diskpart** session can be seen here:
 
 .. image:: /_static/hardware/imgwriter_02_clean_target_disk.png
+   :align: center
 
 Linux
 ^^^^^
@@ -102,6 +104,7 @@ http://www.7-zip.org/
 -  Click **Extract Here**
 
 .. image:: /_static/hardware/imgwriter_01_extract.png
+   :align: center
 
 Then, write the image
 
@@ -116,11 +119,13 @@ Then, write the image
 -  Click Write (3)
 
 .. image:: /_static/hardware/imgwriter_03_select_image.png
+   :align: center
 
 -  Wait for the image to finish writing, and the following dialog will
    appear:
 
 .. image:: /_static/hardware/imgwriter_04_finished.png
+   :align: center
 
 Writing Images in UNIX
 ----------------------

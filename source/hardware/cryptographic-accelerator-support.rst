@@ -155,6 +155,7 @@ Here is a chart showing VPN throughput on an ALIX.2D3. Note the higher
 performance when using the accelerated ciphers with *glxsb*.
 
 .. image:: /_static/hardware/alix2d3_vpn_throughput.png
+   :align: center
 
 The Hifn accelerator is a much better performer, increasing maximum
 throughput on an ALIX to around 34 Mbps.

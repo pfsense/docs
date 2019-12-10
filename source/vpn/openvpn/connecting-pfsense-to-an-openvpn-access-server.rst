@@ -41,6 +41,7 @@ install the package with *dpkg* and then set the password on the OpenVPN
 account it creates.
 
 .. image:: /_static/vpn/openvpn/instopenvpnas.png
+   :align: center
 
 Go to the OpenVPN URL it lists
 ------------------------------
@@ -56,11 +57,13 @@ permissions on the account to autologin. Make sure to save that and then
 it will ask to update the running server - click OK.
 
 .. image:: /_static/vpn/openvpn/autologinopenvpnas.png
+   :align: center
 
 Logout and go back to the main non-admin URL and login again and you
 will see the autologin profile to download
 
 .. image:: /_static/vpn/openvpn/downloadprofile.png
+   :align: center
 
 This is a good time to validate it is working by using that *.ovpn*
 configuration on a machine running the OpenVPN client or use the connect

@@ -72,6 +72,7 @@ Example Firewall Rule Setup
 *  **Description**: *Allow remote management from anywhere (Dangerous!)*
 
 .. image:: /_static/firewall/remoteadminexample.png
+   :align: center
 
 Strict Management
 -----------------
