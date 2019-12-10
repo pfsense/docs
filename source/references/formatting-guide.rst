@@ -221,6 +221,7 @@ Images
 .. code:: console
 
    .. image:: /_static/<filename>.png
+      :align: center
       :alt: <alternative_text_that_describes_the_image>
       :target: /_static/<filename>.png
 
