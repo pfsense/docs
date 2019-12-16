@@ -280,3 +280,4 @@ Web Interface
 * Fixed platform detection for certain C2558/C2758 systems `#6846 <https://redmine.pfsense.org/issues/6846>`__
 * Set ``autocomplete=new-password`` for forms containing authentication fields to help prevent browser auto-fill from completing irrelevant fields `#9864 <https://redmine.pfsense.org/issues/9864>`__
 * Fixed processing of shortcuts for XML-based packages `#9770 <https://redmine.pfsense.org/issues/9770>`__
+* Updated jQuery `#9407 <https://redmine.pfsense.org/issues/9407>`__

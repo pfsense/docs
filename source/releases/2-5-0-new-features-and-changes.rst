@@ -254,7 +254,6 @@ Web Interface
 * Added TLS 1.3 to GUI and Captive Portal web server configuration, and removed older versions (TLS 1.0 removed from Captive Portal, TLS 1.1 removed from GUI) `#9607 <https://redmine.pfsense.org/issues/9607>`__
 * Fixed empty lines in various forms throughout the GUI `#9449 <https://redmine.pfsense.org/issues/9449>`__
 * Improved validation of FQDNs `#9023 <https://redmine.pfsense.org/issues/9023>`__
-* Updated jQuery `#9407 <https://redmine.pfsense.org/issues/9407>`__
 * Added ``poly1305-chacha20`` to ``nginx`` cipher list `#9896 <https://redmine.pfsense.org/issues/9896>`__
 
 Wireless
