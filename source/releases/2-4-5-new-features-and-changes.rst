@@ -115,6 +115,7 @@ DNS
 * Added ``127.0.0.0/8`` to the DNS Resolver ``private-address`` list for DNS rebinding protection `#9708 <https://redmine.pfsense.org/issues/9708>`__
 * Fixed CIDR selection issues with /32 entries in DNS Resolver Access List entries `#9586 <https://redmine.pfsense.org/issues/9586>`__
 * Fixed an issue saving DNS over TLS hostnames on systems with only one gateway `#9898 <https://redmine.pfsense.org/issues/9898>`__
+* Fixed an issue where manually configured DNS servers may not have been active if "allow override" was disabled and they were also assigned dynamically `#9963 <https://redmine.pfsense.org/issues/9963>`__
 
 Dynamic DNS
 -----------
@@ -214,6 +215,7 @@ Rules / NAT
 -----------
 
 * Fixed state kill ordering in rc.newwanip `#4674 <https://redmine.pfsense.org/issues/4674>`__
+* Added the ability to search firewall logs by tracking ID `#8703 <https://redmine.pfsense.org/issues/8703>`__
 
 S.M.A.R.T.
 ----------
@@ -229,6 +231,7 @@ Traffic Shaping / Limiters
 --------------------------
 
 * Added input validation for Limiter delay values `#9921 <https://redmine.pfsense.org/issues/9921>`__
+* Fixed the queue statistics parser to handle large values `#9938 <https://redmine.pfsense.org/issues/9938>`__
 
 Translations
 ------------
@@ -241,6 +244,11 @@ Upgrade / Installation
 * Revised update check to provide a more consistent version string in JSON format `#9778 <https://redmine.pfsense.org/issues/9778>`__
 * Disabled serial console on VGA memstick images `#9488 <https://redmine.pfsense.org/issues/9488>`__
 * Fixed a PHP error when upgrading older configurations from revision 14.4 to 14.5 `#9840 <https://redmine.pfsense.org/issues/9840>`__
+
+UPnP
+----
+
+* Fixed display of active UPnP sessions when configured with an alternate external address `#9961 <https://redmine.pfsense.org/issues/9961>`__
 
 User Manager / Privileges
 -------------------------
