@@ -12,17 +12,15 @@ through squid, and thus originate from the pfSense firewall itself.
 The easy way around this is to allow that system to bypass the proxy
 like so:
 
--  Click **Services > Proxy Server**
--  Type the local IP Address of the system in the **Do NOT proxy these
+#. Click **Services > Proxy Server**
+#. Type the local IP Address of the system in the **Do NOT proxy these
    IPs** text box
--  Click **Save**
+#. Click **Save**
 
 To proxy the web traffic and verify the 1:1 mapping is working properly,
 find some other service to verify with, such as:
 
--  Login to a remote system and watch the firewall logs or tcpdump
--  Initiate some traffic from the system and verify the traffic is
-   originating from the proper IP Address.
-
-Or access an HTTPS site that does not flow through the proxy.
-
+- Login to a remote system and watch the firewall logs or tcpdump.
+- Initiate some traffic from the system and verify the traffic is
+  originating from the proper IP Address.
+- Access an HTTPS site that does not flow through the proxy.
