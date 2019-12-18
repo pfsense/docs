@@ -257,6 +257,9 @@ User Manager / Privileges
 * Added privilege to manage integrated switches `#9620 <https://redmine.pfsense.org/issues/9620>`__
 * Fixed privilege matching to handle JS anchor links `#9550 <https://redmine.pfsense.org/issues/9550>`__
 * Removed wildcards incorrectly used in ``isAllowedPage()`` `#9541 <https://redmine.pfsense.org/issues/9541>`__
+
+  * This issue could prevent a user in the admins group from reaching certain pages such as the User Manager.
+
 * Improved Deny Config Write privilege handling in the User & Group Manager `#9259 <https://redmine.pfsense.org/issues/9259>`__
 * Fixed input validation of group name sizes to allow longer remote groups `#3792 <https://redmine.pfsense.org/issues/3792>`__
 
