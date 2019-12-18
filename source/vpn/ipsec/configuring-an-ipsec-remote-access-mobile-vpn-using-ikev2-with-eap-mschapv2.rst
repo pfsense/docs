@@ -93,11 +93,10 @@ Phase 1
 *  Set **Peer Identifier** to *any*
 *  Select the server certificate created previously for **My Certificate**
 *  Select the appropriate CA for **My Certificate Authority**
-*  Set **Encryption algorithm** to *3DES* or, if there are no iOS/OS X
-   devices, *AES 256*
-*  Set **Hash algorithm** to *SHA1*, or, if there are no iOS/OS X
-   devices, *SHA256*
-*  Set **DH key group** to *2 (1024 bit)*
+*  Set **Algorithm** to *AES*
+*  Set **Key length** to *256 bits*
+*  Set **Hash** to *SHA256*
+*  Set **DH Group** to *14 (2048 bit)*
 
    * Multiple combinations of encryption, hashing, and DH options may be created
      to accommodate various clients with different requirements. Click |fa-plus|
@@ -124,10 +123,9 @@ Phase 2
 
 *  Enter an appropriate **Description**
 *  Set **Protocol** to *ESP*
-*  Set **Encryption algorithms** to *AES Auto* and if there are iOS/OS X
-   devices, also select *3DES*.
-*  Set **Hash algorithms** to *SHA1* and *SHA256*
-*  Set **PFS Key Group** to *off*
+*  Set **Encryption Algorithms** to *AES Auto*.
+*  Set **Hash Algorithms** to *SHA256*
+*  Set **PFS key group** to *14 (2048 bit)*
 *  Set **Lifetime** to *3600*
 *  Click **Save**
 
