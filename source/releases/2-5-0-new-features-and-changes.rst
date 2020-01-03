@@ -142,7 +142,6 @@ Dynamic DNS
 -----------
 
 * Fixed Dynamic DNS Dashboard Widget address parsing for entries with split hostname/domain (e.g. Namecheap) `#9564 <https://redmine.pfsense.org/issues/9564>`__
-* Added support for Gandi LiveDNS Dynamic DNS `#9452 <https://redmine.pfsense.org/issues/9452>`__
 
 Interfaces
 ----------
@@ -173,6 +172,9 @@ IPsec
     * Any usage of ``/usr/local/sbin/ipsec`` or the stroke plugin must also be changed to ``/usr/local/sbin/swanctl`` and VICI. Note that some commands have no direct equivalents, but the same or better information is available in other ways.
     * IPsec start/stop/reload functions now use ``/usr/local/sbin/strongswanrc``
     * IPsec-related functions were converged into ``ipsec.inc``, removed from ``vpn.inc``, and renamed from ``vpn_ipsec_<name>`` to ``ipsec_<name>``
+  * Reworked how reauthentication and rekey behavior functions, giving more control to the user compared to previous options `#9983 <https://redmine.pfsense.org/issues/9983>`__
+* Reformatted ``status_ipsec.php`` to include more available information (rekey timer, encryption key size, IKE SPIs, ports) `#9979 <https://redmine.pfsense.org/issues/9979>`__
+* Added support for PKCS#11 authentication (e.g. hardware tokens such as Yubikey) for IPsec `#9878 <https://redmine.pfsense.org/issues/9878>`__
 
 Logging
 -------
@@ -207,8 +209,6 @@ OpenVPN
 * Updated OpenVPN local auth to handle changes in fcgicli output `#9460 <https://redmine.pfsense.org/issues/9460>`__
 * Added connection count to OpenVPN status and widget `#9788 <https://redmine.pfsense.org/issues/9788>`__
 * Enabled the OpenVPN x509-alt-username build option `#9884 <https://redmine.pfsense.org/issues/9884>`__
-* Added input validation to prevent OpenVPN tunnel network reuse `#3244 <https://redmine.pfsense.org/issues/3244>`__
-* Added Exit Notify to OpenVPN servers/client options `#9078 <https://redmine.pfsense.org/issues/9078>`__
 * Added an option to enable/disable OpenVPN ``username-as-common-name`` `#8289 <https://redmine.pfsense.org/issues/8289>`__
 * Restructured the OpenVPN settings directory layout
 
@@ -230,6 +230,7 @@ Routing
 
 * Enabled the RADIX_MPATH kernel option for multi-path routing `#9544 <https://redmine.pfsense.org/issues/9544>`__
 * Fixed automatic static routes set for DNS gateway bindings not being removed when no longer necessary `#8922 <https://redmine.pfsense.org/issues/8922>`__
+* Fixed route removal to always specify the gateway `#10001 <https://redmine.pfsense.org/issues/10001>`__
 
 Translations
 ------------

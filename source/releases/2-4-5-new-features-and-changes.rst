@@ -124,6 +124,7 @@ Dynamic DNS
 * Fixed errors in DNSimple Dynamic DNS `#9580 <https://redmine.pfsense.org/issues/9580>`__
 * Fixed handling of wildcard (``*``) hostname entries in Cloudflare Dynamic DNS `#9361 <https://redmine.pfsense.org/issues/9361>`__
 * Added support for AAAA records to Digital Ocean Dynamic DNS `#9280 <https://redmine.pfsense.org/issues/9280>`__
+* Fixed issues with Digital Ocean Dynamic DNS handling of empty hostnames `#9602 <https://redmine.pfsense.org/issues/9602>`__
 * Cleaned up whitespace issues in Azure Dynamic DNS backend code `#9271 <https://redmine.pfsense.org/issues/9271>`__
 * Added support for Linode Dynamic DNS `#9268 <https://redmine.pfsense.org/issues/9268>`__
 * Fixed issues with IPv6 on Azure Dynamic DNS `#9248 <https://redmine.pfsense.org/issues/9248>`__
@@ -131,6 +132,7 @@ Dynamic DNS
 * Fixed handling of wildcards in Loopia Dynamic DNS `#8014 <https://redmine.pfsense.org/issues/8014>`__
 * Fixed CloudFlare Dynamic DNS processing when ``proxied`` is enabled `#9362 <https://redmine.pfsense.org/issues/9362>`__
 * Changed hostname to optional for DNS-O-Matic Dynamic DNS `#7601 <https://redmine.pfsense.org/issues/7601>`__
+* Added support for Gandi LiveDNS Dynamic DNS `#9452 <https://redmine.pfsense.org/issues/9452>`__
 
 Gateways
 --------
@@ -163,11 +165,19 @@ IPsec
 * Fixed VTI IPv6 address handling `#9801 <https://redmine.pfsense.org/issues/9801>`__
 * Fixed Child SA button JS hide on status_ipsec.php, along with other cosmetic improvements `#8847 <https://redmine.pfsense.org/issues/8847>`__
 * Added **Connect Children** button to status_ipsec.php to connect when IKE (Phase 1) is up but Child SAs (Phase 2 entries) are not `#9954 <https://redmine.pfsense.org/issues/9954>`__
+* Fixed IPsec Phase 2 Remote Network field show/hide when changing between Phase 2 modes `#9720 <https://redmine.pfsense.org/issues/9720>`__
+
+Logging
+-------
+
+* Moved ``igmpproxy`` logs to ``routing.log`` `#10139 <https://redmine.pfsense.org/issues/10139>`__
+* Moved ``igmpproxy`` verbose logging option to ``services_igmpproxy.php`` (formerly at ``status_logs_settings.php``) `#10139 <https://redmine.pfsense.org/issues/10139>`__
 
 Monitoring
 ----------
 
 * Fixed custom view titles being forced to lower case `#9681 <https://redmine.pfsense.org/issues/9681>`__
+* Fixed packet graph scaling `#9807 <https://redmine.pfsense.org/issues/9807>`__
 
 Notifications
 -------------
@@ -194,6 +204,8 @@ OpenVPN
 * Improved sorting of bytes sent/receives on OpenVPN status page `#7359 <https://redmine.pfsense.org/issues/7359>`__
 * Fixed visibility of the OpenVPN 'interface' option when multihome is selected `#7840 <https://redmine.pfsense.org/issues/7840>`__
 * Reduced the OpenVPN server certificate lifetime to 825 days in the wizard to prevent errors on Apple platforms `#9825 <https://redmine.pfsense.org/issues/9825>`__
+* Added input validation to prevent OpenVPN tunnel network reuse `#3244 <https://redmine.pfsense.org/issues/3244>`__
+* Added Exit Notify to OpenVPN servers/client options `#9078 <https://redmine.pfsense.org/issues/9078>`__
 
 Operating System
 ----------------
@@ -210,12 +222,14 @@ Routing
 -------
 
 * Fixed ``(Default)`` designation on routes to match the default route in the OS `#9292 <https://redmine.pfsense.org/issues/9292>`__
+* Fixed static routes remaining in routing table after removal `#9969 <https://redmine.pfsense.org/issues/9969>`__
 
 Rules / NAT
 -----------
 
 * Fixed state kill ordering in rc.newwanip `#4674 <https://redmine.pfsense.org/issues/4674>`__
 * Added the ability to search firewall logs by tracking ID `#8703 <https://redmine.pfsense.org/issues/8703>`__
+* Added GUI option to disable default blocking of APIPA networks `#9966 <https://redmine.pfsense.org/issues/9966>`__
 
 S.M.A.R.T.
 ----------
