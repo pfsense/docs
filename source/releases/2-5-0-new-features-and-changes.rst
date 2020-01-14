@@ -62,7 +62,7 @@ Backup/Restore
 --------------
 
 * Changed ``crypt_data()`` to use stronger key derivation `#9421 <https://redmine.pfsense.org/issues/9421>`__
-* Updated ``crypt_data()`` syntax for OpenSSL 1.1.x `#9420 <https://redmine.pfsense.org/issues/9420>`__
+* Updated ``crypt_data()`` syntax for OpenSSL 1.1.x `#9420 <https://redmine.pfsense.org/issues/9420>`__ `#10178 <https://redmine.pfsense.org/issues/10178>`__
 * Disabled AutoConfigBackup manual backups when AutoConfigBackup is disabled `#9785 <https://redmine.pfsense.org/issues/9785>`__
 
 Captive Portal
@@ -125,6 +125,7 @@ DHCP
 * Fixed handling of spaces in DHCP lease hostnames by ``dhcpleases`` `#9758 <https://redmine.pfsense.org/issues/9758>`__
 * Fixed DHCP leases hostname parsing problems which prevented some hostnames from being displayed in the GUI `#3500 <https://redmine.pfsense.org/issues/3500>`__
 * Added OMAPI settings to the DHCP Server `#7304 <https://redmine.pfsense.org/issues/7304>`__
+* Added options to disable pushing IPv6 DNS servers to clients via DHCP6 `#9302 <https://redmine.pfsense.org/issues/9302>`__
 
 Diagnostics
 -----------
@@ -135,7 +136,6 @@ Diagnostics
 DNS
 ---
 
-* Added DNS Resolver (Unbound) Python Integration `#9251 <https://redmine.pfsense.org/issues/9251>`__
 * Added TCP_RFC7413 in kernel, required for the BIND package `#7293 <https://redmine.pfsense.org/issues/7293>`__
 
 Dynamic DNS
@@ -155,7 +155,7 @@ IPsec
 
 * Added 25519 curve-based IPsec DH and PFS groups 31 and 32 `#9531 <https://redmine.pfsense.org/issues/9531>`__
 * Enabled the strongSwan PKCS#11 plugin `#6775 <https://redmine.pfsense.org/issues/6775>`__
-* Fixed IPsec configuration generation so that encryption options for every P2 on a given P1 are not duplicated on each P2 `#6263 <https://redmine.pfsense.org/issues/6263>`__
+* Added support for ECDSA certificates to IPsec for IKE `#4991 <https://redmine.pfsense.org/issues/4991>`__
 * Renamed IPsec "RSA" options to "Certificate" since both RSA and ECDSA certificates are now supported, and it is also easier for users to recognize `#9903 <https://redmine.pfsense.org/issues/9903>`__
 * Converted IPsec configuration code from ``ipsec.conf`` ``ipsec``/``stroke`` style to ``swanctl.conf`` ``swanctl``/``vici`` style `#9603 <https://redmine.pfsense.org/issues/9603>`__
 
@@ -191,6 +191,7 @@ Logging
 * Fixed some instances where logs were mixed into the wrong log files/tabs (Captive Portal/DHCP/squid/php/others) `#1375 <https://redmine.pfsense.org/issues/1375>`__
 * Reorganized/restructured several log tabs `#9714 <https://redmine.pfsense.org/issues/9714>`__
 * Added a dedicated authentication log `#9754 <https://redmine.pfsense.org/issues/9754>`__
+* Added an option for RFC 5424 format log messages which have RFC 3339 timestamps `#9808 <https://redmine.pfsense.org/issues/9808>`__
 
 Notifications
 -------------
@@ -217,13 +218,7 @@ OpenVPN
     * This keeps all settings for each client and server in a clean structure
 
 * Moved to ``CApath`` style CA structure for OpenVPN CA/CRL usage `#9915 <https://redmine.pfsense.org/issues/9915>`__
-
-Packet Capture
---------------
-
-* Changed Packet Capture GUI to allow multiple TCP/UDP ports to be specified `#9766 <https://redmine.pfsense.org/issues/9766>`__
-* Added start time to Packet Capture display `#9831 <https://redmine.pfsense.org/issues/9831>`__
-* Added OSPF/OSPFv3 to Packet Capture protocols `#9905 <https://redmine.pfsense.org/issues/9905>`__
+* Added support for OCSP verification of client certificates `#7767 <https://redmine.pfsense.org/issues/7767>`__
 
 Routing
 -------
@@ -247,6 +242,7 @@ User Manager / Privileges
 -------------------------
 
 * Added menu entry for User Password Manager if the user does not have permission to reach the User Manager `#9428 <https://redmine.pfsense.org/issues/9428>`__
+* Improved consistency of SSL/TLS references in LDAP authentication servers `#10172 <https://redmine.pfsense.org/issues/10172>`__
 
 Web Interface
 -------------

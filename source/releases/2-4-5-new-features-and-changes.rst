@@ -57,6 +57,8 @@ Aliases/Tables
 --------------
 
 * Fixed an issue when resolving FQDN entries in aliases where some entries could be missing `#9296 <https://redmine.pfsense.org/issues/9296>`__
+* Improved URL Table aliases to support FQDNs which return muliple entries `#8531 <https://redmine.pfsense.org/issues/8531>`__
+* Added a function to download the contents of an individual alias `#9816 <https://redmine.pfsense.org/issues/9816>`__
 
 Authentication
 --------------
@@ -76,6 +78,7 @@ Captive Portal
 
 * Fixed Captive Portal vouchers shortcut links `#9722 <https://redmine.pfsense.org/issues/9722>`__
 * Changed Captive Portal redirect page selection order `#9819 <https://redmine.pfsense.org/issues/9819>`__
+* Fixed a rare and intermittent issue where users could encounter an ``nginx`` error when restarting Captive Portal instances `#10159 <https://redmine.pfsense.org/issues/10159>`__
 
 Certificates
 ------------
@@ -116,6 +119,7 @@ DNS
 * Fixed CIDR selection issues with /32 entries in DNS Resolver Access List entries `#9586 <https://redmine.pfsense.org/issues/9586>`__
 * Fixed an issue saving DNS over TLS hostnames on systems with only one gateway `#9898 <https://redmine.pfsense.org/issues/9898>`__
 * Fixed an issue where manually configured DNS servers may not have been active if "allow override" was disabled and they were also assigned dynamically `#9963 <https://redmine.pfsense.org/issues/9963>`__
+* Added DNS Resolver (Unbound) Python Integration `#9251 <https://redmine.pfsense.org/issues/9251>`__
 
 Dynamic DNS
 -----------
@@ -166,12 +170,14 @@ IPsec
 * Fixed Child SA button JS hide on status_ipsec.php, along with other cosmetic improvements `#8847 <https://redmine.pfsense.org/issues/8847>`__
 * Added **Connect Children** button to status_ipsec.php to connect when IKE (Phase 1) is up but Child SAs (Phase 2 entries) are not `#9954 <https://redmine.pfsense.org/issues/9954>`__
 * Fixed IPsec Phase 2 Remote Network field show/hide when changing between Phase 2 modes `#9720 <https://redmine.pfsense.org/issues/9720>`__
+* Fixed IPsec configuration generation so that encryption options for every P2 on a given P1 are not duplicated on each P2 `#6263 <https://redmine.pfsense.org/issues/6263>`__
 
 Logging
 -------
 
 * Moved ``igmpproxy`` logs to ``routing.log`` `#10139 <https://redmine.pfsense.org/issues/10139>`__
 * Moved ``igmpproxy`` verbose logging option to ``services_igmpproxy.php`` (formerly at ``status_logs_settings.php``) `#10139 <https://redmine.pfsense.org/issues/10139>`__
+* Updated ``sshguard`` and fixed a log processing regression `#9971 <https://redmine.pfsense.org/issues/9971>`__
 
 Monitoring
 ----------
@@ -190,6 +196,7 @@ NTPD
 
 * Added validation to ensure NTP values are treated as numbers before use `#9558 <https://redmine.pfsense.org/issues/9558>`__
 * Changed the default NTP pool server to ``2.<domain>`` so that it can use IPv6 `#9931 <https://redmine.pfsense.org/issues/9931>`__
+* Improved handling of errors on the NTP status page to work/fail gracefully with custom ACLs for localhost in place `#9829 <https://redmine.pfsense.org/issues/9829>`__
 
 OpenVPN
 -------
@@ -212,11 +219,16 @@ Operating System
 
 * Fixed serial console terminal size issues `#9569 <https://redmine.pfsense.org/issues/9569>`__
 * Added the ``strings`` binary to base builds for troubleshooting `#7791 <https://redmine.pfsense.org/issues/7791>`__
+* Changed UFS filesystem defaults to ``noatime`` on new installations `#9483 <https://redmine.pfsense.org/issues/9483>`__
 
 Packet Capture
 --------------
 
+* Changed Packet Capture GUI to allow multiple TCP/UDP ports to be specified `#9766 <https://redmine.pfsense.org/issues/9766>`__
+* Added start time to Packet Capture display `#9831 <https://redmine.pfsense.org/issues/9831>`__
+* Added OSPF/OSPFv3 to Packet Capture protocols `#9905 <https://redmine.pfsense.org/issues/9905>`__
 * Fixed Packet Capture to match both IPv4+IPv6 CARP when that protocol is selected `#9867 <https://redmine.pfsense.org/issues/9867>`__
+* Fixed Packet Capture for the ``pfsync`` protocol `#10183 <https://redmine.pfsense.org/issues/10183>`__
 
 Routing
 -------
@@ -230,6 +242,8 @@ Rules / NAT
 * Fixed state kill ordering in rc.newwanip `#4674 <https://redmine.pfsense.org/issues/4674>`__
 * Added the ability to search firewall logs by tracking ID `#8703 <https://redmine.pfsense.org/issues/8703>`__
 * Added GUI option to disable default blocking of APIPA networks `#9966 <https://redmine.pfsense.org/issues/9966>`__
+* Added more common ports to the firewall rule drop-down list `#10166 <https://redmine.pfsense.org/issues/10166>`__
+* Added input validation to prevent selecting ``!*`` ("not any") in source or destination `#10168 <https://redmine.pfsense.org/issues/10168>`__
 
 S.M.A.R.T.
 ----------
@@ -298,3 +312,5 @@ Web Interface
 * Set ``autocomplete=new-password`` for forms containing authentication fields to help prevent browser auto-fill from completing irrelevant fields `#9864 <https://redmine.pfsense.org/issues/9864>`__
 * Fixed processing of shortcuts for XML-based packages `#9770 <https://redmine.pfsense.org/issues/9770>`__
 * Updated jQuery `#9407 <https://redmine.pfsense.org/issues/9407>`__
+* Improved consistency of SSL/TLS references throughout the GUI `#10172 <https://redmine.pfsense.org/issues/10172>`__
+* Updated various help references and links to use the pfSense book instead of external resources `#10135 <https://redmine.pfsense.org/issues/10135>`__ `#10184 <https://redmine.pfsense.org/issues/10184>`__
