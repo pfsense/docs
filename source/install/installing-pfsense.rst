@@ -279,7 +279,7 @@ the WAN interface in a single interface deployment.
   *** Welcome to pfSense 2.4.4-RELEASE (amd64) on pfSense ***
 
    WAN (wan)       -> em0        -> v4/DHCP4: 172.21.16.38/24
-   WAN (wan)       -> em1        -> v4: 192.168.1.1/24
+   LAN (lan)       -> em1        -> v4: 192.168.1.1/24
 
    0) Logout (SSH only)                  9) pfTop
    1) Assign Interfaces                 10) Filter Logs
