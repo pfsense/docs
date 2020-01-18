@@ -5,18 +5,8 @@ The **Package Manager** is used to install and maintain packages on a
 pfSense® firewall.
 
 Packages are listed with a **Name**, **Category**, **Version**, and a
-**Description** of what the package is or does.
-
-Manage Installed Packages
--------------------------
-
-The **Installed Packages** tab lists packages which are currently present on the
-firewall. To remove a package, click |fa-trash| at the end of its row. To
-reinstall a package, click |fa-retweet|.
-
-If a package has an available upgrade, click |fa-refresh|, then click |fa-check|
-**Confirm** to confirm the installation action and upgrade it to the latest
-version
+**Description** of what the package is or does. You can find a list of available
+packages and links to more information on the :doc:`package-list` page.
 
 Installing New Packages
 -----------------------
@@ -34,3 +24,14 @@ action.
 
 During installation, the **Package Installer** tab will appear and the
 installation progress is displayed graphically along with a log of activity.
+
+Manage Installed Packages
+-------------------------
+
+The **Installed Packages** tab lists packages which are currently present on the
+firewall. To remove a package, click |fa-trash| at the end of its row. To
+reinstall a package, click |fa-retweet|.
+
+If a package has an available upgrade, click |fa-refresh|, then click |fa-check|
+**Confirm** to confirm the installation action and upgrade it to the latest
+version

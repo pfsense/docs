@@ -4,14 +4,19 @@ HAProxy package
 `HAProxy`_ is a free, very fast and reliable solution offering high
 availability, load balancing, and proxying for TCP, HTTP and HTTPS-based
 applications. It is particularly suited for web sites struggling under
-very high loads while needing persistence or Layer7 processing. Supporting
-tens of thousands of connections is clearly realistic with todays hardware.
-Its mode of operation makes its integration into existing architectures very
-easy and riskless, while still offering the possibility not to expose
+very high loads while needing persistence or Layer7 processing.
+
+Supporting tens of thousands of connections is clearly realistic with todays
+hardware. Its mode of operation makes integrating it into existing architectures
+very easy and riskless, while still offering the possibility not to expose
 fragile web servers to the Net.
 
-For info about HAProxy 1.6 and 1.7 see:
-https://github.com/PiBa-NL/pfsense-haproxy-package-doc/wiki
+Refer to the following articles for more information on the listed topics:
+
+.. toctree::
+   :maxdepth: 1
+
+   troubleshooting-the-haproxy-package
 
 Package Variants
 ----------------
@@ -24,6 +29,9 @@ On recent pfSense® versions 2 haproxy packages are available:
   loosely tracks HAProxy 1.7dev new features in the pfSense package are
   also first included in the HAProxy-devel then later copied over the
   HAProxy package.
+
+For info about HAProxy 1.6 and 1.7 see:
+https://github.com/PiBa-NL/pfsense-haproxy-package-doc/wiki
 
 Recent Changes
 --------------

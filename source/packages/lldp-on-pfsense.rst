@@ -1,8 +1,7 @@
 Using LLDP on pfSense software
 ==============================
 
-.. note:: Use the **ladvd** package available through the
-   pfSense® webGUI.
+.. note:: Use the **LADVD** package available through the pfSense® webGUI.
 
 lldpd
 -----
