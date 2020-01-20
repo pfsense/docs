@@ -125,7 +125,7 @@ Phase 2
 *  Set **Protocol** to *ESP*
 *  Set **Encryption Algorithms** to *AES Auto*.
 *  Set **Hash Algorithms** to *SHA256*
-*  Set **PFS key group** to *14 (2048 bit)*
+*  Set **PFS key group** to *off*
 *  Set **Lifetime** to *3600*
 *  Click **Save**
 
