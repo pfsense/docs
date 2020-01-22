@@ -26,15 +26,15 @@ The following packages are available from the pfSense® package repository:
    Manager > Available Packages** for an always up-to-date list of packages.
 
 -  :doc:`ACME </certificates/acme-package>` - Automated Certificate Management
-   Environment, for automated use of Let's Encrypt certificates
+   Environment, for automated use of Let's Encrypt certificates.
 
 -  :doc:`arping <arping-package>` - Broadcasts a who-has ARP packet on the
    network and prints answers.
 
--  **apcupsd** - Package can be used for controlling all APC UPS models
+-  **apcupsd** - Package can be used for controlling all APC UPS models.
    It can monitor and log the current power and battery status, perform
    automatic shutdown, and can run in network mode in order to power
-   down other hosts on a LAN
+   down other hosts on a LAN.
 
 -  :doc:`Avahi <avahi-package>` - Avahi is a system which facilitates service
    discovery on a local network via the mDNS/DNS-SD protocol suite. This enables
@@ -50,7 +50,7 @@ The following packages are available from the pfSense® package repository:
 -  **BIND** - pfSense webGUI for BIND DNS server
 
 -  **blinkled** - Allows you to use LEDs for monitoring network activity
-   on supported platforms (ALIX, WRAP, Soekris, etc.)
+   on supported platforms (ALIX, WRAP, Soekris, etc.).
 
 -  **cellular** - pfSense webGUI for Cellular Cards Currently it supports
    certain Huawei models.
@@ -71,7 +71,7 @@ The following packages are available from the pfSense® package repository:
    FreeBSD.
 
 -  **gwled** - Allows you to use LEDs for monitoring gateway status on
-   supported platforms (ALIX, WRAP, Soekris, etc.)
+   supported platforms (ALIX, WRAP, Soekris, etc.).
 
 -  :doc:`HAproxy <haproxy-package>` - The Reliable, High Performance TCP/HTTP(S)
    Load Balancer. This package implements the TCP, HTTP and HTTPS balancing
@@ -96,7 +96,7 @@ The following packages are available from the pfSense® package repository:
    Protocol).
 
 -  **Mailreport** - Allows you to setup periodic e-mail reports
-   containing command output, and log file contents
+   containing command output, and log file contents.
 
 -  **MTR** - Enhanced traceroute replacement. mtr combines the
    functionality of the traceroute and ping programs in a single network
