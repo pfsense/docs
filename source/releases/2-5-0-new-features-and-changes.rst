@@ -64,6 +64,7 @@ Backup/Restore
 * Changed ``crypt_data()`` to use stronger key derivation `#9421 <https://redmine.pfsense.org/issues/9421>`__
 * Updated ``crypt_data()`` syntax for OpenSSL 1.1.x `#9420 <https://redmine.pfsense.org/issues/9420>`__ `#10178 <https://redmine.pfsense.org/issues/10178>`__
 * Disabled AutoConfigBackup manual backups when AutoConfigBackup is disabled `#9785 <https://redmine.pfsense.org/issues/9785>`__
+* Improved error handling when attempting to restore encrypted and otherwise invalid configurations which result in errors (e.g. wrong encryption passphrase, malformed XML) `#10179 <https://redmine.pfsense.org/issues/10179>`__
 
 Captive Portal
 --------------
@@ -149,6 +150,7 @@ Interfaces
 * Fixed issues with PPPoE over a VLAN failing to reconnect `#9148 <https://redmine.pfsense.org/issues/9148>`__
 * Changed the way interface VLAN support is detected so it does not rely on the VLANMTU flag `#9548 <https://redmine.pfsense.org/issues/9548>`__
 * Added a PHP shell playback script ``restartallwan`` which restarts all WAN-type interfaces `#9688 <https://redmine.pfsense.org/issues/9688>`__
+* Changed assignment of the ``fe80::1:1`` default IPv6 link-local LAN address so it does not remove existing entries, which could cause problems such as Unbound failing to start `#9998 <https://redmine.pfsense.org/issues/9998>`__
 
 IPsec
 -----
@@ -175,6 +177,7 @@ IPsec
   * Reworked how reauthentication and rekey behavior functions, giving more control to the user compared to previous options `#9983 <https://redmine.pfsense.org/issues/9983>`__
 * Reformatted ``status_ipsec.php`` to include more available information (rekey timer, encryption key size, IKE SPIs, ports) `#9979 <https://redmine.pfsense.org/issues/9979>`__
 * Added support for PKCS#11 authentication (e.g. hardware tokens such as Yubikey) for IPsec `#9878 <https://redmine.pfsense.org/issues/9878>`__
+* Fixed disabling an IPsec P1 entry with a VTI P2 when an interface assignment does not exist `#10190 <https://redmine.pfsense.org/issues/10190>`__
 
 Logging
 -------
@@ -226,6 +229,11 @@ Routing
 * Enabled the RADIX_MPATH kernel option for multi-path routing `#9544 <https://redmine.pfsense.org/issues/9544>`__
 * Fixed automatic static routes set for DNS gateway bindings not being removed when no longer necessary `#8922 <https://redmine.pfsense.org/issues/8922>`__
 * Fixed route removal to always specify the gateway `#10001 <https://redmine.pfsense.org/issues/10001>`__
+
+Rules / NAT
+-----------
+
+* Added the ability to configure negated tagging, to match packets which do not not contain a given tag `#10186 <https://redmine.pfsense.org/issues/10186>`__
 
 Translations
 ------------

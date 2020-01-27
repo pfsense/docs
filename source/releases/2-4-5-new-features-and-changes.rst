@@ -135,6 +135,7 @@ Dynamic DNS
 * Fixed handling of wildcards in Route53 Dynamic DNS `#9053 <https://redmine.pfsense.org/issues/9053>`__
 * Fixed handling of wildcards in Loopia Dynamic DNS `#8014 <https://redmine.pfsense.org/issues/8014>`__
 * Fixed CloudFlare Dynamic DNS processing when ``proxied`` is enabled `#9362 <https://redmine.pfsense.org/issues/9362>`__
+* Fixed CloudFlare Dynamic DNS "Invalid TTL" error due to CloudFlare API update `#10196 <https://redmine.pfsense.org/issues/10196>`__
 * Changed hostname to optional for DNS-O-Matic Dynamic DNS `#7601 <https://redmine.pfsense.org/issues/7601>`__
 * Added support for Gandi LiveDNS Dynamic DNS `#9452 <https://redmine.pfsense.org/issues/9452>`__
 
@@ -220,6 +221,7 @@ Operating System
 * Fixed serial console terminal size issues `#9569 <https://redmine.pfsense.org/issues/9569>`__
 * Added the ``strings`` binary to base builds for troubleshooting `#7791 <https://redmine.pfsense.org/issues/7791>`__
 * Changed UFS filesystem defaults to ``noatime`` on new installations `#9483 <https://redmine.pfsense.org/issues/9483>`__
+* Fixed an issue where the IP header checksum was incorrect when reassembling packet fragments to a link with a different MTU `#10189 <https://redmine.pfsense.org/issues/10189>`__
 
 Packet Capture
 --------------
@@ -314,3 +316,9 @@ Web Interface
 * Updated jQuery `#9407 <https://redmine.pfsense.org/issues/9407>`__
 * Improved consistency of SSL/TLS references throughout the GUI `#10172 <https://redmine.pfsense.org/issues/10172>`__
 * Updated various help references and links to use the pfSense book instead of external resources `#10135 <https://redmine.pfsense.org/issues/10135>`__ `#10184 <https://redmine.pfsense.org/issues/10184>`__
+
+XMLRPC
+------
+
+* Fixed removal of the last ALTQ traffic shaping entry from the target system when performing an XMLRPC sync `#9469 <https://redmine.pfsense.org/issues/9469>`__
+* Fixed removal of the last limiter entry from the target system when performing an XMLRPC sync `#9468 <https://redmine.pfsense.org/issues/9468>`__
