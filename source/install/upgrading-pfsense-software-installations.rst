@@ -86,16 +86,3 @@ Automatic Update
 The **Auto Update** tab polls the pfSense servers for a new version. If one is
 found, click **Invoke Auto Upgrade** to automatically downloaded and apply the
 update.
-
-Manual Updates
-~~~~~~~~~~~~~~
-
-With versions prior to 2.3, an update can be applied manually in the
-WebGUI by first downloading an update image to a PC from the `Official Update
-Site <https://www.pfsense.org/download/>`__
-
-Once the firmware file has been downloaded, click **Enable Firmware
-Upload**, browse to the update file, then click **Upgrade firmware**.
-
-The rest of the upgrade process happens automatically. The firewall will
-reboot when finished.
