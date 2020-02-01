@@ -210,5 +210,5 @@ the beginning of this article).
 edits.
 
 .. _comparison of encryption algorithms: https://stackoverflow.com/questions/5554526/comparison-of-des-triple-des-aes-blowfish-encryption-for-data
-.. _comparison of hash algorithms: http://www.not-implemented.com/comparing-hash-algorithms-md5-sha1-sha2
+.. _comparison of hash algorithms: http://liveforge.org/md5-sha1-sha2-comparing-hash-algorithms/
 .. _Perfect forward secrecy: https://en.wikipedia.org/wiki/Perfect_forward_secrecy
