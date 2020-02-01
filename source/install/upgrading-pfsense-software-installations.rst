@@ -30,7 +30,7 @@ Updating in the WebGUI
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Navigate to **System > Update** in the WebGUI to check for an available update
-and to perform the update**. The update check on the dashboard also leads to
+and to perform the update. The update check on the dashboard also leads to
 this page.
 
 This page, as well as the **Update Settings** tab, also can change the branch
