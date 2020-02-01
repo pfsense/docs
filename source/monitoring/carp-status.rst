@@ -42,12 +42,11 @@ nodes from seeing each others' advertisements. See :doc:`CARP Configuration Trou
 Maintenance Mode
 ----------------
 
-On pfSense 2.2, in addition to the button to temporarily disable CARP as
-is found on earlier versions, there is also a toggle button to **Enter
-Persistent CARP Maintenance Mode** or **Leave Persistent CARP
-Maintenance Mode**. This mode persists across reboots, so it is useful
-for performing maintenance or upgrades on the primary node such that it
-does not cause it to take back over prematurely before it is ready.
+There is a toggle button to **Enter Persistent CARP Maintenance Mode**
+or **Leave Persistent CARP Maintenance Mode**. This mode persists across
+reboots, so it is useful for performing maintenance or upgrades on the
+primary node such that it does not cause it to take back over prematurely
+before it is ready.
 
 Widget
 ------
