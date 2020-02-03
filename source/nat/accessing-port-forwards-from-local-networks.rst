@@ -60,7 +60,7 @@ Example:
 
 -  www.example.com resolves to public IP 1.2.3.4, which is the WAN IP
 -  Forward port 80 on 1.2.3.4 to port 80 on 192.168.1.5
--  Override www.example.com using **System > DNS Resolver** (or DNS
+-  Override www.example.com using **Services > DNS Resolver** (or DNS
    Forwarder, if using it instead) and point www.example.com to
    192.168.1.5
 
