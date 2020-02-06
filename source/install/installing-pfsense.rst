@@ -49,17 +49,6 @@ media that can be used to accomplish the task:
 -  Serial Memstick: Like the Memstick image, but runs using the serial
    console rather than VGA, for newer embedded systems.
 
-NanoBSD or NanoBSD+VGA
-~~~~~~~~~~~~~~~~~~~~~~
-
-IMPORTANT: NanoBSD is deprecated with the pfSense 2.4-RELEASE!
-
-NanoBSD uses the Serial Console by default, so there are two sets of
-NanoBSD images:
-
--  NanoBSD: Embedded install type using the serial console by default
--  NanoBSD+VGA: Like NanoBSD, but uses the VGA console instead.
-
 Virtual Machines
 ~~~~~~~~~~~~~~~~
 
