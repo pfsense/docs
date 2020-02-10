@@ -108,6 +108,7 @@ pfSense® software.
 -  ZTE MF830 - Can be switched from Ethernet to Modem by accessing the
    device's web interface, depending on preference.
 -  ZTE MF861
+-  ZTE MF985 - Branded as AT&T Velocity 2
 -  D-Link DWM-157 (3.75HSPA+)
 -  ONDA MT503HSA Type MF636 (requires eject mode switch, see below)
 -  Netgear LB1120 (US)
