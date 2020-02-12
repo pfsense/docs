@@ -17,7 +17,6 @@ environments.
 
    installing-pfsense
    verify-downloaded-files
-   /hardware/writing-disk-images
    writing-iso-images
    /hardware/connecting-to-the-serial-console
    installing-pfsense-over-an-existing-freebsd-installation

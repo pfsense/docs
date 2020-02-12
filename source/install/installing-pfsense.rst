@@ -85,8 +85,8 @@ disk (CF/SD) that will contain the Operating System.
 -  Write the installer ISO: If the *.iso* file was downloaded, it must
    be burned to a disc as an ISO image. See :doc:`Writing ISO Images
    </install/writing-iso-images>` for assistance.
--  Writing Memstick or NanoBSD images: This task is covered with great
-   detail in :doc:`/hardware/writing-disk-images`.
+-  Writing Memstick images: This task is covered with great
+   detail in `Writing an OS Installation Image to Flash Media`_.
 
 Connect to Serial Console
 -------------------------
@@ -314,3 +314,4 @@ topics.
 
 .. _Netgate appliance: https://www.netgate.com/products/appliances
 .. _Security Gateway Manual: https://docs.netgate.com/pfsense/en/latest/solutions
+.. _Writing an OS Installation Image to Flash Media: https://docs.netgate.com/reference/create-flash-media.html

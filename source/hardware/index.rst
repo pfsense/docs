@@ -11,7 +11,6 @@ Various topics about pfSense® software and its interaction with hardware.
    reboot-system
    console-types
    connecting-to-the-serial-console
-   writing-disk-images
 
 Hardware Information
 ''''''''''''''''''''
