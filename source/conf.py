@@ -32,9 +32,8 @@ html_baseurl = 'https://docs.netgate.com/pfsense/en/latest'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.todo',
-    'sphinx_sitemap'
+    'sphinx_sitemap',
+    'sphinx_tabs.tabs'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
