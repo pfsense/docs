@@ -36,6 +36,9 @@ extensions = [
     'sphinx_tabs.tabs'
 ]
 
+# Make sphinx_tabs compatible with dummy builder for CI step
+sphinx_tabs_valid_builders = ['dummy']
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
