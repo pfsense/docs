@@ -141,6 +141,13 @@ Field lists are perfect for lists of options:
      to the next line, with two spaces indentation.
    :Third Option: Something else.
 
+Which renders as:
+
+:Option Name: What it does.
+:Option 2: Another option. This is a long description that wraps
+  to the next line, with two spaces indentation.
+:Third Option: Something else.
+
 Hyperlinks
 ----------
 
