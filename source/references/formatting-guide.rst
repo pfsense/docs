@@ -91,9 +91,11 @@ characters above the text ("overline").
 Lists
 -----
 
-List markup is natural: place an asterisk at the start of a paragraph and indent
-properly. The same goes for numbered lists; they can also be auto-numbered using
-a ``#`` sign:
+Unordered Lists
+^^^^^^^^^^^^^^^
+
+Place an asterisk at the start of a paragraph and indent two spaces for any
+lines that wrap.
 
 .. code:: console
 
@@ -101,9 +103,29 @@ a ``#`` sign:
    * It has two items, the second
      item uses two lines.
 
+Which renders as:
+
+* This is a bulleted list.
+* It has two items, the second
+  item uses two lines.
+
+Ordered lists
+^^^^^^^^^^^^^
+
+The same goes for numbered lists; they can will be auto-numbered using ``#.``:
+
+.. code:: console
+
    #. This is a numbered list.
    #. It has two items too.
 
+Which renders as:
+
+#. This is a numbered list.
+#. It has two items too.
+
+Nested lists
+^^^^^^^^^^^^
 
 Nested lists are possible, but be aware that they must be separated from the
 parent list items by blank lines:
@@ -118,6 +140,19 @@ parent list items by blank lines:
 
    * and here the parent list continues
 
+Which renders as:
+
+* this is
+* a list
+
+  * with a nested list
+  * and some subitems
+
+* and here the parent list continues
+
+Definition lists
+^^^^^^^^^^^^^^^^
+
 Definition lists are created as follows:
 
 .. code:: console
@@ -131,6 +166,19 @@ Definition lists are created as follows:
       Description.
 
 .. note:: The term itself cannot have more than one line of text.
+
+Which renders as:
+
+term (up to a line of text)
+   Definition of the term, which must be indented
+
+   and can even consist of multiple paragraphs
+
+next term
+   Description.
+
+Field Lists
+^^^^^^^^^^^
 
 Field lists are perfect for lists of options:
 
