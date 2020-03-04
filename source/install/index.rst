@@ -16,7 +16,6 @@ environments.
    :maxdepth: 1
 
    installing-pfsense
-   verify-downloaded-files
    writing-iso-images
    /hardware/connecting-to-the-serial-console
    installing-pfsense-over-an-existing-freebsd-installation
