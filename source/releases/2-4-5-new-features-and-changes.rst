@@ -17,13 +17,18 @@ Operating System / Architecture changes
 Security / Errata
 -----------------
 
-* Added encoding to the hostname in services_acb.php `#9584 <https://redmine.pfsense.org/issues/9584>`__
-* Added encoding to error output in services_captiveportal_mac.php `#9609 <https://redmine.pfsense.org/issues/9609>`__
+* Fixed dependency issues with ``pfSense-upgrade`` which may have caused it not to update itself properly `#10303 <https://redmine.pfsense.org/issues/10303>`__
+
+  .. tip:: If the update check fails, or the update does not complete, run ``pkg install -y pfSense-upgrade`` to ensure that ``pfSense-upgrade`` is present.
+
+* Added encoding to the hostname in ``services_acb.php`` `#9584 <https://redmine.pfsense.org/issues/9584>`__
+* Added encoding to error output in ``services_captiveportal_mac.php`` `#9609 <https://redmine.pfsense.org/issues/9609>`__
 * Improved Picture Widget input validation `#9610 <https://redmine.pfsense.org/issues/9610>`__ `#9731 <https://redmine.pfsense.org/issues/9731>`__ `#9804 <https://redmine.pfsense.org/issues/9804>`__
 * Added a ``fsck`` run with ``-z`` for ``UFS`` filesystems on upgrade to address FreeBSD-SA-19:10.ufs `#9612 <https://redmine.pfsense.org/issues/9612>`__
 * Fixed format of XMLRPC auth error to match GUI auth error `#9782 <https://redmine.pfsense.org/issues/9782>`__
 * Added a custom CSRF Error page with warnings and confirmation prompts before resubmitting potentially harmful data `#9799 <https://redmine.pfsense.org/issues/9799>`__
-* Fixed Status_Monitoring rrd_fetch_json.php error encoding `#9601 <https://redmine.pfsense.org/issues/9601>`__
+* Fixed Status_Monitoring ``rrd_fetch_json.php`` error encoding `#9601 <https://redmine.pfsense.org/issues/9601>`__
+* Fixed encoding of the user full name on ``system_usermanager_addprivs.php`` `#10324 <https://redmine.pfsense.org/issues/10324>`__
 
 * Addressed FreeBSD Security Advisories & Errata Notices
 
@@ -72,6 +77,7 @@ Backup/Restore
 * Removed legacy AutoConfigBackup options (there were no more active accounts using the retired legacy service) `#9687 <https://redmine.pfsense.org/issues/9687>`__ `#9785 <https://redmine.pfsense.org/issues/9785>`__
 * Added CDATA protection to the ``encryption_password`` XML tag, which allows international characters to be used in that field `#7186 <https://redmine.pfsense.org/issues/7186>`__
 * Added CDATA escape to more auth-related fields `#9327 <https://redmine.pfsense.org/issues/9327>`__
+* Ensured that ``kern.cam.boot_delay`` is set for new installations and upgrades so that USB devices are properly initialized in time for configuration restore in the installer and ECL to function `#9533 <https://redmine.pfsense.org/issues/9533>`__
 
 Captive Portal
 --------------
@@ -172,6 +178,12 @@ IPsec
 * Added **Connect Children** button to status_ipsec.php to connect when IKE (Phase 1) is up but Child SAs (Phase 2 entries) are not `#9954 <https://redmine.pfsense.org/issues/9954>`__
 * Fixed IPsec Phase 2 Remote Network field show/hide when changing between Phase 2 modes `#9720 <https://redmine.pfsense.org/issues/9720>`__
 * Fixed IPsec configuration generation so that encryption options for every P2 on a given P1 are not duplicated on each P2 `#6263 <https://redmine.pfsense.org/issues/6263>`__
+* Fixed a PHP error in IPsec package plugin hook processing `#10217 <https://redmine.pfsense.org/issues/10217>`__
+
+Load Balancer
+-------------
+
+* Fixed a PHP when processing services when the configuration does not contain Load Balancer entries `#10308 <https://redmine.pfsense.org/issues/10308>`__
 
 Logging
 -------
@@ -179,12 +191,14 @@ Logging
 * Moved ``igmpproxy`` logs to ``routing.log`` `#10139 <https://redmine.pfsense.org/issues/10139>`__
 * Moved ``igmpproxy`` verbose logging option to ``services_igmpproxy.php`` (formerly at ``status_logs_settings.php``) `#10139 <https://redmine.pfsense.org/issues/10139>`__
 * Updated ``sshguard`` and fixed a log processing regression `#9971 <https://redmine.pfsense.org/issues/9971>`__
+* Fixed PHP errors in filter log processing when entries contain an invalid port `#10255 <https://redmine.pfsense.org/issues/10255>`__
 
 Monitoring
 ----------
 
 * Fixed custom view titles being forced to lower case `#9681 <https://redmine.pfsense.org/issues/9681>`__
 * Fixed packet graph scaling `#9807 <https://redmine.pfsense.org/issues/9807>`__
+* Fixed a PHP error in RRD processing of ALTQ data `#10248 <https://redmine.pfsense.org/issues/10248>`__
 
 Notifications
 -------------
@@ -246,6 +260,7 @@ Rules / NAT
 * Added GUI option to disable default blocking of APIPA networks `#9966 <https://redmine.pfsense.org/issues/9966>`__
 * Added more common ports to the firewall rule drop-down list `#10166 <https://redmine.pfsense.org/issues/10166>`__
 * Added input validation to prevent selecting ``!*`` ("not any") in source or destination `#10168 <https://redmine.pfsense.org/issues/10168>`__
+* Fixed invalid rules generated when using NAT reflection with a negated destination `#10246 <https://redmine.pfsense.org/issues/10246>`__
 
 S.M.A.R.T.
 ----------
@@ -267,6 +282,7 @@ Translations
 ------------
 
 * Fixed an issue with international characters in configuration descriptions, which led to failures in certain cases, such as failing to set Manual Outbound NAT when the Language was set to pt_BR `#6195 <https://redmine.pfsense.org/issues/6195>`__
+* Fixed a PHP error on ``system_advanced_admin.php`` when the language was set to French `#10331 <https://redmine.pfsense.org/issues/10331>`__
 
 Upgrade / Installation
 ----------------------
@@ -292,6 +308,7 @@ User Manager / Privileges
 
 * Improved Deny Config Write privilege handling in the User & Group Manager `#9259 <https://redmine.pfsense.org/issues/9259>`__
 * Fixed input validation of group name sizes to allow longer remote groups `#3792 <https://redmine.pfsense.org/issues/3792>`__
+* Fixed handling of L2TP and PPPoE user passwords containing invalid characters `#10275 <https://redmine.pfsense.org/issues/10275>`__
 
 Web Interface
 -------------
