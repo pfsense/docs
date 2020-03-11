@@ -6,12 +6,13 @@ is similar in some ways to Markdown, but has significant differences. To get a
 feel for the formatting, look at the `source of this documentation`_ and read
 through this document.
 
-.. contents:: :depth: 2
+.. tip:: Test out how different markup is rendered using the `Online
+   reStructuredText editor`_. Additional information can be found at `A primer
+   on reStructuredText`_ and `reST/Sphinx cheat sheet`_.
 
-External resources:
-
-* `A primer on reStructuredText`_
-* `reST/Sphinx cheat sheet`_
+.. contents:: Local Contents
+   :local:
+   :depth: 2
 
 Filenames
 ---------
@@ -444,3 +445,4 @@ Which renders as:
 .. _common substitutions file: https://github.com/pfsense/docs/blob/master/source/substitutions.rsti
 .. _reST/Sphinx cheat sheet: http://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
 .. _source of this documentation: https://github.com/pfsense/docs/tree/master/source
+.. _Online reStructuredText editor: http://rst.ninjs.org/
