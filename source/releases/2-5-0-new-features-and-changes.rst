@@ -51,6 +51,7 @@ Aliases/Tables
 
 * Fixed URL-based Alias only storing last-most entry in the configuration `#9074 <https://redmine.pfsense.org/issues/9074>`__
 * Fixed an issue with PF tables remaining active after they had been deleted `#9790 <https://redmine.pfsense.org/issues/9790>`__
+* Added support for URL/URL Table aliases using IDN hostnames `#10321 <https://redmine.pfsense.org/issues/10321>`__
 
 Authentication
 --------------
@@ -81,6 +82,7 @@ Certificates
 
 * Fixed OCSP stapling detection for OpenSSL 1.1.x `#9408 <https://redmine.pfsense.org/issues/9408>`__
 * Fixed GUI detection of revoked status for certificates issued and revoked by an intermediate CA `#9924 <https://redmine.pfsense.org/issues/9924>`__
+* Removed PKCS#12 export links for entries which cannot be exported in that format (e.g. no private key) `#10284 <https://redmine.pfsense.org/issues/10284>`__
 * Added an option to globally trust local CA manager entries `#4068 <https://redmine.pfsense.org/issues/4068>`__
 * Added support for randomized certificate serial numbers when creating or signing certificates with local internal CAs `#9883 <https://redmine.pfsense.org/issues/9883>`__
 * Added validation for CA/CRL serial numbers `#9883 <https://redmine.pfsense.org/issues/9883>`__ `#9869 <https://redmine.pfsense.org/issues/9869>`__
@@ -90,6 +92,7 @@ Certificates
 * Added Certificate Lifetime to certificate information block `#7332 <https://redmine.pfsense.org/issues/7332>`__
 * Added CA validity checks when attempting to pre-fill certificate fields from a CA `#3956 <https://redmine.pfsense.org/issues/3956>`__
 * Added a daily certificate expiration check and notice, with settings to control its behavior and notifications (Default: 27 days) `#7332 <https://redmine.pfsense.org/issues/7332>`__
+* Added functionality to allow importing certificates without private keys (e.g. PKCS#11) `#9834 <https://redmine.pfsense.org/issues/9834>`__
 * Added CA/Certificate renewal functionality `#9842 <https://redmine.pfsense.org/issues/9842>`__
 
   * This allows a CA or certificate to be renewed using its current settings (or a more secure profile), replacing the entry with a fresh one, and optionally retaining the existing key.
@@ -99,7 +102,7 @@ Certificates
     * This view also adds a (not stored) password field and buttons for exporting encrypted private keys and PKCS#12 archives `#1192 <https://redmine.pfsense.org/issues/1192>`__
 
 * Improved default GUI certificate strength and handling of weak values `#9825 <https://redmine.pfsense.org/issues/9825>`__
-    * Reduced the default GUI web server certificate lifetime to 825 days to prevent errors on Apple platforms `#9825 <https://redmine.pfsense.org/issues/9825>`__
+    * Reduced the default GUI web server certificate lifetime to 398 days to prevent errors on Apple platforms `#9825 <https://redmine.pfsense.org/issues/9825>`__
     * Added notes on CA/Cert pages about using potentially insecure parameter choices
     * Added visible warnings on CA/Cert pages if parameters are known to be insecure or not recommended
 
@@ -127,6 +130,12 @@ DHCP
 * Fixed DHCP leases hostname parsing problems which prevented some hostnames from being displayed in the GUI `#3500 <https://redmine.pfsense.org/issues/3500>`__
 * Added OMAPI settings to the DHCP Server `#7304 <https://redmine.pfsense.org/issues/7304>`__
 * Added options to disable pushing IPv6 DNS servers to clients via DHCP6 `#9302 <https://redmine.pfsense.org/issues/9302>`__
+* Fixed DHCPv6 domain search list `#10200 <https://redmine.pfsense.org/issues/10200>`__
+* Increased number of NTP servers sent via DHCP to 3 `#9661 <https://redmine.pfsense.org/issues/9661>`__
+* Added an option to prevent known DHCP clients from obtaining addresses on any interface (e.g. known clients may only obtain an address from the interface where the entry is defined) `#1605 <https://redmine.pfsense.org/issues/1605>`__
+* Added count of static mappings to list when editing DHCP settings for an interface `#9282 <https://redmine.pfsense.org/issues/9282>`__
+* Fixed validation to allow omission of DHCPv6 range for use with stateless DHCP `#9596 <https://redmine.pfsense.org/issues/9596>`__
+* Fixed handling of client identifiers on static mappings containing double quotes `#10295 <https://redmine.pfsense.org/issues/10295>`__
 
 Diagnostics
 -----------
@@ -138,11 +147,17 @@ DNS
 ---
 
 * Added TCP_RFC7413 in kernel, required for the BIND package `#7293 <https://redmine.pfsense.org/issues/7293>`__
+* Added IPv6 OpenVPN client addresses resolution to the DNS Resolver `#8624 <https://redmine.pfsense.org/issues/8624>`__
+* Enhanced eDNS buffer size default behavior and options in the DNS Resolver `#10293 <https://redmine.pfsense.org/issues/10293>`__
+* Added DNS64 options to the DNS Resolver `#10274 <https://redmine.pfsense.org/issues/10274>`__
 
 Dynamic DNS
 -----------
 
 * Fixed Dynamic DNS Dashboard Widget address parsing for entries with split hostname/domain (e.g. Namecheap) `#9564 <https://redmine.pfsense.org/issues/9564>`__
+* Added support for new CloudFlare Dynamic DNS API tokens `#9639 <https://redmine.pfsense.org/issues/9639>`__
+* Added IPv6 support to No-IP Dynamic DNS `#10256 <https://redmine.pfsense.org/issues/10256>`__
+* Fixed issues with Hover Dynamic DNS `#10241 <https://redmine.pfsense.org/issues/10241>`__
 
 Interfaces
 ----------
@@ -151,6 +166,10 @@ Interfaces
 * Changed the way interface VLAN support is detected so it does not rely on the VLANMTU flag `#9548 <https://redmine.pfsense.org/issues/9548>`__
 * Added a PHP shell playback script ``restartallwan`` which restarts all WAN-type interfaces `#9688 <https://redmine.pfsense.org/issues/9688>`__
 * Changed assignment of the ``fe80::1:1`` default IPv6 link-local LAN address so it does not remove existing entries, which could cause problems such as Unbound failing to start `#9998 <https://redmine.pfsense.org/issues/9998>`__
+* Added automatic MTU adjustment for GRE interfaces using IPsec as a transport `#10222 <https://redmine.pfsense.org/issues/10222>`__
+* Fixed SLAAC interface selection when using IPv6 on a link which also uses PPP `#9324 <https://redmine.pfsense.org/issues/9324>`__
+* Enabled selection of QinQ interfaces for use with PPP `#9472 <https://redmine.pfsense.org/issues/9472>`__
+* Added GUI interface descriptions to Operating System interfaces `#1557 <https://redmine.pfsense.org/issues/1557>`__
 
 IPsec
 -----
@@ -178,6 +197,19 @@ IPsec
 * Reformatted ``status_ipsec.php`` to include more available information (rekey timer, encryption key size, IKE SPIs, ports) `#9979 <https://redmine.pfsense.org/issues/9979>`__
 * Added support for PKCS#11 authentication (e.g. hardware tokens such as Yubikey) for IPsec `#9878 <https://redmine.pfsense.org/issues/9878>`__
 * Fixed disabling an IPsec P1 entry with a VTI P2 when an interface assignment does not exist `#10190 <https://redmine.pfsense.org/issues/10190>`__
+* Fixed usage of Hash Algorithm on child ESP/AH proposals using AEAD ciphers `#9726 <https://redmine.pfsense.org/issues/9726>`__
+* Added support for IPsec remote gateway entries using FQDNs which resolve to IPv6 addresses `#9405 <https://redmine.pfsense.org/issues/9405>`__
+* Added a warning against using DH group 5 `#10221 <https://redmine.pfsense.org/issues/10221>`__
+* Added manual selection of Pseudo-Random Function (PRF) for use with AEAD ciphers `#9309 <https://redmine.pfsense.org/issues/9309>`__
+* Added support for using per-user addresses from RADIUS and falling back to a local pool otherwise `#8160 <https://redmine.pfsense.org/issues/8160>`__
+* Added an option which allows multiple tunnels to use the same remote peer in certain situations (read warnings on the option before use) `#10214 <https://redmine.pfsense.org/issues/10214>`__
+* Fixed handling of automatic outbound NAT and per-user IPsec client address settings `#9320 <https://redmine.pfsense.org/issues/9320>`__
+
+L2TP
+----
+
+* Allow L2TP usernames to include ``@`` `#9828 <https://redmine.pfsense.org/issues/9828>`__
+* Changed L2TP to not restart the service when updating users, since it is not required `#4866 <https://redmine.pfsense.org/issues/4866>`__
 
 Logging
 -------
@@ -201,11 +233,17 @@ Notifications
 
 * Deprecated & Removed Growl Notifications `#8821 <https://redmine.pfsense.org/issues/8821>`__
 * Added a daily certificate expiration notification with settings to control its behavior `#7332 <https://redmine.pfsense.org/issues/7332>`__
+* Fixed input validation of SMTP notification settings `#8522 <https://redmine.pfsense.org/issues/8522>`__
+* Fixed handling of the option to disable SMTP server certificate validation `#10317 <https://redmine.pfsense.org/issues/10317>`__
 
 NTPD
 ----
 
 * Added GUI options for NTP sync/poll intervals `#6787 <https://redmine.pfsense.org/issues/6787>`__
+* Added validation to prevent using ``noselect`` and ``noserve`` with pools `#9830 <https://redmine.pfsense.org/issues/9830>`__
+* Added feature to automatically detect GPS baud rate `#7284 <https://redmine.pfsense.org/issues/7284>`__
+* Fixed status and widget display of long hostnames and stratum `#10307 <https://redmine.pfsense.org/issues/10307>`__
+* Fixed handling of the checkbox options on NTP servers `#10276 <https://redmine.pfsense.org/issues/10276>`__
 
 OpenVPN
 -------
@@ -222,18 +260,30 @@ OpenVPN
 
 * Moved to ``CApath`` style CA structure for OpenVPN CA/CRL usage `#9915 <https://redmine.pfsense.org/issues/9915>`__
 * Added support for OCSP verification of client certificates `#7767 <https://redmine.pfsense.org/issues/7767>`__
+* Fixed a potential race condition in OpenVPN client ACLs obtained via RADIUS `#9206 <https://redmine.pfsense.org/issues/9206>`__
+* Added support for more protocols (IP, ICMP), ports, and a template variable (``{clientip}``) in OpenVPN client ACLs obtained via RADIUS `#9206 <https://redmine.pfsense.org/issues/9206>`__
 
-Routing
--------
+Routing / Gateways
+------------------
 
 * Enabled the RADIX_MPATH kernel option for multi-path routing `#9544 <https://redmine.pfsense.org/issues/9544>`__
 * Fixed automatic static routes set for DNS gateway bindings not being removed when no longer necessary `#8922 <https://redmine.pfsense.org/issues/8922>`__
 * Fixed route removal to always specify the gateway `#10001 <https://redmine.pfsense.org/issues/10001>`__
+* Added validation to prevent using descriptions on interfaces which would cause gateway names to exceeded the maximum allowed length `#9401 <https://redmine.pfsense.org/issues/9401>`__
+* Added support for obtaining a gateway via DHCP which is outside of the interface subnet `#7380 <https://redmine.pfsense.org/issues/7380>`__
+* Fixed gateway names when created at the console to match the same naming convention used in the GUI `#10264 <https://redmine.pfsense.org/issues/10264>`__
 
 Rules / NAT
 -----------
 
 * Added the ability to configure negated tagging, to match packets which do not not contain a given tag `#10186 <https://redmine.pfsense.org/issues/10186>`__
+* Excluded disabled IPsec P2 networks from automatic ``vpn_networks`` table `#7622 <https://redmine.pfsense.org/issues/7622>`__
+* Fixed handling of special characters in schedule descriptions `#10305 <https://redmine.pfsense.org/issues/10305>`__
+
+Traffic Shaper / Limiters
+-------------------------
+
+* Removed bogus additional warning dialog when deleting traffic shaper entries `#9334 <https://redmine.pfsense.org/issues/9334>`__
 
 Translations
 ------------
@@ -260,6 +310,8 @@ Web Interface
 * Fixed empty lines in various forms throughout the GUI `#9449 <https://redmine.pfsense.org/issues/9449>`__
 * Improved validation of FQDNs `#9023 <https://redmine.pfsense.org/issues/9023>`__
 * Added ``poly1305-chacha20`` to ``nginx`` cipher list `#9896 <https://redmine.pfsense.org/issues/9896>`__
+* Added input validation for IGMP Proxy settings `#7163 <https://redmine.pfsense.org/issues/7163>`__
+* Improved behavior of the GUI when there is no WAN connectivity / no working DNS resolution `#8987 <https://redmine.pfsense.org/issues/8987>`__
 
 Wireless
 --------
@@ -271,3 +323,9 @@ Development
 
 * Added a "periodic" style framework to allow for daily/weekly/monthly tasks from the base system or packages by way of plugin calls `#7332 <https://redmine.pfsense.org/issues/7332>`__
 * Added a central file download function for internal use throughout the GUI
+
+XMLRPC
+------
+
+* Added option to synchronize changes for the account used for XMLRPC sync `#9622 <https://redmine.pfsense.org/issues/9622>`__
+* Fixed handling of IPv6 CARP VIP addresses when they were specified with non-significant zeroes `#6579 <https://redmine.pfsense.org/issues/6579>`__
