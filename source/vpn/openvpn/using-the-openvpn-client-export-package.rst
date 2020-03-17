@@ -190,9 +190,12 @@ The Windows installer packages together the client software and the
 configuration files in one *.exe* to ease deployment. When executed on
 the client computer, the installer will first install OpenVPN and the
 TAP driver if they are not present, and then it copies the exported
-configuration file into place automatically. If OpenVPN is already
-installed on the client computer, then the configuration is copied into
-place but no other changes are made to OpenVPN.
+configuration file into place automatically.
+
+.. note:: If OpenVPN is already installed on the client computer, then the
+  configuration is copied into place but no other changes are made to OpenVPN.
+  In order to upgrade OpenVPN, uninstall it and reinstall it, or download and
+  run the OpenVPN installer directly.
 
 There are currently four different installers:
 
