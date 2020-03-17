@@ -18,10 +18,10 @@ Address specify the *translated* network which will be seen by the far
 side.
 
 For example, connecting to a Vendor where they want the pfSense router to
-use 172.16.5.0/24 but the LAN is actually 192.168.1.0/24, set the top
-box to *Network*, enter *192.168.1.0/24* into the address entry box,
-then select *Network* in the lower box and put *172.16.5.0/24* into the
-address entry box.
+use **172.16.5.0/24**, but the LAN is actually **192.168.1.0/24**, set the
+top box to **Network**, enter ``192.168.1.0/24`` into the address entry
+box, then select **Network** in the lower box and put ``172.16.5.0/24``
+into the address entry box.
 
 NAT Types
 ---------
