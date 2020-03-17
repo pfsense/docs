@@ -33,10 +33,11 @@ Use HTTPS
 
 HTTPS should always be used to encrypt access to the webGUI port. Modern
 browsers may complain about the certificate, but an exception can
-usually be stored so it will only complain the first time. To use HTTPS
-then it will be necessary to enable it under **System > Advanced**,
-**Admin Access** tab, using the *Protocol* option in the
-**webConfigurator** section.
+usually be stored so it will only complain the first time.
+
+To disable (or re-enable) HTTPS for the WebConfigurator navigate to **System >
+Advanced**, under the **Admin Access** tab, using the **Protocol** option in the
+webConfigurator section.
 
 Move the webGUI to an Alternate port
 ------------------------------------
