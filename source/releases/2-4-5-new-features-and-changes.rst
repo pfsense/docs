@@ -29,6 +29,7 @@ Security / Errata
 * Added a custom CSRF Error page with warnings and confirmation prompts before resubmitting potentially harmful data `#9799 <https://redmine.pfsense.org/issues/9799>`__
 * Fixed Status_Monitoring ``rrd_fetch_json.php`` error encoding `#9601 <https://redmine.pfsense.org/issues/9601>`__
 * Fixed encoding of the user full name on ``system_usermanager_addprivs.php`` `#10324 <https://redmine.pfsense.org/issues/10324>`__
+* Fixed input validation and output encoding of host on ``diag_ping.php`` `#10355 <https://redmine.pfsense.org/issues/10355>`__
 
 * Addressed FreeBSD Security Advisories & Errata Notices
 
