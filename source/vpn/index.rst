@@ -18,6 +18,7 @@ cameras, file servers, printers, and many other similar network devices.
    :maxdepth: 1
 
    vpn-capability-overview
+   scaling
    ipv6-and-vpns
    remote-access-mobile-vpn-client-compatibility
    android-vpn-compatibility
