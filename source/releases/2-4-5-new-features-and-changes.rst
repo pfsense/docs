@@ -33,6 +33,8 @@ Security / Errata
 
 * Addressed FreeBSD Security Advisories & Errata Notices
 
+  * `FreeBSD-SA-20:05.if_oce_ioctl <https://www.freebsd.org/security/advisories/FreeBSD-SA-20:05.if_oce_ioctl.asc>`__
+  * `FreeBSD-SA-20:04.tcp       <https://www.freebsd.org/security/advisories/FreeBSD-SA-20:04.tcp.asc>`__
   * `FreeBSD-SA-19:24.mqueuefs  <https://security.freebsd.org/advisories/FreeBSD-SA-19:24.mqueuefs.asc>`__
   * `FreeBSD-SA-19:23.midi      <https://security.freebsd.org/advisories/FreeBSD-SA-19:23.midi.asc>`__
   * `FreeBSD-SA-19:22.mbuf      <https://security.freebsd.org/advisories/FreeBSD-SA-19:22.mbuf.asc>`__
@@ -50,6 +52,8 @@ Security / Errata
   * `FreeBSD-SA-19:10.ufs       <https://security.freebsd.org/advisories/FreeBSD-SA-19:10.ufs.asc>`__
   * `FreeBSD-SA-19:09.iconv     <https://security.freebsd.org/advisories/FreeBSD-SA-19:09.iconv.asc>`__
   * `FreeBSD-SA-19:08.rack      <https://security.freebsd.org/advisories/FreeBSD-SA-19:08.rack.asc>`__
+  * `FreeBSD-EN-20:06.ipv6      <https://www.freebsd.org/security/advisories/FreeBSD-EN-20:06.ipv6.asc>`__
+  * `FreeBSD-EN-20:04.pfctl     <https://www.freebsd.org/security/advisories/FreeBSD-EN-20:04.pfctl.asc>`__
   * `FreeBSD-EN-19:18.tzdata    <https://security.freebsd.org/advisories/FreeBSD-EN-19:18.tzdata.asc>`__
   * `FreeBSD-EN-19:17.ipfw      <https://security.freebsd.org/advisories/FreeBSD-EN-19:17.ipfw.asc>`__
   * `FreeBSD-EN-19:16.bhyve     <https://security.freebsd.org/advisories/FreeBSD-EN-19:16.bhyve.asc>`__
