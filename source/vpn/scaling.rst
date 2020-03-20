@@ -85,7 +85,7 @@ Check Tunnel Network/Virtual Address Pool Sizes
 
 Both IPsec and OpenVPN can assign addresses to clients out of a pool for remote
 access/mobile VPNs. The sizing of this pool limits how many clients can connect.
-For example, the maximum number of users in a /24 pool is 253, but other
+For example, the maximum number of users in a /24 pool is 252, but other
 settings may reduce that value. See the sections below for more specific advice.
 
 Use "Secure Enough" Settings
@@ -278,7 +278,7 @@ On recent versions of pfSense, OpenVPN defaults to *subnet* topology which uses
 addresses more efficiently, but if the VPN was configured initially on older
 versions, or if an older guide was followed, it may still be using *net30*
 topology. Using a common example tunnel network of ``10.0.8.0/24``, with
-*subnet* topology, the VPN can have a maximum of 253 users but with *net30*, it
+*subnet* topology, the VPN can have a maximum of 252 users but with *net30*, it
 can only have 63. This is because in *net30* mode, each user receives a /30
 subnet which utilizes four IP addresses for each user. In *subnet* mode, the
 server uses a single address and the client uses a single address, which is much
