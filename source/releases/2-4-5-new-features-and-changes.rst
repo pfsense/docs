@@ -4,6 +4,16 @@
 pfSense® software version 2.4.5 contains a variety of bug fixes and maintenance
 updates.
 
+.. warning:: **Proceed with caution when upgrading pfSense software while
+   COVID-19 travel restrictions are in effect.**
+
+   During this time of travel limitations, remote upgrades of pfSense software
+   should be carefully considered, and avoided where possible. Travel
+   restrictions may complicate any repair of any issue, including
+   hardware-related issues that render the system unreachable. Should these
+   issues require onsite physical access to remedy, repair of the issue may not
+   be possible while travel restrictions related to COVID-19 are in effect.
+
 .. tip:: For those who have not yet updated to 2.4.4-p3 or 2.4.4, consult
    the :doc:`previous release notes <index>` and `blog posts for those releases
    <https://www.netgate.com/blog/category.html#releases>`__ to read all
