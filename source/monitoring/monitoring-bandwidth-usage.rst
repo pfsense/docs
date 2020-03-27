@@ -52,8 +52,8 @@ Built-in Graphs
 ---------------
 
 If overall per-interface usage is all that is required, there are
-built-in RRD graphs in pfSense software, which can be found under
-**Status > RRD Graphs**.
+built-in traffic graphs in pfSense software, which can be found under
+**Status > Traffic Graph**.
 
 BandwidthD
 ----------
