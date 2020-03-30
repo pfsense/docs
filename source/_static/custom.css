@@ -365,6 +365,111 @@ footer label {
   letter-spacing: .05em;
 }
 
+/* local table of contents */
+#local-table-of-contents {
+  padding-bottom: 20px;
+}
+
+#local-table-of-contents .docs-sidebar-section-title {
+  margin-bottom: 10px;
+}
+
+#local-table-of-contents a[href="#"] {
+  display: none;
+}
+
+#local-table-of-contents > ul > li {
+  list-style: none;
+  margin-top: 0;
+}
+
+#local-table-of-contents li {
+  list-style: square;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.docs-sidebar-section ul ul {
+  padding-left: 0px;
+  margin-left: 20px;
+  padding-right: 0px;
+}
+
+@media screen and (min-width: 1270px)  {
+  #local-table-of-contents.docs-sidebar-section {
+    display: block;
+    position: fixed;
+    margin-left: 0px;
+    overflow-y: auto;
+    padding-top: 30px;
+    height: 95%;
+    top: 45px;
+    left: 1100px;
+    width: 350px;
+  }
+
+  #local-table-of-contents ul {
+    list-style: none;
+  }
+
+  #local-table-of-contents.docs-sidebar-section > ul {
+    border-left: 7px solid #c9c9c9;
+    padding-bottom: 10px;
+  }
+
+  #local-table-of-contents.docs-sidebar-section ul:first-of-type {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .docs-sidebar-section.active {
+    background: #D8E0EA;
+    padding: 0;
+    cursor: default;
+  }
+
+  #local-table-of-contents .docs-sidebar-section-title {
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+    border-left: 7px solid #c9c9c9;
+    color: #404040;
+  }
+
+  #local-table-of-contents a.docs-sidebar-section-title:hover {
+    text-decoration: #BCCFDE;
+  }
+
+  #local-table-of-contents.docs-sidebar-section.active a.docs-sidebar-section-title:hover {
+    cursor: default;
+  }
+
+  #local-table-of-contents.docs-sidebar-section li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+  }
+
+  #local-table-of-contents.docs-sidebar-section > ul > li {
+    margin-left: 10px;
+  }
+
+  #local-table-of-contents.docs-sidebar-section ul li {
+    white-space: nowrap;
+  }
+
+  #local-table-of-contents.docs-sidebar-section ul ul {
+    padding-left: 0px;
+    margin-left: 10px;
+    padding-right: 0px;
+    margin-right: 10px;
+  }
+}
+
 /* override table width restrictions */
 @media screen and (max-width: 768px) {
   img {
