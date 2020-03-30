@@ -7,10 +7,6 @@ the platform being used. Any version of pfSense can be reliably upgraded to any
 Beta, and other releases. So long as the upgrade is moving from an older version
 to a newer version, it will work unless noted otherwise.
 
-.. contents:: Upgrade Guide
-   :depth: 2
-   :local:
-
 Pre-Upgrade Tasks
 -----------------
 

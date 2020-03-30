@@ -10,10 +10,6 @@ through this document.
    reStructuredText editor`_. Additional information can be found at `A primer
    on reStructuredText`_ and `reST/Sphinx cheat sheet`_.
 
-.. contents:: Local Contents
-   :local:
-   :depth: 2
-
 Filenames
 ---------
 

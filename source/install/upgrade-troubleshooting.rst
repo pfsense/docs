@@ -6,10 +6,6 @@ Upgrade Troubleshooting
 This document describes methods of troubleshooting problems firewalls may
 encounter when attempting to run a pfSense® upgrade.
 
-.. contents:: Upgrade Troubleshooting
-   :depth: 2
-   :local:
-
 .. _upgrade-troubleshooting-log:
 
 Upgrade Log

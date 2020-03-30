@@ -17,10 +17,6 @@ Configuring a firewall running pfSense software to use G Suite LDAP
 authentication requires a number of steps, all of which are covered in this
 document.
 
-.. contents:: Configuring G Suite LDAP
-   :depth: 1
-   :local:
-
 Configure the LDAP Application on the G Suite admin portal
 ----------------------------------------------------------
 

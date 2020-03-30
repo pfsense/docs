@@ -1,8 +1,6 @@
 Style Guide
 ===========
 
-.. contents:: :depth: 2
-
 To make this documentation easier for users, we prefer to have the style of
 articles be consistent and clear. The following guidelines are strongly
 suggested. Text found to not be following these Language Style/Grammar

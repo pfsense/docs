@@ -13,10 +13,6 @@ increased VPN volume, both in terms of throughput and number of connected users.
    or how to setup VPNs, that information can be found :doc:`elsewhere in this
    documentation <index>`, in the |book_link|, and in |hangout_link|.
 
-.. contents::
-   :depth: 2
-   :local:
-
 General Advice
 --------------
 

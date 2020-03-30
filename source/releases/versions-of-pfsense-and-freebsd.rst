@@ -7,10 +7,6 @@ releases.
 The versions are grouped up by major/minor changes so they are easier to locate,
 and the most recent versions are listed first.
 
-.. contents:: pfSense Versions
-   :depth: 2
-   :local:
-
 2.5.x
 -----
 
