@@ -22,7 +22,8 @@ updates.
 Operating System / Architecture changes
 ---------------------------------------
 
-* Base OS upgraded to FreeBSD **11-STABLE** (exact contents TBD)
+* Base OS upgraded to FreeBSD `11.3-STABLE@r357046 <https://www.freebsd.org/doc/handbook/current-stable.html#stable>`__
+* PHP upgraded to 7.2.29
 
 Security / Errata
 -----------------
@@ -108,7 +109,7 @@ Certificates
 * Corrected wording of CA/Cert CN input validation `#9234 <https://redmine.pfsense.org/issues/9234>`__
 * Fixed certificate Descriptive Name field behavior when adding a user certificate `#9719 <https://redmine.pfsense.org/issues/9719>`__
 * Added ``clientAuth`` EKU to Server type certificates `#9868 <https://redmine.pfsense.org/issues/9868>`__
-* Reduced the default GUI web server certificate lifetime to 825 days to prevent errors on Apple platforms `#9825 <https://redmine.pfsense.org/issues/9825>`__
+* Reduced the default GUI web server certificate lifetime to 389 days to prevent errors on Apple platforms `#9825 <https://redmine.pfsense.org/issues/9825>`__
 
 Dashboard
 ---------
@@ -124,6 +125,7 @@ DHCP
 * Added an option to disable ping check in dhcpd `#9285 <https://redmine.pfsense.org/issues/9285>`__
 * Fixed **Show all configured leases** so it is persistent after deleting a DHCP lease `#9133 <https://redmine.pfsense.org/issues/9133>`__
 * Added search/filter to DHCP/DHCPv6 leases `#9791 <https://redmine.pfsense.org/issues/9791>`__
+* Improved DHCP client handling of timeout conditions and script failures `#9267 <https://redmine.pfsense.org/issues/9267>`__
 
 Diagnostics
 -----------

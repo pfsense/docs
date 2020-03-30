@@ -23,10 +23,10 @@ pfSense Version                                       Support, Branch           
 2.4.x
 -----
 
-====================================================  =======================================================================================  ============  ==========  ==========================================================================
+====================================================  =======================================================================================  ============  ==========  =============================================================================
 pfSense Version                                       Support, Branch                                                                          Released      Config Rev  FreeBSD Version
-====================================================  =======================================================================================  ============  ==========  ==========================================================================
-:doc:`2.4.5    <2-4-5-new-features-and-changes>`      |fa-check| `RELENG_2_4_5 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_5>`__    TBD           19.1        `11-STABLE <https://www.freebsd.org/releases/11.3R/hardware.html>`_
+====================================================  =======================================================================================  ============  ==========  =============================================================================
+:doc:`2.4.5    <2-4-5-new-features-and-changes>`      |fa-check| `RELENG_2_4_5 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_5>`__    2020-03-26    19.1        `11.3-STABLE@r357046 <https://www.freebsd.org/releases/11.3R/hardware.html>`_
 :doc:`2.4.4-p3 <2-4-4-p3-new-features-and-changes>`   |fa-check| `RELENG_2_4_4 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_4>`__    2019-05-20    19.1        `11.2-RELEASE-p10 <https://www.freebsd.org/releases/11.2R/hardware.html>`_
 :doc:`2.4.4-p2 <2-4-4-p2-new-features-and-changes>`   |fa-times| `RELENG_2_4_4 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_4>`__    2019-01-07    18.9        `11.2-RELEASE-p4 <https://www.freebsd.org/releases/11.2R/hardware.html>`_
 :doc:`2.4.4-p1 <2-4-4-p1-new-features-and-changes>`   |fa-times| `RELENG_2_4_4 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_4>`__    2018-12-03    18.9        `11.2-RELEASE-p4 <https://www.freebsd.org/releases/11.2R/hardware.html>`_
@@ -37,7 +37,7 @@ pfSense Version                                       Support, Branch           
 :doc:`2.4.2    <2-4-2-new-features-and-changes>`      |fa-times| `RELENG_2_4_2 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_2>`__    2017-11-20    17.3        `11.1-RELEASE-p4 <https://www.freebsd.org/releases/11.1R/hardware.html>`_
 :doc:`2.4.1    <2-4-1-new-features-and-changes>`      |fa-times| `RELENG_2_4_1 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_1>`__    2017-10-24    17.3        `11.1-RELEASE-p2 <https://www.freebsd.org/releases/11.1R/hardware.html>`_
 :doc:`2.4      <2-4-new-features-and-changes>`        |fa-times| `RELENG_2_4_0 <https://github.com/pfsense/pfsense/commits/RELENG_2_4_0>`__    2017-10-12    17.0        `11.1-RELEASE-p1 <https://www.freebsd.org/releases/11.1R/hardware.html>`_
-====================================================  =======================================================================================  ============  ==========  ==========================================================================
+====================================================  =======================================================================================  ============  ==========  =============================================================================
 
 2.3.x
 -----

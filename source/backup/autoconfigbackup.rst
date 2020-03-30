@@ -5,11 +5,6 @@ Automatic Configuration Backup (ACB) has been available as a pfSense® package
 for many years. In pfSense version 2.4.4 it is available as a core component of
 pfSense software, no package required.
 
-.. note:: For the purposes of this documentation, the old AutoConfigBackup
-  package used prior to pfSense 2.4.4-RELEASE will be referred to as the
-  :ref:`legacy-acb-package`. Read that section for information about the legacy
-  package.
-
 When a change is made to the configuration on a firewall, AutoConfigBackup
 automatically encrypts the contents with the passphrase entered in the
 AutoConfigBackup settings and then uploads the backup over HTTPS to Netgate
@@ -142,22 +137,6 @@ saving a firewall or NAT rule, then click **Apply Changes**. Visit
 available backups along with the page that made the change (where
 available).
 
-.. _legacy-acb-package:
-
-Legacy AutoConfigBackup Package
--------------------------------
-
-This package is only compatible with currently supported pfSense versions
-released prior to 2.4.4.
-
-.. warning:: Now that all pfSense Gold Subscriptions are expired, access to the
-   legacy backup server has been removed, please upgrade to use the new ACB
-   server.
-
-   When upgrading to version 2.4.4 or greater, if the legacy AutoConfigBackup
-   package is detected, its settings will be migrated to the new integrated
-   service and the old package settings will be deleted.
-
 FAQ
 ---
 
@@ -173,3 +152,9 @@ How will I know if a backup fails?
 If a backup fails, an alert is logged, and it will be seen scrolling
 across the top of the web interface. If e-mail alerts are enabled, a
 message will also be sent.
+
+Can I still access legacy ACB entries?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Access to the legacy backup server has been removed, please upgrade to use the
+new ACB server.
