@@ -242,7 +242,7 @@ OpenVPN
 * Added a copy action to OpenVPN pages `#5851 <https://redmine.pfsense.org/issues/5851>`__
 * Improved sorting of bytes sent/receives on OpenVPN status page `#7359 <https://redmine.pfsense.org/issues/7359>`__
 * Fixed visibility of the OpenVPN 'interface' option when multihome is selected `#7840 <https://redmine.pfsense.org/issues/7840>`__
-* Reduced the OpenVPN server certificate lifetime to 825 days in the wizard to prevent errors on Apple platforms `#9825 <https://redmine.pfsense.org/issues/9825>`__
+* Reduced the OpenVPN server certificate lifetime to 389 days in the wizard to prevent errors on Apple platforms `#9825 <https://redmine.pfsense.org/issues/9825>`__
 * Added input validation to prevent OpenVPN tunnel network reuse `#3244 <https://redmine.pfsense.org/issues/3244>`__
 * Added Exit Notify to OpenVPN servers/client options `#9078 <https://redmine.pfsense.org/issues/9078>`__
 
