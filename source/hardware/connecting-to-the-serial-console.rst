@@ -96,9 +96,9 @@ serial console session.
 MINICOM
 ~~~~~~~
 
-.. code-block:: console
+.. code-block:: none
 
-  minicom -D /dev/ttyUSB0 -R 115200
+   minicom -D /dev/ttyUSB0 -R 115200
 
 Screen
 ~~~~~~
