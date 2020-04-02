@@ -365,6 +365,16 @@ footer label {
   letter-spacing: .05em;
 }
 
+/* console code block pygment overrides */
+.highlight-console > .highlight {
+  background: #272822;
+  color: #ffffff;
+}
+
+.highlight-console > .highlight span {
+  color: #ffffff !important;
+}
+
 /* local table of contents */
 #local-table-of-contents {
   padding-bottom: 20px;
