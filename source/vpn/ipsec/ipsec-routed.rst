@@ -35,8 +35,7 @@ IPsec Configuration
 * Create a Phase 2 entry under this Phase 1, set with...
 
   * Set **Mode** to *Routed (VTI)*
-  * Set **Local Network** to *Network*
-  * Enter ``10.6.106.1/30`` for the **Local Network Address**
+  * Enter ``10.6.106.1`` for the **Local Network Address**
   * Enter ``10.6.106.2`` for the **Remote Network Address**
   * Add a useful **Description**
   * Set the **Proposal** settings as needed
