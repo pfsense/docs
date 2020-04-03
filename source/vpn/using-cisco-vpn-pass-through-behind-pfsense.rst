@@ -12,5 +12,6 @@ Workaround
 -  In the Cisco VPN client software, Modify the connection and turn off
    transparent tunneling completely in the **Transport** tab.
 -  In the pfSense webGUI, under **Firewall > NAT** on the **Outbound**
-   tab, enable **Manual Outbound NAT**. Remove any NAT rules that
-   perform static port NAT on udp/500.
+   tab:
+    -  Enable **Manual Outbound NAT**. 
+    -  Remove any NAT rules that perform static port NAT on udp/500.
