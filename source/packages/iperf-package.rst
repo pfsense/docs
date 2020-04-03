@@ -39,7 +39,7 @@ Additional Resources
 Known issues
 ------------
 
-.. seealso:: You can find a list of known issues with the Avahi package
+.. seealso:: You can find a list of known issues with the iperf package
    on the `pfSense bug tracker`_.
 
 Package Support
