@@ -13,5 +13,6 @@ Workaround
    transparent tunneling completely in the **Transport** tab.
 -  In the pfSense webGUI, under **Firewall > NAT** on the **Outbound**
    tab:
-    -  Enable **Manual Outbound NAT**. 
+
+    -  Enable **Manual Outbound NAT**.
     -  Remove any NAT rules that perform static port NAT on udp/500.
