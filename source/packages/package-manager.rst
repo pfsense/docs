@@ -2,11 +2,11 @@ Using the Package Manager
 =========================
 
 The **Package Manager** is used to install and maintain packages on a
-pfSense® firewall.
+pfSense® firewall. Packages are listed with a **Name**, **Category**,
+**Version**, and a **Description** of what the package is or does.
 
-Packages are listed with a **Name**, **Category**, **Version**, and a
-**Description** of what the package is or does. You can find a list of available
-packages and links to more information on the :doc:`package-list` page.
+.. seealso:: A list of available packages with more information on each is
+   available on the :doc:`package-list` page.
 
 Installing New Packages
 -----------------------
