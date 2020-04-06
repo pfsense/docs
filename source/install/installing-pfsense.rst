@@ -162,8 +162,8 @@ such as Memstick-Serial, connect to the serial console with a
 appropriate serial cable and terminal options. See :doc:`Connecting to the
 Serial Console </hardware/connecting-to-the-serial-console>` for specifics.
 
-Performing a Full Install (ISO, Memstick)
------------------------------------------
+Performing a Full Install
+-------------------------
 
 Power on the target system and connect the install media: Place the CD
 into the drive or plug the Memstick into a USB port. If the BIOS is set
@@ -300,26 +300,26 @@ pfSense Default Configuration
 After installation and interface assignment, pfSense has the following
 default configuration:
 
--  WAN is configured as an IPv4 DHCP client
+-  WAN is configured as an IPv4 DHCP client.
 -  WAN is configured as an IPv6 DHCP client and will request a prefix
-   delegation
--  LAN is configured with a static IPv4 address of *192.168.1.1/24*
+   delegation.
+-  LAN is configured with a static IPv4 address of **192.168.1.1/24**.
 -  LAN is configured to use a delegated IPv6 address/prefix obtained by
-   WAN (Track IPv6) if one is available
--  All incoming connections to WAN are *blocked*
--  All outgoing connections from LAN are *allowed*
+   WAN (Track IPv6) if one is available.
+-  All incoming connections to WAN are *blocked*.
+-  All outgoing connections from LAN are *allowed*.
 -  NAT is performed on IPv4 traffic leaving WAN from the LAN subnet
 -  The firewall will act as an IPv4 :doc:`DHCP Server </dhcp/dhcp-server>`
 -  The firewall will act as an IPv6 :doc:`DHCPv6 Server </dhcp/dhcpv6-server>` if
    a prefix delegation was obtained on WAN, and also enables SLAAC
 -  The :doc:`DNS Resolver </dns/unbound-dns-resolver>` is enabled so the
-   firewall can accept and respond to DNS queries
+   firewall can accept and respond to DNS queries.
 -  SSH is disabled.
--  WebGUI is running on port *443* using *HTTPS*
--  Default credentials are set to a username of *admin* with password
-   *pfsense*
+-  WebGUI is running on port 443 using HTTPS.
+-  Default credentials are set to a username of **admin** with password
+   **pfsense**.
 
-Post-Install Tasks
+Connect to the GUI
 ------------------
 
 After installation and assignment, a shell menu is presented on the
@@ -348,18 +348,13 @@ the WAN interface in a single interface deployment.
 
   Enter an option:
 
-Connect to the GUI
-~~~~~~~~~~~~~~~~~~
-
 The WebGUI is used to configure the vast majority of items in pfSense.
-It may be accessed by any modern browser, though Firefox and Chrome are
-preferred.
 
 Connect a client PC to the LAN of the firewall and ensure it obtained an
 IP address. If it did not, it may be plugged into the wrong port.
 
 Open a web browser and navigate to https://192.168.1.1/, using the
-default username *admin* and password *pfsense* to login.
+default username **admin** and password **pfsense** to login.
 
 The first visit to the WebGUI will be redirected to the setup wizard,
 which is also accessible at **System > Setup Wizard**. Proceed through
