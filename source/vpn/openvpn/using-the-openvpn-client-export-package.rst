@@ -239,21 +239,7 @@ that works.
 Recommended Clients
 -------------------
 
--  `OpenVPN Community
-   Client <http://openvpn.net/index.php/open-source/downloads.html>`__ -
-   Binaries for Windows, Source for other platforms. Packaged above in
-   the Windows Installers
--  `OpenVPN For
-   Android <https://play.google.com/store/apps/details?id=de.blinkt.openvpn>`__
-   - Recommended client for Android
--  `FEAT VPN For Android <http://www.featvpn.com/>`__ - For older
-   versions of Android
--  OpenVPN Connect: `Android (Google
-   Play) <https://play.google.com/store/apps/details?id=net.openvpn.openvpn>`__
-   or `iOS (App
-   Store) <https://itunes.apple.com/us/app/openvpn-connect/id590379981>`__
-   - Recommended client for iOS
--  `Viscosity <http://www.sparklabs.com/viscosity/>`__ - Recommended
-   client for Mac OSX
--  `Tunnelblick <http://code.google.com/p/tunnelblick/>`__ - Free client
-   for OSX
+For a list of recommended clients for different operating systems, see `OpenVPN
+Client Installation`_.
+
+.. _OpenVPN Client Installation: /pfsense/en/latest/book/openvpn/openvpn-client-installation-android.html
