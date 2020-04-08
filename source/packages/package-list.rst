@@ -251,6 +251,13 @@ Reputation enhancements. Provision to download from diverse List formats.
 Advanced Integration for Proofpoint ET IQRisk IP Reputation Threat Sources.
 Domain Name (DNSBL) blocking via Unbound DNS Resolver.
 
+PIMD
+----
+
+This package provides a webGUI for ``pimd``, a multicast routing daemon. While
+it is primarily to replace the role of the built-in IGMP Proxy function, it is
+not a replacement for Avahi.
+
 Quagga_OSPF
 -----------
 
