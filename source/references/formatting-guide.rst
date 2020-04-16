@@ -25,7 +25,11 @@ Text
 
 In general, try to keep text in logical paragraphs wrapped at 80 characters.
 This ensures the source is easy for everyone to read no matter where it is
-being edited.
+being edited. For long pages with several sections that may only be relevant to
+some users, split the page into several smaller documents.
+
+Basic Inline Formatting
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Add basic inline formatting to the text as follows:
 
@@ -70,9 +74,6 @@ These can be applied to text in various ways within the documentation:
 
      Foo
 
-* For long pages with several sections that may only be relevant to some users,
-  split the page into several smaller documents.
-
 Headings
 --------
 
@@ -87,6 +88,10 @@ characters above the text ("overline").
 * ``----``, for subsections
 * ``^^^^``, for subsubsections
 * ``""""``, for paragraphs
+
+.. note:: The headings are also how the "On This Page" section is generated.
+   When possible, it is a good idea to use headings that create an outline of
+   the content, making it easy for the reader to scan.
 
 Lists
 -----
@@ -196,8 +201,11 @@ Which renders as:
   to the next line, with two spaces indentation.
 :Third Option: Something else.
 
-Hyperlinks
-----------
+Links
+-----
+
+External Link
+^^^^^^^^^^^^^
 
 Separate the link and the target definition, like this:
 
@@ -220,8 +228,8 @@ and place the target definition at the bottom of the page in alphabetical order.
 
        .. _Link\: Stuff: http://example.com/stuff
 
-Cross References
-----------------
+Cross Reference to Section of Document
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To make a cross reference to another document, first you must create a label
 immediately before the section title:
@@ -239,8 +247,12 @@ And then in the other document, reference it using ``:ref:`` and the given label
 
    See :ref:`label-some-section` for more information
 
+Cross Reference to Entire Document
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 If a cross-reference will instead reference an entire document rather than a
-specific section, figure, or similar label, use the ``:doc:`` method instead.
+specific section, use the ``:doc:`` method instead.
+
 For example, to reference this entire document, ``/references/style-guide.rst``,
 use the following text, omitting the file extension:
 
@@ -250,6 +262,9 @@ use the following text, omitting the file extension:
 
 Images
 ------
+
+Images
+^^^^^^
 
 Place images in the ``source/_static`` directory in the same folder structure as
 the page that the image is going to be posted on. For example, an image going
@@ -266,7 +281,7 @@ on ``source/references/fomatting-guide.rst`` would go in
 .. note:: ``:target:`` is optional and only necessary if it is a large image.
 
 Figures
--------
+^^^^^^^
 
 Place figures in the ``source/_static`` directory in the same folder structure as
 the page that the image is going to be posted on. For example, an image going
@@ -295,7 +310,7 @@ Which can be referred to using the following:
    with the other attributes!
 
 Inline Images
--------------
+^^^^^^^^^^^^^
 
 For an inline image (no breaks above or below, aka inline with the text) a
 substitution must be used. Since inline images are typically inserted on many
@@ -321,8 +336,10 @@ To do this in a one-off fashion, use a substitution within the same file:
 Tables
 ------
 
-For *grid tables*, the grid must be "painted" in the document source. They look
-like this example:
+Grid Tables
+^^^^^^^^^^^
+
+The grid must be "painted", they look like this example:
 
 .. code:: console
 
@@ -335,7 +352,10 @@ like this example:
    | body row 2             | ...        | ...      |          |
    +------------------------+------------+----------+----------+
 
-*Simple tables* are easier to write, but limited: they must contain more than
+Simple Tables
+^^^^^^^^^^^^^
+
+These are easier to write, but are limited: they must contain more than
 one row, and the first column cells cannot contain multiple lines.  They look
 like this:
 
@@ -353,7 +373,12 @@ like this:
 Table of Contents
 -----------------
 
-For a group of files, reference filenames without their ``.rst`` extension:
+Every file has to a part of a ``toctree`` or **Table of Contents** tree, as this
+is how the side navigation is built.
+
+Reference RST files by their filenames without their ``.rst`` extension. It is
+also possible to link to external resources if necessary, as shown with the
+YouTube link:
 
 .. code:: console
 
@@ -362,15 +387,20 @@ For a group of files, reference filenames without their ``.rst`` extension:
 
      filename1
      filename2
+     sub-directory/index
+     Example YouTube Video <https://youtu.be/Cwz7vWu_KO0>
 
-Local to a file:
+Local Table of Contents
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Sometimes it is useful to add the table of contents of the current page:
 
 .. code:: console
 
    .. contents:: :depth: 2
 
-Admonitions
------------
+Colored Boxes
+-------------
 
 Admonitions are text, distinguished in friendly boxes, that bring attention to
 important items. The most common example is a "Note" box:
@@ -383,8 +413,18 @@ Which renders as:
 
 .. note:: This is a note, it will be surrounded by a note box when it is built.
 
-Admonitions are available for a wide variety of types, including: note, tip,
-warning, attention, caution, danger, error, hint, and important.
+Admonitions are available for a wide variety of types, including:
+
+* ``note``
+* ``tip``
+* ``warning``
+* ``attention``
+* ``caution``
+* ``danger``
+* ``error``
+* ``hint``
+* ``important``
+* ``seealso``
 
 Substitutions
 -------------
