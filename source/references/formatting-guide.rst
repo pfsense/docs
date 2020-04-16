@@ -17,6 +17,9 @@ When adding new pages or images use all lowercase letters and hyphens instead of
 spaces for the filename. This is commonly referred to as a slug, or a slugified
 version of the text. For example, this file is named ``formatting-guide.rst``.
 
+.. tip:: You can use an `online slug generator`_ if you don't want to make a
+   slug manually.
+
 Text
 ----
 
@@ -245,11 +248,33 @@ use the following text, omitting the file extension:
 
    :doc:`/references/style-guide`
 
+Images
+------
+
+Place images in the ``source/_static`` directory in the same folder structure as
+the page that the image is going to be posted on. For example, an image going
+on ``source/references/fomatting-guide.rst`` would go in
+``source/_static/references/image.png``.
+
+.. code:: console
+
+   .. image:: /_static/filename.png
+      :align: center
+      :alt: Alternative text that describes the image
+      :target: /_static/filename.png
+
+.. note:: ``:target:`` is optional and only necessary if it is a large image.
+
 Figures
 -------
 
-Figures need a unique label and a caption for proper in-text references, and are
-preferred over images.
+Place figures in the ``source/_static`` directory in the same folder structure as
+the page that the image is going to be posted on. For example, an image going
+on ``source/references/fomatting-guide.rst`` would go in
+``source/_static/references/image.png``.
+
+Figures are similar to images, but need a unique label and a caption for proper
+in-text references.
 
 .. code:: console
 
@@ -269,24 +294,15 @@ Which can be referred to using the following:
 .. note::  The indention is important! The caption *must* be aligned properly
    with the other attributes!
 
-Images
-------
-
-.. code:: console
-
-   .. image:: /_static/<filename>.png
-      :align: center
-      :alt: <alternative_text_that_describes_the_image>
-      :target: /_static/<filename>.png
-
-.. note:: `:target:` is optional and only necessary if it is a large image.
-
 Inline Images
 -------------
 
 For an inline image (no breaks above or below, aka inline with the text) a
-substitution must be used. Many common icon substitutions are available in a
-`common substitutions file`_ usable as follows:
+substitution must be used. Since inline images are typically inserted on many
+pages, the inline image file can be placed in the root of ``source/_static``.
+
+Many common icon substitutions are available in a `common substitutions file`_
+usable as follows:
 
 .. code:: console
 
@@ -439,6 +455,7 @@ Which renders as:
 
 .. _A primer on reStructuredText: http://sphinx-doc.org/rest.html
 .. _common substitutions file: https://github.com/pfsense/docs/blob/master/source/substitutions.rsti
+.. _online slug generator: https://you.tools/slugify/
 .. _reST/Sphinx cheat sheet: http://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
 .. _source of this documentation: https://github.com/pfsense/docs/tree/master/source
 .. _Online reStructuredText editor: http://rst.ninjs.org/
