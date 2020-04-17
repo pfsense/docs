@@ -2,135 +2,162 @@ Basic Firewall Configuration Example
 ====================================
 
 This article is designed to describe how pfSense® software performs
-rule matching and a basic strict set of rules.
+rule matching and a basic strict set of rules. The approach described in this
+document is not the most secure, but will help show how rules are setup.
 
-Caveats
--------
+Rules on the **Interface** tabs are matched on the **incoming** interface.
 
--  **Always** remember that rules on Interface tabs are matched on the
-   **INCOMING Interface**.
--  The approach described in this document is not the most secure, but
-   will help understand how rules are setup.
--  Read the :doc:`/firewall/aliases` article as it will make management
-   of rules easier.
+.. seealso:: Read the :doc:`/firewall/aliases` article as it will make
+   management of rules easier.
 
-Example of a basic lock down of the LAN and DMZ out going rules
----------------------------------------------------------------
+Basic lock down of the LAN and DMZ outgoing rules
+-------------------------------------------------
 
 Outbound LAN
 ~~~~~~~~~~~~
 
--  Make sure the "Default LAN > any" rule is either disabled or removed.
--  Allow DNS access - if pfSense is the DNS server, use LAN address, if
-   using outside DNS create rule to allow TCP/UDP 53 to anywhere
+Make sure the **Default LAN > any** rule is either disabled or removed.
 
-   -  Allow TCP/UDP 53 (DNS) from LAN subnet to LAN Address, -or-
-   -  Allow TCP/UDP 53 (DNS) from LAN subnet to Upstream DNS Servers,
-      -or-
-   -  Allow TCP/UDP 53 (DNS) from LAN subnet to anywhere
+#. Allowing DNS access:
 
--  Allow all users to browse web pages anywhere.
+   - If pfSense is the DNS server:
 
-   -  Allow TCP 80 (HTTP) from LAN subnet to anywhere
+     - Allow **TCP/UDP 53** (DNS) from LAN subnet to **LAN Address**.
 
--  Allow users to browse secure web pages anywhere.
+   - If using Upstream DNS Servers:
 
-   -  Allow TCP 443 (HTTPS) from LAN subnet to anywhere
+     - Allow **TCP/UDP 53** (DNS) from LAN subnet to **Upstream DNS Servers**.
 
--  Allow users to access FTP sites anywhere.
+   - Otherwise:
 
-   -  Allow TCP 21 (FTP) from LAN subnet to anywhere
+     - Allow **TCP/UDP 53** (DNS) from LAN subnet to **anywhere**.
 
--  Allow users to access SMTP on a mail server somewhere.
+#. Allowing all users to browse web pages anywhere:
 
-   -  Allow TCP 25 (SMTP) from LAN subnet to anywhere
+   - Allow **TCP 80** (HTTP) from LAN subnet to **anywhere**.
 
--  Allow users to access POP3 on a mail server somewhere.
+#. Allowing users to browse secure web pages anywhere:
 
-   -  Allow TCP 110 (POP3) from LAN subnet to anywhere
+   - Allow **TCP 443** (HTTPS) from LAN subnet to **anywhere**.
 
--  Allow users to access IMAP on a mail server somewhere.
+#. Allowing users to access FTP sites anywhere:
 
-   -  Allow TCP 143 (IMAP) from LAN subnet to anywhere
+   - Allow **TCP 21** (FTP) from LAN subnet to **anywhere**.
 
--  To allow remote connections to an outside windows server, configure a
-   rule for Remote administration.
+#. Allowing users to access SMTP on a mail server somewhere:
 
-   -  Allow TCP/UDP 3389 (Terminal server) from LAN subnet to **IP
-      address of remote server**
+   - Allow **TCP 25** (SMTP) from LAN subnet to **anywhere**.
 
--  To allow LAN to access windows shares on the DMZ, allow
-   NETBIOS/Microsoft-DS from the LAN to the DMZ
+#. Allowing users to access POP3 on a mail server somewhere:
 
-   -  Allow TCP/UDP 137 from LAN subnet (NETBIOS) to **DMZ subnet**
-   -  Allow TCP/UDP 138 from LAN subnet (NETBIOS) to **DMZ subnet**
-   -  Allow TCP/UDP 139 from LAN subnet (NETBIOS) to **DMZ subnet**
-   -  Allow TCP 445 from LAN subnet (NETBIOS) to **DMZ subnet**
+   - Allow **TCP 110** (POP3) from LAN subnet to **anywhere**.
+
+#. Allowing users to access IMAP on a mail server somewhere:
+
+   - Allow **TCP 143** (IMAP) from LAN subnet to **anywhere**.
+
+#. Allowing remote connections to an outside windows server for remote
+   administration:
+
+   - Allow **TCP/UDP 3389** (Terminal server) from LAN subnet to **IP address of
+     remote server**.
+
+#. Allowing LAN to access windows shares on the DMZ, via NETBIOS/Microsoft-DS:
+
+   - Allow **TCP/UDP 137** from LAN subnet (NETBIOS) to **DMZ subnet**.
+   - Allow **TCP/UDP 138** from LAN subnet (NETBIOS) to **DMZ subnet**.
+   - Allow **TCP/UDP 139** from LAN subnet (NETBIOS) to **DMZ subnet**.
+   - Allow **TCP 445** from LAN subnet (NETBIOS) to **DMZ subnet**.
 
 Outbound DMZ
 ~~~~~~~~~~~~
 
--  By default, there are no rules on OPT interfaces.
--  To allow servers to use Windows update or browse the WAN
+By default, there are no rules on **OPT** interfaces.
 
-   -  Allow TCP 80 from DMZ subnet (HTTP) to anywhere
-   -  Allow TCP 443 from DMZ subnet (HTTP) to anywhere
+#. Allowing servers to use Windows update or browse the **WAN**:
 
--  If an external DNS server is used, allow the computers to leave the
-   network to connect to a DNS server.
+   - Allow **TCP 80** from DMZ subnet (HTTP) to **anywhere**.
+   - Allow **TCP 443** from DMZ subnet (HTTP) to **anywhere**.
 
-   -  Allow TCP/UDP 53 from DMZ subnet (DNS) to **IP address of the
-      upstream DNS server (s)**
+#. Allow users to connect to an external DNS server:
 
--  To allow servers to use a remote time server open UDP port 123
+   - Allow **TCP/UDP 53** from DMZ subnet (DNS) to **IP address of the upstream
+     DNS server(s)**
 
-   -  Allow UDP 123 from DMZ subnet (NTP) to **IP address of remote time
-      server** -or-
-   -  Allow UDP 123 from DMZ subnet (NTP) to any
+#. Allowing servers to use a remote time server:
 
-Example setup isolating LAN and DMZ but each with unrestricted Internet access
-------------------------------------------------------------------------------
+   - If using an upstream remote time server:
 
-The strict approach above may not be necessary if outbound access should
-be more lenient, but still controlled between local interfaces. The
-following setup can be used instead.
+     - Allow **UDP 123** from DMZ subnet (NTP) to **IP address of remote time
+       server**.
 
-Prerequisites/Assumptions
-~~~~~~~~~~~~~~~~~~~~~~~~~
+   - Otherwise:
 
-This assumes all local networks are privately numbered, and that
-interfaces have already been configured.
+     - Allow **UDP 123** from DMZ subnet (NTP) to **any**.
 
-Create an alias (**Firewall > Aliases**) called *RFC1918* containing
-*192.168.0.0/16*, *172.16.0.0/12*, and *10.0.0.0/8*
+Setup isolating LAN and DMZ, each with unrestricted Internet access
+-------------------------------------------------------------------
+
+The following setup can be used instead if outbound access is more lenient, but
+still controlled between local interfaces. This assumes all local networks are
+privately numbered, and that interfaces have already been configured.
+
+Create an alias, **Firewall > Aliases** from the main menu, called ``RFC1918``
+containing ``192.168.0.0/16``, ``172.16.0.0/12``, and ``10.0.0.0/8``.
 
 LAN Configuration
 ~~~~~~~~~~~~~~~~~
 
--  Allow TCP/UDP from LAN subnet to LAN Address port 53 for DNS from the
-   firewall
--  Allow TCP from LAN subnet to LAN address port 443 for accessing the
-   GUI
--  Allow ICMP from LAN subnet to LAN address to ping the firewall from
-   the LAN
--  Allow any traffic required from LAN to DMZ (if any)
--  Reject Any from LAN subnet to RFC1918 -- Do not allow LAN to reach
-   DMZ or other private networks
--  Allow Any from LAN subnet to any -- Internet access rule
+#. For DNS from the firewall:
+
+   - Allow **TCP/UDP** from LAN subnet to **LAN Address port 53**.
+
+#. For accessing the GUI:
+
+   - Allow **TCP** from LAN subnet to **LAN address port 443**.
+
+#. To ping the firewall from the LAN:
+
+   - Allow **ICMP** from LAN subnet to **LAN address**.
+
+#. If there is any traffic required from LAN to DMZ:
+
+   - Allow any traffic required from **LAN** to **DMZ**.
+
+#. Do not allow LAN to reach DMZ or other private networks:
+
+   - Reject **Any** from LAN subnet to **RFC1918**.
+
+#. For internet access:
+
+   - Allow **Any** from LAN subnet to **any**.
 
 DMZ Configuration
 ~~~~~~~~~~~~~~~~~
 
--  Allow TCP/UDP from DMZ subnet to DMZ Address port 53 for DNS from the
-   firewall
--  Allow TCP from DMZ subnet to DMZ address port 443 for accessing the
-   GUI (optional)
--  Allow ICMP from DMZ subnet to DMZ address to ping the firewall from
-   the DMZ
--  Allow any traffic required from DMZ to LAN (if any)
--  Reject Any from DMZ subnet to RFC1918 -- Do not allow DMZ to reach
-   LAN or other private networks
--  Allow Any from DMZ subnet to any -- Internet access rule
+#. For DNS from the firewall:
+
+   - Allow **TCP/UDP** from DMZ subnet to **DMZ Address port 53**.
+
+#. For accessing the GUI (optional):
+
+   - Allow **TCP** from DMZ subnet to **DMZ address port 443**.
+
+#. To ping the firewall from the DMZ:
+
+   - Allow **ICMP** from DMZ subnet to **DMZ address**.
+
+#. If there is any traffic required from DMZ to LAN:
+
+   - Allow any traffic required from **DMZ** to **LAN**.
+
+#. Do not allow DMZ to reach LAN or other private networks:
+
+   - Reject **Any** from DMZ subnet to **RFC1918**.
+
+#. For Internet access:
+
+   - Allow **Any** from DMZ subnet to **any**.
 
 Additional Interfaces
 ~~~~~~~~~~~~~~~~~~~~~
