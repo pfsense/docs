@@ -28,6 +28,11 @@ need
 `UPnP <http://en-americas-support.nintendo.com/app/answers/detail/a_id/13216/~/nat-related-troubleshooting-on-wii-u>`__
 to work. See :doc:`What are UPnP and NAT-PMP </services/configuring-upnp-and-nat-pmp>`.
 
+Nintendo Switch
+^^^^^^^^^^^^^^^
+
+Static Port should be setup. See :doc:`Static Port </nat/static-port>`. 
+
 Steam
 ^^^^^
 
@@ -41,5 +46,12 @@ Gunz Online
 To use multiple machines behind pfSense to play, configure each Gunz
 Online machine with a different port. Visit **NAT > Outbound** and setup
 a custom port entry for each machine using the appropriate custom port.
+
+Xbox One
+^^^^^^^^
+
+Static Port should be setup. UPnP may also be required in some cases. 
+See :doc:`Static Port </nat/static-port>`, :doc:`UPnP/NAT-PMP </services/configuring-upnp-and-nat-pmp>`.
+`Xbox Support <https://beta.support.xbox.com/help/Hardware-Network/connect-network/xbox-one-nat-error>`__
 
 .. _forum: https://forum.netgate.com
