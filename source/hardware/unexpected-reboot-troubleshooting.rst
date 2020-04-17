@@ -27,6 +27,6 @@ If there is no kernel panic, then the cause is almost certainly a hardware probl
    exhaustion. See :doc:`Tuning and Troubleshooting Network Cards </hardware/tuning-and-troubleshooting-network-cards>`
    for information on how to overcome that problem.
 
-On NanoBSD systems or full install systems without swap space
-configured, an automatic crash dump will not happen. The details of the
-crash and backtrace would need to be viewed on the console if possible.
+On full install systems without swap space configured, an automatic
+crash dump will not happen. The details of the crash and backtrace would
+need to be viewed on the console if possible.
