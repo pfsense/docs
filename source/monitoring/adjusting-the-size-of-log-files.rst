@@ -10,10 +10,9 @@ once full, losing older messages in the process. These log files are
 held in */var/log* which is in a RAM disk on NanoBSD (optional on a full
 install), and on the SSD/HDD for a full install by default.
 
-Starting with pfSense software version 2.2, the **Log File Size (Bytes)**
-field in the :doc:`Log Settings </monitoring/log-settings>` at 
-**Status > System Logs**, **Settings** tab, allows the user to specify the
-amount of storage to allocate per log file.
+The **Log File Size (Bytes)** field in the :doc:`Log Settings
+</monitoring/log-settings>` at **Status > System Logs**, **Settings** tab,
+allows the user to specify the amount of storage to allocate per log file.
 
 Short Version
 -------------
