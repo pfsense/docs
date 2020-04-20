@@ -13,54 +13,53 @@ Installing the package
 As with any other pfSense® package, it's available via the package
 repository.
 
-- Navigate to **System > Packages**, **Available Packages** tab
-- Find **System Patches** in the list
-- Click |fa-plus| at the end of its row, then confirm, to install
+- Navigate to **System > Packages**, **Available Packages** tab.
+- Find **System Patches** in the list.
+- Click |fa-plus| at the end of its row, then confirm, to install.
 
 Patches may now be managed at **System > Patches**.
 
 Adding a patch
 --------------
 
--  Go to **System > Patches**
--  ***Read the text and warnings!***
--  Click |fa-plus| to add a new patch
--  Enter a **Description** (mandatory, to identify the patch. Free text,
-   no restrictions on letters/characters/spaces)
+-  Go to **System > Patches**.
+-  **Read the text and warnings!**.
+-  Click |fa-plus| to add a new patch.
+-  Enter a **Description** to identify the patch.
 -  Enter any one of:
 
-   -  Commit ID (e.g. *4573641589d50718b544b778cea864cfd725078a*) in the
+   -  Commit ID (e.g. ``4573641589d50718b544b778cea864cfd725078a``) in the
       **URL/Commit ID** field.
    -  Github commit URL (e.g.
-      *https://github.com/pfsense/pfsense/commit/4573641589d50718b544b778cea864cfd725078a*)
+      ``https://github.com/pfsense/pfsense/commit/4573641589d50718b544b778cea864cfd725078a``)
       in the **URL/Commit ID** field.
    -  Github Pull Request (PR) URL with '.diff' appended, such as
-      https://github.com/pfsense/pfsense/pull/XXXX.diff where XXXX is
+      ``https://github.com/pfsense/pfsense/pull/XXXX.diff`` where XXXX is
       the PR number. Set Path Strip = 2 if it does not adjust
       automatically.
    -  Full URL to a patch from another source (e.g.
-      *https://redmine.pfsense.org/attachments/594/0001-Add-support-for-aliases-in-DNS-Forwarder-fixes-2410.patch*)
+      ``https://redmine.pfsense.org/attachments/594/0001-Add-support-for-aliases-in-DNS-Forwarder-fixes-2410.patch``)
       in the **URL/Commit ID** field.
    -  Leave **URL/Commit ID** blank and paste the contents of a patch
       into **Patch Contents** text area.
 
 -  Set the **Path Strip Count**. Github commit IDs and URLs should be
-   count of *2* (fixed automatically on save). Patches from other
+   count of ``2`` (fixed automatically on save). Patches from other
    sources will need to be set appropriately.
 
-   -  If a path like "a/src/etc/inc/filter.inc" is in the patch header,
-      strip off the "a/src" so a strip count of *2* is needed. If it's
-      deeper, such as *home/me/patches/etc/inc/filter.inc*, strip *3*
+   -  If a path like **a/src/etc/inc/filter.inc** is in the patch header,
+      strip off the **a/src** so a strip count of ``2`` is needed. If it's
+      deeper, such as **home/me/patches/etc/inc/filter.inc**, strip ``3``
       levels in that example.
 
--  A **Base Directory** of */* is assumed for the patches, but an
+-  A **Base Directory** of ``/`` is assumed for the patches, but an
    alternate base may be applied if a patch does not supply a full path
-   to the file it is patching. (e.g. */usr/local/www*)
+   to the file it is patching (e.g. ``/usr/local/www``).
 -  Set the **Ignore Whitespace** option appropriately. Patches from
    Github should work with either whitespace setting, patches from other
    sources may need the option set to ignore whitespace, especially if
    they contain DOS line endings rather than UNIX.
--  click **Save**
+-  click **Save**.
 
 Applying/Reverting a patch
 --------------------------
@@ -101,8 +100,16 @@ The patches may be reordered in the list to arrange them so they apply
 in a specific order automatically, in case one patch depends on a
 previous patch.
 
-In the future
--------------
+Known issues
+------------
 
-Planned features eventually will include the ability to automatically
-revert patches.
+.. seealso:: You can find a list of known issues with this package on the
+   `pfSense bug tracker`_.
+
+Package Support
+---------------
+
+This package is currently supported by |support_link| to those with an active
+support subscription.
+
+.. _pfSense bug tracker: https://redmine.pfsense.org/projects/pfsense-packages/issues?utf8=%E2%9C%93&set_filter=1&sort=id%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=o&f%5B%5D=category_id&op%5Bcategory_id%5D=%3D&v%5Bcategory_id%5D%5B%5D=103&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=status&c%5B%5D=priority&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=updated_on&group_by=&t%5B%5D=

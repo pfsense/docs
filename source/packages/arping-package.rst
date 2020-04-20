@@ -14,5 +14,11 @@ is connected at Layer 2.
 
 .. seealso:: Visit the `arping website`_ for more information.
 
+Package Support
+---------------
+
+This package is currently supported by |support_link| to those with an active
+support subscription.
+
 .. _arping: https://en.wikipedia.org/wiki/Arping
 .. _arping website: http://www.habets.pp.se/synscan/programs.php?prog=arping

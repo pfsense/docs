@@ -2,14 +2,13 @@ Open VM Tools package
 =====================
 
 This package installs VMware Tools for pfSense® software, using the
-`Open VM Tools`_ available from VMware. It is built using the 
+`Open VM Tools`_ available from VMware. It is built using the
 `open-vm-tools-nox11 FreeBSD port`_.
 
 Usage
 -----
 
-Just install the package. There is no GUI for control, the services are
-automatically started at boot time.
+There is no web GUI, the services are automatically started at boot time.
 
 Verifying functionality
 -----------------------
@@ -34,8 +33,17 @@ Output similar to the following will be shown::
 
 As long as **vmtoolsd** is shown in the output, it is working.
 
+Known issues
+------------
+
 .. seealso:: You can find a list of known issues with the Open VM Tools package
    on the `pfSense bug tracker`_.
+
+Package Support
+---------------
+
+This package is currently supported by |support_link| to those with an active
+support subscription.
 
 .. _Open VM Tools: https://github.com/vmware/open-vm-tools
 .. _open-vm-tools-nox11 FreeBSD port: http://www.freshports.org/emulators/open-vm-tools-nox11/

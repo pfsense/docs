@@ -5,8 +5,8 @@ The `sudo <http://www.sudo.ws/>`__ package configures basic rules for allowing
 unprivileged shell users (read: anyone but root/admin) to run commands as root
 or another user/group.
 
-Once the package is installed, use the pfSense® webGUI to navigate to **System > sudo**, and define
-commands and who may run them.
+Once the package is installed, use the pfSense® webGUI to navigate to **System >
+sudo**, and define commands and who may run them.
 
 More information on the full command options may be found in the `sudoers manual
 <http://www.sudo.ws/sudoers.man.html>`__.
@@ -53,3 +53,17 @@ Examples:
 * Run *ping* and *traceroute* and their IPv6 variants with any parameters::
 
     /sbin/ping, /sbin/ping6, /usr/sbin/traceroute, /usr/sbin/traceroute6
+
+Known issues
+------------
+
+.. seealso:: You can find a list of known issues with this package on the
+   `pfSense bug tracker`_.
+
+Package Support
+---------------
+
+This package is currently supported by |support_link| to those with an active
+support subscription.
+
+.. _pfSense bug tracker: https://redmine.pfsense.org/projects/pfsense-packages/issues?utf8=%E2%9C%93&set_filter=1&sort=id%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=o&f%5B%5D=category_id&op%5Bcategory_id%5D=%3D&v%5Bcategory_id%5D%5B%5D=81&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=status&c%5B%5D=priority&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=updated_on&group_by=&t%5B%5D=
