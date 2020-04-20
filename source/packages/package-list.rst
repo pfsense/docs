@@ -85,9 +85,9 @@ Cron
 Darkstat
 --------
 
-**Darkstat** is a network statistics gatherer. It's a packet sniffer that runs
-as a background process on a cable/DSL router, gathers all sorts of statistics
-about network usage, and serves them over HTTP.
+**Darkstat** is a network statistics gatherer that offers bandwidth graphs for
+an interface, as well as traffic to/from specific IP addresses. Once installed,
+it appears under **Diagnostics > darkstat**.
 
 FreeRADIUS
 ----------
