@@ -16,81 +16,80 @@ Setup Syslog on the Logging Host
 First, configure the syslog server to accept remote connections which
 means running it with the ``-a <subnet>`` or similar flag.
 
-FreeBSD
-^^^^^^^
+.. tabs::
 
-On FreeBSD, edit **/etc/rc.conf** and add this line::
+   .. tab:: Windows
 
-  syslogd_flags=" -a 192.168.1.1 "
+      Setting this up on Windows entirely depends on which syslog server is
+      being used. Consult the documentation for more information on
+      configuration.
 
-Where 192.168.1.1 is the IP address of the pfSense firewall.
+      There is a free multi-purpose utility that can act as a syslog server,
+      which can be found here: http://tftpd32.jounin.net/
 
-More complex allow rules for syslog are also possible, like so::
+      Kiwi Syslog Server is free for up to 5 devices.
+      http://www.kiwisyslog.com/downloads.aspx
 
-  syslogd_flags=" -a 10.0.10.0/24:*"
+   .. tab:: Linux
 
-Using that parameter, syslog will accept from any IP address in the
-10.0.10.0 subnet (mask 255.255.255.0) and the messages may come from any
-UDP port.
+      Configuration of the system logger on Linux depends on the distribution.
+      Consult the distribution's documentation on how to change the behavior of
+      **syslogd**. It should be similar in many cases to the alterations in the
+      FreeBSD section.
 
-Now, edit ``/etc/syslog.conf`` and add a block at the bottom::
+   .. tab:: FreeBSD
 
-  !*
-  +*
-  
-  +pfSense
-  *.*                /var/log/pfsense.log
+      On FreeBSD, edit **/etc/rc.conf** and add this line::
 
-Where ``pfSense`` is the hostname of the pfSense firewall. An entry may also
-need to be added in **/etc/hosts** for that system, depending on the DNS
-setup. Logs may be split separate files. Use the **/etc/syslog.conf** file
-on the pfSense firewall for more details on which logging facilities are
-used for specific items.
+        syslogd_flags=" -a 192.168.1.1 "
 
-The log file may also need to be created manually with proper
-permissions::
+      Where ``192.168.1.1`` is the IP address of the pfSense firewall.
 
-  touch /var/log/pfsense.log
-  chmod 640 /var/log/pfsense.log
+      More complex allow rules for syslog are also possible, like so::
 
-Now restart syslog::
+        syslogd_flags=" -a 10.0.10.0/24:*"
 
-  /etc/rc.d/syslogd restart
+      Using that parameter, syslog will accept from any IP address in the
+      10.0.10.0 subnet (mask 255.255.255.0) and the messages may come from any
+      UDP port.
 
-OpenBSD
-^^^^^^^
+      Now, edit ``/etc/syslog.conf`` and add a block at the bottom::
 
-The configuration for OpenBSD is similar to FreeBSD, with the following notes:
+        !*
+        +*
+        
+        +pfSense
+        *.*                /var/log/pfsense.log
 
-#. The option to accept remote syslog events is ``-u``.
-#. This option may be enabled using *rcctl(8)*::
+      Where ``pfSense`` is the hostname of the pfSense firewall. An entry may
+      also need to be added in **/etc/hosts** for that system, depending on the
+      DNS setup. Logs may be split separate files. Use the **/etc/syslog.conf**
+      file on the pfSense firewall for more details on which logging facilities
+      are used for specific items.
 
-    rcctl set syslogd flags -u
+      The log file may also need to be created manually with proper
+      permissions::
 
-#. To restart the syslogd service::
+        touch /var/log/pfsense.log
+        chmod 640 /var/log/pfsense.log
 
-    rcctl restart syslogd
+      Now restart syslog::
 
-Linux
-^^^^^
+        /etc/rc.d/syslogd restart
 
-Configuration of the system logger on Linux depends on the distribution.
-Consult the distribution's documentation on how to change the behavior of
-syslogd. It should be similar in many cases to the alterations in the
-FreeBSD section.
+   .. tab:: OpenBSD
 
-Windows
-^^^^^^^
+      The configuration for OpenBSD is similar to FreeBSD, with the following
+      notes:
 
-Setting this up on Windows entirely depends on which syslog server is
-being used. Consult the documentation for more information on
-configuration.
+      #. The option to accept remote syslog events is ``-u``.
+      #. This option may be enabled using *rcctl(8)*::
 
-There is a free multi-purpose utility that can act as a syslog server,
-which can be found here: http://tftpd32.jounin.net/
+          rcctl set syslogd flags -u
 
-Kiwi Syslog Server is free for up to 5 devices.
-http://www.kiwisyslog.com/downloads.aspx
+      #. To restart the syslogd service::
+
+          rcctl restart syslogd
 
 Other Logging Servers
 ^^^^^^^^^^^^^^^^^^^^^
@@ -103,12 +102,11 @@ be fairly simple to setup as it would be for any other syslog system.
 Setup pfSense Software for Remote Logging
 -----------------------------------------
 
-* Click **Status > System Logs**
-* Click the **Settings** tab
-* Check **Enable syslog'ing to remote syslog server**
-* Type the IP of the logging server in the box next to **Remote syslog
-  server**
-* Check the boxes for the log entries to forward
-* Click **Save**
+* Click **Status > System Logs**.
+* Click the **Settings** tab.
+* Check **Enable syslog'ing to remote syslog server**.
+* Type the IP of the logging server in the box next to **Remote syslog server**.
+* Check the boxes for the log entries to forward.
+* Click **Save**.
 
 Log messages will begin flowing to the target system.
