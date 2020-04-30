@@ -285,7 +285,7 @@ Service Watchdog
 Shellcmd
 --------
 
-**Shellcmd** is used to manage commands on system startup.
+:doc:`Shellcmd </development/executing-commands-at-boot-time>` is used to manage commands on system startup.
 
 Siproxd
 -------
