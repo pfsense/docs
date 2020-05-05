@@ -20,6 +20,7 @@ Current/Upcoming Supported Releases
    :maxdepth: 1
 
    2-5-0-new-features-and-changes
+   2-4-5-p1-new-features-and-changes
    2-4-5-new-features-and-changes
    2-4-4-p3-new-features-and-changes
 
