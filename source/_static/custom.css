@@ -468,10 +468,6 @@ footer label {
     margin-left: 10px;
   }
 
-  #local-table-of-contents.docs-sidebar-section ul li {
-    white-space: nowrap;
-  }
-
   #local-table-of-contents.docs-sidebar-section ul ul {
     padding-left: 0px;
     margin-left: 10px;
