@@ -175,6 +175,21 @@ Broadcom bge(4) Cards
 
 See above, but change "bce" to "bge" in the setting names.
 
+Chelsio cxgbe(4) Cards
+----------------------------
+
+It is possible to disable the allocation of resources that are not related
+to the router so that the network adapter can use its entire set of resources
+for the corresponding functions:
+
+In */boot/loader.conf.local* - Add the following (or create the file if
+it does not exist)::
+
+  hw.cxgbe.toecaps_allowed=0
+  hw.cxgbe.rdmacaps_allowed=0
+  hw.cxgbe.iscsicaps_allowed=0
+  hw.cxgbe.fcoecaps_allowed=0
+
 Intel igb(4) and em(4) Cards
 ----------------------------
 
@@ -239,6 +254,11 @@ method of this depends on the hardware involved, but here are a couple
 examples:
 
 All of these go in */boot/loader.conf.local*
+
+cxgbe(4)::
+
+  hw.cxgbe.pause_settings=0
+
 
 em(4)::
 
