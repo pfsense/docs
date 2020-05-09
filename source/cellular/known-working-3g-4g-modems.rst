@@ -134,6 +134,7 @@ Modems reported to work as Ethernet devices
 - ZTE MF90
 - ZTE MF823 - Defaults to 192.168.0.1, will need to be sure local
   system does not have an overlapping network.
+- ZTE MF833V - Same
 - ZTE MF915 LTE modem (T-Mobile)
 - ZTE MF975S
 - Huawei E3372h - Command to switch to the correct mode:::
