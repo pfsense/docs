@@ -79,7 +79,8 @@ State synchronization should be enabled on all cluster nodes.
 Enable Configuration Synchronization (XMLRPC Sync)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Before proceeding, set the same *admin* user password and
+Before proceeding, set the same user with the "System - HA node sync" 
+privilege (or *admin* user), password and
 webConfigurator protocol (e.g. HTTPS) on each cluster node.
 
 The configuration synchronization settings should only be enabled on the
@@ -88,8 +89,8 @@ primary cluster node.
 -  Navigate to **System > High Avail. Sync**
 -  Enter the IP address of the secondary in **Synchronize Config to IP**
    (*192.168.4.2* from the above example)
--  Enter *admin* for the **Remote System Username** (other usernames
-   will not work)
+-  Enter the user with the "System - HA node sync" privilege (or *admin* user)
+   for the **Remote System Username**
 -  Enter the **Remote System Password** (the password should be the same
    on all nodes)
 -  Check boxes for the desired configuration areas to sync. Typically
