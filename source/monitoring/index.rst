@@ -18,7 +18,7 @@ and so on.
 
    system-logs
    firewall-logs
-   filter-log-format-for-pfsense-2-2
+   raw-filter-log-format
    gateway-logs
    ntp-logs
    package-logs
