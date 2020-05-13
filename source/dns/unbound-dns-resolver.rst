@@ -49,7 +49,7 @@ services.
   trusted and also provide DNSSEC support. Forwarding mode is necessary
   for Multi-WAN configurations unless default gateway switching is
   enabled.
-- **Register DHCP leases in the DNS Resolver**: DHCP static mappings
+- **Register DHCP leases in the DNS Resolver**: DHCP dynamic mappings
   can be registered in Unbound which enables the resolving of hostnames
   that have been assigned addresses by the DHCP server in pfSense 
   software. This should only be enabled on networks where the client
