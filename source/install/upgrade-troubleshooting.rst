@@ -91,7 +91,7 @@ a few potential errors include:
 ::
 
   fetch -qo /usr/local/share/pfSense/keys/pkg/trusted/ \
-   https://raw.githubusercontent.com/pfsense/pfsense/RELENG_2_4_4/src/usr/local/share/pfSense/keys/pkg/trusted/pkg.pfsense.org.20160406
+   https://raw.githubusercontent.com/pfsense/pfsense/RELENG_2_4_5/src/usr/local/share/pfSense/keys/pkg/trusted/pkg.pfsense.org.20160406
 
 .. _upgrade-troubleshooting-manualcheck:
 
@@ -133,7 +133,7 @@ To find the actual update servers, lookup the SRV record for the host::
 Accessing the hosts using their real hostnames will work with a browser::
 
   $curl --output /dev/null --silent --head --fail \
-   "https://files00.netgate.com/pfSense_v2_3_4_amd64-core/meta.txz"
+   "https://files00.netgate.com/pfSense_v2_4_5_amd64-core/meta.txz"
   $ echo $?
   0
 
