@@ -1,9 +1,6 @@
 VPN Capability Overview
 =======================
 
-Overview
---------
-
 pfSense® software contains multiple VPN technologies, all of which work well.
 
 * :doc:`OpenVPN </vpn/openvpn/index>`
