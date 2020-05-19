@@ -63,6 +63,16 @@ pfSense® software.
    - As a modem device: requires manual firmware changes, see
      `this article <http://www.0xf8.org/2017/01/flashing-a-huawei-e3372h-4g-lte-stick-from-hilink-to-stick-mode/>`__
 
+- Huawei E3531 - Command to switch to the correct mode:::
+
+    usb_modeswitch -v 12d1 -p 15e7 -M 55534243123456780000000000000011062000000101000100000000000000
+
+  The command has to be executed every time it's detached and reattached,
+  the interface has to be disabled and then enabled again.
+
+   -  Link interface: /dev/cuaU0.0
+   -  Init string: &F&C1&D2E0S0=0
+
 -  Huawei K3563
 -  Huawei E5372
 -  Huawei E5776
