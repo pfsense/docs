@@ -54,8 +54,8 @@ pfSense® software.
 -  Huawei E1820
 -  Huawei E3372s LTE USB-stick
 
-   -  Link interface: /dev/cuaU0.1
-   -  Init string: &F&C1&D2E0S0=0
+   -  Link interface: ``/dev/cuaU0.1``
+   -  Init string: ``&F&C1&D2E0S0=0``
 
 -  Huawei E3372h LTE USB-stick
 
@@ -70,8 +70,8 @@ pfSense® software.
   The command has to be executed every time it's detached and reattached,
   the interface has to be disabled and then enabled again.
 
-   -  Link interface: /dev/cuaU0.0
-   -  Init string: &F&C1&D2E0S0=0
+   -  Link interface: ``/dev/cuaU0.0``
+   -  Init string: ``&F&C1&D2E0S0=0``
 
 -  Huawei K3563
 -  Huawei E5372
@@ -79,6 +79,10 @@ pfSense® software.
 -  Huawei VIK K3715 HSU by Vodafone
 -  Huawei K3765 by Vodafone
 -  Huawei ME909u-521 4G/LTE Mini-PCIe
+
+   -  Link interface: ``/dev/cuaU0.0``
+   -  Init string: ``&F0E1Q0 +CMEE=2``
+
 -  Huawei ME909s-120 4G/LTE Mini-PCIe
 -  Nokia Phone E72-1 connected via USB cable
 -  Sierra Wireless U305
