@@ -61,7 +61,7 @@ allocate to clients requesting a delegation. It may be a single subnet
 For example, if *FC07:1010:1010::/48* is routed to a firewall, the
 **Prefix Delegation Range** of *FC07:1010:1010:F000::* to
 *FC07:1010:1010:FF00::* could be used with a **Prefix Delegation Size**
-of 60.
+of 56.
 
 Static IP Mappings
 ------------------
