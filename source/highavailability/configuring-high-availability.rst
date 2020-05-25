@@ -118,11 +118,11 @@ Setup Manual Outbound NAT
 -  Click Apply changes
 
 .. note:: Never add outbound NAT rules that could match the WAN/Public IP
-   addresses of the cluster. This includes both rules that have the public
-   IP addresses listed explicitly and also rules that have *any* set as a
-   source. These NAT rules will cause other problems/unintended behavior,
-   and will break outbound connectivity from the secondary node when it is
-   in a BACKUP state.
+   addresses of the cluster. This includes rules that have the public
+   IP addresses listed explicitly and also rules that have *This Firewall (self)*
+   or *any* set as a source. These NAT rules will cause other problems/unintended 
+   behavior, and will break outbound connectivity from the secondary node when 
+   it is in a BACKUP state.
 
 Set DHCP Server to Use CARP LAN IP Address
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
