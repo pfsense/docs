@@ -272,7 +272,7 @@ ixgbe(4) (aka ix):
 
 * Either this (pfSense 2.3+)::
 
-    dev.ix.0.fc=0
+    hw.ix.flow_control=0
 
 * Or this (pfSense 2.2.x and before)::
 
