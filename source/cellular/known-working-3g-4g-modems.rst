@@ -65,13 +65,13 @@ pfSense® software.
 
 - Huawei E3531 - Command to switch to the correct mode:::
 
-    usb_modeswitch -v 12d1 -p 15e7 -M 55534243123456780000000000000011062000000101000100000000000000
+    usb_modeswitch -v 12d1 -p 15e7 -c /usr/local/share/usb_modeswitch/12d1:15e7
 
   The command has to be executed every time it's detached and reattached,
   the interface has to be disabled and then enabled again.
 
    -  Link interface: ``/dev/cuaU0.0``
-   -  Init string: ``&F&C1&D2E0S0=0``
+   -  Init string: ``&F0E1Q0 +CMEE=2``
 
 -  Huawei K3563
 -  Huawei E5372
