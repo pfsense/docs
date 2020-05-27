@@ -26,7 +26,6 @@ Snort
    snort-ip-reputation-preprocessor
    snort-ip-reputation
    snort-passlist
-   snort-preprocessors
    snort-rules
    snort-rulesets
    snort-suppress-list
