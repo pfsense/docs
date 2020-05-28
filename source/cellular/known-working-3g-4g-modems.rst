@@ -91,6 +91,10 @@ pfSense® software.
 -  Sierra Wireless MC7354
 -  Sierra Wireless MC7355
 -  Sierra Wireless MC7710
+
+   - May require usb-comp or ID change. See https://forum.netgate.com/post/556751
+     for more information.
+
 -  HP2300 (Sierra Wireless MC8775 3G) Mini-PCIe
 -  USB Connect Mercury (Sierra Wireless Compass 885 or C885)
 -  Sierra Wireless Compass 889
