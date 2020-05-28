@@ -72,7 +72,7 @@ NTOPNG
 ------
 
 If even more detail is required, the
-`ntopng <http://www.ntop.org/overview.html>`__ package, which can
+`ntopng <https://www.ntop.org/products/traffic-analysis/ntop/>`__ package, which can
 also be found under **System > Packages**, can help. It can break down
 detail by IP, protocol, and so on. Once installed, it appears under
 **Diagnostics > ntopng**. It will even track where connections were made
