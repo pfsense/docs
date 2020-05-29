@@ -24,6 +24,7 @@ Security / Errata
 
 * Addressed an issue with large ``pf`` tables causing system instability and high CPU usage during filter reload events `#10414 <https://redmine.pfsense.org/issues/10414>`__
 * Fixed an issue with ``sshguard`` which could prevent it from protecting against brute force logins `#10488 <https://redmine.pfsense.org/issues/10488>`__
+* Updated ``unbound`` to address CVE-2020-12662 and CVE-2020-12663 `#10576 <https://redmine.pfsense.org/issues/10576>`__
 
 Aliases / Tables
 ----------------
@@ -34,6 +35,7 @@ Authentication
 --------------
 
 * Fixed handling of misconfigured groups which prevented the ``admin`` user from making configuration changes `#10492 <https://redmine.pfsense.org/issues/10492>`__
+* Fixed a potential temporary privilege downgrade when deleting an account `#9259 <https://redmine.pfsense.org/issues/9259>`__
 
 Backup / Restore
 ----------------
@@ -89,6 +91,7 @@ Diagnostics
   `#10423 <https://redmine.pfsense.org/issues/10423>`__
   `#10350 <https://redmine.pfsense.org/issues/10350>`__
   `#10349 <https://redmine.pfsense.org/issues/10349>`__
+  `#10568 <https://redmine.pfsense.org/issues/10568>`__
 * Fixed Require State Filter setting on ``diag_states.php`` breaking filter rule link to associated states `#10359 <https://redmine.pfsense.org/issues/10359>`__
 
 DNS Resolver
@@ -102,6 +105,7 @@ Dynamic DNS
 -----------
 
 * Fixed DigitalOcean Dynamic DNS client handling of IPv6 addresses `#10390 <https://redmine.pfsense.org/issues/10390>`__
+* Fixed DNSExit update URL `#9632 <https://redmine.pfsense.org/issues/9632>`__
 
 Hardware / Drivers
 ------------------
@@ -110,6 +114,9 @@ Hardware / Drivers
 
   .. note:: This device only supports Station mode. It does not support acting
      as an access point.
+* Added ``ng_etf`` module to ``armv6`` and ``aarch64`` kernels `#10463 <https://redmine.pfsense.org/issues/10463>`__
+* Added QLogic 10G driver (``qlxgb``/``qla80xx``) `#9891 <https://redmine.pfsense.org/issues/9891>`__
+* Added ``virtio_console`` to the kernel `#9985 <https://redmine.pfsense.org/issues/9985>`__
 
 IPsec
 -----
@@ -125,6 +132,8 @@ L2TP
 
 * Changed L2TP ``mpd.secret`` handling so that the server is not restarted after adding/modifying L2TP users `#4866 <https://redmine.pfsense.org/issues/4866>`__
 * Fixed handling of L2TP usernames containing a realm separator (``@``) `#9828 <https://redmine.pfsense.org/issues/9828>`__
+* Fixed Shared Secret handling in L2TP `#10531 <https://redmine.pfsense.org/issues/10531>`__
+  `#10527 <https://redmine.pfsense.org/issues/10527>`__
 
 Limiters
 --------
@@ -151,8 +160,8 @@ OpenVPN
 Operating System
 ----------------
 
-* Added ``ng_etf`` module to ``armv6`` and ``aarch64`` kernels `#10463 <https://redmine.pfsense.org/issues/10463>`__
 * Fixed handling of RAM disk sizes not accounting for existing disk usage when calculating available kernel memory, which could prevent saving `#10420 <https://redmine.pfsense.org/issues/10420>`__
+* Updated ``pkg`` to 1.13.x `#10564 <https://redmine.pfsense.org/issues/10564>`__
 
 Packages
 --------
@@ -168,11 +177,17 @@ Rules / NAT
 * Fixed IPv6 IP Alias VIPs not being added to Interface Network macros `#8256 <https://redmine.pfsense.org/issues/8256>`__
 * Fixed Destination port range "Any" in Port Forward rules `#7704 <https://redmine.pfsense.org/issues/7704>`__
 * Fixed display of interfaces on the Floating rules list `#4629 <https://redmine.pfsense.org/issues/4629>`__
+* Fixed rule description validation to reject ``\`` `#10542 <https://redmine.pfsense.org/issues/10542>`__
 
 Translations
 ------------
 
 * Fixed language selection for Chinese (Taiwan) / HK Translations `#10525 <https://redmine.pfsense.org/issues/10525>`__
+
+Services
+--------
+
+* Fixed ``is_process_running()`` handling of empty process, which could lead to an error when using the CLI to query the status of a service which does not exist `#10540 <https://redmine.pfsense.org/issues/10540>`__
 
 Web Interface
 -------------
