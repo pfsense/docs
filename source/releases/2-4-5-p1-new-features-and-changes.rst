@@ -25,6 +25,14 @@ Security / Errata
 * Addressed an issue with large ``pf`` tables causing system instability and high CPU usage during filter reload events `#10414 <https://redmine.pfsense.org/issues/10414>`__
 * Fixed an issue with ``sshguard`` which could prevent it from protecting against brute force logins `#10488 <https://redmine.pfsense.org/issues/10488>`__
 * Updated ``unbound`` to address CVE-2020-12662 and CVE-2020-12663 `#10576 <https://redmine.pfsense.org/issues/10576>`__
+* Updated ``json-c`` to address CVE-2020-12762 `#10609 <https://redmine.pfsense.org/issues/10609>`__
+
+* Addressed FreeBSD Security Advisories & Errata Notices including
+
+  * `FreeBSD-SA-20:10.ipfw <https://security.freebsd.org/advisories/FreeBSD-SA-20:10.ipfw.asc>`__
+  * `FreeBSD-SA-20:12.libalias <https://security.freebsd.org/advisories/FreeBSD-SA-20:12.libalias.asc>`__
+  * `FreeBSD-SA-20:13.libalias <https://security.freebsd.org/advisories/FreeBSD-SA-20:13.libalias.asc>`__
+  * `FreeBSD-SA-20:15.cryptodev <https://security.freebsd.org/advisories/FreeBSD-SA-20:15.cryptodev.asc>`__
 
 Aliases / Tables
 ----------------
@@ -162,12 +170,15 @@ Operating System
 
 * Fixed handling of RAM disk sizes not accounting for existing disk usage when calculating available kernel memory, which could prevent saving `#10420 <https://redmine.pfsense.org/issues/10420>`__
 * Updated ``pkg`` to 1.13.x `#10564 <https://redmine.pfsense.org/issues/10564>`__
+* Fixed problems preventing the Netgate Coreboot Package from updating Coreboot properly `#10573 <https://redmine.pfsense.org/issues/10573>`__
 
 Packages
 --------
 
 * Fixed handling of FreeRADIUS passwords containing non-XML-safe characters `#4497 <https://redmine.pfsense.org/issues/4497>`__
 * Fixed handling of Squid LDAP search filters containing an accent `#7654 <https://redmine.pfsense.org/issues/7654>`__
+* Fixed issues preventing FRR from working on certain platforms such as SG-1100 (arm64/aarch64) `#10444 <https://redmine.pfsense.org/issues/10444>`__
+* Fixed issues preventing Suricata from working on certain platforms such as SG-1100 (arm64/aarch64) `#10228 <https://redmine.pfsense.org/issues/10228>`__
 
 Rules / NAT
 -----------
@@ -178,6 +189,7 @@ Rules / NAT
 * Fixed Destination port range "Any" in Port Forward rules `#7704 <https://redmine.pfsense.org/issues/7704>`__
 * Fixed display of interfaces on the Floating rules list `#4629 <https://redmine.pfsense.org/issues/4629>`__
 * Fixed rule description validation to reject ``\`` `#10542 <https://redmine.pfsense.org/issues/10542>`__
+* Fixed setting NAT reflection timeout values `#10591 <https://redmine.pfsense.org/issues/10591>`__
 
 Translations
 ------------
