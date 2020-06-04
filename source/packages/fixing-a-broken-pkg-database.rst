@@ -14,11 +14,11 @@ usually be corrected by running a few commands to re-create the database.
 
 #. Force an update of the package repository data::
 
-     /usr/sbin/pkg-static update -f
+     /usr/local/sbin/pkg-static update -f
 
 #. Force a reinstall of the pfSense® base package and kernel::
 
-     /usr/sbin/pkg-static install -yf pkg pfSense pfSense-kernel-pfSense
+     /usr/local/sbin/pkg-static install -yf pkg pfSense pfSense-kernel-pfSense
 
 #. Refresh the **php.ini** and other files to ensure they are loading the
    correct modules::
@@ -28,4 +28,4 @@ usually be corrected by running a few commands to re-create the database.
 #. If any additional packages were installed, reinstall them manually using the GUI
    if possible, or by using ``pkg-static install`` as above::
    
-     /usr/sbin/pkg-static install -yf <additional-package> <another-additional-package>
+     /usr/local/sbin/pkg-static install -yf <additional-package> <another-additional-package>
