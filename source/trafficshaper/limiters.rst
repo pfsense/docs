@@ -102,14 +102,6 @@ When using limiters on bridges, the bridge interface must be assigned and it
 must contain the IP address for the bridge. Place the limiters on the member
 interfaces.
 
-Known limitations
------------------
-
--  On pfSense 2.2 and 2.3, limiters cannot be used on firewall rules residing on
-   interfaces where NAT applies. This limits their use to LAN-type interfaces
-   only, and not WANs, in most circumstances. This has been fixed on pfSense
-   2.4. `Bug #4326`_.
-
 Troubleshooting
 ---------------
 
