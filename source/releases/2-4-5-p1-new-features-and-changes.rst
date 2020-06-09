@@ -27,7 +27,7 @@ Security / Errata
 * Updated ``unbound`` to address CVE-2020-12662 and CVE-2020-12663 `#10576 <https://redmine.pfsense.org/issues/10576>`__
 * Updated ``json-c`` to address CVE-2020-12762 `#10609 <https://redmine.pfsense.org/issues/10609>`__
 
-* Addressed FreeBSD Security Advisories & Errata Notices including
+* Addressed FreeBSD Security Advisories & Errata Notices including:
 
   * `FreeBSD-SA-20:10.ipfw <https://security.freebsd.org/advisories/FreeBSD-SA-20:10.ipfw.asc>`__
   * `FreeBSD-SA-20:12.libalias <https://security.freebsd.org/advisories/FreeBSD-SA-20:12.libalias.asc>`__
