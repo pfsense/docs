@@ -1,11 +1,11 @@
 Troubleshooting High Availability Clusters
 ==========================================
 
-There are typically four main problems that arise from using CARP that
+There are typically five main problems that arise from using CARP that
 cause failures: Using duplicate VHIDs, use of the wrong subnet mask on a
-CARP VIP, attempting to use a CARP VIP outside the interface subnet, or
+CARP VIP, attempting to use a CARP VIP outside the interface subnet, 
 a switch (virtual or real) improperly handling the required traffic for
-CARP.
+CARP, or a misconfigured base and skew value for virtual IP addresses.
 
 Conflicting VHIDs
 -----------------
@@ -190,6 +190,58 @@ Switch/Layer 2 Issues
 
      ip igmp snooping
      no ip igmp snooping
+#. For STP/RSTP enabled switch ports, enable PortFast/Edge Port (or vendor equivalent) on switch to ensure there is no startup delay passing traffic on the port.
+
+CARP Configuration Errors
+-------------------------
+
+Virtual IP misconfiguration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Review each ``type: CARP`` virtual IP address at **Firewall > Virtual IPs** 
+on primary and backup node.
+  
+* **base** values must match (default value 1).
+
+* **skew** values must be different.
+
+  * Typically primary node is 0 and backup node is 100.
+
+* Typical symptoms of a matching skew include:
+  
+  * A primary node that fails to automatically resume master status from a secondary node.
+  * Random CARP state changes.
+
+Verify **Persistent CARP Maintenance Mode** is not active on any of the nodes 
+at **Status > CARP (failover)**.  In maintenance mode, the skew for all CARP
+virtual IP(s) on the node is overridden to 254, and the node with the higher
+skew will be demoted.
+
+If all nodes are put into maintenance mode, skews will match at 254, causing 
+unpredictable CARP state changes between the nodes.
+    
+Gathering more information
+--------------------------
+
+Review **Status > System Logs** on both primary and secondary nodes to look
+for events surrounding state changes, including demotions 
+(i.e. ``carp: demoted by X to X``), port up/down, etc.
+
+Go to **Diagnostics > Command Prompt** and execute **ifconfig** on both nodes.
+Review interfaces where CARP is configured and confirm the ``carp:`` lines are 
+showing the expected MASTER, vhid, advbase and advskew values.  For example::
+
+  carp: MASTER vhid 1 advbase 1 advskew 0
+
+Compare the ``carp:`` values between primary and secondary.  If advskew is 254, 
+persistent CARP maintenance mode is likely enabled, see 
+**Status > CARP (failover)** to disable.
+
+Execute ``sysctl -a | grep carp`` from **Diagnostics > Command Prompt** to
+verify configured system tunables and carp status.  If
+``net.inet.carp.demotion`` value is non-zero, then the node has demoted
+itself.  The cause needs to be investigated (possibly layer 2 network 
+issues - a bad cable, bad switch port configuration, etc).
 
 .. seealso:: For assistance in solving problems, post on the `HA/CARP/VIPs
    category of Netgate Forum`_.
