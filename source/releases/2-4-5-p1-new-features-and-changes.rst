@@ -19,6 +19,22 @@ miscellaneous issues found in :doc:`2.4.5 <2-4-5-new-features-and-changes>`.
    <https://www.netgate.com/blog/category.html#releases>`__ to read all
    important information and warnings before proceeding.
 
+.. note:: pfSense software version 2.4.5-p1 includes ``pkg`` version 1.13.x
+   which introduces a new metadata version. Most installations will
+   automatically pick up the new version and upgrade normally. In certain cases,
+   especially coming from much older versions, the ``pkg`` utility may require a
+   manual update before it can correctly process the new metadata.
+
+   The ``pkg`` utility can be upgraded manually with the following command run
+   from an ssh or console shell:
+
+   .. code-block:: console
+
+     # pkg-static bootstrap -f
+
+   See :ref:`upgrade-repository-wrong-version` for more details.
+
+
 Security / Errata
 -----------------
 

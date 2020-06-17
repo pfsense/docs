@@ -28,9 +28,43 @@ libraries, take the following steps:
 * Navigate to **System > Updates**
 * Set **Branch** to *Latest stable version*
 * Refresh the repository configuration and upgrade script by running the
-  following commands from the console or shell::
+  following commands from the console or shell:
 
-    pkg-static clean -ay; pkg-static install -fy pkg pfSense-repo pfSense-upgrade
+.. code-block:: console
+
+  # pkg-static clean -ay; pkg-static install -fy pkg pfSense-repo pfSense-upgrade
+
+.. _upgrade-repository-wrong-version:
+
+Repository Metadata Version Errors
+----------------------------------
+
+If ``pkg`` is unable to update and complains about the repository metadata
+version, the ``pkg`` utility may need to be updated manually to version 1.13.x
+or later.
+
+Example metadata version error:
+
+.. code-block:: console
+
+  >>> Updating repositories metadata...
+  Updating pfSense-core repository catalogue...
+  pkg-static: repository meta /var/db/pkg/pfSense-core.meta has wrong version 2
+  pkg-static: Repository pfSense-core load error: meta cannot be loaded No error: 0
+
+To correct the problem, manually bootstrap ``pkg`` from an ssh or console shell:
+
+.. code-block:: console
+
+  # pkg-static bootstrap -f
+
+.. warning:: Do not run the above command from **Diagnostics > Command** as it
+   requires interactive input. If ssh and console shells are unavailable, use
+   this variation instead:
+
+   .. code-block:: console
+
+     env ASSUME_ALWAYS_YES=yes pkg-static bootstrap -f
 
 .. _upgrade-troubleshooting-repo:
 
@@ -61,9 +95,11 @@ Force pkg Metadata Update
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Often times DNS or connectivity problems will prevent the firewall from finding
-updates. A quick way to verify this is to force a `pkg` metadata update::
+updates. A quick way to verify this is to force a `pkg` metadata update:
 
-  pkg-static update -f
+.. code-block:: console
+
+  # pkg-static update -f
 
 This command forces an update and will print errors if problems are found,
 a few potential errors include:
@@ -88,9 +124,9 @@ a few potential errors include:
   :ref:`upgrade-troubleshooting-repo`. May require a reinstall to resolve.
   For CE installations, try the following command:
 
-::
+.. code-block:: console
 
-  fetch -qo /usr/local/share/pfSense/keys/pkg/trusted/ \
+  # fetch -qo /usr/local/share/pfSense/keys/pkg/trusted/ \
    https://raw.githubusercontent.com/pfsense/pfsense/RELENG_2_4_5/src/usr/local/share/pfSense/keys/pkg/trusted/pkg.pfsense.org.20160406
 
 .. _upgrade-troubleshooting-manualcheck:
@@ -98,9 +134,11 @@ a few potential errors include:
 Manual Update Check
 ^^^^^^^^^^^^^^^^^^^
 
-To run a manual update check from the CLI::
+To run a manual update check from the CLI:
 
-  pfSense-upgrade -d -c
+.. code-block:: console
+
+  # pfSense-upgrade -d -c
 
 When run successfully, this command will print a line stating that a new version
 is available, and the version number of the available update. Errors displayed
@@ -116,7 +154,9 @@ pkg.pfsense.org Has no A/AAAA Record
 server meta names such as ``pkg.pfsense.org`` are not meant to be accessed
 directly using a browser.
 
-To find the actual update servers, lookup the SRV record for the host::
+To find the actual update servers, lookup the SRV record for the host:
+
+.. code-block:: console
 
   $ host -t srv _https._tcp.pkg.pfsense.org
   _https._tcp.pkg.pfsense.org has SRV record 10 10 443 files01.netgate.com.
@@ -130,9 +170,11 @@ To find the actual update servers, lookup the SRV record for the host::
   files00.netgate.com has address 162.208.119.41
   files00.netgate.com has IPv6 address 2610:1c1:0:6::41
 
-Accessing the hosts using their real hostnames will work with a browser::
+Accessing the hosts using their real hostnames will work with a browser:
 
-  $curl --output /dev/null --silent --head --fail \
+.. code-block:: console
+
+  $ curl --output /dev/null --silent --head --fail \
    "https://files00.netgate.com/pfSense_v2_4_5_amd64-core/meta.txz"
   $ echo $?
   0
@@ -154,9 +196,11 @@ The firewall can be configured to prefer IPv4 to eliminate this as a potential
 cause. See :doc:`../interfaces/controlling-ipv6-or-ipv4-preference` for details.
 
 Alternately, from ssh or a console shell, force the upgrade to use IPv4
-manually::
+manually:
 
-  pfSense-upgrade -4
+.. code-block:: console
+
+  # pfSense-upgrade -4
 
 .. _upgrade-troubleshooting-nuclear:
 
@@ -172,12 +216,18 @@ To forcefully reinstall all packages, take the following steps:
 
 * Make a backup
 * Clean the repository and forcefully reinstall pkg, repo data, and the upgrade
-  script::
+  script:
 
-    pkg-static clean -ay; pkg-static install -fy pkg pfSense-repo pfSense-upgrade
-* Force a reinstall of everything::
+.. code-block:: console
 
-    pkg-static upgrade -f
+  # pkg-static clean -ay; pkg-static install -fy pkg pfSense-repo pfSense-upgrade
+
+* Force a reinstall of everything:
+
+.. code-block:: console
+
+  # pkg-static upgrade -f
+
 * Review the list of changes and enter ``y`` to proceed
 * Manually reboot the firewall
 
