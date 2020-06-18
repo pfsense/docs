@@ -19,6 +19,27 @@ miscellaneous issues found in :doc:`2.4.5 <2-4-5-new-features-and-changes>`.
    <https://www.netgate.com/blog/category.html#releases>`__ to read all
    important information and warnings before proceeding.
 
+.. note::  Upgrading to pfSense software version 2.4.5-p1 requires
+   ``pfSense-upgrade`` version 0.70 or later. Most installations will
+   automatically pick up the new version and upgrade normally. If this does not
+   happen automatically and the upgrade to version 2.4.5-p1 is not offered, use
+   the following procedure:
+
+   * Navigate to **System > Updates**
+   * Set **Branch** to *Previous stable version*
+   * Wait a few moments for the upgrade check to complete
+   * Optional: Confirm that the latest version of `pfSense-upgrade` is present
+     (version >= 0.70) using ``pkg-static info -x pfSense-upgrade``.
+
+     If the correct version is not present, wait a bit longer and check again as
+     that package may be updating in the background.
+   * Set **Branch** to *Latest stable version*
+   * Wait a few moments for the upgrade check to complete
+
+   At this point, the upgrade check should see 2.4.5-p1 and the upgrade can
+   proceed.
+
+
 .. note:: pfSense software version 2.4.5-p1 includes ``pkg`` version 1.13.x
    which introduces a new metadata version. Most installations will
    automatically pick up the new version and upgrade normally. In certain cases,

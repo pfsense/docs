@@ -26,9 +26,19 @@ upgrade will not proceed, or the upgrade process encounters errors with shared
 libraries, take the following steps:
 
 * Navigate to **System > Updates**
+* Set **Branch** to *Previous stable version*
+* Wait a few moments for the upgrade check to complete
+* Optional: Confirm that the latest version of `pfSense-upgrade` is present
+  using ``pkg-static info -x pfSense-upgrade``. For example, it should be at
+  version >= 0.70 for pfSense 2.4.5-p1.
+
+  If the correct version is not present, wait a bit longer and check again as
+  that package may be updating in the background.
 * Set **Branch** to *Latest stable version*
-* Refresh the repository configuration and upgrade script by running the
-  following commands from the console or shell:
+* Wait a few moments for the upgrade check to complete
+
+If the upgrade is still not offered, refresh the repository configuration and
+upgrade script by running the following commands from the console or shell:
 
 .. code-block:: console
 
