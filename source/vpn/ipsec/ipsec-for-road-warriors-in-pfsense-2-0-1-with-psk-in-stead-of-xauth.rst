@@ -388,8 +388,6 @@ help troubleshoot.
    the **IPsec** tab. Hit the **Clear log** button, have the client try
    and start the connection and click the **IPsec** tab again to
    refresh the page. This is usually very inspiring.
--  In the pfSense webGUI, go to **Status > Services** and reset the
-   racoon service. This sometimes helps.
 -  Reboot the client machine.
 -  Reboot the pfSense machine. Should not be necessary but if all other
    attempts fail, it may be tried.

@@ -8,15 +8,13 @@ If a tunnel comes up initially, but then fails after a Phase 1 or Phase
 2 expiration, try changing the following settings on both ends of the
 tunnel:
 
--  **System > Advanced**, **Miscellaneous** tab: uncheck **Prefer
-   Old IPsec SA** (No longer exists on pfSense 2.2.3+)
 -  On the IPsec Phase 1 settings, disable **NAT Traversal** (NAT-T)
 -  On the IPsec Phase 1 settings, enable **DPD**
 -  On the IPsec Phase 2 settings, enter an **Automatically Ping Host**
    in the remote Phase 2 subnet.
 
-Common Errors (strongSwan, pfSense software versions >= 2.2.x)
---------------------------------------------------------------
+Common Errors
+-------------
 
 The following examples have logs edited for brevity but significant
 messages remain.
@@ -239,8 +237,7 @@ Mismatched Identifier with NAT
 In this case, strongSwan is set for a **Peer Identifier** of *Peer IP
 address*, but the remote router is actually behind NAT. In this case
 strongSwan expects the actual private before-NAT IP address as the
-identifier. The racoon daemon was much more relaxed and would match
-either address, but strongSwan is more formal/correct.
+identifier.
 
 Responder::
 
@@ -295,174 +292,14 @@ Removing */cf/conf/use_xmlreader* will return the system to the default
 parser immediately, which will correct the display of the IPsec status
 page.
 
-Common Errors (racoon, pfSense software versions <= 2.1.x)
-----------------------------------------------------------
-
-Mismatched Local/Remote Subnets
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code::
-
-  Feb 20 10:33:41  racoon: ERROR: failed to pre-process packet.
-  Feb 20 10:33:41  racoon: ERROR: failed to get sainfo.
-
-This can result from mismatched subnet masks in the IPsec tunnel
-definitions. Check to be sure that the local and remote subnet masks
-match up on each side, typically they should be "*/24*" and not "*/32*".
-
-Failed pfkey align
-~~~~~~~~~~~~~~~~~~
-
-.. code::
-
-  racoon: ERROR: libipsec failed pfkey align (Invalid sadb message)
-
-Check to make sure that the Phase 2 timeouts match up on both ends of
-the tunnel. Some people still see this periodically with no ill effect.
-It shows up at intervals equal to the Phase 2 timeout, but nowhere near
-the actual expiration time.
-
-pfkey Delete
-~~~~~~~~~~~~
-
-.. code::
-
-  ERROR: pfkey DELETE received
-
-This message may be seen repeatedly as Phase 2 is renegotiated between
-two endpoints (for multiple subnets). The tunnels still work, but
-traffic may be delayed while the tunnel is switched/reestablished. (more
-research needed for possible solutions)
-
-REGISTER message
-~~~~~~~~~~~~~~~~
-
-.. code::
-
-  racoon: INFO: unsupported PF_KEY message REGISTER
-
-This is a normal log message. It is not indicative of any problem.
-
-Stuck/Broken Phase 1
-~~~~~~~~~~~~~~~~~~~~
-
-Client::
-
-  racoon: ERROR: none message must be encrypted
-
-Server::
-
-  racoon: ERROR: can't start the quick mode, there is no ISAKMP-SA
-
-Or also::
-
-  racoon: INFO: request for establishing IPsec-SA was queued due to no phase1 found.
-
-Try to stop and restart racoon on the client/opposite side. This can
-turn up if one side still thinks Phase 1 is good/active, and the other
-side thinks it is gone.
-
-Unsupported Cipher Key Length for Cryptographic Accelerator
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If a cryptographic accelerator chip such as glxsb is enabled and an
-unsupported cipher key length is configured, the following errors may be
-displayed::
-
-  Mar 27 16:31:44   racoon: ERROR: pfkey ADD failed: Invalid argument
-  Mar 27 16:31:44   racoon: ERROR: pfkey UPDATE failed: Invalid argument
-  Mar 27 16:31:44   racoon: WARNING: attribute has been modified.
-
-The reason for this is that the crypto(9) framework in FreeBSD specifies
-support by family, such as AES, not not just by key length. The glxsb
-chip only accelerates AES 128, so if another key length is chosen such
-as AES 256, the operation will fail.
-
-To remedy this, either use a supported key length for the configured
-chip (e.g. AES 128) or disable the accelerator and reboot the device to
-ensure its modules are unloaded. Physically removing the device may be
-required for certain add-in boards.
-
-This is a problem in crypto(9) in FreeBSD upstream and it is not likely
-to be fixed.
-
-References:
-
-1: `Ticket #2324 <https://redmine.pfsense.org/issues/2324>`__
-
-2: `FreeBSD PR
-kern/166508 <https://www.freebsd.org/cgi/query-pr.cgi?pr=166508>`__
-
-Send Errors
-~~~~~~~~~~~
-
-.. code::
-
-  Sep 18 11:48:10 racoon: ERROR: sendto (Operation not permitted)
-  Sep 18 11:48:10 racoon: ERROR: sendfromto failed
-  Sep 18 11:48:10 racoon: ERROR: phase1 negotiation failed due to send error.
-
-Errors such as those above are due to something preventing racoon from
-sending packets out. Typically this is related to states, but could also
-be from an improperly crafted floating rule.
-
-First, check **Diagnostics > States**. Filter on the remote peer
-address. If there is a NAT state for an internal client, the default
-static port outbound NAT rule could be preventing racoon from building
-its own tunnel as the IP:port pairing on both sides is already in use.
-Locate and stop the internal client, clear the states, and then
-reconnect. If a state is present but there is no NAT involved, clear the
-state(s) that are seen for the remote IP and port 500, 4500, and ESP.
-Check if that brings it back online.
-
-Also ensure a proper route or default route to reach the remote side is
-present.
-
-If that doesn't apply, check the floating rules and be sure they are not
-blocking traffic from racoon.
-
-If those are both OK, ensure the PPTP server address is not set to a
-valid/in-use IP address such as the WAN address. If that is set to the
-WAN address, when a PPTP client disconnects it can cause problems with
-racoon's ability to make connections.
-
-INVALID-PAYLOAD-TYPE
-~~~~~~~~~~~~~~~~~~~~
-
-If a message containing INVALID-PAYLOAD-TYPE appears in the logs, try
-disabling NAT Traversal (NAT-T) in Phase 1, and optionally restart
-racoon.
-
-NAT Problems
-~~~~~~~~~~~~
-
-If the tunnel can initiate one way but not the other, and the settings
-match, the problem could also be with outbound NAT. If outbound NAT
-rules are present with a source of "*any*" (``*``), that will also match
-outbound traffic from the firewall itself. At best this will rewrite the
-source port and at worst it could change the outbound IP entirely
-depending on the NAT rule settings.
-
-Check **Diagnostics > States**, filtered on the remote peer IP, or
-":500". If a NAT state is present that includes the WAN address of the
-firewall as the source, then fix the NAT rules and clear the offending
-states.
-
 IPsec Debugging
 ---------------
 
-On pfSense software version 2.2, the logging options for the IPsec
-daemon are located under **VPN > IPsec** on the **Advanced Settings** 
-tab and may be adjusted live without affecting the operation of IPsec
-tunnels. As mentioned above, the recommended setting for most common
-debugging is to set **IKE SA**, **IKE Child SA**, and 
+The logging options for the IPsec daemon are located under **VPN > IPsec** on
+the **Advanced Settings** tab and may be adjusted live without affecting the
+operation of IPsec tunnels. As mentioned above, the recommended setting for most
+common debugging is to set **IKE SA**, **IKE Child SA**, and
 **Configuration Backend** on *Diag* and set all others on *Control*.
-
-Debug mode for racoon on pfSense software version 2.1.x and before may
-be enabled by checking the option for it under **System > Advanced** on
-the **Miscellaneous** tab on pfSense software version 2.1.x and earlier.
-This change is disruptive in that racoon is restarted and all tunnels
-are reset.
 
 Shrew Soft VPN Client Debugging
 -------------------------------
