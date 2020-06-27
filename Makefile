@@ -19,6 +19,11 @@ html:
 	@echo
 	@echo "Build finished. The HTML pages are in build."
 
+test:
+	sphinx-build -b spelling -D extensions=sphinx_sitemap,sphinx_tabs.tabs,sphinxcontrib.spelling source build
+	@echo
+	@echo "Build finished. The HTML pages are in build."
+
 linkcheck:
 	sphinx-build -b linkcheck source build
 	@echo
