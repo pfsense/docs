@@ -23,8 +23,8 @@ packages such as vnstat2 will report the data it has or has found
 Known Issues
 ------------
 
-.. seealso:: You can find a list of known issues with the this package on the
-   `pfSense bug tracker`_.
+.. seealso:: Report a problem or find a list of known issues with this package
+   on the `pfSense bug tracker`_.
 
 Package Support
 ---------------
