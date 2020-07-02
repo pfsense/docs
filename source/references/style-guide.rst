@@ -27,7 +27,7 @@ If any other usage of "pfSense" or a misspelling of same is found ("PFsense",
 
 Other special notes for capitalization:
 
-* WebGUI, webConfigurator, IPsec, OpenVPN, Internet, Ethernet, VPN, DNS, PPPoE,
+* WebGUI, IPsec, OpenVPN, Internet, Ethernet, VPN, DNS, PPPoE,
   IPv4, IPv6, NPt, strongSwan, squidGuard, pfsync, pftop, JavaScript.
 
 What to Avoid
