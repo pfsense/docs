@@ -35,6 +35,13 @@ IPv6
    using-1-1-nat-on-a-wan-ip-address
    setup-ftp-server-behind-pfsense
    ftp-without-a-proxy
+
+Troubleshooting
+---------------
+
+.. toctree::
+   :maxdepth: 1
+   
    port-forward-troubleshooting
    troubleshooting-1-1-nat
    troubleshooting-nat-reflection
