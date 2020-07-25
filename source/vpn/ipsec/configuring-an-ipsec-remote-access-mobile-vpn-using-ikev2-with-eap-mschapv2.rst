@@ -254,45 +254,34 @@ Ubuntu-based Client Setup
 -------------------------
 
 Before starting, install **network-manager-strongswan** and
-**strongswan-plugin-eap-mschapv2** using apt-get or a similar mechanism.
+**libcharon-extra-plugins** using apt install or a similar mechanism.
 
 Setup the VPN Connection
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-*  Copy the CA Certificate for the VPN from the firewall to the workstation
-*  Click **Network Manager** icon in the notification tray by the clock (Icon
-   varies depending on the type of network in use)
-*  Click **Network Connections**
-*  Click **Add**
-*  Select **IPsec/IKEv2 (strongswan)** under **VPN** (If the option is not
+*  Copy the CA Certificate for the VPN from the firewall to the workstation (a good place to is to make a directory under your home directory called .cert)
+*  Open **Settings** icon
+*  Click **Network**
+*  Click **VPN +**
+*  Select **IPsec/IKEv2 (strongswan)** (If the option is not
    present, ensure that network-manager-strongswan is installed)
-*  Click **Create**
-*  Enter a **Description** (e.g. *Work VPN*)
-*  Select the **VPN** Tab
-*  Enter the **Address** of the firewall (e.g. *vpn.example.com*)
+*  Enter a **Description** (e.g. *Work*)
+*  Select the **Identity** Tab
+*  Enter the **Address** of the gateway (e.g. *vpn.example.com*)
 *  Select the control next to **Certificate** and browse to find the downloaded
    CA Certificate
 *  Select **EAP** for **Authentication**
 *  Enter the **Username** to be used for this connection (e.g. *alice*)
 *  Check **Request an inner IP address**
-*  Click **Save**
+*  Click **Apply**
 *  Click **Close**
+You should now be able to connect.
 
-Connecting and Disconnecting
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To Connect:
-
-*  Click the Network Manager icon
-*  Click the VPN Name or click **VPN Connections** to move the slider to the
-   **On** (1) position
-
-.. note:: If a password prompt does not appear, the network manager service may
-   need restarted or a reboot of the workstation may be necessary.
+Further settings are available on IPv4 and IPv6 tabs. If you use nm-connection-editor you can also add things like domain suffixes. 
 
 To Disconnect:
 
-*  Click the Network Manager icon
+*  Click the Network icon
 *  Click **VPN Connections** to move the slider to the **Off** (0) position
 
 Android Client Setup
