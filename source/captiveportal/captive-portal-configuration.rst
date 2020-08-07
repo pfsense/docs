@@ -69,7 +69,7 @@ some attributes in the RADIUS Access-Accept response that will be understood by 
 in order to fine-tune how the captive portal will behave for each user.
 
 .. tip:: The RADIUS dictionary for pfSense may not be included by default with RADIUS servers.
- FreeRADIUS dictionary is available `on Github`_. For other RADIUS servers, please contact the associated vendor.
+ FreeRADIUS dictionary is available `on GitHub`_. For other RADIUS servers, please contact the associated vendor.
 
 :Individual traffic quota:
  An individual traffic quota may be defined for each user, using ``pfsense-Max-Total-Octets``.
@@ -166,4 +166,4 @@ FreeRADIUS Package
 A :doc:`FreeRADIUS package </packages/freeradius-package>` is available on pfSense, it is possible to use it to perform authentication locally.
 
 
-.. _On Github: https://github.com/FreeRADIUS/freeradius-server/blob/master/share/dictionary/radius/dictionary.pfsense
+.. _On GitHub: https://github.com/FreeRADIUS/freeradius-server/blob/master/share/dictionary/radius/dictionary.pfsense

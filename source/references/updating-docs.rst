@@ -1,24 +1,24 @@
 Updating Documentation
 ======================
 
-Documentation updates are easy to make by anyone here on Github. Updates are
-submitted in the form of a Github pull request ("PR") which developers can then
+Documentation updates are easy to make by anyone here on GitHub. Updates are
+submitted in the form of a GitHub pull request ("PR") which developers can then
 review and discuss before merging the change into the documentation.
 
 .. note:: Before submitting a documentation update, please read the
    :doc:`quality-guidelines`, the :doc:`style-guide`, the
-   :doc:`formatting-guide`, and the `Github documentation on pull requests`_.
+   :doc:`formatting-guide`, and the `GitHub documentation on pull requests`_.
 
 .. warning:: The following documents assume the submitter already has an account
-   on Github.
+   on GitHub.
 
-Edit on Github
+Edit on GitHub
 --------------
 
-The easiest way to make a changes is to edit the file directly on Github.
+The easiest way to make a changes is to edit the file directly on GitHub.
 
 * Navigate to the page to edit in the documentation
-* Click **Edit on Github** to open the document source in Github
+* Click **Edit on GitHub** to open the document source in GitHub
 * Click |fa-pencil| to edit the source
 * Make changes as needed
 * Enter an appropriate title and description for the change
@@ -34,7 +34,7 @@ Local Clone
 * Make changes
 * Commit the changes using an appropriate commit message
 * Push the changes
-* From Github, initiate a pull request from the local branch to the master
+* From GitHub, initiate a pull request from the local branch to the master
   branch of the documentation repository.
 
 Pull Requests
@@ -58,5 +58,5 @@ When creating an issue, please be specific and reference documents by filename
 where appropriate.
 
 .. _fork: https://help.github.com/articles/about-forks/
-.. _Github documentation on pull requests: https://help.github.com/articles/creating-a-pull-request/
+.. _GitHub documentation on pull requests: https://help.github.com/articles/creating-a-pull-request/
 .. _Issue: https://redmine.pfsense.org/projects/pfsense-docs

@@ -30,10 +30,10 @@ Adding a patch
 
    -  Commit ID (e.g. ``4573641589d50718b544b778cea864cfd725078a``) in the
       **URL/Commit ID** field.
-   -  Github commit URL (e.g.
+   -  GitHub commit URL (e.g.
       ``https://github.com/pfsense/pfsense/commit/4573641589d50718b544b778cea864cfd725078a``)
       in the **URL/Commit ID** field.
-   -  Github Pull Request (PR) URL with '.diff' appended, such as
+   -  GitHub Pull Request (PR) URL with '.diff' appended, such as
       ``https://github.com/pfsense/pfsense/pull/XXXX.diff`` where XXXX is
       the PR number. Set Path Strip = 2 if it does not adjust
       automatically.
@@ -43,7 +43,7 @@ Adding a patch
    -  Leave **URL/Commit ID** blank and paste the contents of a patch
       into **Patch Contents** text area.
 
--  Set the **Path Strip Count**. Github commit IDs and URLs should be
+-  Set the **Path Strip Count**. GitHub commit IDs and URLs should be
    count of ``2`` (fixed automatically on save). Patches from other
    sources will need to be set appropriately.
 
@@ -56,7 +56,7 @@ Adding a patch
    alternate base may be applied if a patch does not supply a full path
    to the file it is patching (e.g. ``/usr/local/www``).
 -  Set the **Ignore Whitespace** option appropriately. Patches from
-   Github should work with either whitespace setting, patches from other
+   GitHub should work with either whitespace setting, patches from other
    sources may need the option set to ignore whitespace, especially if
    they contain DOS line endings rather than UNIX.
 -  click **Save**.

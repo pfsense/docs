@@ -1,7 +1,7 @@
-Submitting a Pull Request via Github
+Submitting a Pull Request via GitHub
 ====================================
 
-Submitting a Pull Request (PR) via Github is the fastest and best way to
+Submitting a Pull Request (PR) via GitHub is the fastest and best way to
 contribute source code changes to the pfSense® project.
 
 Using a PR allows developers to easily review and comment on changes,
@@ -20,7 +20,7 @@ few guidelines and suggestions to follow when submitting contributions:
 
 -  Read through and follow the :doc:`Developer Style Guide </development/developer-style-guide>`
    when making changes to the source code
--  Read through the Github documentation on `pull
+-  Read through the GitHub documentation on `pull
    requests <https://help.github.com/articles/creating-a-pull-request/>`__
 -  Create a `fork <https://help.github.com/articles/about-forks/>`__ of
    the correct repository (e.g.

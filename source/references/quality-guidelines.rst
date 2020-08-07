@@ -43,6 +43,6 @@ Where to see why an article was flagged
 ---------------------------------------
 
 Articles flagged for cleanup should have corresponding comments on the `source
-of the article at Github
-<https://github.com/pfsense/docs/tree/master/source>`__, or `issues on Github
+of the article at GitHub
+<https://github.com/pfsense/docs/tree/master/source>`__, or `issues on GitHub
 <https://github.com/pfsense/docs/issues/>`__ discussing what's wrong with them.
