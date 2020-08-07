@@ -2,9 +2,8 @@ Using the pfSense PHP Shell
 ===========================
 
 Using the PHP pfSense® shell allows configuration of the config.xml file
-directly without needing to use the webConfigurator. Using this system
-can also allow rapid deployment of pfSense software and/or the setup of
-exotic configurations.
+directly without needing to use the webGUI. Using this system can also allow
+rapid deployment of pfSense software and/or the setup of exotic configurations.
 
 The following will show an example session, with the text coming from
 the "help" command in the PHP shell.

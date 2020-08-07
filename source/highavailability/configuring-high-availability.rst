@@ -79,9 +79,9 @@ State synchronization should be enabled on all cluster nodes.
 Enable Configuration Synchronization (XMLRPC Sync)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Before proceeding, set the same user with the "System - HA node sync" 
-privilege (or *admin* user), password and
-webConfigurator protocol (e.g. HTTPS) on each cluster node.
+Before proceeding, set the same user with the "System - HA node sync"
+privilege (or *admin* user), password and webGUI protocol (e.g. HTTPS) on each
+cluster node.
 
 The configuration synchronization settings should only be enabled on the
 primary cluster node.

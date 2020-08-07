@@ -82,11 +82,9 @@ Locked Out by Too Many Failed Login Attempts
 --------------------------------------------
 
 Attempting to login to the GUI and failing many times will cause the
-connecting IP address to be added to the webConfigurator lockout table.
+connecting IP address to be added to the webGUI lockout table.
 Currently the limit is 15 failures (without success) within 24 hours.
-Addresses are not automatically expired from the table on pfSense 2.1.x
-and earlier. On pfSense 2.2 and later, addresses are expired after a
-minimum of one hour.
+Addresses are expired after a minimum of one hour.
 
 To regain access, login successfully from another IP address and then
 manually remove the entry as follows:
@@ -183,7 +181,7 @@ to be fixed as follows:
 
     killall -9 squid
 
-Once the squid process is fully terminated, access to the WebGUI will be
+Once the squid process is fully terminated, access to the webGUI will be
 available again. Be aware that work must be done quickly, or repeat the
 shutdown command, as squid may be automatically restarted.
 

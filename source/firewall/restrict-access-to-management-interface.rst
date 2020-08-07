@@ -5,8 +5,7 @@ To enhance the security of a network, in many environments access to the
 management of a pfSense® firewall will be limited with the use of
 firewall rules. Restricting access to management interface is strongly
 recommended, for reasons as to why, see the blog post `Securely Managing
-Web-administered
-Devices <https://www.netgate.com/blog/securely-managing-web-administered-devices.html>`__.
+Web-administered Devices`_.
 
 The default configuration of pfSense software allows management access from any
 machine on the LAN and denies it to anything outside of the local
@@ -55,3 +54,5 @@ finished the ruleset should look like the following.
 
 Click **Apply Changes** and the management interface is now restricted
 to only the defined hosts.
+
+.. _Securely Managing Web-administered Devices: https://www.netgate.com/blog/securely-managing-web-administered-devices.html
