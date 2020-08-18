@@ -89,7 +89,7 @@ to keep your pfSense VM.
    :align: center
 
 On wizard page four, add another Network Adapter and select the WAN
-and LAN virtual switches for each of the network adapters. Modify
+and LAN port groups for each of the network adapters. Modify
 other virtual machine settings to your liking. For best performance,
 we recommend using VMXNET 3 type of adapters instead of E1000.
 However, with VMXNET 3 interfaces type you will have to manually
