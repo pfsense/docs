@@ -45,18 +45,13 @@ For NanoBSD, this can be done by switching back to the previous update
 slice from the GUI, console, or boot menu. The pre-upgrade configuration will
 need to be restored restored after the switch.
 
-Reinstalling the previous release
+Reinstalling a previous release
 +++++++++++++++++++++++++++++++++
 
-The worst case scenario on upgrading is a FreeBSD regression that prevents the
-firewall from booting successfully, or no longer communicating with the network.
-In this case, reinstall from a CD or Memstick for the previous release. Download
-the appropriate image and have it ready **before** starting the upgrade
-procedure.
-
-This is the least likely scenario, with maybe one in every ten or twenty
-thousand installs affected with upgrades containing significant FreeBSD release
-changes (such as pfSense 2.3 to 2.4, going from FreeBSD 10.x to 11.x).
+Older releases are not supported, hence only the latest stable release images
+will be available. To mitigate the highly unlikely scenario in which an upgrade
+on a supported platform to the latest stable release renders the system unusable,
+the storage could be cloned (e.g. using ``dd`` on Linux).
 
 VM Snapshots
 ++++++++++++
