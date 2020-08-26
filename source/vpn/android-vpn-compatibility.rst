@@ -42,7 +42,11 @@ Table: pfSense software version 2.2+
 Notes
 -----
 
-IKEv2 support on Android 4+ works with the `strongSwan app <https://play.google.com/store/apps/details?id=org.strongswan.android&hl=en>`__
+- IKEv2 support on Android 4+ works with the `strongSwan app <https://play.google.com/store/apps/details?id=org.strongswan.android&hl=en>`__
+
+- On Android 9+, enabling "`Private DNS <https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html>`__"
+  will override the DNS server pushed by a VPN server (e.g. OpenVPN), this can prevent local resources
+  from being resolved correctly on the client (e.g. in a split DNS scenario).
 
 .. warning:: PPTP is no longer considered a secure VPN technology because it
    relies upon MS-CHAPv2 which has been compromised. If you continue to use PPTP
