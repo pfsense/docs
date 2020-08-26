@@ -31,27 +31,14 @@ chance that a regression from one version to another, either in the pfSense or
 FreeBSD code, can leave the firewall unusable. With advance planning, the
 firewall can quickly be returned to the previous release.
 
-Downgrading to a previous release
+Installing previous releases
 +++++++++++++++++++++++++++++++++
 
-Downgrading a full installation to previous releases directly in-place
-is not supported. Very rarely is it desirable or necessary to go back to
-a prior release. Should that be necessary, the previous version must be
-reinstalled and a configuration backup from that version must be
-restored. Configurations from newer versions **cannot** be restored to
-older versions.
-
-For NanoBSD, this can be done by switching back to the previous update
-slice from the GUI, console, or boot menu. The pre-upgrade configuration will
-need to be restored restored after the switch.
-
-Reinstalling a previous release
-+++++++++++++++++++++++++++++++++
-
-Older releases are not supported, hence only the latest stable release images
-will be available. To mitigate the highly unlikely scenario in which an upgrade
-on a supported platform to the latest stable release renders the system unusable,
-the storage could be cloned (e.g. using ``dd`` on Linux).
+Downgrading to or installing a previous release is not supported. Though there are
+unsupported methods of doing so, it is up to the user to have a suitable method of
+reverting to prior releases. Note that if going this route, the configuration
+backup from that previous version must be restored. Configurations from newer
+versions **cannot** be restored to older versions.
 
 VM Snapshots
 ++++++++++++
