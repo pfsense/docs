@@ -37,13 +37,13 @@ Create a Server Certificate
 *  Enter a **Descriptive Name** such as *IKEv2 Server*
 *  Select the appropriate **Certificate Authority** created in the previous step
 *  Choose the desired **Key length**, **Digest algorithm**, and **Lifetime**
-*  Set the **Certificate Type** to *Server Certificate*
-*  Fill in the regional and company values in the **Distinguished name** fields
-   as desired, they are copied from the CA and may be left as-is
 *  Enter the **Common Name** as the hostname of the firewall as it exists in
    DNS. If clients will connect by IP address, place the IP address here.
+*  Fill in the regional and company values as desired, they are copied from
+   the CA and may be left as-is
+*  Set the **Certificate Type** to *Server Certificate*
 *  Click |fa-plus| **Add** to add a new **Alternative Name**
-*  Enter *DNS* in the **Type** field
+*  Select *FQDN or Hostname* in the **Type** field
 *  Enter the hostname of the firewall as it exists in DNS **again** in the
    **Value** field -- Some clients require the value in SAN not CN!
 *  Click |fa-plus| **Add** to add another new **Alternative Name**
