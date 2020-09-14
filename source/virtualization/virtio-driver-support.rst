@@ -16,11 +16,6 @@ software **directly from the VM host**.
 
 The issue is most likely caused by `FreeBSD Bug 165059`_.
 
-Also, there is a known issue with BGP MD5 sessions and TCP-MD5 when Hardware
-Checksum Offloading (rxcsum) is disabled. See `Bug #8407`_ and `Bug #7969`_.
-With the inclusion of FreeBSD 11.2-RELEASE in pfSense software vers 2.4.4 this
-issue is corrected. See `FreeBSD Bugzilla - Bug 223835`_.
-
 Hardware checksums and other NIC offloading features like TSO may also need to
 be disabled on the hypervisor system in addition to the pfSense VM.
 
