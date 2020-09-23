@@ -1,6 +1,6 @@
 # pfSense Docs
 
-> **IMPORTANT NOTE:** This repo is deprecated as the contents have been merged with the old pfSense Book. More information can be found here: https://www.netgate.com/blog/introducing-the-new-unified-pfsense-documentation.html
+> **IMPORTANT NOTE:** This repo is deprecated as the contents have been merged with the pfSense Book. More information can be found here: https://www.netgate.com/blog/introducing-the-new-unified-pfsense-documentation.html
 
 This repository contains the source for the for the [pfSense documentation site](https://www.netgate.com/docs/pfsense).
 
